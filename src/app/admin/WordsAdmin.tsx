@@ -39,8 +39,8 @@ export function WordsAdmin({ words, loadError }: { words: AdminWord[]; loadError
   };
 
   return (
-    <main className="pb-bg min-h-dvh w-full">
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 px-4 py-6">
+    <main className="pb-bg pb-scroll h-dvh w-full">
+      <div className="pb-safe mx-auto flex w-full max-w-3xl flex-col gap-4">
         <header className="flex items-center justify-between gap-3">
           <div>
             <h1 className="font-display text-4xl">Palabras</h1>

@@ -130,12 +130,48 @@
   }
 }
 /* ───────────── Pikaboom game styles ───────────── */
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* screens fit the viewport; only designated containers scroll */
+  overscroll-behavior: none;
+}
 body {
   background: #2b0a57;
   color: #fff;
-  overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: 100%;
 }
+input,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
+  font-size: max(16px, 1em); /* avoid iOS zoom-on-focus */
+}
+button,
+a {
+  touch-action: manipulation;
+}
+
+/* Safe areas (notch / Dynamic Island / home indicator) */
+.pb-safe {
+  padding-top: max(env(safe-area-inset-top), 12px);
+  padding-bottom: max(env(safe-area-inset-bottom), 12px);
+  padding-left: max(env(safe-area-inset-left), 16px);
+  padding-right: max(env(safe-area-inset-right), 16px);
+}
+
+/* The one scrollable area of the game */
+.pb-scroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.pb-scroll::-webkit-scrollbar { display: none; }
 
 .font-display {
   font-family: var(--font-display), system-ui, sans-serif;

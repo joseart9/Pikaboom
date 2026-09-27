@@ -107,21 +107,23 @@ function IconButton({ onClick, label, children }: { onClick: () => void; label: 
   );
 }
 
+/** All teams at a glance. Wraps into rows (never scrolls): up to 4 per row. */
 function TeamStrip({ teams, current, maxLives }: { teams: Team[]; current: number; maxLives: number }) {
+  const cols = Math.min(teams.length, 4);
   return (
-    <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
+    <div className="grid shrink-0 gap-1.5" style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
       {teams.map((t, i) => (
         <div
           key={t.id}
-          className={`flex shrink-0 items-center gap-2 rounded-2xl border-2 px-3 py-1.5 transition ${
-            i === current ? "scale-100 bg-white/20" : "scale-95 bg-white/5 opacity-70"
+          className={`flex min-w-0 items-center gap-1.5 rounded-xl border-2 px-1.5 py-1 transition ${
+            i === current ? "bg-white/20" : "bg-white/5 opacity-70"
           } ${t.lives === 0 ? "opacity-30 line-through" : ""}`}
           style={{ borderColor: i === current ? t.color : "transparent" }}
         >
-          <span className="text-lg">{t.emoji}</span>
-          <div className="leading-tight">
-            <div className="max-w-24 truncate text-xs font-black">{t.name}</div>
-            <Hearts lives={t.lives} max={maxLives} size="text-[10px]" />
+          <span className="shrink-0 text-base">{t.emoji}</span>
+          <div className="min-w-0 leading-tight">
+            <div className="truncate text-[11px] font-black">{t.name}</div>
+            <Hearts lives={t.lives} max={maxLives} size="text-[9px]" />
           </div>
         </div>
       ))}
@@ -131,17 +133,17 @@ function TeamStrip({ teams, current, maxLives }: { teams: Team[]; current: numbe
 
 function Stepper({ label, value, onChange, min, max, step = 1, suffix = "" }: { label: string; value: number; onChange: (v: number) => void; min: number; max: number; step?: number; suffix?: string }) {
   return (
-    <div className="flex items-center justify-between gap-3">
-      <span className="font-extrabold text-white/80">{label}</span>
-      <div className="flex items-center gap-2">
-        <button className="h-9 w-9 rounded-xl bg-white/15 text-xl font-black active:scale-90" onClick={() => onChange(Math.max(min, value - step))}>
+    <div className="flex min-w-0 flex-col items-center gap-1 rounded-2xl bg-white/5 py-1.5">
+      <span className="text-xs font-black uppercase tracking-wider text-white/60">{label}</span>
+      <div className="flex items-center gap-0.5">
+        <button aria-label={`${label} menos`} className="h-8 w-8 shrink-0 rounded-lg bg-white/15 text-lg font-black active:scale-90" onClick={() => onChange(Math.max(min, value - step))}>
           −
         </button>
-        <span className="w-16 text-center font-display text-xl">
+        <span className="w-10 text-center font-display text-base">
           {value}
           {suffix}
         </span>
-        <button className="h-9 w-9 rounded-xl bg-white/15 text-xl font-black active:scale-90" onClick={() => onChange(Math.min(max, value + step))}>
+        <button aria-label={`${label} más`} className="h-8 w-8 shrink-0 rounded-lg bg-white/15 text-lg font-black active:scale-90" onClick={() => onChange(Math.min(max, value + step))}>
           +
         </button>
       </div>
@@ -389,75 +391,81 @@ export function CharadesGame() {
     const names = settings.teamNames;
     const setNames = (teamNames: string[]) => setSettings((s) => ({ ...s, teamNames }));
     screen = (
-      <div className="flex flex-1 flex-col gap-4 overflow-y-auto pb-4">
-        <div className="flex items-center gap-4 pt-2">
-          <Bomb size={96} className="pb-wobble shrink-0" />
-          <p className="font-bold leading-snug text-white/85">
-            Actúa la palabra — <b className="text-[#ffe066]">¡sin hablar!</b> Cuando tu compañero la adivine, presiona <b>Siguiente equipo</b> y pasa el teléfono. ¡Que no te explote la bomba en las manos!
+      <div className="flex min-h-0 flex-1 flex-col gap-2">
+        <div className="flex shrink-0 items-center gap-3">
+          <Bomb size={52} className="pb-wobble shrink-0" />
+          <p className="text-[13px] font-bold leading-snug text-white/85">
+            Actúa la palabra <b className="text-[#ffe066]">¡sin hablar!</b> Cuando tu compañero la adivine, presiona <b>Siguiente equipo</b> y pasa el teléfono. ¡Que no te explote en las manos!
           </p>
         </div>
 
-        <div className="pb-card flex flex-col gap-3 p-4">
-          <div className="flex items-center justify-between">
+        <div className="pb-card flex shrink-0 flex-col gap-2 p-3">
+          <div className="flex items-baseline justify-between">
             <h2 className="font-display text-2xl">Equipos</h2>
-            <span className="text-sm font-bold text-white/60">2 jugadores cada uno</span>
+            <span className="text-xs font-bold text-white/60">2 jugadores cada uno</span>
           </div>
-          {names.map((name, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl text-2xl" style={{ background: TEAM_COLORS[i % TEAM_COLORS.length] }}>
-                {TEAM_EMOJI[i % TEAM_EMOJI.length]}
-              </span>
-              <input
-                value={name}
-                maxLength={18}
-                onChange={(e) => setNames(names.map((n, j) => (j === i ? e.target.value : n)))}
-                className="h-11 min-w-0 flex-1 rounded-xl border-2 border-white/15 bg-white/10 px-3 font-extrabold text-white outline-none placeholder:text-white/40 focus:border-white/50"
-                placeholder={`Equipo ${i + 1}`}
-              />
-              {names.length > 2 && (
-                <button aria-label={`Quitar ${name}`} onClick={() => setNames(names.filter((_, j) => j !== i))} className="h-11 w-11 shrink-0 rounded-xl bg-white/10 text-lg active:scale-90">
-                  🗑
-                </button>
-              )}
-            </div>
-          ))}
-          {names.length < 8 && (
-            <button onClick={() => setNames([...names, `Equipo ${names.length + 1}`])} className="h-11 rounded-xl border-2 border-dashed border-white/30 font-extrabold text-white/80 active:scale-95">
-              + Agregar equipo
-            </button>
-          )}
+          <div className="grid grid-cols-2 gap-2">
+            {names.map((name, i) => (
+              <div key={i} className="flex h-9 min-w-0 items-center gap-1.5 rounded-xl border-2 border-white/15 bg-white/10 pl-1 pr-1 focus-within:border-white/50">
+                <span className="grid h-7 w-7 shrink-0 place-items-center rounded-lg text-base" style={{ background: TEAM_COLORS[i % TEAM_COLORS.length] }}>
+                  {TEAM_EMOJI[i % TEAM_EMOJI.length]}
+                </span>
+                <input
+                  value={name}
+                  maxLength={18}
+                  enterKeyHint="done"
+                  onChange={(e) => setNames(names.map((n, j) => (j === i ? e.target.value : n)))}
+                  className="h-full min-w-0 flex-1 bg-transparent font-extrabold text-white outline-none placeholder:text-white/40"
+                  placeholder={`Equipo ${i + 1}`}
+                />
+                {names.length > 2 && (
+                  <button aria-label={`Quitar ${name}`} onClick={() => setNames(names.filter((_, j) => j !== i))} className="grid h-7 w-7 shrink-0 place-items-center rounded-lg text-sm text-white/60 active:scale-90">
+                    ✕
+                  </button>
+                )}
+              </div>
+            ))}
+            {names.length < 8 && (
+              <button onClick={() => setNames([...names, `Equipo ${names.length + 1}`])} className="h-9 rounded-xl border-2 border-dashed border-white/30 text-sm font-extrabold text-white/80 active:scale-95">
+                + Agregar equipo
+              </button>
+            )}
+          </div>
         </div>
 
-        <div className="pb-card flex flex-col gap-3 p-4">
+        <div className="pb-card flex shrink-0 flex-col gap-2 p-3">
           <h2 className="font-display text-2xl">Bomba</h2>
-          <Stepper label="Mecha mín." value={settings.minSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, minSeconds: v, maxSeconds: Math.max(v, s.maxSeconds) }))} />
-          <Stepper label="Mecha máx." value={settings.maxSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, maxSeconds: v, minSeconds: Math.min(v, s.minSeconds) }))} />
-          <Stepper label="Vidas por equipo" value={settings.lives} min={1} max={5} onChange={(v) => setSettings((s) => ({ ...s, lives: v }))} />
-          <p className="text-sm font-bold text-white/50">
-            La mecha dura un tiempo secreto al azar dentro de este rango. Cada acierto puede sumar +0, +1, +5, +10 o +20 segundos. Pedir nuevas palabras resta 5, 10 o 15 segundos.
+          <div className="grid grid-cols-3 gap-2">
+            <Stepper label="Mecha mín." value={settings.minSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, minSeconds: v, maxSeconds: Math.max(v, s.maxSeconds) }))} />
+            <Stepper label="Mecha máx." value={settings.maxSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, maxSeconds: v, minSeconds: Math.min(v, s.minSeconds) }))} />
+            <Stepper label="Vidas" value={settings.lives} min={1} max={5} onChange={(v) => setSettings((s) => ({ ...s, lives: v }))} />
+          </div>
+          <p className="text-[11px] font-bold leading-snug text-white/50">
+            La mecha dura un tiempo secreto dentro del rango. Cada acierto suma +0, +1, +5, +10 o +20 s. Pedir nuevas palabras resta 5, 10 o 15 s.
           </p>
         </div>
 
-        <p className="text-center text-xs font-bold text-white/40">
-          {wordSource === "loading" ? "Cargando palabras…" : wordSource === "db" ? `${wordCount} palabras${adult && !adultShortage ? " +18 🫦" : ""} de la nube ☁️` : `${wordCount} palabras sin conexión`}
-        </p>
-
-        {adultShortage && (
-          <p className="rounded-xl bg-[#ff4d6d]/20 px-3 py-2 text-center text-sm font-extrabold text-[#ffb3c0]">
-            🫦 Modo +18 activo, pero aún no hay suficientes palabras +18. Se usarán las palabras normales. Agrégalas en /admin.
-          </p>
-        )}
-
-        <button onClick={startGame} className="pb-btn mt-auto h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
-          ¡JUGAR!
-        </button>
+        <div className="mt-auto flex shrink-0 flex-col gap-2">
+          {adultShortage ? (
+            <p className="rounded-xl bg-[#ff4d6d]/20 px-3 py-1.5 text-center text-xs font-extrabold text-[#ffb3c0]">
+              🫦 Aún no hay suficientes palabras +18: se usarán las normales. Agrégalas en /admin.
+            </p>
+          ) : (
+            <p className="text-center text-xs font-bold text-white/40">
+              {wordSource === "loading" ? "Cargando palabras…" : wordSource === "db" ? `${wordCount} palabras${adult ? " +18 🫦" : ""} de la nube ☁️` : `${wordCount} palabras sin conexión`}
+            </p>
+          )}
+          <button onClick={startGame} className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
+            ¡JUGAR!
+          </button>
+        </div>
       </div>
     );
   }
 
   if (phase === "ready" && team) {
     screen = (
-      <div className="flex flex-1 flex-col items-center justify-between gap-4 pb-4 text-center">
+      <div className="flex min-h-0 flex-1 flex-col items-center justify-between gap-3 text-center">
         <TeamStrip teams={teams} current={current} maxLives={maxLives} />
         <div className="pb-pop-in flex flex-col items-center gap-3" key={`ready-${round}`}>
           <span className="text-lg font-black uppercase tracking-widest text-white/60">Pasa el teléfono a</span>
@@ -481,7 +489,7 @@ export function CharadesGame() {
   if ((phase === "playing" || phase === "exploding") && team) {
     const shownTeam = phase === "exploding" && lastExploded !== null ? teams[lastExploded] : team;
     screen = (
-      <div className={`flex flex-1 flex-col gap-3 pb-4 ${phase === "exploding" ? "pb-shake" : ""}`}>
+      <div className={`flex min-h-0 flex-1 flex-col gap-3 ${phase === "exploding" ? "pb-shake" : ""}`}>
         <TeamStrip teams={teams} current={current} maxLives={maxLives} />
 
         {/* Whose turn — big and in the team's color */}
@@ -490,7 +498,7 @@ export function CharadesGame() {
             <span className="text-5xl drop-shadow">{shownTeam.emoji}</span>
             <div className="min-w-0 flex-1">
               <div className="text-xs font-black uppercase tracking-widest text-[#1d0842]/70">Es el turno de</div>
-              <div className="truncate font-display text-4xl leading-none text-[#1d0842]">{shownTeam.name}</div>
+              <div className={`truncate font-display leading-none text-[#1d0842] ${shownTeam.name.length > 11 ? "text-3xl" : "text-4xl"}`}>{shownTeam.name}</div>
             </div>
             <Hearts lives={shownTeam.lives} max={maxLives} size="text-lg" />
           </div>
@@ -567,13 +575,13 @@ export function CharadesGame() {
     const victim = teams[lastExploded];
     const out = victim.lives === 0;
     screen = (
-      <div className="flex flex-1 flex-col items-center justify-between gap-4 pb-4 text-center">
-        <div className="pb-pop-in flex flex-col items-center gap-3 pt-6">
-          <span className="text-7xl">💥</span>
+      <div className="flex min-h-0 flex-1 flex-col items-center justify-between gap-3 text-center">
+        <div className="pb-pop-in flex flex-col items-center gap-2 pt-2">
+          <span className="text-6xl">💥</span>
           <h2 className="font-display text-5xl" style={{ color: victim.color }}>
             {victim.name}
           </h2>
-          <p className="font-display text-3xl">{out ? "¡queda FUERA del juego!" : "¡explotó!"}</p>
+          <p className="font-display text-2xl">{out ? "¡queda FUERA del juego!" : "¡explotó!"}</p>
           <Hearts lives={victim.lives} max={maxLives} size="text-4xl" breakIndex={victim.lives} />
           <p className="font-bold text-white/70">
             {out ? "Sin vidas. ¡Suerte para la próxima!" : `${victim.lives === 1 ? "Queda 1 vida" : `Quedan ${victim.lives} vidas`}`}
@@ -590,17 +598,17 @@ export function CharadesGame() {
   if (phase === "gameOver") {
     const winner = teams.find((t) => t.lives > 0) ?? teams[0];
     screen = (
-      <div className="flex flex-1 flex-col items-center justify-between gap-4 pb-4 text-center">
-        <div className="pb-pop-in flex flex-col items-center gap-2 pt-4">
-          <span className="pb-float text-8xl">🏆</span>
+      <div className="flex min-h-0 flex-1 flex-col items-center justify-between gap-3 text-center">
+        <div className="pb-pop-in flex flex-col items-center gap-1 pt-2">
+          <span className="pb-float text-7xl">🏆</span>
           <p className="text-lg font-black uppercase tracking-widest text-white/60">Ganador</p>
-          <h2 className="font-display text-6xl" style={{ color: winner.color }}>
+          <h2 className="max-w-full break-words font-display text-5xl" style={{ color: winner.color }}>
             {winner.emoji} {winner.name}
           </h2>
           <p className="font-bold text-white/70">¡Sobrevivió {round} {round === 1 ? "ronda" : "rondas"} de puro suspenso!</p>
         </div>
         <Standings teams={teams} maxLives={maxLives} />
-        <div className="grid w-full gap-3">
+        <div className="grid w-full shrink-0 gap-3">
           <button onClick={startGame} className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
             JUGAR DE NUEVO
           </button>
@@ -614,7 +622,7 @@ export function CharadesGame() {
 
   return (
     <main className="pb-bg flex h-dvh w-full flex-col overflow-hidden">
-      <div className="mx-auto flex h-full w-full max-w-md flex-col gap-3 px-4 pt-[max(env(safe-area-inset-top),12px)] pb-[env(safe-area-inset-bottom)]">
+      <div className="pb-safe mx-auto flex h-full w-full max-w-md flex-col gap-3">
         {topBar}
         {screen}
       </div>

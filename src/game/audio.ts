@@ -34,6 +34,9 @@ function noise() {
 
 /** Must be called from a user gesture (iOS/Safari requirement). */
 export function unlockAudio() {
+  // iOS: play through the ringer/silent switch, like a game (Safari 16.4+).
+  const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
+  if (session) session.type = "playback";
   const c = ac();
   if (c.state === "suspended") void c.resume();
 }

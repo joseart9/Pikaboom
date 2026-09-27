@@ -11,22 +11,29 @@ const GAMES = [
 
 export default function Home() {
   return (
-    <main className="pb-bg flex min-h-dvh w-full flex-col">
-      <div className="mx-auto flex w-full max-w-md flex-1 flex-col gap-6 px-4 py-8">
-        <header className="flex flex-col items-center gap-2 text-center">
-          <Bomb size={150} className="pb-wobble" />
+    <main className="pb-bg flex h-dvh w-full flex-col overflow-hidden">
+      <div className="pb-safe mx-auto flex h-full w-full max-w-md flex-col gap-4">
+        <header className="flex shrink-0 flex-col items-center gap-1 text-center">
+          <Bomb size={104} className="pb-wobble" />
           <h1
             className="font-display text-[3.6rem] leading-none text-[#ffe066] sm:text-7xl"
             style={{ WebkitTextStroke: "4px #1d0842", paintOrder: "stroke fill", textShadow: "0 7px 0 #ff006e" }}
           >
             PIKABOOM
           </h1>
-          <p className="font-extrabold text-white/75">Juegos de fiesta con una bomba. ¡Pasa el teléfono antes de que explote!</p>
+          <p className="text-sm font-extrabold text-white/75">Juegos de fiesta con una bomba. ¡Pasa el teléfono antes de que explote!</p>
         </header>
 
-        <AdultToggle />
+        <div className="shrink-0">
+          <AdultToggle />
+        </div>
 
-        <section className="grid grid-cols-2 gap-4">
+        {/* The only scrollable area in the app — room for more mini games */}
+        <section
+          aria-label="Minijuegos"
+          className="pb-scroll -mx-2 grid min-h-0 flex-1 auto-rows-min grid-cols-2 gap-4 px-2 pt-1 pb-3"
+          style={{ maskImage: "linear-gradient(transparent, #000 12px, #000 calc(100% - 16px), transparent)" }}
+        >
           {GAMES.map((g) => {
             const card = (
               <div
@@ -53,7 +60,7 @@ export default function Home() {
           })}
         </section>
 
-        <Link href="/charades" className="pb-btn mt-auto h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
+        <Link href="/charades" className="pb-btn h-16 w-full shrink-0 text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
           JUGAR CHARADAS
         </Link>
       </div>

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import { playTick, startFuse, stopFuse } from "./audio";
+import { keepAwake } from "./wakeLock";
 
 const rand = (min: number, max: number) => min + Math.random() * (max - min);
 
@@ -67,6 +68,7 @@ export function useBomb(onExplode: () => void) {
       if (timer.current) clearTimeout(timer.current);
       timer.current = null;
       stopFuse();
+      keepAwake(false);
       explodeRef.current();
       return;
     }
@@ -108,6 +110,7 @@ export function useBomb(onExplode: () => void) {
       lastLoopAt.current = now;
       burst.current = null;
       nextBurstAt.current = rand(...FIRST_BURST_AFTER_MS);
+      keepAwake(true);
       startFuse();
       loop();
     },
@@ -127,6 +130,7 @@ export function useBomb(onExplode: () => void) {
     deadline.current = null;
     clear();
     stopFuse();
+    keepAwake(false);
   }, []);
 
   const resume = useCallback(() => {
@@ -135,6 +139,7 @@ export function useBomb(onExplode: () => void) {
     deadline.current = now + pausedRemaining.current;
     lastLoopAt.current = now;
     pausedRemaining.current = null;
+    keepAwake(true);
     startFuse();
     loop();
   }, [loop]);
@@ -145,6 +150,7 @@ export function useBomb(onExplode: () => void) {
     burst.current = null;
     clear();
     stopFuse();
+    keepAwake(false);
   }, []);
 
   useEffect(() => stop, [stop]);

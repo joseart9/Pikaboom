@@ -7,7 +7,7 @@ import { login } from "./actions";
 export function LoginForm() {
   const [state, action, pending] = useActionState(login, null);
   return (
-    <main className="pb-bg grid min-h-dvh place-items-center px-4">
+    <main className="pb-bg pb-safe grid h-dvh place-items-center">
       <form action={action} className="pb-card flex w-full max-w-sm flex-col items-center gap-4 p-6">
         <Bomb size={90} className="pb-wobble" lit={false} />
         <h1 className="font-display text-4xl">Admin</h1>
