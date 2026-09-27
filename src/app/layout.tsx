@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Lilita_One, Nunito } from "next/font/google";
+import { Haptics } from "@/components/Haptics";
 import { ServiceWorker } from "@/components/ServiceWorker";
 import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         {children}
         <ServiceWorker />
+        <Haptics />
       </body>
     </html>
   );

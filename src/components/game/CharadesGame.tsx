@@ -303,7 +303,6 @@ export function CharadesGame() {
     bomb.addTime(-seconds);
     playWhoosh();
     playPenalty(seconds);
-    vibrate([30, 40, 30]);
     setBonus({ id: ++bonusId.current, seconds: -seconds });
     drawOptions(options.map((o) => o.word));
   };
@@ -314,7 +313,6 @@ export function CharadesGame() {
     bomb.addTime(seconds);
     if (seconds > 0) playBonus(seconds);
     else playNothing();
-    vibrate(40);
     setBonus({ id: ++bonusId.current, seconds });
     setTeams((ts) => ts.map((t, i) => (i === current ? { ...t, guessed: t.guessed + 1 } : t)));
     setCurrent((c) => nextAlive(teams, c));
@@ -455,7 +453,7 @@ export function CharadesGame() {
               {wordSource === "loading" ? "Cargando palabras…" : wordSource === "db" ? `${wordCount} palabras${adult ? " +18 🫦" : ""} de la nube ☁️` : `${wordCount} palabras sin conexión`}
             </p>
           )}
-          <button onClick={startGame} className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
+          <button onClick={startGame} data-haptic="medium" className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
             ¡JUGAR!
           </button>
         </div>
@@ -479,7 +477,7 @@ export function CharadesGame() {
           <p className="max-w-xs font-bold text-white/70">Uno actúa y el otro adivina. ¡La bomba empieza a sonar en cuanto presionen empezar!</p>
         </div>
         <Bomb size={130} className="pb-float" lit={false} />
-        <button onClick={startRound} className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: team.color }}>
+        <button onClick={startRound} data-haptic="heavy" className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: team.color }}>
           💣 EMPEZAR RONDA
         </button>
       </div>
@@ -552,6 +550,7 @@ export function CharadesGame() {
           ) : (
             <button
               onClick={newWords}
+              data-haptic="heavy"
               disabled={paused || phase !== "playing"}
               className="pb-btn h-16 px-2 text-lg leading-tight"
               style={{ ["--btn" as string]: "#ff8fa3" }}
@@ -563,7 +562,7 @@ export function CharadesGame() {
               </span>
             </button>
           )}
-          <button onClick={nextTeam} disabled={!chosen || paused || phase !== "playing"} className="pb-btn h-16 px-2 text-xl leading-tight" style={{ ["--btn" as string]: "#06d6a0" }}>
+          <button onClick={nextTeam} data-haptic="medium" disabled={!chosen || paused || phase !== "playing"} className="pb-btn h-16 px-2 text-xl leading-tight" style={{ ["--btn" as string]: "#06d6a0" }}>
             Siguiente equipo
           </button>
         </div>
@@ -588,7 +587,7 @@ export function CharadesGame() {
           </p>
         </div>
         <Standings teams={teams} maxLives={maxLives} />
-        <button onClick={nextRound} className="pb-btn h-16 w-full text-3xl">
+        <button onClick={nextRound} data-haptic="medium" className="pb-btn h-16 w-full text-3xl">
           SIGUIENTE RONDA ➜
         </button>
       </div>
