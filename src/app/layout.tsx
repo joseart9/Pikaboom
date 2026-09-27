@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Minijuegos de fiesta con una bomba. ¡Pasa el teléfono antes de que explote!",
   applicationName: "Pikaboom",
   formatDetection: { telephone: false },
-  appleWebApp: { capable: true, title: "Pikaboom", statusBarStyle: "default" },
+  appleWebApp: { capable: true, title: "Pikaboom", statusBarStyle: "black-translucent" },
 };
 
 export const viewport: Viewport = {

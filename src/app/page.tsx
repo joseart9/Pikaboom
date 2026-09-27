@@ -11,7 +11,7 @@ const GAMES = [
 
 export default function Home() {
   return (
-    <main className="pb-bg flex h-dvh w-full flex-col overflow-hidden">
+    <main className="pb-bg flex pb-screen w-full flex-col overflow-hidden">
       <div className="pb-safe mx-auto flex h-full w-full max-w-md flex-col gap-4">
         <header className="flex shrink-0 flex-col items-center gap-1 text-center">
           <Bomb size={104} className="pb-wobble" />

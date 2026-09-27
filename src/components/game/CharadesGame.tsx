@@ -620,7 +620,7 @@ export function CharadesGame() {
   }
 
   return (
-    <main className="pb-bg flex h-dvh w-full flex-col overflow-hidden">
+    <main className="pb-bg flex pb-screen w-full flex-col overflow-hidden">
       <div className="pb-safe mx-auto flex h-full w-full max-w-md flex-col gap-3">
         {topBar}
         {screen}

@@ -158,8 +158,44 @@ a {
 }
 
 /* Safe areas (notch / Dynamic Island / home indicator) */
+/* Full-screen app surface */
+.pb-screen {
+  height: 100dvh;
+}
+
+:root {
+  --pb-top: max(env(safe-area-inset-top), 12px);
+}
+
+/*
+ * Installed on iOS (black-translucent status bar), iOS 26+ quirks:
+ * - 100dvh/100% come up short by the status bar height -> use 100lvh (full screen).
+ * - The system draws a "Liquid Glass" blur ~40pt below the status bar over whatever is there.
+ *   A flat fixed strip touching the top edge makes WebKit use that colour instead, and the
+ *   extra top clearance keeps the top bar out of the blur band either way.
+ */
+@media (display-mode: standalone) {
+  html,
+  body,
+  .pb-screen {
+    height: 100lvh;
+  }
+  :root {
+    --pb-top: calc(env(safe-area-inset-top) + 2.25rem);
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: env(safe-area-inset-top);
+    background: #4a1791;
+    z-index: 60;
+    pointer-events: none;
+  }
+}
+
 .pb-safe {
-  padding-top: max(env(safe-area-inset-top), 12px);
+  padding-top: var(--pb-top);
   padding-bottom: max(env(safe-area-inset-bottom), 12px);
   padding-left: max(env(safe-area-inset-left), 16px);
   padding-right: max(env(safe-area-inset-right), 16px);
