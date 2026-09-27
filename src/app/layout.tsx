@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Minijuegos de fiesta con una bomba. ¡Pasa el teléfono antes de que explote!",
   applicationName: "Pikaboom",
   formatDetection: { telephone: false },
-  appleWebApp: { capable: true, title: "Pikaboom", statusBarStyle: "black-translucent" },
+  appleWebApp: { capable: true, title: "Pikaboom", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
@@ -21,7 +21,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: "cover",
-  themeColor: "#2b0a57",
+  themeColor: "#4a1791", // must match the top edge of .pb-bg (status bar tint)
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

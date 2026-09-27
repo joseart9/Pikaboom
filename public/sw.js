@@ -1,5 +1,5 @@
 // Pikaboom service worker — lets the game open and play offline.
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL = `pikaboom-shell-${VERSION}`;
 const RUNTIME = `pikaboom-runtime-${VERSION}`;
 const PRECACHE = ["/", "/charades", "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png", "/apple-icon.png"];
