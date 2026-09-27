@@ -2,7 +2,7 @@ import "server-only";
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 
-const ADMIN_PASSWORD = "Enoch1209";
+const ADMIN_PASSWORD = "Enochclakome";
 const COOKIE = "pikaboom_admin";
 const MAX_AGE = 60 * 60 * 24 * 7; // 7 days
 
