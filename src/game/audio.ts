@@ -206,3 +206,18 @@ export function vibrate(pattern: number | number[]) {
     /* unsupported */
   }
 }
+
+/** Descending "uh-oh" for losing time. */
+export function playPenalty(seconds: number) {
+  const t = ac().currentTime;
+  const steps = seconds >= 15 ? 4 : seconds >= 10 ? 3 : 2;
+  for (let i = 0; i < steps; i++) tone(520 - i * 90, t + i * 0.11, 0.16, { type: "sawtooth", vol: 0.1, endFreq: 440 - i * 90 });
+  noiseBurst(t, 0.25, { vol: 0.2, type: "lowpass", freq: 900, endFreq: 200 });
+}
+
+/** Deflated "blip" when no time is added. */
+export function playNothing() {
+  const t = ac().currentTime;
+  tone(330, t, 0.12, { type: "triangle", vol: 0.2 });
+  tone(220, t + 0.12, 0.25, { type: "triangle", vol: 0.2, endFreq: 180 });
+}

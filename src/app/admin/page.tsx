@@ -13,12 +13,12 @@ export default async function AdminPage() {
   let error: string | null = null;
   try {
     const { rows } = await db().query<AdminWord>(
-      "select id::int as id, word, category, active from public.charades_words order by category, word",
+      "select id::int as id, word, category, active, adult from public.charades_words order by category, word",
     );
     words = rows;
   } catch (e) {
     console.error(e);
-    error = "Could not load words from the database. Check SUPABASE_DB_PASSWORD / SUPABASE_DB_URL.";
+    error = "No se pudieron cargar las palabras. Revisa SUPABASE_DB_PASSWORD / SUPABASE_DB_URL.";
   }
 
   return <WordsAdmin words={words} loadError={error} />;

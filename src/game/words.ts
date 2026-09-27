@@ -1,53 +1,53 @@
 export type WordEntry = { word: string; category: string };
 
-// Local fallback list; the same list is seeded into Supabase (public.charades_words).
+// Lista local de respaldo; la misma lista se carga en Supabase (public.charades_words).
 const RAW: Record<string, string[]> = {
-  Animals: [
-    "Elephant", "Kangaroo", "Penguin", "Monkey", "Giraffe", "Snake", "Chicken", "Octopus",
-    "Crab", "Frog", "Lion", "Shark", "Butterfly", "Turtle", "Flamingo", "Gorilla",
-    "Horse", "Dolphin", "Spider", "Bat", "Owl", "Crocodile", "Rabbit", "Sloth",
-    "Peacock", "Bear", "Duck", "Cat", "Dog", "Cow",
+  Animales: [
+    "Elefante", "Canguro", "Pingüino", "Mono", "Jirafa", "Serpiente", "Gallina", "Pulpo",
+    "Cangrejo", "Rana", "León", "Tiburón", "Mariposa", "Tortuga", "Flamenco", "Gorila",
+    "Caballo", "Delfín", "Araña", "Murciélago", "Búho", "Cocodrilo", "Conejo", "Perezoso",
+    "Pavo real", "Oso", "Pato", "Gato", "Perro", "Vaca",
   ],
-  Actions: [
-    "Swimming", "Skydiving", "Juggling", "Surfing", "Boxing", "Knitting", "Brushing teeth",
-    "Taking a selfie", "Walking a dog", "Changing a diaper", "Climbing a ladder", "Mopping the floor",
-    "Riding a horse", "Lifting weights", "Playing guitar", "Sneezing", "Fishing", "Bowling",
-    "Ice skating", "Milking a cow", "Hula hoop", "Painting a wall", "Doing yoga", "Sleepwalking",
-    "Blowing bubbles", "Shaving", "Ironing clothes", "Flying a kite", "Rowing a boat", "Moonwalking",
+  Acciones: [
+    "Nadar", "Saltar en paracaídas", "Hacer malabares", "Surfear", "Boxear", "Tejer", "Lavarse los dientes",
+    "Tomarse una selfie", "Pasear al perro", "Cambiar un pañal", "Subir una escalera", "Trapear el piso",
+    "Montar a caballo", "Levantar pesas", "Tocar la guitarra", "Estornudar", "Pescar", "Jugar boliche",
+    "Patinar sobre hielo", "Ordeñar una vaca", "Bailar con hula hula", "Pintar una pared", "Hacer yoga", "Ser sonámbulo",
+    "Hacer burbujas", "Rasurarse", "Planchar la ropa", "Volar un papalote", "Remar en una lancha", "Hacer el moonwalk",
   ],
-  Jobs: [
-    "Firefighter", "Dentist", "Chef", "Pilot", "Magician", "Astronaut", "Police officer",
-    "Waiter", "Photographer", "Hairdresser", "Doctor", "Teacher", "DJ", "Plumber",
-    "Lifeguard", "Mime", "Farmer", "Surgeon", "Cowboy", "Pirate", "Ninja", "Referee",
-    "Orchestra conductor", "Mechanic", "Mail carrier",
+  Profesiones: [
+    "Bombero", "Dentista", "Chef", "Piloto", "Mago", "Astronauta", "Policía",
+    "Mesero", "Fotógrafo", "Peluquero", "Doctor", "Maestro", "DJ", "Plomero",
+    "Salvavidas", "Mimo", "Granjero", "Cirujano", "Vaquero", "Pirata", "Ninja", "Árbitro",
+    "Director de orquesta", "Mecánico", "Cartero",
   ],
-  Objects: [
-    "Umbrella", "Toothbrush", "Telephone", "Scissors", "Camera", "Microwave", "Hammer",
-    "Balloon", "Vacuum cleaner", "Washing machine", "Chainsaw", "Trampoline", "Piano",
-    "Remote control", "Hairdryer", "Backpack", "Wheelchair", "Skateboard", "Ladder",
-    "Sunglasses", "Toilet", "Alarm clock", "Stapler", "Lawn mower", "Yo-yo",
+  Objetos: [
+    "Paraguas", "Cepillo de dientes", "Teléfono", "Tijeras", "Cámara", "Microondas", "Martillo",
+    "Globo", "Aspiradora", "Lavadora", "Motosierra", "Trampolín", "Piano",
+    "Control remoto", "Secadora de pelo", "Mochila", "Silla de ruedas", "Patineta", "Escalera",
+    "Lentes de sol", "Excusado", "Despertador", "Engrapadora", "Podadora", "Yoyo",
   ],
-  Movies: [
-    "Titanic", "Jaws", "Spider-Man", "Star Wars", "The Lion King", "Frozen", "Harry Potter",
-    "Jurassic Park", "Batman", "Toy Story", "Finding Nemo", "Rocky", "Shrek", "Superman",
-    "King Kong", "Terminator", "Pinocchio", "Karate Kid", "Aladdin", "Ghostbusters",
-    "The Matrix", "Home Alone", "Pirates of the Caribbean", "Mary Poppins", "E.T.",
+  Películas: [
+    "Titanic", "Avatar", "El Hombre Araña", "La Guerra de las Galaxias", "El Rey León", "Frozen", "Harry Potter",
+    "Parque Jurásico", "Batman", "Toy Story", "Buscando a Nemo", "Rocky", "Shrek", "Superman",
+    "King Kong", "Terminator", "Pinocho", "Karate Kid", "Aladdín", "Los Cazafantasmas",
+    "Matrix", "Mi Pobre Angelito", "Piratas del Caribe", "Coco", "E.T.",
   ],
-  Sports: [
-    "Soccer", "Basketball", "Tennis", "Golf", "Baseball", "Karate", "Fencing", "Archery",
-    "Wrestling", "Skiing", "Volleyball", "Cycling", "Ping pong", "Gymnastics", "Rugby",
-    "Hockey", "Sumo wrestling", "Diving", "Pole vault", "Rock climbing",
+  Deportes: [
+    "Fútbol", "Básquetbol", "Tenis", "Golf", "Béisbol", "Karate", "Esgrima", "Tiro con arco",
+    "Lucha libre", "Esquí", "Voleibol", "Ciclismo", "Ping pong", "Gimnasia", "Rugby",
+    "Hockey", "Sumo", "Clavados", "Salto con garrocha", "Escalada",
   ],
-  Food: [
-    "Spaghetti", "Pizza", "Ice cream", "Banana", "Popcorn", "Taco", "Hot dog", "Sushi",
-    "Watermelon", "Lemon", "Corn on the cob", "Chewing gum", "Pancakes", "Hamburger",
-    "Coconut", "Lollipop", "Soup", "Chili pepper", "Cotton candy", "Birthday cake",
+  Comida: [
+    "Espagueti", "Pizza", "Helado", "Plátano", "Palomitas", "Taco", "Hot dog", "Sushi",
+    "Sandía", "Limón", "Elote", "Chicle", "Hotcakes", "Hamburguesa",
+    "Mango", "Paleta", "Sopa", "Chile", "Algodón de azúcar", "Pastel de cumpleaños",
   ],
-  Everyday: [
-    "Traffic jam", "Job interview", "First date", "Rollercoaster", "Haunted house",
-    "Earthquake", "Thunderstorm", "Wedding", "Birthday party", "Elevator", "Zombie",
-    "Vampire", "Robot", "Ghost", "Superhero", "Mermaid", "Alien", "Snowman", "Santa Claus",
-    "Tooth fairy", "Mummy", "Werewolf", "Statue", "Scarecrow", "Hiccups",
+  Cotidiano: [
+    "Tráfico", "Entrevista de trabajo", "Primera cita", "Montaña rusa", "Casa embrujada",
+    "Temblor", "Tormenta", "Boda", "Fiesta de cumpleaños", "Elevador", "Zombi",
+    "Vampiro", "Robot", "Fantasma", "Superhéroe", "Sirena", "Extraterrestre", "Muñeco de nieve", "Santa Claus",
+    "Ratón de los dientes", "Momia", "Hombre lobo", "Estatua", "Espantapájaros", "Hipo",
   ],
 };
 

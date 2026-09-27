@@ -1,12 +1,12 @@
 import type { WordEntry } from "./words";
 
-const STORAGE_KEY = "pikaboom.charades.seen.v1";
+const STORAGE_PREFIX = "pikaboom.charades.seen.v1";
 /** Always keep at least this many words "fresh" so a draw never runs dry. */
 const MIN_FRESH = 12;
 
-function load(): string[] {
+function load(key: string): string[] {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(key);
     const parsed = raw ? JSON.parse(raw) : [];
     return Array.isArray(parsed) ? parsed.filter((w) => typeof w === "string") : [];
   } catch {
@@ -14,9 +14,9 @@ function load(): string[] {
   }
 }
 
-function save(seen: string[]) {
+function save(key: string, seen: string[]) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(seen));
+    localStorage.setItem(key, JSON.stringify(seen));
   } catch {
     /* storage unavailable (private mode) — history stays in memory */
   }
@@ -43,12 +43,15 @@ function shuffle<T>(arr: T[]) {
 export class WordPicker {
   private pool: WordEntry[];
   private seen: string[];
+  private key: string;
 
-  constructor(pool: WordEntry[]) {
+  /** `set` keeps a separate history per word set (e.g. "normal" / "adult"). */
+  constructor(pool: WordEntry[], set = "normal") {
+    this.key = `${STORAGE_PREFIX}.${set}`;
     const unique = new Map(pool.map((w) => [w.word.toLowerCase(), w]));
     this.pool = [...unique.values()];
     const valid = new Set(this.pool.map((w) => w.word.toLowerCase()));
-    this.seen = load().filter((w) => valid.has(w));
+    this.seen = load(this.key).filter((w) => valid.has(w));
   }
 
   get size() {
@@ -78,7 +81,7 @@ export class WordPicker {
     }
 
     this.seen.push(...picked.map((w) => w.word.toLowerCase()));
-    save(this.seen);
+    save(this.key, this.seen);
     return picked;
   }
 }

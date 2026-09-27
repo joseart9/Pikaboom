@@ -7,7 +7,7 @@ const body = Nunito({ variable: "--font-body", subsets: ["latin"], weight: ["600
 
 export const metadata: Metadata = {
   title: "Pikaboom",
-  description: "Party mini games with a ticking bomb. Pass the phone before it explodes!",
+  description: "Minijuegos de fiesta con una bomba. ¡Pasa el teléfono antes de que explote!",
   appleWebApp: { capable: true, title: "Pikaboom", statusBarStyle: "black-translucent" },
 };
 
@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
+    <html lang="es" className={`${display.variable} ${body.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

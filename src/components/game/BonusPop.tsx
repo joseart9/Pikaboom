@@ -2,14 +2,17 @@
 
 import { useEffect } from "react";
 
+/** A time change shown on screen: positive = bonus, negative = penalty, 0 = nothing. */
 export type Bonus = { id: number; seconds: number };
 
-const STYLE: Record<number, { color: string; label: string }> = {
-  1: { color: "#9be15d", label: "TINY BIT!" },
-  5: { color: "#00d2ff", label: "NICE!" },
-  10: { color: "#ffbe0b", label: "AWESOME!" },
-  20: { color: "#ff3cac", label: "MEGA TIME!" },
-};
+function look(seconds: number) {
+  if (seconds < 0) return { color: "#ff2e4d", label: seconds <= -15 ? "¡PELIGRO!" : seconds <= -10 ? "¡AUCH!" : "¡OUCH!" };
+  if (seconds === 0) return { color: "#d7cff5", label: "¡NADA!" };
+  if (seconds >= 20) return { color: "#ff3cac", label: "¡MEGA TIEMPO!" };
+  if (seconds >= 10) return { color: "#ffbe0b", label: "¡INCREÍBLE!" };
+  if (seconds >= 5) return { color: "#00d2ff", label: "¡BIEN!" };
+  return { color: "#9be15d", label: "¡UN POQUITO!" };
+}
 
 /**
  * Fixed full-screen overlay with pointer-events: none — it never participates in layout,
@@ -23,7 +26,8 @@ export function BonusPop({ bonus, onDone }: { bonus: Bonus | null; onDone: () =>
   }, [bonus, onDone]);
 
   if (!bonus) return null;
-  const s = STYLE[bonus.seconds] ?? STYLE[5];
+  const s = look(bonus.seconds);
+  const text = `${bonus.seconds < 0 ? "−" : "+"}${Math.abs(bonus.seconds)}s`;
   return (
     <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden" aria-live="polite">
       <div className="absolute left-1/2 top-1/2">
@@ -40,7 +44,7 @@ export function BonusPop({ bonus, onDone }: { bonus: Bonus | null; onDone: () =>
         className="pb-bonus absolute left-1/2 top-1/2 flex flex-col items-center whitespace-nowrap text-center font-display"
         style={{ color: s.color, textShadow: "0 5px 0 #1d0842, 0 0 30px rgb(0 0 0 / .5)", WebkitTextStroke: "3px #1d0842", paintOrder: "stroke fill" }}
       >
-        <span className="text-[7rem] leading-none sm:text-[9rem]">+{bonus.seconds}s</span>
+        <span className="text-[7rem] leading-none sm:text-[9rem]">{text}</span>
         <span className="text-4xl">{s.label}</span>
       </div>
     </div>

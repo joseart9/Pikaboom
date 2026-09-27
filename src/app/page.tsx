@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { AdultToggle } from "@/components/game/AdultToggle";
 import { Bomb } from "@/components/game/Bomb";
 
 const GAMES = [
-  { href: "/charades", title: "Charades", emoji: "🎭", blurb: "Act it out. No talking!", color: "#ff4d6d", ready: true },
-  { href: "#", title: "Word Bomb", emoji: "🔤", blurb: "Coming soon", color: "#3a86ff", ready: false },
-  { href: "#", title: "Draw It", emoji: "🎨", blurb: "Coming soon", color: "#06d6a0", ready: false },
-  { href: "#", title: "Hum It", emoji: "🎵", blurb: "Coming soon", color: "#ffbe0b", ready: false },
+  { href: "/charades", title: "Charadas", emoji: "🎭", blurb: "Actúalo. ¡Sin hablar!", color: "#ff4d6d", ready: true },
+  { href: "#", title: "Palabra Bomba", emoji: "🔤", blurb: "Próximamente", color: "#3a86ff", ready: false },
+  { href: "#", title: "Dibújalo", emoji: "🎨", blurb: "Próximamente", color: "#06d6a0", ready: false },
+  { href: "#", title: "Tararéalo", emoji: "🎵", blurb: "Próximamente", color: "#ffbe0b", ready: false },
 ];
 
 export default function Home() {
@@ -20,8 +21,10 @@ export default function Home() {
           >
             PIKABOOM
           </h1>
-          <p className="font-extrabold text-white/75">Party games with a ticking bomb. Pass the phone before it blows!</p>
+          <p className="font-extrabold text-white/75">Juegos de fiesta con una bomba. ¡Pasa el teléfono antes de que explote!</p>
         </header>
+
+        <AdultToggle />
 
         <section className="grid grid-cols-2 gap-4">
           {GAMES.map((g) => {
@@ -51,7 +54,7 @@ export default function Home() {
         </section>
 
         <Link href="/charades" className="pb-btn mt-auto h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
-          PLAY CHARADES
+          JUGAR CHARADAS
         </Link>
       </div>
     </main>

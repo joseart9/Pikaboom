@@ -16,13 +16,13 @@ export function LoginForm() {
           type="password"
           autoFocus
           required
-          placeholder="Password"
+          placeholder="Contraseña"
           autoComplete="current-password"
           className="h-12 w-full rounded-xl border-2 border-white/15 bg-white/10 px-4 font-extrabold text-white outline-none placeholder:text-white/40 focus:border-white/50"
         />
         {state?.error && <p className="font-extrabold text-[#ff4d6d]">{state.error}</p>}
         <button disabled={pending} className="pb-btn h-14 w-full text-2xl">
-          {pending ? "Checking…" : "Enter"}
+          {pending ? "Verificando…" : "Entrar"}
         </button>
       </form>
     </main>

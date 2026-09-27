@@ -1,5 +1,6 @@
 "use client";
 
+import { Hourglass } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -9,13 +10,16 @@ import {
   playExplosion,
   playFanfare,
   playLifeLost,
+  playNothing,
+  playPenalty,
   playPick,
   playWhoosh,
   setMuted,
   unlockAudio,
   vibrate,
 } from "@/game/audio";
-import { loadWords } from "@/game/loadWords";
+import { useAdultMode } from "@/game/adultMode";
+import { loadWords, type WordSource } from "@/game/loadWords";
 import { useBomb } from "@/game/useBomb";
 import { WordPicker } from "@/game/wordPicker";
 import { LOCAL_WORDS, type WordEntry } from "@/game/words";
@@ -27,7 +31,10 @@ import { Explosion } from "./Explosion";
 
 const TEAM_COLORS = ["#ff4d6d", "#3a86ff", "#06d6a0", "#ffbe0b", "#b15eff", "#fb5607", "#00bbf9", "#f15bb5"];
 const TEAM_EMOJI = ["🦊", "🐙", "🦖", "🐝", "🦄", "🐯", "🐬", "🐸"];
-const BONUS_POOL = [1, 5, 10, 20];
+/** Seconds added on "Next team" — 0 means no bonus this time. */
+const BONUS_POOL = [0, 1, 5, 10, 20];
+/** Seconds removed when asking for new words. */
+const PENALTY_POOL = [5, 10, 15];
 const WORD_OPTIONS = 4;
 const SETTINGS_KEY = "pikaboom.charades.settings.v1";
 
@@ -35,7 +42,7 @@ type Team = { id: number; name: string; color: string; emoji: string; lives: num
 
 type Settings = { teamNames: string[]; minSeconds: number; maxSeconds: number; lives: number };
 
-const DEFAULT_SETTINGS: Settings = { teamNames: ["Team 1", "Team 2"], minSeconds: 120, maxSeconds: 220, lives: 3 };
+const DEFAULT_SETTINGS: Settings = { teamNames: ["Equipo 1", "Equipo 2"], minSeconds: 120, maxSeconds: 220, lives: 3 };
 
 type Phase = "setup" | "ready" | "playing" | "exploding" | "roundOver" | "gameOver";
 
@@ -54,7 +61,7 @@ function loadSettings(): Settings {
 function makeTeams(s: Settings): Team[] {
   return s.teamNames.map((name, i) => ({
     id: i,
-    name: name.trim() || `Team ${i + 1}`,
+    name: name.trim() || `Equipo ${i + 1}`,
     color: TEAM_COLORS[i % TEAM_COLORS.length],
     emoji: TEAM_EMOJI[i % TEAM_EMOJI.length],
     lives: s.lives,
@@ -75,7 +82,7 @@ function nextAlive(teams: Team[], from: number) {
 
 function Hearts({ lives, max, size = "text-xl", breakIndex }: { lives: number; max: number; size?: string; breakIndex?: number }) {
   return (
-    <span className={`inline-flex gap-0.5 ${size}`} aria-label={`${lives} of ${max} lives`}>
+    <span className={`inline-flex gap-0.5 ${size}`} aria-label={`${lives} de ${max} vidas`}>
       {Array.from({ length: max }).map((_, i) => (
         <span
           key={i}
@@ -156,7 +163,9 @@ export function CharadesGame() {
   const [muted, setMutedState] = useState(false);
   const [round, setRound] = useState(1);
   const [lastExploded, setLastExploded] = useState<number | null>(null);
-  const [wordSource, setWordSource] = useState<"supabase" | "local" | "loading">("loading");
+  const [wordSource, setWordSource] = useState<WordSource | "loading">("loading");
+  const [adultShortage, setAdultShortage] = useState(false);
+  const adult = useAdultMode();
   const [wordCount, setWordCount] = useState(0);
 
   const picker = useRef<WordPicker | null>(null);
@@ -173,13 +182,31 @@ export function CharadesGame() {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- hydrate from localStorage after mount
     setSettings(loadSettings());
     setMutedState(isMuted());
-    picker.current = new WordPicker(LOCAL_WORDS);
-    loadWords().then(({ words, source }) => {
-      picker.current = new WordPicker(words);
+  }, []);
+
+  // Load the word bank for the current mode (normal / +18).
+  useEffect(() => {
+    let cancelled = false;
+    picker.current ??= new WordPicker(LOCAL_WORDS);
+    loadWords(adult).then(async ({ words, source }) => {
+      let set = adult ? "adult" : "normal";
+      let shortage = false;
+      if (adult && words.length < WORD_OPTIONS) {
+        // Not enough +18 words yet — play with the normal set instead.
+        shortage = true;
+        set = "normal";
+        ({ words, source } = await loadWords(false));
+      }
+      if (cancelled) return;
+      picker.current = new WordPicker(words, set);
       setWordSource(source);
+      setAdultShortage(shortage);
       setWordCount(picker.current.size);
     });
-  }, []);
+    return () => {
+      cancelled = true;
+    };
+  }, [adult]);
 
   useEffect(() => {
     if (settings === DEFAULT_SETTINGS) return; // not hydrated yet
@@ -240,7 +267,7 @@ export function CharadesGame() {
     unlockAudio();
     playClick();
     setTeams(makeTeams(settings));
-    setCurrent(0);
+    setCurrent(randInt(0, settings.teamNames.length - 1));
     setRound(1);
     setLastExploded(null);
     setPhase("ready");
@@ -262,8 +289,20 @@ export function CharadesGame() {
     setChosen(w);
   };
 
+  /** Back to the same 4 options. */
   const changeWord = () => {
     playWhoosh();
+    setChosen(null);
+  };
+
+  /** Fresh 4 options — costs time. */
+  const newWords = () => {
+    const seconds = PENALTY_POOL[randInt(0, PENALTY_POOL.length - 1)];
+    bomb.addTime(-seconds);
+    playWhoosh();
+    playPenalty(seconds);
+    vibrate([30, 40, 30]);
+    setBonus({ id: ++bonusId.current, seconds: -seconds });
     drawOptions(options.map((o) => o.word));
   };
 
@@ -271,7 +310,8 @@ export function CharadesGame() {
     if (!chosen) return;
     const seconds = BONUS_POOL[randInt(0, BONUS_POOL.length - 1)];
     bomb.addTime(seconds);
-    playBonus(seconds);
+    if (seconds > 0) playBonus(seconds);
+    else playNothing();
     vibrate(40);
     setBonus({ id: ++bonusId.current, seconds });
     setTeams((ts) => ts.map((t, i) => (i === current ? { ...t, guessed: t.guessed + 1 } : t)));
@@ -319,24 +359,24 @@ export function CharadesGame() {
   const topBar = (
     <div className="flex items-center justify-between">
       {phase === "setup" ? (
-        <Link href="/" aria-label="Home" className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-xl">
+        <Link href="/" aria-label="Inicio" className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-xl">
           ←
         </Link>
       ) : (
-        <IconButton onClick={quitToSetup} label="Quit game">
+        <IconButton onClick={quitToSetup} label="Salir del juego">
           ✕
         </IconButton>
       )}
       <div className="font-display text-2xl tracking-wide">
-        CHARADES{phase !== "setup" && <span className="ml-2 text-base text-white/60">Round {round}</span>}
+        CHARADAS{phase !== "setup" && <span className="ml-2 text-base text-white/60">Ronda {round}</span>}
       </div>
       <div className="flex gap-2">
         {phase === "playing" && (
-          <IconButton onClick={togglePause} label={paused ? "Resume" : "Pause"}>
+          <IconButton onClick={togglePause} label={paused ? "Reanudar" : "Pausa"}>
             {paused ? "▶" : "❚❚"}
           </IconButton>
         )}
-        <IconButton onClick={toggleMute} label={muted ? "Unmute" : "Mute"}>
+        <IconButton onClick={toggleMute} label={muted ? "Activar sonido" : "Silenciar"}>
           {muted ? "🔇" : "🔊"}
         </IconButton>
       </div>
@@ -353,14 +393,14 @@ export function CharadesGame() {
         <div className="flex items-center gap-4 pt-2">
           <Bomb size={96} className="pb-wobble shrink-0" />
           <p className="font-bold leading-snug text-white/85">
-            Act out the word — <b className="text-[#ffe066]">no talking!</b> When your teammate guesses it, hit <b>Next team</b> and pass the phone. Don&apos;t be holding it when the bomb goes off!
+            Actúa la palabra — <b className="text-[#ffe066]">¡sin hablar!</b> Cuando tu compañero la adivine, presiona <b>Siguiente equipo</b> y pasa el teléfono. ¡Que no te explote la bomba en las manos!
           </p>
         </div>
 
         <div className="pb-card flex flex-col gap-3 p-4">
           <div className="flex items-center justify-between">
-            <h2 className="font-display text-2xl">Teams</h2>
-            <span className="text-sm font-bold text-white/60">2 players each</span>
+            <h2 className="font-display text-2xl">Equipos</h2>
+            <span className="text-sm font-bold text-white/60">2 jugadores cada uno</span>
           </div>
           {names.map((name, i) => (
             <div key={i} className="flex items-center gap-2">
@@ -372,38 +412,44 @@ export function CharadesGame() {
                 maxLength={18}
                 onChange={(e) => setNames(names.map((n, j) => (j === i ? e.target.value : n)))}
                 className="h-11 min-w-0 flex-1 rounded-xl border-2 border-white/15 bg-white/10 px-3 font-extrabold text-white outline-none placeholder:text-white/40 focus:border-white/50"
-                placeholder={`Team ${i + 1}`}
+                placeholder={`Equipo ${i + 1}`}
               />
               {names.length > 2 && (
-                <button aria-label={`Remove ${name}`} onClick={() => setNames(names.filter((_, j) => j !== i))} className="h-11 w-11 shrink-0 rounded-xl bg-white/10 text-lg active:scale-90">
+                <button aria-label={`Quitar ${name}`} onClick={() => setNames(names.filter((_, j) => j !== i))} className="h-11 w-11 shrink-0 rounded-xl bg-white/10 text-lg active:scale-90">
                   🗑
                 </button>
               )}
             </div>
           ))}
           {names.length < 8 && (
-            <button onClick={() => setNames([...names, `Team ${names.length + 1}`])} className="h-11 rounded-xl border-2 border-dashed border-white/30 font-extrabold text-white/80 active:scale-95">
-              + Add team
+            <button onClick={() => setNames([...names, `Equipo ${names.length + 1}`])} className="h-11 rounded-xl border-2 border-dashed border-white/30 font-extrabold text-white/80 active:scale-95">
+              + Agregar equipo
             </button>
           )}
         </div>
 
         <div className="pb-card flex flex-col gap-3 p-4">
-          <h2 className="font-display text-2xl">Bomb</h2>
-          <Stepper label="Fuse min" value={settings.minSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, minSeconds: v, maxSeconds: Math.max(v, s.maxSeconds) }))} />
-          <Stepper label="Fuse max" value={settings.maxSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, maxSeconds: v, minSeconds: Math.min(v, s.minSeconds) }))} />
-          <Stepper label="Lives per team" value={settings.lives} min={1} max={5} onChange={(v) => setSettings((s) => ({ ...s, lives: v }))} />
+          <h2 className="font-display text-2xl">Bomba</h2>
+          <Stepper label="Mecha mín." value={settings.minSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, minSeconds: v, maxSeconds: Math.max(v, s.maxSeconds) }))} />
+          <Stepper label="Mecha máx." value={settings.maxSeconds} min={20} max={600} step={10} suffix="s" onChange={(v) => setSettings((s) => ({ ...s, maxSeconds: v, minSeconds: Math.min(v, s.minSeconds) }))} />
+          <Stepper label="Vidas por equipo" value={settings.lives} min={1} max={5} onChange={(v) => setSettings((s) => ({ ...s, lives: v }))} />
           <p className="text-sm font-bold text-white/50">
-            The fuse is a secret random time in this range. Every correct guess adds +1, +5, +10 or +20 seconds.
+            La mecha dura un tiempo secreto al azar dentro de este rango. Cada acierto puede sumar +0, +1, +5, +10 o +20 segundos. Pedir nuevas palabras resta 5, 10 o 15 segundos.
           </p>
         </div>
 
         <p className="text-center text-xs font-bold text-white/40">
-          {wordSource === "loading" ? "Loading words…" : wordSource === "supabase" ? `${wordCount} words from the cloud ☁️` : `${wordCount} offline words`}
+          {wordSource === "loading" ? "Cargando palabras…" : wordSource === "db" ? `${wordCount} palabras${adult && !adultShortage ? " +18 🫦" : ""} de la nube ☁️` : `${wordCount} palabras sin conexión`}
         </p>
 
+        {adultShortage && (
+          <p className="rounded-xl bg-[#ff4d6d]/20 px-3 py-2 text-center text-sm font-extrabold text-[#ffb3c0]">
+            🫦 Modo +18 activo, pero aún no hay suficientes palabras +18. Se usarán las palabras normales. Agrégalas en /admin.
+          </p>
+        )}
+
         <button onClick={startGame} className="pb-btn mt-auto h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
-          PLAY!
+          ¡JUGAR!
         </button>
       </div>
     );
@@ -414,7 +460,7 @@ export function CharadesGame() {
       <div className="flex flex-1 flex-col items-center justify-between gap-4 pb-4 text-center">
         <TeamStrip teams={teams} current={current} maxLives={maxLives} />
         <div className="pb-pop-in flex flex-col items-center gap-3" key={`ready-${round}`}>
-          <span className="text-lg font-black uppercase tracking-widest text-white/60">Pass the phone to</span>
+          <span className="text-lg font-black uppercase tracking-widest text-white/60">Pasa el teléfono a</span>
           <div className="grid h-28 w-28 place-items-center rounded-[2rem] text-6xl shadow-2xl" style={{ background: team.color }}>
             {team.emoji}
           </div>
@@ -422,11 +468,11 @@ export function CharadesGame() {
             {team.name}
           </h2>
           <Hearts lives={team.lives} max={maxLives} size="text-3xl" />
-          <p className="max-w-xs font-bold text-white/70">One of you acts, the other guesses. The bomb starts ticking as soon as you press start!</p>
+          <p className="max-w-xs font-bold text-white/70">Uno actúa y el otro adivina. ¡La bomba empieza a sonar en cuanto presionen empezar!</p>
         </div>
         <Bomb size={130} className="pb-float" lit={false} />
         <button onClick={startRound} className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: team.color }}>
-          💣 START ROUND
+          💣 EMPEZAR RONDA
         </button>
       </div>
     );
@@ -443,7 +489,7 @@ export function CharadesGame() {
           <div className="flex items-center gap-3">
             <span className="text-5xl drop-shadow">{shownTeam.emoji}</span>
             <div className="min-w-0 flex-1">
-              <div className="text-xs font-black uppercase tracking-widest text-[#1d0842]/70">Now playing</div>
+              <div className="text-xs font-black uppercase tracking-widest text-[#1d0842]/70">Es el turno de</div>
               <div className="truncate font-display text-4xl leading-none text-[#1d0842]">{shownTeam.name}</div>
             </div>
             <Hearts lives={shownTeam.lives} max={maxLives} size="text-lg" />
@@ -455,10 +501,10 @@ export function CharadesGame() {
           {paused ? (
             <div className="pb-card flex flex-1 flex-col items-center justify-center gap-4 text-center">
               <span className="text-6xl">⏸️</span>
-              <p className="font-display text-4xl">Paused</p>
-              <p className="font-bold text-white/60">The bomb is frozen… for now.</p>
+              <p className="font-display text-4xl">En pausa</p>
+              <p className="font-bold text-white/60">La bomba está congelada… por ahora.</p>
               <button onClick={togglePause} className="pb-btn h-14 px-8 text-2xl">
-                RESUME
+                REANUDAR
               </button>
             </div>
           ) : chosen ? (
@@ -467,12 +513,12 @@ export function CharadesGame() {
               <span className="font-display text-6xl leading-tight break-words sm:text-7xl" style={{ color: "#ffe066", textShadow: "0 5px 0 #1d0842" }}>
                 {chosen.word}
               </span>
-              <span className="mt-2 font-extrabold text-white/70">🤫 Act it out — no talking!</span>
+              <span className="mt-2 font-extrabold text-white/70">🤫 ¡Actúala sin hablar!</span>
               <Bomb size={70} className="pb-throb mt-3" />
             </div>
           ) : (
             <div className="flex flex-1 flex-col gap-3">
-              <p className="text-center font-display text-2xl text-white/90">Pick a word to act</p>
+              <p className="text-center font-display text-2xl text-white/90">Elige una palabra para actuar</p>
               <div className="grid flex-1 grid-cols-2 gap-3">
                 {options.map((w, i) => (
                   <button
@@ -491,11 +537,26 @@ export function CharadesGame() {
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-          <button onClick={changeWord} disabled={paused || phase !== "playing"} className="pb-btn h-16 whitespace-nowrap px-2 text-lg" style={{ ["--btn" as string]: "#b9a6ff" }}>
-            🔄 {chosen ? "Change word" : "New words"}
-          </button>
-          <button onClick={nextTeam} disabled={!chosen || paused || phase !== "playing"} className="pb-btn h-16 text-2xl" style={{ ["--btn" as string]: "#06d6a0" }}>
-            ✅ Next team
+          {chosen ? (
+            <button onClick={changeWord} disabled={paused || phase !== "playing"} className="pb-btn h-16 px-2 text-lg leading-tight" style={{ ["--btn" as string]: "#b9a6ff" }}>
+              Cambiar palabra
+            </button>
+          ) : (
+            <button
+              onClick={newWords}
+              disabled={paused || phase !== "playing"}
+              className="pb-btn h-16 px-2 text-lg leading-tight"
+              style={{ ["--btn" as string]: "#ff8fa3" }}
+              aria-label="Nuevas palabras (resta tiempo)"
+            >
+              <span>Nuevas palabras</span>
+              <span className="inline-flex shrink-0 items-center font-display text-[#c1121f]">
+                −<Hourglass className="size-5" strokeWidth={3} aria-hidden />
+              </span>
+            </button>
+          )}
+          <button onClick={nextTeam} disabled={!chosen || paused || phase !== "playing"} className="pb-btn h-16 px-2 text-xl leading-tight" style={{ ["--btn" as string]: "#06d6a0" }}>
+            Siguiente equipo
           </button>
         </div>
       </div>
@@ -512,15 +573,15 @@ export function CharadesGame() {
           <h2 className="font-display text-5xl" style={{ color: victim.color }}>
             {victim.name}
           </h2>
-          <p className="font-display text-3xl">{out ? "is OUT of the game!" : "got blown up!"}</p>
+          <p className="font-display text-3xl">{out ? "¡queda FUERA del juego!" : "¡explotó!"}</p>
           <Hearts lives={victim.lives} max={maxLives} size="text-4xl" breakIndex={victim.lives} />
           <p className="font-bold text-white/70">
-            {out ? "No lives left. Better luck next time!" : `${victim.lives} ${victim.lives === 1 ? "life" : "lives"} left`}
+            {out ? "Sin vidas. ¡Suerte para la próxima!" : `${victim.lives === 1 ? "Queda 1 vida" : `Quedan ${victim.lives} vidas`}`}
           </p>
         </div>
         <Standings teams={teams} maxLives={maxLives} />
         <button onClick={nextRound} className="pb-btn h-16 w-full text-3xl">
-          NEXT ROUND ➜
+          SIGUIENTE RONDA ➜
         </button>
       </div>
     );
@@ -532,19 +593,19 @@ export function CharadesGame() {
       <div className="flex flex-1 flex-col items-center justify-between gap-4 pb-4 text-center">
         <div className="pb-pop-in flex flex-col items-center gap-2 pt-4">
           <span className="pb-float text-8xl">🏆</span>
-          <p className="text-lg font-black uppercase tracking-widest text-white/60">Winner</p>
+          <p className="text-lg font-black uppercase tracking-widest text-white/60">Ganador</p>
           <h2 className="font-display text-6xl" style={{ color: winner.color }}>
             {winner.emoji} {winner.name}
           </h2>
-          <p className="font-bold text-white/70">Survived {round} {round === 1 ? "round" : "rounds"} of ticking terror!</p>
+          <p className="font-bold text-white/70">¡Sobrevivió {round} {round === 1 ? "ronda" : "rondas"} de puro suspenso!</p>
         </div>
         <Standings teams={teams} maxLives={maxLives} />
         <div className="grid w-full gap-3">
           <button onClick={startGame} className="pb-btn h-16 w-full text-3xl" style={{ ["--btn" as string]: "#06d6a0" }}>
-            PLAY AGAIN
+            JUGAR DE NUEVO
           </button>
           <button onClick={quitToSetup} className="pb-btn h-14 w-full text-xl" style={{ ["--btn" as string]: "#b9a6ff" }}>
-            Change teams
+            Cambiar equipos
           </button>
         </div>
       </div>
@@ -568,10 +629,10 @@ function Standings({ teams, maxLives }: { teams: Team[]; maxLives: number }) {
   return (
     <div className="pb-card w-full overflow-hidden p-3">
       <div className="grid grid-cols-[1fr_auto_auto_auto] items-center gap-x-3 gap-y-2 text-left text-sm">
-        <span className="font-black uppercase tracking-wider text-white/50">Team</span>
-        <span className="font-black uppercase tracking-wider text-white/50">Lives</span>
-        <span className="text-center font-black text-white/50" title="Words guessed">✅</span>
-        <span className="text-center font-black text-white/50" title="Explosions">💥</span>
+        <span className="font-black uppercase tracking-wider text-white/50">Equipo</span>
+        <span className="font-black uppercase tracking-wider text-white/50">Vidas</span>
+        <span className="text-center font-black text-white/50" title="Palabras adivinadas">✅</span>
+        <span className="text-center font-black text-white/50" title="Explosiones">💥</span>
         {sorted.map((t) => (
           <div key={t.id} className={`contents ${t.lives === 0 ? "[&>*]:opacity-40" : ""}`}>
             <span className="flex min-w-0 items-center gap-2 font-extrabold">

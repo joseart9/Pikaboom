@@ -73,10 +73,10 @@ export function Explosion() {
         />
       ))}
       <div
-        className="pb-boom-text absolute left-1/2 top-1/2 font-display text-[8rem] leading-none text-[#ffe066] sm:text-[11rem]"
+        className="pb-boom-text absolute left-1/2 top-1/2 font-display text-[6.5rem] leading-none whitespace-nowrap text-[#ffe066] sm:text-[10rem]"
         style={{ WebkitTextStroke: "6px #1d0842", paintOrder: "stroke fill", textShadow: "0 10px 0 #ff006e, 0 0 60px #ff8800" }}
       >
-        BOOM!
+        ¡BOOM!
       </div>
       <div className="pb-flash absolute inset-0 bg-white" />
     </div>
