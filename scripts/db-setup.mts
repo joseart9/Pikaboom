@@ -24,7 +24,7 @@ for (const file of readdirSync(dir).sort()) {
 const values = LOCAL_WORDS.map((_, i) => `($${i * 2 + 1}, $${i * 2 + 2})`).join(",");
 const params = LOCAL_WORDS.flatMap((w) => [w.word, w.category]);
 const res = await client.query(
-  `insert into public.charades_words (word, category) values ${values} on conflict (word) do nothing`,
+  `insert into public.charades_words (word, category) values ${values} on conflict do nothing`,
   params,
 );
 console.log(`seeded ${res.rowCount} new words (${LOCAL_WORDS.length} total in list)`);

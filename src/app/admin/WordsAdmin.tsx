@@ -69,7 +69,7 @@ export function WordsAdmin({ words, loadError }: { words: AdminWord[]; loadError
 
         {loadError && <p className="pb-card p-4 font-extrabold text-[#ff4d6d]">{loadError}</p>}
 
-        <AddWordForm key={set} adult={set === "adult"} defaultCategory={categories[0]?.[0] ?? ""} />
+        <AddWordForm key={set} adult={set === "adult"} defaultCategory={categories[0]?.[0] ?? ""} words={words} />
 
         {message?.error && (
           <p className="rounded-xl bg-[#ff4d6d]/20 px-4 py-2 font-extrabold text-[#ff8fa3]" role="alert">
@@ -139,38 +139,81 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
   );
 }
 
-function AddWordForm({ adult, defaultCategory }: { adult: boolean; defaultCategory: string }) {
+/** Same rule as the database's charades_word_key(): ignore case, accents and extra spaces. */
+const wordKey = (w: string) =>
+  w.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+
+function AddWordForm({ adult, defaultCategory, words }: { adult: boolean; defaultCategory: string; words: AdminWord[] }) {
   const [state, action, pending] = useActionState(addWord, null);
+  const [, startTransition] = useTransition();
+  const [word, setWord] = useState("");
+  // Controlled and never reset, so the category you're working on stays selected between adds.
+  const [category, setCategory] = useState(defaultCategory || (adult ? "Picante" : ""));
   const wordRef = useRef<HTMLInputElement>(null);
 
+  const duplicate = useMemo(() => {
+    const key = wordKey(word);
+    return key ? words.find((w) => wordKey(w.word) === key) : undefined;
+  }, [word, words]);
+
   useEffect(() => {
-    if (state?.ok && wordRef.current) {
-      wordRef.current.value = "";
-      wordRef.current.focus();
-    }
+    if (state?.ok) wordRef.current?.focus();
+  }, [state]);
+
+  const submit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Submit manually instead of <form action>, which would reset the fields afterwards.
+    e.preventDefault();
+    if (duplicate) return;
+    const data = new FormData(e.currentTarget);
+    startTransition(async () => {
+      await action(data);
+    });
+  };
+
+  useEffect(() => {
+    if (state?.ok) setWord(""); // eslint-disable-line react-hooks/set-state-in-effect -- clear only the word after a successful add
   }, [state]);
 
   return (
-    <form action={action} className="pb-card flex flex-col gap-3 p-4">
+    <form onSubmit={submit} className="pb-card flex flex-col gap-3 p-4">
       <h2 className="font-display text-2xl">{adult ? "Agregar palabra +18 🫦" : "Agregar palabra"}</h2>
       {adult && <input type="hidden" name="adult" value="on" />}
       <div className="flex flex-col gap-2 sm:flex-row">
-        <input ref={wordRef} name="word" required maxLength={60} placeholder="Palabra o frase" className={`${input} flex-1`} />
+        <input
+          ref={wordRef}
+          name="word"
+          required
+          maxLength={60}
+          placeholder="Palabra o frase"
+          value={word}
+          onChange={(e) => setWord(e.target.value)}
+          aria-invalid={!!duplicate}
+          className={`${input} flex-1 ${duplicate ? "border-[#ff4d6d]" : ""}`}
+        />
         <input
           name="category"
           required
           maxLength={30}
           list="categories"
-          defaultValue={defaultCategory || (adult ? "Picante" : "")}
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
           placeholder="Categoría"
           className={`${input} sm:w-44`}
         />
-        <button disabled={pending} className="pb-btn h-10 px-5 text-lg" style={{ ["--btn" as string]: adult ? "#ff2e6d" : "#06d6a0" }}>
+        <button disabled={pending || !!duplicate} className="pb-btn h-10 px-5 text-lg" style={{ ["--btn" as string]: adult ? "#ff2e6d" : "#06d6a0" }}>
           {pending ? "Agregando…" : "+ Agregar"}
         </button>
       </div>
-      {state?.error && <p className="font-extrabold text-[#ff8fa3]">{state.error}</p>}
-      {state?.ok && <p className="font-extrabold text-[#06d6a0]">Agregada ✓</p>}
+      {duplicate ? (
+        <p className="font-extrabold text-[#ff8fa3]" role="alert">
+          ⚠️ «{duplicate.word}» ya existe en {duplicate.category}
+          {duplicate.adult ? " (+18)" : ""}. No se permiten palabras repetidas.
+        </p>
+      ) : state?.error ? (
+        <p className="font-extrabold text-[#ff8fa3]">{state.error}</p>
+      ) : (
+        state?.ok && <p className="font-extrabold text-[#06d6a0]">Agregada ✓</p>
+      )}
     </form>
   );
 }

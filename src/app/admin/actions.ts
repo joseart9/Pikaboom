@@ -14,6 +14,21 @@ function clean(value: FormDataEntryValue | null, max = 60) {
   return String(value ?? "").trim().replace(/\s+/g, " ").slice(0, max);
 }
 
+/** Finds an existing word that counts as the same (ignores case, accents, spacing, category and set). */
+async function findDuplicate(word: string, excludeId?: number) {
+  const { rows } = await db().query<{ word: string; category: string; adult: boolean }>(
+    `select word, category, adult from public.charades_words
+     where public.charades_word_key(word) = public.charades_word_key($1) and id <> $2
+     limit 1`,
+    [word, excludeId ?? -1],
+  );
+  return rows[0] ?? null;
+}
+
+function duplicateError(d: { word: string; category: string; adult: boolean }): ActionResult {
+  return { ok: false, error: `«${d.word}» ya existe en ${d.category}${d.adult ? " (+18)" : ""}. No se permiten palabras repetidas.` };
+}
+
 function dbError(e: unknown): ActionResult {
   const code = (e as { code?: string }).code;
   if (code === "23505") return { ok: false, error: "Esa palabra ya existe." };
@@ -41,6 +56,8 @@ export async function addWord(_: ActionResult | null, form: FormData): Promise<A
   if (!word || !category) return { ok: false, error: "La palabra y la categoría son obligatorias." };
   const adult = form.get("adult") === "on";
   try {
+    const dup = await findDuplicate(word);
+    if (dup) return duplicateError(dup);
     await db().query("insert into public.charades_words (word, category, adult) values ($1, $2, $3)", [word, category, adult]);
   } catch (e) {
     return dbError(e);
@@ -55,6 +72,8 @@ export async function updateWord(id: number, fields: { word: string; category: s
   const category = clean(fields.category, 30);
   if (!word || !category) return { ok: false, error: "La palabra y la categoría son obligatorias." };
   try {
+    const dup = await findDuplicate(word, id);
+    if (dup) return duplicateError(dup);
     await db().query(
       "update public.charades_words set word = $1, category = $2, active = $3, adult = $4 where id = $5",
       [word, category, fields.active, fields.adult, id],
