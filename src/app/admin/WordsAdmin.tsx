@@ -4,7 +4,24 @@ import Link from "next/link";
 import { useActionState, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { addWord, deleteWord, logout, updateWord, type ActionResult } from "./actions";
 
-export type AdminWord = { id: number; word: string; category: string; active: boolean; adult: boolean };
+export type AdminWord = {
+  id: number;
+  word: string;
+  category: string;
+  active: boolean;
+  adult: boolean;
+  shown: number;
+  guessed: number;
+  failed: number;
+  /** Learned difficulty; null until the word has enough plays. */
+  tier: "easy" | "medium" | "hard" | null;
+};
+
+const TIER_BADGE = {
+  easy: { label: "Fácil", className: "bg-[#06d6a0]/25 text-[#7dffd9]" },
+  medium: { label: "Media", className: "bg-[#ffbe0b]/25 text-[#ffe08a]" },
+  hard: { label: "Difícil", className: "bg-[#ff4d6d]/25 text-[#ffa3b5]" },
+} as const;
 
 type WordSet = "normal" | "adult";
 
@@ -287,7 +304,17 @@ function WordRow({ word, onResult }: { word: AdminWord; onResult: (r: ActionResu
       </button>
       <div className="min-w-0 flex-1">
         <div className={`truncate text-lg font-black ${word.active ? "" : "line-through"}`}>{word.word}</div>
-        <div className="text-xs font-extrabold uppercase tracking-wider text-white/50">{word.category}</div>
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-extrabold">
+          <span className="uppercase tracking-wider text-white/50">{word.category}</span>
+          {word.tier ? (
+            <span className={`rounded-full px-2 py-0.5 ${TIER_BADGE[word.tier].className}`}>{TIER_BADGE[word.tier].label}</span>
+          ) : (
+            <span className="rounded-full bg-white/10 px-2 py-0.5 text-white/50">Sin datos</span>
+          )}
+          <span className="text-white/40" title="Adivinada / mostrada / explotó">
+            ✅ {word.guessed} · 👀 {word.shown} · 💥 {word.failed}
+          </span>
+        </div>
       </div>
       <button
         disabled={pending}

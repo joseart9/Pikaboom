@@ -1,4 +1,5 @@
-export type WordEntry = { word: string; category: string };
+/** `id` and the counters come from the database; the bundled fallback list has none. */
+export type WordEntry = { word: string; category: string; id?: number; shown?: number; guessed?: number };
 
 // Lista local de respaldo; la misma lista se carga en Supabase (public.charades_words).
 const RAW: Record<string, string[]> = {

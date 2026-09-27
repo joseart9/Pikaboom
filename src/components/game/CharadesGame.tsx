@@ -19,7 +19,9 @@ import {
   vibrate,
 } from "@/game/audio";
 import { useAdultMode } from "@/game/adultMode";
+import { mixForLives } from "@/game/difficulty";
 import { loadWords, type WordSource } from "@/game/loadWords";
+import { flush as flushStats, recordFailed, recordGuessed, recordShown } from "@/game/stats";
 import { useBomb } from "@/game/useBomb";
 import { WordPicker } from "@/game/wordPicker";
 import { LOCAL_WORDS, type WordEntry } from "@/game/words";
@@ -174,16 +176,19 @@ export function CharadesGame() {
   const bonusId = useRef(0);
   const phaseRef = useRef(phase);
   const currentRef = useRef(current);
+  const chosenRef = useRef(chosen);
   useEffect(() => {
     phaseRef.current = phase;
     currentRef.current = current;
-  }, [phase, current]);
+    chosenRef.current = chosen;
+  }, [phase, current, chosen]);
 
   // Load persisted settings + word bank on mount.
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- hydrate from localStorage after mount
     setSettings(loadSettings());
     setMutedState(isMuted());
+    void flushStats(); // send any play stats left over from an offline game
   }, []);
 
   // Load the word bank for the current mode (normal / +18).
@@ -219,14 +224,22 @@ export function CharadesGame() {
     }
   }, [settings]);
 
-  const drawOptions = useCallback((exclude: string[] = []) => {
-    setOptions(picker.current?.draw(WORD_OPTIONS, exclude) ?? []);
-    setChosen(null);
-  }, []);
+  /** 4 new options for `team`: harder while it has all its lives, easier as it loses them. */
+  const drawOptions = useCallback(
+    (team: Team | undefined, exclude: string[] = []) => {
+      const mix = mixForLives(team?.lives ?? settings.lives, settings.lives);
+      const drawn = picker.current?.draw(mix, exclude) ?? [];
+      recordShown(drawn.map((w) => w.id));
+      setOptions(drawn);
+      setChosen(null);
+    },
+    [settings.lives],
+  );
 
   // ── explosion ──
   const handleExplode = useCallback(() => {
     const victim = currentRef.current;
+    recordFailed(chosenRef.current?.id); // the word being acted when it blew up
     playExplosion();
     vibrate([300, 80, 400]);
     setLastExploded(victim);
@@ -278,7 +291,7 @@ export function CharadesGame() {
   const startRound = () => {
     unlockAudio();
     playClick();
-    drawOptions();
+    drawOptions(teams[current]);
     setPaused(false);
     setPhase("playing");
     const lo = Math.min(settings.minSeconds, settings.maxSeconds);
@@ -304,19 +317,21 @@ export function CharadesGame() {
     playWhoosh();
     playPenalty(seconds);
     setBonus({ id: ++bonusId.current, seconds: -seconds });
-    drawOptions(options.map((o) => o.word));
+    drawOptions(teams[current], options.map((o) => o.word));
   };
 
   const nextTeam = () => {
     if (!chosen) return;
+    recordGuessed(chosen.id);
     const seconds = BONUS_POOL[randInt(0, BONUS_POOL.length - 1)];
     bomb.addTime(seconds);
     if (seconds > 0) playBonus(seconds);
     else playNothing();
     setBonus({ id: ++bonusId.current, seconds });
     setTeams((ts) => ts.map((t, i) => (i === current ? { ...t, guessed: t.guessed + 1 } : t)));
-    setCurrent((c) => nextAlive(teams, c));
-    drawOptions();
+    const next = nextAlive(teams, current);
+    setCurrent(next);
+    drawOptions(teams[next]);
   };
 
   const nextRound = () => {
