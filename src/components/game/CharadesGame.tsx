@@ -33,8 +33,23 @@ import { Explosion } from "./Explosion";
 
 const TEAM_COLORS = ["#ff4d6d", "#3a86ff", "#06d6a0", "#ffbe0b", "#b15eff", "#fb5607", "#00bbf9", "#f15bb5"];
 const TEAM_EMOJI = ["🦊", "🐙", "🦖", "🐝", "🦄", "🐯", "🐬", "🐸"];
-/** Seconds added on "Next team" — 0 means no bonus this time. */
-const BONUS_POOL = [0, 1, 5, 10, 20];
+/** Seconds added on "Siguiente equipo" and how likely each is (weights add up to 100). */
+const BONUS_ODDS: [seconds: number, weight: number][] = [
+  [0, 60],
+  [1, 20],
+  [5, 10],
+  [10, 8],
+  [20, 2],
+];
+
+function rollBonus() {
+  const total = BONUS_ODDS.reduce((sum, [, w]) => sum + w, 0);
+  let r = Math.random() * total;
+  for (const [seconds, w] of BONUS_ODDS) {
+    if ((r -= w) < 0) return seconds;
+  }
+  return 0;
+}
 /** Seconds removed when asking for new words. */
 const PENALTY_POOL = [5, 10, 15];
 const WORD_OPTIONS = 4;
@@ -323,7 +338,7 @@ export function CharadesGame() {
   const nextTeam = () => {
     if (!chosen) return;
     recordGuessed(chosen.id);
-    const seconds = BONUS_POOL[randInt(0, BONUS_POOL.length - 1)];
+    const seconds = rollBonus();
     bomb.addTime(seconds);
     if (seconds > 0) playBonus(seconds);
     else playNothing();
