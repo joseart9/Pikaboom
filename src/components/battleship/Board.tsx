@@ -2,6 +2,7 @@
 
 import { memo, useRef } from "react";
 import { area, type Mark, rc, SHIP_INFO, type Ship, shipCells, type ShipType } from "@/game/battleship/logic";
+import { AbilityIcon } from "./icons";
 import { ShipSprite } from "./ships";
 import { MissileFlight, Reticle } from "./weapons";
 
@@ -60,11 +61,6 @@ function ShipShape({ ship, n, selected, lifted, enemy }: { ship: ShipLike; n: nu
       style={{ left: pct(ship.c), top: pct(ship.r), width: pct(h ? size : 1), height: pct(h ? 1 : size), filter: filters }}
     >
       <ShipSprite type={ship.type} size={size} vertical={!h} />
-      {sunk && (
-        <span className="absolute inset-0 grid place-items-center" style={icon(0.75)}>
-          ☠️
-        </span>
-      )}
     </div>
   );
 }
@@ -75,8 +71,8 @@ function MarkIcon({ mark, decoy }: { mark: Mark; decoy: boolean }) {
       return <span className="bs-mark-in block h-[28%] w-[28%] rounded-full bg-white/80 shadow" />;
     case "hit":
       return decoy ? (
-        <span className="bs-mark-in" style={icon(0.62)}>
-          🎭
+        <span className="bs-mark-in block h-[78%] w-[78%]">
+          <AbilityIcon id="decoy" className="h-full w-full" />
         </span>
       ) : (
         <span className="bs-mark-in bs-flicker" style={icon(0.75)}>
@@ -218,8 +214,8 @@ export const Board = memo(function Board({
             className="bs-shield-zone pointer-events-none absolute z-[2] rounded-lg border-2 border-[#7df9ff]"
             style={{ left: pct(c0), top: pct(r0), width: pct(c1 - c0 + 1), height: pct(r1 - r0 + 1) }}
           >
-            <span className="absolute right-0.5 top-0.5" style={icon(0.5)}>
-              🛡️
+            <span className="absolute right-0.5 top-0.5 block" style={{ width: "calc(var(--cell) * .55)", height: "calc(var(--cell) * .55)" }}>
+              <AbilityIcon id="shield" className="h-full w-full" />
             </span>
           </div>
         );
@@ -252,10 +248,14 @@ export const Board = memo(function Board({
             >
               {intel === 1 && !mark && <span className="bs-target absolute inset-[14%] rounded-md border-2 border-dashed border-[#ffe066] bg-[#ffe066]/15" />}
               {intel === 0 && !mark && <span className="absolute h-[16%] w-[16%] rounded-full bg-[#ffe066]/50" />}
-              {mineSet.has(i) && !mark && <span style={icon(0.6)}>💣</span>}
+              {mineSet.has(i) && !mark && (
+                <span className="block h-[72%] w-[72%]">
+                  <AbilityIcon id="mine" className="h-full w-full" />
+                </span>
+              )}
               {decoySet.has(i) && !mark && (
-                <span className="opacity-90" style={icon(0.6)}>
-                  🎭
+                <span className="block h-[78%] w-[78%] opacity-90">
+                  <AbilityIcon id="decoy" className="h-full w-full" />
                 </span>
               )}
               {mark && <MarkIcon mark={mark} decoy={decoyHitSet.has(i)} />}
@@ -268,6 +268,29 @@ export const Board = memo(function Board({
           );
         })}
       </div>
+      {/* sunk ships: the skull sits above the flames so it's always readable */}
+      {shown
+        .filter((s) => s.sunk)
+        .map((s) => {
+          const size = SHIP_INFO[s.type].size;
+          const h = s.dir === "h";
+          return (
+            <span
+              key={`skull-${s.type}`}
+              className="bs-mark-in pointer-events-none absolute z-[4] grid place-items-center rounded-full border-2 border-[#ff4d6d] bg-[#1d0842]/85 shadow-[0_0_10px_rgb(0_0_0/.6)]"
+              style={{
+                left: pct(s.c + (h ? size : 1) / 2),
+                top: pct(s.r + (h ? 1 : size) / 2),
+                width: "calc(var(--cell) * 1.05)",
+                height: "calc(var(--cell) * 1.05)",
+                transform: "translate(-50%, -50%)",
+                ...icon(0.68),
+              }}
+            >
+              ☠️
+            </span>
+          );
+        })}
       {fx?.map((f) => <Fx key={f.id} fx={f} n={n} enemy={enemy} />)}
     </div>
   );

@@ -15,6 +15,7 @@ import {
   SHIP_INFO,
   type ShipType,
 } from "@/game/battleship/logic";
+import { AbilityIcon } from "./icons";
 import { ShipSprite } from "./ships";
 
 export type Tool = "shot" | AbilityId;
@@ -89,7 +90,7 @@ function Tile({
         }`}
         style={{ WebkitTouchCallout: "none", userSelect: "none" }}
       >
-        <span className="text-2xl leading-none">💥</span>
+        <AbilityIcon id="shot" className="h-8 w-8" />
         <span className="text-[10px] font-black leading-none">Disparo</span>
         <span className="text-[10px] font-black leading-none text-white/50">∞</span>
       </button>
@@ -120,8 +121,8 @@ function Tile({
       {block?.reason === "cooldown" && (
         <span className="absolute inset-x-0 bottom-0 transition-[height] duration-700" style={{ height: `${charge * 100}%`, background: `${color}40` }} />
       )}
-      <span className="relative grid h-[18px] place-items-center">
-        <span className={`text-lg leading-none ${block ? "opacity-35 grayscale" : ""}`}>{info.emoji}</span>
+      <span className="relative grid h-[22px] place-items-center">
+        <AbilityIcon id={id} className={`h-[22px] w-[22px] ${block ? "opacity-35 grayscale" : ""}`} />
         {/* turns left until it's ready, right over the icon */}
         {block?.reason === "cooldown" && (
           <span className="absolute inset-0 grid place-items-center font-display text-base leading-none text-white" style={{ textShadow: "0 1px 2px #1d0842" }}>
@@ -209,7 +210,9 @@ export function AbilityDetail({ tool, me, onClose, onPick }: { tool: Tool; me: M
     return (
       <Sheet onClose={onClose}>
         <div className="flex items-center gap-3">
-          <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/10 text-4xl">💥</span>
+          <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white/10">
+            <AbilityIcon id="shot" className="h-11 w-11" />
+          </span>
           <div>
             <h2 className="font-display text-3xl leading-none">Disparo</h2>
             <p className="text-xs font-bold text-white/60">Siempre disponible</p>
@@ -237,8 +240,8 @@ export function AbilityDetail({ tool, me, onClose, onPick }: { tool: Tool; me: M
   return (
     <Sheet onClose={onClose}>
       <div className="flex items-center gap-3">
-        <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl text-4xl" style={{ background: `${kindColor(info.kind)}33` }}>
-          {info.emoji}
+        <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl" style={{ background: `${kindColor(info.kind)}33` }}>
+          <AbilityIcon id={tool} className="h-11 w-11" />
         </span>
         <div className="min-w-0">
           <h2 className="font-display text-3xl leading-none">{info.name}</h2>
@@ -333,7 +336,7 @@ export function HelpSheet({ onClose }: { onClose: () => void }) {
               {ABILITIES.filter((a) => a.ship === f.type).map((a) => (
                 <div key={a.id} className="flex gap-2.5 rounded-2xl bg-white/5 p-2">
                   <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl text-2xl" style={{ background: `${kindColor(a.kind)}33` }}>
-                    {a.emoji}
+                    <AbilityIcon id={a.id} className="h-9 w-9" />
                   </span>
                   <div className="flex min-w-0 flex-col gap-1">
                     <span className="font-display text-lg leading-none">{a.name}</span>

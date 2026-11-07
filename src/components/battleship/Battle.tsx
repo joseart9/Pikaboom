@@ -5,6 +5,7 @@ import { playClick, playError, playPick } from "@/game/audio";
 import { type Action, ABILITY_INFO, abilityBlock, area, isFinal, rc, shipCells, type View } from "@/game/battleship/logic";
 import { AbilityBar, AbilityDetail, type Tool } from "./Abilities";
 import { Board, type CellFx } from "./Board";
+import { AbilityIcon } from "./icons";
 import { NO_ZOOM, type Zoom, zoomAt, ZoomPan } from "./ZoomPan";
 
 export type Tab = "enemy" | "own";
@@ -18,24 +19,22 @@ function sideOf(tool: Tool): "enemy" | "own" | "none" {
 
 function actionText(tool: Tool) {
   switch (tool) {
-    case "shot":
-      return "🚀 ¡FUEGO!";
     case "sonar":
-      return "📡 ESCANEAR";
+      return "ESCANEAR";
     case "repair":
-      return "🔧 REPARAR";
+      return "REPARAR";
     case "shield":
-      return "🛡️ PROTEGER";
+      return "PROTEGER";
     case "mine":
-      return "💣 PONER MINA";
+      return "PONER MINA";
     case "decoy":
-      return "🎭 PONER SEÑUELO";
+      return "SEÑUELO";
     case "double":
-      return "🎯 ACTIVAR DOBLE";
+      return "ACTIVAR DOBLE";
     case "ciws":
-      return "🚨 ARMAR CIWIS";
+      return "ARMAR CIWIS";
     default:
-      return `${ABILITY_INFO[tool].emoji} ¡FUEGO!`;
+      return "¡FUEGO!";
   }
 }
 
@@ -353,7 +352,18 @@ export function Battle({
         className="pb-btn h-16 w-full shrink-0 flex-col gap-0 leading-none"
         style={{ ["--btn" as string]: myTurn ? "#ff4d6d" : "#b9a6ff" }}
       >
-        <span className="text-3xl leading-none">{busy ? "⏳ Enviando…" : myTurn ? actionText(tool) : "Esperando…"}</span>
+        <span className="flex items-center gap-2 text-3xl leading-none">
+          {busy ? (
+            "⏳ Enviando…"
+          ) : myTurn ? (
+            <>
+              <AbilityIcon id={tool} className="h-8 w-8 drop-shadow" />
+              {actionText(tool)}
+            </>
+          ) : (
+            "Esperando…"
+          )}
+        </span>
         <span className="mt-0.5 max-w-full truncate px-2 font-sans text-[11px] font-black opacity-75">{subline}</span>
       </button>
 

@@ -19,6 +19,7 @@ import {
   type View,
 } from "@/game/battleship/logic";
 import { Board } from "./Board";
+import { AbilityIcon } from "./icons";
 import { Radar } from "./bits";
 
 function overlaps(fleet: P[], p: P, n: number) {
@@ -248,7 +249,13 @@ export function Placement({ view, act, busy, onError }: { view: View; act: (a: A
               ))}
             </span>
             {s.name}
-            {arcade && <span className="tracking-tighter">{SHIP_ABILITIES[s.type].map((a) => ABILITY_INFO[a].emoji).join("")}</span>}
+            {arcade && (
+              <span className="flex" title={SHIP_ABILITIES[s.type].map((a) => ABILITY_INFO[a].name).join(" · ")}>
+                {SHIP_ABILITIES[s.type].map((a) => (
+                  <AbilityIcon key={a} id={a} className="h-4 w-4" />
+                ))}
+              </span>
+            )}
           </button>
         ))}
       </div>
