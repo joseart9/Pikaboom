@@ -235,7 +235,7 @@ export function Battle({
       <div className="grid shrink-0 grid-cols-2 gap-2">
         {[
           { name: `${me.name} (tú)`, left: shipsLeft, active: myTurn, color: "#00bbf9", online: true, ciws: me.ciws, shots: myTurn ? view.shotsLeft : 1 },
-          { name: foe.name, left: foe.shipsLeft, active: !myTurn, color: "#ff4d6d", online: foeOnline, ciws: foe.ciws, shots: !myTurn ? view.shotsLeft : 1 },
+          { name: foe.name, left: foe.shipsLeft, active: !myTurn, color: "#ff4d6d", online: foeOnline, ciws: false, shots: !myTurn ? view.shotsLeft : 1 },
         ].map((p, i) => (
           <div
             key={i}

@@ -288,13 +288,9 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
                 if (e.target !== undefined) addFx("own", [e.target], "place");
               } else showToast(`🎭 ${foeName} desplegó un señuelo… no todo lo que arde es un barco`);
               break;
-            case "ciws":
+            case "ciws": // the rival never receives this event: CIWIS is armed in secret
               playPowerUp();
-              popUp(
-                mine
-                  ? { text: "🚨 CIWIS", sub: "Derribará la próxima arma especial", color: "#7df9ff", small: true }
-                  : { text: "🚨 CIWIS", sub: `${foeName} derribará tu próxima arma especial`, color: "#7df9ff", small: true },
-              );
+              popUp({ text: "🚨 CIWIS", sub: "Armado en secreto: derribará la próxima arma especial", color: "#7df9ff", small: true });
               break;
           }
           break;

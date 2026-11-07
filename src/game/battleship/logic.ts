@@ -184,7 +184,7 @@ export const ABILITIES: AbilityInfo[] = [
     cooldown: 10,
     uses: 2,
     desc: "Derriba la próxima arma especial del rival.",
-    long: "Arma tu defensa antiaérea: la próxima habilidad de ataque que use el rival (bombardero, cruz, torpedo o doble disparo) es destruida y no hace nada. Los disparos normales no la activan.",
+    long: "Arma tu defensa antiaérea: la próxima habilidad de ataque que use el rival (bombardero, cruz, torpedo o doble disparo) es destruida y no hace nada. Tu rival no se entera de que lo armaste hasta que lo derriba. Los disparos normales no la activan.",
     target: "none",
   },
 ];
@@ -812,8 +812,6 @@ export type FoeView = {
   shipsLeft: number;
   /** What the rival's sonar found on your board. */
   scan: Record<string, 0 | 1>;
-  /** The rival has CIWIS armed. */
-  ciws: boolean;
   rematch: boolean;
   stats: Stats;
   online: boolean;
@@ -848,7 +846,8 @@ export function viewFor(state: GameState, seat: Seat, code: string, version: num
   void _applied;
   const f = s.players[(1 - seat) as Seat];
   const reveal = s.phase === "over";
-  const events = s.events.map((e) => {
+  // Arming CIWIS is a secret: the rival only finds out when it shoots something down.
+  const events = s.events.filter((e) => !(e.by !== seat && e.kind === "ability" && e.ability === "ciws")).map((e) => {
     if (e.by === seat) return e.decoyHit ? { ...e, decoyHit: undefined } : e; // you never learn you hit a decoy
     // Hide the opponent's secret placements.
     if (e.kind === "ability" && e.ability && SECRET_TARGETS.includes(e.ability)) return { ...e, target: undefined };
@@ -879,7 +878,6 @@ export function viewFor(state: GameState, seat: Seat, code: string, version: num
           ships: f.ships.filter((sh) => reveal || sh.sunk),
           shipsLeft: f.ships.filter((sh) => !sh.sunk).length,
           scan: f.sonar,
-          ciws: f.ciws,
           rematch: f.rematch,
           stats: f.stats,
           online: foeOnline,
