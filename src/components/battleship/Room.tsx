@@ -163,13 +163,21 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
       if (e.kind === "fire" && e.intercepted) {
         if (!mine) setTab("own");
         playLaunch();
-        if (e.target !== undefined) addFx(board, [e.target], "intercept");
+        // A torpedo can run a few cells before it reaches a SAM zone.
+        const results = e.results ?? [];
+        const marks = new Map(results);
+        if (results.length) addFx(board, results.map(([c]) => c), (c) => markFx(marks.get(c)!));
+        const at = e.at ?? e.target;
+        if (at !== undefined) addFx(board, [at], "intercept");
+        const weapon = abilityName(e.weapon as AbilityId);
+        const system = e.interceptedBy === "sam" ? "SAM" : "CIWIS";
         later(IMPACT_MS, () => {
+          reveal(board, results.map(([c]) => c));
           playExplosion();
           vibrate([60, 40, 60]);
           popUp({
             text: "¡DERRIBADO!",
-            sub: mine ? `El CIWIS de ${foeName} destruyó tu ${abilityName(e.weapon as AbilityId)}` : `Tu CIWIS destruyó su ${abilityName(e.weapon as AbilityId)}`,
+            sub: mine ? `Un ${system} de ${foeName} destruyó tu ${weapon}` : `Tu ${system} destruyó su ${weapon}`,
             color: "#7df9ff",
             small: true,
           });
@@ -270,11 +278,10 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
               }
               break;
             }
-            case "shield":
-              if (mine) {
-                playPowerUp();
-                if (e.target !== undefined) addFx("own", [e.target], "place");
-              } else showToast(`🛡️ ${foeName} levantó un escudo en algún lugar de su mar`);
+            case "sam": // the rival never receives this event: the SAM is deployed in secret
+              playPowerUp();
+              if (e.target !== undefined) addFx("own", [e.target], "place");
+              popUp({ text: "🛡️ SAM", sub: "Zona 5×5 protegida durante 4 turnos del rival", color: "#7df9ff", small: true });
               break;
             case "mine":
               if (mine) {

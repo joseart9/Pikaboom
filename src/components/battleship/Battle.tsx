@@ -23,8 +23,8 @@ function actionText(tool: Tool) {
       return "ESCANEAR";
     case "repair":
       return "REPARAR";
-    case "shield":
-      return "PROTEGER";
+    case "sam":
+      return "DESPLEGAR SAM";
     case "mine":
       return "PONER MINA";
     case "decoy":
@@ -42,8 +42,8 @@ function hint(tool: Tool) {
   switch (tool) {
     case "repair":
       return "Toca en tu flota el barco dañado o hundido";
-    case "shield":
-      return "Toca en tu mapa el centro de la zona a proteger";
+    case "sam":
+      return "Toca en tu mapa el centro de la zona 5×5 a proteger";
     case "mine":
     case "decoy":
       return "Toca agua libre de tu mapa";
@@ -133,11 +133,8 @@ export function Battle({
       case "torpedo":
       case "sonar":
         return { preview: area(tool, target, n), previewOk: true };
-      case "shield": {
-        const zone = area("shield", target, n);
-        const clash = me.shields.some((c) => area("shield", c, n).some((x) => zone.includes(x)));
-        return { preview: zone, previewOk: !clash };
-      }
+      case "sam":
+        return { preview: area("sam", target, n), previewOk: true };
       case "repair":
         return repairShip ? { preview: shipCells(repairShip, n), previewOk: repairShip.hits.length > 0 } : { preview: [target], previewOk: false };
       case "mine":
@@ -327,7 +324,7 @@ export function Battle({
                 mines={me.mines}
                 decoys={me.decoys}
                 decoyHits={me.decoyHits}
-                shields={me.shields}
+                sam={me.sam}
                 preview={side === "own" ? preview : []}
                 previewOk={previewOk}
                 selected={side === "own" ? target : null}

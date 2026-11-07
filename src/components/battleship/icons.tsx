@@ -115,22 +115,40 @@ const Air: Draw = ({ uid }) => (
   </>
 );
 
-const Shield: Draw = ({ uid }) => (
+const Sam: Draw = ({ uid }) => (
   <>
     <defs>
-      <linearGradient id={`${uid}-sh`} x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stopColor="#c8fdff" />
-        <stop offset="0.45" stopColor="#3fd6f0" />
-        <stop offset="1" stopColor="#0077a8" />
+      <linearGradient id={`${uid}-box`} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stopColor="#7d8b99" />
+        <stop offset="1" stopColor="#3a434d" />
       </linearGradient>
     </defs>
-    <path d="M32 4 L55 12 V30 Q55 49 32 60 Q9 49 9 30 V12 Z" fill={`url(#${uid}-sh)`} stroke="#0b2f45" strokeWidth="2.4" strokeLinejoin="round" />
-    <path d="M32 9.5 L50 16 V30 Q50 45 32 54.5 Q14 45 14 30 V16 Z" fill="none" stroke="#e8fdff" strokeWidth="1.6" opacity="0.8" />
-    {/* the 3×3 zone it protects */}
-    {[0, 1, 2].flatMap((r) =>
-      [0, 1, 2].map((c) => <rect key={`${r}${c}`} x={21 + c * 8} y={18 + r * 8} width="6" height="6" rx="1.4" fill="#ffffff" opacity={r === 1 && c === 1 ? 0.95 : 0.55} />),
-    )}
-    <path d="M14 16 L32 9.5 V30 Q22 26 14 30 Z" fill="#ffffff" opacity="0.18" />
+    {/* protective umbrella */}
+    <path d="M4 54 A28 28 0 0 1 60 54" fill="rgb(125 249 255 / .14)" stroke="#7df9ff" strokeWidth="2.2" strokeDasharray="5 3.5" strokeLinecap="round" />
+    {/* missile leaving the launcher */}
+    <g transform="rotate(-50 46 14)">
+      <path d="M34 14 Q28 12 22 14 Q28 16 34 14 Z" fill={`url(#${uid}-flame)`} transform="translate(0 0)" />
+      <rect x="34" y="11.5" width="14" height="5" rx="1.5" fill={`url(#${uid}-steel)`} stroke={OUTLINE} strokeWidth="1" />
+      <path d="M48 11.5 Q54 12.5 55 14 Q54 15.5 48 16.5 Z" fill="#e63946" stroke={OUTLINE} strokeWidth="1" />
+      <path d="M35 11.5 L33 8.5 H36 L39 11.5 Z M35 16.5 L33 19.5 H36 L39 16.5 Z" fill="#4b5560" stroke={OUTLINE} strokeWidth="0.7" />
+    </g>
+    {/* deck + turntable */}
+    <rect x="10" y="51" width="44" height="8" rx="2" fill="#5d6874" stroke={OUTLINE} strokeWidth="1.4" />
+    <path d="M18 51 L22 43 H42 L46 51 Z" fill={`url(#${uid}-steel)`} stroke={OUTLINE} strokeWidth="1.4" strokeLinejoin="round" />
+    {/* launcher box with two ready missiles */}
+    <g transform="rotate(-35 30 42)">
+      <rect x="47" y="31.5" width="9" height="4.6" rx="1" fill={`url(#${uid}-steel)`} stroke={OUTLINE} strokeWidth="0.9" />
+      <path d="M56 31.5 Q60.5 32.5 61 33.8 Q60.5 35.1 56 36.1 Z" fill="#e63946" stroke={OUTLINE} strokeWidth="0.9" />
+      <rect x="47" y="38.4" width="9" height="4.6" rx="1" fill={`url(#${uid}-steel)`} stroke={OUTLINE} strokeWidth="0.9" />
+      <path d="M56 38.4 Q60.5 39.4 61 40.7 Q60.5 42 56 43 Z" fill="#e63946" stroke={OUTLINE} strokeWidth="0.9" />
+      <rect x="18" y="29" width="31" height="16" rx="2.5" fill={`url(#${uid}-box)`} stroke={OUTLINE} strokeWidth="1.5" />
+      <path d="M26 29 V45 M34 29 V45 M42 29 V45" stroke="#26303b" strokeWidth="1.1" />
+      <path d="M20 32 H47" stroke="#c3ccd5" strokeWidth="1.2" strokeLinecap="round" opacity="0.7" />
+    </g>
+    {/* fire-control radar */}
+    <path d="M13 51 V40" stroke="#4b5560" strokeWidth="2" />
+    <path d="M7 35 Q13 43 19 35 Z" fill="#e8edf2" stroke={OUTLINE} strokeWidth="1.2" strokeLinejoin="round" />
+    <circle cx="13" cy="37" r="1.4" fill="#e63946" />
   </>
 );
 
@@ -357,7 +375,7 @@ const ICONS: Record<AbilityId | "shot", Draw> = {
   shot: Shot,
   double: Double,
   air: Air,
-  shield: Shield,
+  sam: Sam,
   repair: Repair,
   cross: Cross,
   mine: Mine,

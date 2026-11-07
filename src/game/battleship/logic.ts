@@ -5,6 +5,8 @@ export const CLASSIC_SIZE = 10;
 /** Arcade weapons clear the sea much faster, so its board is roughly twice the area. */
 export const ARCADE_SIZE = 14;
 const EVENT_LOG = 24;
+/** Enemy turns a SAM zone stays up. */
+export const SAM_TURNS = 4;
 const APPLIED_LOG = 40;
 
 export type Mode = "classic" | "arcade";
@@ -36,7 +38,7 @@ const FINAL_MARKS: Mark[] = ["miss", "hit", "mine"];
 // ───────────────────────── arcade abilities ─────────────────────────
 
 export type Weapon = "shot" | "cross" | "air" | "torpedo";
-export type AbilityId = "air" | "shield" | "double" | "repair" | "cross" | "mine" | "sonar" | "torpedo" | "decoy" | "ciws";
+export type AbilityId = "air" | "sam" | "double" | "repair" | "cross" | "mine" | "sonar" | "torpedo" | "decoy" | "ciws";
 
 export type AbilityInfo = {
   id: AbilityId;
@@ -71,16 +73,16 @@ export const ABILITIES: AbilityInfo[] = [
     target: "enemy",
   },
   {
-    id: "shield",
-    name: "Escudo",
-    short: "Escudo",
+    id: "sam",
+    name: "SAM",
+    short: "SAM",
     emoji: "🛡️",
     ship: "carrier",
     kind: "strategy",
     cooldown: 0,
-    uses: 2,
-    desc: "Protege una zona de 3×3 de tu mar.",
-    long: "Cubre 3×3 casillas de tu mapa con un escudo invisible. El primer ataque enemigo que caiga en esa zona rebota: no hace daño, no deja marca y el escudo se rompe.",
+    uses: 1,
+    desc: "Sistema de defensa antimisiles naval: zona de 5×5 durante 4 turnos.",
+    long: `Sistema de defensa antimisiles naval. Cubre 5×5 casillas de tu mapa durante los próximos ${SAM_TURNS} turnos del rival: cualquier arma especial (bombardero, misil en cruz o torpedo) que vaya a caer en esa zona es derribada y no hace daño. Los disparos normales sí pasan. Tu rival no ve la zona en su mapa ni se entera de que la desplegaste.`,
     target: "ownArea",
   },
   {
@@ -197,6 +199,9 @@ const WEAPON_ABILITIES: AbilityId[] = ["cross", "air", "torpedo"];
 
 export type AbilityState = { cd: number; left: number | null };
 
+/** An active SAM zone: its centre and how many enemy turns it still covers. */
+export type Sam = { center: number; left: number };
+
 /** Every ability starts half charged, so the big guns aren't all available on turn one. */
 export function freshAbilities(): Partial<Record<AbilityId, AbilityState>> {
   return Object.fromEntries(ABILITIES.map((a) => [a.id, { cd: Math.floor(a.cooldown / 2), left: a.uses }]));
@@ -215,8 +220,8 @@ export type PlayerState = {
   /** Active decoys, and decoys the enemy already "hit" (they show as a hit to the enemy). */
   decoys: number[];
   decoyHits: number[];
-  /** Centres of active 3×3 shields. */
-  shields: number[];
+  /** Active SAM zone (5×5), secret from the enemy. */
+  sam: Sam | null;
   /** CIWIS armed: the enemy's next attack ability is shot down. */
   ciws: boolean;
   abil: Partial<Record<AbilityId, AbilityState>>;
@@ -240,8 +245,11 @@ export type GameEvent = {
   sunk?: ShipType[];
   /** A mine blew up under the attacker's own fleet. */
   backfire?: { cell: number; mark: Mark; sunk?: ShipType };
-  /** The attack was shot down by the defender's CIWIS. */
+  /** The attack was shot down (by the defender's CIWIS or SAM). */
   intercepted?: boolean;
+  interceptedBy?: "ciws" | "sam";
+  /** Where it was shot down. */
+  at?: number;
   /** Cells that were really decoys (only the defender is told). */
   decoyHit?: number[];
   ship?: ShipType;
@@ -339,7 +347,7 @@ export function randomFleet(n: number): Placement[] {
   }
 }
 
-export type AreaKind = Weapon | "sonar" | "shield";
+export type AreaKind = Weapon | "sonar" | "sam";
 
 /** Cells an ability can affect when aimed at `cell` (the torpedo's path is decided when it runs). */
 export function area(kind: AreaKind, cell: number, n: number): number[] {
@@ -351,8 +359,9 @@ export function area(kind: AreaKind, cell: number, n: number): number[] {
       return pick([[0, 0], [-1, 0], [1, 0], [0, -1], [0, 1]]);
     case "air":
     case "sonar":
-    case "shield":
       return pick([-1, 0, 1].flatMap((dr) => [-1, 0, 1].map((dc) => [dr, dc] as [number, number])));
+    case "sam":
+      return pick([-2, -1, 0, 1, 2].flatMap((dr) => [-2, -1, 0, 1, 2].map((dc) => [dr, dc] as [number, number])));
     case "torpedo":
       return Array.from({ length: n }, (_, k) => idx(r, k, n));
     default:
@@ -381,7 +390,7 @@ export function cleanName(name: unknown, fallback: string) {
   return s || fallback;
 }
 
-type Board = Pick<PlayerState, "ready" | "ships" | "received" | "mines" | "decoys" | "decoyHits" | "shields" | "ciws" | "abil" | "sonar" | "stats" | "rematch">;
+type Board = Pick<PlayerState, "ready" | "ships" | "received" | "mines" | "decoys" | "decoyHits" | "sam" | "ciws" | "abil" | "sonar" | "stats" | "rematch">;
 
 function freshBoard(): Board {
   return {
@@ -391,7 +400,7 @@ function freshBoard(): Board {
     mines: [],
     decoys: [],
     decoyHits: [],
-    shields: [],
+    sam: null,
     ciws: false,
     abil: {},
     sonar: {},
@@ -428,9 +437,10 @@ function upgrade(s: GameState) {
     if (!p) continue;
     p.decoys ??= [];
     p.decoyHits ??= [];
-    p.shields ??= [];
+    p.sam ??= null;
     p.ciws ??= false;
     p.abil ??= s.mode === "arcade" && s.phase === "battle" ? freshAbilities() : {};
+    if (s.mode === "arcade" && s.phase === "battle" && !p.abil.sam) p.abil.sam = { cd: 0, left: 1 }; // Escudo became SAM
     p.mines ??= [];
     p.sonar ??= {};
     p.stats.used ??= 0;
@@ -475,6 +485,7 @@ function passTurn(s: GameState, seat: Seat) {
   s.turn = next;
   s.shotsLeft = 1;
   const p = s.players[next]!;
+  if (p.sam && --p.sam.left <= 0) p.sam = null;
   for (const a of ABILITIES) {
     const st = p.abil[a.id];
     if (!st || st.cd <= 0) continue;
@@ -517,7 +528,13 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
     spendAbility(me, weapon);
     if (foe.ciws) {
       foe.ciws = false;
-      pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true });
+      pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true, interceptedBy: "ciws", at: target });
+      return afterShot(s, seat, false);
+    }
+    // Bombs and cross missiles aimed so that any part lands in a SAM zone are shot down whole.
+    const zone = foe.sam ? area("sam", foe.sam.center, n) : [];
+    if (weapon !== "torpedo" && area(weapon, target, n).some((c) => zone.includes(c))) {
+      pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true, interceptedBy: "sam", at: target });
       return afterShot(s, seat, false);
     }
   } else if (isFinal(foe.received[target])) {
@@ -527,20 +544,11 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
   const results: [number, Result][] = [];
   const sunk: ShipType[] = [];
   const decoyHit: number[] = [];
-  const broken: number[] = []; // shields this attack already broke: the rest of the blast inside them is absorbed too
   let backfire: GameEvent["backfire"];
+  let samAt: number | undefined;
 
   const hitCell = (cell: number): "stop" | "go" => {
     if (isFinal(foe.received[cell])) return "go";
-    const shield = [...foe.shields, ...broken].find((ctr) => area("shield", ctr, n).includes(cell));
-    if (shield !== undefined) {
-      if (foe.shields.includes(shield)) {
-        foe.shields = foe.shields.filter((x) => x !== shield);
-        broken.push(shield);
-      }
-      results.push([cell, "blocked"]);
-      return "stop";
-    }
     if (foe.mines.includes(cell)) {
       foe.mines = foe.mines.filter((m) => m !== cell);
       foe.received[cell] = "mine";
@@ -580,15 +588,34 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
   };
 
   if (weapon === "torpedo") {
+    // The torpedo runs along the row; a SAM zone destroys it as soon as it gets there.
+    const zone = foe.sam ? area("sam", foe.sam.center, n) : [];
     const [r] = rc(target, n);
-    for (let c = 0; c < n; c++) if (hitCell(idx(r, c, n)) === "stop") break;
+    for (let c = 0; c < n; c++) {
+      const cell = idx(r, c, n);
+      if (zone.includes(cell)) {
+        samAt = cell;
+        break;
+      }
+      if (hitCell(cell) === "stop") break;
+    }
   } else {
     area(weapon, target, n).forEach(hitCell);
   }
 
   me.stats.shots += Math.max(1, results.filter(([, m]) => m !== "mine").length); // cells fired at, so precision stays ≤ 100%
   const anyHit = results.some(([, m]) => m === "hit");
-  pushEvent(s, { by: seat, kind: "fire", weapon, target, results, sunk, backfire, decoyHit: decoyHit.length ? decoyHit : undefined });
+  pushEvent(s, {
+    by: seat,
+    kind: "fire",
+    weapon,
+    target,
+    results,
+    sunk,
+    backfire,
+    decoyHit: decoyHit.length ? decoyHit : undefined,
+    ...(samAt !== undefined ? { intercepted: true, interceptedBy: "sam" as const, at: samAt } : {}),
+  });
   afterShot(s, seat, anyHit);
 }
 
@@ -639,12 +666,11 @@ function castAbility(s: GameState, seat: Seat, id: AbilityId, cell: number | und
       pushEvent(s, { by: seat, kind: "ability", ability: id, ship: ship.type, revived, cells });
       break;
     }
-    case "shield": {
+    case "sam": {
       const at = needCell();
-      const zone = area("shield", at, n);
-      if (me.shields.some((ctr) => area("shield", ctr, n).some((c) => zone.includes(c)))) throw new GameError("Se encima con tu otro escudo. Elige otra zona.");
       spendAbility(me, id);
-      me.shields.push(at);
+      // Ticks down at the start of each of our turns, so it covers the enemy's next SAM_TURNS turns.
+      me.sam = { center: at, left: SAM_TURNS };
       pushEvent(s, { by: seat, kind: "ability", ability: id, target: at });
       break;
     }
@@ -837,7 +863,9 @@ export type View = {
   foe: FoeView | null;
 };
 
-const SECRET_TARGETS: AbilityId[] = ["mine", "decoy", "shield"];
+const SECRET_TARGETS: AbilityId[] = ["mine", "decoy"];
+/** Abilities the rival never hears about. */
+const SECRET_ABILITIES: AbilityId[] = ["ciws", "sam"];
 
 export function viewFor(state: GameState, seat: Seat, code: string, version: number, foeOnline: boolean): View {
   const s = upgrade(structuredClone(state));
@@ -846,8 +874,8 @@ export function viewFor(state: GameState, seat: Seat, code: string, version: num
   void _applied;
   const f = s.players[(1 - seat) as Seat];
   const reveal = s.phase === "over";
-  // Arming CIWIS is a secret: the rival only finds out when it shoots something down.
-  const events = s.events.filter((e) => !(e.by !== seat && e.kind === "ability" && e.ability === "ciws")).map((e) => {
+  // Arming CIWIS or deploying a SAM is secret: the rival only finds out when it shoots something down.
+  const events = s.events.filter((e) => !(e.by !== seat && e.kind === "ability" && e.ability && SECRET_ABILITIES.includes(e.ability))).map((e) => {
     if (e.by === seat) return e.decoyHit ? { ...e, decoyHit: undefined } : e; // you never learn you hit a decoy
     // Hide the opponent's secret placements.
     if (e.kind === "ability" && e.ability && SECRET_TARGETS.includes(e.ability)) return { ...e, target: undefined };

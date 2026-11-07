@@ -1,7 +1,7 @@
 "use client";
 
 import { memo, useRef } from "react";
-import { area, type Mark, rc, SHIP_INFO, type Ship, shipCells, type ShipType } from "@/game/battleship/logic";
+import { area, type Mark, rc, type Sam, SHIP_INFO, type Ship, shipCells, type ShipType } from "@/game/battleship/logic";
 import { AbilityIcon } from "./icons";
 import { ShipSprite } from "./ships";
 import { MissileFlight, Reticle } from "./weapons";
@@ -22,8 +22,8 @@ type Props = {
   decoys?: number[];
   /** Our decoys the rival "hit" (they think it was a ship). */
   decoyHits?: number[];
-  /** Centres of our active 3×3 shields. */
-  shields?: number[];
+  /** Our active 5×5 SAM zone. */
+  sam?: Sam | null;
   /** Cells to preview (weapon area / ship ghost). */
   preview?: number[];
   previewOk?: boolean;
@@ -158,7 +158,7 @@ export const Board = memo(function Board({
   mines,
   decoys,
   decoyHits,
-  shields,
+  sam,
   preview,
   previewOk = true,
   selected,
@@ -201,25 +201,31 @@ export const Board = memo(function Board({
       {shown.map((s) => (
         <ShipShape key={s.type} ship={s} n={n} selected={selectedShip === s.type} lifted={dragShip === s.type} enemy={enemy} />
       ))}
-      {/* our 3×3 shields */}
-      {shields?.map((ctr) => {
-        const cells = area("shield", ctr, n).map((c) => rc(c, n));
-        const r0 = Math.min(...cells.map(([r]) => r));
-        const c0 = Math.min(...cells.map(([, c]) => c));
-        const r1 = Math.max(...cells.map(([r]) => r));
-        const c1 = Math.max(...cells.map(([, c]) => c));
-        return (
-          <div
-            key={ctr}
-            className="bs-shield-zone pointer-events-none absolute z-[2] rounded-lg border-2 border-[#7df9ff]"
-            style={{ left: pct(c0), top: pct(r0), width: pct(c1 - c0 + 1), height: pct(r1 - r0 + 1) }}
-          >
-            <span className="absolute right-0.5 top-0.5 block" style={{ width: "calc(var(--cell) * .55)", height: "calc(var(--cell) * .55)" }}>
-              <AbilityIcon id="shield" className="h-full w-full" />
-            </span>
-          </div>
-        );
-      })}
+      {/* our 5×5 SAM zone */}
+      {sam &&
+        (() => {
+          const cells = area("sam", sam.center, n).map((c) => rc(c, n));
+          const r0 = Math.min(...cells.map(([r]) => r));
+          const c0 = Math.min(...cells.map(([, c]) => c));
+          const r1 = Math.max(...cells.map(([r]) => r));
+          const c1 = Math.max(...cells.map(([, c]) => c));
+          return (
+            <div
+              className="bs-shield-zone pointer-events-none absolute z-[2] rounded-lg border-2 border-dashed border-[#7df9ff]"
+              style={{ left: pct(c0), top: pct(r0), width: pct(c1 - c0 + 1), height: pct(r1 - r0 + 1) }}
+            >
+              <span
+                className="absolute right-0.5 top-0.5 flex items-center gap-0.5 rounded-full bg-[#0b2f45]/85 pr-1 font-black leading-none text-[#7df9ff]"
+                style={{ fontSize: "calc(var(--cell) * .42)" }}
+              >
+                <span className="block" style={{ width: "calc(var(--cell) * .62)", height: "calc(var(--cell) * .62)" }}>
+                  <AbilityIcon id="sam" className="h-full w-full" />
+                </span>
+                {sam.left}
+              </span>
+            </div>
+          );
+        })()}
       <div className="absolute inset-0 z-[2] grid" style={{ gridTemplateColumns: `repeat(${n}, 1fr)`, gridTemplateRows: `repeat(${n}, 1fr)` }}>
         {Array.from({ length: n * n }, (_, i) => {
           const mark = pending.has(i) ? undefined : marks[i];
