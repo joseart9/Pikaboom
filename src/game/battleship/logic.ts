@@ -3,7 +3,7 @@
 
 export const CLASSIC_SIZE = 10;
 /** Arcade weapons clear the sea much faster, so its board is roughly twice the area. */
-export const ARCADE_SIZE = 14;
+export const ARCADE_SIZE = 15;
 const EVENT_LOG = 24;
 /** Enemy turns a SAM zone stays up. */
 export const SAM_TURNS = 4;
@@ -145,7 +145,7 @@ export const ABILITIES: AbilityInfo[] = [
     ship: "submarine",
     kind: "strategy",
     cooldown: 6,
-    uses: null,
+    uses: 3,
     desc: "Revela barcos en un área de 3×3, sin dañarlos.",
     long: "Escanea un cuadro de 3×3 del mar enemigo y marca dónde hay barcos. Tu rival verá qué zona escaneaste y si encontraste algo.",
     target: "enemy",
