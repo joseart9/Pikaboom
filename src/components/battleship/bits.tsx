@@ -59,7 +59,7 @@ export function Pop({ pop, onDone }: { pop: PopMsg | null; onDone: () => void })
         >
           {pop.text}
         </span>
-        {pop.sub && <span className="mt-1 text-2xl">{pop.sub}</span>}
+        {pop.sub && <span className="mt-1 w-[88vw] max-w-sm whitespace-normal text-2xl leading-tight">{pop.sub}</span>}
       </div>
     </div>
   );

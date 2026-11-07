@@ -1,10 +1,9 @@
 // Batalla Naval — pure game rules shared by the server (authoritative) and the client (previews).
 // No I/O here: the server loads a GameState, runs applyAction() and saves it back.
 
-export const SIZE = 10;
-export const CELLS = SIZE * SIZE;
-export const MAX_MINES = 3;
-export const TREASURES = 3;
+export const CLASSIC_SIZE = 10;
+/** Arcade weapons clear the sea much faster, so its board is roughly twice the area. */
+export const ARCADE_SIZE = 14;
 const EVENT_LOG = 24;
 const APPLIED_LOG = 40;
 
@@ -13,6 +12,8 @@ export type Phase = "lobby" | "placing" | "battle" | "over";
 export type Dir = "h" | "v";
 export type Seat = 0 | 1;
 export type ShipType = "carrier" | "battleship" | "cruiser" | "submarine" | "destroyer";
+
+export const sizeFor = (mode: Mode) => (mode === "arcade" ? ARCADE_SIZE : CLASSIC_SIZE);
 
 export const FLEET: { type: ShipType; name: string; size: number }[] = [
   { type: "carrier", name: "Portaaviones", size: 5 },
@@ -24,43 +25,184 @@ export const FLEET: { type: ShipType; name: string; size: number }[] = [
 export const SHIP_INFO = Object.fromEntries(FLEET.map((s) => [s.type, s])) as Record<ShipType, (typeof FLEET)[number]>;
 
 export type Placement = { type: ShipType; r: number; c: number; dir: Dir };
-export type Ship = Placement & { hits: number[]; sunk: boolean; shield: boolean };
+export type Ship = Placement & { hits: number[]; sunk: boolean };
 
-/** What the attacker learned about a cell. "repaired" and "blocked" can be shot again. */
-export type Mark = "miss" | "hit" | "repaired" | "blocked" | "mine" | "treasure";
-const FINAL_MARKS: Mark[] = ["miss", "hit", "mine", "treasure"];
+/** What the attacker learned about a cell. "repaired" (a fixed hit) can be shot again. */
+export type Mark = "miss" | "hit" | "repaired" | "mine";
+/** One cell of an attack. "blocked" = it hit a shield: no mark is left and the cell can be shot again. */
+export type Result = Mark | "blocked";
+const FINAL_MARKS: Mark[] = ["miss", "hit", "mine"];
+
+// ───────────────────────── arcade abilities ─────────────────────────
 
 export type Weapon = "shot" | "cross" | "air" | "torpedo";
-export type ItemId = "cross" | "air" | "torpedo" | "double" | "sonar" | "repair" | "shield" | "mine";
+export type AbilityId = "air" | "shield" | "double" | "repair" | "cross" | "mine" | "sonar" | "torpedo" | "decoy" | "ciws";
 
-export type ItemInfo = {
-  id: ItemId;
+export type AbilityInfo = {
+  id: AbilityId;
   name: string;
+  short: string;
   emoji: string;
-  price: number;
+  ship: ShipType;
+  /** Attack abilities use your shot; strategy abilities end your turn. */
+  kind: "attack" | "strategy";
+  /** Own turns to wait after using it (0 = none). */
+  cooldown: number;
+  /** Total uses per game (null = unlimited). */
+  uses: number | null;
   desc: string;
+  long: string;
   /** Where you aim it. */
-  target: "enemy" | "ownHit" | "ownShip" | "ownWater" | "none";
-  /** Firing weapons use up the shot; tactical items don't. */
-  endsTurn: boolean;
+  target: "enemy" | "ownShip" | "ownWater" | "ownArea" | "none";
 };
 
-export const ITEMS: ItemInfo[] = [
-  { id: "cross", name: "Misil en cruz", emoji: "✳️", price: 120, desc: "Golpea 5 casillas en forma de +.", target: "enemy", endsTurn: true },
-  { id: "air", name: "Bombardeo 3×3", emoji: "✈️", price: 220, desc: "Arrasa un cuadro de 3×3 casillas.", target: "enemy", endsTurn: true },
-  { id: "torpedo", name: "Torpedo", emoji: "🚀", price: 90, desc: "Recorre una fila desde la izquierda y pega en el primer barco que encuentre.", target: "enemy", endsTurn: true },
-  { id: "double", name: "Doble disparo", emoji: "🎯", price: 80, desc: "Este turno disparas dos veces.", target: "none", endsTurn: false },
-  { id: "sonar", name: "Sonar", emoji: "📡", price: 70, desc: "Revela si hay barcos en un área de 3×3 (sin dañar). No gasta tu turno.", target: "enemy", endsTurn: false },
-  { id: "repair", name: "Kit de reparación", emoji: "🔧", price: 90, desc: "Repara una casilla dañada de un barco tuyo (no hundido). No gasta tu turno.", target: "ownHit", endsTurn: false },
-  { id: "shield", name: "Escudo", emoji: "🛡️", price: 110, desc: "Protege un barco de su próximo impacto. No gasta tu turno.", target: "ownShip", endsTurn: false },
-  { id: "mine", name: "Mina naval", emoji: "💣", price: 100, desc: "Escóndela en tu agua. Si el rival le dispara, ¡daña uno de SUS barcos!", target: "ownWater", endsTurn: false },
+export const ABILITIES: AbilityInfo[] = [
+  {
+    id: "air",
+    name: "Bombardero",
+    short: "Bombardero",
+    emoji: "✈️",
+    ship: "carrier",
+    kind: "attack",
+    cooldown: 10,
+    uses: 3,
+    desc: "Arrasa un cuadro de 3×3 casillas.",
+    long: "Tus aviones bombardean un cuadro de 3×3 en el mar enemigo y golpean las 9 casillas a la vez.",
+    target: "enemy",
+  },
+  {
+    id: "shield",
+    name: "Escudo",
+    short: "Escudo",
+    emoji: "🛡️",
+    ship: "carrier",
+    kind: "strategy",
+    cooldown: 0,
+    uses: 2,
+    desc: "Protege una zona de 3×3 de tu mar.",
+    long: "Cubre 3×3 casillas de tu mapa con un escudo invisible. El primer ataque enemigo que caiga en esa zona rebota: no hace daño, no deja marca y el escudo se rompe.",
+    target: "ownArea",
+  },
+  {
+    id: "double",
+    name: "Doble disparo",
+    short: "Doble",
+    emoji: "🎯",
+    ship: "battleship",
+    kind: "attack",
+    cooldown: 3,
+    uses: null,
+    desc: "Este turno disparas dos veces.",
+    long: "Activa el doble disparo y tendrás dos tiros en este turno. Cada tiro puede ser un disparo normal o cualquier arma lista.",
+    target: "none",
+  },
+  {
+    id: "repair",
+    name: "Kit de reparación",
+    short: "Reparar",
+    emoji: "🔧",
+    ship: "battleship",
+    kind: "strategy",
+    cooldown: 0,
+    uses: 1,
+    desc: "Repara por completo un barco, incluso hundido.",
+    long: "Deja como nuevo uno de tus barcos, aunque esté hundido, y recupera sus habilidades. Las casillas que el rival ya había golpeado se quedan en rojo, pero pueden volver a recibir daño.",
+    target: "ownShip",
+  },
+  {
+    id: "cross",
+    name: "Misil en cruz",
+    short: "Cruz",
+    emoji: "✳️",
+    ship: "cruiser",
+    kind: "attack",
+    cooldown: 6,
+    uses: null,
+    desc: "Golpea 5 casillas en forma de +.",
+    long: "Un misil que se abre en cruz: golpea la casilla elegida y las cuatro de arriba, abajo, izquierda y derecha.",
+    target: "enemy",
+  },
+  {
+    id: "mine",
+    name: "Mina naval",
+    short: "Mina",
+    emoji: "💣",
+    ship: "cruiser",
+    kind: "strategy",
+    cooldown: 5,
+    uses: 3,
+    desc: "Esconde una mina en tu agua.",
+    long: "Escóndela en agua libre de tu mapa. Si el rival le dispara, la explosión rebota y daña una casilla al azar de SU flota.",
+    target: "ownWater",
+  },
+  {
+    id: "sonar",
+    name: "Sonar",
+    short: "Sonar",
+    emoji: "📡",
+    ship: "submarine",
+    kind: "strategy",
+    cooldown: 6,
+    uses: null,
+    desc: "Revela barcos en un área de 3×3, sin dañarlos.",
+    long: "Escanea un cuadro de 3×3 del mar enemigo y marca dónde hay barcos. Tu rival verá qué zona escaneaste y si encontraste algo.",
+    target: "enemy",
+  },
+  {
+    id: "torpedo",
+    name: "Torpedo",
+    short: "Torpedo",
+    emoji: "🚀",
+    ship: "submarine",
+    kind: "attack",
+    cooldown: 8,
+    uses: 4,
+    desc: "Recorre una fila y pega en el primer barco.",
+    long: "Elige una fila: el torpedo sale por la izquierda, avanza casilla por casilla y explota en el primer barco que encuentre.",
+    target: "enemy",
+  },
+  {
+    id: "decoy",
+    name: "Señuelo",
+    short: "Señuelo",
+    emoji: "🎭",
+    ship: "destroyer",
+    kind: "strategy",
+    cooldown: 7,
+    uses: null,
+    desc: "Un barco falso que engaña al rival.",
+    long: "Coloca un señuelo en agua libre de tu mapa. Si el rival le dispara verá un impacto 🔥 como si le hubiera dado a un barco, y su sonar también lo detecta como barco.",
+    target: "ownWater",
+  },
+  {
+    id: "ciws",
+    name: "CIWIS",
+    short: "CIWIS",
+    emoji: "🚨",
+    ship: "destroyer",
+    kind: "strategy",
+    cooldown: 10,
+    uses: 2,
+    desc: "Derriba la próxima arma especial del rival.",
+    long: "Arma tu defensa antiaérea: la próxima habilidad de ataque que use el rival (bombardero, cruz, torpedo o doble disparo) es destruida y no hace nada. Los disparos normales no la activan.",
+    target: "none",
+  },
 ];
-export const ITEM_INFO = Object.fromEntries(ITEMS.map((i) => [i.id, i])) as Record<ItemId, ItemInfo>;
+export const ABILITY_INFO = Object.fromEntries(ABILITIES.map((a) => [a.id, a])) as Record<AbilityId, AbilityInfo>;
+export const SHIP_ABILITIES = Object.fromEntries(FLEET.map((f) => [f.type, ABILITIES.filter((a) => a.ship === f.type).map((a) => a.id)])) as Record<
+  ShipType,
+  AbilityId[]
+>;
+const WEAPON_ABILITIES: AbilityId[] = ["cross", "air", "torpedo"];
 
-/** Arcade economy. */
-export const COINS = { start: 60, miss: 5, hit: 25, streak: 10, sink: 60, treasure: 40, hitTaken: 10 };
+export type AbilityState = { cd: number; left: number | null };
 
-export type Stats = { shots: number; hits: number; sunk: number; earned: number };
+/** Every ability starts half charged, so the big guns aren't all available on turn one. */
+export function freshAbilities(): Partial<Record<AbilityId, AbilityState>> {
+  return Object.fromEntries(ABILITIES.map((a) => [a.id, { cd: Math.floor(a.cooldown / 2), left: a.uses }]));
+}
+
+export type Stats = { shots: number; hits: number; sunk: number; used: number };
 
 export type PlayerState = {
   id: string;
@@ -70,12 +212,16 @@ export type PlayerState = {
   /** Shots this player's board has received, by cell index. */
   received: Record<string, Mark>;
   mines: number[];
-  treasure: number[];
-  coins: number;
-  inv: Partial<Record<ItemId, number>>;
+  /** Active decoys, and decoys the enemy already "hit" (they show as a hit to the enemy). */
+  decoys: number[];
+  decoyHits: number[];
+  /** Centres of active 3×3 shields. */
+  shields: number[];
+  /** CIWIS armed: the enemy's next attack ability is shot down. */
+  ciws: boolean;
+  abil: Partial<Record<AbilityId, AbilityState>>;
   /** Sonar intel about the enemy board: 1 = ship, 0 = water. */
   sonar: Record<string, 0 | 1>;
-  streak: number;
   stats: Stats;
   wins: number;
   rematch: boolean;
@@ -86,27 +232,34 @@ export type PlayerState = {
 export type GameEvent = {
   seq: number;
   by: Seat;
-  kind: "fire" | "sonar" | "repair" | "shield" | "mine" | "double" | "buy" | "start" | "join";
+  kind: "fire" | "ability" | "start" | "join";
   weapon?: Weapon;
-  item?: ItemId;
+  ability?: AbilityId;
   target?: number;
-  results?: [number, Mark][];
+  results?: [number, Result][];
   sunk?: ShipType[];
-  coins?: number;
   /** A mine blew up under the attacker's own fleet. */
   backfire?: { cell: number; mark: Mark; sunk?: ShipType };
+  /** The attack was shot down by the defender's CIWIS. */
+  intercepted?: boolean;
+  /** Cells that were really decoys (only the defender is told). */
+  decoyHit?: number[];
   ship?: ShipType;
+  /** A repaired ship that had been sunk. */
+  revived?: boolean;
+  cells?: number[];
   sonar?: [number, 0 | 1][];
 };
 
 export type GameState = {
   mode: Mode;
+  /** Board side for this game (fixed once ships are placed). */
+  size: number;
   phase: Phase;
   extraTurn: boolean;
   players: [PlayerState, PlayerState | null];
   turn: Seat;
   shotsLeft: number;
-  doubleUsed: boolean;
   winner: Seat | null;
   round: number;
   seq: number;
@@ -119,12 +272,7 @@ export type Action =
   | { t: "place"; fleet: Placement[] }
   | { t: "unready" }
   | { t: "fire"; weapon: Weapon; cell: number }
-  | { t: "buy"; item: ItemId }
-  | { t: "sonar"; cell: number }
-  | { t: "repair"; cell: number }
-  | { t: "shield"; ship: ShipType }
-  | { t: "mine"; cell: number }
-  | { t: "double" }
+  | { t: "ability"; ability: AbilityId; cell?: number }
   | { t: "rematch" }
   | { t: "setMode"; mode: Mode; extraTurn: boolean };
 
@@ -132,31 +280,31 @@ export class GameError extends Error {}
 
 // ───────────────────────── geometry ─────────────────────────
 
-export const idx = (r: number, c: number) => r * SIZE + c;
-export const rc = (i: number) => [Math.floor(i / SIZE), i % SIZE] as const;
-const inBounds = (r: number, c: number) => r >= 0 && c >= 0 && r < SIZE && c < SIZE;
+export const idx = (r: number, c: number, n: number) => r * n + c;
+export const rc = (i: number, n: number) => [Math.floor(i / n), i % n] as const;
+const inBounds = (r: number, c: number, n: number) => r >= 0 && c >= 0 && r < n && c < n;
 
-export function shipCells(p: Placement): number[] {
+export function shipCells(p: Placement, n: number): number[] {
   const size = SHIP_INFO[p.type].size;
-  return Array.from({ length: size }, (_, k) => (p.dir === "h" ? idx(p.r, p.c + k) : idx(p.r + k, p.c)));
+  return Array.from({ length: size }, (_, k) => (p.dir === "h" ? idx(p.r, p.c + k, n) : idx(p.r + k, p.c, n)));
 }
 
-export function fitsBoard(p: Placement) {
+export function fitsBoard(p: Placement, n: number) {
   const size = SHIP_INFO[p.type]?.size;
   if (!size || !Number.isInteger(p.r) || !Number.isInteger(p.c)) return false;
-  return p.dir === "h" ? inBounds(p.r, p.c) && p.c + size <= SIZE : inBounds(p.r, p.c) && p.r + size <= SIZE;
+  return p.dir === "h" ? inBounds(p.r, p.c, n) && p.c + size <= n : inBounds(p.r, p.c, n) && p.r + size <= n;
 }
 
 /** null if the fleet is legal: every ship once, on the board, no overlaps. */
-export function fleetProblem(fleet: Placement[]): string | null {
+export function fleetProblem(fleet: Placement[], n: number): string | null {
   if (!Array.isArray(fleet) || fleet.length !== FLEET.length) return "Coloca los 5 barcos.";
   const used = new Set<number>();
   for (const s of FLEET) {
     const p = fleet.find((f) => f?.type === s.type);
     if (!p) return `Falta el ${s.name}.`;
     if (p.dir !== "h" && p.dir !== "v") return "Orientación inválida.";
-    if (!fitsBoard(p)) return `El ${s.name} se sale del mapa.`;
-    for (const cell of shipCells(p)) {
+    if (!fitsBoard(p, n)) return `El ${s.name} se sale del mapa.`;
+    for (const cell of shipCells(p, n)) {
       if (used.has(cell)) return "Hay barcos encimados.";
       used.add(cell);
     }
@@ -164,7 +312,7 @@ export function fleetProblem(fleet: Placement[]): string | null {
   return null;
 }
 
-export function randomFleet(): Placement[] {
+export function randomFleet(n: number): Placement[] {
   for (;;) {
     const used = new Set<number>();
     const out: Placement[] = [];
@@ -176,10 +324,10 @@ export function randomFleet(): Placement[] {
         const p: Placement = {
           type: s.type,
           dir,
-          r: Math.floor(Math.random() * (dir === "v" ? SIZE - s.size + 1 : SIZE)),
-          c: Math.floor(Math.random() * (dir === "h" ? SIZE - s.size + 1 : SIZE)),
+          r: Math.floor(Math.random() * (dir === "v" ? n - s.size + 1 : n)),
+          c: Math.floor(Math.random() * (dir === "h" ? n - s.size + 1 : n)),
         };
-        const cells = shipCells(p);
+        const cells = shipCells(p, n);
         if (cells.some((c) => used.has(c))) continue;
         cells.forEach((c) => used.add(c));
         out.push(p);
@@ -191,25 +339,40 @@ export function randomFleet(): Placement[] {
   }
 }
 
-/** Cells a weapon can affect when aimed at `cell` (the torpedo's path is decided when it runs). */
-export function weaponArea(weapon: Weapon | "sonar", cell: number): number[] {
-  const [r, c] = rc(cell);
+export type AreaKind = Weapon | "sonar" | "shield";
+
+/** Cells an ability can affect when aimed at `cell` (the torpedo's path is decided when it runs). */
+export function area(kind: AreaKind, cell: number, n: number): number[] {
+  const [r, c] = rc(cell, n);
   const pick = (offsets: [number, number][]) =>
-    offsets.filter(([dr, dc]) => inBounds(r + dr, c + dc)).map(([dr, dc]) => idx(r + dr, c + dc));
-  switch (weapon) {
+    offsets.filter(([dr, dc]) => inBounds(r + dr, c + dc, n)).map(([dr, dc]) => idx(r + dr, c + dc, n));
+  switch (kind) {
     case "cross":
       return pick([[0, 0], [-1, 0], [1, 0], [0, -1], [0, 1]]);
     case "air":
     case "sonar":
+    case "shield":
       return pick([-1, 0, 1].flatMap((dr) => [-1, 0, 1].map((dc) => [dr, dc] as [number, number])));
     case "torpedo":
-      return Array.from({ length: SIZE }, (_, k) => idx(r, k));
+      return Array.from({ length: n }, (_, k) => idx(r, k, n));
     default:
       return [cell];
   }
 }
 
 export const isFinal = (m: Mark | undefined) => !!m && FINAL_MARKS.includes(m);
+
+/** Why an ability can't be used right now (null = ready). */
+export function abilityBlock(p: Pick<PlayerState, "abil" | "ships">, id: AbilityId): { reason: "sunk" | "spent" | "cooldown" | "missing"; text: string } | null {
+  const info = ABILITY_INFO[id];
+  const st = p.abil?.[id];
+  if (!info || !st) return { reason: "missing", text: "No tienes esa habilidad." };
+  const ship = p.ships.find((s) => s.type === info.ship);
+  if (!ship || ship.sunk) return { reason: "sunk", text: `Tu ${SHIP_INFO[info.ship].name} está hundido: ${info.name} no funciona.` };
+  if (st.left === 0) return { reason: "spent", text: `Ya no te quedan usos de ${info.name}.` };
+  if (st.cd > 0) return { reason: "cooldown", text: `${info.name} estará listo en ${st.cd} turno${st.cd === 1 ? "" : "s"}.` };
+  return null;
+}
 
 // ───────────────────────── state setup ─────────────────────────
 
@@ -218,18 +381,21 @@ export function cleanName(name: unknown, fallback: string) {
   return s || fallback;
 }
 
-function freshBoard(): Pick<PlayerState, "ready" | "ships" | "received" | "mines" | "treasure" | "coins" | "inv" | "sonar" | "streak" | "stats" | "rematch"> {
+type Board = Pick<PlayerState, "ready" | "ships" | "received" | "mines" | "decoys" | "decoyHits" | "shields" | "ciws" | "abil" | "sonar" | "stats" | "rematch">;
+
+function freshBoard(): Board {
   return {
     ready: false,
     ships: [],
     received: {},
     mines: [],
-    treasure: [],
-    coins: 0,
-    inv: {},
+    decoys: [],
+    decoyHits: [],
+    shields: [],
+    ciws: false,
+    abil: {},
     sonar: {},
-    streak: 0,
-    stats: { shots: 0, hits: 0, sunk: 0, earned: 0 },
+    stats: { shots: 0, hits: 0, sunk: 0, used: 0 },
     rematch: false,
   };
 }
@@ -239,19 +405,37 @@ export function newPlayer(id: string, name: string): PlayerState {
 }
 
 export function newGame(hostId: string, hostName: string, mode: Mode, extraTurn: boolean): GameState {
+  const m: Mode = mode === "arcade" ? "arcade" : "classic";
   return {
-    mode: mode === "arcade" ? "arcade" : "classic",
+    mode: m,
+    size: sizeFor(m),
     phase: "lobby",
     extraTurn: !!extraTurn,
     players: [newPlayer(hostId, cleanName(hostName, "Capitán 1")), null],
     turn: 0,
     shotsLeft: 1,
-    doubleUsed: false,
     winner: null,
     round: 1,
     seq: 0,
     events: [],
   };
+}
+
+/** Rooms saved before the arcade rework: fill in the new fields so they keep working. */
+function upgrade(s: GameState) {
+  s.size ??= CLASSIC_SIZE;
+  for (const p of s.players) {
+    if (!p) continue;
+    p.decoys ??= [];
+    p.decoyHits ??= [];
+    p.shields ??= [];
+    p.ciws ??= false;
+    p.abil ??= s.mode === "arcade" && s.phase === "battle" ? freshAbilities() : {};
+    p.mines ??= [];
+    p.sonar ??= {};
+    p.stats.used ??= 0;
+  }
+  return s;
 }
 
 export function seatOf(state: GameState, playerId: string): Seat | null {
@@ -268,28 +452,16 @@ function pushEvent(s: GameState, e: Omit<GameEvent, "seq">) {
   if (s.events.length > EVENT_LOG) s.events.splice(0, s.events.length - EVENT_LOG);
 }
 
-function earn(p: PlayerState, s: GameState, amount: number) {
-  if (s.mode !== "arcade" || amount <= 0) return 0;
-  p.coins += amount;
-  p.stats.earned += amount;
-  return amount;
-}
-
-const shipAt = (p: PlayerState, cell: number) => p.ships.find((s) => shipCells(s).includes(cell));
+const shipAt = (p: PlayerState, cell: number, n: number) => p.ships.find((s) => shipCells(s, n).includes(cell));
 const allSunk = (p: PlayerState) => p.ships.length > 0 && p.ships.every((s) => s.sunk);
+const validCell = (cell: unknown, n: number): cell is number => Number.isInteger(cell) && (cell as number) >= 0 && (cell as number) < n * n;
 
 /** Damages `cell` of `p`'s fleet. Returns the mark and the ship it sank, if any. */
-function damage(p: PlayerState, cell: number, s: GameState): { mark: Mark; sunk?: ShipType } {
-  const ship = shipAt(p, cell);
+function damage(p: PlayerState, cell: number, n: number): { mark: Mark; sunk?: ShipType } {
+  const ship = shipAt(p, cell, n);
   if (!ship || ship.sunk || ship.hits.includes(cell)) return { mark: p.received[cell] ?? "miss" };
-  if (ship.shield) {
-    ship.shield = false;
-    p.received[cell] = "blocked";
-    return { mark: "blocked" };
-  }
   ship.hits.push(cell);
   p.received[cell] = "hit";
-  earn(p, s, COINS.hitTaken);
   if (ship.hits.length >= SHIP_INFO[ship.type].size) {
     ship.sunk = true;
     return { mark: "hit", sunk: ship.type };
@@ -297,58 +469,110 @@ function damage(p: PlayerState, cell: number, s: GameState): { mark: Mark; sunk?
   return { mark: "hit" };
 }
 
-function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
+/** The defender's turn starts: their abilities recharge (only those whose ship is still afloat). */
+function passTurn(s: GameState, seat: Seat) {
+  const next = (1 - seat) as Seat;
+  s.turn = next;
+  s.shotsLeft = 1;
+  const p = s.players[next]!;
+  for (const a of ABILITIES) {
+    const st = p.abil[a.id];
+    if (!st || st.cd <= 0) continue;
+    const ship = p.ships.find((sh) => sh.type === a.ship);
+    if (ship && !ship.sunk) st.cd -= 1;
+  }
+}
+
+function takeAbility(me: PlayerState, id: AbilityId) {
+  const block = abilityBlock(me, id);
+  if (block) throw new GameError(block.text);
+}
+
+function spendAbility(me: PlayerState, id: AbilityId) {
+  const st = me.abil[id]!;
+  st.cd = ABILITY_INFO[id].cooldown;
+  if (st.left !== null) st.left -= 1;
+  me.stats.used += 1;
+}
+
+function afterShot(s: GameState, seat: Seat, anyHit: boolean) {
   const me = s.players[seat]!;
   const foe = s.players[(1 - seat) as Seat]!;
-  if (!Number.isInteger(target) || target < 0 || target >= CELLS) throw new GameError("Casilla inválida.");
+  if (allSunk(foe)) return finish(s, seat);
+  if (allSunk(me)) return finish(s, (1 - seat) as Seat);
+  s.shotsLeft -= 1;
+  if (s.shotsLeft > 0) return;
+  if (s.extraTurn && anyHit) s.shotsLeft = 1;
+  else passTurn(s, seat);
+}
+
+function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
+  const n = s.size;
+  const me = s.players[seat]!;
+  const foe = s.players[(1 - seat) as Seat]!;
+  if (!validCell(target, n)) throw new GameError("Casilla inválida.");
   if (weapon !== "shot") {
     if (s.mode !== "arcade") throw new GameError("Esa arma es del modo Arcade.");
-    if (!me.inv[weapon]) throw new GameError("No tienes esa arma. ¡Cómprala en la tienda!");
+    takeAbility(me, weapon);
+    spendAbility(me, weapon);
+    if (foe.ciws) {
+      foe.ciws = false;
+      pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true });
+      return afterShot(s, seat, false);
+    }
   } else if (isFinal(foe.received[target])) {
     throw new GameError("Ya disparaste ahí.");
   }
 
-  const results: [number, Mark][] = [];
+  const results: [number, Result][] = [];
   const sunk: ShipType[] = [];
-  let coins = 0;
+  const decoyHit: number[] = [];
+  const broken: number[] = []; // shields this attack already broke: the rest of the blast inside them is absorbed too
   let backfire: GameEvent["backfire"];
 
   const hitCell = (cell: number): "stop" | "go" => {
-    const before = foe.received[cell];
-    if (isFinal(before)) return "go";
+    if (isFinal(foe.received[cell])) return "go";
+    const shield = [...foe.shields, ...broken].find((ctr) => area("shield", ctr, n).includes(cell));
+    if (shield !== undefined) {
+      if (foe.shields.includes(shield)) {
+        foe.shields = foe.shields.filter((x) => x !== shield);
+        broken.push(shield);
+      }
+      results.push([cell, "blocked"]);
+      return "stop";
+    }
     if (foe.mines.includes(cell)) {
       foe.mines = foe.mines.filter((m) => m !== cell);
       foe.received[cell] = "mine";
       results.push([cell, "mine"]);
       // The blast travels back: hit a random intact part of the attacker's fleet.
-      const intact = me.ships.filter((sh) => !sh.sunk).flatMap((sh) => shipCells(sh).filter((c) => !sh.hits.includes(c)));
+      const intact = me.ships.filter((sh) => !sh.sunk).flatMap((sh) => shipCells(sh, n).filter((c) => !sh.hits.includes(c)));
       if (intact.length) {
         const victim = intact[Math.floor(Math.random() * intact.length)];
-        const d = damage(me, victim, s);
+        const d = damage(me, victim, n);
         backfire = { cell: victim, mark: d.mark, sunk: d.sunk };
       }
       return "stop";
     }
-    if (shipAt(foe, cell)) {
-      const d = damage(foe, cell, s);
+    if (foe.decoys.includes(cell)) {
+      // Looks exactly like hitting a ship.
+      foe.decoys = foe.decoys.filter((d) => d !== cell);
+      foe.decoyHits.push(cell);
+      foe.received[cell] = "hit";
+      results.push([cell, "hit"]);
+      decoyHit.push(cell);
+      me.stats.hits += 1;
+      return "stop";
+    }
+    if (shipAt(foe, cell, n)) {
+      const d = damage(foe, cell, n);
       results.push([cell, d.mark]);
-      if (d.mark === "hit") {
-        me.stats.hits += 1;
-        coins += earn(me, s, COINS.hit);
-      }
+      if (d.mark === "hit") me.stats.hits += 1;
       if (d.sunk) {
         sunk.push(d.sunk);
         me.stats.sunk += 1;
-        coins += earn(me, s, COINS.sink);
       }
       return "stop";
-    }
-    if (s.mode === "arcade" && foe.treasure.includes(cell)) {
-      foe.treasure = foe.treasure.filter((t) => t !== cell);
-      foe.received[cell] = "treasure";
-      results.push([cell, "treasure"]);
-      coins += earn(me, s, COINS.treasure);
-      return "go";
     }
     foe.received[cell] = "miss";
     results.push([cell, "miss"]);
@@ -356,38 +580,94 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
   };
 
   if (weapon === "torpedo") {
-    const [r] = rc(target);
-    for (let c = 0; c < SIZE; c++) if (hitCell(idx(r, c)) === "stop") break;
+    const [r] = rc(target, n);
+    for (let c = 0; c < n; c++) if (hitCell(idx(r, c, n)) === "stop") break;
   } else {
-    weaponArea(weapon, target).forEach(hitCell);
+    area(weapon, target, n).forEach(hitCell);
   }
 
-  if (weapon !== "shot") me.inv[weapon] = (me.inv[weapon] ?? 1) - 1;
   me.stats.shots += Math.max(1, results.filter(([, m]) => m !== "mine").length); // cells fired at, so precision stays ≤ 100%
   const anyHit = results.some(([, m]) => m === "hit");
-  if (anyHit) {
-    me.streak += 1;
-    if (me.streak > 1) coins += earn(me, s, COINS.streak * Math.min(me.streak - 1, 5));
-  } else {
-    me.streak = 0;
-    if (weapon === "shot" && results.some(([, m]) => m === "miss")) coins += earn(me, s, COINS.miss);
-  }
+  pushEvent(s, { by: seat, kind: "fire", weapon, target, results, sunk, backfire, decoyHit: decoyHit.length ? decoyHit : undefined });
+  afterShot(s, seat, anyHit);
+}
 
-  pushEvent(s, { by: seat, kind: "fire", weapon, target, results, sunk, coins, backfire });
+function castAbility(s: GameState, seat: Seat, id: AbilityId, cell: number | undefined) {
+  const n = s.size;
+  const me = s.players[seat]!;
+  const foe = s.players[(1 - seat) as Seat]!;
+  takeAbility(me, id);
+  const needCell = () => {
+    if (!validCell(cell, n)) throw new GameError("Elige una casilla.");
+    return cell;
+  };
+  const freeWater = (c: number) => !shipAt(me, c, n) && !me.received[c] && !me.mines.includes(c) && !me.decoys.includes(c);
 
-  if (allSunk(foe)) return finish(s, seat);
-  if (allSunk(me)) return finish(s, (1 - seat) as Seat);
-
-  s.shotsLeft -= 1;
-  if (s.shotsLeft <= 0) {
-    if (s.extraTurn && anyHit) {
-      s.shotsLeft = 1;
-    } else {
-      s.turn = (1 - seat) as Seat;
-      s.shotsLeft = 1;
-      s.doubleUsed = false;
+  switch (id) {
+    case "double": {
+      spendAbility(me, id);
+      if (foe.ciws) {
+        foe.ciws = false;
+        pushEvent(s, { by: seat, kind: "ability", ability: id, intercepted: true });
+      } else {
+        s.shotsLeft += 1;
+        pushEvent(s, { by: seat, kind: "ability", ability: id });
+      }
+      return; // attack ability: the turn goes on
     }
+    case "sonar": {
+      const at = needCell();
+      spendAbility(me, id);
+      const found: [number, 0 | 1][] = area("sonar", at, n).map((c) => {
+        const ship = shipAt(foe, c, n);
+        return [c, (ship && !ship.sunk && !ship.hits.includes(c)) || foe.decoys.includes(c) ? 1 : 0];
+      });
+      found.forEach(([c, v]) => (me.sonar[c] = v));
+      pushEvent(s, { by: seat, kind: "ability", ability: id, target: at, sonar: found });
+      break;
+    }
+    case "repair": {
+      const at = needCell();
+      const ship = shipAt(me, at, n);
+      if (!ship || !ship.hits.length) throw new GameError("Toca un barco tuyo dañado o hundido.");
+      spendAbility(me, id);
+      const cells = [...ship.hits];
+      const revived = ship.sunk;
+      cells.forEach((c) => (me.received[c] = "repaired"));
+      ship.hits = [];
+      ship.sunk = false;
+      pushEvent(s, { by: seat, kind: "ability", ability: id, ship: ship.type, revived, cells });
+      break;
+    }
+    case "shield": {
+      const at = needCell();
+      const zone = area("shield", at, n);
+      if (me.shields.some((ctr) => area("shield", ctr, n).some((c) => zone.includes(c)))) throw new GameError("Se encima con tu otro escudo. Elige otra zona.");
+      spendAbility(me, id);
+      me.shields.push(at);
+      pushEvent(s, { by: seat, kind: "ability", ability: id, target: at });
+      break;
+    }
+    case "mine":
+    case "decoy": {
+      const at = needCell();
+      if (!freeWater(at)) throw new GameError(`Pon ${id === "mine" ? "la mina" : "el señuelo"} en agua libre.`);
+      spendAbility(me, id);
+      (id === "mine" ? me.mines : me.decoys).push(at);
+      pushEvent(s, { by: seat, kind: "ability", ability: id, target: at });
+      break;
+    }
+    case "ciws": {
+      if (me.ciws) throw new GameError("Tu CIWIS ya está armado.");
+      spendAbility(me, id);
+      me.ciws = true;
+      pushEvent(s, { by: seat, kind: "ability", ability: id });
+      break;
+    }
+    default:
+      throw new GameError("Esa habilidad se dispara desde el mar enemigo.");
   }
+  passTurn(s, seat); // every strategy ability ends the turn
 }
 
 function finish(s: GameState, winner: Seat) {
@@ -402,26 +682,14 @@ function startBattle(s: GameState) {
   s.turn = s.round === 1 ? (Math.random() < 0.5 ? 0 : 1) : s.winner === 0 ? 1 : 0; // loser of the last game starts
   s.winner = null;
   s.shotsLeft = 1;
-  s.doubleUsed = false;
   for (const p of s.players) {
     if (!p) continue;
-    p.ships = p.ships.map((sh) => ({ ...sh, hits: [], sunk: false, shield: false }));
-    p.received = {};
-    p.mines = [];
-    p.sonar = {};
-    p.streak = 0;
-    p.stats = { shots: 0, hits: 0, sunk: 0, earned: 0 };
-    p.inv = {};
-    p.coins = s.mode === "arcade" ? COINS.start : 0;
-    p.stats.earned = 0;
-    if (s.mode === "arcade") {
-      const occupied = new Set(p.ships.flatMap(shipCells));
-      const water = Array.from({ length: CELLS }, (_, i) => i).filter((i) => !occupied.has(i));
-      p.treasure = [];
-      while (p.treasure.length < TREASURES && water.length) p.treasure.push(water.splice(Math.floor(Math.random() * water.length), 1)[0]);
-    } else {
-      p.treasure = [];
-    }
+    Object.assign(p, {
+      ...freshBoard(),
+      ready: true,
+      ships: p.ships.map((sh) => ({ type: sh.type, r: sh.r, c: sh.c, dir: sh.dir, hits: [], sunk: false })),
+      abil: s.mode === "arcade" ? freshAbilities() : {},
+    });
   }
   pushEvent(s, { by: s.turn, kind: "start" });
 }
@@ -431,20 +699,12 @@ function requireTurn(s: GameState, seat: Seat) {
   if (s.turn !== seat) throw new GameError("Espera tu turno.");
 }
 
-function takeItem(me: PlayerState, item: ItemId) {
-  if (!me.inv[item]) throw new GameError(`No tienes ${ITEM_INFO[item].name}. ¡Cómpralo en la tienda!`);
-  me.inv[item] = me.inv[item]! - 1;
-}
-
 /** Applies one player action to a copy of the state. Throws GameError for illegal moves. */
 export function applyAction(state: GameState, seat: Seat, a: Action): GameState {
-  const s: GameState = structuredClone(state);
+  const s: GameState = upgrade(structuredClone(state));
   const me = s.players[seat];
   if (!me) throw new GameError("No estás en esta sala.");
   const foe = s.players[(1 - seat) as Seat];
-  const arcadeOnly = () => {
-    if (s.mode !== "arcade") throw new GameError("Eso es del modo Arcade.");
-  };
 
   switch (a.t) {
     case "join":
@@ -452,20 +712,26 @@ export function applyAction(state: GameState, seat: Seat, a: Action): GameState 
       me.name = cleanName(a.name, me.name);
       break;
 
-    case "setMode":
+    case "setMode": {
       if (seat !== 0) throw new GameError("Solo quien creó la sala elige el modo.");
       if (s.phase !== "lobby" && s.phase !== "placing" && s.phase !== "over") throw new GameError("No puedes cambiar el modo en plena batalla.");
       s.mode = a.mode === "arcade" ? "arcade" : "classic";
       s.extraTurn = !!a.extraTurn;
+      // The board size changes with the mode; after a game it switches when the rematch starts.
+      if (s.phase !== "over" && s.size !== sizeFor(s.mode)) {
+        s.size = sizeFor(s.mode);
+        for (const p of s.players) if (p) Object.assign(p, { ships: [], ready: false });
+      }
       break;
+    }
 
     case "place": {
       if (s.phase !== "placing" && s.phase !== "lobby") throw new GameError("Ya no puedes mover tus barcos.");
-      const problem = fleetProblem(a.fleet);
+      const problem = fleetProblem(a.fleet, s.size);
       if (problem) throw new GameError(problem);
       me.ships = FLEET.map((f) => {
         const p = a.fleet.find((x) => x.type === f.type)!;
-        return { type: p.type, r: p.r, c: p.c, dir: p.dir, hits: [], sunk: false, shield: false };
+        return { type: p.type, r: p.r, c: p.c, dir: p.dir, hits: [], sunk: false };
       });
       me.ready = true;
       if (s.phase === "placing" && foe?.ready) startBattle(s);
@@ -483,77 +749,12 @@ export function applyAction(state: GameState, seat: Seat, a: Action): GameState 
       fire(s, seat, a.weapon, a.cell);
       break;
 
-    case "buy": {
-      arcadeOnly();
-      if (s.phase !== "battle") throw new GameError("La tienda abre durante la batalla.");
-      const info = ITEM_INFO[a.item];
-      if (!info) throw new GameError("Ese artículo no existe.");
-      if (me.coins < info.price) throw new GameError("No te alcanzan las monedas.");
-      me.coins -= info.price;
-      me.inv[a.item] = (me.inv[a.item] ?? 0) + 1;
-      pushEvent(s, { by: seat, kind: "buy", item: a.item });
-      break;
-    }
-
-    case "sonar": {
-      arcadeOnly();
+    case "ability":
+      if (s.mode !== "arcade") throw new GameError("Eso es del modo Arcade.");
       requireTurn(s, seat);
-      if (!Number.isInteger(a.cell) || a.cell < 0 || a.cell >= CELLS) throw new GameError("Casilla inválida.");
-      takeItem(me, "sonar");
-      const found: [number, 0 | 1][] = weaponArea("sonar", a.cell).map((c) => {
-        const ship = shipAt(foe!, c);
-        return [c, ship && !ship.sunk && !ship.hits.includes(c) ? 1 : 0];
-      });
-      found.forEach(([c, v]) => (me.sonar[c] = v));
-      pushEvent(s, { by: seat, kind: "sonar", target: a.cell, sonar: found });
-      break;
-    }
-
-    case "repair": {
-      arcadeOnly();
-      requireTurn(s, seat);
-      const ship = shipAt(me, a.cell);
-      if (!ship || ship.sunk || !ship.hits.includes(a.cell)) throw new GameError("Elige una casilla dañada de un barco que siga a flote.");
-      takeItem(me, "repair");
-      ship.hits = ship.hits.filter((h) => h !== a.cell);
-      me.received[a.cell] = "repaired";
-      pushEvent(s, { by: seat, kind: "repair", target: a.cell, ship: ship.type });
-      break;
-    }
-
-    case "shield": {
-      arcadeOnly();
-      requireTurn(s, seat);
-      const ship = me.ships.find((sh) => sh.type === a.ship);
-      if (!ship || ship.sunk) throw new GameError("Elige un barco que siga a flote.");
-      if (ship.shield) throw new GameError("Ese barco ya tiene escudo.");
-      takeItem(me, "shield");
-      ship.shield = true;
-      pushEvent(s, { by: seat, kind: "shield", ship: ship.type });
-      break;
-    }
-
-    case "mine": {
-      arcadeOnly();
-      requireTurn(s, seat);
-      if (!Number.isInteger(a.cell) || a.cell < 0 || a.cell >= CELLS) throw new GameError("Casilla inválida.");
-      if (shipAt(me, a.cell) || me.received[a.cell] || me.mines.includes(a.cell)) throw new GameError("Pon la mina en agua libre.");
-      if (me.mines.length >= MAX_MINES) throw new GameError(`Máximo ${MAX_MINES} minas a la vez.`);
-      takeItem(me, "mine");
-      me.mines.push(a.cell);
-      me.treasure = me.treasure.filter((t) => t !== a.cell);
-      pushEvent(s, { by: seat, kind: "mine", target: a.cell });
-      break;
-    }
-
-    case "double":
-      arcadeOnly();
-      requireTurn(s, seat);
-      if (s.doubleUsed) throw new GameError("Solo un doble disparo por turno.");
-      takeItem(me, "double");
-      s.doubleUsed = true;
-      s.shotsLeft += 1;
-      pushEvent(s, { by: seat, kind: "double" });
+      if (!ABILITY_INFO[a.ability]) throw new GameError("Habilidad desconocida.");
+      if (WEAPON_ABILITIES.includes(a.ability)) fire(s, seat, a.ability as Weapon, a.cell as number);
+      else castAbility(s, seat, a.ability, a.cell);
       break;
 
     case "rematch":
@@ -562,7 +763,10 @@ export function applyAction(state: GameState, seat: Seat, a: Action): GameState 
       if (foe?.rematch) {
         s.round += 1;
         s.phase = "placing";
-        for (const p of s.players) if (p) Object.assign(p, { ...freshBoard(), ships: p.ships.map((sh) => ({ ...sh, hits: [], sunk: false, shield: false })) });
+        const size = sizeFor(s.mode);
+        const resize = size !== s.size;
+        s.size = size;
+        for (const p of s.players) if (p) Object.assign(p, { ...freshBoard(), ships: resize ? [] : p.ships.map((sh) => ({ ...sh, hits: [], sunk: false })) });
       }
       break;
 
@@ -574,7 +778,7 @@ export function applyAction(state: GameState, seat: Seat, a: Action): GameState 
 
 /** Seats a second player. Returns the new state and the seat. */
 export function joinGame(state: GameState, playerId: string, name: string, takeover: boolean): { state: GameState; seat: Seat } {
-  const s: GameState = structuredClone(state);
+  const s: GameState = upgrade(structuredClone(state));
   const seat = seatOf(s, playerId);
   if (seat !== null) return { state: applyAction(s, seat, { t: "join", name }), seat };
   if (s.players[1] && !takeover) throw new GameError("La sala ya tiene dos jugadores.");
@@ -598,17 +802,18 @@ export function rememberAction(state: GameState, seat: Seat, actionId: string) {
 
 // ───────────────────────── what each player may see ─────────────────────────
 
-export type PublicShip = Ship;
-
 export type FoeView = {
   name: string;
   ready: boolean;
-  coins: number;
   wins: number;
   received: Record<string, Mark>;
   /** Only sunk ships (or the whole fleet once the game is over). */
-  ships: PublicShip[];
+  ships: Ship[];
   shipsLeft: number;
+  /** What the rival's sonar found on your board. */
+  scan: Record<string, 0 | 1>;
+  /** The rival has CIWIS armed. */
+  ciws: boolean;
   rematch: boolean;
   stats: Stats;
   online: boolean;
@@ -620,12 +825,12 @@ export type View = {
   code: string;
   version: number;
   mode: Mode;
+  size: number;
   phase: Phase;
   extraTurn: boolean;
   seat: Seat;
   turn: Seat;
   shotsLeft: number;
-  doubleUsed: boolean;
   winner: Seat | null;
   round: number;
   seq: number;
@@ -634,43 +839,47 @@ export type View = {
   foe: FoeView | null;
 };
 
+const SECRET_TARGETS: AbilityId[] = ["mine", "decoy", "shield"];
+
 export function viewFor(state: GameState, seat: Seat, code: string, version: number, foeOnline: boolean): View {
-  const { id: _id, applied: _applied, ...me } = state.players[seat]!;
+  const s = upgrade(structuredClone(state));
+  const { id: _id, applied: _applied, ...me } = s.players[seat]!;
   void _id;
   void _applied;
-  const f = state.players[(1 - seat) as Seat];
-  const reveal = state.phase === "over";
-  const events = state.events.map((e) => {
-    if (e.by === seat) return e;
+  const f = s.players[(1 - seat) as Seat];
+  const reveal = s.phase === "over";
+  const events = s.events.map((e) => {
+    if (e.by === seat) return e.decoyHit ? { ...e, decoyHit: undefined } : e; // you never learn you hit a decoy
     // Hide the opponent's secret placements.
-    if (e.kind === "mine") return { ...e, target: undefined };
-    if (e.kind === "shield" || e.kind === "repair") return { ...e, ship: undefined };
+    if (e.kind === "ability" && e.ability && SECRET_TARGETS.includes(e.ability)) return { ...e, target: undefined };
+    if (e.kind === "ability" && e.ability === "repair" && !e.revived) return { ...e, ship: undefined };
     return e;
   });
   return {
     code,
     version,
-    mode: state.mode,
-    phase: state.phase,
-    extraTurn: state.extraTurn,
+    mode: s.mode,
+    size: s.size,
+    phase: s.phase,
+    extraTurn: s.extraTurn,
     seat,
-    turn: state.turn,
-    shotsLeft: state.shotsLeft,
-    doubleUsed: state.doubleUsed,
-    winner: state.winner,
-    round: state.round,
-    seq: state.seq,
+    turn: s.turn,
+    shotsLeft: s.shotsLeft,
+    winner: s.winner,
+    round: s.round,
+    seq: s.seq,
     events,
-    me: { ...me, treasure: [] },
+    me,
     foe: f
       ? {
           name: f.name,
           ready: f.ready,
-          coins: f.coins,
           wins: f.wins,
           received: f.received,
-          ships: f.ships.filter((s) => reveal || s.sunk),
-          shipsLeft: f.ships.filter((s) => !s.sunk).length,
+          ships: f.ships.filter((sh) => reveal || sh.sunk),
+          shipsLeft: f.ships.filter((sh) => !sh.sunk).length,
+          scan: f.sonar,
+          ciws: f.ciws,
           rematch: f.rematch,
           stats: f.stats,
           online: foeOnline,

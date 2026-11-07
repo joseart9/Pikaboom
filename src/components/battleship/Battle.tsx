@@ -2,31 +2,24 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { playClick, playError, playPick } from "@/game/audio";
-import {
-  type Action,
-  isFinal,
-  ITEM_INFO,
-  type ItemId,
-  ITEMS,
-  shipCells,
-  type View,
-  weaponArea,
-  type Weapon,
-} from "@/game/battleship/logic";
+import { type Action, ABILITY_INFO, abilityBlock, area, isFinal, rc, shipCells, type View } from "@/game/battleship/logic";
+import { AbilityBar, AbilityDetail, type Tool } from "./Abilities";
 import { Board, type CellFx } from "./Board";
+import { NO_ZOOM, type Zoom, zoomAt, ZoomPan } from "./ZoomPan";
 
 export type Tab = "enemy" | "own";
-type Tool = "shot" | ItemId;
 
-const ENEMY_TOOLS: Tool[] = ["shot", "cross", "air", "torpedo", "sonar"];
-
-function toolLabel(tool: Tool) {
-  if (tool === "shot") return { emoji: "💥", name: "Disparo" };
-  return ITEM_INFO[tool];
+/** Which board a tool is aimed at. */
+function sideOf(tool: Tool): "enemy" | "own" | "none" {
+  if (tool === "shot") return "enemy";
+  const t = ABILITY_INFO[tool].target;
+  return t === "enemy" ? "enemy" : t === "none" ? "none" : "own";
 }
 
 function actionText(tool: Tool) {
   switch (tool) {
+    case "shot":
+      return "🚀 ¡FUEGO!";
     case "sonar":
       return "📡 ESCANEAR";
     case "repair":
@@ -35,27 +28,37 @@ function actionText(tool: Tool) {
       return "🛡️ PROTEGER";
     case "mine":
       return "💣 PONER MINA";
+    case "decoy":
+      return "🎭 PONER SEÑUELO";
     case "double":
       return "🎯 ACTIVAR DOBLE";
+    case "ciws":
+      return "🚨 ARMAR CIWIS";
     default:
-      return "🚀 ¡FUEGO!";
+      return `${ABILITY_INFO[tool].emoji} ¡FUEGO!`;
   }
 }
 
 function hint(tool: Tool) {
   switch (tool) {
     case "repair":
-      return "Toca una casilla dañada 🔥 de tu flota";
+      return "Toca en tu flota el barco dañado o hundido";
     case "shield":
-      return "Toca el barco que quieres proteger";
+      return "Toca en tu mapa el centro de la zona a proteger";
     case "mine":
+    case "decoy":
       return "Toca agua libre de tu mapa";
     case "double":
-      return "Dispara dos veces este turno";
+      return "Tendrás dos disparos este turno";
+    case "ciws":
+      return "Derriba la próxima arma especial del rival · termina tu turno";
     case "sonar":
       return "Elige el centro del área a escanear";
     case "torpedo":
       return "Elige la fila: el torpedo sale por la izquierda";
+    case "air":
+    case "cross":
+      return "Elige el centro del ataque";
     default:
       return "Elige una casilla del mapa enemigo";
   }
@@ -69,6 +72,8 @@ export function Battle({
   setTab,
   enemyFx,
   ownFx,
+  hiddenEnemy,
+  hiddenOwn,
   shakeEnemy,
   shakeOwn,
   foeOnline,
@@ -81,6 +86,8 @@ export function Battle({
   setTab: (t: Tab) => void;
   enemyFx: CellFx[];
   ownFx: CellFx[];
+  hiddenEnemy: number[];
+  hiddenOwn: number[];
   shakeEnemy: number;
   shakeOwn: number;
   foeOnline: boolean;
@@ -88,67 +95,91 @@ export function Battle({
 }) {
   const [tool, setTool] = useState<Tool>("shot");
   const [target, setTarget] = useState<number | null>(null);
-  const [storeOpen, setStoreOpen] = useState(false);
+  const [info, setInfo] = useState<Tool | null>(null);
+  const [zoom, setZoom] = useState<Zoom>(NO_ZOOM);
+  const n = view.size;
   const myTurn = view.turn === view.seat;
   const arcade = view.mode === "arcade";
   const me = view.me;
   const foe = view.foe!;
+  const side = sideOf(tool);
 
-  // Fresh aim every turn; fall back to the plain shot when an item runs out.
+  // Fresh aim every turn; fall back to the plain shot when the picked ability stops being usable.
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- reset aim when the turn changes
     setTarget(null);
   }, [view.turn]);
   useEffect(() => {
-    if (tool !== "shot" && !me.inv[tool]) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- item used up
+    if (tool !== "shot" && abilityBlock(me, tool)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- ability used up / ship sunk
       setTool("shot");
     }
-  }, [me.inv, tool]);
+  }, [me, tool]);
+  // Each board opens showing the whole sea.
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset zoom when switching boards
+    setZoom(NO_ZOOM);
+  }, [tab]);
 
-  const enemyTool = ENEMY_TOOLS.includes(tool);
+  const repairShip = useMemo(() => {
+    if (tool !== "repair" || target === null) return null;
+    return me.ships.find((s) => shipCells(s, n).includes(target)) ?? null;
+  }, [tool, target, me.ships, n]);
 
-  const preview = useMemo(() => {
-    if (target === null) return [];
-    if (tool === "shield") {
-      const ship = me.ships.find((s) => shipCells(s).includes(target));
-      return ship ? shipCells(ship) : [];
+  const { preview, previewOk } = useMemo(() => {
+    if (target === null) return { preview: [] as number[], previewOk: true };
+    switch (tool) {
+      case "cross":
+      case "air":
+      case "torpedo":
+      case "sonar":
+        return { preview: area(tool, target, n), previewOk: true };
+      case "shield": {
+        const zone = area("shield", target, n);
+        const clash = me.shields.some((c) => area("shield", c, n).some((x) => zone.includes(x)));
+        return { preview: zone, previewOk: !clash };
+      }
+      case "repair":
+        return repairShip ? { preview: shipCells(repairShip, n), previewOk: repairShip.hits.length > 0 } : { preview: [target], previewOk: false };
+      case "mine":
+      case "decoy": {
+        const free = !me.ships.some((s) => shipCells(s, n).includes(target)) && !me.received[target] && !me.mines.includes(target) && !me.decoys.includes(target);
+        return { preview: free ? [] : [target], previewOk: free };
+      }
+      default:
+        return { preview: [] as number[], previewOk: true };
     }
-    if (tool === "shot" || tool === "repair" || tool === "mine") return [];
-    if (tool === "cross" || tool === "air" || tool === "torpedo" || tool === "sonar") return weaponArea(tool as Weapon | "sonar", target);
-    return [];
-  }, [target, tool, me.ships]);
+  }, [target, tool, n, me, repairShip]);
 
   const pickTool = (t: Tool) => {
+    if (t !== "shot") {
+      const block = abilityBlock(me, t);
+      if (block) {
+        playError();
+        return onError(block.text);
+      }
+    }
     playPick();
     setTool(t);
     setTarget(null);
-    if (t === "double") return;
-    setTab(ENEMY_TOOLS.includes(t) ? "enemy" : "own");
+    const s = sideOf(t);
+    if (s !== "none") setTab(s);
   };
 
   const fire = async (cell: number | null) => {
     if (!myTurn || busy) return;
-    let action: Action | null = null;
-    if (tool === "double") action = { t: "double" };
+    let action: Action;
+    if (side === "none") action = { t: "ability", ability: tool as Exclude<Tool, "shot"> };
     else if (cell === null) return;
-    else if (tool === "shot" || tool === "cross" || tool === "air" || tool === "torpedo") action = { t: "fire", weapon: tool, cell };
-    else if (tool === "sonar") action = { t: "sonar", cell };
-    else if (tool === "repair") action = { t: "repair", cell };
-    else if (tool === "mine") action = { t: "mine", cell };
-    else if (tool === "shield") {
-      const ship = me.ships.find((s) => shipCells(s).includes(cell));
-      if (!ship) return onError("Toca uno de tus barcos.");
-      action = { t: "shield", ship: ship.type };
-    }
-    if (!action) return;
+    else if (tool === "shot") action = { t: "fire", weapon: "shot", cell };
+    else action = { t: "ability", ability: tool, cell };
     const err = await act(action);
     if (err) {
       playError();
       onError(err);
     } else {
       setTarget(null);
-      if (tool !== "shot" && (me.inv[tool] ?? 0) <= 1) setTool("shot");
+      setTool("shot");
     }
   };
 
@@ -157,7 +188,10 @@ export function Battle({
       playError();
       return onError(`Es el turno de ${foe.name}.`);
     }
-    if (!enemyTool) return;
+    if (side !== "enemy") {
+      playError();
+      return onError(`${ABILITY_INFO[tool as Exclude<Tool, "shot">].name} se usa en tu mapa.`);
+    }
     if (tool === "shot" && isFinal(foe.received[cell])) {
       playError();
       return onError("Ya disparaste ahí.");
@@ -168,28 +202,45 @@ export function Battle({
   };
 
   const onOwnCell = (cell: number) => {
-    if (!myTurn || enemyTool || tool === "double") return;
-    if (cell === target) return void fire(cell);
+    if (!myTurn || side !== "own") return;
+    if (cell === target && previewOk) return void fire(cell);
     playPick();
     setTarget(cell);
   };
 
+  const toggleZoom = () => {
+    playClick();
+    if (zoom.s > 1.05) return setZoom(NO_ZOOM);
+    const w = document.querySelector<HTMLElement>("[data-zoom-frame]")?.clientWidth ?? 340;
+    const [r, c] = target !== null ? rc(target, n) : [(n - 1) / 2, (n - 1) / 2];
+    setZoom(zoomAt(2, (c + 0.5) / n, (r + 0.5) / n, w));
+  };
+
   const shipsLeft = me.ships.filter((s) => !s.sunk).length;
-  const tools: Tool[] = ["shot", ...ITEMS.filter((i) => (me.inv[i.id] ?? 0) > 0).map((i) => i.id)];
-  const needsTarget = tool !== "double";
+  const needsTarget = side !== "none";
+  const ready = myTurn && !busy && (!needsTarget || (target !== null && previewOk));
+  const subline = !myTurn
+    ? `${foe.name} está apuntando…`
+    : view.shotsLeft > 1
+      ? `Te quedan ${view.shotsLeft} disparos · ${needsTarget && target === null ? hint(tool) : "Toca otra vez o aquí para confirmar"}`
+      : needsTarget && target !== null
+        ? previewOk
+          ? "Toca otra vez la casilla o aquí para confirmar"
+          : "Ahí no se puede, elige otra casilla"
+        : hint(tool);
 
   return (
     <div className="flex min-h-0 flex-1 flex-col gap-2">
-      {/* scoreline */}
+      {/* scoreline: the glowing card is whoever's turn it is */}
       <div className="grid shrink-0 grid-cols-2 gap-2">
         {[
-          { name: `${me.name} (tú)`, left: shipsLeft, coins: me.coins, active: myTurn, color: "#00bbf9", online: true },
-          { name: foe.name, left: foe.shipsLeft, coins: foe.coins, active: !myTurn, color: "#ff4d6d", online: foeOnline },
+          { name: `${me.name} (tú)`, left: shipsLeft, active: myTurn, color: "#00bbf9", online: true, ciws: me.ciws, shots: myTurn ? view.shotsLeft : 1 },
+          { name: foe.name, left: foe.shipsLeft, active: !myTurn, color: "#ff4d6d", online: foeOnline, ciws: foe.ciws, shots: !myTurn ? view.shotsLeft : 1 },
         ].map((p, i) => (
           <div
             key={i}
-            className={`flex min-w-0 items-center gap-2 rounded-2xl border-2 px-2 py-1.5 transition ${p.active ? "bg-white/15" : "bg-white/5 opacity-70"}`}
-            style={{ borderColor: p.active ? p.color : "transparent" }}
+            className={`relative flex min-w-0 items-center gap-2 rounded-2xl border-2 px-2 py-1.5 transition ${p.active ? "bg-white/15" : "bg-white/5 opacity-70"}`}
+            style={{ borderColor: p.active ? p.color : "transparent", boxShadow: p.active ? `0 0 14px ${p.color}66` : undefined }}
           >
             <span className="relative text-2xl">
               {i === 0 ? "⚓" : "🏴‍☠️"}
@@ -197,200 +248,116 @@ export function Battle({
             </span>
             <div className="min-w-0 flex-1 leading-tight">
               <div className="truncate text-xs font-black">{p.name}</div>
-              <div className="flex items-center gap-2 text-[11px] font-extrabold text-white/70">
+              <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-white/70">
                 <span>🚢 {p.left}/5</span>
-                {arcade && <span className="text-[#ffe066]">🪙 {p.coins}</span>}
+                {p.active && <span style={{ color: p.color }}>{p.shots > 1 ? `🎯×${p.shots}` : "● Turno"}</span>}
+                {arcade && p.ciws && <span title="CIWIS armado">🚨</span>}
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* turn banner */}
-      <div
-        key={`${view.turn}-${myTurn}`}
-        className="pb-pop-in shrink-0 rounded-2xl px-3 py-2 text-center font-display text-xl leading-tight"
-        style={{ background: myTurn && foeOnline ? "#06d6a0" : "rgb(255 255 255 / .1)", color: myTurn && foeOnline ? "#1d0842" : "#fff" }}
-      >
-        {!foeOnline ? (
-          <span className="text-base text-[#ffe066]">📵 {foe.name} se desconectó… la partida sigue guardada, esperando a que vuelva.</span>
-        ) : myTurn ? (
-          <>
-            🎯 ¡Tu turno!{view.shotsLeft > 1 && <span className="text-base"> · {view.shotsLeft} disparos</span>}
-            <span className="block font-sans text-xs font-black opacity-70">{hint(tool)}</span>
-          </>
-        ) : (
-          <>
-            ⏳ {foe.name} está apuntando…
-            <span className="block font-sans text-xs font-black text-white/60">Mira tu flota y cruza los dedos 🤞</span>
-          </>
-        )}
-      </div>
-
-      {/* board tabs */}
-      <div className="grid shrink-0 grid-cols-2 gap-1 rounded-2xl bg-white/10 p-1">
-        {(
-          [
-            ["enemy", `🏴‍☠️ Mar enemigo`],
-            ["own", `⚓ Mi flota`],
-          ] as const
-        ).map(([t, label]) => (
-          <button
-            key={t}
-            role="tab"
-            aria-selected={tab === t}
-            onClick={() => {
-              playClick();
-              setTab(t);
-            }}
-            className={`rounded-xl py-1.5 text-sm font-black transition ${tab === t ? (t === "enemy" ? "bg-[#ff4d6d] text-[#1d0842]" : "bg-[#00bbf9] text-[#1d0842]") : "text-white/70"}`}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
-      {/* the board */}
-      <div className="min-h-0 flex-1" style={{ containerType: "size" }}>
-        <div className="mx-auto" style={{ width: "min(100cqw, 100cqh)" }}>
-          {tab === "enemy" ? (
-            <Board
-              key="enemy"
-              enemy
-              ships={foe.ships}
-              marks={foe.received}
-              sonar={me.sonar}
-              preview={enemyTool ? preview : []}
-              selected={enemyTool ? target : null}
-              fx={enemyFx}
-              shake={shakeEnemy > 0}
-              onCell={onEnemyCell}
-              disabled={busy}
-            />
-          ) : (
-            <Board
-              key="own"
-              ships={me.ships}
-              marks={me.received}
-              mines={me.mines}
-              preview={!enemyTool ? preview : []}
-              selected={!enemyTool && tool !== "double" ? target : null}
-              fx={ownFx}
-              shake={shakeOwn > 0}
-              onCell={onOwnCell}
-              disabled={busy}
-            />
-          )}
-        </div>
-      </div>
-
-      {/* arcade arsenal */}
-      {arcade && (
-        <div className="flex shrink-0 items-stretch gap-2">
-          <button
-            onClick={() => {
-              playClick();
-              setStoreOpen(true);
-            }}
-            className="pb-btn shrink-0 flex-col gap-0 px-3 py-1 text-base leading-none"
-            style={{ ["--btn" as string]: "#ffe066" }}
-          >
-            <span className="text-xl">🛒</span>
-            <span className="text-xs">🪙 {me.coins}</span>
-          </button>
-          <div className="pb-scroll flex min-w-0 flex-1 gap-1.5 overflow-x-auto py-1">
-            {tools.map((t) => {
-              const info = toolLabel(t);
-              const count = t === "shot" ? "∞" : `×${me.inv[t]}`;
-              return (
-                <button
-                  key={t}
-                  onClick={() => pickTool(t)}
-                  className={`flex shrink-0 flex-col items-center justify-center rounded-xl border-2 px-2 py-1 text-[10px] font-black leading-tight transition active:scale-95 ${
-                    tool === t ? "border-[#ffe066] bg-[#ffe066]/25" : "border-white/15 bg-white/10"
-                  }`}
-                >
-                  <span className="text-lg leading-none">{info.emoji}</span>
-                  <span className="max-w-16 truncate">{info.name}</span>
-                  <span className="text-white/60">{count}</span>
-                </button>
-              );
-            })}
-            {tools.length === 1 && <span className="self-center px-1 text-[11px] font-bold text-white/50">Gana monedas acertando y compra armas en la tienda →</span>}
-          </div>
+      {!foeOnline && (
+        <div className="pb-pop-in shrink-0 rounded-xl bg-[#ffbe0b]/20 px-3 py-1 text-center text-xs font-extrabold text-[#ffe066]">
+          📵 {foe.name} se desconectó… la partida sigue guardada, esperando a que vuelva.
         </div>
       )}
 
+      {/* board tabs + zoom */}
+      <div className="flex shrink-0 gap-1.5">
+        <div className="grid flex-1 grid-cols-2 gap-1 rounded-2xl bg-white/10 p-1">
+          {(
+            [
+              ["enemy", `🏴‍☠️ Mar enemigo`],
+              ["own", `⚓ Mi flota`],
+            ] as const
+          ).map(([t, label]) => (
+            <button
+              key={t}
+              role="tab"
+              aria-selected={tab === t}
+              onClick={() => {
+                playClick();
+                setTab(t);
+              }}
+              className={`rounded-xl py-1.5 text-sm font-black transition ${tab === t ? (t === "enemy" ? "bg-[#ff4d6d] text-[#1d0842]" : "bg-[#00bbf9] text-[#1d0842]") : "text-white/70"}`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        {arcade && (
+          <button
+            onClick={toggleZoom}
+            aria-label={zoom.s > 1.05 ? "Ver todo el mapa" : "Acercar el mapa"}
+            className={`grid w-12 shrink-0 place-items-center rounded-2xl text-lg font-black transition active:scale-90 ${zoom.s > 1.05 ? "bg-[#ffe066] text-[#1d0842]" : "bg-white/10"}`}
+          >
+            {zoom.s > 1.05 ? "🔍−" : "🔍+"}
+          </button>
+        )}
+      </div>
+
+      {/* the board */}
+      <div className="flex min-h-0 flex-1 items-center" style={{ containerType: "size" }}>
+        <div className="mx-auto" data-zoom-frame style={{ width: "min(100cqw, 100cqh)" }}>
+          <ZoomPan zoom={zoom} setZoom={setZoom}>
+            {tab === "enemy" ? (
+              <Board
+                key="enemy"
+                n={n}
+                enemy
+                ships={foe.ships}
+                marks={foe.received}
+                sonar={me.sonar}
+                preview={side === "enemy" ? preview : []}
+                selected={side === "enemy" ? target : null}
+                fx={enemyFx}
+                hidden={hiddenEnemy}
+                shake={shakeEnemy > 0}
+                onCell={onEnemyCell}
+                disabled={busy}
+              />
+            ) : (
+              <Board
+                key="own"
+                n={n}
+                ships={me.ships}
+                marks={me.received}
+                sonar={foe.scan}
+                mines={me.mines}
+                decoys={me.decoys}
+                decoyHits={me.decoyHits}
+                shields={me.shields}
+                preview={side === "own" ? preview : []}
+                previewOk={previewOk}
+                selected={side === "own" ? target : null}
+                fx={ownFx}
+                hidden={hiddenOwn}
+                shake={shakeOwn > 0}
+                onCell={onOwnCell}
+                disabled={busy}
+              />
+            )}
+          </ZoomPan>
+        </div>
+      </div>
+
+      {arcade && <AbilityBar me={me} tool={tool} onPick={pickTool} onInfo={setInfo} />}
+
       <button
         onClick={() => void fire(target)}
-        disabled={!myTurn || busy || (needsTarget && target === null)}
+        disabled={!ready}
         data-haptic="heavy"
-        className="pb-btn h-16 w-full shrink-0 text-3xl"
+        data-launcher
+        className="pb-btn h-16 w-full shrink-0 flex-col gap-0 leading-none"
         style={{ ["--btn" as string]: myTurn ? "#ff4d6d" : "#b9a6ff" }}
       >
-        {busy ? "⏳ Enviando…" : myTurn ? actionText(tool) : "Esperando…"}
+        <span className="text-3xl leading-none">{busy ? "⏳ Enviando…" : myTurn ? actionText(tool) : "Esperando…"}</span>
+        <span className="mt-0.5 max-w-full truncate px-2 font-sans text-[11px] font-black opacity-75">{subline}</span>
       </button>
 
-      {storeOpen && <Store view={view} act={act} onClose={() => setStoreOpen(false)} onError={onError} />}
-    </div>
-  );
-}
-
-function Store({ view, act, onClose, onError }: { view: View; act: (a: Action) => Promise<string | null>; onClose: () => void; onError: (m: string) => void }) {
-  const [buying, setBuying] = useState<ItemId | null>(null);
-  const coins = view.me.coins;
-  const buy = async (id: ItemId) => {
-    setBuying(id);
-    const err = await act({ t: "buy", item: id });
-    setBuying(null);
-    if (err) {
-      playError();
-      onError(err);
-    }
-  };
-  return (
-    <div className="fixed inset-0 z-30 flex flex-col justify-end bg-[#1a0636]/70" onClick={onClose}>
-      <div
-        className="bs-sheet mx-auto flex max-h-[85dvh] w-full max-w-md flex-col gap-2 rounded-t-[2rem] border-2 border-b-0 border-white/20 bg-[#2b0a57] px-4 pt-4 pb-[max(env(safe-area-inset-bottom),16px)] shadow-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex items-center justify-between">
-          <h2 className="font-display text-3xl">🛒 Tienda</h2>
-          <span key={coins} className="pb-pop-in rounded-full bg-[#ffe066] px-3 py-1 font-display text-xl text-[#1d0842]">
-            🪙 {coins}
-          </span>
-        </div>
-        <p className="text-xs font-bold text-white/60">Comprar no gasta tu turno. Las armas de ataque usan tu disparo; las tácticas, no.</p>
-        <div className="pb-scroll -mx-1 flex min-h-0 flex-col gap-2 px-1 pb-1">
-          {ITEMS.map((it, i) => {
-            const owned = view.me.inv[it.id] ?? 0;
-            const afford = coins >= it.price;
-            return (
-              <div key={it.id} className="pb-pop-in pb-card flex items-center gap-3 p-2.5" style={{ animationDelay: `${i * 35}ms` }}>
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white/10 text-3xl">{it.emoji}</span>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-1.5">
-                    <span className="font-display text-lg leading-none">{it.name}</span>
-                    {owned > 0 && <span className="rounded-full bg-[#06d6a0] px-1.5 text-[10px] font-black text-[#1d0842]">×{owned}</span>}
-                  </div>
-                  <p className="text-[11px] font-bold leading-snug text-white/65">{it.desc}</p>
-                </div>
-                <button
-                  onClick={() => void buy(it.id)}
-                  disabled={!afford || buying !== null}
-                  className="pb-btn h-11 shrink-0 px-3 text-base"
-                  style={{ ["--btn" as string]: afford ? "#ffe066" : "#8d86a6" }}
-                >
-                  {buying === it.id ? "…" : `🪙${it.price}`}
-                </button>
-              </div>
-            );
-          })}
-        </div>
-        <button onClick={onClose} className="pb-btn h-14 w-full shrink-0 text-xl" style={{ ["--btn" as string]: "#b9a6ff" }}>
-          Cerrar
-        </button>
-      </div>
+      {info && <AbilityDetail tool={info} me={me} onClose={() => setInfo(null)} onPick={pickTool} />}
     </div>
   );
 }

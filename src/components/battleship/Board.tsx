@@ -1,102 +1,141 @@
 "use client";
 
-import { memo } from "react";
-import { CELLS, type Mark, rc, SHIP_INFO, type Ship, type ShipType, SIZE } from "@/game/battleship/logic";
+import { memo, useRef } from "react";
+import { area, type Mark, rc, SHIP_INFO, type Ship, shipCells, type ShipType } from "@/game/battleship/logic";
+import { ShipSprite } from "./ships";
+import { MissileFlight, Reticle } from "./weapons";
 
-export type CellFx = { id: number; cell: number; kind: "splash" | "boom" | "shield" | "mine" | "treasure" | "repair" | "sonar" };
+export type CellFx = { id: number; cell: number; kind: "splash" | "boom" | "shield" | "intercept" | "mine" | "repair" | "sonar" | "place" };
 
-type ShipLike = Pick<Ship, "type" | "r" | "c" | "dir"> & Partial<Pick<Ship, "hits" | "sunk" | "shield">>;
+type ShipLike = Pick<Ship, "type" | "r" | "c" | "dir"> & Partial<Pick<Ship, "hits" | "sunk">>;
 
 type Props = {
+  /** Board side (10 classic, 14 arcade). */
+  n: number;
   ships: ShipLike[];
   marks: Record<string, Mark>;
   enemy?: boolean;
+  /** Sonar intel to draw: ours on the enemy sea, or the rival's on our own fleet. */
   sonar?: Record<string, 0 | 1>;
   mines?: number[];
+  decoys?: number[];
+  /** Our decoys the rival "hit" (they think it was a ship). */
+  decoyHits?: number[];
+  /** Centres of our active 3×3 shields. */
+  shields?: number[];
   /** Cells to preview (weapon area / ship ghost). */
   preview?: number[];
   previewOk?: boolean;
   selected?: number | null;
   selectedShip?: ShipType | null;
+  /** Ship currently being dragged: drawn raised above the others. */
+  dragShip?: ShipType | null;
   fx?: CellFx[];
+  /** Cells whose result must stay hidden until the incoming missile lands. */
+  hidden?: number[];
   onCell?: (cell: number) => void;
   disabled?: boolean;
   shake?: boolean;
 };
 
-const pct = (n: number) => `${(n * 100) / SIZE}%`;
+/** Icon size relative to one cell (the board is a size container), so it scales with the grid and with zoom. */
+const icon = (k: number) => ({ fontSize: `calc(var(--cell) * ${k})`, lineHeight: 1 });
 
-function ShipShape({ ship, selected, enemy }: { ship: ShipLike; selected: boolean; enemy: boolean }) {
+function ShipShape({ ship, n, selected, lifted, enemy }: { ship: ShipLike; n: number; selected: boolean; lifted: boolean; enemy: boolean }) {
+  const pct = (v: number) => `${(v * 100) / n}%`;
   const size = SHIP_INFO[ship.type].size;
   const h = ship.dir === "h";
   const sunk = !!ship.sunk;
-  const body = sunk
-    ? "linear-gradient(135deg, #5a1d1d, #2a0b0b)"
-    : enemy
-      ? "linear-gradient(135deg, #b9b3c9, #6d6584)"
-      : "linear-gradient(135deg, #c9d3dd, #74879a 55%, #4f6274)";
+  const filters = [
+    sunk ? "grayscale(1) sepia(1) hue-rotate(-40deg) saturate(2.5) brightness(.5)" : enemy ? "sepia(.35) hue-rotate(215deg) saturate(1.3)" : "",
+    lifted
+      ? "drop-shadow(0 0 2px #ffe066) drop-shadow(0 10px 8px rgb(0 0 0 / .5))"
+      : selected
+        ? "drop-shadow(0 0 2px #ffe066) drop-shadow(0 0 6px #ffe066)"
+        : "drop-shadow(0 3px 3px rgb(0 0 0 / .45))",
+  ].join(" ");
   return (
     <div
-      className={`pointer-events-none absolute transition-all duration-300 ${selected ? "z-[3]" : "z-[1]"}`}
-      style={{ left: pct(ship.c), top: pct(ship.r), width: pct(h ? size : 1), height: pct(h ? 1 : size), padding: "1.2%" }}
+      className={`pointer-events-none absolute transition-all ${lifted ? "z-[4] scale-[1.06] duration-100" : selected ? "z-[3] duration-300" : "z-[1] duration-300"}`}
+      style={{ left: pct(ship.c), top: pct(ship.r), width: pct(h ? size : 1), height: pct(h ? 1 : size), filter: filters }}
     >
-      <div
-        className={`relative h-full w-full ${ship.shield && !sunk ? "bs-shield" : ""} ${selected ? "ring-4 ring-[#ffe066]" : ""}`}
-        style={{
-          background: body,
-          borderRadius: h ? "45% 999px 999px 45% / 50% 999px 999px 50%" : "50% 50% 45% 45% / 999px 999px 45% 45%",
-          boxShadow: sunk ? "inset 0 0 0 2px #ff4d4d55" : "inset 0 -3px 0 rgb(0 0 0 / .25), 0 3px 6px rgb(0 0 0 / .35)",
-          opacity: sunk ? 0.9 : 1,
-        }}
-      >
-        {/* deck line + portholes */}
-        <div
-          className="absolute rounded-full"
-          style={{
-            inset: h ? "38% 18% 38% 14%" : "14% 38% 18% 38%",
-            background: sunk ? "#00000055" : "rgb(255 255 255 / .35)",
-          }}
-        />
-        {sunk && <span className="absolute inset-0 grid place-items-center text-[min(4.5vw,22px)]">☠️</span>}
-      </div>
+      <ShipSprite type={ship.type} size={size} vertical={!h} />
+      {sunk && (
+        <span className="absolute inset-0 grid place-items-center" style={icon(0.75)}>
+          ☠️
+        </span>
+      )}
     </div>
   );
 }
 
-function MarkIcon({ mark, own }: { mark: Mark; own: boolean }) {
+function MarkIcon({ mark, decoy }: { mark: Mark; decoy: boolean }) {
   switch (mark) {
     case "miss":
       return <span className="bs-mark-in block h-[28%] w-[28%] rounded-full bg-white/80 shadow" />;
     case "hit":
-      return <span className="bs-mark-in bs-flicker text-[min(5vw,24px)] leading-none">🔥</span>;
+      return decoy ? (
+        <span className="bs-mark-in" style={icon(0.62)}>
+          🎭
+        </span>
+      ) : (
+        <span className="bs-mark-in bs-flicker" style={icon(0.75)}>
+          🔥
+        </span>
+      );
     case "repaired":
-      return <span className="bs-mark-in text-[min(3.6vw,16px)] leading-none opacity-80">🔧</span>;
-    case "blocked":
-      return <span className="bs-mark-in text-[min(4vw,18px)] leading-none">🛡️</span>;
+      return null; // stays red, but no flame: the ship was fixed
     case "mine":
-      return <span className="bs-mark-in text-[min(4.5vw,20px)] leading-none">💥</span>;
-    case "treasure":
-      return <span className="bs-mark-in text-[min(4.5vw,20px)] leading-none">{own ? "💸" : "💰"}</span>;
+      return (
+        <span className="bs-mark-in" style={icon(0.65)}>
+          💥
+        </span>
+      );
+    default:
+      return null;
   }
 }
 
-function Fx({ fx }: { fx: CellFx }) {
-  const [r, c] = rc(fx.cell);
-  const center = { left: `${(c + 0.5) * 10}%`, top: `${(r + 0.5) * 10}%` };
-  const impact = fx.kind === "splash" ? "#bfe9ff" : fx.kind === "boom" ? "#ff8800" : fx.kind === "sonar" ? "#ffe066" : "#7df9ff";
-  const missile = fx.kind === "splash" || fx.kind === "boom" || fx.kind === "mine" || fx.kind === "treasure";
+const MISSILE_KINDS = new Set<CellFx["kind"]>(["splash", "boom", "mine", "shield", "intercept"]);
+const IMPACT_COLOR: Partial<Record<CellFx["kind"], string>> = {
+  splash: "#bfe9ff",
+  boom: "#ff8800",
+  sonar: "#ffe066",
+  intercept: "#ffffff",
+  place: "#06d6a0",
+};
+
+function Fx({ fx, n, enemy }: { fx: CellFx; n: number; enemy: boolean }) {
+  const probe = useRef<HTMLSpanElement>(null);
+  const [r, c] = rc(fx.cell, n);
+  const center = { left: `${((c + 0.5) * 100) / n}%`, top: `${((r + 0.5) * 100) / n}%` };
+  const cellBox = { width: `${100 / n}%`, height: `${100 / n}%` };
+  const ring = { width: `${140 / n}%`, height: `${140 / n}%` };
+  const missile = MISSILE_KINDS.has(fx.kind);
   return (
     <div className="pointer-events-none absolute inset-0 z-[5]">
       {missile && (
-        <span className="bs-missile absolute text-[min(6vw,28px)] leading-none" style={center}>
-          💣
-        </span>
+        <>
+          <span ref={probe} className="absolute h-0 w-0" style={center} />
+          {/* on the enemy sea it's our shot (from the FUEGO button); on ours it's theirs (from the sky) */}
+          <MissileFlight target={probe} n={n} fromLauncher={enemy} />
+        </>
       )}
-      <span className="bs-ring absolute h-[10%] w-[10%] rounded-full border-solid" style={{ ...center, borderColor: impact }} />
+      {fx.kind === "sonar" ? (
+        <span className="bs-scan absolute rounded-sm" style={{ ...center, ...cellBox }} />
+      ) : (
+        <span className="bs-ring absolute rounded-full border-solid" style={{ ...center, ...ring, borderColor: IMPACT_COLOR[fx.kind] ?? "#7df9ff" }} />
+      )}
       {(fx.kind === "boom" || fx.kind === "mine") && (
         <span
-          className="bs-burst absolute h-[16%] w-[16%] rounded-full"
-          style={{ ...center, background: "radial-gradient(circle, #fff 0%, #ffe066 30%, #ff8800 55%, #ff006e 70%, transparent 72%)" }}
+          className="bs-burst absolute rounded-full"
+          style={{ ...center, width: `${220 / n}%`, height: `${220 / n}%`, background: "radial-gradient(circle, #fff 0%, #ffe066 30%, #ff8800 55%, #ff006e 70%, transparent 72%)" }}
+        />
+      )}
+      {fx.kind === "intercept" && (
+        <span
+          className="bs-burst absolute rounded-full"
+          style={{ ...center, width: `${260 / n}%`, height: `${260 / n}%`, background: "radial-gradient(circle, #fff 0%, #bde0ff 35%, #7df9ff 55%, transparent 70%)" }}
         />
       )}
       {fx.kind === "splash" &&
@@ -105,8 +144,8 @@ function Fx({ fx }: { fx: CellFx }) {
           return (
             <span
               key={k}
-              className="bs-drop absolute h-[2.4%] w-[2.4%] rounded-full bg-[#d8f3ff]"
-              style={{ ...center, ["--dx" as string]: `${Math.cos(a) * 28}px`, ["--dy" as string]: `${Math.sin(a) * 28 - 10}px` }}
+              className="bs-drop absolute rounded-full bg-[#d8f3ff]"
+              style={{ ...center, width: `${24 / n}%`, height: `${24 / n}%`, ["--dx" as string]: `${Math.cos(a) * 28}px`, ["--dy" as string]: `${Math.sin(a) * 28 - 10}px` }}
             />
           );
         })}
@@ -115,49 +154,89 @@ function Fx({ fx }: { fx: CellFx }) {
 }
 
 export const Board = memo(function Board({
+  n,
   ships,
   marks,
   enemy = false,
   sonar,
   mines,
+  decoys,
+  decoyHits,
+  shields,
   preview,
   previewOk = true,
   selected,
   selectedShip,
+  dragShip,
   fx,
+  hidden,
   onCell,
   disabled,
   shake,
 }: Props) {
+  const pct = (v: number) => `${(v * 100) / n}%`;
   const previewSet = new Set(preview ?? []);
   const mineSet = new Set(mines ?? []);
+  const decoySet = new Set(decoys ?? []);
+  const decoyHitSet = new Set(decoyHits ?? []);
+  // Results a missile hasn't landed on yet stay secret (mark, tint and a freshly sunk ship).
+  const pending = new Set(hidden ?? []);
+  const shown = pending.size
+    ? ships.flatMap((s) => (s.sunk && shipCells(s, n).some((c) => pending.has(c)) ? (enemy ? [] : [{ ...s, sunk: false }]) : [s]))
+    : ships;
   return (
     <div
+      data-board
       className={`relative aspect-square w-full overflow-hidden rounded-2xl border-4 shadow-2xl ${enemy ? "bs-water-enemy border-[#ff4d6d]/70" : "bs-water border-[#00bbf9]/70"} ${shake ? "bs-hitshake" : ""}`}
+      style={{ containerType: "inline-size", ["--cell" as string]: `calc(100cqw / ${n})` }}
     >
+      {/* moving sea surface: slow swell + two ripple layers drifting apart */}
+      <div className="bs-swell pointer-events-none" />
+      <div className="bs-ripples pointer-events-none" />
+      <div className="bs-ripples-2 pointer-events-none" />
       {/* grid lines */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           backgroundImage: "linear-gradient(rgb(255 255 255 / .16) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / .16) 1px, transparent 1px)",
-          backgroundSize: `${100 / SIZE}% ${100 / SIZE}%`,
+          backgroundSize: `${100 / n}% ${100 / n}%`,
         }}
       />
-      {ships.map((s) => (
-        <ShipShape key={s.type} ship={s} selected={selectedShip === s.type} enemy={enemy} />
+      {shown.map((s) => (
+        <ShipShape key={s.type} ship={s} n={n} selected={selectedShip === s.type} lifted={dragShip === s.type} enemy={enemy} />
       ))}
-      <div className="absolute inset-0 z-[2] grid" style={{ gridTemplateColumns: `repeat(${SIZE}, 1fr)`, gridTemplateRows: `repeat(${SIZE}, 1fr)` }}>
-        {Array.from({ length: CELLS }, (_, i) => {
-          const mark = marks[i];
+      {/* our 3×3 shields */}
+      {shields?.map((ctr) => {
+        const cells = area("shield", ctr, n).map((c) => rc(c, n));
+        const r0 = Math.min(...cells.map(([r]) => r));
+        const c0 = Math.min(...cells.map(([, c]) => c));
+        const r1 = Math.max(...cells.map(([r]) => r));
+        const c1 = Math.max(...cells.map(([, c]) => c));
+        return (
+          <div
+            key={ctr}
+            className="bs-shield-zone pointer-events-none absolute z-[2] rounded-lg border-2 border-[#7df9ff]"
+            style={{ left: pct(c0), top: pct(r0), width: pct(c1 - c0 + 1), height: pct(r1 - r0 + 1) }}
+          >
+            <span className="absolute right-0.5 top-0.5" style={icon(0.5)}>
+              🛡️
+            </span>
+          </div>
+        );
+      })}
+      <div className="absolute inset-0 z-[2] grid" style={{ gridTemplateColumns: `repeat(${n}, 1fr)`, gridTemplateRows: `repeat(${n}, 1fr)` }}>
+        {Array.from({ length: n * n }, (_, i) => {
+          const mark = pending.has(i) ? undefined : marks[i];
           const intel = sonar?.[i];
           const inPreview = previewSet.has(i);
+          const [r, c] = rc(i, n);
           return (
             <button
               key={i}
               type="button"
               disabled={disabled || !onCell}
               onClick={() => onCell?.(i)}
-              aria-label={`Casilla ${String.fromCharCode(65 + rc(i)[0])}${rc(i)[1] + 1}${mark ? `: ${mark}` : ""}`}
+              aria-label={`Casilla ${String.fromCharCode(65 + r)}${c + 1}${mark ? `: ${mark}` : ""}`}
               className="relative grid place-items-center outline-none disabled:cursor-default"
               style={{
                 background: inPreview
@@ -165,24 +244,31 @@ export const Board = memo(function Board({
                     ? "rgb(255 224 102 / .45)"
                     : "rgb(255 46 77 / .5)"
                   : mark === "hit"
-                    ? "rgb(255 60 60 / .28)"
-                    : undefined,
+                    ? "rgb(255 60 60 / .3)"
+                    : mark === "repaired"
+                      ? "rgb(255 60 60 / .22)"
+                      : undefined,
               }}
             >
-              {intel === 1 && !mark && <span className="bs-target absolute inset-[18%] rounded-md border-2 border-dashed border-[#ffe066]" />}
-              {intel === 0 && !mark && <span className="absolute h-[14%] w-[14%] rounded-full bg-[#ffe066]/40" />}
-              {mineSet.has(i) && !mark && <span className="text-[min(4vw,18px)] leading-none">💣</span>}
-              {mark && <MarkIcon mark={mark} own={!enemy} />}
+              {intel === 1 && !mark && <span className="bs-target absolute inset-[14%] rounded-md border-2 border-dashed border-[#ffe066] bg-[#ffe066]/15" />}
+              {intel === 0 && !mark && <span className="absolute h-[16%] w-[16%] rounded-full bg-[#ffe066]/50" />}
+              {mineSet.has(i) && !mark && <span style={icon(0.6)}>💣</span>}
+              {decoySet.has(i) && !mark && (
+                <span className="opacity-90" style={icon(0.6)}>
+                  🎭
+                </span>
+              )}
+              {mark && <MarkIcon mark={mark} decoy={decoyHitSet.has(i)} />}
               {selected === i && (
-                <span className="bs-target pointer-events-none absolute inset-[6%] grid place-items-center rounded-lg border-[3px] border-[#ffe066] text-[min(4.5vw,20px)] shadow-[0_0_12px_#ffe066]">
-                  🎯
+                <span className="bs-target pointer-events-none absolute -inset-[12%] z-[1]">
+                  <Reticle />
                 </span>
               )}
             </button>
           );
         })}
       </div>
-      {fx?.map((f) => <Fx key={f.id} fx={f} />)}
+      {fx?.map((f) => <Fx key={f.id} fx={f} n={n} enemy={enemy} />)}
     </div>
   );
 });

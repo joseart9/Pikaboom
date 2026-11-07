@@ -1,11 +1,10 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   isMuted,
   playBonus,
   playClick,
-  playCoin,
   playError,
   playExplosion,
   playFanfare,
@@ -20,20 +19,21 @@ import {
   unlockAudio,
   vibrate,
 } from "@/game/audio";
-import { type Action, type GameEvent, ITEM_INFO, type Mark, type Mode, SHIP_INFO, type View } from "@/game/battleship/logic";
+import { ABILITY_INFO, type AbilityId, type Action, type GameEvent, type Mode, type Result, SHIP_INFO, type View } from "@/game/battleship/logic";
 import { useRoom } from "@/game/battleship/useRoom";
 import { keepAwake } from "@/game/wakeLock";
 import { Explosion } from "../game/Explosion";
+import { HelpSheet } from "./Abilities";
 import { Battle, type Tab } from "./Battle";
 import { Board, type CellFx } from "./Board";
 import { ConnBadge, Pop, type PopMsg, QrCode, Radar, Toast } from "./bits";
 import { Placement } from "./Placement";
+import { MISSILE_MS } from "./weapons";
 
-const IMPACT_MS = 450; // matches .bs-missile
-const FX_MS = 1500;
+const IMPACT_MS = MISSILE_MS; // impact sounds/shake land when the missile does
+const FX_MS = 1700;
 
-const markFx = (m: Mark): CellFx["kind"] =>
-  m === "hit" ? "boom" : m === "blocked" ? "shield" : m === "mine" ? "mine" : m === "treasure" ? "treasure" : "splash";
+const markFx = (m: Result): CellFx["kind"] => (m === "hit" ? "boom" : m === "blocked" ? "shield" : m === "mine" ? "mine" : "splash");
 
 export function inviteUrl(code: string) {
   return `${window.location.origin}/battleship?sala=${code}`;
@@ -82,11 +82,14 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
   const [tab, setTab] = useState<Tab>(initial.turn === initial.seat ? "enemy" : "own");
   const [enemyFx, setEnemyFx] = useState<CellFx[]>([]);
   const [ownFx, setOwnFx] = useState<CellFx[]>([]);
+  // Shot results that arrived with the new state but whose missile hasn't landed yet.
+  const [hidden, setHidden] = useState<Record<"enemy" | "own", number[]>>({ enemy: [], own: [] });
   const [shakeEnemy, setShakeEnemy] = useState(0);
   const [shakeOwn, setShakeOwn] = useState(0);
   // Which round's results are on screen (the board stays up a moment so the last blast can play).
   const [overRound, setOverRound] = useState<number | null>(initial.phase === "over" ? initial.round : null);
   const showOver = overRound === view.round;
+  const [help, setHelp] = useState(false);
 
   const fxId = useRef(0);
   const toastTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
@@ -136,6 +139,11 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
     [doAct, showToast],
   );
 
+  const reveal = useCallback(
+    (board: "enemy" | "own", cells: number[]) => setHidden((h) => ({ ...h, [board]: h[board].filter((c) => !cells.includes(c)) })),
+    [],
+  );
+
   // ── turn events → animations + sounds ──
   const addFx = useCallback(
     (board: "enemy" | "own", cells: number[], kind: CellFx["kind"] | ((c: number) => CellFx["kind"])) => {
@@ -148,9 +156,26 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
   );
 
   const playEvent = useCallback(
-    (e: GameEvent, foeName: string) => {
+    (e: GameEvent, foeName: string, arcade: boolean) => {
       const mine = e.by === seat;
       const board = mine ? "enemy" : "own";
+      const abilityName = (id?: AbilityId) => (id ? ABILITY_INFO[id].name : "arma");
+      if (e.kind === "fire" && e.intercepted) {
+        if (!mine) setTab("own");
+        playLaunch();
+        if (e.target !== undefined) addFx(board, [e.target], "intercept");
+        later(IMPACT_MS, () => {
+          playExplosion();
+          vibrate([60, 40, 60]);
+          popUp({
+            text: "¡DERRIBADO!",
+            sub: mine ? `El CIWIS de ${foeName} destruyó tu ${abilityName(e.weapon as AbilityId)}` : `Tu CIWIS destruyó su ${abilityName(e.weapon as AbilityId)}`,
+            color: "#7df9ff",
+            small: true,
+          });
+        });
+        return;
+      }
       switch (e.kind) {
         case "fire": {
           const results = e.results ?? [];
@@ -159,8 +184,16 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
           const marks = new Map(results);
           addFx(board, results.map(([c]) => c), (c) => markFx(marks.get(c)!));
           later(IMPACT_MS, () => {
+            reveal(board, results.map(([c]) => c));
+            if (e.backfire) reveal(mine ? "own" : "enemy", [e.backfire.cell]);
             const hit = results.some(([, m]) => m === "hit");
-            if (e.sunk?.length) {
+            const blocked = results.some(([, m]) => m === "blocked");
+            const decoyed = !mine && !!e.decoyHit?.length;
+            if (decoyed && !e.sunk?.length) {
+              playBonus(10);
+              vibrate(60);
+              popUp({ text: "🎭 ¡SEÑUELO!", sub: `${foeName} cayó en tu trampa`, color: "#ffe066", small: true });
+            } else if (e.sunk?.length) {
               playExplosion();
               vibrate([200, 60, 300]);
               setBoom({ id: ++fxId.current, text: "¡HUNDIDO!" });
@@ -168,7 +201,9 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
               later(1950, () =>
                 popUp({
                   text: mine ? "¡LO HUNDISTE!" : "¡NOOO!",
-                  sub: `${mine ? "" : "Perdiste tu "}${e.sunk!.map((s) => SHIP_INFO[s].name).join(" y ")}${mine && (e.coins ?? 0) > 0 ? ` · +${e.coins} 🪙` : ""}`,
+                  sub: mine
+                    ? e.sunk!.map((sh) => SHIP_INFO[sh].name).join(" y ")
+                    : `Perdiste tu ${e.sunk!.map((sh) => SHIP_INFO[sh].name).join(" y ")}${arcade ? " y sus habilidades" : ""}`,
                   color: mine ? "#ffe066" : "#ff4d6d",
                   small: true,
                 }),
@@ -180,56 +215,88 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
             } else if (hit) {
               playHit();
               vibrate(mine ? 60 : [80, 40, 120]);
-            } else if (results.some(([, m]) => m === "blocked")) {
+            } else if (blocked) {
               playPowerUp();
-              popUp({ text: "🛡️ ¡BLOQUEADO!", color: "#7df9ff", small: true });
+              vibrate(40);
             } else {
               playSplash();
             }
+            if (blocked && !e.sunk?.length && !results.some(([, m]) => m === "mine")) {
+              const text = mine ? "Le diste a un escudo: el impacto fue bloqueado" : "Tu escudo bloqueó el ataque (y se rompió)";
+              if (hit || decoyed) showToast(`🛡️ ${text}`);
+              else popUp({ text: "🛡️ ¡BLOQUEADO!", sub: text, color: "#7df9ff", small: true });
+            }
             if (hit) (mine ? setShakeEnemy : setShakeOwn)(Date.now());
             later(500, () => (mine ? setShakeEnemy : setShakeOwn)(0));
-            if (results.some(([, m]) => m === "treasure")) {
-              playCoin();
-              if (mine) popUp({ text: "💰 ¡TESORO!", sub: "+40 monedas", color: "#ffe066", small: true });
-            }
-            if (e.backfire) {
-              addFx(mine ? "own" : "enemy", [e.backfire.cell], "boom");
-            }
-            if (mine && (e.coins ?? 0) > 0 && !e.sunk?.length && !results.some(([, m]) => m === "treasure" || m === "mine")) {
-              later(250, () => {
-                playCoin();
-                popUp({ text: `+${e.coins} 🪙`, color: "#ffe066", small: true });
-              });
-            }
+            if (e.backfire) addFx(mine ? "own" : "enemy", [e.backfire.cell], "boom");
           });
           break;
         }
-        case "sonar":
-          playSonar();
-          addFx(board, (e.sonar ?? []).map(([c]) => c), "sonar");
-          if (!mine) showToast(`📡 ${foeName} escaneó tu zona con el sonar`);
-          break;
-        case "repair":
-          if (mine) {
-            playPowerUp();
-            if (e.target !== undefined) addFx("own", [e.target], "repair");
-          } else showToast(`🔧 ${foeName} reparó uno de sus barcos`);
-          break;
-        case "shield":
-          if (mine) playPowerUp();
-          else showToast(`🛡️ ${foeName} activó un escudo`);
-          break;
-        case "mine":
-          if (mine) playPowerUp();
-          else showToast(`💣 ${foeName} escondió una mina… ¡cuidado!`);
-          break;
-        case "double":
-          playBonus(10);
-          popUp({ text: "🎯 ¡DOBLE!", sub: mine ? "Dispara dos veces" : `${foeName} dispara dos veces`, color: "#ff8fa3", small: true });
-          break;
-        case "buy":
-          if (mine) playCoin();
-          else showToast(`🛒 ${foeName} compró ${ITEM_INFO[e.item!]?.emoji ?? "algo"} en la tienda`);
+        case "ability":
+          switch (e.ability) {
+            case "double":
+              if (e.intercepted) {
+                playExplosion();
+                popUp({ text: "¡DERRIBADO!", sub: mine ? `El CIWIS de ${foeName} anuló tu doble disparo` : "Tu CIWIS anuló su doble disparo", color: "#7df9ff", small: true });
+              } else {
+                playBonus(10);
+                popUp({ text: "🎯 ¡DOBLE!", sub: mine ? "Dispara dos veces" : `${foeName} dispara dos veces`, color: "#ff8fa3", small: true });
+              }
+              break;
+            case "sonar": {
+              const cells = (e.sonar ?? []).map(([c]) => c);
+              const found = (e.sonar ?? []).some(([, v]) => v === 1);
+              if (!mine) setTab("own");
+              playSonar();
+              addFx(board, cells, "sonar");
+              later(700, () =>
+                popUp(
+                  mine
+                    ? { text: found ? "📡 ¡CONTACTO!" : "📡 NADA", sub: found ? "Encontraste barcos" : "Solo agua en esa zona", color: "#ffe066", small: true }
+                    : { text: "📡 SONAR", sub: found ? `¡${foeName} detectó tu flota!` : `${foeName} no encontró nada`, color: found ? "#ff4d6d" : "#ffe066", small: true },
+                ),
+              );
+              break;
+            }
+            case "repair": {
+              playPowerUp();
+              const ship = e.ship ? SHIP_INFO[e.ship].name : null;
+              if (mine) {
+                addFx("own", e.cells ?? [], "repair");
+                popUp({ text: "🔧 ¡REPARADO!", sub: ship ? `Tu ${ship} quedó como nuevo` : undefined, color: "#06d6a0", small: true });
+              } else {
+                if (e.cells?.length) addFx("enemy", e.cells, "repair");
+                showToast(e.revived && ship ? `🔧 ${foeName} reflotó su ${ship}: ¡vuelve a la pelea!` : `🔧 ${foeName} reparó por completo uno de sus barcos`);
+              }
+              break;
+            }
+            case "shield":
+              if (mine) {
+                playPowerUp();
+                if (e.target !== undefined) addFx("own", [e.target], "place");
+              } else showToast(`🛡️ ${foeName} levantó un escudo en algún lugar de su mar`);
+              break;
+            case "mine":
+              if (mine) {
+                playPowerUp();
+                if (e.target !== undefined) addFx("own", [e.target], "place");
+              } else showToast(`💣 ${foeName} escondió una mina… ¡cuidado!`);
+              break;
+            case "decoy":
+              if (mine) {
+                playPowerUp();
+                if (e.target !== undefined) addFx("own", [e.target], "place");
+              } else showToast(`🎭 ${foeName} desplegó un señuelo… no todo lo que arde es un barco`);
+              break;
+            case "ciws":
+              playPowerUp();
+              popUp(
+                mine
+                  ? { text: "🚨 CIWIS", sub: "Derribará la próxima arma especial", color: "#7df9ff", small: true }
+                  : { text: "🚨 CIWIS", sub: `${foeName} derribará tu próxima arma especial`, color: "#7df9ff", small: true },
+              );
+              break;
+          }
           break;
         case "start":
           playBonus(20);
@@ -243,8 +310,29 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
           break;
       }
     },
-    [seat, addFx, later, popUp, showToast],
+    [seat, addFx, later, popUp, showToast, reveal],
   );
+
+  // Before paint, hide the results of shots we're about to animate (the same ones the effect below replays),
+  // so the 🔥 / sunk ship doesn't show up before the missile gets there.
+  const holdSeq = useRef(initial.seq);
+  useLayoutEffect(() => {
+    const fires = view.events.filter((e) => e.seq > holdSeq.current).slice(-2).filter((e) => e.kind === "fire");
+    holdSeq.current = Math.max(holdSeq.current, view.seq);
+    if (!fires.length) return;
+    const add: Record<"enemy" | "own", number[]> = { enemy: [], own: [] };
+    for (const e of fires) {
+      const board = e.by === seat ? "enemy" : "own";
+      add[board].push(...(e.results ?? []).map(([c]) => c));
+      if (e.backfire) add[board === "enemy" ? "own" : "enemy"].push(e.backfire.cell);
+    }
+    setHidden((h) => ({ enemy: [...h.enemy, ...add.enemy], own: [...h.own, ...add.own] }));
+    // Safety net: never keep a result hidden for long, even if its animation got skipped.
+    later(4500, () => {
+      reveal("enemy", add.enemy);
+      reveal("own", add.own);
+    });
+  }, [view, seat, later, reveal]);
 
   const lastSeq = useRef(initial.seq);
   const viewRef = useRef(view);
@@ -256,8 +344,8 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
     let delay = 0;
     // After being away (phone locked, offline) only replay the latest moves; older ones are already on the board.
     for (const e of fresh.slice(-2)) {
-      later(delay, () => playEvent(e, viewRef.current.foe?.name ?? "Tu rival"));
-      delay += e.kind === "fire" ? 1100 : 350;
+      later(delay, () => playEvent(e, viewRef.current.foe?.name ?? "Tu rival", viewRef.current.mode === "arcade"));
+      delay += e.kind === "fire" ? 1300 : e.ability === "sonar" ? 900 : 350;
     }
   }, [view, later, playEvent]);
 
@@ -278,8 +366,10 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
     if (view.phase !== "battle") return;
     const started = was.phase !== "battle";
     if (!started && was.turn === view.turn) return;
-    const lastSunk = !!viewRef.current.events.at(-1)?.sunk?.length; // let the sinking blast finish first
-    later(started ? 1900 : lastSunk ? 3800 : 1300, () => {
+    const last = viewRef.current.events.at(-1);
+    const lastSunk = !!last?.sunk?.length; // let the sinking blast finish first
+    const lastScan = last?.ability === "sonar" || !!last?.intercepted; // time to read where the sonar looked
+    later(started ? 1900 : lastSunk ? 4000 : lastScan ? 2800 : 1500, () => {
       if (viewRef.current.turn !== view.turn) return;
       if (view.turn === seat) {
         setTab("enemy");
@@ -295,7 +385,7 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
   // ── screens ──
   let screen: React.ReactNode;
   if (view.phase === "lobby") screen = <Lobby view={view} act={actWithToast} busy={busy} onToast={showToast} />;
-  else if (view.phase === "placing") screen = <Placement view={view} act={actWithToast} busy={busy} onError={showToast} />;
+  else if (view.phase === "placing") screen = <Placement key={view.size} view={view} act={actWithToast} busy={busy} onError={showToast} />;
   else if (view.phase === "battle" || (view.phase === "over" && !showOver))
     screen = (
       <Battle
@@ -306,6 +396,8 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
         setTab={setTab}
         enemyFx={enemyFx}
         ownFx={ownFx}
+        hiddenEnemy={hidden.enemy}
+        hiddenOwn={hidden.own}
         shakeEnemy={shakeEnemy}
         shakeOwn={shakeOwn}
         foeOnline={foeOnline || status !== "online"}
@@ -318,7 +410,27 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
   return (
     <main className="pb-bg flex pb-screen w-full flex-col overflow-hidden">
       <div className="pb-safe mx-auto flex h-full w-full max-w-md flex-col gap-2">
-        <TopBar onBack={() => onLeave()} sub={`Sala ${view.code} · ${modeLabel}`} right={<ConnBadge status={status} />} />
+        <TopBar
+          onBack={() => onLeave()}
+          sub={`Sala ${view.code} · ${modeLabel}`}
+          right={
+            <>
+              {view.mode === "arcade" && (
+                <button
+                  onClick={() => {
+                    playClick();
+                    setHelp(true);
+                  }}
+                  aria-label="Reglas y habilidades"
+                  className="grid h-11 w-11 place-items-center rounded-2xl bg-[#ffe066] font-display text-2xl text-[#1d0842] transition active:scale-90"
+                >
+                  ?
+                </button>
+              )}
+              <ConnBadge status={status} />
+            </>
+          }
+        />
         {status !== "online" && (
           <div className="pb-pop-in shrink-0 rounded-xl bg-[#ffbe0b]/20 px-3 py-1.5 text-center text-xs font-extrabold text-[#ffe066]">
             📡 Sin conexión, reconectando… Tu partida está guardada, no se pierde nada.
@@ -329,6 +441,7 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
       <Pop pop={pop} onDone={clearPop} />
       {boom && <Explosion key={boom.id} text={boom.text} />}
       <Toast text={toast} />
+      {help && <HelpSheet onClose={() => setHelp(false)} />}
     </main>
   );
 }
@@ -342,7 +455,7 @@ export function ModePicker({ mode, extraTurn, onChange, disabled }: { mode: Mode
         {(
           [
             ["classic", "🎯", "Clásico", "Las reglas de siempre"],
-            ["arcade", "🕹️", "Arcade", "Monedas, tienda y armas"],
+            ["arcade", "🕹️", "Arcade", "Mapa grande y barcos con habilidades"],
           ] as const
         ).map(([m, emoji, title, blurb]) => (
           <button
@@ -454,7 +567,7 @@ function GameOver({ view, act, busy, onLeave }: { view: View; act: (a: Action) =
     ["Precisión", `${me.stats.shots ? Math.round((me.stats.hits / Math.max(1, me.stats.shots)) * 100) : 0}%`, `${foe.stats.shots ? Math.round((foe.stats.hits / Math.max(1, foe.stats.shots)) * 100) : 0}%`],
     ["Barcos hundidos", me.stats.sunk, foe.stats.sunk],
   ];
-  if (view.mode === "arcade") rows.push(["Monedas ganadas", me.stats.earned, foe.stats.earned]);
+  if (view.mode === "arcade") rows.push(["Habilidades usadas", me.stats.used ?? 0, foe.stats.used ?? 0]);
 
   return (
     <div className="flex min-h-0 flex-1 flex-col items-center gap-2 text-center">
@@ -472,7 +585,7 @@ function GameOver({ view, act, busy, onLeave }: { view: View; act: (a: Action) =
       <div className="flex min-h-0 w-full flex-1 gap-3">
         <div className="min-h-0 flex-1" style={{ containerType: "size" }}>
           <div className="mx-auto" style={{ width: "min(100cqw, 100cqh)" }}>
-            <Board enemy ships={foe.ships} marks={foe.received} />
+            <Board n={view.size} enemy ships={foe.ships} marks={foe.received} />
           </div>
         </div>
       </div>
