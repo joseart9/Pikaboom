@@ -280,20 +280,25 @@ export const Board = memo(function Board({
         .map((s) => {
           const size = SHIP_INFO[s.type].size;
           const h = s.dir === "h";
+          // Outer span centres on the ship; the pop-in animation lives on the inner one so its transform can't undo the centring.
           return (
             <span
               key={`skull-${s.type}`}
-              className="bs-mark-in pointer-events-none absolute z-[4] grid place-items-center rounded-full border-2 border-[#ff4d6d] bg-[#1d0842]/85 shadow-[0_0_10px_rgb(0_0_0/.6)]"
+              className="pointer-events-none absolute z-[4]"
               style={{
                 left: pct(s.c + (h ? size : 1) / 2),
                 top: pct(s.r + (h ? 1 : size) / 2),
-                width: "calc(var(--cell) * 1.05)",
-                height: "calc(var(--cell) * 1.05)",
+                width: "calc(var(--cell) * .74)",
+                height: "calc(var(--cell) * .74)",
                 transform: "translate(-50%, -50%)",
-                ...icon(0.68),
               }}
             >
-              ☠️
+              <span
+                className="bs-mark-in grid h-full w-full place-items-center rounded-full border border-[#ff4d6d] bg-[#1d0842]/80 shadow-[0_0_6px_rgb(0_0_0/.6)]"
+                style={icon(0.5)}
+              >
+                ☠️
+              </span>
             </span>
           );
         })}
