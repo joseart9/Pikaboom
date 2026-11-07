@@ -363,3 +363,126 @@ a {
 @media (prefers-reduced-motion: reduce) {
   .pb-wobble, .pb-throb, .pb-float, .pb-shake { animation: none; }
 }
+
+/* ───────────── Batalla Naval ───────────── */
+.bs-water {
+  background-color: #0b5fa5;
+  background-image:
+    radial-gradient(ellipse at 30% 20%, rgb(255 255 255 / 0.14), transparent 55%),
+    repeating-linear-gradient(115deg, rgb(255 255 255 / 0.05) 0 6px, transparent 6px 18px),
+    linear-gradient(160deg, #1592e6, #0a4f8f 70%, #08396b);
+  background-size: 100% 100%, 200% 200%, 100% 100%;
+  animation: bs-waves 9s linear infinite;
+}
+.bs-water-enemy {
+  background-color: #3b1a73;
+  background-image:
+    radial-gradient(ellipse at 70% 15%, rgb(255 255 255 / 0.12), transparent 55%),
+    repeating-linear-gradient(115deg, rgb(255 255 255 / 0.05) 0 6px, transparent 6px 18px),
+    linear-gradient(160deg, #3a3fd0, #23207a 70%, #160f4d);
+  background-size: 100% 100%, 200% 200%, 100% 100%;
+  animation: bs-waves 9s linear infinite;
+}
+@keyframes bs-waves {
+  from { background-position: 0 0, 0 0, 0 0; }
+  to { background-position: 0 0, 100% 100%, 0 0; }
+}
+
+/* The missile drops onto the cell, then the impact plays. */
+@keyframes bs-missile {
+  0% { transform: translate(-50%, -900%) scale(2.2); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(0.8); opacity: 1; }
+}
+.bs-missile { animation: bs-missile 0.45s cubic-bezier(0.5, 0, 0.9, 0.6) forwards; }
+
+@keyframes bs-ring {
+  0% { transform: translate(-50%, -50%) scale(0.2); opacity: 1; border-width: 6px; }
+  100% { transform: translate(-50%, -50%) scale(2.8); opacity: 0; border-width: 1px; }
+}
+.bs-ring { animation: bs-ring 0.8s ease-out 0.45s both; }
+
+@keyframes bs-burst {
+  0% { transform: translate(-50%, -50%) scale(0.1); opacity: 1; }
+  60% { opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(2.6); opacity: 0; }
+}
+.bs-burst { animation: bs-burst 0.7s cubic-bezier(0.1, 0.8, 0.3, 1) 0.45s both; }
+
+@keyframes bs-drop {
+  0% { transform: translate(-50%, -50%) translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) scale(0.3); opacity: 0; }
+}
+.bs-drop { animation: bs-drop 0.6s ease-out 0.45s both; }
+
+@keyframes bs-flicker {
+  0%, 100% { transform: scale(1) rotate(-3deg); }
+  50% { transform: scale(1.15) rotate(3deg); }
+}
+.bs-flicker { animation: bs-flicker 0.5s ease-in-out infinite; }
+
+@keyframes bs-mark-in {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+.bs-mark-in { animation: bs-mark-in 0.35s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+
+@keyframes bs-target {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(0.82); opacity: 0.75; }
+}
+.bs-target { animation: bs-target 0.8s ease-in-out infinite; }
+
+@keyframes bs-radar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.bs-radar { animation: bs-radar 2.4s linear infinite; }
+
+@keyframes bs-blip {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  20% { opacity: 1; transform: scale(1.2); }
+  60% { opacity: 0.6; transform: scale(1); }
+}
+.bs-blip { animation: bs-blip 2.4s ease-out infinite; }
+
+@keyframes bs-bob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
+}
+.bs-bob { animation: bs-bob 2.6s ease-in-out infinite; }
+
+@keyframes bs-shield {
+  0%, 100% { box-shadow: 0 0 0 2px #7df9ff, 0 0 10px 2px #00e5ff; }
+  50% { box-shadow: 0 0 0 3px #b8fdff, 0 0 18px 4px #00e5ff; }
+}
+.bs-shield { animation: bs-shield 1.4s ease-in-out infinite; }
+
+@keyframes bs-sheet {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.bs-sheet { animation: bs-sheet 0.32s cubic-bezier(0.2, 1, 0.4, 1) both; }
+
+@keyframes bs-nope {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+.bs-nope { animation: bs-nope 0.4s ease-out; }
+
+@keyframes bs-hitshake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-6px, 4px); }
+  40% { transform: translate(6px, -4px); }
+  60% { transform: translate(-4px, -3px); }
+  80% { transform: translate(3px, 3px); }
+}
+.bs-hitshake { animation: bs-hitshake 0.45s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bs-water, .bs-water-enemy, .bs-bob, .bs-radar, .bs-flicker { animation: none; }
+}

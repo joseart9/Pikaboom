@@ -38,7 +38,8 @@ function makeSmoke() {
   );
 }
 
-export function Explosion() {
+/** Full-screen blast. `text` defaults to ¡BOOM!; longer words get a smaller size so they fit a phone. */
+export function Explosion({ text = "¡BOOM!" }: { text?: string }) {
   const [particles] = useState(makeParticles);
   const [smoke] = useState(makeSmoke);
 
@@ -73,10 +74,12 @@ export function Explosion() {
         />
       ))}
       <div
-        className="pb-boom-text absolute left-1/2 top-1/2 font-display text-[6.5rem] leading-none whitespace-nowrap text-[#ffe066] sm:text-[10rem]"
+        className={`pb-boom-text absolute left-1/2 top-1/2 font-display leading-none whitespace-nowrap text-[#ffe066] ${
+          text.length > 7 ? "text-[3.6rem] sm:text-[7rem]" : "text-[6.5rem] sm:text-[10rem]"
+        }`}
         style={{ WebkitTextStroke: "6px #1d0842", paintOrder: "stroke fill", textShadow: "0 10px 0 #ff006e, 0 0 60px #ff8800" }}
       >
-        ¡BOOM!
+        {text}
       </div>
       <div className="pb-flash absolute inset-0 bg-white" />
     </div>

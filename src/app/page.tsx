@@ -4,6 +4,7 @@ import { Bomb } from "@/components/game/Bomb";
 
 const GAMES = [
   { href: "/charades", title: "Charadas", emoji: "🎭", blurb: "Actúalo. ¡Sin hablar!", color: "#ff4d6d", ready: true },
+  { href: "/battleship", title: "Batalla Naval", emoji: "🚢", blurb: "1 vs 1, cada quien en su teléfono", color: "#00bbf9", ready: true },
   { href: "#", title: "Palabra Bomba", emoji: "🔤", blurb: "Próximamente", color: "#3a86ff", ready: false },
   { href: "#", title: "Dibújalo", emoji: "🎨", blurb: "Próximamente", color: "#06d6a0", ready: false },
   { href: "#", title: "Tararéalo", emoji: "🎵", blurb: "Próximamente", color: "#ffbe0b", ready: false },

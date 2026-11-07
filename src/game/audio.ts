@@ -224,3 +224,55 @@ export function playNothing() {
   tone(330, t, 0.12, { type: "triangle", vol: 0.2 });
   tone(220, t + 0.12, 0.25, { type: "triangle", vol: 0.2, endFreq: 180 });
 }
+
+// ───────────── Batalla Naval ─────────────
+
+/** Water splash for a missed shot. */
+export function playSplash() {
+  const t = ac().currentTime;
+  noiseBurst(t, 0.5, { vol: 0.45, type: "bandpass", freq: 1800, endFreq: 300, q: 0.7 });
+  tone(420, t, 0.18, { type: "sine", vol: 0.15, endFreq: 140 });
+  noiseBurst(t + 0.12, 0.35, { vol: 0.15, type: "highpass", freq: 4000 });
+}
+
+/** Short metallic blast for a hit. */
+export function playHit() {
+  const t = ac().currentTime;
+  noiseBurst(t, 0.35, { vol: 0.75, type: "lowpass", freq: 6000, endFreq: 500 });
+  tone(140, t, 0.45, { vol: 0.6, endFreq: 40, attack: 0.002 });
+  tone(1900, t, 0.12, { type: "square", vol: 0.06, endFreq: 700 });
+}
+
+/** Rising whistle of an incoming missile. */
+export function playLaunch() {
+  const t = ac().currentTime;
+  tone(1600, t, 0.42, { type: "sine", vol: 0.1, endFreq: 500 });
+  noiseBurst(t, 0.42, { vol: 0.12, type: "bandpass", freq: 2500, endFreq: 900, q: 3 });
+}
+
+/** Coin jingle. */
+export function playCoin() {
+  const t = ac().currentTime;
+  tone(988, t, 0.08, { type: "square", vol: 0.1 });
+  tone(1319, t + 0.07, 0.25, { type: "square", vol: 0.1 });
+}
+
+/** Sonar ping. */
+export function playSonar() {
+  const t = ac().currentTime;
+  tone(1250, t, 0.9, { type: "sine", vol: 0.2, attack: 0.01 });
+  tone(1250, t + 0.45, 0.6, { type: "sine", vol: 0.07, attack: 0.01 });
+}
+
+/** Low buzz for an invalid move. */
+export function playError() {
+  const t = ac().currentTime;
+  tone(150, t, 0.18, { type: "sawtooth", vol: 0.12 });
+  tone(110, t + 0.1, 0.2, { type: "sawtooth", vol: 0.12 });
+}
+
+/** Clank + sparkle for repairs and shields. */
+export function playPowerUp() {
+  const t = ac().currentTime;
+  [523, 784, 1047, 1568].forEach((n, i) => tone(n, t + i * 0.06, 0.16, { type: "triangle", vol: 0.15 }));
+}
