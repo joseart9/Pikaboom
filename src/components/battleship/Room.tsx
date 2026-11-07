@@ -159,7 +159,7 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
     (e: GameEvent, foeName: string, arcade: boolean) => {
       const mine = e.by === seat;
       const board = mine ? "enemy" : "own";
-      const abilityName = (id?: AbilityId) => (id ? ABILITY_INFO[id].name : "arma");
+      const abilityName = (id?: AbilityId | "shot") => (id === "shot" ? "disparo" : id ? ABILITY_INFO[id].name : "arma");
       if (e.kind === "fire" && e.intercepted) {
         if (!mine) setTab("own");
         playLaunch();
@@ -169,7 +169,7 @@ export function Room({ initial, onLeave }: { initial: View; onLeave: (fatal?: st
         if (results.length) addFx(board, results.map(([c]) => c), (c) => markFx(marks.get(c)!));
         const at = e.at ?? e.target;
         if (at !== undefined) addFx(board, [at], "intercept");
-        const weapon = abilityName(e.weapon as AbilityId);
+        const weapon = abilityName(e.weapon as AbilityId | "shot");
         const system = e.interceptedBy === "sam" ? "SAM" : "CIWIS";
         later(IMPACT_MS, () => {
           reveal(board, results.map(([c]) => c));

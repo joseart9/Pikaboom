@@ -82,7 +82,7 @@ export const ABILITIES: AbilityInfo[] = [
     cooldown: 0,
     uses: 1,
     desc: "Sistema de defensa antimisiles naval: zona de 5×5 durante 4 turnos.",
-    long: `Sistema de defensa antimisiles naval. Cubre 5×5 casillas de tu mapa durante los próximos ${SAM_TURNS} turnos del rival: cualquier arma especial (bombardero, misil en cruz o torpedo) que vaya a caer en esa zona es derribada y no hace daño. Los disparos normales sí pasan. Tu rival no ve la zona en su mapa ni se entera de que la desplegaste.`,
+    long: `Sistema de defensa antimisiles naval. Cubre 5×5 casillas de tu mapa durante los próximos ${SAM_TURNS} turnos del rival: todo lo que el rival lance a esa zona (disparos normales, bombardero, misil en cruz o torpedo) es derribado y no hace daño ni deja marca, haya o no un barco debajo. Tu rival no ve la zona en su mapa ni se entera de que la desplegaste.`,
     target: "ownArea",
   },
   {
@@ -531,14 +531,16 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
       pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true, interceptedBy: "ciws", at: target });
       return afterShot(s, seat, false);
     }
-    // Bombs and cross missiles aimed so that any part lands in a SAM zone are shot down whole.
-    const zone = foe.sam ? area("sam", foe.sam.center, n) : [];
-    if (weapon !== "torpedo" && area(weapon, target, n).some((c) => zone.includes(c))) {
-      pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true, interceptedBy: "sam", at: target });
-      return afterShot(s, seat, false);
-    }
   } else if (isFinal(foe.received[target])) {
     throw new GameError("Ya disparaste ahí.");
+  }
+  // SAM: anything aimed so that any part lands in the zone is shot down whole — plain shots included,
+  // whether or not there's a ship underneath. (Torpedoes are handled as they travel, below.)
+  const samZone = foe.sam ? area("sam", foe.sam.center, n) : [];
+  if (weapon !== "torpedo" && area(weapon, target, n).some((c) => samZone.includes(c))) {
+    me.stats.shots += 1;
+    pushEvent(s, { by: seat, kind: "fire", weapon, target, results: [], intercepted: true, interceptedBy: "sam", at: target });
+    return afterShot(s, seat, false);
   }
 
   const results: [number, Result][] = [];
@@ -589,11 +591,10 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
 
   if (weapon === "torpedo") {
     // The torpedo runs along the row; a SAM zone destroys it as soon as it gets there.
-    const zone = foe.sam ? area("sam", foe.sam.center, n) : [];
     const [r] = rc(target, n);
     for (let c = 0; c < n; c++) {
       const cell = idx(r, c, n);
-      if (zone.includes(cell)) {
+      if (samZone.includes(cell)) {
         samAt = cell;
         break;
       }
