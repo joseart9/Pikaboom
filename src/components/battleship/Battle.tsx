@@ -54,7 +54,7 @@ function hint(tool: Tool) {
     case "sonar":
       return "Elige el centro del área a escanear";
     case "torpedo":
-      return "Elige la fila: el torpedo sale por la izquierda";
+      return "Elige la casilla de salida: el torpedo avanza 5 casillas a la izquierda";
     case "air":
     case "cross":
       return "Elige el centro del ataque";

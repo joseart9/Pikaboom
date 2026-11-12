@@ -159,8 +159,8 @@ export const ABILITIES: AbilityInfo[] = [
     kind: "attack",
     cooldown: 8,
     uses: 4,
-    desc: "Recorre una fila y pega en el primer barco.",
-    long: "Elige una fila: el torpedo sale por la izquierda, avanza casilla por casilla y explota en el primer barco que encuentre.",
+    desc: "Avanza 5 casillas a la izquierda y pega en el primer barco.",
+    long: "Elige una casilla: el torpedo sale desde ahí, avanza casilla por casilla hacia la izquierda (5 casillas en total) y explota en el primer barco que encuentre.",
     target: "enemy",
   },
   {
@@ -349,6 +349,9 @@ export function randomFleet(n: number): Placement[] {
 
 export type AreaKind = Weapon | "sonar" | "sam";
 
+/** How many cells a torpedo travels (including the one it's launched from). */
+export const TORPEDO_RANGE = 5;
+
 /** Cells an ability can affect when aimed at `cell` (the torpedo's path is decided when it runs). */
 export function area(kind: AreaKind, cell: number, n: number): number[] {
   const [r, c] = rc(cell, n);
@@ -363,7 +366,10 @@ export function area(kind: AreaKind, cell: number, n: number): number[] {
     case "sam":
       return pick([-2, -1, 0, 1, 2].flatMap((dr) => [-2, -1, 0, 1, 2].map((dc) => [dr, dc] as [number, number])));
     case "torpedo":
-      return Array.from({ length: n }, (_, k) => idx(r, k, n));
+      // Launched at `cell`, runs left: the cell itself plus up to 4 more, in travel order.
+      return Array.from({ length: TORPEDO_RANGE }, (_, k) => c - k)
+        .filter((k) => k >= 0)
+        .map((k) => idx(r, k, n));
     default:
       return [cell];
   }
@@ -590,10 +596,8 @@ function fire(s: GameState, seat: Seat, weapon: Weapon, target: number) {
   };
 
   if (weapon === "torpedo") {
-    // The torpedo runs along the row; a SAM zone destroys it as soon as it gets there.
-    const [r] = rc(target, n);
-    for (let c = 0; c < n; c++) {
-      const cell = idx(r, c, n);
+    // The torpedo runs left from the target; a SAM zone destroys it as soon as it gets there.
+    for (const cell of area("torpedo", target, n)) {
       if (samZone.includes(cell)) {
         samAt = cell;
         break;
