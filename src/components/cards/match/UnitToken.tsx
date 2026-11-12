@@ -1,0 +1,88 @@
+// A unit on the board (§17.4): art, attack bottom-left, health bottom-right, keyword icons, Escudo charges,
+// "zZz" while sleeping, green ring when it can attack (from `legal.attacks`), red glow when targetable.
+import { memo, type MouseEvent } from "react";
+import { CATALOG } from "@/game/cards/catalog";
+import { KEYWORDS } from "@/game/cards/catalog/keywords";
+import type { KeywordId } from "@/game/cards/catalog/types";
+import type { UnitSnapshot } from "@/game/cards/engine/events";
+import { cardName, t } from "@/game/cards/i18n";
+import { AttackBadge, CardArt, HealthBadge, KeywordIcon, StatusIcon } from "../skin";
+
+export interface UnitTokenProps {
+  unit: UnitSnapshot;
+  canAttack: boolean;
+  targetable: boolean;
+  selected: boolean;
+  pending: boolean;
+  /** Clickable at all (an action or a placement uses it). */
+  actionable: boolean;
+  onTap: (unit: UnitSnapshot, e: MouseEvent<HTMLButtonElement>) => void;
+}
+
+const MAX_ICONS = 4;
+
+function keywordIcons(unit: UnitSnapshot): { id: KeywordId; value?: number }[] {
+  if (unit.silenced) return [];
+  const out: { id: KeywordId; value?: number }[] = [];
+  for (const meta of Object.values(KEYWORDS).sort((a, b) => a.order - b.order)) {
+    const v = unit.keywords[meta.id];
+    if (v === undefined || meta.id === "taunt") continue; // Provocar is shown by the frame
+    if (meta.id === "shield") {
+      if (unit.shieldCharges > 0) out.push({ id: "shield", value: unit.shieldCharges });
+      continue;
+    }
+    out.push({ id: meta.id, value: typeof v === "number" ? v : undefined });
+  }
+  return out.slice(0, MAX_ICONS);
+}
+
+export const UnitToken = memo(function UnitToken({ unit, canAttack, targetable, selected, pending, actionable, onTap }: UnitTokenProps) {
+  const def = CATALOG[unit.defId];
+  const baseAttack = def?.type === "mob" ? def.attack : unit.attack;
+  const taunt = !unit.silenced && unit.keywords.taunt === true;
+  const classes = ["cg-unit"];
+  if (taunt) classes.push("cg-unit--taunt");
+  if (unit.silenced) classes.push("cg-unit-silenced");
+  if (actionable || targetable) classes.push("cg-unit--actionable");
+  if (selected) classes.push("cg-unit--selected");
+  else if (targetable) classes.push("cg-unit--targetable");
+  else if (canAttack) classes.push("cg-unit--can-attack");
+  if (pending) classes.push("cg-unit--pending");
+  const name = cardName(unit.defId);
+  const label = t("match.unitLabel", { name, attack: unit.attack, health: unit.health });
+  return (
+    <button
+      type="button"
+      data-cg-tap
+      data-iid={unit.iid}
+      className={classes.join(" ")}
+      aria-label={label}
+      aria-pressed={selected}
+      title={`${name}${unit.sleeping ? ` — ${t("match.sleeping")}` : canAttack ? ` — ${t("match.canAttack")}` : ""}`}
+      onClick={(e) => onTap(unit, e)}
+    >
+      <span className="cg-unit-body">
+        <CardArt art={def?.art ?? unit.defId} tribe={def?.type === "mob" ? def.tribes[0] : undefined} />
+      </span>
+      <span className="cg-unit-keywords">
+        {keywordIcons(unit).map((k) => (
+          <KeywordIcon key={k.id} keyword={k.id} value={k.value} size="17cqh" title={t(`keyword.${k.id}.name`)} />
+        ))}
+        {unit.statuses.map((s) => (
+          <StatusIcon key={s.id} status={s.id} magnitude={s.magnitude} size="17cqh" />
+        ))}
+      </span>
+      {unit.sleeping && (
+        <span className="cg-unit-sleep" aria-hidden>
+          zZz
+        </span>
+      )}
+      <span className="cg-unit-attack">
+        <AttackBadge value={unit.attack} buffed={unit.attack > baseAttack} debuffed={unit.attack < baseAttack} size="30cqh" />
+      </span>
+      <span className="cg-unit-health">
+        <HealthBadge value={unit.health} max={unit.maxHealth} damaged={unit.health < unit.maxHealth} size="30cqh" />
+      </span>
+    </button>
+  );
+});

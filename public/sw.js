@@ -1,7 +1,8 @@
 // Pikaboom service worker — lets the game open and play offline.
-const VERSION = "v3";
+const VERSION = "v4";
 const SHELL = `pikaboom-shell-${VERSION}`;
 const RUNTIME = `pikaboom-runtime-${VERSION}`;
+const LIVE_ONLY = ["/admin", "/auth", "/account", "/cards", "/api/cards", "/api/account"];
 const PRECACHE = ["/", "/charades", "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png", "/apple-icon.png"];
 
 self.addEventListener("install", (event) => {
@@ -44,7 +45,8 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.startsWith("/admin")) return; // always live
+  // Always live: admin and every account-aware page/API (session-dependent, must never be served from cache).
+  if (LIVE_ONLY.some((p) => url.pathname === p || url.pathname.startsWith(`${p}/`))) return;
 
   // Hashed build assets and fonts never change: cache first.
   if (url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/icons/")) {

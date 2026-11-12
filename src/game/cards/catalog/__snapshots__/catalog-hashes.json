@@ -1,0 +1,182 @@
+{
+  "alpha-wolf": {
+    "version": 1,
+    "hash": "adaf7b09"
+  },
+  "apprentice-mage": {
+    "version": 1,
+    "hash": "5ddeb3a1"
+  },
+  "arcane-insight": {
+    "version": 1,
+    "hash": "c557c200"
+  },
+  "arcane-spark": {
+    "version": 1,
+    "hash": "b9cbc563"
+  },
+  "bear-cub": {
+    "version": 1,
+    "hash": "82c7d50d"
+  },
+  "berserker-bear": {
+    "version": 1,
+    "hash": "b7eb6620"
+  },
+  "bone-storm": {
+    "version": 1,
+    "hash": "046436b8"
+  },
+  "bone-wall": {
+    "version": 1,
+    "hash": "762e2f71"
+  },
+  "chain-lightning": {
+    "version": 1,
+    "hash": "a182cbcd"
+  },
+  "charging-rhino": {
+    "version": 1,
+    "hash": "2d4a3c49"
+  },
+  "crypt-banshee": {
+    "version": 1,
+    "hash": "1e538846"
+  },
+  "dawn-paladin": {
+    "version": 1,
+    "hash": "1bf6f8b1"
+  },
+  "drain-life": {
+    "version": 1,
+    "hash": "93da87c9"
+  },
+  "flame-lance": {
+    "version": 1,
+    "hash": "c0dea0b7"
+  },
+  "forest-boar": {
+    "version": 1,
+    "hash": "c47408e3"
+  },
+  "grave-digger": {
+    "version": 1,
+    "hash": "84c3a6f5"
+  },
+  "growing-crystal": {
+    "version": 1,
+    "hash": "c5156258"
+  },
+  "healing-touch": {
+    "version": 1,
+    "hash": "19461f82"
+  },
+  "hungry-ghoul": {
+    "version": 1,
+    "hash": "307ca713"
+  },
+  "ignis": {
+    "version": 1,
+    "hash": "c909f6d5"
+  },
+  "iron-guard": {
+    "version": 1,
+    "hash": "c4db9073"
+  },
+  "last-stand-knight": {
+    "version": 1,
+    "hash": "4948e41c"
+  },
+  "line-breaker": {
+    "version": 1,
+    "hash": "08216fd7"
+  },
+  "mana-spark": {
+    "version": 1,
+    "hash": "d8680890"
+  },
+  "morvath": {
+    "version": 1,
+    "hash": "1fe1c5c6"
+  },
+  "necromancer": {
+    "version": 1,
+    "hash": "844fcbb7"
+  },
+  "pack-call": {
+    "version": 1,
+    "hash": "c8674499"
+  },
+  "restless-skeleton": {
+    "version": 1,
+    "hash": "e206f440"
+  },
+  "savage-strike": {
+    "version": 1,
+    "hash": "09e19341"
+  },
+  "scholar": {
+    "version": 1,
+    "hash": "501ab077"
+  },
+  "shield-bearer": {
+    "version": 1,
+    "hash": "f03ef14c"
+  },
+  "skeleton": {
+    "version": 1,
+    "hash": "f24b3456"
+  },
+  "skeleton-king": {
+    "version": 1,
+    "hash": "004a9bb7"
+  },
+  "soul-harvest": {
+    "version": 1,
+    "hash": "cd60a851"
+  },
+  "squire": {
+    "version": 1,
+    "hash": "cd0b2044"
+  },
+  "stone-golem": {
+    "version": 1,
+    "hash": "50f35740"
+  },
+  "storm-weaver": {
+    "version": 1,
+    "hash": "7f9857f5"
+  },
+  "swamp-ent": {
+    "version": 1,
+    "hash": "52afe6fd"
+  },
+  "thornback-tortoise": {
+    "version": 1,
+    "hash": "1954601d"
+  },
+  "twin-claw-panther": {
+    "version": 1,
+    "hash": "ff8ebc39"
+  },
+  "ursaria": {
+    "version": 1,
+    "hash": "46e97921"
+  },
+  "vampire-bat": {
+    "version": 1,
+    "hash": "5a2b3fde"
+  },
+  "wild-roar": {
+    "version": 1,
+    "hash": "00808fc5"
+  },
+  "wolf": {
+    "version": 1,
+    "hash": "ab59064d"
+  },
+  "wolf-pup": {
+    "version": 1,
+    "hash": "9cc84ed7"
+  }
+}
