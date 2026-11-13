@@ -50,18 +50,21 @@ ${facets}
 <path d="M31 50 50 31 52 33.4 33.4 52Z" fill="#fff7d6" fill-opacity="0.8"/>
 <path d="M50 10 53.6 17.4 50 16.2 46.4 17.4Z" fill="#fff7d6"/>`));
 }
-// Health: drop, widest in the lower half.
+// Health: drop, widest in the lower half. The drop's round bottom reaches y ≈ 111.5 (with its stroke), so the body is
+// scaled into the 100×100 box — otherwise the <image> viewport clips the bottom of every health badge.
 {
   const drop = (s) => {
     const k = (x, y) => `${f(50 + (x - 50) * s)} ${f(62 + (y - 62) * s)}`;
     return `M${k(50, 3)}C${k(70, 29)} ${k(95, 45)} ${k(95, 65)}A${f(45 * s)} ${f(45 * s)} 0 0 1 ${k(5, 65)}C${k(5, 45)} ${k(30, 29)} ${k(50, 3)}Z`;
   };
   write("badge-drop", svg("0 0 100 100", `<defs>${lin("badge-drop-b", 0.2, 0, 0.8, 1, [[0, "#ff7a93"], [0.55, "#ff4d6d"], [1, "#b81d42"]])}${rad("badge-drop-g", 0.38, 0.55, 0.55, [[0, "#ff9aad", 0.9], [1, "#ff4d6d", 0]])}</defs>
+<g transform="translate(6 1.2) scale(0.88)">
 <path d="${drop(1)}" fill="${INK}" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/>
 <path d="${drop(0.86)}" fill="url(#badge-drop-b)"/>
 <path d="${drop(0.86)}" fill="url(#badge-drop-g)"/>
 <path d="M24.6 62C24.6 50.4 33.4 39.6 42.4 28.6L45 30.6C37 41 30.2 51 30.2 62Z" fill="#ffe0e6" fill-opacity="0.8"/>
-<path d="M20.8 74.6C27 86.4 44.6 91.2 60 86.8 47 88.6 32.4 84.6 26 74Z" fill="#7d0f2c" fill-opacity="0.55"/>`));
+<path d="M20.8 74.6C27 86.4 44.6 91.2 60 86.8 47 88.6 32.4 84.6 26 74Z" fill="#7d0f2c" fill-opacity="0.55"/>
+</g>`));
 }
 // Generic number: carved violet disc with a steel rim.
 {

@@ -138,11 +138,14 @@
   /* Sizes from the viewport (§17.3). */
   --cg-unit-h: min(22dvh, 9.5dvw);
   --cg-unit-w: calc(var(--cg-unit-h) * 0.78);
-  --cg-hand-card-h: min(30dvh, 14dvw);
+  --cg-hand-card-h: min(40dvh, 18dvw);
   --cg-hand-card-w: calc(var(--cg-hand-card-h) * 0.72);
   --cg-portrait: max(44px, min(17dvh, 9dvw));
   /* UI-08 HUD */
   --cg-chip-card: clamp(14px, 4.4dvh, 24px);
+  /* My mana bar on the right edge (skin/ManaCrystals ManaBar). */
+  --cg-manabar-crystal: clamp(13px, 4.3dvh, 30px);
+  --cg-manabar-w: calc(var(--cg-manabar-crystal) * 1.25 + 12px);
 
   color: var(--cg-text);
   background: radial-gradient(ellipse at 50% 40%, var(--cg-bg) 0%, var(--cg-bg-2) 100%);
@@ -303,6 +306,8 @@
 }
 .cg-board-row--mine {
   cursor: default;
+  /* Room for the mana bar, which rises from the bottom strip along the right edge. */
+  padding-right: calc(clamp(6px, 2dvw, 32px) + var(--cg-manabar-w));
 }
 /* UI-08: the two zones read apart — a faint crimson wash on the foe side, violet-blue on mine; foe units get a
    crimson ink rim. */
@@ -409,9 +414,11 @@
   position: relative;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
+  /* One track exactly as tall as the strip: the (larger) hand cards overflow upward instead of growing the row. */
+  grid-template-rows: minmax(0, 1fr);
   align-items: end;
   gap: clamp(4px, 1dvw, 14px);
-  padding: 0 clamp(6px, 1.2dvw, 16px) clamp(4px, 1dvh, 10px);
+  padding: 0 calc(clamp(6px, 1.2dvw, 16px) + var(--cg-manabar-w) + 6px) clamp(4px, 1dvh, 10px) clamp(6px, 1.2dvw, 16px);
   min-height: 0;
 }
 .cg-bottom-left,
@@ -492,6 +499,67 @@
   font-size: 0.85em;
   color: var(--cg-ink);
   -webkit-text-stroke: 0;
+}
+/* My mana: a vertical crystal bar on the right edge, rising from the bottom strip over my board row. */
+.cg-manabar {
+  position: absolute;
+  right: clamp(6px, 1.2dvw, 16px);
+  bottom: clamp(4px, 1dvh, 10px);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: var(--cg-manabar-w);
+  padding: 6px 0 5px;
+  border-radius: var(--cg-radius-pill);
+  background: linear-gradient(180deg, var(--cg-surface-2) 0%, var(--cg-surface-1) 100%);
+  box-shadow: 0 0 0 var(--cg-border-w, 2px) var(--cg-ink), inset 0 0 0 1px var(--cg-border-strong), 0 4px 12px var(--cg-shadow);
+}
+.cg-manabar-crystals {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: calc(var(--cg-manabar-crystal) * 0.08);
+}
+.cg-manabar-slot {
+  display: grid;
+  place-items: center;
+  width: calc(var(--cg-manabar-crystal) * 0.8);
+  height: var(--cg-manabar-crystal);
+}
+.cg-manabar-slot--full {
+  filter: drop-shadow(0 0 calc(var(--cg-manabar-crystal) * 0.22) #3fa9ffb3);
+}
+.cg-manabar-slot--locked::before {
+  content: "";
+  width: 34%;
+  height: 34%;
+  border-radius: 50%;
+  background: #ffffff14;
+  box-shadow: inset 0 0 0 1px #ffffff1f;
+}
+.cg-manabar-num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: calc(var(--cg-manabar-crystal) * 1.05);
+  line-height: 0.95;
+  color: #ffffff;
+  -webkit-text-stroke: calc(var(--cg-manabar-crystal) * 0.1) var(--cg-ink);
+  paint-order: stroke fill;
+  text-shadow: 0 0 8px #3fa9ff99;
+}
+.cg-manabar-num > .cg-mana-gauge-num--tick {
+  display: inline-block;
+}
+.cg-manabar--spent .cg-manabar-num > :first-child {
+  color: var(--cg-text-muted);
+}
+.cg-manabar-max {
+  font-size: 0.62em;
+  color: var(--cg-mana-hi);
 }
 .cg-mana-gauge-pips {
   display: grid;
@@ -893,17 +961,17 @@
   align-items: center;
   justify-content: center;
   gap: 0.35em;
-  /* UI-08: compact HUD control — still ≥ 56 px tall, label on two lines. */
-  min-height: var(--cg-tap-primary);
-  height: clamp(56px, 11dvh, 72px);
-  width: clamp(84px, 12dvw, 136px);
-  padding: 0 10px;
+  /* Compact HUD control beside the mana bar — still ≥ 44 px tall, label on two lines. */
+  min-height: var(--cg-tap);
+  height: clamp(44px, 8.5dvh, 58px);
+  width: clamp(70px, 9dvw, 108px);
+  padding: 0 8px;
   border: 0;
   border-radius: var(--cg-radius-md);
   background: var(--cg-face);
   color: var(--cg-button-ink);
   font-family: var(--font-display);
-  font-size: clamp(12px, 3dvh, 19px);
+  font-size: clamp(11px, 2.5dvh, 16px);
   line-height: 1;
   box-shadow: var(--cg-face-shadow);
   cursor: pointer;

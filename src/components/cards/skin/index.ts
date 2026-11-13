@@ -13,7 +13,7 @@ export { EndTurnButton, type EndTurnButtonProps, type EndTurnState } from "./End
 export { HealthBadge, type HealthBadgeProps } from "./HealthBadge";
 export { HeroPortrait, type HeroPortraitProps } from "./HeroPortrait";
 export { KeywordIcon, type KeywordIconProps } from "./KeywordIcon";
-export { ManaCrystals, ManaGauge, type ManaCrystalsProps, type ManaGaugeProps } from "./ManaCrystals";
+export { MANA_BAR_SLOTS, ManaBar, ManaCrystals, ManaGauge, type ManaBarProps, type ManaCrystalsProps, type ManaGaugeProps } from "./ManaCrystals";
 export { RarityGem, type RarityGemProps } from "./RarityGem";
 export { StatDelta, type StatDeltaProps } from "./StatDelta";
 export { StatusIcon, type StatusIconProps } from "./StatusIcon";

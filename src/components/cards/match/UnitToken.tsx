@@ -93,11 +93,18 @@ export const UnitToken = memo(function UnitToken({ unit, mine, canAttack, target
         </span>
       )}
       <span className="cg-unit-attack">
-        <AttackBadge value={unit.attack} buffed={delta.attack > 0} debuffed={delta.attack < 0} size="30cqh" />
+        <AttackBadge value={unit.attack} buffed={delta.attack > 0} debuffed={delta.attack < 0} modified={delta.attack !== 0} size="30cqh" />
         <StatDelta delta={delta.attack} size="13cqh" />
       </span>
       <span className="cg-unit-health">
-        <HealthBadge value={unit.health} max={unit.maxHealth} damaged={unit.health < unit.maxHealth} buffed={delta.health > 0} size="30cqh" />
+        <HealthBadge
+          value={unit.health}
+          max={unit.maxHealth}
+          damaged={unit.health < unit.maxHealth}
+          buffed={delta.health > 0}
+          modified={unit.health < unit.maxHealth || delta.health !== 0}
+          size="30cqh"
+        />
         <StatDelta delta={delta.health} size="13cqh" />
       </span>
     </button>

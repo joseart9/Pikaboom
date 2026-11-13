@@ -69,6 +69,51 @@ export function ManaCrystals({ current, max, temporary, size, label, compact = f
   );
 }
 
+/** Crystal slots the bar always shows (the max mana a player can reach). */
+export const MANA_BAR_SLOTS = 10;
+
+export interface ManaBarProps {
+  current: number;
+  max: number;
+  temporary: number;
+  label: string;
+}
+
+/**
+ * My mana as a vertical bar of crystals on the right edge, filling bottom-up: filled = available, hollow = spent,
+ * pale with a spark = temporary, faint socket = not unlocked yet. "current/max" sits at the foot. Styles: `.cg-manabar*`.
+ */
+export function ManaBar({ current, max, temporary, label }: ManaBarProps) {
+  const base = Math.max(0, current - temporary);
+  const unlocked = Math.max(max, base);
+  const slots = Math.max(MANA_BAR_SLOTS, unlocked + temporary);
+  const kinds: (Kind | "locked")[] = Array.from({ length: slots }, (_, i) =>
+    i < base ? "full" : i < unlocked ? "empty" : i < unlocked + temporary ? "temp" : "locked",
+  );
+  return (
+    <span className={`cg-manabar${current === 0 ? " cg-manabar--spent" : ""}`} role="img" aria-label={label} title={label} data-cg-anchor="my-mana">
+      <span className="cg-manabar-crystals" aria-hidden>
+        {kinds.map((kind, i) =>
+          kind === "locked" ? (
+            <span key={i} className="cg-manabar-slot cg-manabar-slot--locked" />
+          ) : (
+            <span key={i} className={`cg-manabar-slot cg-manabar-slot--${kind}`}>
+              <Crystal kind={kind} size="var(--cg-manabar-crystal)" />
+            </span>
+          ),
+        )}
+      </span>
+      <span className="cg-manabar-num" aria-hidden>
+        {/* Re-keyed on every change so the one-shot "tick" replays. */}
+        <span key={current} className="cg-mana-gauge-num--tick">
+          {current}
+        </span>
+        <span className="cg-manabar-max">/{max}</span>
+      </span>
+    </span>
+  );
+}
+
 export interface ManaGaugeProps {
   current: number;
   max: number;

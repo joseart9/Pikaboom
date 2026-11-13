@@ -7,9 +7,12 @@ export type BadgeShape = "circle" | "diamond" | "drop" | "gem";
 const PATHS: Record<BadgeShape, string> = {
   circle: "M50 4 A46 46 0 1 1 49.9 4 Z",
   diamond: "M50 3 L97 50 L50 97 L3 50 Z",
-  drop: "M50 4 C70 30 94 46 94 66 A44 44 0 0 1 6 66 C6 46 30 30 50 4 Z",
+  drop: "M50 4.7 C67.6 27.6 88.7 41.7 88.7 59.3 A38.7 38.7 0 0 1 11.3 59.3 C11.3 41.7 32.4 27.6 50 4.7 Z",
   gem: "M50 3 L93 27 L93 73 L50 97 L7 73 L7 27 Z",
 };
+
+/** Number look for a board stat that differs from the printed card (damage, buffs, debuffs): dark red, black rim. */
+export const MODIFIED_STAT = { valueColor: "#a3001b", valueStroke: "#000000", valueStrokeWidth: 0.1 } as const;
 
 export interface BadgeProps {
   shape: BadgeShape;
@@ -18,10 +21,14 @@ export interface BadgeProps {
   /** CSS length of the badge side (e.g. "24cqh", "32px"). */
   size: string;
   valueColor?: string;
+  /** Outline colour of the number (defaults to the ink). */
+  valueStroke?: string;
+  /** Outline width as a fraction of `size` (default 0.06). */
+  valueStrokeWidth?: number;
   title?: string;
 }
 
-export function Badge({ shape, fill, value, size, valueColor = "var(--cg-text)", title }: BadgeProps) {
+export function Badge({ shape, fill, value, size, valueColor = "var(--cg-text)", valueStroke = "#1d0842", valueStrokeWidth = 0.06, title }: BadgeProps) {
   const style: CSSProperties = {
     position: "relative",
     display: "inline-grid",
@@ -49,7 +56,7 @@ export function Badge({ shape, fill, value, size, valueColor = "var(--cg-text)",
           fontFamily: "var(--font-display)",
           fontSize: `calc(${size} * 0.6)`,
           color: valueColor,
-          WebkitTextStroke: `calc(${size} * 0.06) #1d0842`,
+          WebkitTextStroke: `calc(${size} * ${valueStrokeWidth}) ${valueStroke}`,
           paintOrder: "stroke fill",
           transform: shape === "drop" ? "translateY(12%)" : undefined,
         }}
