@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="crypt-banshee-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#06141c"/><stop offset="0.55" stop-color="#123a4a"/><stop offset="1" stop-color="#0a1a22"/></linearGradient><radialGradient id="crypt-banshee-r1" gradientUnits="userSpaceOnUse" cx="256" cy="220" r="270"><stop offset="0" stop-color="#6fe0ff" stop-opacity="0.32"/><stop offset="0.45" stop-color="#6fe0ff" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#6fe0ff" stop-opacity="0"/></radialGradient><linearGradient id="crypt-banshee-l2" gradientUnits="userSpaceOnUse" x1="0" y1="312" x2="0" y2="512"><stop offset="0" stop-color="#1e4a5a"/><stop offset="1" stop-color="#0a1a22"/></linearGradient><radialGradient id="crypt-banshee-r3" gradientUnits="userSpaceOnUse" cx="256" cy="380" r="210"><stop offset="0" stop-color="#6fe0ff" stop-opacity="0.55"/><stop offset="1" stop-color="#6fe0ff" stop-opacity="0"/></radialGradient><path id="crypt-banshee-p4" d="M62 360h96v36h-96Z"/><clipPath id="crypt-banshee-c5"><use href="#crypt-banshee-p4"/></clipPath><clipPath id="crypt-banshee-c6"><use href="#crypt-banshee-p4" x="-6" y="-6"/></clipPath><path id="crypt-banshee-p7" d="M56 360l12 -12h84l12 12Z"/><clipPath id="crypt-banshee-c8"><use href="#crypt-banshee-p7"/></clipPath><clipPath id="crypt-banshee-c9"><use href="#crypt-banshee-p7" x="-3" y="-3"/></clipPath><path id="crypt-banshee-pa" d="M354 360h96v36h-96Z"/><clipPath id="crypt-banshee-cb"><use href="#crypt-banshee-pa"/></clipPath><clipPath id="crypt-banshee-cc"><use href="#crypt-banshee-pa" x="-6" y="-6"/></clipPath><path id="crypt-banshee-pd" d="M348 360l12 -12h84l12 12Z"/><clipPath id="crypt-banshee-ce"><use href="#crypt-banshee-pd"/></clipPath><clipPath id="crypt-banshee-cf"><use href="#crypt-banshee-pd" x="-3" y="-3"/></clipPath><path id="crypt-banshee-pg" d="M104 330h64v24h-64Z"/><clipPath id="crypt-banshee-ch"><use href="#crypt-banshee-pg"/></clipPath><clipPath id="crypt-banshee-ci"><use href="#crypt-banshee-pg" x="-6" y="-6"/></clipPath><path id="crypt-banshee-pj" d="M98 330l12 -12h52l12 12Z"/><clipPath id="crypt-banshee-ck"><use href="#crypt-banshee-pj"/></clipPath><clipPath id="crypt-banshee-cl"><use href="#crypt-banshee-pj" x="-3" y="-3"/></clipPath><path id="crypt-banshee-pm" d="M344 330h64v24h-64Z"/><clipPath id="crypt-banshee-cn"><use href="#crypt-banshee-pm"/></clipPath><clipPath id="crypt-banshee-co"><use href="#crypt-banshee-pm" x="-6" y="-6"/></clipPath><path id="crypt-banshee-pp" d="M338 330l12 -12h52l12 12Z"/><clipPath id="crypt-banshee-cq"><use href="#crypt-banshee-pp"/></clipPath><clipPath id="crypt-banshee-cr"><use href="#crypt-banshee-pp" x="-3" y="-3"/></clipPath><radialGradient id="crypt-banshee-rs" gradientUnits="userSpaceOnUse" cx="256" cy="240" r="170"><stop offset="0" stop-color="#bff3ff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#bff3ff" stop-opacity="0.2025"/><stop offset="1" stop-color="#bff3ff" stop-opacity="0"/></radialGradient><path id="crypt-banshee-pt" d="M245 139C240 131 220 118 210 105C199 91 182 58 177 50C172 41 176 50 176 50C176 50 173 41 175 50C177 60 184 99 190 115C197 132 211 153 219 161C227 168 239 166 243 163C247 160 250 148 245 139Z"/><clipPath id="crypt-banshee-cu"><use href="#crypt-banshee-pt"/></clipPath><clipPath id="crypt-banshee-cv"><use href="#crypt-banshee-pt" x="-5" y="-5"/></clipPath><path id="crypt-banshee-pw" d="M261 133C260 123 247 99 245 84C243 68 245 38 245 30C245 22 244 30 244 30C244 30 246 22 243 30C240 38 229 68 227 84C225 101 228 129 231 139C235 149 244 152 249 151C253 150 261 143 261 133Z"/><clipPath id="crypt-banshee-cx"><use href="#crypt-banshee-pw"/></clipPath><clipPath id="crypt-banshee-cy"><use href="#crypt-banshee-pw" x="-5" y="-5"/></clipPath><path id="crypt-banshee-pz" d="M282 140C287 131 290 102 293 87C295 71 300 44 301 36C302 29 300 36 300 36C300 36 303 29 299 36C295 42 282 67 275 81C269 96 255 121 254 132C252 142 259 149 264 150C268 152 278 150 282 140Z"/><clipPath id="crypt-banshee-c10"><use href="#crypt-banshee-pz"/></clipPath><clipPath id="crypt-banshee-c11"><use href="#crypt-banshee-pz" x="-5" y="-5"/></clipPath><path id="crypt-banshee-p12" d="M297 161C305 154 321 129 329 114C337 99 346 69 349 61C352 52 348 60 348 60C348 60 353 53 347 59C342 66 322 90 311 102C300 114 277 130 271 139C265 148 269 160 273 163C277 166 289 168 297 161Z"/><clipPath id="crypt-banshee-c13"><use href="#crypt-banshee-p12"/></clipPath><clipPath id="crypt-banshee-c14"><use href="#crypt-banshee-p12" x="-5" y="-5"/></clipPath><path id="crypt-banshee-p15" d="M231 158C223 153 195 151 182 144C168 137 147 116 141 111C134 106 140 112 140 112C140 112 134 106 139 113C144 119 162 145 174 156C186 166 211 179 221 182C231 185 237 179 238 175C240 171 239 163 231 158Z"/><clipPath id="crypt-banshee-c16"><use href="#crypt-banshee-p15"/></clipPath><clipPath id="crypt-banshee-c17"><use href="#crypt-banshee-p15" x="-5" y="-5"/></clipPath><path id="crypt-banshee-p18" d="M295 182C304 180 329 168 342 158C354 148 372 125 377 119C382 113 376 118 376 118C376 118 382 113 375 117C369 121 348 140 334 146C321 152 294 154 285 158C277 162 276 171 278 175C279 178 285 185 295 182Z"/><clipPath id="crypt-banshee-c19"><use href="#crypt-banshee-p18"/></clipPath><clipPath id="crypt-banshee-c1a"><use href="#crypt-banshee-p18" x="-5" y="-5"/></clipPath><path id="crypt-banshee-p1b" d="M214 214C222 203 244 200 256 200C268 200 290 203 298 214C306 225 309 262 314 280C319 298 332 337 330 344C328 351 306 322 300 330C294 338 291 397 286 400C281 403 269 349 262 350C255 351 242 411 236 410C230 409 229 347 222 340C215 333 187 369 184 360C181 352 196 301 200 280C204 259 206 225 214 214Z"/><clipPath id="crypt-banshee-c1c"><use href="#crypt-banshee-p1b"/></clipPath><clipPath id="crypt-banshee-c1d"><use href="#crypt-banshee-p1b" x="-14" y="-12"/></clipPath><path id="crypt-banshee-p1e" d="M221 211C212 206 182 202 167 193C152 183 129 153 120 146C112 139 113 144 112 146C111 147 105 145 112 154C118 163 142 195 157 207C172 219 201 230 211 233C222 236 226 230 227 227C228 223 230 216 221 211Z"/><clipPath id="crypt-banshee-c1f"><use href="#crypt-banshee-p1e"/></clipPath><clipPath id="crypt-banshee-c1g"><use href="#crypt-banshee-p1e" x="-5" y="-5"/></clipPath><path id="crypt-banshee-p1h" d="M119 149C117 143 107 121 105 116C103 111 104 116 104 116C104 116 102 111 103 116C104 122 111 146 113 151C115 157 116 154 117 153C118 153 121 154 119 149Z"/><clipPath id="crypt-banshee-c1i"><use href="#crypt-banshee-p1h"/></clipPath><clipPath id="crypt-banshee-c1j"><use href="#crypt-banshee-p1h" x="-1" y="-1"/></clipPath><path id="crypt-banshee-p1k" d="M119 148C116 144 104 130 101 127C98 124 100 128 100 128C100 128 97 125 99 129C101 132 110 148 113 152C116 156 117 153 118 153C119 152 121 152 119 148Z"/><clipPath id="crypt-banshee-c1l"><use href="#crypt-banshee-p1k"/></clipPath><clipPath id="crypt-banshee-c1m"><use href="#crypt-banshee-p1k" x="-1" y="-1"/></clipPath><path id="crypt-banshee-p1n" d="M118 147C114 145 100 140 96 139C93 138 96 140 96 140C96 140 93 139 96 141C98 143 111 152 114 153C118 155 119 153 119 152C120 151 121 149 118 147Z"/><clipPath id="crypt-banshee-c1o"><use href="#crypt-banshee-p1n"/></clipPath><clipPath id="crypt-banshee-c1p"><use href="#crypt-banshee-p1n" x="-1" y="-1"/></clipPath><path id="crypt-banshee-p1q" d="M196 214L146 202L166 244L180 230L190 256Z"/><clipPath id="crypt-banshee-c1r"><use href="#crypt-banshee-p1q"/></clipPath><clipPath id="crypt-banshee-c1s"><use href="#crypt-banshee-p1q" x="-4" y="-4"/></clipPath><path id="crypt-banshee-p1t" d="M301 233C311 230 340 219 355 207C370 195 394 163 400 154C407 145 401 147 400 146C399 144 400 139 392 146C383 153 360 183 345 193C330 202 300 206 291 211C282 216 284 223 285 227C286 230 290 236 301 233Z"/><clipPath id="crypt-banshee-c1u"><use href="#crypt-banshee-p1t"/></clipPath><clipPath id="crypt-banshee-c1v"><use href="#crypt-banshee-p1t" x="-5" y="-5"/></clipPath><path id="crypt-banshee-p1w" d="M399 151C401 146 408 122 409 116C410 111 408 116 408 116C408 116 409 111 407 116C405 121 395 143 393 149C391 154 394 153 395 153C396 154 397 157 399 151Z"/><clipPath id="crypt-banshee-c1x"><use href="#crypt-banshee-p1w"/></clipPath><clipPath id="crypt-banshee-c1y"><use href="#crypt-banshee-p1w" x="-1" y="-1"/></clipPath><path id="crypt-banshee-p1z" d="M399 152C402 148 411 132 413 129C415 125 412 128 412 128C412 128 414 124 411 127C408 130 396 144 393 148C391 152 393 152 394 153C395 153 396 156 399 152Z"/><clipPath id="crypt-banshee-c20"><use href="#crypt-banshee-p1z"/></clipPath><clipPath id="crypt-banshee-c21"><use href="#crypt-banshee-p1z" x="-1" y="-1"/></clipPath><path id="crypt-banshee-p22" d="M398 153C401 152 414 143 416 141C419 139 416 140 416 140C416 140 419 138 416 139C412 140 398 145 394 147C391 149 392 151 393 152C393 153 394 155 398 153Z"/><clipPath id="crypt-banshee-c23"><use href="#crypt-banshee-p22"/></clipPath><clipPath id="crypt-banshee-c24"><use href="#crypt-banshee-p22" x="-1" y="-1"/></clipPath><path id="crypt-banshee-p25" d="M316 214L366 202L346 244L332 230L322 256Z"/><clipPath id="crypt-banshee-c26"><use href="#crypt-banshee-p25"/></clipPath><clipPath id="crypt-banshee-c27"><use href="#crypt-banshee-p25" x="-4" y="-4"/></clipPath><path id="crypt-banshee-p28" d="M226 162C226 151 230 135 234 128C239 121 249 118 256 118C263 118 274 121 278 128C283 135 286 151 286 162C286 173 281 192 276 200C272 208 262 214 256 214C250 214 241 208 236 200C232 192 226 173 226 162Z"/><clipPath id="crypt-banshee-c29"><use href="#crypt-banshee-p28"/></clipPath><clipPath id="crypt-banshee-c2a"><use href="#crypt-banshee-p28" x="-8" y="-8"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#crypt-banshee-l0)"/>
+<circle cx="256" cy="220" r="270" fill="url(#crypt-banshee-r1)"/>
+<path d="M30 512V170Q90 90 150 170V512Z" fill="#08202a"/>
+<path d="M362 512V170Q422 90 482 170V512Z" fill="#08202a"/>
+<path d="M0 348Q256 312 512 348V512H0Z" fill="url(#crypt-banshee-l2)"/>
+<ellipse cx="256" cy="380" rx="210" ry="59" fill="url(#crypt-banshee-r3)"/>
+<use href="#crypt-banshee-p4" fill="#163040" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-c5)">
+<use href="#crypt-banshee-p4" x="-6" y="-6" fill="#3e6a7a"/>
+<g clip-path="url(#crypt-banshee-c6)"><use href="#crypt-banshee-p4" x="7" y="7" fill="#2a4a5a"/></g>
+</g>
+<use href="#crypt-banshee-p7" fill="#2a4a5a" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-c8)">
+<use href="#crypt-banshee-p7" x="-3" y="-3" fill="#5a8a9a"/>
+<g clip-path="url(#crypt-banshee-c9)"><use href="#crypt-banshee-p7" x="2" y="2" fill="#3e6a7a"/></g>
+</g>
+<use href="#crypt-banshee-pa" fill="#163040" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-cb)">
+<use href="#crypt-banshee-pa" x="-6" y="-6" fill="#3e6a7a"/>
+<g clip-path="url(#crypt-banshee-cc)"><use href="#crypt-banshee-pa" x="7" y="7" fill="#2a4a5a"/></g>
+</g>
+<use href="#crypt-banshee-pd" fill="#2a4a5a" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-ce)">
+<use href="#crypt-banshee-pd" x="-3" y="-3" fill="#5a8a9a"/>
+<g clip-path="url(#crypt-banshee-cf)"><use href="#crypt-banshee-pd" x="2" y="2" fill="#3e6a7a"/></g>
+</g>
+<use href="#crypt-banshee-pg" fill="#163040" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-ch)">
+<use href="#crypt-banshee-pg" x="-6" y="-6" fill="#3e6a7a"/>
+<g clip-path="url(#crypt-banshee-ci)"><use href="#crypt-banshee-pg" x="7" y="7" fill="#2a4a5a"/></g>
+</g>
+<use href="#crypt-banshee-pj" fill="#2a4a5a" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-ck)">
+<use href="#crypt-banshee-pj" x="-3" y="-3" fill="#5a8a9a"/>
+<g clip-path="url(#crypt-banshee-cl)"><use href="#crypt-banshee-pj" x="2" y="2" fill="#3e6a7a"/></g>
+</g>
+<use href="#crypt-banshee-pm" fill="#163040" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-cn)">
+<use href="#crypt-banshee-pm" x="-6" y="-6" fill="#3e6a7a"/>
+<g clip-path="url(#crypt-banshee-co)"><use href="#crypt-banshee-pm" x="7" y="7" fill="#2a4a5a"/></g>
+</g>
+<use href="#crypt-banshee-pp" fill="#2a4a5a" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-cq)">
+<use href="#crypt-banshee-pp" x="-3" y="-3" fill="#5a8a9a"/>
+<g clip-path="url(#crypt-banshee-cr)"><use href="#crypt-banshee-pp" x="2" y="2" fill="#3e6a7a"/></g>
+</g>
+<path d="M193 145A70 70 0 0 0 193 208M319 145A70 70 0 0 1 319 208" fill="none" stroke="#bff3ff" stroke-width="5" stroke-opacity="0.37500000000000006"/>
+<path d="M157 127A110 110 0 0 0 157 226M355 127A110 110 0 0 1 355 226" fill="none" stroke="#bff3ff" stroke-width="5" stroke-opacity="0.275"/>
+<path d="M121 109A150 150 0 0 0 121 244M391 109A150 150 0 0 1 391 244" fill="none" stroke="#bff3ff" stroke-width="5" stroke-opacity="0.17500000000000004"/>
+<circle cx="256" cy="240" r="170" fill="url(#crypt-banshee-rs)"/>
+<use href="#crypt-banshee-pt" fill="#3e9ac0" stroke-width="10"/>
+<g clip-path="url(#crypt-banshee-cu)">
+<use href="#crypt-banshee-pt" x="-5" y="-5" fill="#d6f6ff"/>
+<g clip-path="url(#crypt-banshee-cv)"><use href="#crypt-banshee-pt" x="3" y="3" fill="#8adfff"/></g>
+</g>
+<use href="#crypt-banshee-pw" fill="#3e9ac0" stroke-width="10"/>
+<g clip-path="url(#crypt-banshee-cx)">
+<use href="#crypt-banshee-pw" x="-5" y="-5" fill="#d6f6ff"/>
+<g clip-path="url(#crypt-banshee-cy)"><use href="#crypt-banshee-pw" x="3" y="3" fill="#8adfff"/></g>
+</g>
+<use href="#crypt-banshee-pz" fill="#3e9ac0" stroke-width="10"/>
+<g clip-path="url(#crypt-banshee-c10)">
+<use href="#crypt-banshee-pz" x="-5" y="-5" fill="#d6f6ff"/>
+<g clip-path="url(#crypt-banshee-c11)"><use href="#crypt-banshee-pz" x="3" y="3" fill="#8adfff"/></g>
+</g>
+<use href="#crypt-banshee-p12" fill="#3e9ac0" stroke-width="10"/>
+<g clip-path="url(#crypt-banshee-c13)">
+<use href="#crypt-banshee-p12" x="-5" y="-5" fill="#d6f6ff"/>
+<g clip-path="url(#crypt-banshee-c14)"><use href="#crypt-banshee-p12" x="3" y="3" fill="#8adfff"/></g>
+</g>
+<use href="#crypt-banshee-p15" fill="#3e9ac0" stroke-width="10"/>
+<g clip-path="url(#crypt-banshee-c16)">
+<use href="#crypt-banshee-p15" x="-5" y="-5" fill="#d6f6ff"/>
+<g clip-path="url(#crypt-banshee-c17)"><use href="#crypt-banshee-p15" x="3" y="3" fill="#8adfff"/></g>
+</g>
+<use href="#crypt-banshee-p18" fill="#3e9ac0" stroke-width="10"/>
+<g clip-path="url(#crypt-banshee-c19)">
+<use href="#crypt-banshee-p18" x="-5" y="-5" fill="#d6f6ff"/>
+<g clip-path="url(#crypt-banshee-c1a)"><use href="#crypt-banshee-p18" x="3" y="3" fill="#8adfff"/></g>
+</g>
+<use href="#crypt-banshee-p1b" fill="#6fe0ff" stroke-width="12"/>
+<g clip-path="url(#crypt-banshee-c1c)">
+<use href="#crypt-banshee-p1b" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1b" x="-14" y="-12" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1d)"><use href="#crypt-banshee-p1b" x="7" y="7" fill="#bff3ff"/></g>
+</g>
+<path d="M240 230C236 280 230 320 226 350M272 230C280 280 286 320 290 340" fill="none" stroke="#3e9ac0" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#crypt-banshee-p1e" fill="#6fe0ff" stroke-width="12"/>
+<g clip-path="url(#crypt-banshee-c1f)">
+<use href="#crypt-banshee-p1e" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1e" x="-5" y="-5" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1g)"><use href="#crypt-banshee-p1e" x="3" y="3" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1h" fill="#6fe0ff" stroke-width="6"/>
+<g clip-path="url(#crypt-banshee-c1i)">
+<use href="#crypt-banshee-p1h" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1h" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1j)"><use href="#crypt-banshee-p1h" x="1" y="1" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1k" fill="#6fe0ff" stroke-width="6"/>
+<g clip-path="url(#crypt-banshee-c1l)">
+<use href="#crypt-banshee-p1k" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1k" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1m)"><use href="#crypt-banshee-p1k" x="1" y="1" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1n" fill="#6fe0ff" stroke-width="6"/>
+<g clip-path="url(#crypt-banshee-c1o)">
+<use href="#crypt-banshee-p1n" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1n" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1p)"><use href="#crypt-banshee-p1n" x="1" y="1" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1q" fill="#6fe0ff" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-c1r)">
+<use href="#crypt-banshee-p1q" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1q" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1s)"><use href="#crypt-banshee-p1q" x="3" y="3" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1t" fill="#6fe0ff" stroke-width="12"/>
+<g clip-path="url(#crypt-banshee-c1u)">
+<use href="#crypt-banshee-p1t" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1t" x="-5" y="-5" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1v)"><use href="#crypt-banshee-p1t" x="3" y="3" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1w" fill="#6fe0ff" stroke-width="6"/>
+<g clip-path="url(#crypt-banshee-c1x)">
+<use href="#crypt-banshee-p1w" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1w" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c1y)"><use href="#crypt-banshee-p1w" x="1" y="1" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p1z" fill="#6fe0ff" stroke-width="6"/>
+<g clip-path="url(#crypt-banshee-c20)">
+<use href="#crypt-banshee-p1z" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p1z" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c21)"><use href="#crypt-banshee-p1z" x="1" y="1" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p22" fill="#6fe0ff" stroke-width="6"/>
+<g clip-path="url(#crypt-banshee-c23)">
+<use href="#crypt-banshee-p22" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p22" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c24)"><use href="#crypt-banshee-p22" x="1" y="1" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p25" fill="#6fe0ff" stroke-width="8"/>
+<g clip-path="url(#crypt-banshee-c26)">
+<use href="#crypt-banshee-p25" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p25" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c27)"><use href="#crypt-banshee-p25" x="3" y="3" fill="#bff3ff"/></g>
+</g>
+<use href="#crypt-banshee-p28" fill="#6fe0ff" stroke-width="12"/>
+<g clip-path="url(#crypt-banshee-c29)">
+<use href="#crypt-banshee-p28" x="-5" fill="#6fb8d0"/>
+<use href="#crypt-banshee-p28" x="-8" y="-8" fill="#ffffff"/>
+<g clip-path="url(#crypt-banshee-c2a)"><use href="#crypt-banshee-p28" x="7" y="7" fill="#bff3ff"/></g>
+</g>
+<path d="M236 150C238 148 248 145 250 146C252 148 252 158 250 160C248 162 240 164 238 162C236 161 234 152 236 150Z" fill="#0a2a3a"/>
+<path d="M276 150C274 148 264 145 262 146C260 148 260 158 262 160C264 162 272 164 274 162C276 161 278 152 276 150Z" fill="#0a2a3a"/>
+<path d="M241 154A3 3 0 1 0 247 154A3 3 0 1 0 241 154Z" fill="#ffffff"/>
+<path d="M265 154A3 3 0 1 0 271 154A3 3 0 1 0 265 154Z" fill="#ffffff"/>
+<path d="M245 188A11 18 0 1 0 267 188A11 18 0 1 0 245 188Z" fill="#0a2a3a"/>
+<path d="M240 140L250 146M272 140L262 146" fill="none" stroke="#0a2a3a" stroke-width="3"/>
+<circle cx="275" cy="315" r="3" fill="#bff3ff" fill-opacity="0.77"/>
+<circle cx="77" cy="132" r="3" fill="#6fe0ff" fill-opacity="0.61"/>
+<circle cx="214" cy="247" r="3" fill="#bff3ff" fill-opacity="0.71"/>
+<circle cx="347" cy="203" r="3" fill="#6fe0ff" fill-opacity="0.61"/>
+<circle cx="393" cy="232" r="2" fill="#bff3ff" fill-opacity="0.82"/>
+<circle cx="428" cy="282" r="3" fill="#6fe0ff" fill-opacity="0.5"/>
+<circle cx="65" cy="111" r="3" fill="#bff3ff" fill-opacity="0.8"/>
+<circle cx="323" cy="138" r="3" fill="#6fe0ff" fill-opacity="0.83"/>
+<circle cx="138" cy="115" r="3" fill="#bff3ff" fill-opacity="0.63"/>
+<circle cx="302" cy="260" r="2" fill="#6fe0ff" fill-opacity="0.45"/>
+<circle cx="145" cy="338" r="3" fill="#bff3ff" fill-opacity="0.43"/>
+<circle cx="371" cy="152" r="3" fill="#6fe0ff" fill-opacity="0.81"/>
+<circle cx="74" cy="320" r="2" fill="#bff3ff" fill-opacity="0.83"/>
+<circle cx="400" cy="416" r="2" fill="#6fe0ff" fill-opacity="0.53"/>
+<circle cx="354" cy="385" r="2" fill="#bff3ff" fill-opacity="0.81"/>
+<circle cx="350" cy="191" r="2" fill="#6fe0ff" fill-opacity="0.77"/>
+</svg>

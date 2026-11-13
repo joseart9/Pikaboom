@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="alpha-wolf-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0c1430"/><stop offset="0.55" stop-color="#1e2c58"/><stop offset="1" stop-color="#121a30"/></linearGradient><radialGradient id="alpha-wolf-r1" gradientUnits="userSpaceOnUse" cx="214" cy="170" r="260"><stop offset="0" stop-color="#bfe4ff" stop-opacity="0.3"/><stop offset="0.45" stop-color="#bfe4ff" stop-opacity="0.135"/><stop offset="1" stop-color="#bfe4ff" stop-opacity="0"/></radialGradient><radialGradient id="alpha-wolf-r2" gradientUnits="userSpaceOnUse" cx="214" cy="160" r="190"><stop offset="0" stop-color="#dff2ff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#dff2ff" stop-opacity="0.2025"/><stop offset="1" stop-color="#dff2ff" stop-opacity="0"/></radialGradient><path id="alpha-wolf-p3" d="M118 512L138 392L180 362L270 354L380 358L432 392L454 512Z"/><clipPath id="alpha-wolf-c4"><use href="#alpha-wolf-p3"/></clipPath><clipPath id="alpha-wolf-c5"><use href="#alpha-wolf-p3" x="-14" y="-12"/></clipPath><path id="alpha-wolf-p6" d="M239 291C238 299 242 317 243 327C244 337 244 351 246 357C248 363 255 368 259 368C262 368 268 362 270 355C272 349 269 335 269 325C269 315 271 297 269 289C267 282 258 275 253 275C249 275 241 283 239 291Z"/><clipPath id="alpha-wolf-c7"><use href="#alpha-wolf-p6"/></clipPath><clipPath id="alpha-wolf-c8"><use href="#alpha-wolf-p6" x="-6" y="-6"/></clipPath><path id="alpha-wolf-p9" d="M214 256C219 243 231 215 244 210C257 206 284 218 300 226C316 234 341 249 352 262C363 275 376 297 376 310C376 323 365 343 352 350C339 357 307 355 290 354C273 353 251 350 240 342C229 334 218 313 214 300C210 287 210 270 214 256Z"/><clipPath id="alpha-wolf-ca"><use href="#alpha-wolf-p9"/></clipPath><clipPath id="alpha-wolf-cb"><use href="#alpha-wolf-p9" x="-14" y="-12"/></clipPath><path id="alpha-wolf-pc" d="M393 316C393 326 388 339 381 347C373 354 359 358 347 360C335 361 320 361 311 356C301 352 294 340 290 331C286 322 283 309 287 300C290 291 300 280 310 275C320 270 335 269 347 271C359 273 374 277 381 285C389 293 393 306 393 316Z"/><clipPath id="alpha-wolf-cd"><use href="#alpha-wolf-pc"/></clipPath><clipPath id="alpha-wolf-ce"><use href="#alpha-wolf-pc" x="-10" y="-10"/></clipPath><path id="alpha-wolf-pf" d="M280 358A26 10 0 1 0 332 358A26 10 0 1 0 280 358Z"/><clipPath id="alpha-wolf-cg"><use href="#alpha-wolf-pf"/></clipPath><clipPath id="alpha-wolf-ch"><use href="#alpha-wolf-pf" x="-4" y="-4"/></clipPath><path id="alpha-wolf-pi" d="M208 278C205 287 208 308 208 319C208 330 205 346 207 353C209 360 215 367 219 367C223 367 230 362 233 355C235 348 234 332 236 321C238 310 245 291 244 282C243 273 233 263 228 262C222 262 211 270 208 278Z"/><clipPath id="alpha-wolf-cj"><use href="#alpha-wolf-pi"/></clipPath><clipPath id="alpha-wolf-ck"><use href="#alpha-wolf-pi" x="-7" y="-7"/></clipPath><path id="alpha-wolf-pl" d="M192 358A22 10 0 1 0 236 358A22 10 0 1 0 192 358Z"/><clipPath id="alpha-wolf-cm"><use href="#alpha-wolf-pl"/></clipPath><clipPath id="alpha-wolf-cn"><use href="#alpha-wolf-pl" x="-4" y="-4"/></clipPath><path id="alpha-wolf-po" d="M240 358A18 9 0 1 0 276 358A18 9 0 1 0 240 358Z"/><clipPath id="alpha-wolf-cp"><use href="#alpha-wolf-po"/></clipPath><clipPath id="alpha-wolf-cq"><use href="#alpha-wolf-po" x="-4" y="-4"/></clipPath><path id="alpha-wolf-pr" d="M371 328C362 330 344 344 331 348C318 352 296 354 282 356C268 358 248 358 241 359C234 360 235 362 235 363C235 365 232 366 239 369C246 372 267 382 282 384C297 386 326 385 341 380C357 375 378 359 385 352C392 345 392 337 390 333C388 329 380 326 371 328Z"/><clipPath id="alpha-wolf-cs"><use href="#alpha-wolf-pr"/></clipPath><clipPath id="alpha-wolf-ct"><use href="#alpha-wolf-pr" x="-6" y="-6"/></clipPath><path id="alpha-wolf-pu" d="M268 254C270 241 259 214 254 200C250 186 247 170 240 162C234 154 219 144 212 146C205 148 197 164 196 174C194 184 200 198 202 212C203 226 201 254 208 266C214 277 235 292 244 290C253 289 267 268 268 254Z"/><clipPath id="alpha-wolf-cv"><use href="#alpha-wolf-pu"/></clipPath><clipPath id="alpha-wolf-cw"><use href="#alpha-wolf-pu" x="-10" y="-8"/></clipPath><path id="alpha-wolf-px" d="M196 172C174 200 178 240 194 268L208 254L214 286L228 260L240 292L250 262L264 288L270 256L286 272L284 232C288 200 274 178 252 166Z"/><clipPath id="alpha-wolf-cy"><use href="#alpha-wolf-px"/></clipPath><clipPath id="alpha-wolf-cz"><use href="#alpha-wolf-px" x="-10" y="-10"/></clipPath><path id="alpha-wolf-p10" d="M226 146L262 118L250 160Z"/><clipPath id="alpha-wolf-c11"><use href="#alpha-wolf-p10"/></clipPath><clipPath id="alpha-wolf-c12"><use href="#alpha-wolf-p10" x="-5" y="-5"/></clipPath><path id="alpha-wolf-p13" d="M217 160C213 154 198 143 192 138C185 133 177 128 173 126C169 124 167 126 166 127C165 128 165 130 167 134C169 137 175 143 180 150C185 156 194 172 199 176C205 180 213 179 216 177C219 174 221 166 217 160Z"/><clipPath id="alpha-wolf-c14"><use href="#alpha-wolf-p13"/></clipPath><clipPath id="alpha-wolf-c15"><use href="#alpha-wolf-p13" x="-4" y="-4"/></clipPath><path id="alpha-wolf-p16" d="M248 172C250 165 247 146 242 138C237 131 222 127 214 122C206 118 196 113 188 108C181 104 169 94 164 92C159 91 154 94 154 98C154 102 160 110 166 116C172 122 186 129 192 136C198 143 201 155 206 162C211 169 220 181 226 182C232 184 246 179 248 172Z"/><clipPath id="alpha-wolf-c17"><use href="#alpha-wolf-p16"/></clipPath><clipPath id="alpha-wolf-c18"><use href="#alpha-wolf-p16" x="-10" y="-8"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#alpha-wolf-l0)"/>
+<circle cx="214" cy="170" r="260" fill="url(#alpha-wolf-r1)"/>
+<circle cx="214" cy="160" r="190" fill="url(#alpha-wolf-r2)"/>
+<path d="M110 160A104 104 0 1 0 318 160A104 104 0 1 0 110 160Z" fill="#e6f2ff" fill-opacity="0.95"/>
+<path d="M162 130A18 18 0 1 0 198 130A18 18 0 1 0 162 130Z" fill="#c8d8ee" fill-opacity="0.7"/>
+<path d="M226 196A24 24 0 1 0 274 196A24 24 0 1 0 226 196Z" fill="#c8d8ee" fill-opacity="0.6"/>
+<path d="M252 120A10 10 0 1 0 272 120A10 10 0 1 0 252 120Z" fill="#c8d8ee" fill-opacity="0.7"/>
+<path d="M0 330L16 300L32 330L48 286L64 330L80 272L96 330L112 288L128 330L144 274L160 330L176 290L192 330L208 276L224 330L240 292L256 330L272 278L288 330L304 294L320 330L336 280L352 330L368 296L384 330L400 282L416 330L432 298L448 330L464 284L480 330L496 300L512 330L528 286L544 330V512H0Z" fill="#14203c"/>
+<use href="#alpha-wolf-p3" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-c4)">
+<use href="#alpha-wolf-p3" x="-4" fill="#2a2c48"/>
+<use href="#alpha-wolf-p3" x="-14" y="-12" fill="#7a80a8"/>
+<g clip-path="url(#alpha-wolf-c5)"><use href="#alpha-wolf-p3" x="10" y="8" fill="#4a4e72"/></g>
+</g>
+<path d="M180 362L200 410L186 470M380 358L360 420L380 490M276 354L282 392" fill="none" stroke-width="4" stroke-opacity="0.6"/>
+<ellipse cx="290" cy="360" rx="120" ry="12" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#alpha-wolf-p6" fill="#2a2c40" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-c7)">
+<use href="#alpha-wolf-p6" x="-6" y="-6" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-c8)"><use href="#alpha-wolf-p6" x="7" y="7" fill="#3a3d54"/></g>
+</g>
+<use href="#alpha-wolf-p9" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-ca)">
+<use href="#alpha-wolf-p9" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-p9" x="-14" y="-12" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-cb)"><use href="#alpha-wolf-p9" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-pc" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-cd)">
+<use href="#alpha-wolf-pc" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-pc" x="-10" y="-10" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-ce)"><use href="#alpha-wolf-pc" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-pf" fill="#2a2c40" stroke-width="10"/>
+<g clip-path="url(#alpha-wolf-cg)">
+<use href="#alpha-wolf-pf" x="-4" y="-4" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-ch)"><use href="#alpha-wolf-pf" x="3" y="3" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-pi" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-cj)">
+<use href="#alpha-wolf-pi" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-pi" x="-7" y="-7" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-ck)"><use href="#alpha-wolf-pi" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-pl" fill="#2a2c40" stroke-width="10"/>
+<g clip-path="url(#alpha-wolf-cm)">
+<use href="#alpha-wolf-pl" x="-4" y="-4" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-cn)"><use href="#alpha-wolf-pl" x="3" y="3" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-po" fill="#2a2c40" stroke-width="10"/>
+<g clip-path="url(#alpha-wolf-cp)">
+<use href="#alpha-wolf-po" x="-4" y="-4" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-cq)"><use href="#alpha-wolf-po" x="3" y="3" fill="#3a3d54"/></g>
+</g>
+<use href="#alpha-wolf-pr" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-cs)">
+<use href="#alpha-wolf-pr" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-pr" x="-6" y="-6" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-ct)"><use href="#alpha-wolf-pr" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-pu" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-cv)">
+<use href="#alpha-wolf-pu" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-pu" x="-10" y="-8" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-cw)"><use href="#alpha-wolf-pu" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<use href="#alpha-wolf-px" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-cy)">
+<use href="#alpha-wolf-px" x="-5" fill="#4a4e66"/>
+<use href="#alpha-wolf-px" x="-10" y="-10" fill="#c3cee2"/>
+<g clip-path="url(#alpha-wolf-cz)"><use href="#alpha-wolf-px" x="7" y="7" fill="#8a90ac"/></g>
+</g>
+<path d="M204 206L210 236M226 200L232 240M248 196L256 236" fill="none" stroke-width="3" stroke-opacity="0.35"/>
+<use href="#alpha-wolf-p10" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-c11)">
+<use href="#alpha-wolf-p10" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-p10" x="-5" y="-5" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-c12)"><use href="#alpha-wolf-p10" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<path d="M236 144L254 128L248 152Z" fill="#3a0e22" fill-opacity="0.6"/>
+<use href="#alpha-wolf-p13" fill="#2a2c40" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-c14)">
+<use href="#alpha-wolf-p13" x="-4" y="-4" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-c15)"><use href="#alpha-wolf-p13" x="7" y="7" fill="#3a3d54"/></g>
+</g>
+<path d="M200 152L176 128L170 116L196 136Z" fill="#3a0e22"/>
+<use href="#alpha-wolf-p16" fill="#bfe4ff" stroke-width="12"/>
+<g clip-path="url(#alpha-wolf-c17)">
+<use href="#alpha-wolf-p16" x="-6" fill="#2a2c40"/>
+<use href="#alpha-wolf-p16" x="-10" y="-8" fill="#7a7f9c"/>
+<g clip-path="url(#alpha-wolf-c18)"><use href="#alpha-wolf-p16" x="7" y="7" fill="#4a4e66"/></g>
+</g>
+<path d="M172 120L178 122L174 130Z" fill="#fff8ea"/>
+<path d="M180 126L186 132L178 134Z" fill="#fff8ea"/>
+<path d="M150 96A8 6 0 1 0 166 96A8 6 0 1 0 150 96Z" fill="#1d0842"/>
+<path d="M199 132A7 5 0 1 0 213 132A7 5 0 1 0 199 132Z" fill="#1d0842"/>
+<path d="M201 132A4 4 0 1 0 209 132A4 4 0 1 0 201 132Z" fill="#9be7ff"/>
+<path d="M202 132A2 2 0 1 0 206 132A2 2 0 1 0 202 132Z" fill="#1d0842"/>
+<path d="M201 130A2 2 0 1 0 204 130A2 2 0 1 0 201 130Z" fill="#ffffff" fill-opacity="0.9"/>
+<path d="M196 124L216 130" fill="none" stroke-width="4"/>
+<path d="M198 116L216 150" fill="none" stroke="#ff4d6d" stroke-width="3.5" stroke-opacity="0.9"/>
+<path d="M140 92C126 104 120 120 122 136M120 76C98 96 90 124 96 152" fill="none" stroke="#dff2ff" stroke-width="4" stroke-opacity="0.45"/>
+<circle cx="338" cy="78" r="2" fill="#dff2ff" fill-opacity="0.48"/>
+<circle cx="79" cy="220" r="1" fill="#dff2ff" fill-opacity="0.67"/>
+<circle cx="153" cy="201" r="2" fill="#dff2ff" fill-opacity="0.55"/>
+<circle cx="144" cy="80" r="2" fill="#dff2ff" fill-opacity="0.77"/>
+<circle cx="169" cy="151" r="2" fill="#dff2ff" fill-opacity="0.73"/>
+<circle cx="285" cy="182" r="2" fill="#dff2ff" fill-opacity="0.6"/>
+<circle cx="68" cy="46" r="2" fill="#dff2ff" fill-opacity="0.56"/>
+<circle cx="227" cy="189" r="2" fill="#dff2ff" fill-opacity="0.42"/>
+<circle cx="141" cy="231" r="1" fill="#dff2ff" fill-opacity="0.88"/>
+<circle cx="181" cy="57" r="2" fill="#dff2ff" fill-opacity="0.5"/>
+<circle cx="212" cy="212" r="1" fill="#dff2ff" fill-opacity="0.78"/>
+<circle cx="149" cy="233" r="2" fill="#dff2ff" fill-opacity="0.58"/>
+<circle cx="122" cy="87" r="2" fill="#dff2ff" fill-opacity="0.68"/>
+<circle cx="349" cy="61" r="2" fill="#dff2ff" fill-opacity="0.86"/>
+<circle cx="298" cy="239" r="1" fill="#dff2ff" fill-opacity="0.79"/>
+<circle cx="458" cy="98" r="1" fill="#dff2ff" fill-opacity="0.74"/>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="shatter-armor-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1a0a14"/><stop offset="0.55" stop-color="#4e1c2a"/><stop offset="1" stop-color="#1a0810"/></linearGradient><radialGradient id="shatter-armor-r1" gradientUnits="userSpaceOnUse" cx="276" cy="270" r="260"><stop offset="0" stop-color="#ff8a4a" stop-opacity="0.32"/><stop offset="0.45" stop-color="#ff8a4a" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#ff8a4a" stop-opacity="0"/></radialGradient><linearGradient id="shatter-armor-l2" gradientUnits="userSpaceOnUse" x1="0" y1="376" x2="0" y2="512"><stop offset="0" stop-color="#2e0e18"/><stop offset="1" stop-color="#14060c"/></linearGradient><radialGradient id="shatter-armor-r3" gradientUnits="userSpaceOnUse" cx="262" cy="430" r="200"><stop offset="0" stop-color="#ff8a4a" stop-opacity="0.55"/><stop offset="1" stop-color="#ff8a4a" stop-opacity="0"/></radialGradient><path id="shatter-armor-p4" d="M273 470C275 455 275 395 273 380C271 365 265 369 262 369C259 369 253 365 251 380C249 395 249 455 251 470C253 485 259 481 262 481C265 481 271 485 273 470Z"/><clipPath id="shatter-armor-c5"><use href="#shatter-armor-p4"/></clipPath><clipPath id="shatter-armor-c6"><use href="#shatter-armor-p4" x="-4" y="-4"/></clipPath><path id="shatter-armor-p7" d="M206 440L318 440L306 466L218 466Z"/><clipPath id="shatter-armor-c8"><use href="#shatter-armor-p7"/></clipPath><clipPath id="shatter-armor-c9"><use href="#shatter-armor-p7" x="-4" y="-4"/></clipPath><path id="shatter-armor-pa" d="M130 206A42 34 0 1 0 214 206A42 34 0 1 0 130 206Z"/><clipPath id="shatter-armor-cb"><use href="#shatter-armor-pa"/></clipPath><clipPath id="shatter-armor-cc"><use href="#shatter-armor-pa" x="-8" y="-8"/></clipPath><path id="shatter-armor-pd" d="M310 206A42 34 0 1 0 394 206A42 34 0 1 0 310 206Z"/><clipPath id="shatter-armor-ce"><use href="#shatter-armor-pd"/></clipPath><clipPath id="shatter-armor-cf"><use href="#shatter-armor-pd" x="-8" y="-8"/></clipPath><path id="shatter-armor-pg" d="M184 196C192 183 210 174 222 172C234 170 250 184 262 184C274 184 290 170 302 172C314 174 333 183 340 196C348 209 353 235 352 256C351 277 342 317 334 334C326 351 311 364 300 372C289 380 273 386 262 386C251 386 235 380 224 372C213 364 198 351 190 334C182 317 173 277 172 256C171 235 177 209 184 196Z"/><clipPath id="shatter-armor-ch"><use href="#shatter-armor-pg"/></clipPath><clipPath id="shatter-armor-ci"><use href="#shatter-armor-pg" x="-14" y="-12"/></clipPath><radialGradient id="shatter-armor-rj" gradientUnits="userSpaceOnUse" cx="236" cy="236" r="90"><stop offset="0" stop-color="#c77dff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.27"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="shatter-armor-pk" d="M134 307L115 310L100 301L109 286L134 290Z"/><clipPath id="shatter-armor-cl"><use href="#shatter-armor-pk"/></clipPath><clipPath id="shatter-armor-cm"><use href="#shatter-armor-pk" x="-3" y="-3"/></clipPath><path id="shatter-armor-pn" d="M153 369L138 366L135 357L147 351L161 358Z"/><clipPath id="shatter-armor-co"><use href="#shatter-armor-pn"/></clipPath><clipPath id="shatter-armor-cp"><use href="#shatter-armor-pn" x="-3" y="-3"/></clipPath><path id="shatter-armor-pq" d="M380 312L368 303L371 291L388 292L397 304Z"/><clipPath id="shatter-armor-cr"><use href="#shatter-armor-pq"/></clipPath><clipPath id="shatter-armor-cs"><use href="#shatter-armor-pq" x="-3" y="-3"/></clipPath><path id="shatter-armor-pt" d="M397 369L393 358L403 353L413 357L411 366Z"/><clipPath id="shatter-armor-cu"><use href="#shatter-armor-pt"/></clipPath><clipPath id="shatter-armor-cv"><use href="#shatter-armor-pt" x="-3" y="-3"/></clipPath><path id="shatter-armor-pw" d="M318 145L319 133L335 133L344 141L332 147Z"/><clipPath id="shatter-armor-cx"><use href="#shatter-armor-pw"/></clipPath><clipPath id="shatter-armor-cy"><use href="#shatter-armor-pw" x="-3" y="-3"/></clipPath><path id="shatter-armor-pz" d="M86 252L94 247L105 248L103 256L93 259Z"/><clipPath id="shatter-armor-c10"><use href="#shatter-armor-pz"/></clipPath><clipPath id="shatter-armor-c11"><use href="#shatter-armor-pz" x="-3" y="-3"/></clipPath><radialGradient id="shatter-armor-r12" gradientUnits="userSpaceOnUse" cx="226" cy="226" r="70"><stop offset="0" stop-color="#f0d8ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#f0d8ff" stop-opacity="0.405"/><stop offset="1" stop-color="#f0d8ff" stop-opacity="0"/></radialGradient><path id="shatter-armor-p13" d="M-8 58C5 78 53 113 77 134C101 154 134 187 151 196C168 206 185 201 190 195C196 189 199 172 189 156C179 139 144 109 123 86C102 63 68 14 48 2C29 -11 0 -7 -8 2C-17 10 -21 38 -8 58Z"/><clipPath id="shatter-armor-c14"><use href="#shatter-armor-p13"/></clipPath><clipPath id="shatter-armor-c15"><use href="#shatter-armor-p13" x="-10" y="-10"/></clipPath><path id="shatter-armor-p16" d="M103 168C107 178 114 184 125 186C136 188 169 189 176 181C183 172 175 140 171 130C167 120 160 114 149 112C138 110 105 109 98 117C91 126 99 158 103 168Z"/><clipPath id="shatter-armor-c17"><use href="#shatter-armor-p16"/></clipPath><clipPath id="shatter-armor-c18"><use href="#shatter-armor-p16" x="-4" y="-4"/></clipPath><path id="shatter-armor-p19" d="M166 164C172 158 192 166 200 172C208 178 220 195 222 204C224 213 219 227 214 232C209 237 194 239 186 236C178 233 163 225 160 214C157 203 160 170 166 164Z"/><clipPath id="shatter-armor-c1a"><use href="#shatter-armor-p19"/></clipPath><clipPath id="shatter-armor-c1b"><use href="#shatter-armor-p19" x="-8" y="-8"/></clipPath><path id="shatter-armor-p1c" d="M206 192C210 193 224 193 228 193C231 193 228 192 228 192C228 192 231 193 228 191C226 189 214 181 210 180C206 179 203 183 202 184C202 186 202 190 206 192Z"/><clipPath id="shatter-armor-c1d"><use href="#shatter-armor-p1c"/></clipPath><clipPath id="shatter-armor-c1e"><use href="#shatter-armor-p1c" x="-2" y="-2"/></clipPath><path id="shatter-armor-p1f" d="M214 212C218 213 232 213 236 213C239 213 236 212 236 212C236 212 239 213 236 211C234 209 222 201 218 200C214 199 211 203 210 204C210 206 210 210 214 212Z"/><clipPath id="shatter-armor-c1g"><use href="#shatter-armor-p1f"/></clipPath><clipPath id="shatter-armor-c1h"><use href="#shatter-armor-p1f" x="-2" y="-2"/></clipPath><path id="shatter-armor-p1i" d="M208 232C212 233 226 233 230 233C233 233 230 232 230 232C230 232 233 233 230 231C228 229 216 221 212 220C208 219 205 223 204 224C204 226 204 230 208 232Z"/><clipPath id="shatter-armor-c1j"><use href="#shatter-armor-p1i"/></clipPath><clipPath id="shatter-armor-c1k"><use href="#shatter-armor-p1i" x="-2" y="-2"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#shatter-armor-l0)"/>
+<circle cx="276" cy="270" r="260" fill="url(#shatter-armor-r1)"/>
+<path d="M0 412Q256 376 512 412V512H0Z" fill="url(#shatter-armor-l2)"/>
+<ellipse cx="262" cy="430" rx="200" ry="56" fill="url(#shatter-armor-r3)"/>
+<use href="#shatter-armor-p4" fill="#33221a" stroke-width="12"/>
+<g clip-path="url(#shatter-armor-c5)">
+<use href="#shatter-armor-p4" x="-4" y="-4" fill="#8a6040"/>
+<g clip-path="url(#shatter-armor-c6)"><use href="#shatter-armor-p4" x="3" y="3" fill="#5a3e2a"/></g>
+</g>
+<use href="#shatter-armor-p7" fill="#33221a" stroke-width="10"/>
+<g clip-path="url(#shatter-armor-c8)">
+<use href="#shatter-armor-p7" x="-4" y="-4" fill="#8a6040"/>
+<g clip-path="url(#shatter-armor-c9)"><use href="#shatter-armor-p7" x="3" y="3" fill="#5a3e2a"/></g>
+</g>
+<use href="#shatter-armor-pa" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#shatter-armor-cb)">
+<use href="#shatter-armor-pa" x="-5" fill="#5e6f8a"/>
+<use href="#shatter-armor-pa" x="-8" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cc)"><use href="#shatter-armor-pa" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pd" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#shatter-armor-ce)">
+<use href="#shatter-armor-pd" x="-5" fill="#5e6f8a"/>
+<use href="#shatter-armor-pd" x="-8" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cf)"><use href="#shatter-armor-pd" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pg" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#shatter-armor-ch)">
+<use href="#shatter-armor-pg" x="-5" fill="#5e6f8a"/>
+<use href="#shatter-armor-pg" x="-14" y="-12" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-ci)"><use href="#shatter-armor-pg" x="8" y="8" fill="#9fb3c8"/></g>
+</g>
+<path d="M226 180C240 198 284 198 298 180C290 168 234 168 226 180Z" fill="#2a1420"/>
+<path d="M262 196V380M200 250C226 266 298 266 324 250M206 318C232 330 292 330 318 318" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<path d="M242 292A34 34 0 1 0 310 292A34 34 0 1 0 242 292ZM276 258V326M248 276L304 308M304 276L248 308" fill="none" stroke-width="6" stroke-opacity="0.8"/>
+<path d="M242 292A34 34 0 1 0 310 292A34 34 0 1 0 242 292ZM276 258V326M248 276L304 308M304 276L248 308" fill="none" stroke="#ff8a4a" stroke-width="3" stroke-opacity="0.9"/>
+<circle cx="236" cy="236" r="90" fill="url(#shatter-armor-rj)"/>
+<path d="M236 236L258 243L276 222L299 233L318 215L340 220" fill="none" stroke-width="10"/>
+<path d="M236 236L258 243L276 222L299 233L318 215L340 220" fill="none" stroke="#e0b8ff" stroke-width="4"/>
+<path d="M236 236L243 266L275 278L280 309L306 326L318 352" fill="none" stroke-width="10"/>
+<path d="M236 236L243 266L275 278L280 309L306 326L318 352" fill="none" stroke="#e0b8ff" stroke-width="4"/>
+<path d="M236 236L224 262L235 290L217 315L230 344L220 370" fill="none" stroke-width="10"/>
+<path d="M236 236L224 262L235 290L217 315L230 344L220 370" fill="none" stroke="#e0b8ff" stroke-width="4"/>
+<path d="M236 236L220 245L221 268L197 270L199 294L180 300" fill="none" stroke-width="10"/>
+<path d="M236 236L220 245L221 268L197 270L199 294L180 300" fill="none" stroke="#e0b8ff" stroke-width="4"/>
+<path d="M236 236L250 229L244 207L266 206L261 185L278 180" fill="none" stroke-width="10"/>
+<path d="M236 236L250 229L244 207L266 206L261 185L278 180" fill="none" stroke="#e0b8ff" stroke-width="4"/>
+<use href="#shatter-armor-pk" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#shatter-armor-cl)">
+<use href="#shatter-armor-pk" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cm)"><use href="#shatter-armor-pk" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pn" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#shatter-armor-co)">
+<use href="#shatter-armor-pn" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cp)"><use href="#shatter-armor-pn" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pq" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#shatter-armor-cr)">
+<use href="#shatter-armor-pq" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cs)"><use href="#shatter-armor-pq" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pt" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#shatter-armor-cu)">
+<use href="#shatter-armor-pt" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cv)"><use href="#shatter-armor-pt" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pw" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#shatter-armor-cx)">
+<use href="#shatter-armor-pw" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-cy)"><use href="#shatter-armor-pw" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-pz" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#shatter-armor-c10)">
+<use href="#shatter-armor-pz" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-c11)"><use href="#shatter-armor-pz" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<circle cx="226" cy="226" r="70" fill="url(#shatter-armor-r12)"/>
+<path d="M263 164L248 208L294 198L256 225L298 243L252 243L276 283L238 255L234 302L220 257L189 292L204 248L158 258L196 231L154 213L200 213L176 173L214 201L218 154L232 199Z" fill="#f0d8ff" fill-opacity="0.85"/>
+<use href="#shatter-armor-p13" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#shatter-armor-c14)">
+<use href="#shatter-armor-p13" x="-4" fill="#1e1032"/>
+<use href="#shatter-armor-p13" x="-10" y="-10" fill="#5e3e8a"/>
+<g clip-path="url(#shatter-armor-c15)"><use href="#shatter-armor-p13" x="7" y="7" fill="#3a2458"/></g>
+</g>
+<use href="#shatter-armor-p16" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#shatter-armor-c17)">
+<use href="#shatter-armor-p16" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#shatter-armor-c18)"><use href="#shatter-armor-p16" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#shatter-armor-p19" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#shatter-armor-c1a)">
+<use href="#shatter-armor-p19" x="-4" fill="#1e1032"/>
+<use href="#shatter-armor-p19" x="-8" y="-8" fill="#5e3e8a"/>
+<g clip-path="url(#shatter-armor-c1b)"><use href="#shatter-armor-p19" x="7" y="7" fill="#3a2458"/></g>
+</g>
+<use href="#shatter-armor-p1c" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#shatter-armor-c1d)">
+<use href="#shatter-armor-p1c" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-c1e)"><use href="#shatter-armor-p1c" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-p1f" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#shatter-armor-c1g)">
+<use href="#shatter-armor-p1f" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-c1h)"><use href="#shatter-armor-p1f" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<use href="#shatter-armor-p1i" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#shatter-armor-c1j)">
+<use href="#shatter-armor-p1i" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#shatter-armor-c1k)"><use href="#shatter-armor-p1i" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<path d="M372 245L375 251L372 256L369 251Z" fill="#ff8a4a" fill-opacity="0.55"/>
+<path d="M386 392L389 398L386 404L382 398Z" fill="#e0b8ff" fill-opacity="0.63"/>
+<path d="M382 305L385 311L382 316L379 311Z" fill="#ff8a4a" fill-opacity="0.83"/>
+<path d="M144 284L145 288L144 291L142 288Z" fill="#e0b8ff" fill-opacity="0.81"/>
+<path d="M174 285L177 291L174 298L170 291Z" fill="#ff8a4a" fill-opacity="0.65"/>
+<path d="M400 351L404 357L400 363L397 357Z" fill="#e0b8ff" fill-opacity="0.63"/>
+<path d="M412 210L415 217L412 223L408 217Z" fill="#ff8a4a" fill-opacity="0.76"/>
+<path d="M361 162L363 167L361 172L358 167Z" fill="#e0b8ff" fill-opacity="0.45"/>
+<path d="M152 204L154 208L152 212L150 208Z" fill="#ff8a4a" fill-opacity="0.9"/>
+<path d="M176 176L178 179L176 182L174 179Z" fill="#e0b8ff" fill-opacity="0.52"/>
+<path d="M203 181L206 187L203 193L199 187Z" fill="#ff8a4a" fill-opacity="0.48"/>
+<path d="M242 241L244 245L242 250L239 245Z" fill="#e0b8ff" fill-opacity="0.48"/>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="mana-leech-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0a0a24"/><stop offset="0.55" stop-color="#1c1a4e"/><stop offset="1" stop-color="#0a0a1e"/></linearGradient><radialGradient id="mana-leech-r1" gradientUnits="userSpaceOnUse" cx="350" cy="320" r="230"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.32"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><linearGradient id="mana-leech-l2" gradientUnits="userSpaceOnUse" x1="0" y1="352" x2="0" y2="512"><stop offset="0" stop-color="#22225a"/><stop offset="1" stop-color="#0c0c26"/></linearGradient><radialGradient id="mana-leech-r3" gradientUnits="userSpaceOnUse" cx="300" cy="410" r="200"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.55"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="mana-leech-p4" d="M58 400L60 365L70 350L80 365L83 400Z"/><clipPath id="mana-leech-c5"><use href="#mana-leech-p4"/></clipPath><clipPath id="mana-leech-c6"><use href="#mana-leech-p4" x="-3" y="-3"/></clipPath><path id="mana-leech-p7" d="M102 390L103 366L110 356L117 366L119 390Z"/><clipPath id="mana-leech-c8"><use href="#mana-leech-p7"/></clipPath><clipPath id="mana-leech-c9"><use href="#mana-leech-p7" x="-3" y="-3"/></clipPath><path id="mana-leech-pa" d="M436 396L439 357L450 340L461 357L464 396Z"/><clipPath id="mana-leech-cb"><use href="#mana-leech-pa"/></clipPath><clipPath id="mana-leech-cc"><use href="#mana-leech-pa" x="-3" y="-3"/></clipPath><path id="mana-leech-pd" d="M413 410L414 389L420 380L426 389L428 410Z"/><clipPath id="mana-leech-ce"><use href="#mana-leech-pd"/></clipPath><clipPath id="mana-leech-cf"><use href="#mana-leech-pd" x="-3" y="-3"/></clipPath><radialGradient id="mana-leech-rg" gradientUnits="userSpaceOnUse" cx="352" cy="320" r="110"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.315"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="mana-leech-ph" d="M312 400L306 300L340 236L380 250L402 320L396 400Z"/><clipPath id="mana-leech-ci"><use href="#mana-leech-ph"/></clipPath><clipPath id="mana-leech-cj"><use href="#mana-leech-ph" x="-12" y="-10"/></clipPath><path id="mana-leech-pk" d="M158 406C164 391 158 357 161 338C165 320 172 298 181 283C191 268 212 248 226 239C239 230 261 225 273 225C284 225 295 234 301 240C307 247 306 262 313 268C320 274 339 284 346 281C353 278 360 259 359 248C358 236 351 216 339 204C327 192 301 171 279 167C258 164 218 170 194 181C171 192 139 220 123 241C107 262 93 298 87 322C81 346 77 384 82 402C87 420 107 441 118 442C129 443 151 422 158 406Z"/><clipPath id="mana-leech-cl"><use href="#mana-leech-pk"/></clipPath><clipPath id="mana-leech-cm"><use href="#mana-leech-pk" x="-14" y="-12"/></clipPath><path id="mana-leech-pn" d="M298 266A40 30 0 1 0 378 266A40 30 0 1 0 298 266Z"/><clipPath id="mana-leech-co"><use href="#mana-leech-pn"/></clipPath><clipPath id="mana-leech-cp"><use href="#mana-leech-pn" x="-6" y="-6"/></clipPath><radialGradient id="mana-leech-rq" gradientUnits="userSpaceOnUse" cx="338" cy="268" r="14"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.405"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#mana-leech-l0)"/>
+<circle cx="350" cy="320" r="230" fill="url(#mana-leech-r1)"/>
+<path d="M0 388Q256 352 512 388V512H0Z" fill="url(#mana-leech-l2)"/>
+<ellipse cx="300" cy="410" rx="200" ry="56" fill="url(#mana-leech-r3)"/>
+<use href="#mana-leech-p4" fill="#163a6a" stroke-width="8"/>
+<g clip-path="url(#mana-leech-c5)">
+<use href="#mana-leech-p4" x="-3" y="-3" fill="#5a8ac8"/>
+<g clip-path="url(#mana-leech-c6)"><use href="#mana-leech-p4" x="2" y="2" fill="#2a5a9a"/></g>
+</g>
+<use href="#mana-leech-p7" fill="#163a6a" stroke-width="8"/>
+<g clip-path="url(#mana-leech-c8)">
+<use href="#mana-leech-p7" x="-3" y="-3" fill="#5a8ac8"/>
+<g clip-path="url(#mana-leech-c9)"><use href="#mana-leech-p7" x="2" y="2" fill="#2a5a9a"/></g>
+</g>
+<use href="#mana-leech-pa" fill="#163a6a" stroke-width="8"/>
+<g clip-path="url(#mana-leech-cb)">
+<use href="#mana-leech-pa" x="-3" y="-3" fill="#5a8ac8"/>
+<g clip-path="url(#mana-leech-cc)"><use href="#mana-leech-pa" x="2" y="2" fill="#2a5a9a"/></g>
+</g>
+<use href="#mana-leech-pd" fill="#163a6a" stroke-width="8"/>
+<g clip-path="url(#mana-leech-ce)">
+<use href="#mana-leech-pd" x="-3" y="-3" fill="#5a8ac8"/>
+<g clip-path="url(#mana-leech-cf)"><use href="#mana-leech-pd" x="2" y="2" fill="#2a5a9a"/></g>
+</g>
+<circle cx="352" cy="320" r="110" fill="url(#mana-leech-rg)"/>
+<use href="#mana-leech-ph" fill="#1f5fbf" stroke-width="12"/>
+<g clip-path="url(#mana-leech-ci)">
+<use href="#mana-leech-ph" x="-12" y="-10" fill="#bfe6ff"/>
+<g clip-path="url(#mana-leech-cj)"><use href="#mana-leech-ph" x="8" y="8" fill="#3fa9ff"/></g>
+</g>
+<path d="M340 236L350 400M306 300L398 316" fill="none" stroke="#1f5fbf" stroke-width="3" stroke-opacity="0.7"/>
+<path d="M330 270L346 296L338 318L356 340" fill="none" stroke-width="4" stroke-opacity="0.8"/>
+<path d="M320 340L340 330L350 400L318 400Z" fill="#163a6a" fill-opacity="0.6"/>
+<use href="#mana-leech-pk" fill="#3fa9ff" stroke-width="12"/>
+<g clip-path="url(#mana-leech-cl)">
+<use href="#mana-leech-pk" x="-4" fill="#4a1450"/>
+<use href="#mana-leech-pk" x="-14" y="-12" fill="#a8509e"/>
+<g clip-path="url(#mana-leech-cm)"><use href="#mana-leech-pk" x="7" y="7" fill="#7a2e7a"/></g>
+</g>
+<path d="M155 380Q122 370 87 376" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M157 347Q124 337 89 343" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M165 319Q137 299 103 294" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M176 288Q149 268 116 263" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M193 267Q178 238 152 221" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M218 242Q204 215 179 198" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M239 232Q241 203 227 178" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M268 224Q271 197 257 174" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M279 226Q298 209 304 184" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M300 236Q318 221 323 197" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M306 243Q329 242 345 226" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M313 259Q336 258 352 242" fill="none" stroke-width="3.5" stroke-opacity="0.5"/>
+<path d="M128 324C133 315 142 290 156 270C170 250 193 215 214 204C235 193 262 202 280 204C298 206 314 206 324 216C334 226 337 258 340 266" fill="none" stroke="#3fa9ff" stroke-width="12" stroke-opacity="0.3"/>
+<path d="M128 324C133 315 142 290 156 270C170 250 193 215 214 204C235 193 262 202 280 204C298 206 314 206 324 216C334 226 337 258 340 266" fill="none" stroke="#bfe6ff" stroke-width="4" stroke-opacity="0.9"/>
+<use href="#mana-leech-pn" fill="#8a3a6a" stroke-width="10"/>
+<g clip-path="url(#mana-leech-co)">
+<use href="#mana-leech-pn" x="-6" y="-6" fill="#f0a0c8"/>
+<g clip-path="url(#mana-leech-cp)"><use href="#mana-leech-pn" x="4" y="4" fill="#c46a9a"/></g>
+</g>
+<path d="M310 268A28 20 0 1 0 366 268A28 20 0 1 0 310 268Z" fill="#2a0a24"/>
+<path d="M364 268L358 268L354 270ZM361 276L356 273L352 275ZM354 282L351 278L347 280ZM344 286L344 280L340 282ZM332 286L336 280L332 282ZM322 282L329 278L325 280ZM315 276L324 273L320 275ZM312 268L322 268L318 270ZM315 260L324 263L320 265ZM322 254L329 258L325 260ZM332 250L336 256L332 258ZM344 250L344 256L340 258ZM354 254L351 258L347 260ZM361 260L356 263L352 265Z" fill="#fff4f8"/>
+<path d="M354 268L351 268L347 270ZM350 275L349 273L345 275ZM341 279L342 276L338 278ZM330 278L334 275L330 277ZM323 272L329 271L325 273ZM323 264L329 265L325 267ZM330 258L334 261L330 263ZM341 257L342 260L338 262ZM350 261L349 263L345 265Z" fill="#fff4f8"/>
+<circle cx="338" cy="268" r="14" fill="url(#mana-leech-rq)"/>
+<path d="M296 220A4 4 0 1 0 304 220A4 4 0 1 0 296 220Z" fill="#bfe6ff"/>
+<path d="M310 210A4 4 0 1 0 318 210A4 4 0 1 0 310 210Z" fill="#bfe6ff"/>
+<path d="M324 214A4 4 0 1 0 332 214A4 4 0 1 0 324 214Z" fill="#bfe6ff"/>
+<path d="M333 256L336 261L333 266L331 261Z" fill="#bfe6ff" fill-opacity="0.7"/>
+<path d="M353 284L355 288L353 293L350 288Z" fill="#3fa9ff" fill-opacity="0.73"/>
+<path d="M337 239L341 245L337 251L334 245Z" fill="#bfe6ff" fill-opacity="0.6"/>
+<path d="M377 336L382 344L377 351L373 344Z" fill="#3fa9ff" fill-opacity="0.79"/>
+<path d="M387 240L391 248L387 255L382 248Z" fill="#bfe6ff" fill-opacity="0.94"/>
+<path d="M393 273L396 278L393 284L390 278Z" fill="#3fa9ff" fill-opacity="0.64"/>
+<path d="M341 249L343 252L341 255L339 252Z" fill="#bfe6ff" fill-opacity="0.85"/>
+<path d="M338 285L340 289L338 292L336 289Z" fill="#3fa9ff" fill-opacity="0.73"/>
+<path d="M379 276L383 284L379 291L375 284Z" fill="#bfe6ff" fill-opacity="0.9"/>
+<path d="M378 279L382 286L378 293L374 286Z" fill="#3fa9ff" fill-opacity="0.81"/>
+<path d="M400 248L402 251L400 255L398 251Z" fill="#bfe6ff" fill-opacity="0.91"/>
+<path d="M342 238L346 245L342 252L338 245Z" fill="#3fa9ff" fill-opacity="0.77"/>
+<path d="M333 257L336 263L333 269L329 263Z" fill="#bfe6ff" fill-opacity="0.69"/>
+<path d="M338 323L341 329L338 335L334 329Z" fill="#3fa9ff" fill-opacity="0.65"/>
+<path d="M391 312L394 317L391 323L388 317Z" fill="#bfe6ff" fill-opacity="0.78"/>
+<path d="M332 360L334 363L332 367L330 363Z" fill="#3fa9ff" fill-opacity="0.96"/>
+<path d="M343 357L346 362L343 366L341 362Z" fill="#bfe6ff" fill-opacity="0.92"/>
+<path d="M405 289L408 294L405 299L402 294Z" fill="#3fa9ff" fill-opacity="0.78"/>
+</svg>

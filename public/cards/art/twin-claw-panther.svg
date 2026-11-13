@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="twin-claw-panther-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0a1420"/><stop offset="0.55" stop-color="#14304a"/><stop offset="1" stop-color="#0a1a1a"/></linearGradient><radialGradient id="twin-claw-panther-r1" gradientUnits="userSpaceOnUse" cx="220" cy="220" r="240"><stop offset="0" stop-color="#7bd389" stop-opacity="0.25"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.1125"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><radialGradient id="twin-claw-panther-r2" gradientUnits="userSpaceOnUse" cx="400" cy="110" r="60"><stop offset="0" stop-color="#e6f6ff" stop-opacity="0.4"/><stop offset="0.45" stop-color="#e6f6ff" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#e6f6ff" stop-opacity="0"/></radialGradient><linearGradient id="twin-claw-panther-l3" gradientUnits="userSpaceOnUse" x1="0" y1="362" x2="0" y2="512"><stop offset="0" stop-color="#123024"/><stop offset="1" stop-color="#0a1a14"/></linearGradient><radialGradient id="twin-claw-panther-r4" gradientUnits="userSpaceOnUse" cx="300" cy="420" r="160"><stop offset="0" stop-color="#7bd389" stop-opacity="0.55"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><path id="twin-claw-panther-p5" d="M377 300C385 297 409 286 420 277C430 268 444 249 447 238C450 227 442 209 440 204C438 198 437 200 436 200C434 200 432 199 432 204C432 210 437 225 433 234C430 243 418 256 408 263C398 270 374 275 367 280C360 285 361 292 362 295C363 298 368 303 377 300Z"/><clipPath id="twin-claw-panther-c6"><use href="#twin-claw-panther-p5"/></clipPath><clipPath id="twin-claw-panther-c7"><use href="#twin-claw-panther-p5" x="-5" y="-5"/></clipPath><path id="twin-claw-panther-p8" d="M336 324C339 333 354 350 362 359C371 368 385 382 391 386C398 390 402 388 404 387C406 385 408 380 405 374C401 368 388 355 382 345C375 335 370 314 364 308C358 301 346 300 342 302C338 305 333 316 336 324Z"/><clipPath id="twin-claw-panther-c9"><use href="#twin-claw-panther-p8"/></clipPath><clipPath id="twin-claw-panther-ca"><use href="#twin-claw-panther-p8" x="-5" y="-5"/></clipPath><path id="twin-claw-panther-pb" d="M388 251C374 238 339 226 318 218C297 209 267 196 249 196C231 196 203 206 198 217C194 228 206 255 219 268C231 281 262 293 282 302C303 312 337 328 356 329C375 329 406 318 411 306C416 295 402 265 388 251Z"/><clipPath id="twin-claw-panther-cc"><use href="#twin-claw-panther-pb"/></clipPath><clipPath id="twin-claw-panther-cd"><use href="#twin-claw-panther-pb" x="-12" y="-12"/></clipPath><path id="twin-claw-panther-pe" d="M319 312C320 323 331 344 340 354C348 365 368 374 378 379C387 385 398 390 403 392C409 393 414 391 416 389C417 386 416 380 413 376C409 372 397 367 390 361C383 355 369 347 364 338C360 328 366 308 361 300C356 292 340 283 334 285C327 287 318 302 319 312Z"/><clipPath id="twin-claw-panther-cf"><use href="#twin-claw-panther-pe"/></clipPath><clipPath id="twin-claw-panther-cg"><use href="#twin-claw-panther-pe" x="-6" y="-6"/></clipPath><path id="twin-claw-panther-ph" d="M226 238C216 243 196 267 184 275C172 282 151 285 145 290C138 294 137 300 138 303C139 307 143 311 151 310C160 310 182 304 196 297C210 291 238 274 246 266C254 257 253 246 250 242C247 238 236 233 226 238Z"/><clipPath id="twin-claw-panther-ci"><use href="#twin-claw-panther-ph"/></clipPath><clipPath id="twin-claw-panther-cj"><use href="#twin-claw-panther-ph" x="-6" y="-6"/></clipPath><path id="twin-claw-panther-pk" d="M142 297C139 295 127 292 124 291C122 290 124 292 124 292C124 292 121 291 124 293C126 295 135 302 138 303C141 304 143 303 143 302C144 301 144 298 142 297Z"/><clipPath id="twin-claw-panther-cl"><use href="#twin-claw-panther-pk"/></clipPath><clipPath id="twin-claw-panther-cm"><use href="#twin-claw-panther-pk" x="-2" y="-2"/></clipPath><path id="twin-claw-panther-pn" d="M139 297C136 297 124 302 122 303C119 304 122 304 122 304C122 304 119 305 122 305C125 305 138 304 141 303C144 303 144 300 143 299C143 298 142 296 139 297Z"/><clipPath id="twin-claw-panther-co"><use href="#twin-claw-panther-pn"/></clipPath><clipPath id="twin-claw-panther-cp"><use href="#twin-claw-panther-pn" x="-2" y="-2"/></clipPath><path id="twin-claw-panther-pq" d="M137 298C135 300 129 311 127 313C126 316 128 314 128 314C128 314 127 316 129 315C131 313 141 305 143 302C145 300 143 298 142 297C141 297 140 295 137 298Z"/><clipPath id="twin-claw-panther-cr"><use href="#twin-claw-panther-pq"/></clipPath><clipPath id="twin-claw-panther-cs"><use href="#twin-claw-panther-pq" x="-2" y="-2"/></clipPath><path id="twin-claw-panther-pt" d="M248 234C238 234 217 246 204 249C191 252 168 249 160 251C152 253 149 259 149 262C149 265 151 271 160 273C169 275 193 276 208 275C222 274 247 271 256 266C265 262 270 251 268 246C267 241 257 233 248 234Z"/><clipPath id="twin-claw-panther-cu"><use href="#twin-claw-panther-pt"/></clipPath><clipPath id="twin-claw-panther-cv"><use href="#twin-claw-panther-pt" x="-6" y="-6"/></clipPath><path id="twin-claw-panther-pw" d="M154 259C151 257 139 254 136 253C134 252 136 254 136 254C136 254 133 253 136 255C138 257 147 264 150 265C153 266 155 265 155 264C156 263 156 260 154 259Z"/><clipPath id="twin-claw-panther-cx"><use href="#twin-claw-panther-pw"/></clipPath><clipPath id="twin-claw-panther-cy"><use href="#twin-claw-panther-pw" x="-2" y="-2"/></clipPath><path id="twin-claw-panther-pz" d="M151 259C148 259 136 264 134 265C131 266 134 266 134 266C134 266 131 267 134 267C137 267 150 266 153 265C156 265 156 262 155 261C155 260 154 258 151 259Z"/><clipPath id="twin-claw-panther-c10"><use href="#twin-claw-panther-pz"/></clipPath><clipPath id="twin-claw-panther-c11"><use href="#twin-claw-panther-pz" x="-2" y="-2"/></clipPath><path id="twin-claw-panther-p12" d="M149 260C147 262 141 273 139 275C138 278 140 276 140 276C140 276 139 278 141 277C143 275 153 267 155 264C157 262 155 260 154 259C153 259 152 257 149 260Z"/><clipPath id="twin-claw-panther-c13"><use href="#twin-claw-panther-p12"/></clipPath><clipPath id="twin-claw-panther-c14"><use href="#twin-claw-panther-p12" x="-2" y="-2"/></clipPath><path id="twin-claw-panther-p15" d="M210 190L218 152L240 184Z"/><clipPath id="twin-claw-panther-c16"><use href="#twin-claw-panther-p15"/></clipPath><clipPath id="twin-claw-panther-c17"><use href="#twin-claw-panther-p15" x="-4" y="-4"/></clipPath><path id="twin-claw-panther-p18" d="M236 196C233 188 222 182 214 180C206 178 191 180 182 184C173 188 161 197 156 204C151 211 145 221 146 228C148 235 157 244 166 248C175 252 194 254 204 252C215 250 231 240 236 232C241 224 239 204 236 196Z"/><clipPath id="twin-claw-panther-c19"><use href="#twin-claw-panther-p18"/></clipPath><clipPath id="twin-claw-panther-c1a"><use href="#twin-claw-panther-p18" x="-8" y="-8"/></clipPath><radialGradient id="twin-claw-panther-r1b" gradientUnits="userSpaceOnUse" cx="190" cy="204" r="20"><stop offset="0" stop-color="#7bd389" stop-opacity="0.9"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.405"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#twin-claw-panther-l0)"/>
+<circle cx="220" cy="220" r="240" fill="url(#twin-claw-panther-r1)"/>
+<circle cx="400" cy="110" r="60" fill="url(#twin-claw-panther-r2)"/>
+<path d="M374 110A26 26 0 1 0 426 110A26 26 0 1 0 374 110Z" fill="#e6f6ff" fill-opacity="0.6"/>
+<path d="M33 334C46 331 92 326 110 315C129 304 148 267 155 259C162 250 155 258 155 258C155 258 166 258 154 257C142 256 93 242 74 253C55 263 34 314 27 326C20 338 25 332 26 333C27 334 20 337 33 334Z" fill="#0e3424"/>
+<path d="M482 376C473 364 442 314 420 307C398 299 347 323 334 326C321 329 333 326 333 327C333 327 324 320 333 328C342 336 372 371 393 380C415 388 464 384 478 384C491 385 484 384 484 382C485 381 492 387 482 376Z" fill="#0e3424"/>
+<path d="M62 465C72 466 107 473 124 469C142 465 170 445 178 440C186 436 178 439 178 439C178 439 188 443 178 438C169 434 132 407 114 410C96 413 67 448 58 455C50 463 55 460 55 462C56 463 51 464 62 465Z" fill="#0e3424"/>
+<path d="M462 465C453 458 424 423 406 420C388 417 351 444 342 448C332 453 342 449 342 449C342 449 334 446 342 450C350 455 378 475 396 479C413 483 448 476 458 475C469 474 464 473 465 472C465 470 470 473 462 465Z" fill="#0e3424"/>
+<path d="M120 0C134 60 110 110 126 90" fill="none" stroke="#14402a" stroke-width="6"/>
+<path d="M160 0C174 60 150 110 166 150" fill="none" stroke="#14402a" stroke-width="6"/>
+<path d="M350 0C364 60 340 110 356 90" fill="none" stroke="#14402a" stroke-width="6"/>
+<path d="M0 398Q256 362 512 398V512H0Z" fill="url(#twin-claw-panther-l3)"/>
+<ellipse cx="300" cy="420" rx="160" ry="45" fill="url(#twin-claw-panther-r4)"/>
+<ellipse cx="300" cy="420" rx="110" ry="12" fill="#1d0842" fill-opacity="0.4"/>
+<g transform="translate(0 28)">
+<path d="M84 138Q171 176 196 256" fill="none" stroke="#7bd389" stroke-width="12" stroke-opacity="0.35"/>
+<path d="M84 138Q171 176 196 256" fill="none" stroke="#b8f5c8" stroke-width="5"/>
+<path d="M84 138Q171 176 196 256" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path d="M100 130Q185 170 210 250" fill="none" stroke="#7bd389" stroke-width="12" stroke-opacity="0.35"/>
+<path d="M100 130Q185 170 210 250" fill="none" stroke="#b8f5c8" stroke-width="5"/>
+<path d="M100 130Q185 170 210 250" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path d="M116 122Q199 164 224 244" fill="none" stroke="#7bd389" stroke-width="12" stroke-opacity="0.35"/>
+<path d="M116 122Q199 164 224 244" fill="none" stroke="#b8f5c8" stroke-width="5"/>
+<path d="M116 122Q199 164 224 244" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path d="M84 238Q161 281 176 366" fill="none" stroke="#7bd389" stroke-width="12" stroke-opacity="0.35"/>
+<path d="M84 238Q161 281 176 366" fill="none" stroke="#b8f5c8" stroke-width="5"/>
+<path d="M84 238Q161 281 176 366" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path d="M100 230Q175 275 190 360" fill="none" stroke="#7bd389" stroke-width="12" stroke-opacity="0.35"/>
+<path d="M100 230Q175 275 190 360" fill="none" stroke="#b8f5c8" stroke-width="5"/>
+<path d="M100 230Q175 275 190 360" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path d="M116 222Q189 269 204 354" fill="none" stroke="#7bd389" stroke-width="12" stroke-opacity="0.35"/>
+<path d="M116 222Q189 269 204 354" fill="none" stroke="#b8f5c8" stroke-width="5"/>
+<path d="M116 222Q189 269 204 354" fill="none" stroke="#ffffff" stroke-width="2"/>
+<use href="#twin-claw-panther-p5" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-c6)">
+<use href="#twin-claw-panther-p5" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-p5" x="-5" y="-5" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-c7)"><use href="#twin-claw-panther-p5" x="7" y="7" fill="#2c2a5a"/></g>
+</g>
+<use href="#twin-claw-panther-p8" fill="#16143a" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-c9)">
+<use href="#twin-claw-panther-p8" x="-5" y="-5" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-ca)"><use href="#twin-claw-panther-p8" x="7" y="7" fill="#22204a"/></g>
+</g>
+<use href="#twin-claw-panther-pb" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-cc)">
+<use href="#twin-claw-panther-pb" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-pb" x="-12" y="-12" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-cd)"><use href="#twin-claw-panther-pb" x="8" y="8" fill="#2c2a5a"/></g>
+</g>
+<path d="M260 222C300 230 330 248 360 268" fill="none" stroke="#4a4890" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#twin-claw-panther-pe" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-cf)">
+<use href="#twin-claw-panther-pe" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-pe" x="-6" y="-6" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-cg)"><use href="#twin-claw-panther-pe" x="7" y="7" fill="#2c2a5a"/></g>
+</g>
+<use href="#twin-claw-panther-ph" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-ci)">
+<use href="#twin-claw-panther-ph" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-ph" x="-6" y="-6" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-cj)"><use href="#twin-claw-panther-ph" x="7" y="7" fill="#2c2a5a"/></g>
+</g>
+<use href="#twin-claw-panther-pk" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#twin-claw-panther-cl)">
+<use href="#twin-claw-panther-pk" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#twin-claw-panther-cm)"><use href="#twin-claw-panther-pk" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#twin-claw-panther-pn" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#twin-claw-panther-co)">
+<use href="#twin-claw-panther-pn" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#twin-claw-panther-cp)"><use href="#twin-claw-panther-pn" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#twin-claw-panther-pq" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#twin-claw-panther-cr)">
+<use href="#twin-claw-panther-pq" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#twin-claw-panther-cs)"><use href="#twin-claw-panther-pq" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#twin-claw-panther-pt" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-cu)">
+<use href="#twin-claw-panther-pt" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-pt" x="-6" y="-6" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-cv)"><use href="#twin-claw-panther-pt" x="7" y="7" fill="#2c2a5a"/></g>
+</g>
+<use href="#twin-claw-panther-pw" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#twin-claw-panther-cx)">
+<use href="#twin-claw-panther-pw" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#twin-claw-panther-cy)"><use href="#twin-claw-panther-pw" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#twin-claw-panther-pz" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#twin-claw-panther-c10)">
+<use href="#twin-claw-panther-pz" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#twin-claw-panther-c11)"><use href="#twin-claw-panther-pz" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#twin-claw-panther-p12" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#twin-claw-panther-c13)">
+<use href="#twin-claw-panther-p12" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#twin-claw-panther-c14)"><use href="#twin-claw-panther-p12" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#twin-claw-panther-p15" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-c16)">
+<use href="#twin-claw-panther-p15" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-p15" x="-4" y="-4" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-c17)"><use href="#twin-claw-panther-p15" x="7" y="7" fill="#2c2a5a"/></g>
+</g>
+<path d="M216 182L220 164L230 182Z" fill="#7a5aa0" fill-opacity="0.8"/>
+<use href="#twin-claw-panther-p18" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#twin-claw-panther-c19)">
+<use href="#twin-claw-panther-p18" x="-4" fill="#16143a"/>
+<use href="#twin-claw-panther-p18" x="-8" y="-8" fill="#4a4890"/>
+<g clip-path="url(#twin-claw-panther-c1a)"><use href="#twin-claw-panther-p18" x="7" y="7" fill="#2c2a5a"/></g>
+</g>
+<path d="M150 226L184 230L178 246L156 242Z" fill="#5a1030"/>
+<path d="M160 228L166 228L163 240Z" fill="#ffffff"/>
+<path d="M172 230L178 230L175 242Z" fill="#ffffff"/>
+<path d="M146 214A4 3 0 1 0 154 214A4 3 0 1 0 146 214Z" fill="#1d0842"/>
+<circle cx="190" cy="204" r="20" fill="url(#twin-claw-panther-r1b)"/>
+<path d="M178 200L202 198L198 208L180 208Z" fill="#b8f5c8"/>
+<path d="M188 199L191 199L190 208L187 208Z" fill="#1d0842"/>
+<path d="M176 194L204 192" fill="none" stroke-width="4"/>
+</g>
+<path d="M109 132L113 138L109 143L106 138Z" fill="#b8f5c8" fill-opacity="0.65"/>
+<path d="M158 171L161 176L158 181L155 176Z" fill="#7bd389" fill-opacity="0.98"/>
+<path d="M263 116L267 122L263 128L260 122Z" fill="#b8f5c8" fill-opacity="0.6"/>
+<path d="M108 370L112 376L108 383L105 376Z" fill="#7bd389" fill-opacity="0.74"/>
+<path d="M246 130L248 134L246 139L243 134Z" fill="#b8f5c8" fill-opacity="0.83"/>
+<path d="M297 169L300 175L297 182L293 175Z" fill="#7bd389" fill-opacity="0.62"/>
+<path d="M130 320L132 324L130 327L128 324Z" fill="#b8f5c8" fill-opacity="0.86"/>
+<path d="M168 245L172 252L168 259L164 252Z" fill="#7bd389" fill-opacity="0.88"/>
+<path d="M278 352L281 357L278 363L275 357Z" fill="#b8f5c8" fill-opacity="0.91"/>
+<path d="M239 172L241 176L239 181L236 176Z" fill="#7bd389" fill-opacity="0.76"/>
+</svg>

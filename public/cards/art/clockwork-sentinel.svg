@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="clockwork-sentinel-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1e1236"/><stop offset="0.55" stop-color="#3a2a5a"/><stop offset="1" stop-color="#24163e"/></linearGradient><radialGradient id="clockwork-sentinel-r1" gradientUnits="userSpaceOnUse" cx="256" cy="240" r="250"><stop offset="0" stop-color="#ffcf7a" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffcf7a" stop-opacity="0.135"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/></radialGradient><linearGradient id="clockwork-sentinel-l2" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#4a3360"/><stop offset="1" stop-color="#1e1236"/></linearGradient><radialGradient id="clockwork-sentinel-r3" gradientUnits="userSpaceOnUse" cx="256" cy="398" r="160"><stop offset="0" stop-color="#ffcf7a" stop-opacity="0.55"/><stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/></radialGradient><path id="clockwork-sentinel-p4" d="M218 208C210 201 177 177 168 172C159 167 160 172 158 174C157 176 152 177 160 184C168 191 201 215 210 220C219 225 218 220 220 218C221 216 226 215 218 208Z"/><clipPath id="clockwork-sentinel-c5"><use href="#clockwork-sentinel-p4"/></clipPath><clipPath id="clockwork-sentinel-c6"><use href="#clockwork-sentinel-p4" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-p7" d="M110 164A18 14 0 1 0 146 164A18 14 0 1 0 110 164Z"/><clipPath id="clockwork-sentinel-c8"><use href="#clockwork-sentinel-p7"/></clipPath><clipPath id="clockwork-sentinel-c9"><use href="#clockwork-sentinel-p7" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-pa" d="M146 164A18 14 0 1 0 182 164A18 14 0 1 0 146 164Z"/><clipPath id="clockwork-sentinel-cb"><use href="#clockwork-sentinel-pa"/></clipPath><clipPath id="clockwork-sentinel-cc"><use href="#clockwork-sentinel-pa" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-pd" d="M223 314C221 321 217 344 215 355C213 366 209 383 209 389C209 395 212 395 213 395C215 395 217 397 219 391C221 385 222 368 225 357C228 346 236 325 237 318C238 311 234 310 232 309C230 309 226 307 223 314Z"/><clipPath id="clockwork-sentinel-ce"><use href="#clockwork-sentinel-pd"/></clipPath><clipPath id="clockwork-sentinel-cf"><use href="#clockwork-sentinel-pd" x="-3" y="-3"/></clipPath><path id="clockwork-sentinel-pg" d="M212 356A8 8 0 1 0 228 356A8 8 0 1 0 212 356Z"/><clipPath id="clockwork-sentinel-ch"><use href="#clockwork-sentinel-pg"/></clipPath><clipPath id="clockwork-sentinel-ci"><use href="#clockwork-sentinel-pg" x="-2" y="-2"/></clipPath><path id="clockwork-sentinel-pj" d="M184 394A22 9 0 1 0 228 394A22 9 0 1 0 184 394Z"/><clipPath id="clockwork-sentinel-ck"><use href="#clockwork-sentinel-pj"/></clipPath><clipPath id="clockwork-sentinel-cl"><use href="#clockwork-sentinel-pj" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-pm" d="M275 318C276 325 284 346 287 357C290 368 291 385 293 391C295 397 297 395 299 395C300 395 303 395 303 389C303 383 299 366 297 355C295 344 291 321 289 314C286 307 282 309 280 309C278 310 274 311 275 318Z"/><clipPath id="clockwork-sentinel-cn"><use href="#clockwork-sentinel-pm"/></clipPath><clipPath id="clockwork-sentinel-co"><use href="#clockwork-sentinel-pm" x="-3" y="-3"/></clipPath><path id="clockwork-sentinel-pp" d="M284 356A8 8 0 1 0 300 356A8 8 0 1 0 284 356Z"/><clipPath id="clockwork-sentinel-cq"><use href="#clockwork-sentinel-pp"/></clipPath><clipPath id="clockwork-sentinel-cr"><use href="#clockwork-sentinel-pp" x="-2" y="-2"/></clipPath><path id="clockwork-sentinel-ps" d="M284 394A22 9 0 1 0 328 394A22 9 0 1 0 284 394Z"/><clipPath id="clockwork-sentinel-ct"><use href="#clockwork-sentinel-ps"/></clipPath><clipPath id="clockwork-sentinel-cu"><use href="#clockwork-sentinel-ps" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-pv" d="M355 384C355 363 353 288 351 250C350 212 349 150 347 132C346 114 345 128 344 129C343 129 340 114 341 132C341 150 343 212 345 250C346 288 347 363 349 384C350 405 351 388 352 387C353 387 356 405 355 384Z"/><clipPath id="clockwork-sentinel-cw"><use href="#clockwork-sentinel-pv"/></clipPath><clipPath id="clockwork-sentinel-cx"><use href="#clockwork-sentinel-pv" x="-2" y="-2"/></clipPath><path id="clockwork-sentinel-py" d="M344 104L356 136L344 146L332 136Z"/><clipPath id="clockwork-sentinel-cz"><use href="#clockwork-sentinel-py"/></clipPath><clipPath id="clockwork-sentinel-c10"><use href="#clockwork-sentinel-py" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-p11" d="M314 266C318 271 334 287 340 287C346 287 351 268 353 264C354 259 351 258 350 257C348 257 345 257 343 260C342 263 343 277 340 277C337 277 326 260 322 258C318 255 315 257 314 258C312 259 310 262 314 266Z"/><clipPath id="clockwork-sentinel-c12"><use href="#clockwork-sentinel-p11"/></clipPath><clipPath id="clockwork-sentinel-c13"><use href="#clockwork-sentinel-p11" x="-3" y="-3"/></clipPath><path id="clockwork-sentinel-p14" d="M337 256A11 11 0 1 0 359 256A11 11 0 1 0 337 256Z"/><clipPath id="clockwork-sentinel-c15"><use href="#clockwork-sentinel-p14"/></clipPath><clipPath id="clockwork-sentinel-c16"><use href="#clockwork-sentinel-p14" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-p17" d="M259 150C259 145 259 127 259 122C259 117 257 119 256 119C255 119 253 117 253 122C253 127 253 145 253 150C253 155 255 153 256 153C257 153 259 155 259 150Z"/><clipPath id="clockwork-sentinel-c18"><use href="#clockwork-sentinel-p17"/></clipPath><clipPath id="clockwork-sentinel-c19"><use href="#clockwork-sentinel-p17" x="-2" y="-2"/></clipPath><path id="clockwork-sentinel-p1a" d="M247 116A9 9 0 1 0 265 116A9 9 0 1 0 247 116Z"/><clipPath id="clockwork-sentinel-c1b"><use href="#clockwork-sentinel-p1a"/></clipPath><clipPath id="clockwork-sentinel-c1c"><use href="#clockwork-sentinel-p1a" x="-4" y="-4"/></clipPath><path id="clockwork-sentinel-p1d" d="M206 182C208 132 304 132 306 182Z"/><clipPath id="clockwork-sentinel-c1e"><use href="#clockwork-sentinel-p1d"/></clipPath><clipPath id="clockwork-sentinel-c1f"><use href="#clockwork-sentinel-p1d" x="-8" y="-8"/></clipPath><path id="clockwork-sentinel-p1g" d="M338 254L350 263L346 281L332 285L332 285L339 298L329 313L314 312L314 312L316 326L301 337L288 330L288 330L284 344L266 348L256 336L256 336L247 348L229 344L225 330L225 330L212 337L197 327L198 312L198 312L184 314L173 299L180 286L180 286L166 282L162 264L174 254L174 254L162 245L166 227L180 223L180 223L173 210L183 195L198 196L198 196L196 182L211 171L224 178L224 178L228 164L246 160L256 172L256 172L265 160L283 164L287 178L287 178L300 171L315 181L314 196L314 196L328 194L339 209L332 222L332 222L346 226L350 244L338 254Z"/><clipPath id="clockwork-sentinel-c1h"><use href="#clockwork-sentinel-p1g"/></clipPath><clipPath id="clockwork-sentinel-c1i"><use href="#clockwork-sentinel-p1g" x="-8" y="-8"/></clipPath><path id="clockwork-sentinel-p1j" d="M180 254A76 76 0 1 0 332 254A76 76 0 1 0 180 254Z"/><clipPath id="clockwork-sentinel-c1k"><use href="#clockwork-sentinel-p1j"/></clipPath><clipPath id="clockwork-sentinel-c1l"><use href="#clockwork-sentinel-p1j" x="-14" y="-12"/></clipPath><radialGradient id="clockwork-sentinel-r1m" gradientUnits="userSpaceOnUse" cx="256" cy="238" r="64"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="clockwork-sentinel-p1n" d="M226 238A30 30 0 1 0 286 238A30 30 0 1 0 226 238Z"/><clipPath id="clockwork-sentinel-c1o"><use href="#clockwork-sentinel-p1n"/></clipPath><clipPath id="clockwork-sentinel-c1p"><use href="#clockwork-sentinel-p1n" x="-6" y="-6"/></clipPath><path id="clockwork-sentinel-p1q" d="M236 238A20 20 0 1 0 276 238A20 20 0 1 0 236 238Z"/><clipPath id="clockwork-sentinel-c1r"><use href="#clockwork-sentinel-p1q"/></clipPath><clipPath id="clockwork-sentinel-c1s"><use href="#clockwork-sentinel-p1q" x="-5" y="-5"/></clipPath><path id="clockwork-sentinel-p1t" d="M189 258C184 263 167 282 163 288C160 294 163 295 164 297C165 298 167 301 173 296C178 291 195 272 199 266C202 260 199 259 198 257C197 256 195 253 189 258Z"/><clipPath id="clockwork-sentinel-c1u"><use href="#clockwork-sentinel-p1t"/></clipPath><clipPath id="clockwork-sentinel-c1v"><use href="#clockwork-sentinel-p1t" x="-3" y="-3"/></clipPath><path id="clockwork-sentinel-p1w" d="M114 300A44 44 0 1 0 202 300A44 44 0 1 0 114 300Z"/><clipPath id="clockwork-sentinel-c1x"><use href="#clockwork-sentinel-p1w"/></clipPath><clipPath id="clockwork-sentinel-c1y"><use href="#clockwork-sentinel-p1w" x="-9" y="-9"/></clipPath><path id="clockwork-sentinel-p1z" d="M127 300A31 31 0 1 0 189 300A31 31 0 1 0 127 300Z"/><clipPath id="clockwork-sentinel-c20"><use href="#clockwork-sentinel-p1z"/></clipPath><clipPath id="clockwork-sentinel-c21"><use href="#clockwork-sentinel-p1z" x="-6" y="-6"/></clipPath><path id="clockwork-sentinel-p22" d="M148 300A10 10 0 1 0 168 300A10 10 0 1 0 148 300Z"/><clipPath id="clockwork-sentinel-c23"><use href="#clockwork-sentinel-p22"/></clipPath><clipPath id="clockwork-sentinel-c24"><use href="#clockwork-sentinel-p22" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#clockwork-sentinel-l0)"/>
+<circle cx="256" cy="240" r="250" fill="url(#clockwork-sentinel-r1)"/>
+<path d="M130 125L145 130L145 150L130 155L130 155L139 168L128 184L112 179L112 179L112 195L94 201L84 188L84 188L74 201L56 195L56 179L56 179L40 184L29 168L38 155L38 155L23 150L23 130L38 125L38 125L29 112L40 96L56 101L56 101L56 85L74 79L84 92L84 92L94 79L112 85L112 101L112 101L128 96L139 112L130 125Z" fill="#2c1d4c"/>
+<path d="M66 140A18 18 0 1 0 102 140A18 18 0 1 0 66 140Z" fill="#1e1236"/>
+<path d="M473 93L486 99L483 117L469 118L469 118L473 132L459 142L447 133L447 133L441 146L423 143L422 129L422 129L408 133L398 119L407 107L407 107L394 101L397 83L411 82L411 82L407 68L421 58L433 67L433 67L439 54L457 57L458 71L458 71L472 67L482 81L473 93Z" fill="#2c1d4c"/>
+<path d="M428 100A12 12 0 1 0 452 100A12 12 0 1 0 428 100Z" fill="#1e1236"/>
+<path d="M490 186L499 189L499 203L490 206L490 206L493 215L483 223L475 217L475 217L470 226L457 223L456 213L456 213L447 215L441 203L448 196L448 196L441 189L447 177L456 179L456 179L457 169L470 166L475 175L475 175L483 169L493 177L490 186Z" fill="#2c1d4c"/>
+<path d="M330 236H512V248H330Z" fill="#2c1d4c"/>
+<path d="M349 236V208Q360 196 371 208V236Z" fill="#2c1d4c"/>
+<path d="M381 236V218Q396 206 411 218V236Z" fill="#2c1d4c"/>
+<path d="M431 236V202Q440 190 449 202V236Z" fill="#2c1d4c"/>
+<path d="M467 236V212Q480 200 493 212V236Z" fill="#2c1d4c"/>
+<path d="M30 230L70 290M60 236L40 300" fill="none" stroke="#2c1d4c" stroke-width="8"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#clockwork-sentinel-l2)"/>
+<ellipse cx="256" cy="398" rx="160" ry="45" fill="url(#clockwork-sentinel-r3)"/>
+<path d="M40 390H180M330 410H480M90 450H240" fill="none" stroke="#1e1236" stroke-width="3" stroke-opacity="0.6"/>
+<path d="M120 415L126 416L126 424L120 425L120 425L123 430L117 434L112 431L112 431L110 436L103 434L103 429L103 429L97 430L94 424L99 420L99 420L94 416L97 410L103 411L103 411L103 406L110 404L112 409L112 409L117 406L123 410L120 415Z" fill="#5a4378"/>
+<path d="M428 378L432 380L430 386L426 386L426 386L426 390L420 392L418 388L418 388L414 390L410 386L412 382L412 382L408 380L410 374L414 374L414 374L414 370L420 368L422 372L422 372L426 370L430 374L428 378Z" fill="#5a4378"/>
+<ellipse cx="256" cy="398" rx="104" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#clockwork-sentinel-p4" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c5)">
+<use href="#clockwork-sentinel-p4" x="-4" y="-4" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-c6)"><use href="#clockwork-sentinel-p4" x="3" y="3" fill="#d9a441"/></g>
+</g>
+<g transform="rotate(35 146 164)">
+<use href="#clockwork-sentinel-p7" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c8)">
+<use href="#clockwork-sentinel-p7" x="-4" y="-4" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-c9)"><use href="#clockwork-sentinel-p7" x="3" y="3" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-pa" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-cb)">
+<use href="#clockwork-sentinel-pa" x="-4" y="-4" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-cc)"><use href="#clockwork-sentinel-pa" x="3" y="3" fill="#d9a441"/></g>
+</g>
+</g>
+<path d="M140 164A6 6 0 1 0 152 164A6 6 0 1 0 140 164Z" fill="#8a5a1c"/>
+<use href="#clockwork-sentinel-pd" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-ce)">
+<use href="#clockwork-sentinel-pd" x="-3" y="-3" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-cf)"><use href="#clockwork-sentinel-pd" x="2" y="2" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-pg" fill="#8a5a1c" stroke-width="6"/>
+<g clip-path="url(#clockwork-sentinel-ch)">
+<use href="#clockwork-sentinel-pg" x="-2" y="-2" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-ci)"><use href="#clockwork-sentinel-pg" x="2" y="2" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-pj" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-ck)">
+<use href="#clockwork-sentinel-pj" x="-4" y="-4" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-cl)"><use href="#clockwork-sentinel-pj" x="3" y="3" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-pm" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-cn)">
+<use href="#clockwork-sentinel-pm" x="-3" y="-3" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-co)"><use href="#clockwork-sentinel-pm" x="2" y="2" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-pp" fill="#8a5a1c" stroke-width="6"/>
+<g clip-path="url(#clockwork-sentinel-cq)">
+<use href="#clockwork-sentinel-pp" x="-2" y="-2" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-cr)"><use href="#clockwork-sentinel-pp" x="2" y="2" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-ps" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-ct)">
+<use href="#clockwork-sentinel-ps" x="-4" y="-4" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-cu)"><use href="#clockwork-sentinel-ps" x="3" y="3" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-pv" fill="#4a3020" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-cw)">
+<use href="#clockwork-sentinel-pv" x="-2" y="-2" fill="#a07850"/>
+<g clip-path="url(#clockwork-sentinel-cx)"><use href="#clockwork-sentinel-pv" x="2" y="2" fill="#7a5434"/></g>
+</g>
+<use href="#clockwork-sentinel-py" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-cz)">
+<use href="#clockwork-sentinel-py" x="-4" y="-4" fill="#e2ecf5"/>
+<g clip-path="url(#clockwork-sentinel-c10)"><use href="#clockwork-sentinel-py" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<use href="#clockwork-sentinel-p11" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c12)">
+<use href="#clockwork-sentinel-p11" x="-3" y="-3" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-c13)"><use href="#clockwork-sentinel-p11" x="2" y="2" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-p14" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c15)">
+<use href="#clockwork-sentinel-p14" x="-4" y="-4" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-c16)"><use href="#clockwork-sentinel-p14" x="3" y="3" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-p17" fill="#7a3a1e" stroke-width="6"/>
+<g clip-path="url(#clockwork-sentinel-c18)">
+<use href="#clockwork-sentinel-p17" x="-2" y="-2" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-c19)"><use href="#clockwork-sentinel-p17" x="1" y="1" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-p1a" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c1b)">
+<use href="#clockwork-sentinel-p1a" x="-4" y="-4" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-c1c)"><use href="#clockwork-sentinel-p1a" x="3" y="3" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-p1d" fill="#7a3a1e" stroke-width="12"/>
+<g clip-path="url(#clockwork-sentinel-c1e)">
+<use href="#clockwork-sentinel-p1d" x="-8" y="-8" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-c1f)"><use href="#clockwork-sentinel-p1d" x="5" y="5" fill="#c46a3a"/></g>
+</g>
+<path d="M222 160C240 150 272 150 290 160" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<use href="#clockwork-sentinel-p1g" fill="#6e4614" stroke-width="12"/>
+<g clip-path="url(#clockwork-sentinel-c1h)">
+<use href="#clockwork-sentinel-p1g" x="-8" y="-8" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-c1i)"><use href="#clockwork-sentinel-p1g" x="7" y="7" fill="#b8862e"/></g>
+</g>
+<use href="#clockwork-sentinel-p1j" fill="#8a5a1c" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c1k)">
+<use href="#clockwork-sentinel-p1j" x="-14" y="-12" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-c1l)"><use href="#clockwork-sentinel-p1j" x="8" y="8" fill="#d9a441"/></g>
+</g>
+<path d="M315 274A4 4 0 1 0 323 274A4 4 0 1 0 315 274Z" fill="#1d0842"/>
+<path d="M316 274A3 3 0 1 0 321 274A3 3 0 1 0 316 274Z" fill="#ffe08a"/>
+<path d="M291 307A4 4 0 1 0 299 307A4 4 0 1 0 291 307Z" fill="#1d0842"/>
+<path d="M292 307A3 3 0 1 0 297 307A3 3 0 1 0 292 307Z" fill="#ffe08a"/>
+<path d="M252 320A4 4 0 1 0 260 320A4 4 0 1 0 252 320Z" fill="#1d0842"/>
+<path d="M253 320A3 3 0 1 0 258 320A3 3 0 1 0 253 320Z" fill="#ffe08a"/>
+<path d="M213 307A4 4 0 1 0 221 307A4 4 0 1 0 213 307Z" fill="#1d0842"/>
+<path d="M214 307A3 3 0 1 0 219 307A3 3 0 1 0 214 307Z" fill="#ffe08a"/>
+<path d="M189 274A4 4 0 1 0 197 274A4 4 0 1 0 189 274Z" fill="#1d0842"/>
+<path d="M190 274A3 3 0 1 0 195 274A3 3 0 1 0 190 274Z" fill="#ffe08a"/>
+<path d="M189 234A4 4 0 1 0 197 234A4 4 0 1 0 189 234Z" fill="#1d0842"/>
+<path d="M190 233A3 3 0 1 0 195 233A3 3 0 1 0 190 233Z" fill="#ffe08a"/>
+<path d="M213 201A4 4 0 1 0 221 201A4 4 0 1 0 213 201Z" fill="#1d0842"/>
+<path d="M214 200A3 3 0 1 0 219 200A3 3 0 1 0 214 200Z" fill="#ffe08a"/>
+<path d="M252 188A4 4 0 1 0 260 188A4 4 0 1 0 252 188Z" fill="#1d0842"/>
+<path d="M253 188A3 3 0 1 0 258 188A3 3 0 1 0 253 188Z" fill="#ffe08a"/>
+<path d="M291 201A4 4 0 1 0 299 201A4 4 0 1 0 291 201Z" fill="#1d0842"/>
+<path d="M292 200A3 3 0 1 0 297 200A3 3 0 1 0 292 200Z" fill="#ffe08a"/>
+<path d="M315 234A4 4 0 1 0 323 234A4 4 0 1 0 315 234Z" fill="#1d0842"/>
+<path d="M316 233A3 3 0 1 0 321 233A3 3 0 1 0 316 233Z" fill="#ffe08a"/>
+<path d="M226 300H286M222 312H290M228 324H284" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<circle cx="256" cy="238" r="64" fill="url(#clockwork-sentinel-r1m)"/>
+<use href="#clockwork-sentinel-p1n" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#clockwork-sentinel-c1o)">
+<use href="#clockwork-sentinel-p1n" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#clockwork-sentinel-c1p)"><use href="#clockwork-sentinel-p1n" x="4" y="4" fill="#9fb3c8"/></g>
+</g>
+<use href="#clockwork-sentinel-p1q" fill="#1f5fb0" stroke-width="6"/>
+<g clip-path="url(#clockwork-sentinel-c1r)">
+<use href="#clockwork-sentinel-p1q" x="-5" y="-5" fill="#9be7ff"/>
+<g clip-path="url(#clockwork-sentinel-c1s)"><use href="#clockwork-sentinel-p1q" x="4" y="4" fill="#3fa9ff"/></g>
+</g>
+<path d="M248 240A8 8 0 1 0 264 240A8 8 0 1 0 248 240Z" fill="#1d0842"/>
+<path d="M245 232A5 5 0 1 0 255 232A5 5 0 1 0 245 232Z" fill="#ffffff"/>
+<path d="M260 246A2 2 0 1 0 264 246A2 2 0 1 0 260 246Z" fill="#ffffff"/>
+<use href="#clockwork-sentinel-p1t" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#clockwork-sentinel-c1u)">
+<use href="#clockwork-sentinel-p1t" x="-3" y="-3" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-c1v)"><use href="#clockwork-sentinel-p1t" x="2" y="2" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-p1w" fill="#7a3a1e" stroke-width="12"/>
+<g clip-path="url(#clockwork-sentinel-c1x)">
+<use href="#clockwork-sentinel-p1w" x="-9" y="-9" fill="#f0a070"/>
+<g clip-path="url(#clockwork-sentinel-c1y)"><use href="#clockwork-sentinel-p1w" x="6" y="6" fill="#c46a3a"/></g>
+</g>
+<use href="#clockwork-sentinel-p1z" fill="#8a5a1c" stroke-width="6"/>
+<g clip-path="url(#clockwork-sentinel-c20)">
+<use href="#clockwork-sentinel-p1z" x="-6" y="-6" fill="#ffe08a"/>
+<g clip-path="url(#clockwork-sentinel-c21)"><use href="#clockwork-sentinel-p1z" x="4" y="4" fill="#d9a441"/></g>
+</g>
+<use href="#clockwork-sentinel-p22" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#clockwork-sentinel-c23)">
+<use href="#clockwork-sentinel-p22" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#clockwork-sentinel-c24)"><use href="#clockwork-sentinel-p22" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<path d="M193 300A4 4 0 1 0 200 300A4 4 0 1 0 193 300Z" fill="#1d0842"/>
+<path d="M194 300A2 2 0 1 0 198 300A2 2 0 1 0 194 300Z" fill="#ffe08a"/>
+<path d="M174 333A4 4 0 1 0 181 333A4 4 0 1 0 174 333Z" fill="#1d0842"/>
+<path d="M175 332A2 2 0 1 0 179 332A2 2 0 1 0 175 332Z" fill="#ffe08a"/>
+<path d="M136 333A4 4 0 1 0 143 333A4 4 0 1 0 136 333Z" fill="#1d0842"/>
+<path d="M137 332A2 2 0 1 0 141 332A2 2 0 1 0 137 332Z" fill="#ffe08a"/>
+<path d="M117 300A4 4 0 1 0 124 300A4 4 0 1 0 117 300Z" fill="#1d0842"/>
+<path d="M118 300A2 2 0 1 0 122 300A2 2 0 1 0 118 300Z" fill="#ffe08a"/>
+<path d="M135 267A4 4 0 1 0 142 267A4 4 0 1 0 135 267Z" fill="#1d0842"/>
+<path d="M136 267A2 2 0 1 0 140 267A2 2 0 1 0 136 267Z" fill="#ffe08a"/>
+<path d="M174 267A4 4 0 1 0 181 267A4 4 0 1 0 174 267Z" fill="#1d0842"/>
+<path d="M175 267A2 2 0 1 0 179 267A2 2 0 1 0 175 267Z" fill="#ffe08a"/>
+<path d="M126 282A36 36 0 0 1 150 264" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="5"/>
+<circle cx="330" cy="129" r="2" fill="#ffe08a" fill-opacity="0.33"/>
+<circle cx="344" cy="235" r="2" fill="#ffe08a" fill-opacity="0.36"/>
+<circle cx="184" cy="253" r="1" fill="#ffe08a" fill-opacity="0.33"/>
+<circle cx="328" cy="234" r="2" fill="#ffe08a" fill-opacity="0.65"/>
+<circle cx="204" cy="286" r="1" fill="#ffe08a" fill-opacity="0.57"/>
+<circle cx="268" cy="320" r="2" fill="#ffe08a" fill-opacity="0.3"/>
+<circle cx="381" cy="194" r="2" fill="#ffe08a" fill-opacity="0.61"/>
+<circle cx="235" cy="292" r="1" fill="#ffe08a" fill-opacity="0.45"/>
+</svg>

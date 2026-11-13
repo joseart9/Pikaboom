@@ -13,6 +13,8 @@ import { t } from "@/game/cards/i18n";
 import { ToastView } from "../match/Toasts";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { DeckCover } from "./DeckCover";
+import { ScreenHeader } from "../screen/ScreenHeader";
+import { StateMessage } from "../screen/StateMessage";
 import { GameIcon } from "../skin";
 
 type Load = { status: "loading" } | { status: "error"; message: string } | { status: "ready"; data: DeckListResponse };
@@ -66,70 +68,74 @@ export function DeckList({ load = listDecks, remove = deleteDeck }: DeckListProp
 
   return (
     <main className="cg-collection cg-decks">
-      <header className="cg-collection-header">
-        <Link href="/cards" className="cg-button">
-          {t("match.backToMenu")}
-        </Link>
-        <h1 className="cg-collection-title">{t("decks.title")}</h1>
+      <ScreenHeader title={t("decks.title")} icon="decks" back={{ href: "/cards" }}>
         {data && (
           <div className="cg-collection-stats">
             <span className="cg-chip">{t("decks.countOf", { n: data.decks.length, max: data.max })}</span>
             {atLimit ? (
               <span className="cg-button cg-button--primary" aria-disabled title={t("decks.limit", { max: data.max })} data-disabled>
+                <GameIcon name="plus" size="0.9em" />
                 {t("decks.newDeck")}
               </span>
             ) : (
               <Link href="/cards/decks/nuevo" className="cg-button cg-button--primary" data-haptic="light">
+                <GameIcon name="plus" size="0.9em" />
                 {t("decks.newDeck")}
               </Link>
             )}
           </div>
         )}
-      </header>
+      </ScreenHeader>
 
-      {state.status === "loading" && <div className="cg-center-message">{t("decks.loading")}</div>}
+      {state.status === "loading" && <StateMessage kind="loading" text={t("decks.loading")} fill />}
       {state.status === "error" && (
-        <div className="cg-center-message">
-          <p>{state.message}</p>
-          <button
-            type="button"
-            className="cg-button cg-button--primary"
-            onClick={() => {
-              setState({ status: "loading" });
-              setAttempt((n) => n + 1);
-            }}
-          >
-            {t("decks.retry")}
-          </button>
-        </div>
+        <StateMessage
+          kind="error"
+          text={state.message}
+          fill
+          action={
+            <button
+              type="button"
+              className="cg-button cg-button--primary"
+              onClick={() => {
+                setState({ status: "loading" });
+                setAttempt((n) => n + 1);
+              }}
+            >
+              {t("decks.retry")}
+            </button>
+          }
+        />
       )}
 
       {data && (
         <section className="cg-decks-body">
-          {atLimit && <p className="cg-decks-limit">{t("decks.limit", { max: data.max })}</p>}
+          {atLimit && (
+            <p className="cg-decks-limit">
+              <GameIcon name="warning" className="cg-mark cg-mark--warn" /> {t("decks.limit", { max: data.max })}
+            </p>
+          )}
           {data.decks.length === 0 ? (
-            <p className="cg-collection-empty">{t("decks.empty")}</p>
+            <StateMessage kind="empty" icon="decks" text={t("decks.empty")} />
           ) : (
             <ul className="cg-decks-grid">
               {data.decks.map((deck) => {
                 const ok = deck.problems.length === 0;
                 return (
-                  <li key={deck.id} className={`cg-deck-row${ok ? "" : " cg-deck-row--warn"}`}>
-                    <Link href={`/cards/decks/${deck.id}`} className="cg-deck-tile cg-deck-link">
-                      <DeckCover entries={deck.entries} />
+                  <li key={deck.id} className={`cg-deck-row${ok ? " cg-deck-row--ok" : " cg-deck-row--warn"}`}>
+                    <Link href={`/cards/decks/${deck.id}`} className="cg-deck-box">
+                      <DeckCover entries={deck.entries} variant="banner" />
                       <span className="cg-deck-info">
                         <span className="cg-deck-name">{deck.name}</span>
                         <span className="cg-deck-count">
-                          {!ok && (
-                            <GameIcon name="warning" className="cg-deck-warn" />
-                          )}
+                          <GameIcon name={ok ? "check" : "warning"} className={`cg-mark ${ok ? "cg-mark--ok" : "cg-mark--warn"}`} />
                           {t("decks.cards", { n: deck.cardCount, total: size })}
                           {ok ? ` · ${t("decks.playable")}` : deck.cardCount < size ? ` · ${t("decks.incomplete")}` : ""}
                         </span>
                         {!ok && <span className="cg-deck-cards">{deckProblemText(deck.problems[0])}</span>}
                       </span>
                     </Link>
-                    <button type="button" className="cg-button cg-deck-delete" aria-label={`${t("decks.delete")} · ${deck.name}`} onClick={() => setConfirm(deck)}>
+                    <button type="button" className="cg-button cg-button--quiet cg-deck-delete" aria-label={`${t("decks.delete")} · ${deck.name}`} onClick={() => setConfirm(deck)}>
                       <GameIcon name="close" />
                     </button>
                   </li>

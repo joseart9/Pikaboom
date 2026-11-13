@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="ember-imp-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#2a0810"/><stop offset="0.55" stop-color="#6a1a14"/><stop offset="1" stop-color="#1e0608"/></linearGradient><radialGradient id="ember-imp-r1" gradientUnits="userSpaceOnUse" cx="256" cy="300" r="260"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.4"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><linearGradient id="ember-imp-l2" gradientUnits="userSpaceOnUse" x1="0" y1="362" x2="0" y2="512"><stop offset="0" stop-color="#4a1010"/><stop offset="1" stop-color="#2a0808"/></linearGradient><radialGradient id="ember-imp-r3" gradientUnits="userSpaceOnUse" cx="256" cy="450" r="260"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="ember-imp-p4" d="M388 392L344 417L275 429L202 423L150 405L143 378L202 361L279 348L351 366Z"/><clipPath id="ember-imp-c5"><use href="#ember-imp-p4"/></clipPath><clipPath id="ember-imp-c6"><use href="#ember-imp-p4" x="-10" y="-10"/></clipPath><path id="ember-imp-p7" d="M278 262L342 214L394 168Q382 205 400 236Q372 244 366 276Q341 263 314 288Q308 270 276 296Z"/><clipPath id="ember-imp-c8"><use href="#ember-imp-p7"/></clipPath><clipPath id="ember-imp-c9"><use href="#ember-imp-p7" x="-8" y="-8"/></clipPath><path id="ember-imp-pa" d="M281 266C292 259 335 225 344 217C354 209 346 213 345 212C344 211 350 204 340 211C329 218 285 250 275 258C265 266 273 264 274 265C275 266 270 273 281 266Z"/><clipPath id="ember-imp-cb"><use href="#ember-imp-pa"/></clipPath><clipPath id="ember-imp-cc"><use href="#ember-imp-pa" x="-3" y="-3"/></clipPath><path id="ember-imp-pd" d="M345 217C353 210 386 178 393 171C401 163 394 169 394 168C393 168 400 162 391 168C383 175 347 204 339 211C331 218 338 216 339 217C340 218 336 224 345 217Z"/><clipPath id="ember-imp-ce"><use href="#ember-imp-pd"/></clipPath><clipPath id="ember-imp-cf"><use href="#ember-imp-pd" x="-3" y="-3"/></clipPath><path id="ember-imp-pg" d="M234 262L170 214L118 168Q130 205 112 236Q140 244 146 276Q171 263 198 288Q204 270 236 296Z"/><clipPath id="ember-imp-ch"><use href="#ember-imp-pg"/></clipPath><clipPath id="ember-imp-ci"><use href="#ember-imp-pg" x="-8" y="-8"/></clipPath><path id="ember-imp-pj" d="M237 258C227 250 183 218 172 211C162 204 168 211 167 212C166 213 158 209 168 217C177 225 220 259 231 266C242 273 237 266 238 265C239 264 247 266 237 258Z"/><clipPath id="ember-imp-ck"><use href="#ember-imp-pj"/></clipPath><clipPath id="ember-imp-cl"><use href="#ember-imp-pj" x="-3" y="-3"/></clipPath><path id="ember-imp-pm" d="M173 211C165 204 129 175 121 168C112 162 119 168 118 168C118 169 111 163 119 171C126 178 159 210 167 217C176 224 172 218 173 217C174 216 181 218 173 211Z"/><clipPath id="ember-imp-cn"><use href="#ember-imp-pm"/></clipPath><clipPath id="ember-imp-co"><use href="#ember-imp-pm" x="-3" y="-3"/></clipPath><path id="ember-imp-pp" d="M288 359C300 362 341 375 357 371C374 367 393 342 397 331C400 321 383 303 380 298C376 293 375 296 374 296C373 297 371 297 372 302C374 307 390 320 387 329C385 337 369 355 355 357C340 359 303 343 292 341C281 340 282 345 281 348C281 351 277 355 288 359Z"/><clipPath id="ember-imp-cq"><use href="#ember-imp-pp"/></clipPath><clipPath id="ember-imp-cr"><use href="#ember-imp-pp" x="-4" y="-4"/></clipPath><path id="ember-imp-ps" d="M376 306L358 282L384 286L392 262L396 296Z"/><clipPath id="ember-imp-ct"><use href="#ember-imp-ps"/></clipPath><clipPath id="ember-imp-cu"><use href="#ember-imp-ps" x="-3" y="-3"/></clipPath><path id="ember-imp-pv" d="M226 316C217 319 194 330 191 339C188 348 200 369 204 375C207 381 212 381 215 380C218 380 221 374 220 369C220 364 210 353 213 349C216 345 233 347 238 344C243 340 247 328 246 324C244 320 234 314 226 316Z"/><clipPath id="ember-imp-cw"><use href="#ember-imp-pv"/></clipPath><clipPath id="ember-imp-cx"><use href="#ember-imp-pv" x="-5" y="-5"/></clipPath><path id="ember-imp-py" d="M228 380L226 366L198 366L190 380Z"/><clipPath id="ember-imp-cz"><use href="#ember-imp-py"/></clipPath><clipPath id="ember-imp-c10"><use href="#ember-imp-py" x="-2" y="-2"/></clipPath><path id="ember-imp-p11" d="M274 344C279 347 296 345 299 349C302 353 292 364 292 369C291 374 294 380 297 380C300 381 305 381 308 375C312 369 324 348 321 339C318 330 295 319 286 316C278 314 268 320 266 324C265 328 269 340 274 344Z"/><clipPath id="ember-imp-c12"><use href="#ember-imp-p11"/></clipPath><clipPath id="ember-imp-c13"><use href="#ember-imp-p11" x="-5" y="-5"/></clipPath><path id="ember-imp-p14" d="M284 380L286 366L314 366L322 380Z"/><clipPath id="ember-imp-c15"><use href="#ember-imp-p14"/></clipPath><clipPath id="ember-imp-c16"><use href="#ember-imp-p14" x="-2" y="-2"/></clipPath><path id="ember-imp-p17" d="M212 316A44 42 0 1 0 300 316A44 42 0 1 0 212 316Z"/><clipPath id="ember-imp-c18"><use href="#ember-imp-p17"/></clipPath><clipPath id="ember-imp-c19"><use href="#ember-imp-p17" x="-10" y="-10"/></clipPath><path id="ember-imp-p1a" d="M216 289C210 294 189 310 189 319C188 328 207 343 211 348C216 352 218 350 220 349C221 347 223 344 221 340C218 336 202 327 203 321C205 315 224 307 228 303C232 298 230 292 229 290C227 288 222 285 216 289Z"/><clipPath id="ember-imp-c1b"><use href="#ember-imp-p1a"/></clipPath><clipPath id="ember-imp-c1c"><use href="#ember-imp-p1a" x="-4" y="-4"/></clipPath><path id="ember-imp-p1d" d="M294 298C302 295 327 285 336 275C344 265 348 240 350 232C351 224 348 225 346 224C344 224 342 222 338 228C335 234 332 257 324 265C317 273 292 278 286 282C280 286 281 292 282 294C283 296 286 301 294 298Z"/><clipPath id="ember-imp-c1e"><use href="#ember-imp-p1d"/></clipPath><clipPath id="ember-imp-c1f"><use href="#ember-imp-p1d" x="-4" y="-4"/></clipPath><radialGradient id="ember-imp-r1g" gradientUnits="userSpaceOnUse" cx="352" cy="192" r="90"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="ember-imp-p1h" d="M322 204C318 197 323 183 326 176C329 169 337 167 340 160C343 153 343 134 346 132C349 131 358 148 362 150C367 152 374 142 376 146C378 150 377 165 378 174C379 183 388 197 384 204C380 211 361 222 352 222C343 222 326 211 322 204Z"/><clipPath id="ember-imp-c1i"><use href="#ember-imp-p1h"/></clipPath><clipPath id="ember-imp-c1j"><use href="#ember-imp-p1h" x="-6" y="-6"/></clipPath><path id="ember-imp-p1k" d="M334 196A18 18 0 1 0 370 196A18 18 0 1 0 334 196Z"/><clipPath id="ember-imp-c1l"><use href="#ember-imp-p1k"/></clipPath><clipPath id="ember-imp-c1m"><use href="#ember-imp-p1k" x="-4" y="-4"/></clipPath><path id="ember-imp-p1n" d="M332 226A12 10 0 1 0 356 226A12 10 0 1 0 332 226Z"/><clipPath id="ember-imp-c1o"><use href="#ember-imp-p1n"/></clipPath><clipPath id="ember-imp-c1p"><use href="#ember-imp-p1n" x="-3" y="-3"/></clipPath><path id="ember-imp-p1q" d="M216 210L164 186L210 236Z"/><clipPath id="ember-imp-c1r"><use href="#ember-imp-p1q"/></clipPath><clipPath id="ember-imp-c1s"><use href="#ember-imp-p1q" x="-4" y="-4"/></clipPath><path id="ember-imp-p1t" d="M241 169C238 164 219 156 216 148C212 141 217 123 217 118C217 114 216 118 216 118C216 118 217 113 215 118C213 123 203 142 204 152C206 162 221 178 227 183C232 188 239 185 241 183C243 181 245 174 241 169Z"/><clipPath id="ember-imp-c1u"><use href="#ember-imp-p1t"/></clipPath><clipPath id="ember-imp-c1v"><use href="#ember-imp-p1t" x="-3" y="-3"/></clipPath><path id="ember-imp-p1w" d="M296 210L348 186L302 236Z"/><clipPath id="ember-imp-c1x"><use href="#ember-imp-p1w"/></clipPath><clipPath id="ember-imp-c1y"><use href="#ember-imp-p1w" x="-4" y="-4"/></clipPath><path id="ember-imp-p1z" d="M285 183C291 178 306 162 308 152C309 142 299 123 297 118C295 113 296 118 296 118C296 118 295 114 295 118C295 123 300 141 296 148C293 156 274 164 271 169C267 174 269 181 271 183C273 185 280 188 285 183Z"/><clipPath id="ember-imp-c20"><use href="#ember-imp-p1z"/></clipPath><clipPath id="ember-imp-c21"><use href="#ember-imp-p1z" x="-3" y="-3"/></clipPath><path id="ember-imp-p22" d="M206 212C205 202 209 187 216 180C224 173 244 166 256 166C268 166 289 173 296 180C304 187 307 202 306 212C305 222 300 241 292 248C285 255 267 260 256 260C245 260 228 255 220 248C213 241 207 222 206 212Z"/><clipPath id="ember-imp-c23"><use href="#ember-imp-p22"/></clipPath><clipPath id="ember-imp-c24"><use href="#ember-imp-p22" x="-10" y="-8"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#ember-imp-l0)"/>
+<circle cx="256" cy="300" r="260" fill="url(#ember-imp-r1)"/>
+<path d="M0 0H512V60L470 70L452 140L430 74L380 90L360 170L338 84L290 70L256 110L230 66L170 80L150 150L128 76L80 70L60 130L40 64L0 70Z" fill="#1a0408"/>
+<path d="M0 398Q256 362 512 398V512H0Z" fill="url(#ember-imp-l2)"/>
+<ellipse cx="256" cy="450" rx="260" ry="73" fill="url(#ember-imp-r3)"/>
+<path d="M206 450C205 453 183 456 169 459C156 461 142 465 125 466C109 466 89 464 71 462C53 460 26 459 19 456C11 453 18 448 26 445C34 441 49 438 65 436C82 435 106 435 124 436C142 437 160 438 174 440C188 443 207 447 206 450Z" fill="#ff7b00" fill-opacity="0.6"/>
+<path d="M505 460C504 463 498 468 486 470C474 472 451 472 433 473C415 473 392 474 379 473C365 471 360 467 354 464C348 461 339 458 343 455C347 452 362 449 377 447C393 446 415 446 434 446C452 447 477 448 489 450C501 452 505 457 505 460Z" fill="#ff7b00" fill-opacity="0.6"/>
+<use href="#ember-imp-p4" fill="#1e1018" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c5)">
+<use href="#ember-imp-p4" x="-10" y="-10" fill="#5a3a48"/>
+<g clip-path="url(#ember-imp-c6)"><use href="#ember-imp-p4" x="7" y="7" fill="#3a2430"/></g>
+</g>
+<path d="M180 392L214 380M300 384L336 396" fill="none" stroke="#ff7b00" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#ember-imp-p7" fill="#3e0c0e" stroke-width="10"/>
+<g clip-path="url(#ember-imp-c8)">
+<use href="#ember-imp-p7" x="-8" y="-8" fill="#94302a"/>
+<g clip-path="url(#ember-imp-c9)"><use href="#ember-imp-p7" x="5" y="5" fill="#6a1a1a"/></g>
+</g>
+<use href="#ember-imp-pa" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-cb)">
+<use href="#ember-imp-pa" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-cc)"><use href="#ember-imp-pa" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-pd" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-ce)">
+<use href="#ember-imp-pd" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-cf)"><use href="#ember-imp-pd" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-pg" fill="#3e0c0e" stroke-width="10"/>
+<g clip-path="url(#ember-imp-ch)">
+<use href="#ember-imp-pg" x="-8" y="-8" fill="#94302a"/>
+<g clip-path="url(#ember-imp-ci)"><use href="#ember-imp-pg" x="5" y="5" fill="#6a1a1a"/></g>
+</g>
+<use href="#ember-imp-pj" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-ck)">
+<use href="#ember-imp-pj" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-cl)"><use href="#ember-imp-pj" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-pm" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-cn)">
+<use href="#ember-imp-pm" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-co)"><use href="#ember-imp-pm" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-pp" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-cq)">
+<use href="#ember-imp-pp" x="-4" y="-4" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-cr)"><use href="#ember-imp-pp" x="3" y="3" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-ps" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-ct)">
+<use href="#ember-imp-ps" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-cu)"><use href="#ember-imp-ps" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-pv" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-cw)">
+<use href="#ember-imp-pv" x="-5" y="-5" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-cx)"><use href="#ember-imp-pv" x="7" y="7" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-py" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-cz)">
+<use href="#ember-imp-py" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-c10)"><use href="#ember-imp-py" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-p11" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c12)">
+<use href="#ember-imp-p11" x="-5" y="-5" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c13)"><use href="#ember-imp-p11" x="7" y="7" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-p14" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-c15)">
+<use href="#ember-imp-p14" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-c16)"><use href="#ember-imp-p14" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-p17" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c18)">
+<use href="#ember-imp-p17" x="-10" y="-10" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c19)"><use href="#ember-imp-p17" x="7" y="7" fill="#d9452b"/></g>
+</g>
+<path d="M224 324A26 24 0 1 0 276 324A26 24 0 1 0 224 324Z" fill="#ff8a5c" fill-opacity="0.5"/>
+<use href="#ember-imp-p1a" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c1b)">
+<use href="#ember-imp-p1a" x="-4" y="-4" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c1c)"><use href="#ember-imp-p1a" x="3" y="3" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-p1d" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c1e)">
+<use href="#ember-imp-p1d" x="-4" y="-4" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c1f)"><use href="#ember-imp-p1d" x="3" y="3" fill="#d9452b"/></g>
+</g>
+<circle cx="352" cy="192" r="90" fill="url(#ember-imp-r1g)"/>
+<use href="#ember-imp-p1h" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#ember-imp-c1i)">
+<use href="#ember-imp-p1h" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#ember-imp-c1j)"><use href="#ember-imp-p1h" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#ember-imp-p1k" fill="#ffbe0b"/>
+<g clip-path="url(#ember-imp-c1l)">
+<use href="#ember-imp-p1k" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#ember-imp-c1m)"><use href="#ember-imp-p1k" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#ember-imp-p1n" fill="#8a1f1a" stroke-width="8"/>
+<g clip-path="url(#ember-imp-c1o)">
+<use href="#ember-imp-p1n" x="-3" y="-3" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c1p)"><use href="#ember-imp-p1n" x="2" y="2" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-p1q" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c1r)">
+<use href="#ember-imp-p1q" x="-4" y="-4" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c1s)"><use href="#ember-imp-p1q" x="3" y="3" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-p1t" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-c1u)">
+<use href="#ember-imp-p1t" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-c1v)"><use href="#ember-imp-p1t" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-p1w" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c1x)">
+<use href="#ember-imp-p1w" x="-4" y="-4" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c1y)"><use href="#ember-imp-p1w" x="3" y="3" fill="#d9452b"/></g>
+</g>
+<use href="#ember-imp-p1z" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ember-imp-c20)">
+<use href="#ember-imp-p1z" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ember-imp-c21)"><use href="#ember-imp-p1z" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ember-imp-p22" fill="#8a1f1a" stroke-width="12"/>
+<g clip-path="url(#ember-imp-c23)">
+<use href="#ember-imp-p22" x="-10" y="-8" fill="#ff8a5c"/>
+<g clip-path="url(#ember-imp-c24)"><use href="#ember-imp-p22" x="7" y="7" fill="#d9452b"/></g>
+</g>
+<path d="M222 222C236 252 276 252 290 222C276 232 236 232 222 222Z" fill="#3a0612"/>
+<path d="M230 228L236 238L242 230L248 240L254 231L260 240L266 230L272 240L278 228Z" fill="#fff8ea"/>
+<path d="M246 206L218 196L222 212Z" fill="#ffe066"/>
+<path d="M228 205A3 5 0 1 0 233 205A3 5 0 1 0 228 205Z" fill="#1d0842"/>
+<path d="M248 196L216 184" fill="none" stroke-width="5"/>
+<path d="M266 206L294 196L290 212Z" fill="#ffe066"/>
+<path d="M280 205A3 5 0 1 0 285 205A3 5 0 1 0 280 205Z" fill="#1d0842"/>
+<path d="M264 196L296 184" fill="none" stroke-width="5"/>
+<path d="M287 205L288 209L287 212L285 209Z" fill="#ffbe0b" fill-opacity="0.52"/>
+<path d="M75 89L77 92L75 96L73 92Z" fill="#ff7b00" fill-opacity="0.68"/>
+<path d="M283 371L287 377L283 384L280 377Z" fill="#ffe066" fill-opacity="0.88"/>
+<path d="M177 139L180 145L177 151L173 145Z" fill="#ffbe0b" fill-opacity="0.68"/>
+<path d="M291 290L293 293L291 297L289 293Z" fill="#ff7b00" fill-opacity="0.82"/>
+<path d="M234 302L236 306L234 311L231 306Z" fill="#ffe066" fill-opacity="0.55"/>
+<path d="M358 220L360 223L358 227L356 223Z" fill="#ffbe0b" fill-opacity="0.66"/>
+<path d="M76 106L79 110L76 115L74 110Z" fill="#ff7b00" fill-opacity="0.96"/>
+<path d="M206 325L208 329L206 333L204 329Z" fill="#ffe066" fill-opacity="0.68"/>
+<path d="M178 319L179 322L178 325L176 322Z" fill="#ffbe0b" fill-opacity="0.76"/>
+<path d="M93 148L96 153L93 158L90 153Z" fill="#ff7b00" fill-opacity="0.56"/>
+<path d="M129 169L133 177L129 184L125 177Z" fill="#ffe066" fill-opacity="0.56"/>
+<path d="M128 337L130 340L128 344L126 340Z" fill="#ffbe0b" fill-opacity="0.55"/>
+<path d="M165 379L170 387L165 395L161 387Z" fill="#ff7b00" fill-opacity="0.88"/>
+<path d="M112 211L113 214L112 218L110 214Z" fill="#ffe066" fill-opacity="0.89"/>
+<path d="M120 167L122 170L120 174L118 170Z" fill="#ffbe0b" fill-opacity="0.85"/>
+</svg>

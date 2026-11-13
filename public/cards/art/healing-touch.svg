@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="healing-touch-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1e0f36"/><stop offset="0.55" stop-color="#4a2a5e"/><stop offset="1" stop-color="#1a0c2a"/></linearGradient><radialGradient id="healing-touch-r1" gradientUnits="userSpaceOnUse" cx="280" cy="270" r="290"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.35"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.1575"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="healing-touch-p2" d="M-9 492C18 492 62 463 89 452C115 441 149 434 166 419C183 405 204 369 199 354C195 339 156 323 134 321C112 318 79 333 51 340C24 347 -29 352 -51 368C-72 385 -98 432 -92 451C-85 469 -36 491 -9 492Z"/><clipPath id="healing-touch-c3"><use href="#healing-touch-p2"/></clipPath><clipPath id="healing-touch-c4"><use href="#healing-touch-p2" x="-10" y="-10"/></clipPath><path id="healing-touch-p5" d="M149 415C175 417 231 395 266 389C301 382 361 381 384 372C407 363 419 342 418 330C417 319 401 300 376 296C352 292 291 300 254 303C217 307 156 310 131 321C107 332 90 362 93 377C95 391 123 413 149 415Z"/><clipPath id="healing-touch-c6"><use href="#healing-touch-p5"/></clipPath><clipPath id="healing-touch-c7"><use href="#healing-touch-p5" x="-10" y="-12"/></clipPath><path id="healing-touch-p8" d="M121 320C123 337 135 404 139 420C144 436 149 429 152 429C155 428 162 433 161 416C159 399 147 332 143 316C138 300 133 307 130 307C127 308 120 303 121 320Z"/><clipPath id="healing-touch-c9"><use href="#healing-touch-p8"/></clipPath><clipPath id="healing-touch-ca"><use href="#healing-touch-p8" x="-4" y="-4"/></clipPath><path id="healing-touch-pb" d="M457 330C458 340 452 354 444 361C436 368 421 370 410 370C399 370 384 367 377 360C370 354 367 340 367 330C367 320 370 307 377 300C384 293 399 286 410 287C421 287 434 293 442 301C450 308 457 320 457 330Z"/><clipPath id="healing-touch-cc"><use href="#healing-touch-pb"/></clipPath><clipPath id="healing-touch-cd"><use href="#healing-touch-pb" x="-8" y="-8"/></clipPath><radialGradient id="healing-touch-re" gradientUnits="userSpaceOnUse" cx="268" cy="344" r="80"><stop offset="0" stop-color="#ffe066" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="healing-touch-pf" d="M517 -54C488 -38 439 30 414 58C389 85 360 110 351 131C341 152 341 187 351 197C361 207 396 207 417 197C438 188 462 159 490 134C518 110 586 62 603 34C621 6 617 -40 604 -53C591 -67 545 -71 517 -54Z"/><clipPath id="healing-touch-cg"><use href="#healing-touch-pf"/></clipPath><clipPath id="healing-touch-ch"><use href="#healing-touch-pf" x="-12" y="-12"/></clipPath><path id="healing-touch-pi" d="M395 121C385 132 351 177 343 189C336 202 343 203 345 205C348 207 351 213 361 203C371 192 405 147 413 135C420 122 413 121 411 119C408 117 405 111 395 121Z"/><clipPath id="healing-touch-cj"><use href="#healing-touch-pi"/></clipPath><clipPath id="healing-touch-ck"><use href="#healing-touch-pi" x="-4" y="-4"/></clipPath><path id="healing-touch-pl" d="M294 206C289 208 279 219 274 223C268 228 260 234 257 238C254 242 254 247 256 249C257 251 263 252 267 250C271 249 279 242 285 238C291 233 303 226 306 222C310 217 310 210 308 208C306 205 299 204 294 206Z"/><clipPath id="healing-touch-cm"><use href="#healing-touch-pl"/></clipPath><clipPath id="healing-touch-cn"><use href="#healing-touch-pl" x="-4" y="-4"/></clipPath><path id="healing-touch-po" d="M303 220C299 224 293 237 289 244C285 250 278 259 277 263C276 268 277 274 279 275C281 276 287 276 291 273C295 270 300 260 304 254C309 248 319 237 321 232C323 226 320 219 318 217C315 216 308 216 303 220Z"/><clipPath id="healing-touch-cp"><use href="#healing-touch-po"/></clipPath><clipPath id="healing-touch-cq"><use href="#healing-touch-po" x="-4" y="-4"/></clipPath><path id="healing-touch-pr" d="M321 229C317 233 315 247 313 254C311 261 307 271 306 275C306 280 309 285 311 286C314 286 319 284 322 281C324 277 327 267 330 260C332 253 339 241 339 235C340 230 336 224 333 223C330 222 324 224 321 229Z"/><clipPath id="healing-touch-cs"><use href="#healing-touch-pr"/></clipPath><clipPath id="healing-touch-ct"><use href="#healing-touch-pr" x="-4" y="-4"/></clipPath><path id="healing-touch-pu" d="M339 229C337 234 338 245 338 251C337 257 336 265 337 269C338 273 341 277 343 277C345 277 350 274 351 271C353 267 353 259 354 253C355 247 358 236 357 231C356 226 352 221 349 221C346 221 341 225 339 229Z"/><clipPath id="healing-touch-cv"><use href="#healing-touch-pu"/></clipPath><clipPath id="healing-touch-cw"><use href="#healing-touch-pu" x="-4" y="-4"/></clipPath><path id="healing-touch-px" d="M369 179C366 174 356 167 351 162C346 157 340 150 336 148C332 146 326 147 324 148C323 150 322 156 324 160C326 164 333 170 338 175C343 180 350 190 355 193C360 196 367 195 369 193C371 191 372 184 369 179Z"/><clipPath id="healing-touch-cy"><use href="#healing-touch-px"/></clipPath><clipPath id="healing-touch-cz"><use href="#healing-touch-px" x="-4" y="-4"/></clipPath><path id="healing-touch-p10" d="M371 218C366 225 355 233 346 235C336 237 322 235 313 231C303 227 293 219 290 211C288 203 290 192 296 185C301 178 312 172 323 169C333 167 348 167 357 171C366 175 373 186 375 193C377 201 375 211 371 218Z"/><clipPath id="healing-touch-c11"><use href="#healing-touch-p10"/></clipPath><clipPath id="healing-touch-c12"><use href="#healing-touch-p10" x="-8" y="-8"/></clipPath><radialGradient id="healing-touch-r13" gradientUnits="userSpaceOnUse" cx="300" cy="262" r="90"><stop offset="0" stop-color="#fff8d6" stop-opacity="0.7"/><stop offset="0.45" stop-color="#fff8d6" stop-opacity="0.315"/><stop offset="1" stop-color="#fff8d6" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#healing-touch-l0)"/>
+<circle cx="280" cy="270" r="290" fill="url(#healing-touch-r1)"/>
+<circle cx="360" cy="28" r="10" fill="#ffe066" fill-opacity="0.09"/>
+<circle cx="380" cy="116" r="10" fill="#ffe066" fill-opacity="0.09"/>
+<circle cx="144" cy="131" r="8" fill="#ffe066" fill-opacity="0.09"/>
+<circle cx="357" cy="115" r="13" fill="#ffe066" fill-opacity="0.15"/>
+<circle cx="173" cy="158" r="9" fill="#ffe066" fill-opacity="0.13"/>
+<circle cx="268" cy="186" r="11" fill="#ffe066" fill-opacity="0.08"/>
+<circle cx="434" cy="82" r="14" fill="#ffe066" fill-opacity="0.14"/>
+<circle cx="219" cy="163" r="8" fill="#ffe066" fill-opacity="0.11"/>
+<circle cx="361" cy="20" r="7" fill="#ffe066" fill-opacity="0.12"/>
+<use href="#healing-touch-p2" fill="#24418a" stroke-width="12"/>
+<g clip-path="url(#healing-touch-c3)">
+<use href="#healing-touch-p2" x="-10" y="-10" fill="#6a95e0"/>
+<g clip-path="url(#healing-touch-c4)"><use href="#healing-touch-p2" x="7" y="7" fill="#3d6fc4"/></g>
+</g>
+<use href="#healing-touch-p5" fill="#a0684a" stroke-width="12"/>
+<g clip-path="url(#healing-touch-c6)">
+<use href="#healing-touch-p5" x="-10" y="-12" fill="#f2c29b"/>
+<g clip-path="url(#healing-touch-c7)"><use href="#healing-touch-p5" x="7" y="7" fill="#d9a07a"/></g>
+</g>
+<use href="#healing-touch-p8" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-c9)">
+<use href="#healing-touch-p8" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#healing-touch-ca)"><use href="#healing-touch-p8" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#healing-touch-pb" fill="#a0684a" stroke-width="12"/>
+<g clip-path="url(#healing-touch-cc)">
+<use href="#healing-touch-pb" x="-8" y="-8" fill="#f2c29b"/>
+<g clip-path="url(#healing-touch-cd)"><use href="#healing-touch-pb" x="7" y="7" fill="#d9a07a"/></g>
+</g>
+<path d="M402 300C414 310 414 330 406 344M422 302C432 314 432 330 426 344" fill="none" stroke-width="3.5" stroke-opacity="0.55"/>
+<circle cx="268" cy="344" r="80" fill="url(#healing-touch-re)"/>
+<path d="M222 326L314 360" fill="none" stroke-width="14"/>
+<path d="M222 326L314 360" fill="none" stroke="#c0283e" stroke-width="8"/>
+<path d="M222 326L268 343" fill="none" stroke="#ffe066" stroke-width="9"/>
+<path d="M224 327L262 341" fill="none" stroke="#ffffff" stroke-width="4"/>
+<use href="#healing-touch-pf" fill="#a99ed6" stroke-width="12"/>
+<g clip-path="url(#healing-touch-cg)">
+<use href="#healing-touch-pf" x="-12" y="-12" fill="#ffffff"/>
+<g clip-path="url(#healing-touch-ch)"><use href="#healing-touch-pf" x="7" y="7" fill="#ece6ff"/></g>
+</g>
+<use href="#healing-touch-pi" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-cj)">
+<use href="#healing-touch-pi" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#healing-touch-ck)"><use href="#healing-touch-pi" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#healing-touch-pl" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-cm)">
+<use href="#healing-touch-pl" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#healing-touch-cn)"><use href="#healing-touch-pl" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#healing-touch-po" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-cp)">
+<use href="#healing-touch-po" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#healing-touch-cq)"><use href="#healing-touch-po" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#healing-touch-pr" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-cs)">
+<use href="#healing-touch-pr" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#healing-touch-ct)"><use href="#healing-touch-pr" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#healing-touch-pu" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-cv)">
+<use href="#healing-touch-pu" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#healing-touch-cw)"><use href="#healing-touch-pu" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#healing-touch-px" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#healing-touch-cy)">
+<use href="#healing-touch-px" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#healing-touch-cz)"><use href="#healing-touch-px" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#healing-touch-p10" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#healing-touch-c11)">
+<use href="#healing-touch-p10" x="-8" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#healing-touch-c12)"><use href="#healing-touch-p10" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<path d="M270 236L350 246L318 352L232 330Z" fill="#fff1c1" fill-opacity="0.28"/>
+<circle cx="300" cy="262" r="90" fill="url(#healing-touch-r13)"/>
+<path d="M216 227L224 227L224 236L233 236L233 244L224 244L224 253L216 253L216 244L207 244L207 236L216 236ZM193 291L199 291L199 297L205 297L205 303L199 303L199 309L193 309L193 303L187 303L187 297L193 297ZM334 289L342 289L342 296L349 296L349 304L342 304L342 311L334 311L334 304L327 304L327 296L334 296ZM247 160L253 160L253 167L260 167L260 173L253 173L253 180L247 180L247 173L240 173L240 167L247 167ZM377 262L383 262L383 267L388 267L388 273L383 273L383 278L377 278L377 273L372 273L372 267L377 267ZM174 203L178 203L178 208L183 208L183 212L178 212L178 217L174 217L174 212L169 212L169 208L174 208Z" fill="#ffe066" stroke-width="6"/>
+<path d="M217 233L221 233L221 237L225 237L225 241L221 241L221 245L217 245L217 241L213 241L213 237L217 237ZM194 295L196 295L196 298L199 298L199 300L196 300L196 303L194 303L194 300L191 300L191 298L194 298ZM335 294L339 294L339 297L342 297L342 301L339 301L339 304L335 304L335 301L332 301L332 297L335 297ZM248 165L250 165L250 168L254 168L254 170L250 170L250 174L248 174L248 170L245 170L245 168L248 168ZM378 265L380 265L380 268L383 268L383 270L380 270L380 273L378 273L378 270L375 270L375 268L378 268ZM174 206L176 206L176 208L178 208L178 210L176 210L176 212L174 212L174 210L172 210L172 208L174 208Z" fill="#ffffff"/>
+<path d="M239 148L242 154L239 160L236 154Z" fill="#d8f5a2" fill-opacity="0.97"/>
+<path d="M216 136L220 143L216 149L212 143Z" fill="#ffe066" fill-opacity="0.82"/>
+<path d="M284 277L286 280L284 283L283 280Z" fill="#7bd389" fill-opacity="0.96"/>
+<path d="M245 231L249 238L245 245L242 238Z" fill="#d8f5a2" fill-opacity="0.83"/>
+<path d="M280 284L285 292L280 300L276 292Z" fill="#ffe066" fill-opacity="0.62"/>
+<path d="M242 304L245 309L242 314L239 309Z" fill="#7bd389" fill-opacity="0.71"/>
+<path d="M230 160L233 165L230 170L227 165Z" fill="#d8f5a2" fill-opacity="0.53"/>
+<path d="M236 192L239 196L236 201L234 196Z" fill="#ffe066" fill-opacity="0.59"/>
+<path d="M293 253L296 258L293 262L291 258Z" fill="#7bd389" fill-opacity="0.77"/>
+<path d="M249 182L252 187L249 192L246 187Z" fill="#d8f5a2" fill-opacity="0.88"/>
+<path d="M219 137L222 143L219 149L216 143Z" fill="#ffe066" fill-opacity="0.76"/>
+<path d="M215 153L219 159L215 166L212 159Z" fill="#7bd389" fill-opacity="0.69"/>
+<path d="M215 207L218 212L215 217L212 212Z" fill="#d8f5a2" fill-opacity="0.93"/>
+<path d="M202 276L205 281L202 286L199 281Z" fill="#ffe066" fill-opacity="0.61"/>
+<path d="M261 144L264 151L261 158L257 151Z" fill="#7bd389" fill-opacity="0.5"/>
+<path d="M195 248L198 253L195 259L192 253Z" fill="#d8f5a2" fill-opacity="0.73"/>
+</svg>

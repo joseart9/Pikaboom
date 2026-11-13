@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="mana-spark-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0a1028"/><stop offset="0.55" stop-color="#1a2a5a"/><stop offset="1" stop-color="#0a0e22"/></linearGradient><radialGradient id="mana-spark-r1" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="230"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.2025"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="mana-spark-p2" d="M304 540C312 515 315 446 308 420C301 394 272 368 256 368C240 368 211 394 204 420C197 446 200 515 208 540C216 565 242 588 256 588C270 588 296 565 304 540Z"/><clipPath id="mana-spark-c3"><use href="#mana-spark-p2"/></clipPath><clipPath id="mana-spark-c4"><use href="#mana-spark-p2" x="-10" y="-8"/></clipPath><path id="mana-spark-p5" d="M232 388C231 379 221 349 217 341C212 333 206 333 203 333C200 334 195 338 195 347C196 356 203 387 208 396C212 404 220 406 224 404C227 403 234 398 232 388Z"/><clipPath id="mana-spark-c6"><use href="#mana-spark-p5"/></clipPath><clipPath id="mana-spark-c7"><use href="#mana-spark-p5" x="-6" y="-6"/></clipPath><path id="mana-spark-p8" d="M257 391C258 380 254 340 251 329C248 318 243 319 239 319C236 319 230 320 229 331C228 342 229 382 231 393C233 404 241 405 245 405C249 405 256 403 257 391Z"/><clipPath id="mana-spark-c9"><use href="#mana-spark-p8"/></clipPath><clipPath id="mana-spark-ca"><use href="#mana-spark-p8" x="-6" y="-6"/></clipPath><path id="mana-spark-pb" d="M281 393C283 382 284 342 283 331C282 320 276 319 273 319C269 319 264 318 261 329C258 340 254 380 255 391C256 403 263 405 267 405C271 405 279 404 281 393Z"/><clipPath id="mana-spark-cc"><use href="#mana-spark-pb"/></clipPath><clipPath id="mana-spark-cd"><use href="#mana-spark-pb" x="-6" y="-6"/></clipPath><path id="mana-spark-pe" d="M302 396C307 388 315 359 316 350C317 341 313 337 310 336C306 335 300 335 296 342C291 350 279 378 278 388C276 397 282 403 286 404C289 406 298 404 302 396Z"/><clipPath id="mana-spark-cf"><use href="#mana-spark-pe"/></clipPath><clipPath id="mana-spark-cg"><use href="#mana-spark-pe" x="-6" y="-6"/></clipPath><path id="mana-spark-ph" d="M311 432C320 428 339 409 347 400C354 392 358 381 360 375C361 369 358 362 355 360C352 359 344 361 340 365C336 368 336 377 329 384C322 390 299 401 293 408C287 415 287 426 290 429C293 433 303 436 311 432Z"/><clipPath id="mana-spark-ci"><use href="#mana-spark-ph"/></clipPath><clipPath id="mana-spark-cj"><use href="#mana-spark-ph" x="-6" y="-6"/></clipPath><path id="mana-spark-pk" d="M200 410A56 30 0 1 0 312 410A56 30 0 1 0 200 410Z"/><clipPath id="mana-spark-cl"><use href="#mana-spark-pk"/></clipPath><clipPath id="mana-spark-cm"><use href="#mana-spark-pk" x="-8" y="-8"/></clipPath><radialGradient id="mana-spark-rn" gradientUnits="userSpaceOnUse" cx="256" cy="380" r="70"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.5"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.225"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><radialGradient id="mana-spark-ro" gradientUnits="userSpaceOnUse" cx="256" cy="254" r="170"><stop offset="0" stop-color="#9be7ff" stop-opacity="0.75"/><stop offset="0.45" stop-color="#9be7ff" stop-opacity="0.3375"/><stop offset="1" stop-color="#9be7ff" stop-opacity="0"/></radialGradient><path id="mana-spark-pp" d="M256 214L284 254L256 300L228 254Z"/><clipPath id="mana-spark-cq"><use href="#mana-spark-pp"/></clipPath><clipPath id="mana-spark-cr"><use href="#mana-spark-pp" x="-8" y="-8"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#mana-spark-l0)"/>
+<circle cx="256" cy="250" r="230" fill="url(#mana-spark-r1)"/>
+<g transform="translate(0 -26)">
+<use href="#mana-spark-p2" fill="#3fa9ff" stroke-width="12"/>
+<g clip-path="url(#mana-spark-c3)">
+<use href="#mana-spark-p2" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-p2" x="-10" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-c4)"><use href="#mana-spark-p2" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#mana-spark-p5" fill="#3fa9ff" stroke-width="10"/>
+<g clip-path="url(#mana-spark-c6)">
+<use href="#mana-spark-p5" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-p5" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-c7)"><use href="#mana-spark-p5" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#mana-spark-p8" fill="#3fa9ff" stroke-width="10"/>
+<g clip-path="url(#mana-spark-c9)">
+<use href="#mana-spark-p8" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-p8" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-ca)"><use href="#mana-spark-p8" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#mana-spark-pb" fill="#3fa9ff" stroke-width="10"/>
+<g clip-path="url(#mana-spark-cc)">
+<use href="#mana-spark-pb" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-pb" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-cd)"><use href="#mana-spark-pb" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#mana-spark-pe" fill="#3fa9ff" stroke-width="10"/>
+<g clip-path="url(#mana-spark-cf)">
+<use href="#mana-spark-pe" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-pe" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-cg)"><use href="#mana-spark-pe" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#mana-spark-ph" fill="#3fa9ff" stroke-width="10"/>
+<g clip-path="url(#mana-spark-ci)">
+<use href="#mana-spark-ph" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-ph" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-cj)"><use href="#mana-spark-ph" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#mana-spark-pk" fill="#3fa9ff" stroke-width="12"/>
+<g clip-path="url(#mana-spark-cl)">
+<use href="#mana-spark-pk" x="-4" fill="#c98f6a"/>
+<use href="#mana-spark-pk" x="-8" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#mana-spark-cm)"><use href="#mana-spark-pk" x="5" y="5" fill="#f2c29b"/></g>
+</g>
+<path d="M222 404C240 414 270 414 288 404" fill="none" stroke="#c98f6a" stroke-width="3"/>
+<circle cx="256" cy="380" r="70" fill="url(#mana-spark-rn)"/>
+</g>
+<circle cx="256" cy="254" r="170" fill="url(#mana-spark-ro)"/>
+<path d="M256 104L266 244L406 254L266 264L256 404L246 264L106 254L246 244Z" fill="#e6fbff" fill-opacity="0.9"/>
+<path d="M305 205L266 254L305 303L256 264L207 303L246 254L207 205L256 244Z" fill="#ffffff" fill-opacity="0.75"/>
+<use href="#mana-spark-pp" fill="#1f5fbf" stroke-width="10"/>
+<g clip-path="url(#mana-spark-cq)">
+<use href="#mana-spark-pp" x="-8" y="-8" fill="#bfe6ff"/>
+<g clip-path="url(#mana-spark-cr)"><use href="#mana-spark-pp" x="5" y="5" fill="#3fa9ff"/></g>
+</g>
+<path d="M228 254H284M256 214L246 254L256 300" fill="none" stroke="#e6fbff" stroke-width="3" stroke-opacity="0.7"/>
+<path d="M314 222L317 227L314 232L311 227Z" fill="#bfe6ff" fill-opacity="0.65"/>
+<path d="M321 323L324 329L321 334L318 329Z" fill="#ffffff" fill-opacity="0.73"/>
+<path d="M319 263L322 268L319 273L316 268Z" fill="#bfe6ff" fill-opacity="0.93"/>
+<path d="M188 249L190 252L188 255L187 252Z" fill="#ffffff" fill-opacity="0.91"/>
+<path d="M205 249L208 255L205 260L202 255Z" fill="#bfe6ff" fill-opacity="0.75"/>
+<path d="M329 295L332 300L329 305L326 300Z" fill="#ffffff" fill-opacity="0.73"/>
+<path d="M335 198L338 203L335 208L333 203Z" fill="#bfe6ff" fill-opacity="0.86"/>
+<path d="M307 164L310 169L307 173L305 169Z" fill="#ffffff" fill-opacity="0.55"/>
+</svg>

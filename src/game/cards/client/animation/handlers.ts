@@ -8,7 +8,7 @@
 // Reduced motion (§18.3): no shake, no particles, no projectiles, no trails; only fades, flashes and number pops.
 import { CATALOG } from "../../catalog";
 import type { CardDef, StatusId, TriggerOn } from "../../catalog/types";
-import { cardEntrance, effectElement, type FxElement } from "../../catalog/visuals";
+import { cardEntrance, cardSignature, effectElement, type FxElement } from "../../catalog/visuals";
 import type { EntityId, Seat } from "../../engine/types";
 import { cardName, t } from "../../i18n";
 import type { ViewEvent } from "../../server/view";
@@ -141,7 +141,8 @@ export const ANIMATIONS: HandlerMap = {
       }
       if (env.signal.aborted) return;
       const pace = entrance === "cinematic" ? env.paceCinematic() : 1;
-      const timeline = entranceTimeline(entrance, { speed: env.speed * pace, reducedMotion: env.reducedMotion });
+      const signature = entrance === "cinematic" ? cardSignature(def) : null;
+      const timeline = entranceTimeline(entrance, { speed: env.speed * pace, reducedMotion: env.reducedMotion, signature });
       await playEntrance(def, cardName(def.id), timeline, env);
       return;
     }

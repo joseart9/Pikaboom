@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="necromancer-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0b0418"/><stop offset="0.55" stop-color="#241446"/><stop offset="1" stop-color="#120624"/></linearGradient><radialGradient id="necromancer-r1" gradientUnits="userSpaceOnUse" cx="256" cy="200" r="240"><stop offset="0" stop-color="#7bd389" stop-opacity="0.14"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.06300000000000001"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><radialGradient id="necromancer-r2" gradientUnits="userSpaceOnUse" cx="256" cy="210" r="230"><stop offset="0" stop-color="#8e5bd8" stop-opacity="0.35"/><stop offset="0.45" stop-color="#8e5bd8" stop-opacity="0.1575"/><stop offset="1" stop-color="#8e5bd8" stop-opacity="0"/></radialGradient><linearGradient id="necromancer-l3" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#2a1458"/><stop offset="1" stop-color="#120624"/></linearGradient><radialGradient id="necromancer-r4" gradientUnits="userSpaceOnUse" cx="256" cy="396" r="200"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="necromancer-p5" d="M343 404C344 381 341 298 340 260C339 222 339 167 338 150C337 133 334 144 332 144C330 144 327 133 326 150C325 168 328 222 328 260C328 298 328 381 329 404C330 427 334 411 336 411C338 411 342 427 343 404Z"/><clipPath id="necromancer-c6"><use href="#necromancer-p5"/></clipPath><clipPath id="necromancer-c7"><use href="#necromancer-p5" x="-4" y="-4"/></clipPath><path id="necromancer-p8" d="M240 196C247 186 285 186 292 196C299 206 304 279 306 300C308 321 317 391 312 402C307 413 268 410 258 410C248 410 214 413 210 402C206 391 219 321 222 300C225 279 233 206 240 196Z"/><clipPath id="necromancer-c9"><use href="#necromancer-p8"/></clipPath><clipPath id="necromancer-ca"><use href="#necromancer-p8" x="-12" y="-10"/></clipPath><path id="necromancer-pb" d="M254 296L270 294L278 340L262 344Z"/><clipPath id="necromancer-cc"><use href="#necromancer-pb"/></clipPath><clipPath id="necromancer-cd"><use href="#necromancer-pb" x="-3" y="-3"/></clipPath><path id="necromancer-pe" d="M274 222C278 230 296 251 304 259C311 266 318 271 324 272C330 273 342 268 344 264C346 260 340 248 336 244C333 241 327 247 320 241C314 236 301 212 294 206C288 200 279 201 276 204C273 206 270 214 274 222Z"/><clipPath id="necromancer-cf"><use href="#necromancer-pe"/></clipPath><clipPath id="necromancer-cg"><use href="#necromancer-pe" x="-6" y="-6"/></clipPath><path id="necromancer-ph" d="M322 256A12 13 0 1 0 346 256A12 13 0 1 0 322 256Z"/><clipPath id="necromancer-ci"><use href="#necromancer-ph"/></clipPath><clipPath id="necromancer-cj"><use href="#necromancer-ph" x="-4" y="-4"/></clipPath><radialGradient id="necromancer-rk" gradientUnits="userSpaceOnUse" cx="332" cy="136" r="56"><stop offset="0" stop-color="#c77dff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.315"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="necromancer-pl" d="M316 138C315 133 315 121 318 116C321 111 327 106 332 106C337 106 345 111 348 116C351 121 351 133 350 138C349 143 346 148 342 150C338 152 326 152 322 150C318 148 317 143 316 138Z"/><clipPath id="necromancer-cm"><use href="#necromancer-pl"/></clipPath><clipPath id="necromancer-cn"><use href="#necromancer-pl" x="-5" y="-5"/></clipPath><path id="necromancer-po" d="M249 203C243 198 222 194 214 185C207 176 203 151 198 144C193 137 184 137 180 138C177 140 172 146 174 156C177 165 189 189 198 199C207 210 227 222 235 225C244 228 251 224 253 221C255 217 255 208 249 203Z"/><clipPath id="necromancer-cp"><use href="#necromancer-po"/></clipPath><clipPath id="necromancer-cq"><use href="#necromancer-po" x="-6" y="-6"/></clipPath><path id="necromancer-pr" d="M172 138A12 14 0 1 0 196 138A12 14 0 1 0 172 138Z"/><clipPath id="necromancer-cs"><use href="#necromancer-pr"/></clipPath><clipPath id="necromancer-ct"><use href="#necromancer-pr" x="-4" y="-4"/></clipPath><path id="necromancer-pu" d="M187 130C184 127 174 117 172 115C169 113 170 116 170 116C170 116 167 115 168 117C170 120 179 132 181 134C184 137 186 135 186 135C187 134 189 133 187 130Z"/><clipPath id="necromancer-cv"><use href="#necromancer-pu"/></clipPath><clipPath id="necromancer-cw"><use href="#necromancer-pu" x="-2" y="-2"/></clipPath><path id="necromancer-px" d="M187 131C187 128 183 113 182 110C181 106 181 110 180 110C179 110 178 107 178 110C178 114 180 129 181 133C182 136 184 136 185 135C186 135 188 135 187 131Z"/><clipPath id="necromancer-cy"><use href="#necromancer-px"/></clipPath><clipPath id="necromancer-cz"><use href="#necromancer-px" x="-2" y="-2"/></clipPath><path id="necromancer-p10" d="M187 133C189 130 193 116 194 113C195 110 193 112 192 112C191 112 192 108 190 111C188 114 182 127 181 131C180 134 182 135 183 135C184 136 186 137 187 133Z"/><clipPath id="necromancer-c11"><use href="#necromancer-p10"/></clipPath><clipPath id="necromancer-c12"><use href="#necromancer-p10" x="-2" y="-2"/></clipPath><path id="necromancer-p13" d="M186 135C188 134 197 127 199 126C201 124 198 125 198 124C198 123 199 122 197 122C195 123 185 127 182 129C180 131 180 133 181 134C181 135 183 136 186 135Z"/><clipPath id="necromancer-c14"><use href="#necromancer-p13"/></clipPath><clipPath id="necromancer-c15"><use href="#necromancer-p13" x="-2" y="-2"/></clipPath><radialGradient id="necromancer-r16" gradientUnits="userSpaceOnUse" cx="182" cy="112" r="46"><stop offset="0" stop-color="#c77dff" stop-opacity="0.8"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="necromancer-p17" d="M234 196C226 160 236 126 264 112C292 126 302 160 296 196C286 206 276 210 264 210C252 210 242 206 234 196Z"/><clipPath id="necromancer-c18"><use href="#necromancer-p17"/></clipPath><clipPath id="necromancer-c19"><use href="#necromancer-p17" x="-10" y="-8"/></clipPath><path id="necromancer-p1a" d="M246 150C249 143 258 132 264 132C270 132 281 143 284 150C287 157 286 172 284 180C282 188 276 199 272 202C268 205 262 205 258 202C254 199 248 188 246 180C244 172 243 157 246 150Z"/><clipPath id="necromancer-c1b"><use href="#necromancer-p1a"/></clipPath><clipPath id="necromancer-c1c"><use href="#necromancer-p1a" x="-6" y="-5"/></clipPath><radialGradient id="necromancer-r1d" gradientUnits="userSpaceOnUse" cx="256" cy="166" r="12"><stop offset="0" stop-color="#e0b8ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#e0b8ff" stop-opacity="0.405"/><stop offset="1" stop-color="#e0b8ff" stop-opacity="0"/></radialGradient><radialGradient id="necromancer-r1e" gradientUnits="userSpaceOnUse" cx="276" cy="166" r="12"><stop offset="0" stop-color="#e0b8ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#e0b8ff" stop-opacity="0.405"/><stop offset="1" stop-color="#e0b8ff" stop-opacity="0"/></radialGradient><path id="necromancer-p1f" d="M260 192L272 192L266 214Z"/><clipPath id="necromancer-c1g"><use href="#necromancer-p1f"/></clipPath><radialGradient id="necromancer-r1i" gradientUnits="userSpaceOnUse" cx="140" cy="382" r="50"><stop offset="0" stop-color="#c77dff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.2025"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="necromancer-p1j" d="M118 360C117 354 121 339 124 334C127 329 135 326 140 326C145 326 153 329 156 334C159 339 163 354 162 360C161 366 155 370 150 372C145 374 135 374 130 372C125 370 119 366 118 360Z"/><clipPath id="necromancer-c1k"><use href="#necromancer-p1j"/></clipPath><clipPath id="necromancer-c1l"><use href="#necromancer-p1j" x="-4" y="-4"/></clipPath><path id="necromancer-p1m" d="M184 397C186 391 188 368 188 362C188 357 186 358 184 358C183 358 181 356 180 362C179 367 176 390 176 395C175 401 178 400 179 400C181 401 183 402 184 397Z"/><clipPath id="necromancer-c1n"><use href="#necromancer-p1m"/></clipPath><clipPath id="necromancer-c1o"><use href="#necromancer-p1m" x="-2" y="-2"/></clipPath><path id="necromancer-p1p" d="M187 360C185 358 177 347 175 345C173 343 174 346 174 346C174 346 172 344 173 347C174 349 180 361 181 364C183 366 185 365 186 365C186 364 188 363 187 360Z"/><clipPath id="necromancer-c1q"><use href="#necromancer-p1p"/></clipPath><clipPath id="necromancer-c1r"><use href="#necromancer-p1p" x="-1" y="-1"/></clipPath><path id="necromancer-p1s" d="M187 362C187 359 186 348 186 346C185 344 184 346 184 346C184 346 183 344 183 346C182 348 181 359 181 362C181 365 183 365 184 365C185 365 187 365 187 362Z"/><clipPath id="necromancer-c1t"><use href="#necromancer-p1s"/></clipPath><clipPath id="necromancer-c1u"><use href="#necromancer-p1s" x="-1" y="-1"/></clipPath><path id="necromancer-p1v" d="M187 364C188 361 194 349 195 347C196 344 194 346 194 346C194 346 195 343 193 345C191 347 183 358 181 360C180 363 182 364 182 365C183 365 185 366 187 364Z"/><clipPath id="necromancer-c1w"><use href="#necromancer-p1v"/></clipPath><clipPath id="necromancer-c1x"><use href="#necromancer-p1v" x="-1" y="-1"/></clipPath><path id="necromancer-p1y" d="M205 394C205 397 198 400 190 402C181 403 167 405 154 405C141 405 119 405 110 403C101 402 98 397 98 394C98 391 100 386 109 384C119 383 141 383 154 383C167 384 181 385 190 386C198 388 205 391 205 394Z"/><clipPath id="necromancer-c1z"><use href="#necromancer-p1y"/></clipPath><clipPath id="necromancer-c20"><use href="#necromancer-p1y" x="-6" y="-6"/></clipPath><radialGradient id="necromancer-r21" gradientUnits="userSpaceOnUse" cx="390" cy="386" r="43"><stop offset="0" stop-color="#c77dff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.2025"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="necromancer-p22" d="M371 369C370 364 373 351 376 347C379 342 386 340 390 340C394 340 401 342 404 347C407 351 410 364 409 369C408 374 403 377 399 379C394 381 386 381 382 379C377 377 372 374 371 369Z"/><clipPath id="necromancer-c23"><use href="#necromancer-p22"/></clipPath><clipPath id="necromancer-c24"><use href="#necromancer-p22" x="-4" y="-4"/></clipPath><path id="necromancer-p25" d="M360 399C360 394 357 375 356 370C355 365 353 366 351 367C350 367 348 366 348 371C348 376 350 396 352 401C353 406 355 405 357 404C358 404 361 405 360 399Z"/><clipPath id="necromancer-c26"><use href="#necromancer-p25"/></clipPath><clipPath id="necromancer-c27"><use href="#necromancer-p25" x="-2" y="-2"/></clipPath><path id="necromancer-p28" d="M355 369C353 366 346 358 345 356C343 354 344 357 344 357C343 357 341 355 342 358C343 360 348 370 349 372C351 374 353 374 354 373C354 373 356 371 355 369Z"/><clipPath id="necromancer-c29"><use href="#necromancer-p28"/></clipPath><clipPath id="necromancer-c2a"><use href="#necromancer-p28" x="-1" y="-1"/></clipPath><path id="necromancer-p2b" d="M355 371C355 368 354 359 354 357C353 355 352 357 352 357C352 357 351 355 351 357C350 359 349 368 349 371C349 373 351 374 352 374C353 374 355 373 355 371Z"/><clipPath id="necromancer-c2c"><use href="#necromancer-p2b"/></clipPath><clipPath id="necromancer-c2d"><use href="#necromancer-p2b" x="-1" y="-1"/></clipPath><path id="necromancer-p2e" d="M355 372C356 370 361 360 362 358C363 355 361 357 361 357C360 357 361 354 359 356C358 358 351 366 349 369C348 371 350 373 350 373C351 374 353 374 355 372Z"/><clipPath id="necromancer-c2f"><use href="#necromancer-p2e"/></clipPath><clipPath id="necromancer-c2g"><use href="#necromancer-p2e" x="-1" y="-1"/></clipPath><path id="necromancer-p2h" d="M424 398C424 400 417 403 410 405C402 406 388 408 378 408C368 408 357 406 348 404C340 403 329 400 328 398C326 396 332 391 341 390C349 388 366 389 378 389C390 389 403 390 411 391C418 393 425 396 424 398Z"/><clipPath id="necromancer-c2i"><use href="#necromancer-p2h"/></clipPath><clipPath id="necromancer-c2j"><use href="#necromancer-p2h" x="-6" y="-6"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#necromancer-l0)"/>
+<circle cx="256" cy="200" r="240" fill="url(#necromancer-r1)"/>
+<circle cx="256" cy="210" r="230" fill="url(#necromancer-r2)"/>
+<path d="M0 340V300L40 296L48 340Z" fill="#1b0d38"/>
+<path d="M0 340L0 262L6 252L12 262L12 340Z" fill="#140a2c"/>
+<path d="M34 340L34 268L40 258L46 268L46 340Z" fill="#140a2c"/>
+<path d="M68 340L68 274L74 264L80 274L80 340Z" fill="#140a2c"/>
+<path d="M102 340L102 262L108 252L114 262L114 340Z" fill="#140a2c"/>
+<path d="M136 340L136 268L142 258L148 268L148 340Z" fill="#140a2c"/>
+<path d="M170 340L170 274L176 264L182 274L182 340Z" fill="#140a2c"/>
+<path d="M204 340L204 262L210 252L216 262L216 340Z" fill="#140a2c"/>
+<path d="M238 340L238 268L244 258L250 268L250 340Z" fill="#140a2c"/>
+<path d="M272 340L272 274L278 264L284 274L284 340Z" fill="#140a2c"/>
+<path d="M306 340L306 262L312 252L318 262L318 340Z" fill="#140a2c"/>
+<path d="M340 340L340 268L346 258L352 268L352 340Z" fill="#140a2c"/>
+<path d="M374 340L374 274L380 264L386 274L386 340Z" fill="#140a2c"/>
+<path d="M408 340L408 262L414 252L420 262L420 340Z" fill="#140a2c"/>
+<path d="M442 340L442 268L448 258L454 268L454 340Z" fill="#140a2c"/>
+<path d="M476 340L476 274L482 264L488 274L488 340Z" fill="#140a2c"/>
+<path d="M510 340L510 262L516 252L522 262L522 340Z" fill="#140a2c"/>
+<path d="M0 282H512V290H0Z" fill="#140a2c"/>
+<path d="M60 340V262C60 238 110 238 110 262V340Z" fill="#2a1a4a"/>
+<path d="M408 340V250C408 222 460 222 460 250V340Z" fill="#2a1a4a"/>
+<path d="M430 256H438V272H450V280H438V310H430V280H418V272H430Z" fill="#1b0d38"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#necromancer-l3)"/>
+<ellipse cx="256" cy="396" rx="200" ry="56" fill="url(#necromancer-r4)"/>
+<path d="M270 360C270 364 239 369 214 372C189 375 152 377 120 377C88 377 46 376 20 373C-6 370 -35 364 -36 360C-36 356 -9 350 17 347C43 344 87 342 120 342C153 342 190 345 215 348C240 351 270 356 270 360Z" fill="#8e5bd8" fill-opacity="0.2"/>
+<path d="M541 352C537 356 508 359 484 362C461 364 429 369 400 369C371 369 333 365 310 362C286 360 258 355 258 352C259 349 290 344 314 342C337 340 367 339 400 338C433 338 488 337 511 339C535 342 546 348 541 352Z" fill="#8e5bd8" fill-opacity="0.2"/>
+<ellipse cx="262" cy="398" rx="80" ry="12" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#necromancer-p5" fill="#2a1f3a" stroke-width="10"/>
+<g clip-path="url(#necromancer-c6)">
+<use href="#necromancer-p5" x="-4" y="-4" fill="#7a6a94"/>
+<g clip-path="url(#necromancer-c7)"><use href="#necromancer-p5" x="3" y="3" fill="#4a3a5a"/></g>
+</g>
+<use href="#necromancer-p8" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#necromancer-c9)">
+<use href="#necromancer-p8" x="-4" fill="#221d3a"/>
+<use href="#necromancer-p8" x="-12" y="-10" fill="#5a5080"/>
+<g clip-path="url(#necromancer-ca)"><use href="#necromancer-p8" x="7" y="7" fill="#3a3358"/></g>
+</g>
+<path d="M262 230V404M238 300L230 400M290 300L296 400" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<path d="M228 286L300 278L302 292L228 300Z" fill="#7a2a6a"/>
+<use href="#necromancer-pb" fill="#4a1a3a" stroke-width="8"/>
+<g clip-path="url(#necromancer-cc)">
+<use href="#necromancer-pb" x="-3" y="-3" fill="#a8547a"/>
+<g clip-path="url(#necromancer-cd)"><use href="#necromancer-pb" x="2" y="2" fill="#7a2a6a"/></g>
+</g>
+<use href="#necromancer-pe" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#necromancer-cf)">
+<use href="#necromancer-pe" x="-4" fill="#221d3a"/>
+<use href="#necromancer-pe" x="-6" y="-6" fill="#5a5080"/>
+<g clip-path="url(#necromancer-cg)"><use href="#necromancer-pe" x="7" y="7" fill="#3a3358"/></g>
+</g>
+<use href="#necromancer-ph" fill="#8f897e" stroke-width="10"/>
+<g clip-path="url(#necromancer-ci)">
+<use href="#necromancer-ph" x="-4" y="-4" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-cj)"><use href="#necromancer-ph" x="3" y="3" fill="#c9c4b8"/></g>
+</g>
+<circle cx="332" cy="136" r="56" fill="url(#necromancer-rk)"/>
+<use href="#necromancer-pl" fill="#a89f8a" stroke-width="10"/>
+<g clip-path="url(#necromancer-cm)">
+<use href="#necromancer-pl" x="-5" y="-5" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-cn)"><use href="#necromancer-pl" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<path d="M321 130A5 6 0 1 0 331 130A5 6 0 1 0 321 130Z" fill="#1d0842"/>
+<path d="M335 130A5 6 0 1 0 345 130A5 6 0 1 0 335 130Z" fill="#1d0842"/>
+<path d="M324 130A3 3 0 1 0 329 130A3 3 0 1 0 324 130Z" fill="#e9c8ff"/>
+<path d="M338 130A3 3 0 1 0 343 130A3 3 0 1 0 338 130Z" fill="#e9c8ff"/>
+<path d="M326 146V152M333 146V153M340 146V152" fill="none" stroke-width="3"/>
+<use href="#necromancer-po" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#necromancer-cp)">
+<use href="#necromancer-po" x="-4" fill="#221d3a"/>
+<use href="#necromancer-po" x="-6" y="-6" fill="#5a5080"/>
+<g clip-path="url(#necromancer-cq)"><use href="#necromancer-po" x="7" y="7" fill="#3a3358"/></g>
+</g>
+<use href="#necromancer-pr" fill="#8f897e" stroke-width="10"/>
+<g clip-path="url(#necromancer-cs)">
+<use href="#necromancer-pr" x="-4" y="-4" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-ct)"><use href="#necromancer-pr" x="3" y="3" fill="#c9c4b8"/></g>
+</g>
+<use href="#necromancer-pu" fill="#8f897e" stroke-width="6"/>
+<g clip-path="url(#necromancer-cv)">
+<use href="#necromancer-pu" x="-2" y="-2" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-cw)"><use href="#necromancer-pu" x="1" y="1" fill="#c9c4b8"/></g>
+</g>
+<use href="#necromancer-px" fill="#8f897e" stroke-width="6"/>
+<g clip-path="url(#necromancer-cy)">
+<use href="#necromancer-px" x="-2" y="-2" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-cz)"><use href="#necromancer-px" x="1" y="1" fill="#c9c4b8"/></g>
+</g>
+<use href="#necromancer-p10" fill="#8f897e" stroke-width="6"/>
+<g clip-path="url(#necromancer-c11)">
+<use href="#necromancer-p10" x="-2" y="-2" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-c12)"><use href="#necromancer-p10" x="1" y="1" fill="#c9c4b8"/></g>
+</g>
+<use href="#necromancer-p13" fill="#8f897e" stroke-width="6"/>
+<g clip-path="url(#necromancer-c14)">
+<use href="#necromancer-p13" x="-2" y="-2" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-c15)"><use href="#necromancer-p13" x="1" y="1" fill="#c9c4b8"/></g>
+</g>
+<circle cx="182" cy="112" r="46" fill="url(#necromancer-r16)"/>
+<path d="M162 104A20 20 0 1 0 202 104A20 20 0 1 0 162 104ZM182 84V124M162 104H202" fill="none" stroke="#e0b8ff" stroke-width="3" stroke-opacity="0.8"/>
+<use href="#necromancer-p17" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#necromancer-c18)">
+<use href="#necromancer-p17" x="-4" fill="#221d3a"/>
+<use href="#necromancer-p17" x="-10" y="-8" fill="#5a5080"/>
+<g clip-path="url(#necromancer-c19)"><use href="#necromancer-p17" x="7" y="7" fill="#3a3358"/></g>
+</g>
+<use href="#necromancer-p1a" fill="#8f897e" stroke-width="12"/>
+<g clip-path="url(#necromancer-c1b)">
+<use href="#necromancer-p1a" x="-6" y="-5" fill="#e6e2d8"/>
+<g clip-path="url(#necromancer-c1c)"><use href="#necromancer-p1a" x="4" y="4" fill="#c9c4b8"/></g>
+</g>
+<path d="M246 132C254 128 276 128 284 134L284 148C276 142 254 142 246 148Z" fill="#160b2e"/>
+<path d="M250 158L262 162M282 158L270 162" fill="none" stroke-width="4"/>
+<circle cx="256" cy="166" r="12" fill="url(#necromancer-r1d)"/>
+<circle cx="276" cy="166" r="12" fill="url(#necromancer-r1e)"/>
+<path d="M253 166A4 3 0 1 0 260 166A4 3 0 1 0 253 166Z" fill="#ffffff"/>
+<path d="M273 166A4 3 0 1 0 280 166A4 3 0 1 0 273 166Z" fill="#ffffff"/>
+<path d="M252 178L256 186M280 178L276 186" fill="none" stroke-width="2.5" stroke-opacity="0.5"/>
+<use href="#necromancer-p1f" fill="#160b2e" stroke-width="6"/>
+<g clip-path="url(#necromancer-c1g)">
+<use href="#necromancer-p1f" x="-2" y="-2" fill="#2a2448"/>
+</g>
+<path d="M260 190H272" fill="none" stroke-width="2.5"/>
+<circle cx="140" cy="382" r="50" fill="url(#necromancer-r1i)"/>
+<use href="#necromancer-p1j" fill="#c77dff" stroke-width="10"/>
+<g clip-path="url(#necromancer-c1k)">
+<use href="#necromancer-p1j" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p1j" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c1l)"><use href="#necromancer-p1j" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<path d="M127 350A5 6 0 1 0 137 350A5 6 0 1 0 127 350Z" fill="#1d0842"/>
+<path d="M143 350A5 6 0 1 0 153 350A5 6 0 1 0 143 350Z" fill="#1d0842"/>
+<path d="M130 350A2 2 0 1 0 134 350A2 2 0 1 0 130 350Z" fill="#e9c8ff"/>
+<path d="M146 350A2 2 0 1 0 150 350A2 2 0 1 0 146 350Z" fill="#e9c8ff"/>
+<use href="#necromancer-p1m" fill="#c77dff" stroke-width="8"/>
+<g clip-path="url(#necromancer-c1n)">
+<use href="#necromancer-p1m" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p1m" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c1o)"><use href="#necromancer-p1m" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p1p" fill="#c77dff" stroke-width="6"/>
+<g clip-path="url(#necromancer-c1q)">
+<use href="#necromancer-p1p" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p1p" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c1r)"><use href="#necromancer-p1p" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p1s" fill="#c77dff" stroke-width="6"/>
+<g clip-path="url(#necromancer-c1t)">
+<use href="#necromancer-p1s" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p1s" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c1u)"><use href="#necromancer-p1s" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p1v" fill="#c77dff" stroke-width="6"/>
+<g clip-path="url(#necromancer-c1w)">
+<use href="#necromancer-p1v" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p1v" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c1x)"><use href="#necromancer-p1v" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p1y" fill="#2c2238" stroke-width="10"/>
+<g clip-path="url(#necromancer-c1z)">
+<use href="#necromancer-p1y" x="-6" y="-6" fill="#6a5680"/>
+<g clip-path="url(#necromancer-c20)"><use href="#necromancer-p1y" x="3" y="3" fill="#4a3a5a"/></g>
+</g>
+<circle cx="390" cy="386" r="43" fill="url(#necromancer-r21)"/>
+<use href="#necromancer-p22" fill="#c77dff" stroke-width="10"/>
+<g clip-path="url(#necromancer-c23)">
+<use href="#necromancer-p22" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p22" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c24)"><use href="#necromancer-p22" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<path d="M379 360A4 5 0 1 0 387 360A4 5 0 1 0 379 360Z" fill="#1d0842"/>
+<path d="M393 360A4 5 0 1 0 401 360A4 5 0 1 0 393 360Z" fill="#1d0842"/>
+<path d="M382 360A2 2 0 1 0 385 360A2 2 0 1 0 382 360Z" fill="#e9c8ff"/>
+<path d="M395 360A2 2 0 1 0 399 360A2 2 0 1 0 395 360Z" fill="#e9c8ff"/>
+<use href="#necromancer-p25" fill="#c77dff" stroke-width="8"/>
+<g clip-path="url(#necromancer-c26)">
+<use href="#necromancer-p25" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p25" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c27)"><use href="#necromancer-p25" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p28" fill="#c77dff" stroke-width="6"/>
+<g clip-path="url(#necromancer-c29)">
+<use href="#necromancer-p28" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p28" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c2a)"><use href="#necromancer-p28" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p2b" fill="#c77dff" stroke-width="6"/>
+<g clip-path="url(#necromancer-c2c)">
+<use href="#necromancer-p2b" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p2b" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c2d)"><use href="#necromancer-p2b" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p2e" fill="#c77dff" stroke-width="6"/>
+<g clip-path="url(#necromancer-c2f)">
+<use href="#necromancer-p2e" x="-3" fill="#a89f8a"/>
+<use href="#necromancer-p2e" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#necromancer-c2g)"><use href="#necromancer-p2e" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#necromancer-p2h" fill="#2c2238" stroke-width="10"/>
+<g clip-path="url(#necromancer-c2i)">
+<use href="#necromancer-p2h" x="-6" y="-6" fill="#6a5680"/>
+<g clip-path="url(#necromancer-c2j)"><use href="#necromancer-p2h" x="3" y="3" fill="#4a3a5a"/></g>
+</g>
+<circle cx="320" cy="156" r="3" fill="#c77dff" fill-opacity="0.44"/>
+<circle cx="120" cy="321" r="2" fill="#e9e2cf" fill-opacity="0.65"/>
+<circle cx="177" cy="298" r="3" fill="#c77dff" fill-opacity="0.52"/>
+<circle cx="170" cy="158" r="3" fill="#e9e2cf" fill-opacity="0.76"/>
+<circle cx="190" cy="240" r="3" fill="#c77dff" fill-opacity="0.72"/>
+<circle cx="279" cy="277" r="3" fill="#e9e2cf" fill-opacity="0.57"/>
+<circle cx="112" cy="119" r="3" fill="#c77dff" fill-opacity="0.53"/>
+<circle cx="234" cy="284" r="3" fill="#e9e2cf" fill-opacity="0.38"/>
+<circle cx="168" cy="333" r="2" fill="#c77dff" fill-opacity="0.88"/>
+<circle cx="199" cy="132" r="3" fill="#e9e2cf" fill-opacity="0.46"/>
+<circle cx="223" cy="311" r="2" fill="#c77dff" fill-opacity="0.77"/>
+<circle cx="174" cy="335" r="3" fill="#e9e2cf" fill-opacity="0.55"/>
+<circle cx="153" cy="166" r="3" fill="#c77dff" fill-opacity="0.66"/>
+<circle cx="329" cy="136" r="2" fill="#e9e2cf" fill-opacity="0.86"/>
+</svg>

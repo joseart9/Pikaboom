@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="curse-weaver-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#120820"/><stop offset="0.55" stop-color="#30124a"/><stop offset="1" stop-color="#100818"/></linearGradient><radialGradient id="curse-weaver-r1" gradientUnits="userSpaceOnUse" cx="256" cy="260" r="240"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.22"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.099"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><path id="curse-weaver-p2" d="M83 160L73 172L61 168L60 152L74 144Z"/><clipPath id="curse-weaver-c3"><use href="#curse-weaver-p2"/></clipPath><clipPath id="curse-weaver-c4"><use href="#curse-weaver-p2" x="-2" y="-2"/></clipPath><path id="curse-weaver-p5" d="M134 100L123 111L110 108L112 93L124 84Z"/><clipPath id="curse-weaver-c6"><use href="#curse-weaver-p5"/></clipPath><clipPath id="curse-weaver-c7"><use href="#curse-weaver-p5" x="-2" y="-2"/></clipPath><path id="curse-weaver-p8" d="M413 120L404 133L392 127L390 112L404 105Z"/><clipPath id="curse-weaver-c9"><use href="#curse-weaver-p8"/></clipPath><clipPath id="curse-weaver-ca"><use href="#curse-weaver-p8" x="-2" y="-2"/></clipPath><path id="curse-weaver-pb" d="M462 180L454 194L441 188L440 171L454 165Z"/><clipPath id="curse-weaver-cc"><use href="#curse-weaver-pb"/></clipPath><clipPath id="curse-weaver-cd"><use href="#curse-weaver-pb" x="-2" y="-2"/></clipPath><linearGradient id="curse-weaver-le" gradientUnits="userSpaceOnUse" x1="0" y1="382" x2="0" y2="512"><stop offset="0" stop-color="#2a1240"/><stop offset="1" stop-color="#140820"/></linearGradient><path id="curse-weaver-pf" d="M68 420V372h24v48Z"/><clipPath id="curse-weaver-cg"><use href="#curse-weaver-pf"/></clipPath><clipPath id="curse-weaver-ch"><use href="#curse-weaver-pf" x="-4" y="-4"/></clipPath><radialGradient id="curse-weaver-ri" gradientUnits="userSpaceOnUse" cx="80" cy="354" r="40"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.8"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><path id="curse-weaver-pj" d="M420 420V372h24v48Z"/><clipPath id="curse-weaver-ck"><use href="#curse-weaver-pj"/></clipPath><clipPath id="curse-weaver-cl"><use href="#curse-weaver-pj" x="-4" y="-4"/></clipPath><radialGradient id="curse-weaver-rm" gradientUnits="userSpaceOnUse" cx="432" cy="354" r="40"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.8"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><path id="curse-weaver-pn" d="M200 150C211 128 239 112 256 112C273 112 301 128 312 150C323 172 324 229 330 260C336 292 363 350 352 360C341 371 285 330 256 330C227 330 171 371 160 360C149 350 176 292 182 260C188 229 189 172 200 150Z"/><clipPath id="curse-weaver-co"><use href="#curse-weaver-pn"/></clipPath><clipPath id="curse-weaver-cp"><use href="#curse-weaver-pn" x="-10" y="-10"/></clipPath><path id="curse-weaver-pq" d="M237 132C231 125 209 101 198 100C187 100 167 118 164 128C161 138 173 164 178 170C184 175 199 163 203 162C206 160 202 161 202 160C202 159 204 158 201 158C199 158 189 166 186 162C182 159 178 138 180 132C181 126 188 117 194 120C201 122 216 144 223 148C229 152 236 150 238 147C240 145 243 139 237 132Z"/><clipPath id="curse-weaver-cr"><use href="#curse-weaver-pq"/></clipPath><clipPath id="curse-weaver-cs"><use href="#curse-weaver-pq" x="-4" y="-4"/></clipPath><path id="curse-weaver-pt" d="M289 148C296 144 311 122 318 120C324 117 331 126 332 132C334 138 330 159 326 162C323 166 313 158 311 158C308 158 310 159 310 160C310 161 306 160 309 162C313 163 328 175 334 170C339 164 351 138 348 128C345 118 325 100 314 100C303 101 281 125 275 132C269 139 272 145 274 147C276 150 283 152 289 148Z"/><clipPath id="curse-weaver-cu"><use href="#curse-weaver-pt"/></clipPath><clipPath id="curse-weaver-cv"><use href="#curse-weaver-pt" x="-4" y="-4"/></clipPath><path id="curse-weaver-pw" d="M196 240C220 222 292 222 316 240L360 420H152Z"/><clipPath id="curse-weaver-cx"><use href="#curse-weaver-pw"/></clipPath><clipPath id="curse-weaver-cy"><use href="#curse-weaver-pw" x="-12" y="-10"/></clipPath><path id="curse-weaver-pz" d="M228 230L256 290L284 230C272 222 240 222 228 230Z"/><clipPath id="curse-weaver-c10"><use href="#curse-weaver-pz"/></clipPath><clipPath id="curse-weaver-c11"><use href="#curse-weaver-pz" x="-6" y="-6"/></clipPath><path id="curse-weaver-p12" d="M222 231C214 223 186 207 174 193C161 180 144 147 137 138C130 129 128 134 126 135C124 136 118 136 123 146C128 157 146 191 158 207C171 222 197 243 206 249C216 255 221 250 223 248C226 245 229 239 222 231Z"/><clipPath id="curse-weaver-c13"><use href="#curse-weaver-p12"/></clipPath><clipPath id="curse-weaver-c14"><use href="#curse-weaver-p12" x="-10" y="-10"/></clipPath><path id="curse-weaver-p15" d="M306 249C315 243 341 222 354 207C366 191 384 157 389 146C394 136 388 136 386 135C384 134 382 129 375 138C368 147 351 180 338 193C326 207 298 223 290 231C283 239 286 245 289 248C291 250 296 255 306 249Z"/><clipPath id="curse-weaver-c16"><use href="#curse-weaver-p15"/></clipPath><clipPath id="curse-weaver-c17"><use href="#curse-weaver-p15" x="-10" y="-10"/></clipPath><path id="curse-weaver-p18" d="M206 254C199 260 180 285 171 293C161 301 148 304 143 308C138 311 139 315 140 317C141 319 143 322 149 320C155 319 171 315 181 307C192 300 216 278 222 270C228 262 224 257 222 254C219 252 214 248 206 254Z"/><clipPath id="curse-weaver-c19"><use href="#curse-weaver-p18"/></clipPath><clipPath id="curse-weaver-c1a"><use href="#curse-weaver-p18" x="-10" y="-10"/></clipPath><path id="curse-weaver-p1b" d="M290 270C296 278 320 300 331 307C341 315 357 319 363 320C369 322 371 319 372 317C373 315 374 311 369 308C364 304 351 301 341 293C332 285 313 260 306 254C298 248 293 252 290 254C288 257 284 262 290 270Z"/><clipPath id="curse-weaver-c1c"><use href="#curse-weaver-p1b"/></clipPath><clipPath id="curse-weaver-c1d"><use href="#curse-weaver-p1b" x="-10" y="-10"/></clipPath><path id="curse-weaver-p1e" d="M111 132A13 12 0 1 0 137 132A13 12 0 1 0 111 132Z"/><clipPath id="curse-weaver-c1f"><use href="#curse-weaver-p1e"/></clipPath><clipPath id="curse-weaver-c1g"><use href="#curse-weaver-p1e" x="-3" y="-3"/></clipPath><path id="curse-weaver-p1h" d="M375 132A13 12 0 1 0 401 132A13 12 0 1 0 375 132Z"/><clipPath id="curse-weaver-c1i"><use href="#curse-weaver-p1h"/></clipPath><clipPath id="curse-weaver-c1j"><use href="#curse-weaver-p1h" x="-3" y="-3"/></clipPath><path id="curse-weaver-p1k" d="M127 318A13 12 0 1 0 153 318A13 12 0 1 0 127 318Z"/><clipPath id="curse-weaver-c1l"><use href="#curse-weaver-p1k"/></clipPath><clipPath id="curse-weaver-c1m"><use href="#curse-weaver-p1k" x="-3" y="-3"/></clipPath><path id="curse-weaver-p1n" d="M359 318A13 12 0 1 0 385 318A13 12 0 1 0 359 318Z"/><clipPath id="curse-weaver-c1o"><use href="#curse-weaver-p1n"/></clipPath><clipPath id="curse-weaver-c1p"><use href="#curse-weaver-p1n" x="-3" y="-3"/></clipPath><radialGradient id="curse-weaver-r1q" gradientUnits="userSpaceOnUse" cx="256" cy="262" r="70"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.8"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><path id="curse-weaver-p1r" d="M216 262C236 238 276 238 296 262C276 286 236 286 216 262Z"/><clipPath id="curse-weaver-c1s"><use href="#curse-weaver-p1r"/></clipPath><clipPath id="curse-weaver-c1t"><use href="#curse-weaver-p1r" x="-3" y="-3"/></clipPath><path id="curse-weaver-p1u" d="M244 206L268 206L270 230L242 230Z"/><clipPath id="curse-weaver-c1v"><use href="#curse-weaver-p1u"/></clipPath><clipPath id="curse-weaver-c1w"><use href="#curse-weaver-p1u" x="-4" y="0"/></clipPath><path id="curse-weaver-p1x" d="M226 168C226 159 232 144 236 138C241 132 250 130 256 130C262 130 272 132 276 138C281 144 286 159 286 168C286 177 279 193 274 200C270 207 261 216 256 216C251 216 243 207 238 200C234 193 226 177 226 168Z"/><clipPath id="curse-weaver-c1y"><use href="#curse-weaver-p1x"/></clipPath><clipPath id="curse-weaver-c1z"><use href="#curse-weaver-p1x" x="-8" y="-8"/></clipPath><path id="curse-weaver-p20" d="M222 160C230 126 282 126 290 160C280 146 262 140 256 152C250 140 232 146 222 160Z"/><clipPath id="curse-weaver-c21"><use href="#curse-weaver-p20"/></clipPath><clipPath id="curse-weaver-c22"><use href="#curse-weaver-p20" x="-3" y="-3"/></clipPath><radialGradient id="curse-weaver-r23" gradientUnits="userSpaceOnUse" cx="242" cy="172" r="14"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.9"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.405"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><radialGradient id="curse-weaver-r24" gradientUnits="userSpaceOnUse" cx="270" cy="172" r="14"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.9"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.405"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#curse-weaver-l0)"/>
+<circle cx="256" cy="260" r="240" fill="url(#curse-weaver-r1)"/>
+<path d="M70 0V150" fill="none" stroke="#5a2a62" stroke-width="2"/>
+<use href="#curse-weaver-p2" fill="#200826" stroke-width="6"/>
+<g clip-path="url(#curse-weaver-c3)">
+<use href="#curse-weaver-p2" x="-2" y="-2" fill="#5a2a62"/>
+<g clip-path="url(#curse-weaver-c4)"><use href="#curse-weaver-p2" x="1" y="1" fill="#3a1440"/></g>
+</g>
+<path d="M120 0V90" fill="none" stroke="#5a2a62" stroke-width="2"/>
+<use href="#curse-weaver-p5" fill="#200826" stroke-width="6"/>
+<g clip-path="url(#curse-weaver-c6)">
+<use href="#curse-weaver-p5" x="-2" y="-2" fill="#5a2a62"/>
+<g clip-path="url(#curse-weaver-c7)"><use href="#curse-weaver-p5" x="1" y="1" fill="#3a1440"/></g>
+</g>
+<path d="M400 0V110" fill="none" stroke="#5a2a62" stroke-width="2"/>
+<use href="#curse-weaver-p8" fill="#200826" stroke-width="6"/>
+<g clip-path="url(#curse-weaver-c9)">
+<use href="#curse-weaver-p8" x="-2" y="-2" fill="#5a2a62"/>
+<g clip-path="url(#curse-weaver-ca)"><use href="#curse-weaver-p8" x="1" y="1" fill="#3a1440"/></g>
+</g>
+<path d="M450 0V170" fill="none" stroke="#5a2a62" stroke-width="2"/>
+<use href="#curse-weaver-pb" fill="#200826" stroke-width="6"/>
+<g clip-path="url(#curse-weaver-cc)">
+<use href="#curse-weaver-pb" x="-2" y="-2" fill="#5a2a62"/>
+<g clip-path="url(#curse-weaver-cd)"><use href="#curse-weaver-pb" x="1" y="1" fill="#3a1440"/></g>
+</g>
+<path d="M0 418Q256 382 512 418V512H0Z" fill="url(#curse-weaver-le)"/>
+<use href="#curse-weaver-pf" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-cg)">
+<use href="#curse-weaver-pf" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#curse-weaver-ch)"><use href="#curse-weaver-pf" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<circle cx="80" cy="354" r="40" fill="url(#curse-weaver-ri)"/>
+<path d="M73 368C72 364 78 344 80 344C82 344 88 364 87 368C86 372 74 372 73 368Z" fill="#d8f5a2"/>
+<use href="#curse-weaver-pj" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-ck)">
+<use href="#curse-weaver-pj" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#curse-weaver-cl)"><use href="#curse-weaver-pj" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<circle cx="432" cy="354" r="40" fill="url(#curse-weaver-rm)"/>
+<path d="M425 368C424 364 430 344 432 344C434 344 440 364 439 368C438 372 426 372 425 368Z" fill="#d8f5a2"/>
+<use href="#curse-weaver-pn" fill="#0e0612" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-co)">
+<use href="#curse-weaver-pn" x="-10" y="-10" fill="#3a1e46"/>
+<g clip-path="url(#curse-weaver-cp)"><use href="#curse-weaver-pn" x="7" y="7" fill="#1e0e26"/></g>
+</g>
+<use href="#curse-weaver-pq" fill="#241a1a" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-cr)">
+<use href="#curse-weaver-pq" x="-4" y="-4" fill="#7a6262"/>
+<g clip-path="url(#curse-weaver-cs)"><use href="#curse-weaver-pq" x="3" y="3" fill="#4a3a3a"/></g>
+</g>
+<use href="#curse-weaver-pt" fill="#241a1a" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-cu)">
+<use href="#curse-weaver-pt" x="-4" y="-4" fill="#7a6262"/>
+<g clip-path="url(#curse-weaver-cv)"><use href="#curse-weaver-pt" x="3" y="3" fill="#4a3a3a"/></g>
+</g>
+<use href="#curse-weaver-pw" fill="#200826" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-cx)">
+<use href="#curse-weaver-pw" x="-12" y="-10" fill="#5a2a62"/>
+<g clip-path="url(#curse-weaver-cy)"><use href="#curse-weaver-pw" x="7" y="7" fill="#3a1440"/></g>
+</g>
+<use href="#curse-weaver-pz" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c10)">
+<use href="#curse-weaver-pz" x="-6" y="-6" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c11)"><use href="#curse-weaver-pz" x="4" y="4" fill="#9a5aa8"/></g>
+</g>
+<path d="M188 300C220 320 292 320 324 300" fill="none" stroke="#b5e48c" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#curse-weaver-p12" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c13)">
+<use href="#curse-weaver-p12" x="-10" y="-10" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c14)"><use href="#curse-weaver-p12" x="7" y="7" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p15" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c16)">
+<use href="#curse-weaver-p15" x="-10" y="-10" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c17)"><use href="#curse-weaver-p15" x="7" y="7" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p18" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c19)">
+<use href="#curse-weaver-p18" x="-10" y="-10" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1a)"><use href="#curse-weaver-p18" x="7" y="7" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p1b" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c1c)">
+<use href="#curse-weaver-p1b" x="-10" y="-10" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1d)"><use href="#curse-weaver-p1b" x="7" y="7" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p1e" fill="#5e2e6e" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-c1f)">
+<use href="#curse-weaver-p1e" x="-3" y="-3" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1g)"><use href="#curse-weaver-p1e" x="2" y="2" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p1h" fill="#5e2e6e" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-c1i)">
+<use href="#curse-weaver-p1h" x="-3" y="-3" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1j)"><use href="#curse-weaver-p1h" x="2" y="2" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p1k" fill="#5e2e6e" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-c1l)">
+<use href="#curse-weaver-p1k" x="-3" y="-3" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1m)"><use href="#curse-weaver-p1k" x="2" y="2" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p1n" fill="#5e2e6e" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-c1o)">
+<use href="#curse-weaver-p1n" x="-3" y="-3" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1p)"><use href="#curse-weaver-p1n" x="2" y="2" fill="#9a5aa8"/></g>
+</g>
+<path d="M124 132L372 318M388 132L140 318M124 132Q256 190 388 132M140 318Q256 360 372 318M124 132L140 318M388 132L372 318" fill="none" stroke="#b5e48c" stroke-width="10" stroke-opacity="0.35"/>
+<path d="M124 132L372 318M388 132L140 318M124 132Q256 190 388 132M140 318Q256 360 372 318M124 132L140 318M388 132L372 318" fill="none" stroke="#b5e48c" stroke-width="4"/>
+<path d="M124 132L372 318M388 132L140 318M124 132Q256 190 388 132M140 318Q256 360 372 318M124 132L140 318M388 132L372 318" fill="none" stroke="#f4ffe0" stroke-width="1.5"/>
+<circle cx="256" cy="262" r="70" fill="url(#curse-weaver-r1q)"/>
+<use href="#curse-weaver-p1r" fill="#0e0612" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-c1s)">
+<use href="#curse-weaver-p1r" x="-3" y="-3" fill="#3a1e46"/>
+<g clip-path="url(#curse-weaver-c1t)"><use href="#curse-weaver-p1r" x="2" y="2" fill="#1e0e26"/></g>
+</g>
+<path d="M244 262A12 12 0 1 0 268 262A12 12 0 1 0 244 262Z" fill="#b5e48c"/>
+<path d="M252 262A4 10 0 1 0 260 262A4 10 0 1 0 252 262Z" fill="#1d0842"/>
+<use href="#curse-weaver-p1u" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c1v)">
+<use href="#curse-weaver-p1u" x="-4" y="0" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1w)"><use href="#curse-weaver-p1u" x="7" y="7" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p1x" fill="#5e2e6e" stroke-width="12"/>
+<g clip-path="url(#curse-weaver-c1y)">
+<use href="#curse-weaver-p1x" x="-8" y="-8" fill="#c48ad0"/>
+<g clip-path="url(#curse-weaver-c1z)"><use href="#curse-weaver-p1x" x="7" y="7" fill="#9a5aa8"/></g>
+</g>
+<use href="#curse-weaver-p20" fill="#0e0612" stroke-width="8"/>
+<g clip-path="url(#curse-weaver-c21)">
+<use href="#curse-weaver-p20" x="-3" y="-3" fill="#3a1e46"/>
+<g clip-path="url(#curse-weaver-c22)"><use href="#curse-weaver-p20" x="2" y="2" fill="#1e0e26"/></g>
+</g>
+<circle cx="242" cy="172" r="14" fill="url(#curse-weaver-r23)"/>
+<path d="M252 172L232 166L236 178Z" fill="#d8f5a2"/>
+<circle cx="270" cy="172" r="14" fill="url(#curse-weaver-r24)"/>
+<path d="M260 172L280 166L276 178Z" fill="#d8f5a2"/>
+<path d="M246 196C252 200 260 200 266 196C260 204 252 204 246 196Z" fill="#200826"/>
+<path d="M129 114L132 119L129 125L126 119Z" fill="#b5e48c" fill-opacity="0.55"/>
+<path d="M201 155L204 160L201 165L198 160Z" fill="#b5e48c" fill-opacity="0.88"/>
+<path d="M358 97L361 103L358 108L355 103Z" fill="#b5e48c" fill-opacity="0.5"/>
+<path d="M127 370L130 376L127 382L123 376Z" fill="#b5e48c" fill-opacity="0.64"/>
+<path d="M331 111L334 115L331 120L329 115Z" fill="#b5e48c" fill-opacity="0.73"/>
+<path d="M408 153L411 160L408 166L404 160Z" fill="#b5e48c" fill-opacity="0.52"/>
+<path d="M160 316L162 319L160 323L158 319Z" fill="#b5e48c" fill-opacity="0.76"/>
+<path d="M216 236L220 242L216 249L212 242Z" fill="#b5e48c" fill-opacity="0.78"/>
+<path d="M379 350L382 356L379 361L376 356Z" fill="#b5e48c" fill-opacity="0.81"/>
+<path d="M321 157L323 161L321 165L319 161Z" fill="#b5e48c" fill-opacity="0.66"/>
+<path d="M379 360L383 367L379 373L376 367Z" fill="#b5e48c" fill-opacity="0.72"/>
+<path d="M199 350L201 354L199 358L197 354Z" fill="#b5e48c" fill-opacity="0.6"/>
+</svg>

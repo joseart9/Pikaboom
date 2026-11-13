@@ -1,8 +1,9 @@
 // The bottom strip (§17.3): my portrait + mana (left), my hand (centre), deck count + end-turn button (right).
+// UI-08: mana is a large gem gauge (current/max, pips, temporary chip); deck + End Turn share one compact HUD dock.
 import type { EntityId, LegalActions } from "@/game/cards/engine/types";
 import { t } from "@/game/cards/i18n";
-import type { HandCardView, MeView } from "@/game/cards/server/view";
-import { CardBack, EndTurnButton, ManaCrystals, type EndTurnState } from "../skin";
+import type { HandCardView, MeView, SideView } from "@/game/cards/server/view";
+import { CardBack, EndTurnButton, ManaGauge, type EndTurnState } from "../skin";
 import { Hand } from "./Hand";
 import { HeroButton } from "./HeroButton";
 
@@ -30,6 +31,12 @@ const END_TURN_LABEL: Record<EndTurnState, () => string> = {
   pending: () => t("match.pendingButton"),
 };
 
+/** Spoken/tooltip mana text, naming temporary mana when there is some. */
+export function manaLabel(mana: SideView["mana"]): string {
+  const base = t("match.mana", { current: mana.current, max: mana.max });
+  return mana.temporary > 0 ? `${base} ${t("match.manaTemporary", { n: mana.temporary })}` : base;
+}
+
 export function PlayerArea(p: PlayerAreaProps) {
   const { me } = p;
   return (
@@ -46,14 +53,7 @@ export function PlayerArea(p: PlayerAreaProps) {
           size="var(--cg-portrait)"
           onTap={p.onTapEntity}
         />
-        <ManaCrystals
-          current={me.mana.current}
-          max={me.mana.max}
-          temporary={me.mana.temporary}
-          size="clamp(10px, 2.8dvh, 18px)"
-          compact
-          label={t("match.mana", { current: me.mana.current, max: me.mana.max })}
-        />
+        <ManaGauge current={me.mana.current} max={me.mana.max} temporary={me.mana.temporary} label={manaLabel(me.mana)} />
       </div>
       <Hand
         cards={me.hand}
@@ -65,8 +65,8 @@ export function PlayerArea(p: PlayerAreaProps) {
         onTap={p.onTapHandCard}
       />
       <div className="cg-bottom-right">
-        <span className="cg-counter" data-cg-anchor="my-deck" title={t("match.deckCount", { n: me.deckCount })} aria-label={t("match.deckCount", { n: me.deckCount })}>
-          <CardBack height="clamp(16px, 5dvh, 28px)" />
+        <span className="cg-hud-chip" data-cg-anchor="my-deck" role="img" title={t("match.deckCount", { n: me.deckCount })} aria-label={t("match.deckCount", { n: me.deckCount })}>
+          <CardBack height="var(--cg-chip-card)" />
           {me.deckCount}
         </span>
         <EndTurnButton state={p.endTurnState} label={END_TURN_LABEL[p.endTurnState]()} onPress={p.onEndTurn} />

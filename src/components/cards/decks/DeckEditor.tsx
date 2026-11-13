@@ -24,6 +24,8 @@ import { Filters } from "../collection/Filters";
 import { ToastView } from "../match/Toasts";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { ManaCurve } from "./ManaCurve";
+import { ScreenHeader } from "../screen/ScreenHeader";
+import { StateMessage } from "../screen/StateMessage";
 import { GameIcon } from "../skin";
 
 const FORMAT = DECK_FORMATS.standard;
@@ -158,46 +160,55 @@ export function DeckEditor({ deckId, loadCollection = getCollection, loadDeck = 
 
   return (
     <main className="cg-collection cg-editor">
-      <header className="cg-collection-header">
-        <button type="button" className="cg-button" onClick={back}>
-          {t("decks.back")}
-        </button>
-        <h1 className="cg-collection-title">{id ? t("decks.editTitle") : t("decks.newTitle")}</h1>
-        <span />
-      </header>
+      <ScreenHeader title={id ? t("decks.editTitle") : t("decks.newTitle")} icon="decks" back={{ onClick: back, label: t("decks.back") }}>
+        {inventory && (
+          // Unsaved cue: shape + label, not colour only (dashed amber chip vs solid check chip).
+          <span className={`cg-chip ${dirty ? "cg-chip--warn cg-chip--dirty" : "cg-chip--ok"}`} role="status">
+            <GameIcon name={dirty ? "warning" : "check"} />
+            {dirty ? t("decks.unsaved") : t("decks.upToDate")}
+          </span>
+        )}
+      </ScreenHeader>
 
-      {load.status === "loading" && <div className="cg-center-message">{t("decks.loading")}</div>}
+      {load.status === "loading" && <StateMessage kind="loading" text={t("decks.loading")} fill />}
       {load.status === "error" && (
-        <div className="cg-center-message">
-          <p>{load.message}</p>
-          <button
-            type="button"
-            className="cg-button cg-button--primary"
-            onClick={() => {
-              setLoad({ status: "loading" });
-              setAttempt((n) => n + 1);
-            }}
-          >
-            {t("decks.retry")}
-          </button>
-        </div>
+        <StateMessage
+          kind="error"
+          text={load.message}
+          fill
+          action={
+            <button
+              type="button"
+              className="cg-button cg-button--primary"
+              onClick={() => {
+                setLoad({ status: "loading" });
+                setAttempt((n) => n + 1);
+              }}
+            >
+              {t("decks.retry")}
+            </button>
+          }
+        />
       )}
 
       {inventory && (
         <div className="cg-editor-body">
           <section className="cg-editor-pool" aria-label={t("collection.title")}>
             <div className="cg-editor-toolbar">
-              <input
-                type="search"
-                className="cg-filter-search"
-                value={filter.query}
-                maxLength={60}
-                placeholder={t("collection.search")}
-                aria-label={t("collection.searchLabel")}
-                autoComplete="off"
-                spellCheck={false}
-                onChange={(e) => setFilter({ ...filter, query: e.target.value })}
-              />
+              <span className="cg-search-field">
+                <GameIcon name="search" className="cg-search-icon" />
+                <input
+                  type="search"
+                  className="cg-filter-search"
+                  value={filter.query}
+                  maxLength={60}
+                  placeholder={t("collection.search")}
+                  aria-label={t("collection.searchLabel")}
+                  autoComplete="off"
+                  spellCheck={false}
+                  onChange={(e) => setFilter({ ...filter, query: e.target.value })}
+                />
+              </span>
               <div className="cg-filter-group cg-filter-group--cost" role="group" aria-label={t("collection.cost")}>
                 {COST_BUCKETS.map((c) => (
                   <button
@@ -225,7 +236,7 @@ export function DeckEditor({ deckId, loadCollection = getCollection, loadDeck = 
             </div>
             <div className="cg-collection-grid-wrap">
               {pool.length === 0 ? (
-                <p className="cg-collection-empty">{t("collection.empty")}</p>
+                <StateMessage kind="empty" icon="search" text={t("collection.empty")} />
               ) : (
                 <ul className="cg-collection-grid cg-editor-grid">
                   {pool.map((def) => {
@@ -247,12 +258,12 @@ export function DeckEditor({ deckId, loadCollection = getCollection, loadDeck = 
                           }}
                         >
                           <span className="cg-coll-card">
-                            <CardFace def={def} locked={locked} />
+                            <CardFace def={def} locked={locked} lazyArt />
                           </span>
                           {inDeck > 0 && <span className="cg-coll-qty">{t("decks.inDeck", { n: inDeck })}</span>}
                         </button>
                         <button type="button" className="cg-editor-inspect" aria-label={`${t("decks.inspect")} · ${cardName(def.id)}`} onClick={() => setInspect(def)}>
-                          i
+                          <GameIcon name="info" />
                         </button>
                       </li>
                     );
@@ -276,27 +287,35 @@ export function DeckEditor({ deckId, loadCollection = getCollection, loadDeck = 
               <span className={`cg-chip${total === SIZE ? " cg-chip--ok" : " cg-chip--warn"}`}>{t("decks.cards", { n: total, total: SIZE })}</span>
               <ManaCurve curve={curve} />
             </div>
-            <ul className="cg-editor-rows">
+            <ul className="cg-editor-rows" aria-label={t("decks.deckCards")}>
               {rows.length === 0 && <li className="cg-editor-empty">{t("decks.emptyDeck")}</li>}
-              {rows.map(({ def, count }) => (
-                <li key={def.id}>
-                  <button
-                    type="button"
-                    className={`cg-editor-row cg-editor-row--${def.rarity}`}
-                    aria-label={t("decks.removeCard", { name: cardName(def.id) })}
-                    onClick={() => setEntries((e) => removeCard(e, def.id))}
-                  >
-                    <span className="cg-editor-row-cost">{def.cost}</span>
-                    <span className="cg-editor-row-name">{cardName(def.id)}</span>
-                    <span className="cg-editor-row-count">{t("decks.inDeck", { n: count })}</span>
-                  </button>
-                </li>
-              ))}
+              {/* Each row: cost gem · name (opens the card) · ×n · − / + quantity controls. */}
+              {rows.map(({ def, count }) => {
+                const name = cardName(def.id);
+                const canAdd = addProblem(entries, def.id, inventory, FORMAT) === null;
+                return (
+                  <li key={def.id} className={`cg-editor-row cg-editor-row--${def.rarity}`}>
+                    <button type="button" className="cg-editor-row-main" aria-label={`${t("decks.inspect")} · ${name}`} onClick={() => setInspect(def)}>
+                      <span className="cg-editor-row-cost">{def.cost}</span>
+                      <span className="cg-editor-row-name">{name}</span>
+                      <span className="cg-editor-row-count">{t("decks.inDeck", { n: count })}</span>
+                    </button>
+                    <button type="button" className="cg-editor-qty" aria-label={t("decks.removeCard", { name })} onClick={() => setEntries((e) => removeCard(e, def.id))}>
+                      <GameIcon name="minus" />
+                    </button>
+                    <button type="button" className="cg-editor-qty" aria-label={t("decks.addOne", { name })} aria-disabled={!canAdd} onClick={() => add(def)}>
+                      <GameIcon name="plus" />
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
             {problems.length > 0 ? (
               <ul className="cg-editor-problems" aria-label={t("decks.problems")}>
                 {problems.slice(0, 3).map((p, i) => (
-                  <li key={i}>{deckProblemText(p)}</li>
+                  <li key={i}>
+                    <GameIcon name="warning" className="cg-mark cg-mark--warn" /> {deckProblemText(p)}
+                  </li>
                 ))}
               </ul>
             ) : (

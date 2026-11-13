@@ -68,3 +68,58 @@ export function ManaCrystals({ current, max, temporary, size, label, compact = f
     </span>
   );
 }
+
+export interface ManaGaugeProps {
+  current: number;
+  max: number;
+  temporary: number;
+  label: string;
+  /** Show the row of crystal pips next to the gem (off for the foe's compact strip). */
+  pips?: boolean;
+}
+
+// A large cut gem (24×28 box), light from the upper left: ink silhouette, deep base, lit facets, highlight.
+const GEM_OUTLINE = "M12 0.6 23 7.4V20.6L12 27.4 1 20.6V7.4Z";
+const GEM_BODY = "M12 2.4 21.4 8.2V19.8L12 25.6 2.6 19.8V8.2Z";
+const GEM_LIT = "M12 2.4V25.6L2.6 19.8V8.2Z";
+const GEM_TABLE = "M12 7 17 10V18L12 21 7 18V10Z";
+const GEM_SHINE = "M5 9.4 9.6 6.6 9.6 8.4 5 11.2Z";
+
+/**
+ * UI-08 HUD mana: the available amount on a big faceted gem, "/max" beside it, crystal pips for spent vs available,
+ * and temporary mana as a separate pale "+N" spark chip (shape + label, not colour only). Styles: `.cg-mana-gauge*`.
+ */
+export function ManaGauge({ current, max, temporary, label, pips = true }: ManaGaugeProps) {
+  const base = Math.max(0, current - temporary);
+  const kinds: Kind[] = Array.from({ length: Math.max(max, base) }, (_, i) => (i < base ? "full" : "empty"));
+  return (
+    <span className={`cg-mana-gauge${current === 0 ? " cg-mana-gauge--spent" : ""}`} role="img" aria-label={label} title={label}>
+      <span className="cg-mana-gauge-gem">
+        <svg viewBox="0 0 24 28" aria-hidden>
+          <path d={GEM_OUTLINE} fill="#1d0842" />
+          <path d={GEM_BODY} fill={current === 0 ? "#2a2550" : "#1f6fd1"} />
+          <path d={GEM_LIT} fill={current === 0 ? "#3a3566" : "var(--cg-mana)"} />
+          <path d={GEM_TABLE} fill={current === 0 ? "#ffffff10" : "#7cc8ff"} opacity={0.55} />
+          <path d={GEM_SHINE} fill="#e6f6ff" opacity={current === 0 ? 0.3 : 0.95} />
+        </svg>
+        {/* Re-keyed on every change so the one-shot "tick" (UI-09 gem spend/gain feedback, CSS only) replays. */}
+        <span key={current} className="cg-mana-gauge-num cg-mana-gauge-num--tick">
+          {current}
+        </span>
+      </span>
+      <span className="cg-mana-gauge-side">
+        <span className="cg-mana-gauge-max">
+          /{max}
+          {temporary > 0 && <span className="cg-mana-gauge-temp">+{temporary}</span>}
+        </span>
+        {pips && kinds.length > 0 && (
+          <span className="cg-mana-gauge-pips" aria-hidden>
+            {kinds.map((kind, i) => (
+              <Crystal key={i} kind={kind} size="var(--cg-pip)" />
+            ))}
+          </span>
+        )}
+      </span>
+    </span>
+  );
+}

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="vampire-bat-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1a0618"/><stop offset="0.55" stop-color="#4a1030"/><stop offset="1" stop-color="#16061a"/></linearGradient><radialGradient id="vampire-bat-r1" gradientUnits="userSpaceOnUse" cx="256" cy="220" r="280"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.135"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><radialGradient id="vampire-bat-r2" gradientUnits="userSpaceOnUse" cx="256" cy="206" r="190"><stop offset="0" stop-color="#ffd6e0" stop-opacity="0.35"/><stop offset="0.45" stop-color="#ffd6e0" stop-opacity="0.1575"/><stop offset="1" stop-color="#ffd6e0" stop-opacity="0"/></radialGradient><path id="vampire-bat-p3" d="M128 206A128 128 0 1 0 384 206A128 128 0 1 0 128 206Z"/><clipPath id="vampire-bat-c4"><use href="#vampire-bat-p3"/></clipPath><clipPath id="vampire-bat-c5"><use href="#vampire-bat-p3" x="-16" y="-16"/></clipPath><path id="vampire-bat-p6" d="M280 226L362 168L448 140Q425 179 460 228Q418 233 430 300Q385 268 362 330Q343 278 306 330Q312 268 272 300Z"/><clipPath id="vampire-bat-c7"><use href="#vampire-bat-p6"/></clipPath><clipPath id="vampire-bat-c8"><use href="#vampire-bat-p6" x="-8" y="-8"/></clipPath><path id="vampire-bat-p9" d="M284 232C298 223 353 183 365 173C378 163 368 166 367 165C366 163 372 155 359 163C345 172 289 210 276 220C263 230 273 228 274 230C275 232 270 240 284 232Z"/><clipPath id="vampire-bat-ca"><use href="#vampire-bat-p9"/></clipPath><clipPath id="vampire-bat-cb"><use href="#vampire-bat-p9" x="-3" y="-3"/></clipPath><path id="vampire-bat-pc" d="M364 173C377 169 434 148 446 143C459 138 448 141 447 140C447 140 458 135 445 139C432 142 373 158 360 163C347 167 356 168 357 170C357 171 350 177 364 173Z"/><clipPath id="vampire-bat-cd"><use href="#vampire-bat-pc"/></clipPath><clipPath id="vampire-bat-ce"><use href="#vampire-bat-pc" x="-3" y="-3"/></clipPath><path id="vampire-bat-pf" d="M363 170C366 167 372 154 373 151C374 148 372 150 372 150C372 150 373 147 371 149C369 152 359 162 357 166C355 169 357 171 358 171C359 172 361 173 363 170Z"/><clipPath id="vampire-bat-cg"><use href="#vampire-bat-pf"/></clipPath><clipPath id="vampire-bat-ch"><use href="#vampire-bat-pf" x="-2" y="-2"/></clipPath><path id="vampire-bat-pi" d="M232 226L150 168L64 140Q87 179 52 228Q94 233 82 300Q127 268 150 330Q169 278 206 330Q200 268 240 300Z"/><clipPath id="vampire-bat-cj"><use href="#vampire-bat-pi"/></clipPath><clipPath id="vampire-bat-ck"><use href="#vampire-bat-pi" x="-8" y="-8"/></clipPath><path id="vampire-bat-pl" d="M236 220C223 210 167 172 153 163C140 155 146 163 145 165C144 166 134 163 147 173C159 183 214 223 228 232C242 240 237 232 238 230C239 228 249 230 236 220Z"/><clipPath id="vampire-bat-cm"><use href="#vampire-bat-pl"/></clipPath><clipPath id="vampire-bat-cn"><use href="#vampire-bat-pl" x="-3" y="-3"/></clipPath><path id="vampire-bat-po" d="M152 163C139 158 80 142 67 139C54 135 65 140 65 140C64 141 53 138 66 143C78 148 135 169 148 173C162 177 155 171 155 170C156 168 165 167 152 163Z"/><clipPath id="vampire-bat-cp"><use href="#vampire-bat-po"/></clipPath><clipPath id="vampire-bat-cq"><use href="#vampire-bat-po" x="-3" y="-3"/></clipPath><path id="vampire-bat-pr" d="M155 166C153 162 143 152 141 149C139 147 140 150 140 150C140 150 138 148 139 151C140 154 146 167 149 170C151 173 153 172 154 171C155 171 157 169 155 166Z"/><clipPath id="vampire-bat-cs"><use href="#vampire-bat-pr"/></clipPath><clipPath id="vampire-bat-ct"><use href="#vampire-bat-pr" x="-2" y="-2"/></clipPath><path id="vampire-bat-pu" d="M236 298C234 304 230 322 230 330C230 337 234 344 235 347C236 350 238 349 239 349C240 349 241 348 241 345C241 342 237 337 238 330C239 324 247 307 248 302C249 296 245 295 244 294C242 294 238 293 236 298Z"/><clipPath id="vampire-bat-cv"><use href="#vampire-bat-pu"/></clipPath><clipPath id="vampire-bat-cw"><use href="#vampire-bat-pu" x="-3" y="-3"/></clipPath><path id="vampire-bat-px" d="M264 302C265 307 273 324 274 330C275 337 271 342 271 345C271 348 272 349 273 349C274 349 276 350 277 347C278 344 282 337 282 330C282 322 278 304 276 298C274 293 270 294 268 294C267 295 263 296 264 302Z"/><clipPath id="vampire-bat-cy"><use href="#vampire-bat-px"/></clipPath><clipPath id="vampire-bat-cz"><use href="#vampire-bat-px" x="-3" y="-3"/></clipPath><path id="vampire-bat-p10" d="M256 206C267 206 285 216 292 226C299 236 301 257 300 270C299 283 291 303 284 310C277 318 264 320 256 320C248 320 235 318 228 310C221 303 213 283 212 270C211 257 213 236 220 226C227 216 245 206 256 206Z"/><clipPath id="vampire-bat-c11"><use href="#vampire-bat-p10"/></clipPath><clipPath id="vampire-bat-c12"><use href="#vampire-bat-p10" x="-10" y="-10"/></clipPath><path id="vampire-bat-p13" d="M248 180L220 112L216 190Z"/><clipPath id="vampire-bat-c14"><use href="#vampire-bat-p13"/></clipPath><clipPath id="vampire-bat-c15"><use href="#vampire-bat-p13" x="-5" y="-5"/></clipPath><path id="vampire-bat-p16" d="M264 180L292 112L296 190Z"/><clipPath id="vampire-bat-c17"><use href="#vampire-bat-p16"/></clipPath><clipPath id="vampire-bat-c18"><use href="#vampire-bat-p16" x="-5" y="-5"/></clipPath><path id="vampire-bat-p19" d="M220 196C221 189 228 176 236 172C244 168 268 168 276 172C284 176 291 189 292 196C293 204 287 217 282 222C277 227 264 232 256 232C248 232 235 227 230 222C225 217 219 204 220 196Z"/><clipPath id="vampire-bat-c1a"><use href="#vampire-bat-p19"/></clipPath><clipPath id="vampire-bat-c1b"><use href="#vampire-bat-p19" x="-8" y="-8"/></clipPath><radialGradient id="vampire-bat-r1c" gradientUnits="userSpaceOnUse" cx="240" cy="194" r="18"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><radialGradient id="vampire-bat-r1d" gradientUnits="userSpaceOnUse" cx="272" cy="194" r="18"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><path id="vampire-bat-p1e" d="M136 387C139 394 144 398 144 403A8 8 0 0 1 128 403C128 398 133 394 136 387Z"/><clipPath id="vampire-bat-c1f"><use href="#vampire-bat-p1e"/></clipPath><clipPath id="vampire-bat-c1g"><use href="#vampire-bat-p1e" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1h" d="M146 355C148 362 153 365 153 370A7 7 0 0 1 138 370C138 365 143 362 146 355Z"/><clipPath id="vampire-bat-c1i"><use href="#vampire-bat-p1h"/></clipPath><clipPath id="vampire-bat-c1j"><use href="#vampire-bat-p1h" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1k" d="M158 325C161 331 165 334 165 339A7 7 0 0 1 151 339C151 334 155 331 158 325Z"/><clipPath id="vampire-bat-c1l"><use href="#vampire-bat-p1k"/></clipPath><clipPath id="vampire-bat-c1m"><use href="#vampire-bat-p1k" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1n" d="M174 298C176 303 180 306 180 310A6 6 0 0 1 168 310C168 306 171 303 174 298Z"/><clipPath id="vampire-bat-c1o"><use href="#vampire-bat-p1n"/></clipPath><clipPath id="vampire-bat-c1p"><use href="#vampire-bat-p1n" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1q" d="M192 273C194 278 197 280 197 283A5 5 0 0 1 187 283C187 280 190 278 192 273Z"/><clipPath id="vampire-bat-c1r"><use href="#vampire-bat-p1q"/></clipPath><clipPath id="vampire-bat-c1s"><use href="#vampire-bat-p1q" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1t" d="M214 250C215 254 218 256 218 259A5 5 0 0 1 209 259C209 256 212 254 214 250Z"/><clipPath id="vampire-bat-c1u"><use href="#vampire-bat-p1t"/></clipPath><clipPath id="vampire-bat-c1v"><use href="#vampire-bat-p1t" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1w" d="M376 387C379 394 384 398 384 403A8 8 0 0 1 368 403C368 398 373 394 376 387Z"/><clipPath id="vampire-bat-c1x"><use href="#vampire-bat-p1w"/></clipPath><clipPath id="vampire-bat-c1y"><use href="#vampire-bat-p1w" x="-2" y="-2"/></clipPath><path id="vampire-bat-p1z" d="M367 355C369 362 374 365 374 370A7 7 0 0 1 359 370C359 365 364 362 367 355Z"/><clipPath id="vampire-bat-c20"><use href="#vampire-bat-p1z"/></clipPath><clipPath id="vampire-bat-c21"><use href="#vampire-bat-p1z" x="-2" y="-2"/></clipPath><path id="vampire-bat-p22" d="M354 325C357 331 361 334 361 339A7 7 0 0 1 347 339C347 334 351 331 354 325Z"/><clipPath id="vampire-bat-c23"><use href="#vampire-bat-p22"/></clipPath><clipPath id="vampire-bat-c24"><use href="#vampire-bat-p22" x="-2" y="-2"/></clipPath><path id="vampire-bat-p25" d="M339 298C341 303 345 306 345 310A6 6 0 0 1 333 310C333 306 336 303 339 298Z"/><clipPath id="vampire-bat-c26"><use href="#vampire-bat-p25"/></clipPath><clipPath id="vampire-bat-c27"><use href="#vampire-bat-p25" x="-2" y="-2"/></clipPath><path id="vampire-bat-p28" d="M320 273C322 278 325 280 325 283A5 5 0 0 1 315 283C315 280 318 278 320 273Z"/><clipPath id="vampire-bat-c29"><use href="#vampire-bat-p28"/></clipPath><clipPath id="vampire-bat-c2a"><use href="#vampire-bat-p28" x="-2" y="-2"/></clipPath><path id="vampire-bat-p2b" d="M299 250C300 254 303 256 303 259A5 5 0 0 1 294 259C294 256 297 254 299 250Z"/><clipPath id="vampire-bat-c2c"><use href="#vampire-bat-p2b"/></clipPath><clipPath id="vampire-bat-c2d"><use href="#vampire-bat-p2b" x="-2" y="-2"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#vampire-bat-l0)"/>
+<circle cx="256" cy="220" r="280" fill="url(#vampire-bat-r1)"/>
+<circle cx="256" cy="206" r="190" fill="url(#vampire-bat-r2)"/>
+<use href="#vampire-bat-p3" fill="#d6a8b8"/>
+<g clip-path="url(#vampire-bat-c4)">
+<use href="#vampire-bat-p3" x="-16" y="-16" fill="#fff4f8"/>
+<g clip-path="url(#vampire-bat-c5)"><use href="#vampire-bat-p3" x="10" y="10" fill="#f5d8e0"/></g>
+</g>
+<path d="M244 180C243 183 239 187 236 190C233 192 228 194 224 195C219 195 213 195 209 194C204 193 199 189 197 186C195 183 197 178 199 174C201 171 205 168 209 166C213 165 219 164 224 165C229 165 235 166 238 169C242 171 244 177 244 180Z" fill="#d6a8b8" fill-opacity="0.6"/>
+<path d="M330 240C329 244 323 248 318 251C313 254 307 256 301 256C295 257 288 255 283 254C278 252 273 249 270 246C268 242 266 237 268 234C270 231 277 229 283 226C289 224 296 219 302 220C308 220 315 225 320 228C324 231 330 236 330 240Z" fill="#d6a8b8" fill-opacity="0.6"/>
+<path d="M0 512V420L60 400L84 330L96 300L108 330L116 380L150 370L170 300L184 260L198 300L208 360L300 380L330 320L346 290L362 320L374 380L430 390L512 410V512Z" fill="#12040e"/>
+<path d="M180 300L188 300L188 314L180 314Z" fill="#ffbe0b" fill-opacity="0.8"/>
+<path d="M344 330L350 330L350 342L344 342Z" fill="#ffbe0b" fill-opacity="0.8"/>
+<use href="#vampire-bat-p6" fill="#360c24" stroke-width="10"/>
+<g clip-path="url(#vampire-bat-c7)">
+<use href="#vampire-bat-p6" x="-8" y="-8" fill="#7a2e52"/>
+<g clip-path="url(#vampire-bat-c8)"><use href="#vampire-bat-p6" x="5" y="5" fill="#5a1a3a"/></g>
+</g>
+<path d="M362 168L454 224" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M362 168L426 292" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M362 168L362 320" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M362 168L309 320" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#vampire-bat-p9" fill="#22081c" stroke-width="8"/>
+<g clip-path="url(#vampire-bat-ca)">
+<use href="#vampire-bat-p9" x="-3" y="-3" fill="#5a2a4a"/>
+<g clip-path="url(#vampire-bat-cb)"><use href="#vampire-bat-p9" x="2" y="2" fill="#3a1430"/></g>
+</g>
+<use href="#vampire-bat-pc" fill="#22081c" stroke-width="8"/>
+<g clip-path="url(#vampire-bat-cd)">
+<use href="#vampire-bat-pc" x="-3" y="-3" fill="#5a2a4a"/>
+<g clip-path="url(#vampire-bat-ce)"><use href="#vampire-bat-pc" x="2" y="2" fill="#3a1430"/></g>
+</g>
+<use href="#vampire-bat-pf" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-cg)">
+<use href="#vampire-bat-pf" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#vampire-bat-ch)"><use href="#vampire-bat-pf" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#vampire-bat-pi" fill="#360c24" stroke-width="10"/>
+<g clip-path="url(#vampire-bat-cj)">
+<use href="#vampire-bat-pi" x="-8" y="-8" fill="#7a2e52"/>
+<g clip-path="url(#vampire-bat-ck)"><use href="#vampire-bat-pi" x="5" y="5" fill="#5a1a3a"/></g>
+</g>
+<path d="M150 168L58 224" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M150 168L86 292" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M150 168L150 320" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M150 168L203 320" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#vampire-bat-pl" fill="#22081c" stroke-width="8"/>
+<g clip-path="url(#vampire-bat-cm)">
+<use href="#vampire-bat-pl" x="-3" y="-3" fill="#5a2a4a"/>
+<g clip-path="url(#vampire-bat-cn)"><use href="#vampire-bat-pl" x="2" y="2" fill="#3a1430"/></g>
+</g>
+<use href="#vampire-bat-po" fill="#22081c" stroke-width="8"/>
+<g clip-path="url(#vampire-bat-cp)">
+<use href="#vampire-bat-po" x="-3" y="-3" fill="#5a2a4a"/>
+<g clip-path="url(#vampire-bat-cq)"><use href="#vampire-bat-po" x="2" y="2" fill="#3a1430"/></g>
+</g>
+<use href="#vampire-bat-pr" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-cs)">
+<use href="#vampire-bat-pr" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#vampire-bat-ct)"><use href="#vampire-bat-pr" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#vampire-bat-pu" fill="#22081c" stroke-width="8"/>
+<g clip-path="url(#vampire-bat-cv)">
+<use href="#vampire-bat-pu" x="-3" y="-3" fill="#5a2a4a"/>
+<g clip-path="url(#vampire-bat-cw)"><use href="#vampire-bat-pu" x="2" y="2" fill="#3a1430"/></g>
+</g>
+<use href="#vampire-bat-px" fill="#22081c" stroke-width="8"/>
+<g clip-path="url(#vampire-bat-cy)">
+<use href="#vampire-bat-px" x="-3" y="-3" fill="#5a2a4a"/>
+<g clip-path="url(#vampire-bat-cz)"><use href="#vampire-bat-px" x="2" y="2" fill="#3a1430"/></g>
+</g>
+<use href="#vampire-bat-p10" fill="#ff4d6d" stroke-width="12"/>
+<g clip-path="url(#vampire-bat-c11)">
+<use href="#vampire-bat-p10" x="-4" fill="#2a1430"/>
+<use href="#vampire-bat-p10" x="-10" y="-10" fill="#6e4a6e"/>
+<g clip-path="url(#vampire-bat-c12)"><use href="#vampire-bat-p10" x="7" y="7" fill="#4a2a4a"/></g>
+</g>
+<path d="M240 250L248 262M268 250L262 264M244 282L252 292M268 280L262 294" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<use href="#vampire-bat-p13" fill="#2a1430" stroke-width="12"/>
+<g clip-path="url(#vampire-bat-c14)">
+<use href="#vampire-bat-p13" x="-5" y="-5" fill="#6e4a6e"/>
+<g clip-path="url(#vampire-bat-c15)"><use href="#vampire-bat-p13" x="3" y="3" fill="#4a2a4a"/></g>
+</g>
+<path d="M238 178L222 130L222 182Z" fill="#a8466a"/>
+<use href="#vampire-bat-p16" fill="#2a1430" stroke-width="12"/>
+<g clip-path="url(#vampire-bat-c17)">
+<use href="#vampire-bat-p16" x="-5" y="-5" fill="#6e4a6e"/>
+<g clip-path="url(#vampire-bat-c18)"><use href="#vampire-bat-p16" x="3" y="3" fill="#4a2a4a"/></g>
+</g>
+<path d="M274 178L290 130L290 182Z" fill="#a8466a"/>
+<use href="#vampire-bat-p19" fill="#2a1430" stroke-width="12"/>
+<g clip-path="url(#vampire-bat-c1a)">
+<use href="#vampire-bat-p19" x="-8" y="-8" fill="#6e4a6e"/>
+<g clip-path="url(#vampire-bat-c1b)"><use href="#vampire-bat-p19" x="7" y="7" fill="#4a2a4a"/></g>
+</g>
+<circle cx="240" cy="194" r="18" fill="url(#vampire-bat-r1c)"/>
+<circle cx="272" cy="194" r="18" fill="url(#vampire-bat-r1d)"/>
+<path d="M230 192L250 186L246 200Z" fill="#ffbe0b"/>
+<path d="M282 192L262 186L266 200Z" fill="#ffbe0b"/>
+<path d="M246 168L256 176L266 168L262 182H250Z" fill="#2a1430"/>
+<path d="M240 210C246 230 266 230 272 210Z" fill="#3a0612"/>
+<path d="M244 210L249 226L253 210ZM259 210L263 226L268 210Z" fill="#ffffff"/>
+<path d="M249 234C251 237 253 239 253 242A4 4 0 0 1 245 242C245 239 247 237 249 234Z" fill="#ff4d6d"/>
+<use href="#vampire-bat-p1e" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1f)">
+<use href="#vampire-bat-p1e" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1g)"><use href="#vampire-bat-p1e" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1h" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1i)">
+<use href="#vampire-bat-p1h" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1j)"><use href="#vampire-bat-p1h" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1k" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1l)">
+<use href="#vampire-bat-p1k" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1m)"><use href="#vampire-bat-p1k" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1n" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1o)">
+<use href="#vampire-bat-p1n" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1p)"><use href="#vampire-bat-p1n" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1q" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1r)">
+<use href="#vampire-bat-p1q" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1s)"><use href="#vampire-bat-p1q" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1t" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1u)">
+<use href="#vampire-bat-p1t" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1v)"><use href="#vampire-bat-p1t" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1w" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c1x)">
+<use href="#vampire-bat-p1w" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c1y)"><use href="#vampire-bat-p1w" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p1z" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c20)">
+<use href="#vampire-bat-p1z" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c21)"><use href="#vampire-bat-p1z" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p22" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c23)">
+<use href="#vampire-bat-p22" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c24)"><use href="#vampire-bat-p22" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p25" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c26)">
+<use href="#vampire-bat-p25" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c27)"><use href="#vampire-bat-p25" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p28" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c29)">
+<use href="#vampire-bat-p28" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c2a)"><use href="#vampire-bat-p28" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#vampire-bat-p2b" fill="#a8102c" stroke-width="6"/>
+<g clip-path="url(#vampire-bat-c2c)">
+<use href="#vampire-bat-p2b" x="-2" y="-2" fill="#ff9fb0"/>
+<g clip-path="url(#vampire-bat-c2d)"><use href="#vampire-bat-p2b" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+</svg>

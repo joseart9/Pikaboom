@@ -7,23 +7,19 @@ import { Art, INK, blob, ellipse, f, limb, poly, polar, shard, smooth, star, zig
 
 const OUT = "public/cards/art";
 
-// ── Palette (docs/cards/UI_VISUAL_SYSTEM.md §2.1) and per-material cel ramps: [base, shade, light] ─────────────────
-const GOLD = "#f2c14e", GOLD_DEEP = "#a8742a", GOLD_SHINE = "#fff1c1";
-const LEGENDARY = "#ff9f1c", UNIQUE = "#ff006e";
-const M = {
-  skin: { base: "#f2c29b", shade: "#c98f6a", light: "#ffe0c4" },
-  hair: { base: "#6b3f1f", shade: "#3f2412", light: "#9a6235" },
-  steel: { base: "#9fb3c8", shade: "#5e6f8a", light: "#e2ecf5" },
-  leather: { base: "#8a5a2b", shade: "#5c3a1c", light: "#b07a40" },
-  cloth: { base: "#6b4a2f", shade: "#46301e", light: "#8e6a45" },
-  tabard: { base: "#3d6fc4", shade: "#24418a", light: "#6a95e0" },
-  gold: { base: GOLD, shade: GOLD_DEEP, light: GOLD_SHINE },
-  rock: { base: "#8a86a8", shade: "#575275", light: "#bdb9d6" },
-  moss: { base: "#5f9a4a", shade: "#3d6b30", light: "#7bd389" },
-  fur: { base: "#8d9cb8", shade: "#5a6788", light: "#c3cee2" },
-  cream: { base: "#eadfc8", shade: "#b9a98a", light: "#fff8ea" },
-  bone: { base: "#e9e2cf", shade: "#a89f8a", light: "#fffaf0" },
-};
+import { GOLD, GOLD_DEEP, GOLD_SHINE, LEGENDARY, M, UNIQUE } from "./materials.mjs";
+import UI04_HUMANS_ARMORED from "./recipes/ui04-humans-armored.mjs";
+import UI04_HUMANS_CASTERS from "./recipes/ui04-humans-casters.mjs";
+import UI04_CANINES_BEARS from "./recipes/ui04-canines-bears.mjs";
+import UI04_BEASTS from "./recipes/ui04-beasts.mjs";
+import UI04_CONSTRUCTS_ELEMENTALS from "./recipes/ui04-constructs-elementals.mjs";
+import UI05_UNDEAD from "./recipes/ui05-undead.mjs";
+import UI05_DEMONS from "./recipes/ui05-demons.mjs";
+import UI05_DRAGONS from "./recipes/ui05-dragons.mjs";
+import UI06_LIGHT_NATURE from "./recipes/ui06-light-nature.mjs";
+import UI06_SHADOW from "./recipes/ui06-shadow.mjs";
+import UI06_ARCANE from "./recipes/ui06-arcane.mjs";
+import UI06_STORM_ICE from "./recipes/ui06-storm-ice.mjs";
 
 // ── Recipes ──────────────────────────────────────────────────────────────────────────────────────────────────────
 const RECIPES = {
@@ -440,6 +436,18 @@ const RECIPES = {
     return a;
   },
 };
+
+// UI-04/05/06 wave modules (each exports { "<key>"() { … } }); a key may be defined only once.
+for (const mod of [
+  UI04_HUMANS_ARMORED, UI04_HUMANS_CASTERS, UI04_CANINES_BEARS, UI04_BEASTS, UI04_CONSTRUCTS_ELEMENTALS,
+  UI05_UNDEAD, UI05_DEMONS, UI05_DRAGONS,
+  UI06_LIGHT_NATURE, UI06_SHADOW, UI06_ARCANE, UI06_STORM_ICE,
+]) {
+  for (const [key, recipe] of Object.entries(mod)) {
+    if (RECIPES[key]) throw new Error(`duplicate recipe ${key}`);
+    RECIPES[key] = recipe;
+  }
+}
 
 // ── CLI ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 mkdirSync(OUT, { recursive: true });

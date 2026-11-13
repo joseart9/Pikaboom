@@ -154,6 +154,15 @@ export const es = {
     subtitle: "Cartas 1 vs 1 con tus amigos",
     home: "Volver al inicio",
     matchInProgress: "Tienes una partida en curso.",
+    // Game hub (UI-07)
+    navLabel: "Secciones del juego",
+    playHint: "Reta a un amigo con un código o un QR",
+    resumeHint: "Tu rival te espera en la mesa",
+    collectionHint: "Todas tus cartas",
+    decksHint: "Arma y ajusta tus mazos",
+    storeHint: "Sobres de cartas",
+    accountHint: "Perfil y ajustes",
+    walletHint: "Ver movimientos",
   },
   // Currency (§16, shown from Phase 14).
   economy: {
@@ -230,6 +239,9 @@ export const es = {
     oddsValue: "{pct} %",
     history: "Últimos sobres",
     historyEmpty: "Aún no has abierto sobres.",
+    // UI-07
+    offers: "Sobres a la venta",
+    price: "Precio",
     // Pack opening
     tapToReveal: "Toca las cartas para revelarlas.",
     reveal: "Revelar carta {n}",
@@ -284,6 +296,11 @@ export const es = {
     inspect: "Ver carta",
     notOwnedHint: "No tienes esta carta: no puedes añadirla.",
     row: "{cost} · {name}",
+    // UI-07
+    unsaved: "Sin guardar",
+    upToDate: "Guardado",
+    addOne: "Añadir una copia de {name}",
+    deckCards: "Cartas del mazo",
   },
   // Lobby screen (§13.7, Phase 11)
   lobby: {
@@ -333,6 +350,11 @@ export const es = {
     noDecks: "Aún no tienes mazos.",
     editDecks: "Editar mazos",
     deckGone: "Tu mazo ya no está disponible. Elige otro.",
+    // UI-07
+    createTitle: "Nueva sala",
+    inviteTitle: "Invita a tu rival",
+    versus: "VS",
+    confirming: "Confirmando…",
     foeDeckGone: "El mazo de tu rival ya no está disponible.",
   },
   rarity: {
@@ -384,6 +406,7 @@ export const es = {
     connecting: "Conectando…",
     reconnecting: "Reconectando…",
     mana: "Maná {current}/{max}",
+    manaTemporary: "(+{n} temporal)",
     handCount: "{n} cartas en la mano",
     deckCount: "{n} cartas en el mazo",
     heroHealth: "{name}: {n} de salud",
@@ -438,6 +461,15 @@ export const es = {
     empty: "Sin habilidades especiales.",
     onBoard: "En el campo: {attack} de ataque · {health}/{max} de salud",
     silenced: "Silenciada: perdió sus habilidades.",
+    // UI-08 inspect sheet
+    yourUnit: "Tu criatura",
+    foeUnit: "Criatura rival",
+    attack: "Ataque",
+    health: "Salud",
+    base: "base {n}",
+    rulesText: "Texto",
+    state: "Estado",
+    noText: "Sin texto de reglas.",
   },
   rotate: {
     title: "Gira tu dispositivo",

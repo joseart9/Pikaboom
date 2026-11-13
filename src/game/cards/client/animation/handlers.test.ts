@@ -57,6 +57,9 @@ function recordingFx(present: Set<string>) {
     vignette: rec("vignette"),
     sweep: rec("sweep"),
     crack: rec("crack"),
+    aura: rec("aura"),
+    accent: rec("accent"),
+    motes: rec("motes", false),
     finishAll: () => {},
     settle: () => {},
   } as unknown as FxApi;
@@ -84,7 +87,7 @@ function env(fx: FxApi, opts: { reduced?: boolean; defs?: Record<string, string>
 const E = (e: Record<string, unknown>) => ({ seq: 1, step: 0, ...e }) as unknown as ViewEvent;
 
 /** FX that move things or spawn particles — forbidden under reduced motion (§18.3). */
-const MOTION = /^(projectile|shake|burst|streak|rays|sweep|ring|flyCard|slam)\b/;
+const MOTION = /^(projectile|shake|burst|streak|rays|sweep|ring|flyCard|slam|motes|accent)\b/;
 
 const SAMPLE: ViewEvent[] = [
   E({ type: "CARD_PLAYED", seat: 1, iid: "c1", defId: "ignis", target: null, position: 0 }),
@@ -131,6 +134,8 @@ describe("Phase 20 handlers", () => {
     expect(calls.some((c) => c.startsWith("reveal ignis cinematic"))).toBe(true);
     expect(calls.some((c) => c.startsWith("nameBanner"))).toBe(true);
     expect(calls.some((c) => c.startsWith("banner"))).toBe(true);
+    // UI-09: Ignis keeps its signature as a static rim (a fade-only aura).
+    expect(calls).toContain("aura ignis");
   });
 
   it("full motion: elemental projectile from the spell's source, impact, shake ∝ damage, vignette on my hero", async () => {
@@ -154,7 +159,9 @@ describe("Phase 20 handlers", () => {
   it("Legendaria/Única plays run the cinematic; cost ≥ 7 runs the heavy entrance; others stay basic", async () => {
     const { fx, calls } = recordingFx(PRESENT);
     await play(SAMPLE.slice(0, 3), env(fx));
-    expect(calls).toEqual(expect.arrayContaining(["dim", "rays unique", "reveal ignis cinematic", "nameBanner Ignis, el Dragón Eterno unique"]));
+    // UI-09: Ignis's signature (aura + flare + embers) replaces the generic rarity rays, and lands harder.
+    expect(calls).toEqual(expect.arrayContaining(["dim", "aura ignis", "accent ignis flare", "motes fire center", "reveal ignis cinematic", "nameBanner Ignis, el Dragón Eterno unique", "shake 8"]));
+    expect(calls.some((c) => c.startsWith("rays"))).toBe(false);
     expect(calls).toContain("reveal iron-colossus heavy");
     expect(calls).toContain("reveal flame-lance played");
     expect(calls.filter((c) => c.startsWith("dim"))).toHaveLength(1); // only the cinematic dims

@@ -4,13 +4,24 @@
 // (GET /api/cards/matches/current), Colección (Phase 14), Mazos (Phase 15), Tienda (Phase 17), Cuenta, and the
 // Oro balance (GET /api/cards/wallet, which also performs the one-time starter grant). Phase 16: the balance refreshes
 // whenever the menu becomes visible again (match rewards), and tapping it lists the latest Oro movements.
+// UI-07: a game-hub composition — crest + title lockup and the primary Jugar / Volver a la partida plate on the left,
+// framed icon tiles for the other areas on the right, the Oro resource plate top-right.
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { currentMatch, getWallet } from "@/game/cards/client/api";
 import type { CurrencyTransaction } from "@/game/cards/collection/wallet";
-import { t } from "@/game/cards/i18n";
-import { CurrencyBadge } from "../skin";
+import { t, type MessageKey } from "@/game/cards/i18n";
+import { CurrencyBadge, GameIcon, type GameIconName } from "../skin";
+import { GameCrest } from "../skin/GameCrest";
 import { WalletHistory } from "./WalletHistory";
+
+/** Secondary destinations (UI-07): one shared icon family, a label and a one-line hint each. */
+const NAV: readonly { href: string; icon: GameIconName; label: MessageKey; hint: MessageKey }[] = [
+  { href: "/cards/collection", icon: "collection", label: "menu.collection", hint: "menu.collectionHint" },
+  { href: "/cards/decks", icon: "decks", label: "menu.decks", hint: "menu.decksHint" },
+  { href: "/cards/store", icon: "store", label: "menu.store", hint: "menu.storeHint" },
+  { href: "/account", icon: "account", label: "menu.account", hint: "menu.accountHint" },
+];
 
 export function CardsMenu() {
   const [current, setCurrent] = useState<string | null>(null);
@@ -52,46 +63,69 @@ export function CardsMenu() {
 
   return (
     <main className="cg-home">
-      {balance !== null && (
-        <button type="button" className="cg-home-wallet" onClick={() => setHistoryOpen(true)} aria-label={t("economy.historyOpen", { amount: balance })} data-haptic="light">
-          <CurrencyBadge amount={balance} unit={t("economy.gold")} label={t("economy.balance", { amount: balance })} />
-        </button>
-      )}
+      <div className="cg-home-top">
+        <Link href="/" className="cg-button cg-button--quiet cg-home-back">
+          <GameIcon name="home" size="1.1em" />
+          <span>{t("menu.home")}</span>
+        </Link>
+        {balance !== null && (
+          <button type="button" className="cg-home-wallet" onClick={() => setHistoryOpen(true)} aria-label={t("economy.historyOpen", { amount: balance })} data-haptic="light">
+            <CurrencyBadge amount={balance} unit={t("economy.gold")} label={t("economy.balance", { amount: balance })} />
+            <span className="cg-home-wallet-hint" aria-hidden>
+              {t("menu.walletHint")}
+            </span>
+          </button>
+        )}
+      </div>
       {historyOpen && <WalletHistory transactions={transactions} onClose={closeHistory} />}
-      <header className="cg-home-header">
-        <h1 className="cg-home-title">{t("game.title")}</h1>
-        <p className="cg-home-subtitle">{t("menu.subtitle")}</p>
-      </header>
-      <nav className="cg-home-actions" aria-label={t("game.title")}>
-        {current && (
-          <div className="cg-home-resume">
-            <span>{t("menu.matchInProgress")}</span>
-            <Link href={`/cards/match/${current}`} className="cg-button cg-button--primary cg-button--big cg-button--pulse" data-haptic="medium">
-              {t("menu.resume")}
+
+      <div className="cg-home-body">
+        <section className="cg-home-hero">
+          <header className="cg-home-lockup">
+            <GameCrest className="cg-home-crest" />
+            <div className="cg-home-heading">
+              <h1 className="cg-home-title">{t("game.title")}</h1>
+              <p className="cg-home-subtitle">{t("menu.subtitle")}</p>
+            </div>
+          </header>
+          <div className="cg-home-primary">
+            {current && (
+              <Link href={`/cards/match/${current}`} className="cg-button cg-button--primary cg-button--big cg-button--pulse cg-home-cta" data-haptic="medium">
+                <GameIcon name="endTurn" size="1.1em" />
+                <span className="cg-home-cta-text">
+                  {t("menu.resume")}
+                  <small>{t("menu.matchInProgress")}</small>
+                </span>
+              </Link>
+            )}
+            <Link href="/cards/play" className={`cg-button cg-home-cta${current ? "" : " cg-button--primary cg-button--big"}`} data-haptic="medium">
+              <GameIcon name="play" size="1.1em" />
+              <span className="cg-home-cta-text">
+                {t("menu.play")}
+                {!current && <small>{t("menu.playHint")}</small>}
+              </span>
             </Link>
           </div>
-        )}
-        <Link href="/cards/play" className={`cg-button cg-button--big${current ? "" : " cg-button--primary"}`} data-haptic="medium">
-          {t("menu.play")}
-        </Link>
-        <div className="cg-home-grid">
-          <Link href="/cards/collection" className="cg-button" data-haptic="light">
-            {t("menu.collection")}
-          </Link>
-          <Link href="/cards/decks" className="cg-button" data-haptic="light">
-            {t("menu.decks")}
-          </Link>
-          <Link href="/cards/store" className="cg-button" data-haptic="light">
-            {t("menu.store")}
-          </Link>
-          <Link href="/account" className="cg-button">
-            {t("menu.account")}
-          </Link>
-        </div>
-      </nav>
-      <Link href="/" className="cg-home-back">
-        {t("menu.home")}
-      </Link>
+        </section>
+
+        <nav className="cg-home-nav" aria-label={t("menu.navLabel")}>
+          <ul className="cg-home-grid">
+            {NAV.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className="cg-home-tile" data-haptic="light">
+                  <span className="cg-home-tile-icon" aria-hidden>
+                    <GameIcon name={item.icon} outlined />
+                  </span>
+                  <span className="cg-home-tile-text">
+                    <span className="cg-home-tile-label">{t(item.label)}</span>
+                    <span className="cg-home-tile-hint">{t(item.hint)}</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </main>
   );
 }

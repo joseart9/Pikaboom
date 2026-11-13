@@ -3,7 +3,6 @@
 // Collection screen (/cards/collection, §15.1, Phase 14): every collectible card, owned ones with a quantity badge
 // and missing ones locked; combinable filters + accent-insensitive search; tap a card → CardInspect.
 // Data: GET /api/cards/collection (which also performs the one-time starter grant).
-import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { COLLECTIBLE_CARDS } from "@/game/cards/catalog";
 import type { CardDef } from "@/game/cards/catalog/types";
@@ -13,7 +12,9 @@ import { getCollection, type ApiResult } from "@/game/cards/client/api";
 import { cardName, t } from "@/game/cards/i18n";
 import { CardFace } from "../card/CardFace";
 import { CardInspect } from "../card/CardInspect";
-import { CurrencyBadge } from "../skin";
+import { ScreenHeader } from "../screen/ScreenHeader";
+import { StateMessage } from "../screen/StateMessage";
+import { CurrencyBadge, GameIcon } from "../skin";
 import { Filters } from "./Filters";
 
 /** sessionStorage key for the filter state (§15.1: kept while the tab lives). */
@@ -84,34 +85,36 @@ export function CollectionScreen({ load = getCollection }: CollectionScreenProps
 
   return (
     <main className="cg-collection">
-      <header className="cg-collection-header">
-        <Link href="/cards" className="cg-button">
-          {t("match.backToMenu")}
-        </Link>
-        <h1 className="cg-collection-title">{t("collection.title")}</h1>
+      <ScreenHeader title={t("collection.title")} icon="collection" back={{ href: "/cards" }}>
         {state.status === "ready" && (
           <div className="cg-collection-stats">
             <span className="cg-chip">{t("collection.discovered", { n: discovered, total })}</span>
-            <CurrencyBadge amount={state.data.wallet.balance} unit={t("economy.gold")} label={t("economy.balance", { amount: state.data.wallet.balance })} />
+            <span className="cg-resource cg-resource--optional">
+              <CurrencyBadge amount={state.data.wallet.balance} unit={t("economy.gold")} label={t("economy.balance", { amount: state.data.wallet.balance })} />
+            </span>
           </div>
         )}
-      </header>
+      </ScreenHeader>
 
-      {state.status === "loading" && <div className="cg-center-message">{t("collection.loading")}</div>}
+      {state.status === "loading" && <StateMessage kind="loading" text={t("collection.loading")} fill />}
       {state.status === "error" && (
-        <div className="cg-center-message">
-          <p>{state.message}</p>
-          <button
-            type="button"
-            className="cg-button cg-button--primary"
-            onClick={() => {
-              setState({ status: "loading" });
-              setAttempt((n) => n + 1);
-            }}
-          >
-            {t("collection.retry")}
-          </button>
-        </div>
+        <StateMessage
+          kind="error"
+          text={state.message}
+          fill
+          action={
+            <button
+              type="button"
+              className="cg-button cg-button--primary"
+              onClick={() => {
+                setState({ status: "loading" });
+                setAttempt((n) => n + 1);
+              }}
+            >
+              {t("collection.retry")}
+            </button>
+          }
+        />
       )}
 
       {state.status === "ready" && inventory && (
@@ -119,7 +122,16 @@ export function CollectionScreen({ load = getCollection }: CollectionScreenProps
           <Filters filter={filter} onChange={updateFilter} shown={cards.length} total={total} />
           <section className="cg-collection-grid-wrap" aria-label={t("collection.title")}>
             {cards.length === 0 ? (
-              <p className="cg-collection-empty">{t("collection.empty")}</p>
+              <StateMessage
+                kind="empty"
+                icon="search"
+                text={t("collection.empty")}
+                action={
+                  <button type="button" className="cg-button" onClick={() => updateFilter(EMPTY_FILTER)}>
+                    {t("collection.clear")}
+                  </button>
+                }
+              />
             ) : (
               <ul className="cg-collection-grid">
                 {cards.map((def) => {
@@ -134,9 +146,15 @@ export function CollectionScreen({ load = getCollection }: CollectionScreenProps
                         onClick={() => setInspect(def)}
                       >
                         <span className="cg-coll-card">
-                          <CardFace def={def} locked={locked} />
+                          <CardFace def={def} locked={locked} lazyArt />
                         </span>
-                        {!locked && <span className="cg-coll-qty">{t("collection.quantity", { n })}</span>}
+                        {locked ? (
+                          <span className="cg-coll-lock" aria-hidden>
+                            <GameIcon name="lock" />
+                          </span>
+                        ) : (
+                          <span className="cg-coll-qty">{t("collection.quantity", { n })}</span>
+                        )}
                       </button>
                     </li>
                   );

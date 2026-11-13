@@ -12,7 +12,7 @@ export interface EndTurnButtonProps {
 /**
  * End-turn control (§17.3): a raised green gem-cut face with gold trim and an arrow on your turn (pulsing when idle),
  * a sunken violet face with an hourglass on the foe's turn, a dashed pending look while the server confirms.
- * Styles: `.cg-endturn*` in cards.css. UI-08 decides its final size/placement in the HUD.
+ * Styles: `.cg-endturn*` in cards.css. UI-08: compact two-line HUD control docked under the deck chip.
  */
 export function EndTurnButton({ state, label, onPress }: EndTurnButtonProps) {
   const enabled = state === "ready" || state === "readyIdle";
@@ -24,7 +24,7 @@ export function EndTurnButton({ state, label, onPress }: EndTurnButtonProps) {
       disabled={!enabled}
     >
       <GameIcon name={enabled ? "endTurn" : "hourglass"} size="0.9em" outlined={enabled} />
-      <span>{label}</span>
+      <span className="cg-endturn-label">{label}</span>
     </button>
   );
 }

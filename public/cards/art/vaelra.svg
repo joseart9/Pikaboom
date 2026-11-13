@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="vaelra-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#081428"/><stop offset="0.55" stop-color="#183c6c"/><stop offset="1" stop-color="#0a1830"/></linearGradient><radialGradient id="vaelra-r1" gradientUnits="userSpaceOnUse" cx="256" cy="200" r="270"><stop offset="0" stop-color="#bfe6ff" stop-opacity="0.35"/><stop offset="0.45" stop-color="#bfe6ff" stop-opacity="0.1575"/><stop offset="1" stop-color="#bfe6ff" stop-opacity="0"/></radialGradient><path id="vaelra-p2" d="M150 512L196 400L244 352L300 340L360 352L404 410L440 512Z"/><clipPath id="vaelra-c3"><use href="#vaelra-p2"/></clipPath><clipPath id="vaelra-c4"><use href="#vaelra-p2" x="-14" y="-12"/></clipPath><path id="vaelra-p5" d="M276 274L196 162L100 112Q107 157 76 200Q109 223 104 272Q146 269 166 312Q198 292 230 330Q249 301 292 332Z"/><clipPath id="vaelra-c6"><use href="#vaelra-p5"/></clipPath><clipPath id="vaelra-c7"><use href="#vaelra-p5" x="-8" y="-8"/></clipPath><path id="vaelra-p8" d="M282 270C270 252 214 176 201 159C187 142 194 156 193 157C191 158 180 147 191 165C203 183 257 261 270 278C284 295 278 281 280 280C282 278 294 288 282 270Z"/><clipPath id="vaelra-c9"><use href="#vaelra-p8"/></clipPath><clipPath id="vaelra-ca"><use href="#vaelra-p8" x="-3" y="-3"/></clipPath><path id="vaelra-pb" d="M199 157C184 149 118 118 104 112C89 105 101 112 101 113C101 113 88 107 102 115C116 124 179 160 193 167C208 174 200 166 201 165C202 163 213 165 199 157Z"/><clipPath id="vaelra-cc"><use href="#vaelra-pb"/></clipPath><clipPath id="vaelra-cd"><use href="#vaelra-pb" x="-3" y="-3"/></clipPath><path id="vaelra-pe" d="M318 268L404 150L476 104Q469 151 490 198Q463 219 462 270Q429 266 408 312Q378 290 336 330Z"/><clipPath id="vaelra-cf"><use href="#vaelra-pe"/></clipPath><clipPath id="vaelra-cg"><use href="#vaelra-pe" x="-8" y="-8"/></clipPath><path id="vaelra-ph" d="M324 272C338 254 396 172 409 153C421 134 409 146 407 145C406 144 414 129 399 147C385 164 325 245 312 264C300 283 312 272 314 274C316 275 309 290 324 272Z"/><clipPath id="vaelra-ci"><use href="#vaelra-ph"/></clipPath><clipPath id="vaelra-cj"><use href="#vaelra-ph" x="-3" y="-3"/></clipPath><path id="vaelra-pk" d="M407 155C418 148 465 115 475 107C485 100 476 105 476 104C475 104 484 97 473 104C462 110 412 138 401 145C390 153 398 152 399 153C400 154 396 162 407 155Z"/><clipPath id="vaelra-cl"><use href="#vaelra-pk"/></clipPath><clipPath id="vaelra-cm"><use href="#vaelra-pk" x="-3" y="-3"/></clipPath><path id="vaelra-pn" d="M330 367C339 375 371 380 380 389C389 398 394 417 391 426C387 436 369 451 359 454C348 457 326 449 320 448C315 447 320 449 320 450C320 451 313 450 320 452C326 454 348 469 361 466C375 463 403 448 409 434C416 419 413 386 404 371C395 356 362 337 350 333C338 328 326 335 323 340C320 345 321 360 330 367Z"/><clipPath id="vaelra-co"><use href="#vaelra-pn"/></clipPath><clipPath id="vaelra-cp"><use href="#vaelra-pn" x="-6" y="-6"/></clipPath><path id="vaelra-pq" d="M262 290C270 281 291 270 304 270C317 270 341 280 350 290C359 301 366 328 362 340C358 352 339 365 326 368C313 371 287 368 276 362C265 356 254 341 252 330C250 319 254 299 262 290Z"/><clipPath id="vaelra-cr"><use href="#vaelra-pq"/></clipPath><clipPath id="vaelra-cs"><use href="#vaelra-pq" x="-12" y="-10"/></clipPath><path id="vaelra-pt" d="M259 328C255 334 253 350 253 357C253 364 257 369 259 372C262 375 266 377 268 377C270 376 272 370 273 368C273 365 270 364 271 359C272 354 281 341 281 336C282 330 277 322 274 321C270 319 262 323 259 328Z"/><clipPath id="vaelra-cu"><use href="#vaelra-pt"/></clipPath><clipPath id="vaelra-cv"><use href="#vaelra-pt" x="-4" y="-4"/></clipPath><path id="vaelra-pw" d="M307 336C303 342 301 358 301 365C301 372 305 377 307 380C310 383 314 385 316 385C318 384 320 378 321 376C321 373 318 372 319 367C320 362 329 349 329 344C330 338 325 330 322 329C318 327 310 331 307 336Z"/><clipPath id="vaelra-cx"><use href="#vaelra-pw"/></clipPath><clipPath id="vaelra-cy"><use href="#vaelra-pw" x="-4" y="-4"/></clipPath><path id="vaelra-pz" d="M253 368C251 370 250 378 249 379C249 381 250 380 250 380C250 380 249 382 251 381C252 379 258 374 259 372C261 370 259 367 258 367C257 366 254 366 253 368ZM260 372C260 374 262 382 263 384C264 386 264 384 264 384C264 384 264 386 265 384C266 382 268 374 268 372C268 370 265 368 264 368C263 368 260 370 260 372ZM303 376C301 378 300 386 299 387C299 389 300 388 300 388C300 388 299 390 301 389C302 387 308 382 309 380C311 378 309 375 308 375C307 374 304 374 303 376ZM310 380C310 382 312 390 313 392C314 394 314 392 314 392C314 392 314 394 315 392C316 390 318 382 318 380C318 378 315 376 314 376C313 376 310 378 310 380Z"/><clipPath id="vaelra-c10"><use href="#vaelra-pz"/></clipPath><clipPath id="vaelra-c11"><use href="#vaelra-pz" x="-1" y="-1"/></clipPath><path id="vaelra-p12" d="M314 281C310 269 290 253 282 241C274 229 264 213 261 200C257 188 263 168 260 157C256 145 244 129 238 123C232 117 222 116 219 118C215 120 213 130 214 137C215 144 227 153 228 163C230 174 221 193 223 208C225 223 235 247 242 263C248 278 257 302 266 311C276 320 298 324 305 320C312 315 317 293 314 281Z"/><clipPath id="vaelra-c13"><use href="#vaelra-p12"/></clipPath><clipPath id="vaelra-c14"><use href="#vaelra-p12" x="-10" y="-8"/></clipPath><path id="vaelra-p15" d="M280 254L300 254L280 270ZM262 214L282 212L262 230ZM256 174L276 176L256 190ZM248 144L266 148L248 160Z"/><clipPath id="vaelra-c16"><use href="#vaelra-p15"/></clipPath><clipPath id="vaelra-c17"><use href="#vaelra-p15" x="-2" y="-2"/></clipPath><path id="vaelra-p18" d="M221 113L198 98L229 117ZM222 106L203 72L230 110ZM229 105L227 69L237 109ZM235 108L246 81L243 112ZM238 113L255 97L246 117Z"/><clipPath id="vaelra-c19"><use href="#vaelra-p18"/></clipPath><clipPath id="vaelra-c1a"><use href="#vaelra-p18" x="-3" y="-3"/></clipPath><path id="vaelra-p1b" d="M250 126C244 108 220 102 200 108L162 122C154 128 156 136 164 138L204 142L248 146C256 140 256 132 250 126Z"/><clipPath id="vaelra-c1c"><use href="#vaelra-p1b"/></clipPath><clipPath id="vaelra-c1d"><use href="#vaelra-p1b" x="-7" y="-6"/></clipPath><path id="vaelra-p1e" d="M244 146L204 144L170 152C164 158 168 164 176 164L208 162L242 156Z"/><clipPath id="vaelra-c1f"><use href="#vaelra-p1e"/></clipPath><clipPath id="vaelra-c1g"><use href="#vaelra-p1e" x="-4" y="-4"/></clipPath><path id="vaelra-p1h" d="M210 108C222 98 242 100 252 114L248 122C238 112 224 110 212 116Z"/><clipPath id="vaelra-c1i"><use href="#vaelra-p1h"/></clipPath><clipPath id="vaelra-c1j"><use href="#vaelra-p1h" x="-3" y="-3"/></clipPath><radialGradient id="vaelra-r1k" gradientUnits="userSpaceOnUse" cx="222" cy="122" r="14"><stop offset="0" stop-color="#6fe0ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#6fe0ff" stop-opacity="0.405"/><stop offset="1" stop-color="#6fe0ff" stop-opacity="0"/></radialGradient><radialGradient id="vaelra-r1l" gradientUnits="userSpaceOnUse" cx="130" cy="160" r="70"><stop offset="0" stop-color="#e0f2ff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#e0f2ff" stop-opacity="0.315"/><stop offset="1" stop-color="#e0f2ff" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#vaelra-l0)"/>
+<circle cx="256" cy="200" r="270" fill="url(#vaelra-r1)"/>
+<path d="M-10 120C120 40 240 140 360 80C420 50 480 70 520 80V130C460 110 420 100 360 130C240 190 120 90 -10 170Z" fill="#6fe0ff" fill-opacity="0.22"/>
+<path d="M-10 160C120 80 240 180 360 120C420 90 480 110 520 120V170C460 150 420 140 360 170C240 230 120 130 -10 210Z" fill="#b388ff" fill-opacity="0.18"/>
+<path d="M-10 100C120 20 240 120 360 60C420 30 480 50 520 60V110C460 90 420 80 360 110C240 170 120 70 -10 150Z" fill="#7bd389" fill-opacity="0.14"/>
+<circle cx="378" cy="445" r="3" fill="#ffffff" fill-opacity="0.6"/>
+<circle cx="444" cy="41" r="1" fill="#ffffff" fill-opacity="0.56"/>
+<circle cx="479" cy="162" r="1" fill="#ffffff" fill-opacity="0.76"/>
+<circle cx="232" cy="215" r="2" fill="#ffffff" fill-opacity="0.7"/>
+<circle cx="36" cy="192" r="1" fill="#ffffff" fill-opacity="0.59"/>
+<circle cx="467" cy="235" r="2" fill="#ffffff" fill-opacity="0.92"/>
+<circle cx="294" cy="432" r="1" fill="#ffffff" fill-opacity="0.95"/>
+<circle cx="267" cy="385" r="2" fill="#ffffff" fill-opacity="0.99"/>
+<circle cx="458" cy="267" r="2" fill="#ffffff" fill-opacity="0.88"/>
+<circle cx="351" cy="91" r="2" fill="#ffffff" fill-opacity="0.89"/>
+<circle cx="217" cy="166" r="2" fill="#ffffff" fill-opacity="0.89"/>
+<circle cx="488" cy="99" r="1" fill="#ffffff" fill-opacity="0.97"/>
+<circle cx="345" cy="430" r="2" fill="#ffffff" fill-opacity="0.78"/>
+<circle cx="29" cy="324" r="2" fill="#ffffff" fill-opacity="0.66"/>
+<circle cx="232" cy="334" r="2" fill="#ffffff" fill-opacity="0.63"/>
+<circle cx="70" cy="452" r="1" fill="#ffffff" fill-opacity="0.69"/>
+<circle cx="203" cy="195" r="1" fill="#ffffff" fill-opacity="0.64"/>
+<circle cx="361" cy="117" r="1" fill="#ffffff" fill-opacity="0.51"/>
+<circle cx="56" cy="291" r="3" fill="#ffffff" fill-opacity="0.65"/>
+<circle cx="275" cy="191" r="1" fill="#ffffff" fill-opacity="0.58"/>
+<circle cx="245" cy="460" r="2" fill="#ffffff" fill-opacity="0.77"/>
+<circle cx="138" cy="15" r="3" fill="#ffffff" fill-opacity="0.71"/>
+<circle cx="440" cy="402" r="2" fill="#ffffff" fill-opacity="0.79"/>
+<circle cx="402" cy="131" r="2" fill="#ffffff" fill-opacity="0.91"/>
+<circle cx="327" cy="386" r="3" fill="#ffffff" fill-opacity="0.7"/>
+<circle cx="502" cy="469" r="2" fill="#ffffff" fill-opacity="0.73"/>
+<path d="M0 380L70 300L120 340L180 280L230 340L512 330V512H0Z" fill="#14305a"/>
+<use href="#vaelra-p2" fill="#3e6aa0" stroke-width="12"/>
+<g clip-path="url(#vaelra-c3)">
+<use href="#vaelra-p2" x="-14" y="-12" fill="#b8dcf8"/>
+<g clip-path="url(#vaelra-c4)"><use href="#vaelra-p2" x="8" y="8" fill="#6e9ed0"/></g>
+</g>
+<path d="M244 352L270 440L250 512M300 340L320 420M360 352L340 450" fill="none" stroke="#5a9ad6" stroke-width="4" stroke-opacity="0.7"/>
+<g transform="translate(300 470) scale(0.92) translate(-300 -470)">
+<use href="#vaelra-p5" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#vaelra-c6)">
+<use href="#vaelra-p5" x="-3" fill="#36609e"/>
+<use href="#vaelra-p5" x="-8" y="-8" fill="#a8d0f5"/>
+<g clip-path="url(#vaelra-c7)"><use href="#vaelra-p5" x="5" y="5" fill="#5e94d4"/></g>
+</g>
+<path d="M196 162L83 198" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M196 162L110 265" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M196 162L168 303" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M196 162L228 320" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#vaelra-p8" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#vaelra-c9)">
+<use href="#vaelra-p8" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-p8" x="-3" y="-3" fill="#ffffff"/>
+<g clip-path="url(#vaelra-ca)"><use href="#vaelra-p8" x="2" y="2" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pb" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#vaelra-cc)">
+<use href="#vaelra-pb" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-pb" x="-3" y="-3" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cd)"><use href="#vaelra-pb" x="2" y="2" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pe" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#vaelra-cf)">
+<use href="#vaelra-pe" x="-3" fill="#36609e"/>
+<use href="#vaelra-pe" x="-8" y="-8" fill="#a8d0f5"/>
+<g clip-path="url(#vaelra-cg)"><use href="#vaelra-pe" x="5" y="5" fill="#5e94d4"/></g>
+</g>
+<path d="M404 150L485 195" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M404 150L459 263" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M404 150L408 302" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#vaelra-ph" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#vaelra-ci)">
+<use href="#vaelra-ph" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-ph" x="-3" y="-3" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cj)"><use href="#vaelra-ph" x="2" y="2" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pk" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#vaelra-cl)">
+<use href="#vaelra-pk" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-pk" x="-3" y="-3" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cm)"><use href="#vaelra-pk" x="2" y="2" fill="#cfe8ff"/></g>
+</g>
+<path d="M69 200L76 218L83 200ZM97 272L104 290L111 272ZM159 312L166 330L173 312ZM483 198L490 216L497 198ZM455 270L462 288L469 270Z" fill="#ffffff" fill-opacity="0.9"/>
+<use href="#vaelra-pn" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-co)">
+<use href="#vaelra-pn" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-pn" x="-6" y="-6" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cp)"><use href="#vaelra-pn" x="7" y="7" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pq" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-cr)">
+<use href="#vaelra-pq" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-pq" x="-12" y="-10" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cs)"><use href="#vaelra-pq" x="7" y="7" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pt" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-cu)">
+<use href="#vaelra-pt" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-pt" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cv)"><use href="#vaelra-pt" x="3" y="3" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pw" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-cx)">
+<use href="#vaelra-pw" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-pw" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#vaelra-cy)"><use href="#vaelra-pw" x="3" y="3" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-pz" fill="#5a9ad6" stroke-width="6"/>
+<g clip-path="url(#vaelra-c10)">
+<use href="#vaelra-pz" x="-1" y="-1" fill="#ffffff"/>
+<g clip-path="url(#vaelra-c11)"><use href="#vaelra-pz" x="1" y="1" fill="#bfe6ff"/></g>
+</g>
+<use href="#vaelra-p12" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-c13)">
+<use href="#vaelra-p12" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-p12" x="-10" y="-8" fill="#ffffff"/>
+<g clip-path="url(#vaelra-c14)"><use href="#vaelra-p12" x="7" y="7" fill="#cfe8ff"/></g>
+</g>
+<path d="M276 290L254 254M262 296L240 258M250 230L236 206M246 214L230 194" fill="none" stroke="#7aa6d6" stroke-width="3" stroke-opacity="0.9"/>
+<use href="#vaelra-p15" fill="#5a9ad6" stroke-width="6"/>
+<g clip-path="url(#vaelra-c16)">
+<use href="#vaelra-p15" x="-2" y="-2" fill="#ffffff"/>
+<g clip-path="url(#vaelra-c17)"><use href="#vaelra-p15" x="1" y="1" fill="#bfe6ff"/></g>
+</g>
+<use href="#vaelra-p18" fill="#5a9ad6" stroke-width="8"/>
+<g clip-path="url(#vaelra-c19)">
+<use href="#vaelra-p18" x="-3" y="-3" fill="#ffffff"/>
+<g clip-path="url(#vaelra-c1a)"><use href="#vaelra-p18" x="2" y="2" fill="#bfe6ff"/></g>
+</g>
+<use href="#vaelra-p1b" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-c1c)">
+<use href="#vaelra-p1b" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-p1b" x="-7" y="-6" fill="#ffffff"/>
+<g clip-path="url(#vaelra-c1d)"><use href="#vaelra-p1b" x="7" y="7" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-p1e" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#vaelra-c1f)">
+<use href="#vaelra-p1e" x="-4" fill="#7aa6d6"/>
+<use href="#vaelra-p1e" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#vaelra-c1g)"><use href="#vaelra-p1e" x="3" y="3" fill="#cfe8ff"/></g>
+</g>
+<use href="#vaelra-p1h" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#vaelra-c1i)">
+<use href="#vaelra-p1h" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#vaelra-c1j)"><use href="#vaelra-p1h" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<circle cx="222" cy="122" r="14" fill="url(#vaelra-r1k)"/>
+<path d="M212 120L232 118L228 126L214 126Z" fill="#6fe0ff"/>
+<path d="M165 128A3 2 0 1 0 171 128A3 2 0 1 0 165 128Z" fill="#1d0842"/>
+<path d="M172 146L206 146" fill="none" stroke-width="3"/>
+<circle cx="130" cy="160" r="70" fill="url(#vaelra-r1l)"/>
+<path d="M166 152C161 150 139 143 130 144C121 145 104 157 96 158C88 159 75 151 70 154C65 157 54 176 56 180C58 184 79 180 86 182C93 184 103 199 110 198C117 197 133 183 140 178C147 173 163 163 166 160C169 157 171 154 166 152Z" fill="#e0f2ff" fill-opacity="0.8"/>
+<path d="M84 152L87 166L100 161L89 170L100 179L87 174L84 188L82 174L68 179L79 170L68 161L82 166ZM118 174L120 183L128 180L122 186L128 192L120 189L118 198L116 189L108 192L114 186L108 180L116 183Z" fill="#ffffff"/>
+</g>
+</svg>

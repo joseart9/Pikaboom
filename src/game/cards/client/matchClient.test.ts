@@ -120,6 +120,9 @@ describe("MatchClient event playback (Phase 13)", () => {
       vignette: () => Promise.resolve(),
       sweep: () => Promise.resolve(),
       crack: () => Promise.resolve(),
+      aura: () => Promise.resolve(),
+      accent: () => Promise.resolve(),
+      motes: () => {},
       finishAll: () => calls.push("finishAll"),
       settle: () => {},
     };

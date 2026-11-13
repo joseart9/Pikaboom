@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="last-stand-knight-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1a0e30"/><stop offset="0.55" stop-color="#6a2a4a"/><stop offset="1" stop-color="#d0703a"/></linearGradient><radialGradient id="last-stand-knight-r1" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="230"><stop offset="0" stop-color="#ffe066" stop-opacity="0.35"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.1575"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><linearGradient id="last-stand-knight-l2" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#5a2a34"/><stop offset="1" stop-color="#2a1020"/></linearGradient><radialGradient id="last-stand-knight-r3" gradientUnits="userSpaceOnUse" cx="252" cy="404" r="180"><stop offset="0" stop-color="#ffe066" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="last-stand-knight-p4" d="M272 206C320 220 360 290 384 380L360 372L350 398L326 380L306 400L292 300Z"/><clipPath id="last-stand-knight-c5"><use href="#last-stand-knight-p4"/></clipPath><clipPath id="last-stand-knight-c6"><use href="#last-stand-knight-p4" x="-10" y="-10"/></clipPath><path id="last-stand-knight-p7" d="M268 328C271 338 291 361 298 372C305 383 308 396 313 402C318 407 328 411 332 409C335 407 340 398 339 390C338 383 332 369 326 356C320 344 308 316 300 308C292 300 279 299 274 302C269 305 264 317 268 328Z"/><clipPath id="last-stand-knight-c8"><use href="#last-stand-knight-p7"/></clipPath><clipPath id="last-stand-knight-c9"><use href="#last-stand-knight-p7" x="-8" y="-6"/></clipPath><path id="last-stand-knight-pa" d="M325 409C335 411 367 409 376 407C385 405 385 401 385 398C385 396 385 391 376 389C368 387 336 382 327 383C317 384 313 392 313 395C313 399 316 407 325 409Z"/><clipPath id="last-stand-knight-cb"><use href="#last-stand-knight-pa"/></clipPath><clipPath id="last-stand-knight-cc"><use href="#last-stand-knight-pa" x="-4" y="-4"/></clipPath><path id="last-stand-knight-pd" d="M242 300C232 302 206 309 200 323C193 337 196 381 198 394C200 406 207 408 212 408C216 408 223 405 226 394C229 384 224 346 228 337C233 328 249 340 254 336C260 332 268 317 266 312C264 306 252 298 242 300Z"/><clipPath id="last-stand-knight-ce"><use href="#last-stand-knight-pd"/></clipPath><clipPath id="last-stand-knight-cf"><use href="#last-stand-knight-pd" x="-8" y="-6"/></clipPath><path id="last-stand-knight-pg" d="M198 330A18 15 0 1 0 234 330A18 15 0 1 0 198 330Z"/><clipPath id="last-stand-knight-ch"><use href="#last-stand-knight-pg"/></clipPath><clipPath id="last-stand-knight-ci"><use href="#last-stand-knight-pg" x="-5" y="-5"/></clipPath><path id="last-stand-knight-pj" d="M182 408C182 394 192 388 206 388L228 388L228 408Z"/><clipPath id="last-stand-knight-ck"><use href="#last-stand-knight-pj"/></clipPath><clipPath id="last-stand-knight-cl"><use href="#last-stand-knight-pj" x="-5" y="-5"/></clipPath><path id="last-stand-knight-pm" d="M226 222C230 213 256 208 264 208C272 208 302 212 306 220C310 228 312 281 308 290C304 299 271 311 262 312C253 313 226 305 222 296C218 287 222 231 226 222Z"/><clipPath id="last-stand-knight-cn"><use href="#last-stand-knight-pm"/></clipPath><clipPath id="last-stand-knight-co"><use href="#last-stand-knight-pm" x="-14" y="-10"/></clipPath><path id="last-stand-knight-pp" d="M224 290L306 290L310 322L220 322Z"/><clipPath id="last-stand-knight-cq"><use href="#last-stand-knight-pp"/></clipPath><clipPath id="last-stand-knight-cr"><use href="#last-stand-knight-pp" x="-6" y="-6"/></clipPath><path id="last-stand-knight-ps" d="M160 268L178 268L176 398L168 410L162 398Z"/><clipPath id="last-stand-knight-ct"><use href="#last-stand-knight-ps"/></clipPath><clipPath id="last-stand-knight-cu"><use href="#last-stand-knight-ps" x="-5" y="-5"/></clipPath><path id="last-stand-knight-pv" d="M138 268C148 269 190 269 200 268C210 267 206 264 206 262C206 260 210 257 200 256C190 255 148 255 138 256C128 257 132 260 132 262C132 264 128 267 138 268Z"/><clipPath id="last-stand-knight-cw"><use href="#last-stand-knight-pv"/></clipPath><clipPath id="last-stand-knight-cx"><use href="#last-stand-knight-pv" x="-3" y="-3"/></clipPath><path id="last-stand-knight-py" d="M175 254C176 249 176 233 175 228C174 223 171 222 169 222C167 222 164 223 163 228C162 233 162 249 163 254C164 259 167 260 169 260C171 260 174 259 175 254Z"/><clipPath id="last-stand-knight-cz"><use href="#last-stand-knight-py"/></clipPath><clipPath id="last-stand-knight-c10"><use href="#last-stand-knight-py" x="-3" y="-3"/></clipPath><path id="last-stand-knight-p11" d="M160 222A9 9 0 1 0 178 222A9 9 0 1 0 160 222Z"/><clipPath id="last-stand-knight-c12"><use href="#last-stand-knight-p11"/></clipPath><clipPath id="last-stand-knight-c13"><use href="#last-stand-knight-p11" x="-3" y="-3"/></clipPath><path id="last-stand-knight-p14" d="M260 228C259 232 255 236 251 239C248 242 243 244 238 245C233 245 227 245 222 244C217 242 211 239 209 235C207 231 208 225 211 222C213 218 217 214 222 212C227 211 233 211 238 211C243 212 250 213 254 215C258 218 260 224 260 228Z"/><clipPath id="last-stand-knight-c15"><use href="#last-stand-knight-p14"/></clipPath><clipPath id="last-stand-knight-c16"><use href="#last-stand-knight-p14" x="-6" y="-6"/></clipPath><path id="last-stand-knight-p17" d="M221 227C215 230 207 250 202 251C197 253 191 238 186 236C181 234 174 236 172 238C170 240 169 247 174 252C179 257 196 274 206 273C216 272 234 252 239 245C244 238 242 230 239 227C236 224 226 223 221 227Z"/><clipPath id="last-stand-knight-c18"><use href="#last-stand-knight-p17"/></clipPath><clipPath id="last-stand-knight-c19"><use href="#last-stand-knight-p17" x="-6" y="-6"/></clipPath><path id="last-stand-knight-p1a" d="M323 228C323 232 321 238 318 241C314 243 307 244 302 244C296 245 289 246 286 244C282 242 280 237 278 233C276 230 274 225 275 222C276 218 281 213 285 211C290 210 297 210 302 210C308 211 315 212 319 215C322 218 323 224 323 228Z"/><clipPath id="last-stand-knight-c1b"><use href="#last-stand-knight-p1a"/></clipPath><clipPath id="last-stand-knight-c1c"><use href="#last-stand-knight-p1a" x="-6" y="-6"/></clipPath><path id="last-stand-knight-p1d" d="M289 229C281 232 265 257 250 257C235 257 199 234 188 231C177 228 176 233 175 236C174 239 169 243 180 249C191 256 232 279 250 279C268 279 294 258 303 251C311 244 309 237 307 233C305 230 298 225 289 229Z"/><clipPath id="last-stand-knight-c1e"><use href="#last-stand-knight-p1d"/></clipPath><clipPath id="last-stand-knight-c1f"><use href="#last-stand-knight-p1d" x="-6" y="-6"/></clipPath><path id="last-stand-knight-p1g" d="M156 240A16 14 0 1 0 188 240A16 14 0 1 0 156 240Z"/><clipPath id="last-stand-knight-c1h"><use href="#last-stand-knight-p1g"/></clipPath><clipPath id="last-stand-knight-c1i"><use href="#last-stand-knight-p1g" x="-5" y="-5"/></clipPath><path id="last-stand-knight-p1j" d="M222 176C223 166 225 147 232 140C239 133 256 130 266 132C276 134 293 143 298 152C303 161 302 180 300 190C298 200 291 211 284 216C277 221 262 224 254 222C246 221 233 213 228 206C223 199 221 186 222 176Z"/><clipPath id="last-stand-knight-c1k"><use href="#last-stand-knight-p1j"/></clipPath><clipPath id="last-stand-knight-c1l"><use href="#last-stand-knight-p1j" x="-12" y="-8"/></clipPath><path id="last-stand-knight-p1m" d="M289 184A9 12 0 1 0 307 184A9 12 0 1 0 289 184Z"/><clipPath id="last-stand-knight-c1n"><use href="#last-stand-knight-p1m"/></clipPath><clipPath id="last-stand-knight-c1o"><use href="#last-stand-knight-p1m" x="-4" y="-4"/></clipPath><path id="last-stand-knight-p1p" d="M216 196C208 148 232 118 264 118C300 118 316 146 310 196L300 196C300 170 290 158 266 158C244 158 232 166 228 196Z"/><clipPath id="last-stand-knight-c1q"><use href="#last-stand-knight-p1p"/></clipPath><clipPath id="last-stand-knight-c1r"><use href="#last-stand-knight-p1p" x="-10" y="-8"/></clipPath><path id="last-stand-knight-p1s" d="M269 124C270 121 270 110 273 107C276 103 286 101 289 100C291 98 290 98 290 97C290 97 291 96 287 96C284 97 271 98 267 101C263 105 260 117 259 120C259 124 261 126 262 127C264 127 267 127 269 124Z"/><clipPath id="last-stand-knight-c1t"><use href="#last-stand-knight-p1s"/></clipPath><clipPath id="last-stand-knight-c1u"><use href="#last-stand-knight-p1s" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#last-stand-knight-l0)"/>
+<circle cx="256" cy="250" r="230" fill="url(#last-stand-knight-r1)"/>
+<path d="M84 360C88 336 99 237 104 201C109 165 115 133 116 121C117 108 114 116 113 116C111 116 111 107 108 119C106 132 101 163 96 199C91 235 79 335 76 360C74 384 78 364 80 364C81 364 80 385 84 360Z" fill="#2a1028"/>
+<path d="M110 128L60 140L72 164L50 186L104 182Z" fill="#3a1430"/>
+<path d="M434 359C431 339 421 258 414 229C406 200 389 178 384 168C378 159 379 166 378 166C377 167 372 162 376 172C381 181 399 203 406 231C414 259 422 341 426 361C430 381 429 364 431 364C432 364 436 380 434 359Z" fill="#2a1028"/>
+<path d="M386 180L440 168L428 196L452 214L402 220Z" fill="#3a1430"/>
+<path d="M473 361C477 348 491 293 493 281C496 268 492 277 491 277C490 276 490 267 487 279C483 292 469 347 467 359C464 372 468 363 469 363C470 364 470 373 473 361Z" fill="#2a1028"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#last-stand-knight-l2)"/>
+<ellipse cx="252" cy="404" rx="180" ry="50" fill="url(#last-stand-knight-r3)"/>
+<path d="M93 390L79 399L59 402L44 390L57 376L80 380Z" fill="#2a1020"/>
+<path d="M458 400L442 413L418 412L404 400L415 384L444 386Z" fill="#2a1020"/>
+<path d="M145 440L136 446L123 447L118 440L122 432L137 433Z" fill="#2a1020"/>
+<path d="M399 450L387 458L373 457L367 450L373 443L388 442Z" fill="#2a1020"/>
+<ellipse cx="258" cy="404" rx="130" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#last-stand-knight-p4" fill="#7a1a2e" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c5)">
+<use href="#last-stand-knight-p4" x="-10" y="-10" fill="#e86070"/>
+<g clip-path="url(#last-stand-knight-c6)"><use href="#last-stand-knight-p4" x="7" y="7" fill="#9a2a3a"/></g>
+</g>
+<use href="#last-stand-knight-p7" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c8)">
+<use href="#last-stand-knight-p7" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-p7" x="-8" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c9)"><use href="#last-stand-knight-p7" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-pa" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-cb)">
+<use href="#last-stand-knight-pa" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-pa" x="-4" y="-4" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-cc)"><use href="#last-stand-knight-pa" x="3" y="3" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-pd" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-ce)">
+<use href="#last-stand-knight-pd" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-pd" x="-8" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-cf)"><use href="#last-stand-knight-pd" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-pg" fill="#4e586e" stroke-width="10"/>
+<g clip-path="url(#last-stand-knight-ch)">
+<use href="#last-stand-knight-pg" x="-5" y="-5" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-ci)"><use href="#last-stand-knight-pg" x="3" y="3" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-pj" fill="#4e586e" stroke-width="10"/>
+<g clip-path="url(#last-stand-knight-ck)">
+<use href="#last-stand-knight-pj" x="-5" y="-5" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-cl)"><use href="#last-stand-knight-pj" x="3" y="3" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-pm" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-cn)">
+<use href="#last-stand-knight-pm" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-pm" x="-14" y="-10" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-co)"><use href="#last-stand-knight-pm" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<path d="M246 230L262 252L252 270L266 292M286 228L278 246" fill="none" stroke-width="4" stroke-opacity="0.75"/>
+<use href="#last-stand-knight-pp" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-cq)">
+<use href="#last-stand-knight-pp" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-pp" x="-6" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-cr)"><use href="#last-stand-knight-pp" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<path d="M224 300H308" fill="none" stroke="#a8742a" stroke-width="4"/>
+<use href="#last-stand-knight-ps" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#last-stand-knight-ct)">
+<use href="#last-stand-knight-ps" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#last-stand-knight-cu)"><use href="#last-stand-knight-ps" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M169 276V396" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.7"/>
+<use href="#last-stand-knight-pv" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#last-stand-knight-cw)">
+<use href="#last-stand-knight-pv" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#last-stand-knight-cx)"><use href="#last-stand-knight-pv" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#last-stand-knight-py" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#last-stand-knight-cz)">
+<use href="#last-stand-knight-py" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#last-stand-knight-c10)"><use href="#last-stand-knight-py" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#last-stand-knight-p11" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#last-stand-knight-c12)">
+<use href="#last-stand-knight-p11" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#last-stand-knight-c13)"><use href="#last-stand-knight-p11" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#last-stand-knight-p14" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c15)">
+<use href="#last-stand-knight-p14" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-p14" x="-6" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c16)"><use href="#last-stand-knight-p14" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-p17" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c18)">
+<use href="#last-stand-knight-p17" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-p17" x="-6" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c19)"><use href="#last-stand-knight-p17" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-p1a" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c1b)">
+<use href="#last-stand-knight-p1a" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-p1a" x="-6" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c1c)"><use href="#last-stand-knight-p1a" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-p1d" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c1e)">
+<use href="#last-stand-knight-p1d" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-p1d" x="-6" y="-6" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c1f)"><use href="#last-stand-knight-p1d" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<use href="#last-stand-knight-p1g" fill="#4e586e" stroke-width="10"/>
+<g clip-path="url(#last-stand-knight-c1h)">
+<use href="#last-stand-knight-p1g" x="-5" y="-5" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c1i)"><use href="#last-stand-knight-p1g" x="3" y="3" fill="#8a96ad"/></g>
+</g>
+<g transform="translate(6 6)">
+<use href="#last-stand-knight-p1j" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c1k)">
+<use href="#last-stand-knight-p1j" x="-12" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#last-stand-knight-c1l)"><use href="#last-stand-knight-p1j" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#last-stand-knight-p1m" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#last-stand-knight-c1n)">
+<use href="#last-stand-knight-p1m" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#last-stand-knight-c1o)"><use href="#last-stand-knight-p1m" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<path d="M233 184A5 7 0 1 0 243 184A5 7 0 1 0 233 184Z" fill="#1d0842"/>
+<path d="M261 184A5 7 0 1 0 271 184A5 7 0 1 0 261 184Z" fill="#1d0842"/>
+<path d="M235 182A2 2 0 1 0 238 182A2 2 0 1 0 235 182Z" fill="#ffffff"/>
+<path d="M263 182A2 2 0 1 0 266 182A2 2 0 1 0 263 182Z" fill="#ffffff"/>
+<path d="M226 166L248 176M256 176L278 166" fill="none" stroke-width="4"/>
+<path d="M242 206L262 204" fill="none" stroke-width="3.5"/>
+</g>
+<path d="M276 186L286 200" fill="none" stroke="#ff4d6d" stroke-width="3" stroke-opacity="0.8"/>
+<use href="#last-stand-knight-p1p" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#last-stand-knight-c1q)">
+<use href="#last-stand-knight-p1p" x="-5" fill="#4e586e"/>
+<use href="#last-stand-knight-p1p" x="-10" y="-8" fill="#c4cede"/>
+<g clip-path="url(#last-stand-knight-c1r)"><use href="#last-stand-knight-p1p" x="7" y="7" fill="#8a96ad"/></g>
+</g>
+<path d="M264 120V156M222 172L230 160" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<use href="#last-stand-knight-p1s" fill="#7a1a2e" stroke-width="8"/>
+<g clip-path="url(#last-stand-knight-c1t)">
+<use href="#last-stand-knight-p1s" x="-3" y="-3" fill="#e86070"/>
+<g clip-path="url(#last-stand-knight-c1u)"><use href="#last-stand-knight-p1s" x="2" y="2" fill="#c23a4a"/></g>
+</g>
+<path d="M130 112L133 118L130 123L127 118Z" fill="#ffe066" fill-opacity="0.55"/>
+<path d="M204 151L206 156L204 161L201 156Z" fill="#ff9f1c" fill-opacity="0.88"/>
+<path d="M364 96L368 102L364 108L361 102Z" fill="#ffe066" fill-opacity="0.5"/>
+<path d="M128 350L131 356L128 363L124 356Z" fill="#ff9f1c" fill-opacity="0.64"/>
+<path d="M337 110L340 114L337 119L335 114Z" fill="#ffe066" fill-opacity="0.73"/>
+<path d="M415 149L419 155L415 162L412 155Z" fill="#ff9f1c" fill-opacity="0.52"/>
+<path d="M161 300L163 304L161 307L159 304Z" fill="#ffe066" fill-opacity="0.76"/>
+<path d="M219 225L223 232L219 239L215 232Z" fill="#ff9f1c" fill-opacity="0.78"/>
+<path d="M386 332L389 337L386 343L383 337Z" fill="#ffe066" fill-opacity="0.81"/>
+<path d="M327 152L329 156L327 161L324 156Z" fill="#ff9f1c" fill-opacity="0.66"/>
+<path d="M387 341L390 347L387 354L383 347Z" fill="#ffe066" fill-opacity="0.72"/>
+<path d="M202 332L204 336L202 340L200 336Z" fill="#ff9f1c" fill-opacity="0.6"/>
+</svg>

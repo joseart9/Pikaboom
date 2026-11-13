@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="toad-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#10282a"/><stop offset="0.55" stop-color="#1e4a40"/><stop offset="1" stop-color="#10282a"/></linearGradient><radialGradient id="toad-r1" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="240"><stop offset="0" stop-color="#d8f5a2" stop-opacity="0.25"/><stop offset="0.45" stop-color="#d8f5a2" stop-opacity="0.1125"/><stop offset="1" stop-color="#d8f5a2" stop-opacity="0"/></radialGradient><linearGradient id="toad-l2" gradientUnits="userSpaceOnUse" x1="0" y1="302" x2="0" y2="512"><stop offset="0" stop-color="#1e5050"/><stop offset="1" stop-color="#123a3a"/></linearGradient><path id="toad-p3" d="M380 420A50 14 0 1 0 480 420A50 14 0 1 0 380 420Z"/><clipPath id="toad-c4"><use href="#toad-p3"/></clipPath><clipPath id="toad-c5"><use href="#toad-p3" x="-3" y="-3"/></clipPath><path id="toad-p6" d="M40 470A40 12 0 1 0 120 470A40 12 0 1 0 40 470Z"/><clipPath id="toad-c7"><use href="#toad-p6"/></clipPath><clipPath id="toad-c8"><use href="#toad-p6" x="-3" y="-3"/></clipPath><path id="toad-p9" d="M256 378L180 352C110 356 80 378 92 396C120 420 390 422 420 396C432 378 400 352 330 350Z"/><clipPath id="toad-ca"><use href="#toad-p9"/></clipPath><clipPath id="toad-cb"><use href="#toad-p9" x="-8" y="-8"/></clipPath><path id="toad-pc" d="M126 340A46 30 0 1 0 218 340A46 30 0 1 0 126 340Z"/><clipPath id="toad-cd"><use href="#toad-pc"/></clipPath><clipPath id="toad-ce"><use href="#toad-pc" x="-6" y="-6"/></clipPath><path id="toad-pf" d="M294 340A46 30 0 1 0 386 340A46 30 0 1 0 294 340Z"/><clipPath id="toad-cg"><use href="#toad-pf"/></clipPath><clipPath id="toad-ch"><use href="#toad-pf" x="-6" y="-6"/></clipPath><path id="toad-pi" d="M256 206C278 206 314 211 330 222C347 233 363 261 366 280C369 300 367 339 350 352C334 366 284 370 256 370C228 370 179 366 162 352C146 339 143 300 146 280C149 261 166 233 182 222C199 211 234 206 256 206Z"/><clipPath id="toad-cj"><use href="#toad-pi"/></clipPath><clipPath id="toad-ck"><use href="#toad-pi" x="-14" y="-12"/></clipPath><path id="toad-pl" d="M256 290C272 290 300 292 310 300C320 308 328 335 320 344C312 353 275 362 256 362C237 362 200 353 192 344C184 335 192 308 202 300C212 292 240 290 256 290Z"/><clipPath id="toad-cm"><use href="#toad-pl"/></clipPath><clipPath id="toad-cn"><use href="#toad-pl" x="-4" y="-4"/></clipPath><path id="toad-po" d="M194 364A20 10 0 1 0 234 364A20 10 0 1 0 194 364Z"/><clipPath id="toad-cp"><use href="#toad-po"/></clipPath><clipPath id="toad-cq"><use href="#toad-po" x="-3" y="-3"/></clipPath><path id="toad-pr" d="M278 364A20 10 0 1 0 318 364A20 10 0 1 0 278 364Z"/><clipPath id="toad-cs"><use href="#toad-pr"/></clipPath><clipPath id="toad-ct"><use href="#toad-pr" x="-3" y="-3"/></clipPath><path id="toad-pu" d="M176 214A32 32 0 1 0 240 214A32 32 0 1 0 176 214Z"/><clipPath id="toad-cv"><use href="#toad-pu"/></clipPath><clipPath id="toad-cw"><use href="#toad-pu" x="-6" y="-6"/></clipPath><path id="toad-px" d="M272 214A32 32 0 1 0 336 214A32 32 0 1 0 272 214Z"/><clipPath id="toad-cy"><use href="#toad-px"/></clipPath><clipPath id="toad-cz"><use href="#toad-px" x="-6" y="-6"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#toad-l0)"/>
+<circle cx="256" cy="250" r="240" fill="url(#toad-r1)"/>
+<path d="M0 338Q256 302 512 338V512H0Z" fill="url(#toad-l2)"/>
+<path d="M40 360H130M380 352H480M60 440H180M330 460H460" fill="none" stroke="#d8f5a2" stroke-width="4" stroke-opacity="0.25"/>
+<use href="#toad-p3" fill="#25602e" stroke-width="8"/>
+<g clip-path="url(#toad-c4)">
+<use href="#toad-p3" x="-3" y="-3" fill="#5fb060"/>
+<g clip-path="url(#toad-c5)"><use href="#toad-p3" x="7" y="7" fill="#3d8a4a"/></g>
+</g>
+<use href="#toad-p6" fill="#25602e" stroke-width="8"/>
+<g clip-path="url(#toad-c7)">
+<use href="#toad-p6" x="-3" y="-3" fill="#5fb060"/>
+<g clip-path="url(#toad-c8)"><use href="#toad-p6" x="7" y="7" fill="#3d8a4a"/></g>
+</g>
+<use href="#toad-p9" fill="#25602e" stroke-width="12"/>
+<g clip-path="url(#toad-ca)">
+<use href="#toad-p9" x="-8" y="-8" fill="#5fb060"/>
+<g clip-path="url(#toad-cb)"><use href="#toad-p9" x="5" y="5" fill="#3d8a4a"/></g>
+</g>
+<path d="M256 378L160 404M256 378L350 404M256 378L256 414" fill="none" stroke-width="3" stroke-opacity="0.35"/>
+<ellipse cx="256" cy="376" rx="110" ry="14" fill="#1d0842" fill-opacity="0.45"/>
+<use href="#toad-pc" fill="#457a2e" stroke-width="12"/>
+<g clip-path="url(#toad-cd)">
+<use href="#toad-pc" x="-6" y="-6" fill="#a0d46a"/>
+<g clip-path="url(#toad-ce)"><use href="#toad-pc" x="7" y="7" fill="#6fae4a"/></g>
+</g>
+<use href="#toad-pf" fill="#457a2e" stroke-width="12"/>
+<g clip-path="url(#toad-cg)">
+<use href="#toad-pf" x="-6" y="-6" fill="#a0d46a"/>
+<g clip-path="url(#toad-ch)"><use href="#toad-pf" x="7" y="7" fill="#6fae4a"/></g>
+</g>
+<use href="#toad-pi" fill="#457a2e" stroke-width="12"/>
+<g clip-path="url(#toad-cj)">
+<use href="#toad-pi" x="-14" y="-12" fill="#a0d46a"/>
+<g clip-path="url(#toad-ck)"><use href="#toad-pi" x="9" y="9" fill="#6fae4a"/></g>
+</g>
+<use href="#toad-pl" fill="#b9a98a"/>
+<g clip-path="url(#toad-cm)">
+<use href="#toad-pl" x="-4" y="-4" fill="#fff8ea"/>
+<g clip-path="url(#toad-cn)"><use href="#toad-pl" x="3" y="3" fill="#eadfc8"/></g>
+</g>
+<path d="M193 252A7 7 0 1 0 207 252A7 7 0 1 0 193 252Z" fill="#457a2e"/>
+<path d="M312 256A6 6 0 1 0 324 256A6 6 0 1 0 312 256Z" fill="#457a2e"/>
+<path d="M329 300A5 5 0 1 0 339 300A5 5 0 1 0 329 300Z" fill="#457a2e"/>
+<path d="M171 298A5 5 0 1 0 181 298A5 5 0 1 0 171 298Z" fill="#457a2e"/>
+<use href="#toad-po" fill="#457a2e" stroke-width="8"/>
+<g clip-path="url(#toad-cp)">
+<use href="#toad-po" x="-3" y="-3" fill="#a0d46a"/>
+<g clip-path="url(#toad-cq)"><use href="#toad-po" x="2" y="2" fill="#6fae4a"/></g>
+</g>
+<path d="M204 362V372M214 364V374M224 362V372" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<use href="#toad-pr" fill="#457a2e" stroke-width="8"/>
+<g clip-path="url(#toad-cs)">
+<use href="#toad-pr" x="-3" y="-3" fill="#a0d46a"/>
+<g clip-path="url(#toad-ct)"><use href="#toad-pr" x="2" y="2" fill="#6fae4a"/></g>
+</g>
+<path d="M288 362V372M298 364V374M308 362V372" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<use href="#toad-pu" fill="#457a2e" stroke-width="12"/>
+<g clip-path="url(#toad-cv)">
+<use href="#toad-pu" x="-6" y="-6" fill="#a0d46a"/>
+<g clip-path="url(#toad-cw)"><use href="#toad-pu" x="4" y="4" fill="#6fae4a"/></g>
+</g>
+<path d="M188 214A20 20 0 1 0 228 214A20 20 0 1 0 188 214Z" fill="#ffe066"/>
+<path d="M195 216A13 16 0 1 0 221 216A13 16 0 1 0 195 216Z" fill="#1d0842"/>
+<path d="M197 208A5 5 0 1 0 207 208A5 5 0 1 0 197 208Z" fill="#ffffff"/>
+<use href="#toad-px" fill="#457a2e" stroke-width="12"/>
+<g clip-path="url(#toad-cy)">
+<use href="#toad-px" x="-6" y="-6" fill="#a0d46a"/>
+<g clip-path="url(#toad-cz)"><use href="#toad-px" x="4" y="4" fill="#6fae4a"/></g>
+</g>
+<path d="M284 214A20 20 0 1 0 324 214A20 20 0 1 0 284 214Z" fill="#ffe066"/>
+<path d="M291 216A13 16 0 1 0 317 216A13 16 0 1 0 291 216Z" fill="#1d0842"/>
+<path d="M293 208A5 5 0 1 0 303 208A5 5 0 1 0 293 208Z" fill="#ffffff"/>
+<path d="M196 268C226 292 286 292 316 268" fill="none" stroke-width="5"/>
+<path d="M243 252A3 3 0 1 0 249 252A3 3 0 1 0 243 252Z" fill="#1d0842"/>
+<path d="M263 252A3 3 0 1 0 269 252A3 3 0 1 0 263 252Z" fill="#1d0842"/>
+<path d="M180 276A10 6 0 1 0 200 276A10 6 0 1 0 180 276Z" fill="#ff4d6d" fill-opacity="0.3"/>
+<path d="M312 276A10 6 0 1 0 332 276A10 6 0 1 0 312 276Z" fill="#ff4d6d" fill-opacity="0.3"/>
+<circle cx="147" cy="127" r="2" fill="#d8f5a2" fill-opacity="0.44"/>
+<circle cx="185" cy="148" r="2" fill="#d8f5a2" fill-opacity="0.53"/>
+<circle cx="394" cy="216" r="2" fill="#d8f5a2" fill-opacity="0.79"/>
+<circle cx="310" cy="129" r="2" fill="#d8f5a2" fill-opacity="0.48"/>
+<circle cx="374" cy="166" r="2" fill="#d8f5a2" fill-opacity="0.75"/>
+<circle cx="302" cy="212" r="2" fill="#d8f5a2" fill-opacity="0.46"/>
+</svg>

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="silence-monk-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1e1438"/><stop offset="0.55" stop-color="#4a2f5e"/><stop offset="1" stop-color="#2a1a40"/></linearGradient><radialGradient id="silence-monk-r1" gradientUnits="userSpaceOnUse" cx="290" cy="260" r="230"><stop offset="0" stop-color="#ffd88a" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffd88a" stop-opacity="0.135"/><stop offset="1" stop-color="#ffd88a" stop-opacity="0"/></radialGradient><radialGradient id="silence-monk-r2" gradientUnits="userSpaceOnUse" cx="420" cy="160" r="34"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.6"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.27"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="silence-monk-p3" d="M408 144L432 144L436 176L404 176Z"/><clipPath id="silence-monk-c4"><use href="#silence-monk-p3"/></clipPath><clipPath id="silence-monk-c5"><use href="#silence-monk-p3" x="-3" y="-3"/></clipPath><linearGradient id="silence-monk-l6" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#3c2858"/><stop offset="1" stop-color="#1e1438"/></linearGradient><radialGradient id="silence-monk-r7" gradientUnits="userSpaceOnUse" cx="290" cy="404" r="170"><stop offset="0" stop-color="#ffd88a" stop-opacity="0.55"/><stop offset="1" stop-color="#ffd88a" stop-opacity="0"/></radialGradient><radialGradient id="silence-monk-r8" gradientUnits="userSpaceOnUse" cx="136" cy="164" r="50"><stop offset="0" stop-color="#c77dff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.2025"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="silence-monk-p9" d="M161 179L136 192L112 179L113 150L136 133L160 149Z"/><clipPath id="silence-monk-ca"><use href="#silence-monk-p9"/></clipPath><clipPath id="silence-monk-cb"><use href="#silence-monk-p9" x="-5" y="-5"/></clipPath><path id="silence-monk-pc" d="M214 360C215 353 237 334 252 330C267 326 314 326 330 330C346 334 371 353 372 360C373 367 357 379 340 382C323 385 261 385 244 382C227 379 213 367 214 360Z"/><clipPath id="silence-monk-cd"><use href="#silence-monk-pc"/></clipPath><clipPath id="silence-monk-ce"><use href="#silence-monk-pc" x="-10" y="-8"/></clipPath><path id="silence-monk-pf" d="M250 238C256 229 282 222 292 222C302 222 328 229 334 238C340 247 344 288 344 300C344 312 345 339 334 344C323 349 263 349 252 344C241 339 242 312 242 300C242 288 244 247 250 238Z"/><clipPath id="silence-monk-cg"><use href="#silence-monk-pf"/></clipPath><clipPath id="silence-monk-ch"><use href="#silence-monk-pf" x="-14" y="-10"/></clipPath><path id="silence-monk-pi" d="M276 230L312 230L288 344L262 344Z"/><clipPath id="silence-monk-cj"><use href="#silence-monk-pi"/></clipPath><clipPath id="silence-monk-ck"><use href="#silence-monk-pi" x="-6" y="-6"/></clipPath><path id="silence-monk-pl" d="M248 226C252 221 280 210 292 210C304 210 334 221 338 226C342 231 330 246 324 248C318 250 301 240 292 240C283 240 266 250 260 248C254 246 244 231 248 226Z"/><clipPath id="silence-monk-cm"><use href="#silence-monk-pl"/></clipPath><clipPath id="silence-monk-cn"><use href="#silence-monk-pl" x="-6" y="-6"/></clipPath><path id="silence-monk-po" d="M318 255C320 264 339 289 339 300C339 311 323 324 321 331C319 338 323 343 325 345C328 346 333 348 339 341C344 334 361 314 361 300C361 286 347 254 342 245C337 236 329 236 325 238C322 239 316 246 318 255Z"/><clipPath id="silence-monk-cp"><use href="#silence-monk-po"/></clipPath><clipPath id="silence-monk-cq"><use href="#silence-monk-po" x="-6" y="-6"/></clipPath><path id="silence-monk-pr" d="M314 340A12 11 0 1 0 338 340A12 11 0 1 0 314 340Z"/><clipPath id="silence-monk-cs"><use href="#silence-monk-pr"/></clipPath><clipPath id="silence-monk-ct"><use href="#silence-monk-pr" x="-4" y="-4"/></clipPath><path id="silence-monk-pu" d="M336 360A5 5 0 1 0 345 360A5 5 0 1 0 336 360Z"/><clipPath id="silence-monk-cv"><use href="#silence-monk-pu"/></clipPath><path id="silence-monk-px" d="M333 366A5 5 0 1 0 342 366A5 5 0 1 0 333 366Z"/><clipPath id="silence-monk-cy"><use href="#silence-monk-px"/></clipPath><path id="silence-monk-p10" d="M328 370A5 5 0 1 0 337 370A5 5 0 1 0 328 370Z"/><clipPath id="silence-monk-c11"><use href="#silence-monk-p10"/></clipPath><path id="silence-monk-p13" d="M322 373A5 5 0 1 0 331 373A5 5 0 1 0 322 373Z"/><clipPath id="silence-monk-c14"><use href="#silence-monk-p13"/></clipPath><path id="silence-monk-p16" d="M315 374A5 5 0 1 0 324 374A5 5 0 1 0 315 374Z"/><clipPath id="silence-monk-c17"><use href="#silence-monk-p16"/></clipPath><path id="silence-monk-p19" d="M308 373A5 5 0 1 0 317 373A5 5 0 1 0 308 373Z"/><clipPath id="silence-monk-c1a"><use href="#silence-monk-p19"/></clipPath><path id="silence-monk-p1c" d="M302 369A5 5 0 1 0 311 369A5 5 0 1 0 302 369Z"/><clipPath id="silence-monk-c1d"><use href="#silence-monk-p1c"/></clipPath><path id="silence-monk-p1f" d="M297 364A5 5 0 1 0 306 364A5 5 0 1 0 297 364Z"/><clipPath id="silence-monk-c1g"><use href="#silence-monk-p1f"/></clipPath><path id="silence-monk-p1i" d="M294 358A5 5 0 1 0 303 358A5 5 0 1 0 294 358Z"/><clipPath id="silence-monk-c1j"><use href="#silence-monk-p1i"/></clipPath><path id="silence-monk-p1l" d="M313 378A7 7 0 1 0 327 378A7 7 0 1 0 313 378Z"/><clipPath id="silence-monk-c1m"><use href="#silence-monk-p1l"/></clipPath><clipPath id="silence-monk-c1n"><use href="#silence-monk-p1l" x="-2" y="-2"/></clipPath><path id="silence-monk-p1o" d="M246 238C241 243 233 270 230 269C227 269 228 241 226 235C223 229 216 228 213 228C210 229 204 231 206 241C208 250 217 289 226 291C235 293 260 262 266 254C272 246 267 238 264 236C261 233 251 233 246 238Z"/><clipPath id="silence-monk-c1p"><use href="#silence-monk-p1o"/></clipPath><clipPath id="silence-monk-c1q"><use href="#silence-monk-p1o" x="-6" y="-6"/></clipPath><path id="silence-monk-p1r" d="M206 252C202 236 204 212 210 204C214 200 218 204 218 210L220 204C222 198 228 200 228 206L228 236C230 248 222 256 214 256Z"/><clipPath id="silence-monk-c1s"><use href="#silence-monk-p1r"/></clipPath><clipPath id="silence-monk-c1t"><use href="#silence-monk-p1r" x="-4" y="-4"/></clipPath><path id="silence-monk-p1u" d="M222 176C223 166 225 147 232 140C239 133 256 127 266 128C276 129 293 139 298 148C303 157 302 180 300 190C298 200 291 211 284 216C277 221 262 224 254 222C246 221 233 213 228 206C223 199 221 186 222 176Z"/><clipPath id="silence-monk-c1v"><use href="#silence-monk-p1u"/></clipPath><clipPath id="silence-monk-c1w"><use href="#silence-monk-p1u" x="-12" y="-8"/></clipPath><path id="silence-monk-p1x" d="M289 184A9 12 0 1 0 307 184A9 12 0 1 0 289 184Z"/><clipPath id="silence-monk-c1y"><use href="#silence-monk-p1x"/></clipPath><clipPath id="silence-monk-c1z"><use href="#silence-monk-p1x" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#silence-monk-l0)"/>
+<circle cx="290" cy="260" r="230" fill="url(#silence-monk-r1)"/>
+<path d="M10 512L10 96L70 96L70 512Z" fill="#2c1d4a"/>
+<path d="M442 512L442 96L502 96L502 512Z" fill="#2c1d4a"/>
+<path d="M0 70H512V100H0Z" fill="#2c1d4a"/>
+<path d="M0 100H512" fill="none" stroke="#3a2a5e" stroke-width="4"/>
+<path d="M420 100V140" fill="none" stroke="#3a2a5e" stroke-width="3"/>
+<circle cx="420" cy="160" r="34" fill="url(#silence-monk-r2)"/>
+<use href="#silence-monk-p3" fill="#4e3220" stroke-width="8"/>
+<g clip-path="url(#silence-monk-c4)">
+<use href="#silence-monk-p3" x="-3" y="-3" fill="#a8784a"/>
+<g clip-path="url(#silence-monk-c5)"><use href="#silence-monk-p3" x="2" y="2" fill="#7a5232"/></g>
+</g>
+<path d="M412 150H428V170H412Z" fill="#ffe066" fill-opacity="0.9"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#silence-monk-l6)"/>
+<ellipse cx="290" cy="404" rx="170" ry="48" fill="url(#silence-monk-r7)"/>
+<path d="M0 392H512M0 440H512M120 360V392M260 392V440M400 360V392" fill="none" stroke="#1e1438" stroke-width="3" stroke-opacity="0.7"/>
+<ellipse cx="292" cy="408" rx="100" ry="12" fill="#1d0842" fill-opacity="0.4"/>
+<circle cx="136" cy="164" r="50" fill="url(#silence-monk-r8)"/>
+<use href="#silence-monk-p9" fill="#4b2f8f" stroke-width="10"/>
+<g clip-path="url(#silence-monk-ca)">
+<use href="#silence-monk-p9" x="-5" y="-5" fill="#b08ae8"/>
+<g clip-path="url(#silence-monk-cb)"><use href="#silence-monk-p9" x="3" y="3" fill="#7b4fc0"/></g>
+</g>
+<path d="M136 146V182M124 156L148 172M124 172L148 156" fill="none" stroke="#e9c8ff" stroke-width="4" stroke-opacity="0.5"/>
+<path d="M118 150L134 166L128 182" fill="none" stroke-width="4" stroke-opacity="0.8"/>
+<circle cx="155" cy="190" r="2" fill="#8a82a8" fill-opacity="0.55"/>
+<circle cx="107" cy="173" r="3" fill="#8a82a8" fill-opacity="0.48"/>
+<circle cx="172" cy="141" r="3" fill="#8a82a8" fill-opacity="0.6"/>
+<circle cx="153" cy="121" r="2" fill="#8a82a8" fill-opacity="0.42"/>
+<circle cx="172" cy="146" r="3" fill="#8a82a8" fill-opacity="0.59"/>
+<circle cx="120" cy="122" r="3" fill="#8a82a8" fill-opacity="0.38"/>
+<circle cx="122" cy="131" r="2" fill="#8a82a8" fill-opacity="0.7"/>
+<path d="M186 234A30 30 0 0 1 209 194" fill="none" stroke="#fff1c1" stroke-opacity="0.9" stroke-width="10"/>
+<path d="M186 234A30 30 0 0 1 209 194" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="4"/>
+<path d="M161 243A56 56 0 0 1 204 169" fill="none" stroke="#fff1c1" stroke-opacity="0.7" stroke-width="9"/>
+<path d="M161 243A56 56 0 0 1 204 169" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="3"/>
+<path d="M135 253A84 84 0 0 1 199 141" fill="none" stroke="#fff1c1" stroke-opacity="0.5" stroke-width="8"/>
+<path d="M135 253A84 84 0 0 1 199 141" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2"/>
+<use href="#silence-monk-pc" fill="#a85a1a" stroke-width="12"/>
+<g clip-path="url(#silence-monk-cd)">
+<use href="#silence-monk-pc" x="-10" y="-8" fill="#ffb35c"/>
+<g clip-path="url(#silence-monk-ce)"><use href="#silence-monk-pc" x="7" y="7" fill="#e08a2e"/></g>
+</g>
+<path d="M250 362C280 350 310 352 340 364" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<use href="#silence-monk-pf" fill="#a85a1a" stroke-width="12"/>
+<g clip-path="url(#silence-monk-cg)">
+<use href="#silence-monk-pf" x="-14" y="-10" fill="#ffb35c"/>
+<g clip-path="url(#silence-monk-ch)"><use href="#silence-monk-pf" x="7" y="7" fill="#e08a2e"/></g>
+</g>
+<use href="#silence-monk-pi" fill="#2c1a46" stroke-width="12"/>
+<g clip-path="url(#silence-monk-cj)">
+<use href="#silence-monk-pi" x="-6" y="-6" fill="#6a4a94"/>
+<g clip-path="url(#silence-monk-ck)"><use href="#silence-monk-pi" x="7" y="7" fill="#4a2f6e"/></g>
+</g>
+<use href="#silence-monk-pl" fill="#2c1a46" stroke-width="12"/>
+<g clip-path="url(#silence-monk-cm)">
+<use href="#silence-monk-pl" x="-6" y="-6" fill="#6a4a94"/>
+<g clip-path="url(#silence-monk-cn)"><use href="#silence-monk-pl" x="7" y="7" fill="#4a2f6e"/></g>
+</g>
+<use href="#silence-monk-po" fill="#a85a1a" stroke-width="12"/>
+<g clip-path="url(#silence-monk-cp)">
+<use href="#silence-monk-po" x="-6" y="-6" fill="#ffb35c"/>
+<g clip-path="url(#silence-monk-cq)"><use href="#silence-monk-po" x="7" y="7" fill="#e08a2e"/></g>
+</g>
+<use href="#silence-monk-pr" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#silence-monk-cs)">
+<use href="#silence-monk-pr" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#silence-monk-ct)"><use href="#silence-monk-pr" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#silence-monk-pu" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-cv)">
+<use href="#silence-monk-pu" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-px" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-cy)">
+<use href="#silence-monk-px" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p10" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c11)">
+<use href="#silence-monk-p10" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p13" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c14)">
+<use href="#silence-monk-p13" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p16" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c17)">
+<use href="#silence-monk-p16" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p19" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c1a)">
+<use href="#silence-monk-p19" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p1c" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c1d)">
+<use href="#silence-monk-p1c" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p1f" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c1g)">
+<use href="#silence-monk-p1f" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p1i" fill="#6b4a2f" stroke-width="4"/>
+<g clip-path="url(#silence-monk-c1j)">
+<use href="#silence-monk-p1i" x="-1" y="-1" fill="#a8742a"/>
+</g>
+<use href="#silence-monk-p1l" fill="#a8742a" stroke-width="6"/>
+<g clip-path="url(#silence-monk-c1m)">
+<use href="#silence-monk-p1l" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#silence-monk-c1n)"><use href="#silence-monk-p1l" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<use href="#silence-monk-p1o" fill="#a85a1a" stroke-width="12"/>
+<g clip-path="url(#silence-monk-c1p)">
+<use href="#silence-monk-p1o" x="-6" y="-6" fill="#ffb35c"/>
+<g clip-path="url(#silence-monk-c1q)"><use href="#silence-monk-p1o" x="7" y="7" fill="#e08a2e"/></g>
+</g>
+<use href="#silence-monk-p1r" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#silence-monk-c1s)">
+<use href="#silence-monk-p1r" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#silence-monk-c1t)"><use href="#silence-monk-p1r" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<g transform="translate(32 20)">
+<use href="#silence-monk-p1u" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#silence-monk-c1v)">
+<use href="#silence-monk-p1u" x="-12" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#silence-monk-c1w)"><use href="#silence-monk-p1u" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#silence-monk-p1x" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#silence-monk-c1y)">
+<use href="#silence-monk-p1x" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#silence-monk-c1z)"><use href="#silence-monk-p1x" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<path d="M230 184C236 188 242 188 246 184M258 184C264 188 270 188 274 184M228 172L246 174M258 174L276 172" fill="none" stroke-width="3.5"/>
+<path d="M242 204C250 206 256 206 262 204" fill="none" stroke-width="3"/>
+<path d="M247 156A5 5 0 1 0 257 156A5 5 0 1 0 247 156Z" fill="#ffbe0b"/>
+<path d="M236 146C246 136 262 134 276 138" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="5"/>
+</g>
+<circle cx="335" cy="321" r="3" fill="#ffe066" fill-opacity="0.42"/>
+<circle cx="268" cy="203" r="2" fill="#ffe066" fill-opacity="0.87"/>
+<circle cx="371" cy="279" r="2" fill="#ffe066" fill-opacity="0.77"/>
+<circle cx="309" cy="221" r="3" fill="#ffe066" fill-opacity="0.42"/>
+<circle cx="346" cy="302" r="3" fill="#ffe066" fill-opacity="0.54"/>
+<circle cx="389" cy="320" r="3" fill="#ffe066" fill-opacity="0.8"/>
+<circle cx="409" cy="277" r="2" fill="#ffe066" fill-opacity="0.42"/>
+<circle cx="205" cy="163" r="3" fill="#ffe066" fill-opacity="0.54"/>
+<circle cx="232" cy="282" r="2" fill="#ffe066" fill-opacity="0.89"/>
+<circle cx="373" cy="320" r="3" fill="#ffe066" fill-opacity="0.57"/>
+</svg>

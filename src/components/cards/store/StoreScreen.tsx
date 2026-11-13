@@ -6,7 +6,6 @@
 // one-time starter grant.
 // Purchases: the idempotency key is generated when "Comprar" is tapped and kept until the outcome is final (success
 // or a 4xx); after a network failure the next tap retries with the SAME key, so it can never buy twice (§16.4).
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CATALOG, hasDef } from "@/game/cards/catalog";
 import type { CardId } from "@/game/cards/catalog/types";
@@ -26,7 +25,10 @@ import {
 } from "@/game/cards/collection/shop";
 import type { PackType } from "@/game/cards/config/economy";
 import { cardName, t } from "@/game/cards/i18n";
-import { CurrencyBadge, GameIcon } from "../skin";
+import { ScreenHeader } from "../screen/ScreenHeader";
+import { StateMessage } from "../screen/StateMessage";
+import { CurrencyBadge, GameIcon, RarityGem } from "../skin";
+import { PackArt } from "../skin/PackArt";
 import { PackOpening } from "./PackOpening";
 
 const DATE = new Intl.DateTimeFormat("es", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
@@ -123,69 +125,83 @@ export function StoreScreen({ loadStore = getStore, loadCollection = getCollecti
 
   return (
     <main className="cg-collection cg-store">
-      <header className="cg-collection-header">
-        <Link href="/cards" className="cg-button">
-          {t("match.backToMenu")}
-        </Link>
-        <h1 className="cg-collection-title">{t("store.title")}</h1>
+      <ScreenHeader title={t("store.title")} icon="store" back={{ href: "/cards" }}>
         {data && (
-          <div className="cg-collection-stats">
+          <span className="cg-resource">
             <CurrencyBadge amount={data.balance} unit={t("economy.gold")} label={t("economy.balance", { amount: data.balance })} />
-          </div>
+          </span>
         )}
-      </header>
+      </ScreenHeader>
 
-      {state.status === "loading" && <div className="cg-center-message">{t("store.loading")}</div>}
+      {state.status === "loading" && <StateMessage kind="loading" text={t("store.loading")} fill />}
       {state.status === "error" && (
-        <div className="cg-center-message">
-          <p>{state.message}</p>
-          <button
-            type="button"
-            className="cg-button cg-button--primary"
-            onClick={() => {
-              setState({ status: "loading" });
-              setAttempt((n) => n + 1);
-            }}
-          >
-            {t("store.retry")}
-          </button>
-        </div>
+        <StateMessage
+          kind="error"
+          text={state.message}
+          fill
+          action={
+            <button
+              type="button"
+              className="cg-button cg-button--primary"
+              onClick={() => {
+                setState({ status: "loading" });
+                setAttempt((n) => n + 1);
+              }}
+            >
+              {t("store.retry")}
+            </button>
+          }
+        />
       )}
 
       {data && (
         <div className="cg-store-body">
-          <section className="cg-store-offers" aria-label={t("store.title")}>
+          <section className="cg-store-offers" aria-label={t("store.offers")}>
             {data.packs.map((offer) => {
               const short = Math.max(0, offer.price - data.balance);
               const name = packName(offer.type);
+              const isBuying = buying === offer.type;
               return (
                 <article key={offer.type} className="cg-store-offer">
-                  <div className="cg-store-pack" aria-hidden>
-                    <GameIcon name="sparkle" className="cg-store-pack-glyph" outlined />
-                    <span className="cg-store-pack-name">{name}</span>
+                  <div className={`cg-store-pack${isBuying ? " cg-store-pack--buying" : ""}`}>
+                    <PackArt variant={offer.type} />
                   </div>
                   <div className="cg-store-offer-info">
                     <h2 className="cg-store-offer-title">{name}</h2>
                     <p className="cg-store-offer-text">{t("store.packContents", { size: offer.size })}</p>
+                    <p className="cg-store-price">
+                      <span className="cg-store-price-label">{t("store.price")}</span>
+                      <CurrencyBadge amount={offer.price} unit={t("economy.gold")} />
+                    </p>
                     <button
                       type="button"
-                      className="cg-button cg-button--primary cg-store-buy"
+                      className={`cg-button cg-button--primary cg-store-buy${isBuying ? " cg-button--loading" : ""}`}
                       disabled={short > 0 || buying !== null}
                       onClick={() => void purchase(offer.type)}
                       aria-label={t("store.buyLabel", { name, price: offer.price })}
+                      aria-busy={isBuying}
                       data-haptic="medium"
                     >
-                      {buying === offer.type ? t("store.buying") : t("store.buy")}
-                      <CurrencyBadge amount={offer.price} />
+                      <GameIcon name={isBuying ? "hourglass" : short > 0 ? "lock" : "store"} size="1em" />
+                      {isBuying ? t("store.buying") : t("store.buy")}
                     </button>
-                    {short > 0 && <p className="cg-store-offer-hint">{t("store.missing", { n: short })}</p>}
-                    {purchaseError && (
-                      <p className="cg-store-offer-error" role="alert">
-                        {purchaseError}
+                    {short > 0 && (
+                      <p className="cg-store-offer-hint">
+                        <GameIcon name="coin" className="cg-mark" /> {t("store.missing", { n: short })}
                       </p>
                     )}
-                    <details className="cg-store-odds">
-                      <summary>{t("store.odds")}</summary>
+                    {purchaseError && (
+                      <p className="cg-store-offer-error" role="alert">
+                        <GameIcon name="warning" className="cg-mark" /> {purchaseError}
+                      </p>
+                    )}
+                  </div>
+                  {/* Real odds, always visible (UI-07): the same numbers the server rolls with. */}
+                  <section className="cg-store-odds" aria-labelledby={`cg-odds-${offer.type}`}>
+                    <h3 id={`cg-odds-${offer.type}`} className="cg-section-title cg-section-title--sm">
+                      <GameIcon name="sparkle" />
+                      {t("store.odds")}
+                    </h3>
                       <table>
                         <thead>
                           <tr>
@@ -197,26 +213,29 @@ export function StoreScreen({ loadStore = getStore, loadCollection = getCollecti
                         <tbody>
                           {OFFER_RARITIES.map((r) => (
                             <tr key={r} data-rarity={r}>
-                              <th>{t(`rarity.${r}`)}</th>
+                              <th>
+                                <RarityGem rarity={r} size="0.9em" />
+                                {t(`rarity.${r}`)}
+                              </th>
                               <td>{t("store.oddsValue", { pct: (offer.odds.slot[r] ?? 0).toLocaleString("es") })}</td>
                               <td>{t("store.oddsValue", { pct: (offer.odds.guaranteed[r] ?? 0).toLocaleString("es") })}</td>
                             </tr>
                           ))}
                         </tbody>
                       </table>
-                    </details>
-                  </div>
+                  </section>
                 </article>
               );
             })}
           </section>
 
           <section className="cg-store-history" aria-labelledby="cg-store-history-title">
-            <h2 id="cg-store-history-title" className="cg-store-history-title">
+            <h2 id="cg-store-history-title" className="cg-section-title">
+              <GameIcon name="hourglass" />
               {t("store.history")}
             </h2>
             {data.openings.length === 0 ? (
-              <p className="cg-collection-empty">{t("store.historyEmpty")}</p>
+              <StateMessage kind="empty" icon="store" text={t("store.historyEmpty")} />
             ) : (
               <ul className="cg-store-history-list">
                 {data.openings.map((o) => (
@@ -228,6 +247,7 @@ export function StoreScreen({ loadStore = getStore, loadCollection = getCollecti
                     <span className="cg-store-history-cards">
                       {o.cards.map((id, i) => (
                         <span key={i} className="cg-store-card" data-rarity={hasDef(id) ? CATALOG[id].rarity : undefined}>
+                          {hasDef(id) && <RarityGem rarity={CATALOG[id].rarity} size="0.8em" />}
                           {cardName(id)}
                         </span>
                       ))}
@@ -244,6 +264,7 @@ export function StoreScreen({ loadStore = getStore, loadCollection = getCollecti
         <PackOpening
           key={opening.id}
           packName={packName(opening.packType)}
+          packType={opening.packType}
           cards={opening.cards}
           isNew={opening.isNew}
           replayed={opening.replayed}

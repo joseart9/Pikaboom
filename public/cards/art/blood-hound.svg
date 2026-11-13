@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="blood-hound-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#2a0a1e"/><stop offset="0.55" stop-color="#6a1a2a"/><stop offset="1" stop-color="#2a0e18"/></linearGradient><radialGradient id="blood-hound-r1" gradientUnits="userSpaceOnUse" cx="300" cy="220" r="250"><stop offset="0" stop-color="#ff7b5a" stop-opacity="0.35"/><stop offset="0.45" stop-color="#ff7b5a" stop-opacity="0.1575"/><stop offset="1" stop-color="#ff7b5a" stop-opacity="0"/></radialGradient><radialGradient id="blood-hound-r2" gradientUnits="userSpaceOnUse" cx="380" cy="210" r="80"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.4"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><linearGradient id="blood-hound-l3" gradientUnits="userSpaceOnUse" x1="0" y1="334" x2="0" y2="512"><stop offset="0" stop-color="#4a1424"/><stop offset="1" stop-color="#24080f"/></linearGradient><radialGradient id="blood-hound-r4" gradientUnits="userSpaceOnUse" cx="250" cy="396" r="180"><stop offset="0" stop-color="#ff7b5a" stop-opacity="0.55"/><stop offset="1" stop-color="#ff7b5a" stop-opacity="0"/></radialGradient><path id="blood-hound-p5" d="M96 403C105 416 105 427 96 427C87 427 87 416 96 403Z"/><clipPath id="blood-hound-c6"><use href="#blood-hound-p5"/></clipPath><clipPath id="blood-hound-c7"><use href="#blood-hound-p5" x="-2" y="-2"/></clipPath><path id="blood-hound-p8" d="M130 387C137 398 137 407 130 407C123 407 123 398 130 387Z"/><clipPath id="blood-hound-c9"><use href="#blood-hound-p8"/></clipPath><clipPath id="blood-hound-ca"><use href="#blood-hound-p8" x="-2" y="-2"/></clipPath><path id="blood-hound-pb" d="M74 434C82 446 82 456 74 456C66 456 66 446 74 434Z"/><clipPath id="blood-hound-cc"><use href="#blood-hound-pb"/></clipPath><clipPath id="blood-hound-cd"><use href="#blood-hound-pb" x="-2" y="-2"/></clipPath><path id="blood-hound-pe" d="M150 420C156 429 156 436 150 436C144 436 144 429 150 420Z"/><clipPath id="blood-hound-cf"><use href="#blood-hound-pe"/></clipPath><clipPath id="blood-hound-cg"><use href="#blood-hound-pe" x="-2" y="-2"/></clipPath><path id="blood-hound-ph" d="M118 459C124 468 124 476 118 476C112 476 112 468 118 459Z"/><clipPath id="blood-hound-ci"><use href="#blood-hound-ph"/></clipPath><clipPath id="blood-hound-cj"><use href="#blood-hound-ph" x="-2" y="-2"/></clipPath><path id="blood-hound-pk" d="M373 260C379 256 397 241 402 231C408 222 411 202 412 197C413 191 411 194 411 194C410 194 411 191 408 195C406 200 400 217 394 225C387 233 367 243 363 248C358 253 360 257 362 259C364 261 367 264 373 260Z"/><clipPath id="blood-hound-cl"><use href="#blood-hound-pk"/></clipPath><clipPath id="blood-hound-cm"><use href="#blood-hound-pk" x="-4" y="-4"/></clipPath><path id="blood-hound-pn" d="M222 291C222 301 230 326 233 341C235 355 236 381 238 388C240 396 243 394 244 394C246 394 250 396 250 388C250 379 248 354 247 339C247 324 248 298 246 289C244 279 236 278 233 278C229 279 222 282 222 291Z"/><clipPath id="blood-hound-co"><use href="#blood-hound-pn"/></clipPath><clipPath id="blood-hound-cp"><use href="#blood-hound-pn" x="-4" y="-4"/></clipPath><path id="blood-hound-pq" d="M342 288C347 296 373 308 377 323C381 338 368 376 367 387C366 398 369 393 371 393C373 394 374 400 377 389C380 378 393 338 391 321C389 303 369 280 362 272C355 264 347 267 344 270C341 272 337 280 342 288Z"/><clipPath id="blood-hound-cr"><use href="#blood-hound-pq"/></clipPath><clipPath id="blood-hound-cs"><use href="#blood-hound-pq" x="-4" y="-4"/></clipPath><path id="blood-hound-pt" d="M206 262C211 252 233 241 250 236C267 232 302 231 320 232C338 233 360 238 370 244C380 250 385 263 384 270C383 277 374 288 364 290C354 292 331 283 316 284C301 286 279 298 264 300C249 302 223 306 214 300C205 294 201 272 206 262Z"/><clipPath id="blood-hound-cu"><use href="#blood-hound-pt"/></clipPath><clipPath id="blood-hound-cv"><use href="#blood-hound-pt" x="-10" y="-10"/></clipPath><path id="blood-hound-pw" d="M210 280C215 280 234 293 242 296C250 299 267 299 266 300C265 301 244 305 236 304C228 303 216 300 212 296C208 292 206 280 210 280Z"/><clipPath id="blood-hound-cx"><use href="#blood-hound-pw"/></clipPath><clipPath id="blood-hound-cy"><use href="#blood-hound-pw" x="-3" y="-3"/></clipPath><path id="blood-hound-pz" d="M203 287C201 296 203 323 202 339C201 354 195 380 194 389C194 397 197 396 199 396C201 396 203 399 206 391C209 383 214 356 218 341C221 326 229 299 229 289C229 280 221 276 217 275C214 275 205 277 203 287Z"/><clipPath id="blood-hound-c10"><use href="#blood-hound-pz"/></clipPath><clipPath id="blood-hound-c11"><use href="#blood-hound-pz" x="-4" y="-4"/></clipPath><path id="blood-hound-p12" d="M352 281C358 290 388 303 393 320C398 336 385 378 385 389C384 401 388 395 389 395C391 396 393 403 395 391C398 379 410 336 407 316C404 297 384 271 376 263C368 254 358 257 355 260C351 263 346 272 352 281Z"/><clipPath id="blood-hound-c13"><use href="#blood-hound-p12"/></clipPath><clipPath id="blood-hound-c14"><use href="#blood-hound-p12" x="-4" y="-4"/></clipPath><path id="blood-hound-p15" d="M182 392A12 6 0 1 0 206 392A12 6 0 1 0 182 392Z"/><clipPath id="blood-hound-c16"><use href="#blood-hound-p15"/></clipPath><clipPath id="blood-hound-c17"><use href="#blood-hound-p15" x="-3" y="-3"/></clipPath><path id="blood-hound-p18" d="M230 391A12 6 0 1 0 254 391A12 6 0 1 0 230 391Z"/><clipPath id="blood-hound-c19"><use href="#blood-hound-p18"/></clipPath><clipPath id="blood-hound-c1a"><use href="#blood-hound-p18" x="-3" y="-3"/></clipPath><path id="blood-hound-p1b" d="M372 392A12 6 0 1 0 396 392A12 6 0 1 0 372 392Z"/><clipPath id="blood-hound-c1c"><use href="#blood-hound-p1b"/></clipPath><clipPath id="blood-hound-c1d"><use href="#blood-hound-p1b" x="-3" y="-3"/></clipPath><path id="blood-hound-p1e" d="M354 391A12 6 0 1 0 378 391A12 6 0 1 0 354 391Z"/><clipPath id="blood-hound-c1f"><use href="#blood-hound-p1e"/></clipPath><clipPath id="blood-hound-c1g"><use href="#blood-hound-p1e" x="-3" y="-3"/></clipPath><path id="blood-hound-p1h" d="M213 242C203 246 193 263 185 272C177 280 163 292 159 300C155 308 154 323 158 327C162 331 176 331 185 328C193 325 205 311 215 304C224 297 242 291 247 282C252 273 255 251 250 245C245 239 223 238 213 242Z"/><clipPath id="blood-hound-c1i"><use href="#blood-hound-p1h"/></clipPath><clipPath id="blood-hound-c1j"><use href="#blood-hound-p1h" x="-8" y="-8"/></clipPath><path id="blood-hound-p1k" d="M186 298C192 301 199 315 198 322C197 329 187 340 180 346C173 352 159 357 150 362C141 367 126 375 118 378C110 381 100 385 96 384C92 383 89 378 90 374C91 370 98 365 104 358C110 351 124 338 132 330C140 322 150 307 158 302C166 297 180 295 186 298Z"/><clipPath id="blood-hound-c1l"><use href="#blood-hound-p1k"/></clipPath><clipPath id="blood-hound-c1m"><use href="#blood-hound-p1k" x="-8" y="-8"/></clipPath><path id="blood-hound-p1n" d="M92 376C108 372 130 366 150 356C140 372 116 384 98 386Z"/><clipPath id="blood-hound-c1o"><use href="#blood-hound-p1n"/></clipPath><clipPath id="blood-hound-c1p"><use href="#blood-hound-p1n" x="-2" y="-2"/></clipPath><path id="blood-hound-p1q" d="M164 300C167 293 183 296 188 300C193 305 199 320 200 330C201 341 199 363 196 370C193 377 184 381 180 378C176 375 170 360 168 348C166 336 161 307 164 300Z"/><clipPath id="blood-hound-c1r"><use href="#blood-hound-p1q"/></clipPath><clipPath id="blood-hound-c1s"><use href="#blood-hound-p1q" x="-5" y="-5"/></clipPath><path id="blood-hound-p1t" d="M182 267C187 274 210 299 216 305C223 311 225 307 227 306C229 304 233 302 228 295C223 288 200 263 194 257C187 251 185 255 183 256C181 258 177 260 182 267Z"/><clipPath id="blood-hound-c1u"><use href="#blood-hound-p1t"/></clipPath><clipPath id="blood-hound-c1v"><use href="#blood-hound-p1t" x="-3" y="-3"/></clipPath><path id="blood-hound-p1w" d="M194 261C192 257 180 248 177 245C174 243 176 246 176 246C176 246 174 243 175 247C177 250 183 264 186 267C188 271 192 269 193 268C195 267 197 264 194 261Z"/><clipPath id="blood-hound-c1x"><use href="#blood-hound-p1w"/></clipPath><clipPath id="blood-hound-c1y"><use href="#blood-hound-p1w" x="-2" y="-2"/></clipPath><path id="blood-hound-p1z" d="M214 300C216 303 229 311 231 313C234 315 232 312 232 312C232 312 234 314 233 311C231 308 225 295 222 292C219 289 216 291 214 292C213 293 211 297 214 300Z"/><clipPath id="blood-hound-c20"><use href="#blood-hound-p1z"/></clipPath><clipPath id="blood-hound-c21"><use href="#blood-hound-p1z" x="-2" y="-2"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#blood-hound-l0)"/>
+<circle cx="300" cy="220" r="250" fill="url(#blood-hound-r1)"/>
+<circle cx="380" cy="210" r="80" fill="url(#blood-hound-r2)"/>
+<path d="M340 210A40 40 0 1 0 420 210A40 40 0 1 0 340 210Z" fill="#ffb070" fill-opacity="0.55"/>
+<path d="M0 320Q140 270 280 310T512 290V512H0Z" fill="#3a0e1e"/>
+<path d="M40 360Q46 300 36 240" fill="none" stroke="#2a0612" stroke-width="4" stroke-opacity="0.9"/>
+<path d="M60 360Q66 315 56 270" fill="none" stroke="#2a0612" stroke-width="4" stroke-opacity="0.9"/>
+<path d="M462 360Q468 305 458 250" fill="none" stroke="#2a0612" stroke-width="4" stroke-opacity="0.9"/>
+<path d="M480 360Q486 290 476 220" fill="none" stroke="#2a0612" stroke-width="4" stroke-opacity="0.9"/>
+<path d="M0 370Q256 334 512 370V512H0Z" fill="url(#blood-hound-l3)"/>
+<ellipse cx="250" cy="396" rx="180" ry="50" fill="url(#blood-hound-r4)"/>
+<use href="#blood-hound-p5" fill="#b0203a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-c6)">
+<use href="#blood-hound-p5" x="-2" y="-2" fill="#ff9aad"/>
+<g clip-path="url(#blood-hound-c7)"><use href="#blood-hound-p5" x="2" y="2" fill="#ff4d6d"/></g>
+</g>
+<use href="#blood-hound-p8" fill="#b0203a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-c9)">
+<use href="#blood-hound-p8" x="-2" y="-2" fill="#ff9aad"/>
+<g clip-path="url(#blood-hound-ca)"><use href="#blood-hound-p8" x="2" y="2" fill="#ff4d6d"/></g>
+</g>
+<use href="#blood-hound-pb" fill="#b0203a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-cc)">
+<use href="#blood-hound-pb" x="-2" y="-2" fill="#ff9aad"/>
+<g clip-path="url(#blood-hound-cd)"><use href="#blood-hound-pb" x="2" y="2" fill="#ff4d6d"/></g>
+</g>
+<use href="#blood-hound-pe" fill="#b0203a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-cf)">
+<use href="#blood-hound-pe" x="-2" y="-2" fill="#ff9aad"/>
+<g clip-path="url(#blood-hound-cg)"><use href="#blood-hound-pe" x="2" y="2" fill="#ff4d6d"/></g>
+</g>
+<use href="#blood-hound-ph" fill="#b0203a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-ci)">
+<use href="#blood-hound-ph" x="-2" y="-2" fill="#ff9aad"/>
+<g clip-path="url(#blood-hound-cj)"><use href="#blood-hound-ph" x="2" y="2" fill="#ff4d6d"/></g>
+</g>
+<ellipse cx="270" cy="394" rx="140" ry="12" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#blood-hound-pk" fill="#ff7b5a" stroke-width="12"/>
+<g clip-path="url(#blood-hound-cl)">
+<use href="#blood-hound-pk" x="-4" fill="#6e3620"/>
+<use href="#blood-hound-pk" x="-4" y="-4" fill="#e09460"/>
+<g clip-path="url(#blood-hound-cm)"><use href="#blood-hound-pk" x="3" y="3" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-pn" fill="#6e3620" stroke-width="12"/>
+<g clip-path="url(#blood-hound-co)">
+<use href="#blood-hound-pn" x="-4" y="-4" fill="#e09460"/>
+<g clip-path="url(#blood-hound-cp)"><use href="#blood-hound-pn" x="3" y="3" fill="#8e5030"/></g>
+</g>
+<use href="#blood-hound-pq" fill="#6e3620" stroke-width="12"/>
+<g clip-path="url(#blood-hound-cr)">
+<use href="#blood-hound-pq" x="-4" y="-4" fill="#e09460"/>
+<g clip-path="url(#blood-hound-cs)"><use href="#blood-hound-pq" x="3" y="3" fill="#8e5030"/></g>
+</g>
+<use href="#blood-hound-pt" fill="#ff7b5a" stroke-width="12"/>
+<g clip-path="url(#blood-hound-cu)">
+<use href="#blood-hound-pt" x="-4" fill="#6e3620"/>
+<use href="#blood-hound-pt" x="-10" y="-10" fill="#e09460"/>
+<g clip-path="url(#blood-hound-cv)"><use href="#blood-hound-pt" x="7" y="7" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-pw" fill="#a8804e"/>
+<g clip-path="url(#blood-hound-cx)">
+<use href="#blood-hound-pw" x="-3" y="-3" fill="#f2d4a8"/>
+<g clip-path="url(#blood-hound-cy)"><use href="#blood-hound-pw" x="2" y="2" fill="#d8b080"/></g>
+</g>
+<path d="M262 262C276 270 290 270 300 262M268 278C280 284 292 284 300 278" fill="none" stroke-width="3" stroke-opacity="0.4"/>
+<use href="#blood-hound-pz" fill="#ff7b5a" stroke-width="12"/>
+<g clip-path="url(#blood-hound-c10)">
+<use href="#blood-hound-pz" x="-4" fill="#6e3620"/>
+<use href="#blood-hound-pz" x="-4" y="-4" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c11)"><use href="#blood-hound-pz" x="3" y="3" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p12" fill="#ff7b5a" stroke-width="12"/>
+<g clip-path="url(#blood-hound-c13)">
+<use href="#blood-hound-p12" x="-4" fill="#6e3620"/>
+<use href="#blood-hound-p12" x="-4" y="-4" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c14)"><use href="#blood-hound-p12" x="3" y="3" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p15" fill="#6e3620" stroke-width="8"/>
+<g clip-path="url(#blood-hound-c16)">
+<use href="#blood-hound-p15" x="-3" y="-3" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c17)"><use href="#blood-hound-p15" x="2" y="2" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p18" fill="#6e3620" stroke-width="8"/>
+<g clip-path="url(#blood-hound-c19)">
+<use href="#blood-hound-p18" x="-3" y="-3" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c1a)"><use href="#blood-hound-p18" x="2" y="2" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p1b" fill="#6e3620" stroke-width="8"/>
+<g clip-path="url(#blood-hound-c1c)">
+<use href="#blood-hound-p1b" x="-3" y="-3" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c1d)"><use href="#blood-hound-p1b" x="2" y="2" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p1e" fill="#6e3620" stroke-width="8"/>
+<g clip-path="url(#blood-hound-c1f)">
+<use href="#blood-hound-p1e" x="-3" y="-3" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c1g)"><use href="#blood-hound-p1e" x="2" y="2" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p1h" fill="#ff7b5a" stroke-width="12"/>
+<g clip-path="url(#blood-hound-c1i)">
+<use href="#blood-hound-p1h" x="-4" fill="#6e3620"/>
+<use href="#blood-hound-p1h" x="-8" y="-8" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c1j)"><use href="#blood-hound-p1h" x="7" y="7" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p1k" fill="#ff7b5a" stroke-width="12"/>
+<g clip-path="url(#blood-hound-c1l)">
+<use href="#blood-hound-p1k" x="-4" fill="#6e3620"/>
+<use href="#blood-hound-p1k" x="-8" y="-8" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c1m)"><use href="#blood-hound-p1k" x="7" y="7" fill="#b0683a"/></g>
+</g>
+<use href="#blood-hound-p1n" fill="#a8804e"/>
+<g clip-path="url(#blood-hound-c1o)">
+<use href="#blood-hound-p1n" x="-2" y="-2" fill="#f2d4a8"/>
+<g clip-path="url(#blood-hound-c1p)"><use href="#blood-hound-p1n" x="2" y="2" fill="#d8b080"/></g>
+</g>
+<path d="M85 378A9 7 0 1 0 103 378A9 7 0 1 0 85 378Z" fill="#1d0842"/>
+<path d="M87 375A3 2 0 1 0 93 375A3 2 0 1 0 87 375Z" fill="#ffffff" fill-opacity="0.6"/>
+<path d="M104 384C122 380 140 372 156 362" fill="none" stroke-width="3"/>
+<path d="M114 382L120 390L124 380ZM132 376L138 384L142 372Z" fill="#fff8ea"/>
+<path d="M138 334A8 5 0 1 0 154 334A8 5 0 1 0 138 334Z" fill="#1d0842"/>
+<path d="M140 334A5 4 0 1 0 150 334A5 4 0 1 0 140 334Z" fill="#ff4d6d"/>
+<path d="M142 334A2 3 0 1 0 146 334A2 3 0 1 0 142 334Z" fill="#1d0842"/>
+<path d="M141 332A2 2 0 1 0 144 332A2 2 0 1 0 141 332Z" fill="#ffffff" fill-opacity="0.9"/>
+<path d="M134 326L158 332" fill="none" stroke-width="4"/>
+<use href="#blood-hound-p1q" fill="#6e3620" stroke-width="12"/>
+<g clip-path="url(#blood-hound-c1r)">
+<use href="#blood-hound-p1q" x="-5" y="-5" fill="#e09460"/>
+<g clip-path="url(#blood-hound-c1s)"><use href="#blood-hound-p1q" x="7" y="7" fill="#7a3a22"/></g>
+</g>
+<use href="#blood-hound-p1t" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#blood-hound-c1u)">
+<use href="#blood-hound-p1t" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#blood-hound-c1v)"><use href="#blood-hound-p1t" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#blood-hound-p1w" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-c1x)">
+<use href="#blood-hound-p1w" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#blood-hound-c1y)"><use href="#blood-hound-p1w" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<use href="#blood-hound-p1z" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#blood-hound-c20)">
+<use href="#blood-hound-p1z" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#blood-hound-c21)"><use href="#blood-hound-p1z" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<path d="M194 274A4 4 0 1 0 202 274A4 4 0 1 0 194 274Z" fill="#e2ecf5"/>
+<path d="M194 274A4 4 0 1 0 202 274A4 4 0 1 0 194 274Z" fill="none" stroke-width="2"/>
+<path d="M206 286A4 4 0 1 0 214 286A4 4 0 1 0 206 286Z" fill="#e2ecf5"/>
+<path d="M206 286A4 4 0 1 0 214 286A4 4 0 1 0 206 286Z" fill="none" stroke-width="2"/>
+<circle cx="115" cy="92" r="2" fill="#ffbe0b" fill-opacity="0.42"/>
+<circle cx="203" cy="119" r="2" fill="#ff7b5a" fill-opacity="0.68"/>
+<circle cx="394" cy="82" r="3" fill="#ffbe0b" fill-opacity="0.38"/>
+<circle cx="113" cy="257" r="3" fill="#ff7b5a" fill-opacity="0.49"/>
+<circle cx="362" cy="90" r="2" fill="#ffbe0b" fill-opacity="0.56"/>
+<circle cx="455" cy="118" r="3" fill="#ff7b5a" fill-opacity="0.39"/>
+<circle cx="152" cy="221" r="2" fill="#ffbe0b" fill-opacity="0.59"/>
+<circle cx="221" cy="172" r="3" fill="#ff7b5a" fill-opacity="0.61"/>
+</svg>

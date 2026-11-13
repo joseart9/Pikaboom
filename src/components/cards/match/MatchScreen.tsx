@@ -25,7 +25,7 @@ import type { HandCardView } from "@/game/cards/server/view";
 import { keepAwake } from "@/game/wakeLock";
 import { haptic } from "@/lib/haptic";
 import { CardInspect } from "../card/CardInspect";
-import { BoardBackdrop, type EndTurnState } from "../skin";
+import { BoardBackdrop, GameIcon, type EndTurnState } from "../skin";
 import { Board, type BoardGhost } from "./Board";
 import { animateBackToHand, DragLayer } from "./DragLayer";
 import { FxLayer } from "./FxLayer";
@@ -37,6 +37,7 @@ import { SettingsSheet } from "./SettingsSheet";
 import { TargetArrow } from "./TargetArrow";
 import { Toasts } from "./Toasts";
 import { TopBar } from "./TopBar";
+import { TurnTimer } from "./TurnTimer";
 import { useCardDrag } from "./useCardDrag";
 
 export function MatchScreen({ matchId }: { matchId: string }) {
@@ -354,7 +355,21 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
     (card: HandCardView) => dispatch({ t: "tapHandCard", iid: card.iid, kind: CATALOG[card.defId]?.type === "spell" ? "spell" : "mob" }),
     [dispatch],
   );
-  const onTapEntity = useCallback((id: EntityId) => dispatch({ t: "tapEntity", id }), [dispatch]);
+  // UI-08: a tap on a unit that has nothing to do in the current mode (any foe unit, or one of mine that cannot
+  // attack) opens the inspect sheet, so enemy cards are understood without a long-press. Taps that skip an animation,
+  // pick a target or select an attacker keep their meaning.
+  const onTapEntity = useCallback(
+    (id: EntityId) => {
+      const snap = client.getSnapshot();
+      const isUnit = !!board && (board.foe.board.some((u) => u.iid === id) || board.me.board.some((u) => u.iid === id));
+      if (isUnit && interaction.mode === "idle" && !snap.animating && !legal?.attacks[id]?.length) {
+        setInspect({ kind: "unit", iid: id });
+        return;
+      }
+      dispatch({ t: "tapEntity", id });
+    },
+    [board, client, dispatch, interaction.mode, legal],
+  );
   const onTapSlot = useCallback((index: number) => dispatch({ t: "tapSlot", index }), [dispatch]);
 
   const onRootClick = (e: MouseEvent<HTMLDivElement>) => {
@@ -420,6 +435,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
   else if (interaction.mode === "awaitingTarget") prompt = canCast(interaction) ? t("match.castPrompt") : t("match.chooseTarget");
   else if (board.phase === "playing") prompt = board.isMyTurn ? t("match.yourTurn") : t("match.foeTurn");
   else prompt = t("match.turnNumber", { n: board.turn });
+  const chip = interaction.mode !== "idle" ? "prompt" : board.phase !== "playing" ? "neutral" : board.isMyTurn ? "mine" : "foe";
 
   return (
     <div
@@ -451,16 +467,24 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
         onTapSlot={onTapSlot}
       />
       <div className="cg-divider">
-        <span className={board.isMyTurn ? "cg-divider-text--mine" : "cg-divider-text--foe"}>{prompt}</span>
-        {canCast(interaction) && (
-          <button type="button" data-cg-tap className="cg-button cg-button--primary" onClick={() => dispatch({ t: "tapCast" })}>
-            {t("match.cast")}
-          </button>
-        )}
-        {interaction.mode !== "idle" && (
-          <button type="button" data-cg-tap className="cg-button" onClick={() => dispatch({ t: "cancel" })}>
-            {t("match.cancel")}
-          </button>
+        <span className={`cg-turnchip cg-turnchip--${chip}`} role="status">
+          <GameIcon name={chip === "foe" ? "hourglass" : chip === "prompt" ? "info" : "sparkle"} size="1em" />
+          <span className="cg-turnchip-text">{prompt}</span>
+          {board.phase === "playing" && <TurnTimer client={client} />}
+        </span>
+        {(canCast(interaction) || interaction.mode !== "idle") && (
+          <span className="cg-divider-actions">
+            {canCast(interaction) && (
+              <button type="button" data-cg-tap className="cg-button cg-button--primary" onClick={() => dispatch({ t: "tapCast" })}>
+                {t("match.cast")}
+              </button>
+            )}
+            {interaction.mode !== "idle" && (
+              <button type="button" data-cg-tap className="cg-button" onClick={() => dispatch({ t: "cancel" })}>
+                {t("match.cancel")}
+              </button>
+            )}
+          </span>
         )}
       </div>
       <Board
@@ -521,6 +545,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
           def={inspected.def}
           overrides={inspected.unit ? { attack: inspected.unit.attack, health: inspected.unit.health, maxHealth: inspected.unit.maxHealth } : { cost: inspected.cost }}
           unit={inspected.unit ?? null}
+          mine={inspected.unit ? inspected.unit.controller === board.mySeat : undefined}
           turn={{ number: board.turn, activeSeat: board.activeSeat }}
           onClose={() => setInspect(null)}
         />

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="storm-drake-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0a1020"/><stop offset="0.55" stop-color="#1e3050"/><stop offset="1" stop-color="#0a0e1a"/></linearGradient><radialGradient id="storm-drake-r1" gradientUnits="userSpaceOnUse" cx="256" cy="240" r="240"><stop offset="0" stop-color="#ffe066" stop-opacity="0.18"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.081"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><linearGradient id="storm-drake-l2" gradientUnits="userSpaceOnUse" x1="0" y1="392" x2="0" y2="512"><stop offset="0" stop-color="#1a2840"/><stop offset="1" stop-color="#0a1020"/></linearGradient><radialGradient id="storm-drake-r3" gradientUnits="userSpaceOnUse" cx="420" cy="404" r="70"><stop offset="0" stop-color="#ffe066" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="storm-drake-p4" d="M420 366L425 389L444 376L431 395L454 400L431 405L444 424L425 411L420 434L415 411L396 424L409 405L386 400L409 395L396 376L415 389Z"/><clipPath id="storm-drake-c5"><use href="#storm-drake-p4"/></clipPath><path id="storm-drake-p7" d="M224 224L132 128L36 92Q63 139 30 196Q73 202 66 270Q110 238 134 300Q155 248 196 300Q189 244 232 286Z"/><clipPath id="storm-drake-c8"><use href="#storm-drake-p7"/></clipPath><clipPath id="storm-drake-c9"><use href="#storm-drake-p7" x="-8" y="-8"/></clipPath><path id="storm-drake-pa" d="M230 218C216 203 152 138 137 124C121 109 129 122 128 123C126 125 114 117 127 132C141 148 203 215 218 230C234 244 228 231 230 230C231 228 244 234 230 218Z"/><clipPath id="storm-drake-cb"><use href="#storm-drake-pa"/></clipPath><clipPath id="storm-drake-cc"><use href="#storm-drake-pa" x="-3" y="-3"/></clipPath><path id="storm-drake-pd" d="M134 122C120 116 54 95 40 91C25 86 37 92 37 92C36 93 24 89 38 95C52 102 115 129 130 134C145 139 137 132 138 130C139 128 149 128 134 122Z"/><clipPath id="storm-drake-ce"><use href="#storm-drake-pd"/></clipPath><clipPath id="storm-drake-cf"><use href="#storm-drake-pd" x="-3" y="-3"/></clipPath><path id="storm-drake-pg" d="M288 224L372 140L470 116Q443 156 478 210Q433 211 440 274Q397 243 376 300Q354 252 316 300Q320 247 280 286Z"/><clipPath id="storm-drake-ch"><use href="#storm-drake-pg"/></clipPath><clipPath id="storm-drake-ci"><use href="#storm-drake-pg" x="-8" y="-8"/></clipPath><path id="storm-drake-pj" d="M294 230C308 217 364 159 377 145C389 130 378 137 377 135C375 134 382 123 367 135C353 148 295 204 282 218C270 232 281 228 282 230C284 231 280 242 294 230Z"/><clipPath id="storm-drake-ck"><use href="#storm-drake-pj"/></clipPath><clipPath id="storm-drake-cl"><use href="#storm-drake-pj" x="-3" y="-3"/></clipPath><path id="storm-drake-pm" d="M374 146C389 143 453 124 468 119C482 115 470 117 469 116C469 115 481 112 466 114C452 117 386 130 370 134C355 138 365 140 366 142C366 143 358 150 374 146Z"/><clipPath id="storm-drake-cn"><use href="#storm-drake-pm"/></clipPath><clipPath id="storm-drake-co"><use href="#storm-drake-pm" x="-3" y="-3"/></clipPath><path id="storm-drake-pp" d="M243 318C233 326 218 360 204 370C190 380 165 385 151 385C137 385 117 371 111 368C105 366 110 369 110 370C110 371 103 367 109 372C115 376 133 396 149 399C165 402 198 399 216 390C234 382 261 353 269 342C277 331 272 320 268 317C264 313 252 310 243 318Z"/><clipPath id="storm-drake-cq"><use href="#storm-drake-pp"/></clipPath><clipPath id="storm-drake-cr"><use href="#storm-drake-pp" x="-5" y="-5"/></clipPath><path id="storm-drake-ps" d="M213 316C209 323 204 345 204 355C204 365 211 377 213 382C216 386 220 387 222 387C224 386 226 383 227 378C227 374 222 365 224 357C226 349 238 332 239 324C240 317 234 308 230 307C226 305 217 308 213 316Z"/><clipPath id="storm-drake-ct"><use href="#storm-drake-ps"/></clipPath><clipPath id="storm-drake-cu"><use href="#storm-drake-ps" x="-4" y="-4"/></clipPath><path id="storm-drake-pv" d="M273 324C274 332 286 349 288 357C290 365 285 374 285 378C286 383 288 386 290 387C292 387 296 386 299 382C301 377 308 365 308 355C308 345 303 323 299 316C295 308 286 305 282 307C278 308 272 317 273 324Z"/><clipPath id="storm-drake-cw"><use href="#storm-drake-pv"/></clipPath><clipPath id="storm-drake-cx"><use href="#storm-drake-pv" x="-4" y="-4"/></clipPath><path id="storm-drake-py" d="M211 382C209 384 206 393 205 395C204 398 206 396 206 396C206 396 205 398 207 397C209 395 216 389 217 386C219 384 217 381 216 381C215 380 212 380 211 382ZM218 386C218 389 220 398 221 400C222 402 222 400 222 400C222 400 222 402 223 400C224 398 226 389 226 386C226 383 223 382 222 382C221 382 218 383 218 386ZM286 386C286 389 288 398 289 400C290 402 290 400 290 400C290 400 290 402 291 400C292 398 294 389 294 386C294 383 291 382 290 382C289 382 286 383 286 386ZM295 386C296 389 303 395 305 397C307 398 306 396 306 396C306 396 308 398 307 395C306 393 303 384 301 382C300 380 297 380 296 381C295 381 293 384 295 386Z"/><clipPath id="storm-drake-cz"><use href="#storm-drake-py"/></clipPath><clipPath id="storm-drake-c10"><use href="#storm-drake-py" x="-1" y="-1"/></clipPath><path id="storm-drake-p11" d="M212 230C220 219 243 214 256 214C269 214 292 219 300 230C308 241 314 274 312 290C311 307 298 331 290 340C282 349 266 352 256 352C246 352 230 349 222 340C214 331 202 307 200 290C199 274 204 241 212 230Z"/><clipPath id="storm-drake-c12"><use href="#storm-drake-p11"/></clipPath><clipPath id="storm-drake-c13"><use href="#storm-drake-p11" x="-12" y="-10"/></clipPath><path id="storm-drake-p14" d="M236 236C243 227 269 227 276 236C283 245 287 280 284 296C281 312 264 340 256 340C248 340 231 312 228 296C225 280 229 245 236 236Z"/><clipPath id="storm-drake-c15"><use href="#storm-drake-p14"/></clipPath><clipPath id="storm-drake-c16"><use href="#storm-drake-p14" x="-4" y="-4"/></clipPath><path id="storm-drake-p17" d="M240 160C236 154 216 142 209 133C202 123 194 101 191 96C188 90 190 96 190 96C190 96 188 90 189 96C190 103 193 128 199 139C205 151 221 167 228 172C234 177 238 174 240 172C242 170 245 166 240 160Z"/><clipPath id="storm-drake-c18"><use href="#storm-drake-p17"/></clipPath><clipPath id="storm-drake-c19"><use href="#storm-drake-p17" x="-3" y="-3"/></clipPath><path id="storm-drake-p1a" d="M284 172C291 167 307 151 313 139C319 128 322 103 323 96C324 90 322 96 322 96C322 96 324 90 321 96C318 101 310 123 303 133C296 142 276 154 272 160C267 166 270 170 272 172C274 174 278 177 284 172Z"/><clipPath id="storm-drake-c1b"><use href="#storm-drake-p1a"/></clipPath><clipPath id="storm-drake-c1c"><use href="#storm-drake-p1a" x="-3" y="-3"/></clipPath><path id="storm-drake-p1d" d="M214 170L180 150L222 196ZM298 170L332 150L290 196Z"/><clipPath id="storm-drake-c1e"><use href="#storm-drake-p1d"/></clipPath><clipPath id="storm-drake-c1f"><use href="#storm-drake-p1d" x="-3" y="-3"/></clipPath><path id="storm-drake-p1g" d="M220 186C220 178 227 165 232 160C237 155 249 152 256 152C263 152 275 155 280 160C285 165 292 178 292 186C292 194 287 208 282 214C277 220 264 224 256 224C248 224 235 220 230 214C225 208 220 194 220 186Z"/><clipPath id="storm-drake-c1h"><use href="#storm-drake-p1g"/></clipPath><clipPath id="storm-drake-c1i"><use href="#storm-drake-p1g" x="-8" y="-8"/></clipPath><path id="storm-drake-p1j" d="M232 210L280 210L274 244L256 252L238 244Z"/><clipPath id="storm-drake-c1k"><use href="#storm-drake-p1j"/></clipPath><clipPath id="storm-drake-c1l"><use href="#storm-drake-p1j" x="-4" y="-4"/></clipPath><radialGradient id="storm-drake-r1m" gradientUnits="userSpaceOnUse" cx="240" cy="188" r="12"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="storm-drake-r1n" gradientUnits="userSpaceOnUse" cx="272" cy="188" r="12"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="storm-drake-r1o" gradientUnits="userSpaceOnUse" cx="256" cy="100" r="60"><stop offset="0" stop-color="#ffe066" stop-opacity="0.5"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.225"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#storm-drake-l0)"/>
+<circle cx="256" cy="240" r="240" fill="url(#storm-drake-r1)"/>
+<path d="M236 60C230 72 201 80 183 90C165 100 153 112 127 118C101 123 58 128 27 125C-4 122 -44 111 -58 100C-73 89 -62 73 -60 60C-58 47 -61 34 -45 24C-30 13 2 2 31 -1C59 -4 94 1 125 4C157 8 201 10 219 19C238 29 242 48 236 60Z" fill="#2a3a5a" fill-opacity="0.9"/>
+<path d="M591 50C592 61 565 75 545 83C525 92 500 99 473 103C446 107 413 110 383 108C353 105 313 99 295 89C277 80 272 62 274 50C276 38 290 24 309 15C327 6 357 0 386 -5C414 -9 455 -16 480 -12C506 -8 519 9 537 19C556 29 589 39 591 50Z" fill="#2a3a5a" fill-opacity="0.9"/>
+<path d="M469 10C465 19 421 28 395 35C370 43 349 54 317 57C285 60 241 54 202 51C163 49 106 49 81 42C57 35 55 20 57 10C59 0 71 -12 95 -19C119 -26 164 -30 200 -33C237 -35 277 -36 313 -34C350 -32 394 -27 420 -20C446 -12 473 1 469 10Z" fill="#2a3a5a" fill-opacity="0.9"/>
+<path d="M0 120l-14 34M61 217l-14 34M122 314l-14 34M183 411l-14 34M244 208l-14 34M305 305l-14 34M366 402l-14 34M427 199l-14 34M488 296l-14 34M37 393l-14 34M98 190l-14 34M159 287l-14 34M220 384l-14 34M281 181l-14 34M342 278l-14 34M403 375l-14 34M464 172l-14 34M13 269l-14 34" fill="none" stroke="#9ec8ff" stroke-width="2" stroke-opacity="0.35"/>
+<path d="M0 428Q256 392 512 428V512H0Z" fill="url(#storm-drake-l2)"/>
+<circle cx="420" cy="404" r="70" fill="url(#storm-drake-r3)"/>
+<path d="M445 27L422 81L444 138L445 190L447 243L436 294L420 346L417 400L423 400L428 348L445 296L457 243L456 190L457 135L436 81L459 33Z" fill="#ffe066"/>
+<path d="M449 29L426 81L448 137L448 190L450 243L439 295L423 347L419 400L421 400L426 347L442 296L454 243L453 190L453 136L432 81L455 31Z" fill="#ffffff"/>
+<use href="#storm-drake-p4" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-drake-c5)">
+<use href="#storm-drake-p4" x="-3" y="-3" fill="#fff8d6"/>
+</g>
+<use href="#storm-drake-p7" fill="#16285a" stroke-width="10"/>
+<g clip-path="url(#storm-drake-c8)">
+<use href="#storm-drake-p7" x="-8" y="-8" fill="#4a72b8"/>
+<g clip-path="url(#storm-drake-c9)"><use href="#storm-drake-p7" x="5" y="5" fill="#2a4a8a"/></g>
+</g>
+<path d="M132 128L36 192" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M132 128L70 261" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M132 128L134 290" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M132 128L192 290" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#storm-drake-pa" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-drake-cb)">
+<use href="#storm-drake-pa" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-pa" x="-3" y="-3" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-cc)"><use href="#storm-drake-pa" x="2" y="2" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-pd" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-drake-ce)">
+<use href="#storm-drake-pd" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-pd" x="-3" y="-3" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-cf)"><use href="#storm-drake-pd" x="2" y="2" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-pg" fill="#16285a" stroke-width="10"/>
+<g clip-path="url(#storm-drake-ch)">
+<use href="#storm-drake-pg" x="-8" y="-8" fill="#4a72b8"/>
+<g clip-path="url(#storm-drake-ci)"><use href="#storm-drake-pg" x="5" y="5" fill="#2a4a8a"/></g>
+</g>
+<path d="M372 140L472 206" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M372 140L436 266" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M372 140L376 290" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M372 140L319 290" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#storm-drake-pj" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-drake-ck)">
+<use href="#storm-drake-pj" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-pj" x="-3" y="-3" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-cl)"><use href="#storm-drake-pj" x="2" y="2" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-pm" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-drake-cn)">
+<use href="#storm-drake-pm" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-pm" x="-3" y="-3" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-co)"><use href="#storm-drake-pm" x="2" y="2" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-pp" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-drake-cq)">
+<use href="#storm-drake-pp" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-pp" x="-5" y="-5" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-cr)"><use href="#storm-drake-pp" x="7" y="7" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-ps" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-drake-ct)">
+<use href="#storm-drake-ps" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-ps" x="-4" y="-4" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-cu)"><use href="#storm-drake-ps" x="3" y="3" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-pv" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-drake-cw)">
+<use href="#storm-drake-pv" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-pv" x="-4" y="-4" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-cx)"><use href="#storm-drake-pv" x="3" y="3" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-py" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#storm-drake-cz)">
+<use href="#storm-drake-py" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#storm-drake-c10)"><use href="#storm-drake-py" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#storm-drake-p11" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-drake-c12)">
+<use href="#storm-drake-p11" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-p11" x="-12" y="-10" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-c13)"><use href="#storm-drake-p11" x="7" y="7" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-p14" fill="#8aa6cc" stroke-width="8"/>
+<g clip-path="url(#storm-drake-c15)">
+<use href="#storm-drake-p14" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#storm-drake-c16)"><use href="#storm-drake-p14" x="3" y="3" fill="#cfe0f5"/></g>
+</g>
+<path d="M238 258H274M234 280H278M238 302H274M246 322H266" fill="none" stroke="#5a7aa8" stroke-width="3"/>
+<use href="#storm-drake-p17" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#storm-drake-c18)">
+<use href="#storm-drake-p17" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#storm-drake-c19)"><use href="#storm-drake-p17" x="2" y="2" fill="#2a3048"/></g>
+</g>
+<use href="#storm-drake-p1a" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#storm-drake-c1b)">
+<use href="#storm-drake-p1a" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#storm-drake-c1c)"><use href="#storm-drake-p1a" x="2" y="2" fill="#2a3048"/></g>
+</g>
+<use href="#storm-drake-p1d" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-drake-c1e)">
+<use href="#storm-drake-p1d" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-p1d" x="-3" y="-3" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-c1f)"><use href="#storm-drake-p1d" x="2" y="2" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-p1g" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-drake-c1h)">
+<use href="#storm-drake-p1g" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-p1g" x="-8" y="-8" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-c1i)"><use href="#storm-drake-p1g" x="7" y="7" fill="#3a6ab8"/></g>
+</g>
+<use href="#storm-drake-p1j" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-drake-c1k)">
+<use href="#storm-drake-p1j" x="-4" fill="#1e3a7a"/>
+<use href="#storm-drake-p1j" x="-4" y="-4" fill="#6a9ae0"/>
+<g clip-path="url(#storm-drake-c1l)"><use href="#storm-drake-p1j" x="3" y="3" fill="#3a6ab8"/></g>
+</g>
+<path d="M238 214L274 214L268 236L256 242L244 236Z" fill="#0a1030"/>
+<path d="M240 214l4 8l4-8zM264 214l4 8l4-8zM246 238l4-7l4 7zM258 238l4-7l4 7z" fill="#ffffff"/>
+<circle cx="240" cy="188" r="12" fill="url(#storm-drake-r1m)"/>
+<path d="M250 188L230 182L234 194Z" fill="#ffe066"/>
+<circle cx="272" cy="188" r="12" fill="url(#storm-drake-r1n)"/>
+<path d="M262 188L282 182L278 194Z" fill="#ffe066"/>
+<circle cx="256" cy="100" r="60" fill="url(#storm-drake-r1o)"/>
+<path d="M189 100L212 106L235 94L256 93L277 99L300 109L323 97L321 95L300 105L279 95L256 87L233 88L212 99L191 92Z" fill="#ffe066"/>
+<path d="M190 97L212 104L234 92L256 91L278 98L300 107L322 97L322 95L300 106L278 96L256 89L234 90L212 101L190 95Z" fill="#ffffff"/>
+<path d="M453 204L456 209L453 214L450 209Z" fill="#ffe066" fill-opacity="0.73"/>
+<path d="M188 303L191 308L188 313L185 308Z" fill="#ffffff" fill-opacity="0.7"/>
+<path d="M338 117L340 122L338 128L335 122Z" fill="#ffe066" fill-opacity="0.67"/>
+<path d="M389 168L391 172L389 175L387 172Z" fill="#ffffff" fill-opacity="0.69"/>
+<path d="M333 96L335 100L333 104L330 100Z" fill="#ffe066" fill-opacity="0.77"/>
+<path d="M301 191L303 195L301 198L299 195Z" fill="#ffffff" fill-opacity="0.77"/>
+<path d="M207 100L211 106L207 112L204 106Z" fill="#ffe066" fill-opacity="0.93"/>
+<path d="M383 77L385 81L383 85L380 81Z" fill="#ffffff" fill-opacity="0.77"/>
+<path d="M367 319L369 323L367 327L365 323Z" fill="#ffe066" fill-opacity="0.62"/>
+<path d="M204 343L208 350L204 357L200 350Z" fill="#ffffff" fill-opacity="0.91"/>
+</svg>

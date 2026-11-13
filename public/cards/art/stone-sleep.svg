@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="stone-sleep-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#14102e"/><stop offset="0.55" stop-color="#3a2a5e"/><stop offset="1" stop-color="#1a1236"/></linearGradient><radialGradient id="stone-sleep-r1" gradientUnits="userSpaceOnUse" cx="256" cy="180" r="260"><stop offset="0" stop-color="#ffe066" stop-opacity="0.28"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.12600000000000003"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="stone-sleep-p2" d="M96 512C55 496 100 413 110 390C120 367 151 349 170 340C189 331 233 326 256 326C279 326 323 331 342 340C361 349 392 367 402 390C412 413 457 496 416 512C375 528 137 528 96 512Z"/><clipPath id="stone-sleep-c3"><use href="#stone-sleep-p2"/></clipPath><clipPath id="stone-sleep-c4"><use href="#stone-sleep-p2" x="-14" y="-12"/></clipPath><path id="stone-sleep-p5" d="M150 236L116 200L168 228Z"/><clipPath id="stone-sleep-c6"><use href="#stone-sleep-p5"/></clipPath><clipPath id="stone-sleep-c7"><use href="#stone-sleep-p5" x="-4" y="-4"/></clipPath><path id="stone-sleep-p8" d="M362 236L396 200L344 228Z"/><clipPath id="stone-sleep-c9"><use href="#stone-sleep-p8"/></clipPath><clipPath id="stone-sleep-ca"><use href="#stone-sleep-p8" x="-4" y="-4"/></clipPath><path id="stone-sleep-pb" d="M162 250C161 228 162 195 176 180C190 165 232 152 256 152C280 152 322 165 336 180C350 195 351 228 350 250C349 273 344 314 330 330C316 347 278 360 256 360C234 360 196 347 182 330C168 314 163 273 162 250Z"/><clipPath id="stone-sleep-cc"><use href="#stone-sleep-pb"/></clipPath><clipPath id="stone-sleep-cd"><use href="#stone-sleep-pb" x="-14" y="-12"/></clipPath><path id="stone-sleep-pe" d="M196 300C204 291 238 284 256 284C274 284 309 291 316 300C324 309 315 336 306 344C297 352 271 356 256 356C241 356 215 352 206 344C197 336 189 309 196 300Z"/><clipPath id="stone-sleep-cf"><use href="#stone-sleep-pe"/></clipPath><clipPath id="stone-sleep-cg"><use href="#stone-sleep-pe" x="-6" y="-6"/></clipPath><clipPath id="stone-sleep-hh"><path d="M270 120L258 180L276 240L252 300L272 360L256 420L268 512H512V120Z"/></clipPath><path id="stone-sleep-pi" d="M96 512C55 496 100 413 110 390C120 367 151 349 170 340C189 331 233 326 256 326C279 326 323 331 342 340C361 349 392 367 402 390C412 413 457 496 416 512C375 528 137 528 96 512Z"/><clipPath id="stone-sleep-cj"><use href="#stone-sleep-pi"/></clipPath><clipPath id="stone-sleep-ck"><use href="#stone-sleep-pi" x="-14" y="-12"/></clipPath><path id="stone-sleep-pl" d="M150 236L116 200L168 228Z"/><clipPath id="stone-sleep-cm"><use href="#stone-sleep-pl"/></clipPath><clipPath id="stone-sleep-cn"><use href="#stone-sleep-pl" x="-4" y="-4"/></clipPath><path id="stone-sleep-po" d="M362 236L396 200L344 228Z"/><clipPath id="stone-sleep-cp"><use href="#stone-sleep-po"/></clipPath><clipPath id="stone-sleep-cq"><use href="#stone-sleep-po" x="-4" y="-4"/></clipPath><path id="stone-sleep-pr" d="M162 250C161 228 162 195 176 180C190 165 232 152 256 152C280 152 322 165 336 180C350 195 351 228 350 250C349 273 344 314 330 330C316 347 278 360 256 360C234 360 196 347 182 330C168 314 163 273 162 250Z"/><clipPath id="stone-sleep-cs"><use href="#stone-sleep-pr"/></clipPath><clipPath id="stone-sleep-ct"><use href="#stone-sleep-pr" x="-14" y="-12"/></clipPath><path id="stone-sleep-pu" d="M196 300C204 291 238 284 256 284C274 284 309 291 316 300C324 309 315 336 306 344C297 352 271 356 256 356C241 356 215 352 206 344C197 336 189 309 196 300Z"/><clipPath id="stone-sleep-cv"><use href="#stone-sleep-pu"/></clipPath><clipPath id="stone-sleep-cw"><use href="#stone-sleep-pu" x="-6" y="-6"/></clipPath><path id="stone-sleep-px" d="M246 332C246 352 254 364 262 362C270 360 268 346 266 334Z"/><clipPath id="stone-sleep-cy"><use href="#stone-sleep-px"/></clipPath><clipPath id="stone-sleep-cz"><use href="#stone-sleep-px" x="-3" y="-3"/></clipPath><path id="stone-sleep-p10" d="M232 319C231 314 223 296 221 292C219 288 220 292 220 292C220 292 219 288 219 292C219 297 219 316 220 321C221 326 225 326 227 326C229 325 233 324 232 319Z"/><clipPath id="stone-sleep-c11"><use href="#stone-sleep-p10"/></clipPath><clipPath id="stone-sleep-c12"><use href="#stone-sleep-p10" x="-2" y="-2"/></clipPath><path id="stone-sleep-p13" d="M292 321C293 316 293 297 293 292C293 288 292 292 292 292C292 292 293 288 291 292C289 296 281 314 280 319C279 324 283 325 285 326C287 326 291 326 292 321Z"/><clipPath id="stone-sleep-c14"><use href="#stone-sleep-p13"/></clipPath><clipPath id="stone-sleep-c15"><use href="#stone-sleep-p13" x="-2" y="-2"/></clipPath><path id="stone-sleep-p16" d="M128 113L135 128L151 130L138 140L142 156L128 148L114 156L118 140L105 130L122 128Z"/><clipPath id="stone-sleep-c17"><use href="#stone-sleep-p16"/></clipPath><clipPath id="stone-sleep-c18"><use href="#stone-sleep-p16" x="-4" y="-4"/></clipPath><path id="stone-sleep-p19" d="M209 96L214 108L227 109L217 117L220 129L209 122L199 129L202 117L192 109L205 108Z"/><clipPath id="stone-sleep-c1a"><use href="#stone-sleep-p19"/></clipPath><clipPath id="stone-sleep-c1b"><use href="#stone-sleep-p19" x="-4" y="-4"/></clipPath><path id="stone-sleep-p1c" d="M324 97L329 110L343 111L333 120L336 133L324 126L312 133L315 120L305 111L319 110Z"/><clipPath id="stone-sleep-c1d"><use href="#stone-sleep-p1c"/></clipPath><clipPath id="stone-sleep-c1e"><use href="#stone-sleep-p1c" x="-4" y="-4"/></clipPath><path id="stone-sleep-p1f" d="M384 137L391 154L409 155L395 167L399 184L384 175L369 184L373 167L359 155L377 154Z"/><clipPath id="stone-sleep-c1g"><use href="#stone-sleep-p1f"/></clipPath><clipPath id="stone-sleep-c1h"><use href="#stone-sleep-p1f" x="-4" y="-4"/></clipPath><path id="stone-sleep-p1i" d="M303 164L308 178L323 179L312 189L315 204L303 196L290 204L293 189L282 179L297 178Z"/><clipPath id="stone-sleep-c1j"><use href="#stone-sleep-p1i"/></clipPath><clipPath id="stone-sleep-c1k"><use href="#stone-sleep-p1i" x="-4" y="-4"/></clipPath><path id="stone-sleep-p1l" d="M169 153L175 170L193 171L180 183L184 200L169 191L153 200L157 183L144 171L162 170Z"/><clipPath id="stone-sleep-c1m"><use href="#stone-sleep-p1l"/></clipPath><clipPath id="stone-sleep-c1n"><use href="#stone-sleep-p1l" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#stone-sleep-l0)"/>
+<circle cx="256" cy="180" r="260" fill="url(#stone-sleep-r1)"/>
+<path d="M0 512V250L60 230L80 512ZM512 512V240L440 220L430 512Z" fill="#221848"/>
+<path d="M120 150A136 38 0 0 1 392 150" fill="none" stroke="#c77dff" stroke-opacity="0.6" stroke-width="6"/>
+<use href="#stone-sleep-p2" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#stone-sleep-c3)">
+<use href="#stone-sleep-p2" x="-14" y="-12" fill="#a8c88a"/>
+<g clip-path="url(#stone-sleep-c4)"><use href="#stone-sleep-p2" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<use href="#stone-sleep-p5" fill="#4a6a3a" stroke-width="10"/>
+<g clip-path="url(#stone-sleep-c6)">
+<use href="#stone-sleep-p5" x="-4" y="-4" fill="#a8c88a"/>
+<g clip-path="url(#stone-sleep-c7)"><use href="#stone-sleep-p5" x="3" y="3" fill="#7a9a5a"/></g>
+</g>
+<use href="#stone-sleep-p8" fill="#4a6a3a" stroke-width="10"/>
+<g clip-path="url(#stone-sleep-c9)">
+<use href="#stone-sleep-p8" x="-4" y="-4" fill="#a8c88a"/>
+<g clip-path="url(#stone-sleep-ca)"><use href="#stone-sleep-p8" x="3" y="3" fill="#7a9a5a"/></g>
+</g>
+<use href="#stone-sleep-pb" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#stone-sleep-cc)">
+<use href="#stone-sleep-pb" x="-14" y="-12" fill="#a8c88a"/>
+<g clip-path="url(#stone-sleep-cd)"><use href="#stone-sleep-pb" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<use href="#stone-sleep-pe" fill="#4a6a3a" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-cf)">
+<use href="#stone-sleep-pe" x="-6" y="-6" fill="#a8c88a"/>
+<g clip-path="url(#stone-sleep-cg)"><use href="#stone-sleep-pe" x="4" y="4" fill="#7a9a5a"/></g>
+</g>
+<g clip-path="url(#stone-sleep-hh)">
+<use href="#stone-sleep-pi" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-sleep-cj)">
+<use href="#stone-sleep-pi" x="-14" y="-12" fill="#bdb9d6"/>
+<g clip-path="url(#stone-sleep-ck)"><use href="#stone-sleep-pi" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-sleep-pl" fill="#575275" stroke-width="10"/>
+<g clip-path="url(#stone-sleep-cm)">
+<use href="#stone-sleep-pl" x="-4" y="-4" fill="#bdb9d6"/>
+<g clip-path="url(#stone-sleep-cn)"><use href="#stone-sleep-pl" x="3" y="3" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-sleep-po" fill="#575275" stroke-width="10"/>
+<g clip-path="url(#stone-sleep-cp)">
+<use href="#stone-sleep-po" x="-4" y="-4" fill="#bdb9d6"/>
+<g clip-path="url(#stone-sleep-cq)"><use href="#stone-sleep-po" x="3" y="3" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-sleep-pr" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-sleep-cs)">
+<use href="#stone-sleep-pr" x="-14" y="-12" fill="#bdb9d6"/>
+<g clip-path="url(#stone-sleep-ct)"><use href="#stone-sleep-pr" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-sleep-pu" fill="#575275" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-cv)">
+<use href="#stone-sleep-pu" x="-6" y="-6" fill="#bdb9d6"/>
+<g clip-path="url(#stone-sleep-cw)"><use href="#stone-sleep-pu" x="4" y="4" fill="#8a86a8"/></g>
+</g>
+<path d="M300 190L320 220L310 250M330 380L356 420L346 470M290 300L320 316" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+</g>
+<path d="M270 150L258 180L276 240L252 300L272 360L256 420L268 512" fill="none" stroke="#bdb9d6" stroke-width="5"/>
+<path d="M270 150L258 180L276 240L252 300L272 360L256 420L268 512" fill="none" stroke-width="2" stroke-opacity="0.8"/>
+<path d="M188 222L238 236M324 222L274 236" fill="none" stroke-width="8"/>
+<path d="M190 252A24 22 0 1 0 238 252A24 22 0 1 0 190 252Z" fill="#fff8ea"/>
+<path d="M190 252A24 22 0 1 0 238 252A24 22 0 1 0 190 252Z" fill="none" stroke-width="5"/>
+<path d="M232 252C232 253 231 257 230 260C229 262 227 264 225 265C223 267 220 268 218 268C215 268 213 268 211 268C208 267 206 266 204 264C203 263 201 261 201 259C200 257 199 254 199 252C200 250 200 248 201 246C202 244 204 243 205 242C207 240 209 240 211 239C213 239 215 239 216 240C218 240 220 241 221 242C223 243 224 245 224 247C225 248 225 250 225 252C225 253 224 255 224 256C223 258 222 259 221 260C219 260 218 261 217 261C215 261 214 261 212 261C211 261 210 260 209 259C208 258 207 257 207 256C206 255 206 254 206 252C206 251 207 250 207 249C208 248 209 248 210 247C210 247 211 246 212 246C213 246 214 246 215 246C216 247 216 247 217 248C217 248 218 249 218 250C218 250 218 251 218 252C218 252 218 253 217 253C217 254 217 254 216 254C216 255 215 255 215 255" fill="none" stroke-width="3.5"/>
+<path d="M274 252A24 22 0 1 0 322 252A24 22 0 1 0 274 252Z" fill="#fff8ea"/>
+<path d="M274 252A24 22 0 1 0 322 252A24 22 0 1 0 274 252Z" fill="none" stroke-width="5"/>
+<path d="M316 252C316 251 315 247 314 244C313 242 311 240 309 239C307 237 304 236 302 236C299 236 297 236 295 236C292 237 290 238 288 240C287 241 285 243 285 245C284 247 283 250 283 252C284 254 284 256 285 258C286 260 288 261 289 262C291 264 293 264 295 265C297 265 299 265 300 264C302 264 304 263 305 262C307 261 308 259 308 257C309 256 309 254 309 252C309 251 308 249 308 248C307 246 306 245 305 244C303 244 302 243 301 243C299 243 298 243 296 243C295 243 294 244 293 245C292 246 291 247 291 248C290 249 290 250 290 252C290 253 291 254 291 255C292 256 293 256 294 257C294 257 295 258 296 258C297 258 298 258 299 258C300 257 300 257 301 256C301 256 302 255 302 254C302 254 302 253 302 252C302 252 302 251 301 251C301 250 301 250 300 250C300 249 299 249 299 249" fill="none" stroke-width="3.5"/>
+<path d="M222 316C240 330 272 330 290 316L284 336C268 344 244 344 228 336Z" fill="#3a0612"/>
+<path d="M222 316C240 330 272 330 290 316" fill="none" stroke-width="4"/>
+<use href="#stone-sleep-px" fill="#c94d68" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-cy)">
+<use href="#stone-sleep-px" x="-3" y="-3" fill="#ffb3c1"/>
+<g clip-path="url(#stone-sleep-cz)"><use href="#stone-sleep-px" x="2" y="2" fill="#ff7a93"/></g>
+</g>
+<use href="#stone-sleep-p10" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c11)">
+<use href="#stone-sleep-p10" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#stone-sleep-c12)"><use href="#stone-sleep-p10" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#stone-sleep-p13" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c14)">
+<use href="#stone-sleep-p13" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#stone-sleep-c15)"><use href="#stone-sleep-p13" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<path d="M120 150A136 38 0 0 0 392 150" fill="none" stroke="#ffe066" stroke-width="7"/>
+<path d="M140 168L163 174L186 157L210 174L233 157L256 178L279 158L302 175L326 157L349 174L372 168" fill="none" stroke="#ffe066" stroke-width="28" stroke-opacity="0.18"/>
+<path d="M140 168L163 174L186 157L210 174L233 157L256 178L279 158L302 175L326 157L349 174L372 168" fill="none" stroke-width="10"/>
+<path d="M140 168L163 174L186 157L210 174L233 157L256 178L279 158L302 175L326 157L349 174L372 168" fill="none" stroke="#ffbe0b" stroke-width="5"/>
+<path d="M140 168L163 174L186 157L210 174L233 157L256 178L279 158L302 175L326 157L349 174L372 168" fill="none" stroke="#fff8d6" stroke-width="1.1"/>
+<use href="#stone-sleep-p16" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c17)">
+<use href="#stone-sleep-p16" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#stone-sleep-c18)"><use href="#stone-sleep-p16" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#stone-sleep-p19" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c1a)">
+<use href="#stone-sleep-p19" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#stone-sleep-c1b)"><use href="#stone-sleep-p19" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#stone-sleep-p1c" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c1d)">
+<use href="#stone-sleep-p1c" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#stone-sleep-c1e)"><use href="#stone-sleep-p1c" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#stone-sleep-p1f" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c1g)">
+<use href="#stone-sleep-p1f" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#stone-sleep-c1h)"><use href="#stone-sleep-p1f" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#stone-sleep-p1i" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c1j)">
+<use href="#stone-sleep-p1i" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#stone-sleep-c1k)"><use href="#stone-sleep-p1i" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#stone-sleep-p1l" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#stone-sleep-c1m)">
+<use href="#stone-sleep-p1l" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#stone-sleep-c1n)"><use href="#stone-sleep-p1l" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<path d="M276 183L279 189L276 194L273 189Z" fill="#ffe066" fill-opacity="0.51"/>
+<path d="M243 194L245 198L243 202L241 198Z" fill="#c77dff" fill-opacity="0.8"/>
+<path d="M353 211L355 216L353 220L350 216Z" fill="#ffe066" fill-opacity="0.9"/>
+<path d="M173 192L176 198L173 205L169 198Z" fill="#c77dff" fill-opacity="0.81"/>
+<path d="M282 112L284 115L282 119L281 115Z" fill="#ffe066" fill-opacity="0.64"/>
+<path d="M368 122L371 128L368 134L365 128Z" fill="#c77dff" fill-opacity="0.78"/>
+<path d="M278 168L281 175L278 181L274 175Z" fill="#ffe066" fill-opacity="0.84"/>
+<path d="M235 175L238 182L235 188L231 182Z" fill="#c77dff" fill-opacity="0.85"/>
+<path d="M214 201L218 208L214 214L211 208Z" fill="#ffe066" fill-opacity="0.77"/>
+<path d="M283 111L285 116L283 120L280 116Z" fill="#c77dff" fill-opacity="0.62"/>
+<path d="M266 197L268 201L266 204L264 201Z" fill="#ffe066" fill-opacity="0.96"/>
+<path d="M384 204L387 209L384 215L381 209Z" fill="#c77dff" fill-opacity="0.94"/>
+</svg>

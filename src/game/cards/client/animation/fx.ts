@@ -6,14 +6,15 @@
 // tracked so a skip can finish all of them at once (`finishAll`). Durations are passed in already scaled for speed /
 // reduced motion (handlers use `env.ms`).
 import type { CardId, Rarity } from "../../catalog/types";
-import type { FxElement } from "../../catalog/visuals";
+import type { FxElement, SignatureId } from "../../catalog/visuals";
+import type { AccentMotion, MoteOrigin } from "./signatures";
 import type { EntityId } from "../../engine/types";
 
 export type { FxElement };
 export type FloatKind = "damage" | "heal" | "buff" | "info";
 export type FlashKind = "damage" | "heal" | "glow" | "buff" | "impact";
-/** Every element, the heal sparkle, and the neutral kinds (dust, debris, confetti). */
-export type ParticleKind = FxElement | "heal" | "dust" | "debris" | "confetti";
+/** Every element, the heal sparkle, the neutral kinds (dust, debris, confetti) and UI-09's bone / void motes. */
+export type ParticleKind = FxElement | "heal" | "dust" | "debris" | "confetti" | "bone" | "void";
 /** `fx.projectile` kinds (§18.4, extended in Phase 20 to every `FxElement`). */
 export type ProjectileKind = FxElement | "heal";
 export type FxAnchor = "foe-hand" | "foe-deck" | "my-hand" | "my-deck" | "center";
@@ -78,6 +79,13 @@ export interface FxApi {
   sweep(tone: "mine" | "foe", ms: number): Promise<void>;
   /** Cracks over an element (a defeated hero's portrait). */
   crack(el: Element, ms: number): Promise<void>;
+  // ── UI-09 signatures ──
+  /** A premium card's aura behind the centre reveal; `still` (reduced motion) = a static rim that only fades. */
+  aura(sig: SignatureId, ms: number, opts: { spin: number; from: number; still?: boolean }): Promise<void>;
+  /** A premium card's accent over the centre reveal (glint, sweep, flare, pulse). */
+  accent(sig: SignatureId, motion: AccentMotion, ms: number): Promise<void>;
+  /** A particle burst from a point of the centre reveal card. */
+  motes(kind: ParticleKind, count: number, from: MoteOrigin): void;
   /** Skip: every running effect jumps to its end, floaters and particles disappear. */
   finishAll(): void;
   /** After a reconcile: drops `persist` end states (their elements are normally gone by then). */
@@ -173,6 +181,10 @@ const STYLE: Record<ParticleKind, KindStyle> = {
   dust: { speed: [0.04, 0.16], life: [380, 800], gravity: 0.00035, lift: 0, size: [2, 5.5] },
   debris: { speed: [0.1, 0.28], life: [420, 820], gravity: 0.0006, lift: 0.12, size: [2.5, 6], rect: true },
   confetti: { speed: [0.12, 0.3], life: [900, 1500], gravity: 0.00035, lift: 0.2, size: [3, 6], rect: true },
+  // Small bone fragments that drift upward (Morvath, Skeleton King).
+  bone: { speed: [0.03, 0.1], life: [600, 1000], gravity: -0.00012, lift: 0.07, size: [1.5, 3.5], rect: true },
+  // Magenta void sparks (Nyxara).
+  void: { speed: [0.06, 0.2], life: [380, 720], gravity: 0, lift: 0.01, size: [1.5, 3.5] },
 };
 
 const CONFETTI_TOKENS = ["fire", "ice", "arcane", "lightning", "heal", "holy"] as const;
@@ -633,6 +645,15 @@ export class DomFx implements FxApi {
     inner.className = `cg-fx-name cg-fx-name--${rarity}`;
     inner.textContent = text;
     wrap.appendChild(inner);
+    // UI-10: on short screens (568×320) the cinematic card reaches below 80% of the layer; sit the ribbon just under
+    // the card instead (layout size, so the card's slam-in transform doesn't matter), never past the layer's edge.
+    const card = this.o.layer.querySelector<HTMLElement>(".cg-fx-reveal-card");
+    if (card) {
+      const half = inner.offsetHeight / 2;
+      const below = layer.height / 2 + card.offsetHeight / 2 + half + 4;
+      const y = Math.min(Math.max(layer.height * 0.8, below), layer.height - half - 2);
+      wrap.style.top = `${y}px`;
+    }
     await this.animate(
       inner,
       [
@@ -666,6 +687,84 @@ export class DomFx implements FxApi {
     const node = this.floater("cg-fx-crack", { x: r.left, y: r.top, w: r.width, h: r.height });
     await this.animate(node, [{ opacity: 0, transform: "scale(1.15)" }, { opacity: 1, transform: "scale(1)", offset: 0.15 }, { opacity: 1, transform: "scale(1)" }], ms, { easing: "ease-out" });
     this.drop(node);
+  }
+
+  /** The centre reveal card's box (the live card when shown, else its CSS size around the layer centre). */
+  private revealBox(): DOMRect {
+    const card = this.o.layer.querySelector(".cg-fx-reveal-card");
+    if (card) {
+      const r = card.getBoundingClientRect();
+      if (r.width > 0) return r;
+    }
+    const layer = this.o.layer.getBoundingClientRect();
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const w = Math.min(vh * 0.4, vw * 0.21);
+    const h = Math.min(vh * 0.56, vw * 0.29);
+    const c = centerOf(layer);
+    return new DOMRect(c.x - w / 2, c.y - h / 2, w, h);
+  }
+
+  async aura(sig: SignatureId, ms: number, opts: { spin: number; from: number; still?: boolean }): Promise<void> {
+    const box = this.revealBox();
+    const size = box.height * 1.9;
+    const c = centerOf(box);
+    const node = this.floater(`cg-fx-aura cg-fx-aura--${sig}`, { x: c.x - size / 2, y: c.y - size / 2, w: size, h: size });
+    const frames: Keyframe[] = opts.still
+      ? [{ opacity: 0 }, { opacity: 0.9, offset: 0.2 }, { opacity: 0.9, offset: 0.8 }, { opacity: 0 }]
+      : [
+          { transform: `rotate(0deg) scale(${opts.from})`, opacity: 0 },
+          { transform: `rotate(${opts.spin * 0.3}deg) scale(1)`, opacity: 1, offset: 0.22 },
+          { transform: `rotate(${opts.spin * 0.85}deg) scale(1.03)`, opacity: 0.9, offset: 0.82 },
+          { transform: `rotate(${opts.spin}deg) scale(1.06)`, opacity: 0 },
+        ];
+    await this.animate(node, frames, ms, { easing: opts.still ? "linear" : "cubic-bezier(0.2, 0.7, 0.3, 1)" });
+    this.drop(node);
+  }
+
+  async accent(sig: SignatureId, motion: AccentMotion, ms: number): Promise<void> {
+    const box = this.revealBox();
+    const node = this.floater(`cg-fx-accent cg-fx-accent--${sig} cg-fx-accent--${motion}`, { x: box.left, y: box.top, w: box.width, h: box.height });
+    const frames: Record<AccentMotion, Keyframe[]> = {
+      glint: [
+        { transform: "scale(0.2) rotate(-30deg)", opacity: 0 },
+        { transform: "scale(1.15) rotate(10deg)", opacity: 1, offset: 0.35 },
+        { transform: "scale(0.9) rotate(30deg)", opacity: 0 },
+      ],
+      sweep: [
+        { transform: "translateX(-70%) skewX(-16deg)", opacity: 0 },
+        { transform: "translateX(0) skewX(-16deg)", opacity: 1, offset: 0.45 },
+        { transform: "translateX(70%) skewX(-16deg)", opacity: 0 },
+      ],
+      flare: [
+        { transform: "scale(0.4)", opacity: 0 },
+        { transform: "scale(1.05)", opacity: 1, offset: 0.25 },
+        { transform: "scale(1.5)", opacity: 0 },
+      ],
+      pulse: [
+        { transform: "scale(0.92)", opacity: 0 },
+        { transform: "scale(1.04)", opacity: 0.95, offset: 0.4 },
+        { transform: "scale(1.12)", opacity: 0 },
+      ],
+    };
+    await this.animate(node, frames[motion], ms, { easing: "ease-out" });
+    this.drop(node);
+  }
+
+  motes(kind: ParticleKind, count: number, from: MoteOrigin): void {
+    const p = this.o.particles;
+    if (!p) return;
+    const box = this.revealBox();
+    const layer = this.o.layer.getBoundingClientRect();
+    const x = box.left + box.width / 2 - layer.left;
+    if (from === "base") {
+      // Along the card's lower edge (slow spread; the kind's lift carries them up).
+      const half = box.width * 0.4;
+      p.burst(x - half, box.bottom - box.height * 0.1 - layer.top, kind, count, { dx: half * 2, dy: 0 });
+      return;
+    }
+    const y = from === "top" ? box.top + box.height * 0.18 : box.top + box.height * 0.4;
+    p.burst(x, y - layer.top, kind, count);
   }
 
   finishAll(): void {

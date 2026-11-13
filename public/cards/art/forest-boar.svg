@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="forest-boar-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#142a20"/><stop offset="0.55" stop-color="#2c4a2a"/><stop offset="1" stop-color="#18281a"/></linearGradient><radialGradient id="forest-boar-r1" gradientUnits="userSpaceOnUse" cx="270" cy="220" r="250"><stop offset="0" stop-color="#d8f5a2" stop-opacity="0.25"/><stop offset="0.45" stop-color="#d8f5a2" stop-opacity="0.1125"/><stop offset="1" stop-color="#d8f5a2" stop-opacity="0"/></radialGradient><linearGradient id="forest-boar-l2" gradientUnits="userSpaceOnUse" x1="0" y1="334" x2="0" y2="512"><stop offset="0" stop-color="#4a5a2a"/><stop offset="1" stop-color="#203e22"/></linearGradient><radialGradient id="forest-boar-r3" gradientUnits="userSpaceOnUse" cx="260" cy="400" r="180"><stop offset="0" stop-color="#d8f5a2" stop-opacity="0.55"/><stop offset="1" stop-color="#d8f5a2" stop-opacity="0"/></radialGradient><path id="forest-boar-p4" d="M216 329C214 337 217 360 217 369C217 379 215 386 216 391C217 396 222 402 225 402C228 402 234 398 236 393C238 388 238 380 239 371C240 361 245 339 244 331C243 322 235 316 231 316C227 316 218 321 216 329Z"/><clipPath id="forest-boar-c5"><use href="#forest-boar-p4"/></clipPath><clipPath id="forest-boar-c6"><use href="#forest-boar-p4" x="-5" y="-5"/></clipPath><path id="forest-boar-p7" d="M337 332C337 340 346 360 347 369C348 378 345 386 346 391C347 396 352 402 355 402C358 402 364 398 366 393C368 388 369 377 369 367C369 358 370 335 367 328C364 320 354 314 350 315C345 316 338 324 337 332Z"/><clipPath id="forest-boar-c8"><use href="#forest-boar-p7"/></clipPath><clipPath id="forest-boar-c9"><use href="#forest-boar-p7" x="-5" y="-5"/></clipPath><path id="forest-boar-pa" d="M214 400L217 386L235 386L238 400Z"/><clipPath id="forest-boar-cb"><use href="#forest-boar-pa"/></clipPath><clipPath id="forest-boar-cc"><use href="#forest-boar-pa" x="-3" y="-3"/></clipPath><path id="forest-boar-pd" d="M344 400L347 386L365 386L368 400Z"/><clipPath id="forest-boar-ce"><use href="#forest-boar-pd"/></clipPath><clipPath id="forest-boar-cf"><use href="#forest-boar-pd" x="-3" y="-3"/></clipPath><path id="forest-boar-pg" d="M198 270L200 258L208 230L217 247L225 211L234 237L242 209L251 229L259 193L268 224L276 196L285 222L293 186L302 224L310 196L319 229L327 193L336 237L344 209L353 247L361 211L370 258L378 230L372 252L372 266Z"/><clipPath id="forest-boar-ch"><use href="#forest-boar-pg"/></clipPath><clipPath id="forest-boar-ci"><use href="#forest-boar-pg" x="-5" y="-5"/></clipPath><path id="forest-boar-pj" d="M198 258C208 248 233 233 252 228C271 223 304 221 322 224C340 227 363 236 374 246C385 256 393 277 394 290C395 303 390 325 380 334C370 343 350 348 330 350C311 352 269 351 250 348C231 345 214 340 204 332C194 324 187 307 186 296C185 285 188 268 198 258Z"/><clipPath id="forest-boar-ck"><use href="#forest-boar-pj"/></clipPath><clipPath id="forest-boar-cl"><use href="#forest-boar-pj" x="-14" y="-12"/></clipPath><path id="forest-boar-pm" d="M344 324C344 333 359 353 361 363C363 373 357 384 358 390C359 396 364 403 368 404C371 404 378 401 382 394C385 388 391 373 391 361C391 349 389 322 384 312C379 303 365 296 358 298C352 299 343 314 344 324Z"/><clipPath id="forest-boar-cn"><use href="#forest-boar-pm"/></clipPath><clipPath id="forest-boar-co"><use href="#forest-boar-pm" x="-7" y="-6"/></clipPath><path id="forest-boar-pp" d="M356 402L359 388L381 388L384 402Z"/><clipPath id="forest-boar-cq"><use href="#forest-boar-pp"/></clipPath><clipPath id="forest-boar-cr"><use href="#forest-boar-pp" x="-3" y="-3"/></clipPath><path id="forest-boar-ps" d="M229 315C222 320 219 339 213 345C207 351 196 351 192 355C187 359 184 367 185 370C186 374 193 378 200 377C207 377 222 373 231 367C240 361 256 346 259 337C263 329 260 314 255 311C251 307 235 310 229 315Z"/><clipPath id="forest-boar-ct"><use href="#forest-boar-ps"/></clipPath><clipPath id="forest-boar-cu"><use href="#forest-boar-ps" x="-7" y="-6"/></clipPath><path id="forest-boar-pv" d="M176 358L192 352L200 372L180 378Z"/><clipPath id="forest-boar-cw"><use href="#forest-boar-pv"/></clipPath><clipPath id="forest-boar-cx"><use href="#forest-boar-pv" x="-3" y="-3"/></clipPath><path id="forest-boar-py" d="M214 212L222 246L196 258Z"/><clipPath id="forest-boar-cz"><use href="#forest-boar-py"/></clipPath><clipPath id="forest-boar-c10"><use href="#forest-boar-py" x="-5" y="-5"/></clipPath><path id="forest-boar-p11" d="M236 252C231 243 216 243 206 244C196 246 179 254 168 262C157 270 140 286 132 296C124 306 114 318 112 326C110 334 113 346 120 350C127 354 143 356 156 354C169 352 192 341 204 334C216 327 233 318 238 306C243 294 241 261 236 252Z"/><clipPath id="forest-boar-c12"><use href="#forest-boar-p11"/></clipPath><clipPath id="forest-boar-c13"><use href="#forest-boar-p11" x="-10" y="-10"/></clipPath><path id="forest-boar-p14" d="M94 336A18 22 0 1 0 130 336A18 22 0 1 0 94 336Z"/><clipPath id="forest-boar-c15"><use href="#forest-boar-p14"/></clipPath><clipPath id="forest-boar-c16"><use href="#forest-boar-p14" x="-5" y="-5"/></clipPath><path id="forest-boar-p17" d="M142 344C139 342 132 348 128 343C123 339 115 316 113 312C111 307 112 312 112 312C112 312 110 307 111 312C112 318 116 342 120 349C124 355 135 356 138 356C142 357 146 353 146 352C147 350 144 345 142 344Z"/><clipPath id="forest-boar-c18"><use href="#forest-boar-p17"/></clipPath><clipPath id="forest-boar-c19"><use href="#forest-boar-p17" x="-3" y="-3"/></clipPath><path id="forest-boar-p1a" d="M160 347C159 344 154 343 151 339C149 334 144 319 143 316C142 312 142 316 142 316C142 316 141 312 141 316C141 320 143 336 145 341C146 347 150 351 152 353C154 355 158 355 159 354C161 353 162 349 160 347Z"/><clipPath id="forest-boar-c1b"><use href="#forest-boar-p1a"/></clipPath><clipPath id="forest-boar-c1c"><use href="#forest-boar-p1a" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#forest-boar-l0)"/>
+<circle cx="270" cy="220" r="250" fill="url(#forest-boar-r1)"/>
+<path d="M92 520C97 477 94 341 92 260C90 178 84 25 78 -21C72 -67 59 -46 51 -46C43 -46 28 -65 26 -19C24 27 36 180 36 260C36 341 24 476 28 520C32 563 50 552 60 552C69 552 87 564 92 520Z" fill="#10201a"/>
+<path d="M475 521C481 474 482 322 482 240C482 159 479 23 474 -21C468 -64 454 -48 445 -48C437 -48 422 -63 418 -19C415 24 424 159 422 240C420 320 403 471 405 519C408 566 428 555 439 555C449 555 468 569 475 521Z" fill="#10201a"/>
+<path d="M582 20C580 34 496 46 462 60C428 73 419 95 378 100C338 106 277 95 221 94C164 93 81 103 39 95C-3 87 -18 62 -30 45C-41 28 -50 9 -30 -5C-11 -19 45 -30 86 -39C127 -48 168 -57 217 -61C267 -65 340 -70 383 -64C427 -57 444 -37 478 -23C511 -9 585 6 582 20Z" fill="#1c4430"/>
+<path d="M0 370Q256 334 512 370V512H0Z" fill="url(#forest-boar-l2)"/>
+<ellipse cx="260" cy="400" rx="180" ry="50" fill="url(#forest-boar-r3)"/>
+<path d="M146 360C144 368 122 376 110 381C97 386 84 390 70 390C56 391 38 389 24 384C10 379 -12 369 -14 360C-16 351 0 335 14 331C28 327 52 335 70 335C88 336 109 329 122 333C134 337 148 352 146 360Z" fill="#2f5a2c" fill-opacity="0.9"/>
+<path d="M491 350C494 358 506 374 497 380C489 386 456 387 440 385C424 383 414 375 403 369C392 363 376 357 375 350C374 343 386 335 397 328C408 320 426 305 440 306C454 306 472 322 480 329C489 336 488 342 491 350Z" fill="#2f5a2c" fill-opacity="0.9"/>
+<path d="M183 450C182 455 156 459 145 463C134 467 129 475 120 475C111 476 102 469 91 465C81 461 58 456 57 450C55 444 74 435 85 432C95 428 109 431 120 431C131 431 143 429 153 433C164 436 185 445 183 450Z" fill="#2f5a2c" fill-opacity="0.9"/>
+<path d="M474 440C473 446 454 454 443 457C432 461 422 461 410 462C398 462 380 462 374 459C367 455 369 446 370 440C370 434 369 428 376 422C383 417 398 409 410 408C422 408 438 414 449 420C460 425 475 434 474 440Z" fill="#2f5a2c" fill-opacity="0.9"/>
+<ellipse cx="262" cy="398" rx="150" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#forest-boar-p4" fill="#4a2a18" stroke-width="12"/>
+<g clip-path="url(#forest-boar-c5)">
+<use href="#forest-boar-p4" x="-5" y="-5" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-c6)"><use href="#forest-boar-p4" x="7" y="7" fill="#64391f"/></g>
+</g>
+<use href="#forest-boar-p7" fill="#4a2a18" stroke-width="12"/>
+<g clip-path="url(#forest-boar-c8)">
+<use href="#forest-boar-p7" x="-5" y="-5" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-c9)"><use href="#forest-boar-p7" x="7" y="7" fill="#64391f"/></g>
+</g>
+<use href="#forest-boar-pa" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#forest-boar-cb)">
+<use href="#forest-boar-pa" x="-3" y="-3" fill="#5a4444"/>
+<g clip-path="url(#forest-boar-cc)"><use href="#forest-boar-pa" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#forest-boar-pd" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#forest-boar-ce)">
+<use href="#forest-boar-pd" x="-3" y="-3" fill="#5a4444"/>
+<g clip-path="url(#forest-boar-cf)"><use href="#forest-boar-pd" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<path d="M386 270C404 258 410 276 398 282C390 286 392 296 404 294" fill="none" stroke-width="5"/>
+<use href="#forest-boar-pg" fill="#2e180c" stroke-width="12"/>
+<g clip-path="url(#forest-boar-ch)">
+<use href="#forest-boar-pg" x="-5" y="-5" fill="#6b3f1f"/>
+<g clip-path="url(#forest-boar-ci)"><use href="#forest-boar-pg" x="3" y="3" fill="#4a2a18"/></g>
+</g>
+<use href="#forest-boar-pj" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#forest-boar-ck)">
+<use href="#forest-boar-pj" x="-4" fill="#4a2a18"/>
+<use href="#forest-boar-pj" x="-14" y="-12" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-cl)"><use href="#forest-boar-pj" x="7" y="7" fill="#7a4a2e"/></g>
+</g>
+<path d="M240 270L252 286M300 262L310 280M340 276L348 292M272 300L282 316" fill="none" stroke-width="3" stroke-opacity="0.45"/>
+<use href="#forest-boar-pm" fill="#4a2a18" stroke-width="12"/>
+<g clip-path="url(#forest-boar-cn)">
+<use href="#forest-boar-pm" x="-7" y="-6" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-co)"><use href="#forest-boar-pm" x="7" y="7" fill="#7a4a2e"/></g>
+</g>
+<use href="#forest-boar-pp" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#forest-boar-cq)">
+<use href="#forest-boar-pp" x="-3" y="-3" fill="#5a4444"/>
+<g clip-path="url(#forest-boar-cr)"><use href="#forest-boar-pp" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#forest-boar-ps" fill="#4a2a18" stroke-width="12"/>
+<g clip-path="url(#forest-boar-ct)">
+<use href="#forest-boar-ps" x="-7" y="-6" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-cu)"><use href="#forest-boar-ps" x="7" y="7" fill="#7a4a2e"/></g>
+</g>
+<use href="#forest-boar-pv" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#forest-boar-cw)">
+<use href="#forest-boar-pv" x="-3" y="-3" fill="#5a4444"/>
+<g clip-path="url(#forest-boar-cx)"><use href="#forest-boar-pv" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<path d="M198 386L200 390L198 394L196 390Z" fill="#8a6a45" fill-opacity="0.85"/>
+<path d="M156 380L159 385L156 391L153 385Z" fill="#8a6a45" fill-opacity="0.78"/>
+<path d="M213 370L217 376L213 382L210 376Z" fill="#8a6a45" fill-opacity="0.9"/>
+<path d="M196 365L199 370L196 375L194 370Z" fill="#8a6a45" fill-opacity="0.72"/>
+<path d="M213 371L216 377L213 384L209 377Z" fill="#8a6a45" fill-opacity="0.89"/>
+<path d="M168 364L171 370L168 377L164 370Z" fill="#8a6a45" fill-opacity="0.68"/>
+<path d="M169 368L172 373L169 378L166 373Z" fill="#8a6a45" fill-opacity="1"/>
+<path d="M167 366L171 372L167 378L164 372Z" fill="#8a6a45" fill-opacity="0.73"/>
+<path d="M179 392L181 396L179 400L176 396Z" fill="#8a6a45" fill-opacity="0.75"/>
+<use href="#forest-boar-py" fill="#4a2a18" stroke-width="12"/>
+<g clip-path="url(#forest-boar-cz)">
+<use href="#forest-boar-py" x="-5" y="-5" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-c10)"><use href="#forest-boar-py" x="7" y="7" fill="#7a4a2e"/></g>
+</g>
+<use href="#forest-boar-p11" fill="#4a2a18" stroke-width="12"/>
+<g clip-path="url(#forest-boar-c12)">
+<use href="#forest-boar-p11" x="-10" y="-10" fill="#a8704a"/>
+<g clip-path="url(#forest-boar-c13)"><use href="#forest-boar-p11" x="7" y="7" fill="#7a4a2e"/></g>
+</g>
+<use href="#forest-boar-p14" fill="#9a5a5a" stroke-width="10"/>
+<g clip-path="url(#forest-boar-c15)">
+<use href="#forest-boar-p14" x="-5" y="-5" fill="#f2c2b4"/>
+<g clip-path="url(#forest-boar-c16)"><use href="#forest-boar-p14" x="3" y="3" fill="#c98f8a"/></g>
+</g>
+<path d="M103 330A4 5 0 1 0 110 330A4 5 0 1 0 103 330Z" fill="#1d0842"/>
+<path d="M115 332A4 5 0 1 0 122 332A4 5 0 1 0 115 332Z" fill="#1d0842"/>
+<use href="#forest-boar-p17" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#forest-boar-c18)">
+<use href="#forest-boar-p17" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#forest-boar-c19)"><use href="#forest-boar-p17" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#forest-boar-p1a" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#forest-boar-c1b)">
+<use href="#forest-boar-p1a" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#forest-boar-c1c)"><use href="#forest-boar-p1a" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<path d="M165 288A7 6 0 1 0 179 288A7 6 0 1 0 165 288Z" fill="#1d0842"/>
+<path d="M168 286A2 2 0 1 0 172 286A2 2 0 1 0 168 286Z" fill="#ffbe0b"/>
+<path d="M156 276L184 284" fill="none" stroke-width="5"/>
+</svg>

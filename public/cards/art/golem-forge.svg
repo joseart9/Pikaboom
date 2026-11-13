@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="golem-forge-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#140a26"/><stop offset="0.55" stop-color="#3a1f5e"/><stop offset="1" stop-color="#120a20"/></linearGradient><radialGradient id="golem-forge-r1" gradientUnits="userSpaceOnUse" cx="256" cy="300" r="260"><stop offset="0" stop-color="#c77dff" stop-opacity="0.4"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="golem-forge-r2" gradientUnits="userSpaceOnUse" cx="256" cy="220" r="70"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.5"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.225"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><linearGradient id="golem-forge-l3" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#2e1c4e"/><stop offset="1" stop-color="#160c24"/></linearGradient><radialGradient id="golem-forge-r4" gradientUnits="userSpaceOnUse" cx="256" cy="396" r="220"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="golem-forge-p5" d="M-36 -62C-38 -51 -38 -11 -37 0C-36 11 -30 11 -26 11C-23 11 -17 11 -15 0C-13 -11 -11 -50 -12 -62C-13 -73 -20 -74 -24 -74C-27 -74 -34 -73 -36 -62Z"/><clipPath id="golem-forge-c6"><use href="#golem-forge-p5"/></clipPath><clipPath id="golem-forge-c7"><use href="#golem-forge-p5" x="-5" y="-5"/></clipPath><path id="golem-forge-p8" d="M12 -62C11 -50 13 -11 15 0C17 11 23 11 26 11C30 11 36 11 37 0C38 -11 38 -51 36 -62C34 -73 27 -74 24 -74C20 -74 13 -73 12 -62Z"/><clipPath id="golem-forge-c9"><use href="#golem-forge-p8"/></clipPath><clipPath id="golem-forge-ca"><use href="#golem-forge-p8" x="-5" y="-5"/></clipPath><path id="golem-forge-pb" d="M-57 -142C-63 -136 -81 -113 -84 -101C-87 -88 -80 -68 -78 -60C-75 -53 -69 -52 -66 -52C-63 -53 -58 -57 -58 -64C-58 -70 -67 -85 -64 -95C-61 -105 -42 -122 -39 -130C-36 -137 -39 -143 -42 -145C-45 -147 -51 -149 -57 -142Z"/><clipPath id="golem-forge-cc"><use href="#golem-forge-pb"/></clipPath><clipPath id="golem-forge-cd"><use href="#golem-forge-pb" x="-5" y="-5"/></clipPath><path id="golem-forge-pe" d="M-50 -150C-45 -156 -10 -160 0 -160C10 -160 45 -156 50 -150C55 -144 54 -109 54 -100C54 -91 53 -61 48 -56C43 -51 10 -48 0 -48C-10 -48 -43 -51 -48 -56C-53 -61 -54 -91 -54 -100C-54 -109 -55 -144 -50 -150Z"/><clipPath id="golem-forge-cf"><use href="#golem-forge-pe"/></clipPath><clipPath id="golem-forge-cg"><use href="#golem-forge-pe" x="-10" y="-10"/></clipPath><radialGradient id="golem-forge-rh" gradientUnits="userSpaceOnUse" cx="0" cy="-104" r="34"><stop offset="0" stop-color="#c77dff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.315"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="golem-forge-pi" d="M-36 -62C-38 -51 -38 -11 -37 0C-36 11 -30 11 -26 11C-23 11 -17 11 -15 0C-13 -11 -11 -50 -12 -62C-13 -73 -20 -74 -24 -74C-27 -74 -34 -73 -36 -62Z"/><clipPath id="golem-forge-cj"><use href="#golem-forge-pi"/></clipPath><clipPath id="golem-forge-ck"><use href="#golem-forge-pi" x="-5" y="-5"/></clipPath><path id="golem-forge-pl" d="M12 -62C11 -50 13 -11 15 0C17 11 23 11 26 11C30 11 36 11 37 0C38 -11 38 -51 36 -62C34 -73 27 -74 24 -74C20 -74 13 -73 12 -62Z"/><clipPath id="golem-forge-cm"><use href="#golem-forge-pl"/></clipPath><clipPath id="golem-forge-cn"><use href="#golem-forge-pl" x="-5" y="-5"/></clipPath><path id="golem-forge-po" d="M-57 -142C-63 -136 -81 -113 -84 -101C-87 -88 -80 -68 -78 -60C-75 -53 -69 -52 -66 -52C-63 -53 -58 -57 -58 -64C-58 -70 -67 -85 -64 -95C-61 -105 -42 -122 -39 -130C-36 -137 -39 -143 -42 -145C-45 -147 -51 -149 -57 -142Z"/><clipPath id="golem-forge-cp"><use href="#golem-forge-po"/></clipPath><clipPath id="golem-forge-cq"><use href="#golem-forge-po" x="-5" y="-5"/></clipPath><path id="golem-forge-pr" d="M-50 -150C-45 -156 -10 -160 0 -160C10 -160 45 -156 50 -150C55 -144 54 -109 54 -100C54 -91 53 -61 48 -56C43 -51 10 -48 0 -48C-10 -48 -43 -51 -48 -56C-53 -61 -54 -91 -54 -100C-54 -109 -55 -144 -50 -150Z"/><clipPath id="golem-forge-cs"><use href="#golem-forge-pr"/></clipPath><clipPath id="golem-forge-ct"><use href="#golem-forge-pr" x="-10" y="-10"/></clipPath><radialGradient id="golem-forge-ru" gradientUnits="userSpaceOnUse" cx="0" cy="-104" r="34"><stop offset="0" stop-color="#c77dff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.315"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="golem-forge-pv" d="M124 212L170 206L176 246L126 252Z"/><clipPath id="golem-forge-cw"><use href="#golem-forge-pv"/></clipPath><clipPath id="golem-forge-cx"><use href="#golem-forge-pv" x="-6" y="-6"/></clipPath><radialGradient id="golem-forge-ry" gradientUnits="userSpaceOnUse" cx="150" cy="230" r="24"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="golem-forge-pz" d="M396 244C400 251 418 265 421 273C424 281 416 293 416 298C416 304 420 307 422 308C425 308 429 308 432 302C434 295 442 278 439 267C436 257 418 237 412 232C406 226 400 228 398 230C395 232 393 238 396 244Z"/><clipPath id="golem-forge-c10"><use href="#golem-forge-pz"/></clipPath><clipPath id="golem-forge-c11"><use href="#golem-forge-pz" x="-4" y="-4"/></clipPath><path id="golem-forge-p12" d="M406 312A18 18 0 1 0 442 312A18 18 0 1 0 406 312Z"/><clipPath id="golem-forge-c13"><use href="#golem-forge-p12"/></clipPath><clipPath id="golem-forge-c14"><use href="#golem-forge-p12" x="-5" y="-5"/></clipPath><path id="golem-forge-p15" d="M96 128L102 134L110 133L110 142L118 146L112 153L115 161L107 163L104 171L96 167L88 171L85 163L77 161L80 153L74 146L82 142L82 133L90 134Z"/><clipPath id="golem-forge-c16"><use href="#golem-forge-p15"/></clipPath><clipPath id="golem-forge-c17"><use href="#golem-forge-p15" x="-4" y="-4"/></clipPath><path id="golem-forge-p18" d="M418 134L425 141L435 140L435 150L444 155L437 163L441 173L431 175L427 184L418 180L409 184L405 175L395 173L399 163L392 155L401 150L401 140L411 141Z"/><clipPath id="golem-forge-c19"><use href="#golem-forge-p18"/></clipPath><clipPath id="golem-forge-c1a"><use href="#golem-forge-p18" x="-4" y="-4"/></clipPath><path id="golem-forge-p1b" d="M330 114L334 118L339 117L339 123L344 126L340 130L342 135L337 136L335 141L330 139L325 141L323 136L318 135L320 130L316 126L321 123L321 117L326 118Z"/><clipPath id="golem-forge-c1c"><use href="#golem-forge-p1b"/></clipPath><clipPath id="golem-forge-c1d"><use href="#golem-forge-p1b" x="-4" y="-4"/></clipPath><path id="golem-forge-p1e" d="M215 128L202 141L183 134L181 121L201 118Z"/><clipPath id="golem-forge-c1f"><use href="#golem-forge-p1e"/></clipPath><clipPath id="golem-forge-c1g"><use href="#golem-forge-p1e" x="-3" y="-3"/></clipPath><path id="golem-forge-p1h" d="M422 214L411 222L396 220L398 209L412 204Z"/><clipPath id="golem-forge-c1i"><use href="#golem-forge-p1h"/></clipPath><clipPath id="golem-forge-c1j"><use href="#golem-forge-p1h" x="-3" y="-3"/></clipPath><path id="golem-forge-p1k" d="M196 308H316C330 308 344 300 354 290L362 304C350 320 334 328 316 330L300 330L292 352H310V370H202V352H220L212 330H196Z"/><clipPath id="golem-forge-c1l"><use href="#golem-forge-p1k"/></clipPath><clipPath id="golem-forge-c1m"><use href="#golem-forge-p1k" x="-8" y="-6"/></clipPath><path id="golem-forge-p1n" d="M304 193C297 204 271 253 266 265C261 277 267 273 269 274C271 275 271 283 278 271C285 260 311 211 316 199C321 187 315 191 313 190C311 189 311 181 304 193Z"/><clipPath id="golem-forge-c1o"><use href="#golem-forge-p1n"/></clipPath><clipPath id="golem-forge-c1p"><use href="#golem-forge-p1n" x="-4" y="-4"/></clipPath><path id="golem-forge-p1q" d="M226 252L292 286L278 312L212 278Z"/><clipPath id="golem-forge-c1r"><use href="#golem-forge-p1q"/></clipPath><clipPath id="golem-forge-c1s"><use href="#golem-forge-p1q" x="-6" y="-6"/></clipPath><radialGradient id="golem-forge-r1t" gradientUnits="userSpaceOnUse" cx="250" cy="308" r="90"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.8"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#golem-forge-l0)"/>
+<circle cx="256" cy="300" r="260" fill="url(#golem-forge-r1)"/>
+<path d="M140 0V170C140 110 196 74 256 74C316 74 372 110 372 170V0Z" fill="#1e1236"/>
+<path d="M196 210C196 160 316 160 316 210V250H196Z" fill="#2a0c1a"/>
+<circle cx="256" cy="220" r="70" fill="url(#golem-forge-r2)"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#golem-forge-l3)"/>
+<ellipse cx="256" cy="396" rx="220" ry="62" fill="url(#golem-forge-r4)"/>
+<path d="M46 396A210 40 0 1 0 466 396A210 40 0 1 0 46 396ZM76 396A180 32 0 1 0 436 396A180 32 0 1 0 76 396Z" fill="none" stroke="#c77dff" stroke-width="4" stroke-opacity="0.6"/>
+<path d="M451 391L455 396L451 401L447 396Z" fill="#e0b8ff"/>
+<path d="M425 489L429 494L425 499L421 494Z" fill="#e0b8ff"/>
+<path d="M354 560L358 565L354 570L350 565Z" fill="#e0b8ff"/>
+<path d="M256 586L260 591L256 596L252 591Z" fill="#e0b8ff"/>
+<path d="M159 560L163 565L159 570L155 565Z" fill="#e0b8ff"/>
+<path d="M87 489L91 494L87 499L83 494Z" fill="#e0b8ff"/>
+<path d="M61 391L65 396L61 401L57 396Z" fill="#e0b8ff"/>
+<path d="M87 294L91 299L87 304L83 299Z" fill="#e0b8ff"/>
+<path d="M158 222L162 227L158 232L154 227Z" fill="#e0b8ff"/>
+<path d="M256 196L260 201L256 206L252 201Z" fill="#e0b8ff"/>
+<path d="M354 222L358 227L354 232L350 227Z" fill="#e0b8ff"/>
+<path d="M425 293L429 298L425 303L421 298Z" fill="#e0b8ff"/>
+<g transform="translate(146 390) scale(0.9 0.9)">
+<use href="#golem-forge-p5" fill="#3e3a52" stroke-width="10"/>
+<g clip-path="url(#golem-forge-c6)">
+<use href="#golem-forge-p5" x="-5" y="-5" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-c7)"><use href="#golem-forge-p5" x="7" y="7" fill="#6e6a80"/></g>
+</g>
+<use href="#golem-forge-p8" fill="#3e3a52" stroke-width="10"/>
+<g clip-path="url(#golem-forge-c9)">
+<use href="#golem-forge-p8" x="-5" y="-5" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-ca)"><use href="#golem-forge-p8" x="7" y="7" fill="#6e6a80"/></g>
+</g>
+<use href="#golem-forge-pb" fill="#7a4420" stroke-width="10"/>
+<g clip-path="url(#golem-forge-cc)">
+<use href="#golem-forge-pb" x="-5" y="-5" fill="#e6a868"/>
+<g clip-path="url(#golem-forge-cd)"><use href="#golem-forge-pb" x="3" y="3" fill="#c27a3a"/></g>
+</g>
+<use href="#golem-forge-pe" fill="#3e3a52" stroke-width="12"/>
+<g clip-path="url(#golem-forge-cf)">
+<use href="#golem-forge-pe" x="-10" y="-10" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-cg)"><use href="#golem-forge-pe" x="7" y="7" fill="#6e6a80"/></g>
+</g>
+<path d="M-52 -132C-20 -126 20 -126 52 -132M-54 -78C-20 -72 20 -72 54 -78" fill="none" stroke="#7a4420" stroke-width="6"/>
+<circle cx="0" cy="-104" r="34" fill="url(#golem-forge-rh)"/>
+<path d="M0 -118L3 -109L12 -111L6 -104L12 -97L3 -99L0 -90L-3 -99L-12 -97L-6 -104L-12 -111L-3 -109Z" fill="#f0d8ff"/>
+</g>
+<g transform="translate(366 390) scale(-0.9 0.9)">
+<use href="#golem-forge-pi" fill="#3e3a52" stroke-width="10"/>
+<g clip-path="url(#golem-forge-cj)">
+<use href="#golem-forge-pi" x="-5" y="-5" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-ck)"><use href="#golem-forge-pi" x="7" y="7" fill="#6e6a80"/></g>
+</g>
+<use href="#golem-forge-pl" fill="#3e3a52" stroke-width="10"/>
+<g clip-path="url(#golem-forge-cm)">
+<use href="#golem-forge-pl" x="-5" y="-5" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-cn)"><use href="#golem-forge-pl" x="7" y="7" fill="#6e6a80"/></g>
+</g>
+<use href="#golem-forge-po" fill="#7a4420" stroke-width="10"/>
+<g clip-path="url(#golem-forge-cp)">
+<use href="#golem-forge-po" x="-5" y="-5" fill="#e6a868"/>
+<g clip-path="url(#golem-forge-cq)"><use href="#golem-forge-po" x="3" y="3" fill="#c27a3a"/></g>
+</g>
+<use href="#golem-forge-pr" fill="#3e3a52" stroke-width="12"/>
+<g clip-path="url(#golem-forge-cs)">
+<use href="#golem-forge-pr" x="-10" y="-10" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-ct)"><use href="#golem-forge-pr" x="7" y="7" fill="#6e6a80"/></g>
+</g>
+<path d="M-52 -132C-20 -126 20 -126 52 -132M-54 -78C-20 -72 20 -72 54 -78" fill="none" stroke="#7a4420" stroke-width="6"/>
+<circle cx="0" cy="-104" r="34" fill="url(#golem-forge-ru)"/>
+<path d="M0 -118L3 -109L12 -111L6 -104L12 -97L3 -99L0 -90L-3 -99L-12 -97L-6 -104L-12 -111L-3 -109Z" fill="#f0d8ff"/>
+</g>
+<use href="#golem-forge-pv" fill="#3e3a52" stroke-width="10"/>
+<g clip-path="url(#golem-forge-cw)">
+<use href="#golem-forge-pv" x="-6" y="-6" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-cx)"><use href="#golem-forge-pv" x="4" y="4" fill="#6e6a80"/></g>
+</g>
+<circle cx="150" cy="230" r="24" fill="url(#golem-forge-ry)"/>
+<path d="M143 230A7 7 0 1 0 157 230A7 7 0 1 0 143 230Z" fill="#ffe066"/>
+<path d="M150 256V286M140 262L134 284M160 262L166 284" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#golem-forge-pz" fill="#7a4420" stroke-width="10"/>
+<g clip-path="url(#golem-forge-c10)">
+<use href="#golem-forge-pz" x="-4" y="-4" fill="#e6a868"/>
+<g clip-path="url(#golem-forge-c11)"><use href="#golem-forge-pz" x="3" y="3" fill="#c27a3a"/></g>
+</g>
+<use href="#golem-forge-p12" fill="#211d33" stroke-width="10"/>
+<g clip-path="url(#golem-forge-c13)">
+<use href="#golem-forge-p12" x="-5" y="-5" fill="#6a6688"/>
+<g clip-path="url(#golem-forge-c14)"><use href="#golem-forge-p12" x="3" y="3" fill="#3e3a52"/></g>
+</g>
+<path d="M400 270L384 280M410 290L392 296" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#golem-forge-p15" fill="#7a4420" stroke-width="8"/>
+<g clip-path="url(#golem-forge-c16)">
+<use href="#golem-forge-p15" x="-4" y="-4" fill="#e6a868"/>
+<g clip-path="url(#golem-forge-c17)"><use href="#golem-forge-p15" x="3" y="3" fill="#c27a3a"/></g>
+</g>
+<path d="M88 150A8 8 0 1 0 104 150A8 8 0 1 0 88 150Z" fill="#1d0842"/>
+<use href="#golem-forge-p18" fill="#7a4420" stroke-width="8"/>
+<g clip-path="url(#golem-forge-c19)">
+<use href="#golem-forge-p18" x="-4" y="-4" fill="#e6a868"/>
+<g clip-path="url(#golem-forge-c1a)"><use href="#golem-forge-p18" x="3" y="3" fill="#c27a3a"/></g>
+</g>
+<path d="M409 160A9 9 0 1 0 427 160A9 9 0 1 0 409 160Z" fill="#1d0842"/>
+<use href="#golem-forge-p1b" fill="#7a4420" stroke-width="8"/>
+<g clip-path="url(#golem-forge-c1c)">
+<use href="#golem-forge-p1b" x="-4" y="-4" fill="#e6a868"/>
+<g clip-path="url(#golem-forge-c1d)"><use href="#golem-forge-p1b" x="3" y="3" fill="#c27a3a"/></g>
+</g>
+<path d="M325 128A5 5 0 1 0 335 128A5 5 0 1 0 325 128Z" fill="#1d0842"/>
+<use href="#golem-forge-p1e" fill="#3e3a52" stroke-width="8"/>
+<g clip-path="url(#golem-forge-c1f)">
+<use href="#golem-forge-p1e" x="-3" y="-3" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-c1g)"><use href="#golem-forge-p1e" x="2" y="2" fill="#6e6a80"/></g>
+</g>
+<use href="#golem-forge-p1h" fill="#3e3a52" stroke-width="8"/>
+<g clip-path="url(#golem-forge-c1i)">
+<use href="#golem-forge-p1h" x="-3" y="-3" fill="#9a96b0"/>
+<g clip-path="url(#golem-forge-c1j)"><use href="#golem-forge-p1h" x="2" y="2" fill="#6e6a80"/></g>
+</g>
+<use href="#golem-forge-p1k" fill="#211d33" stroke-width="12"/>
+<g clip-path="url(#golem-forge-c1l)">
+<use href="#golem-forge-p1k" x="-8" y="-6" fill="#6a6688"/>
+<g clip-path="url(#golem-forge-c1m)"><use href="#golem-forge-p1k" x="5" y="5" fill="#3e3a52"/></g>
+</g>
+<use href="#golem-forge-p1n" fill="#7b2fd0" stroke-width="10"/>
+<g clip-path="url(#golem-forge-c1o)">
+<use href="#golem-forge-p1n" x="-4" y="-4" fill="#f0d8ff"/>
+<g clip-path="url(#golem-forge-c1p)"><use href="#golem-forge-p1n" x="3" y="3" fill="#c77dff"/></g>
+</g>
+<use href="#golem-forge-p1q" fill="#7b2fd0" stroke-width="12"/>
+<g clip-path="url(#golem-forge-c1r)">
+<use href="#golem-forge-p1q" x="-6" y="-6" fill="#f0d8ff"/>
+<g clip-path="url(#golem-forge-c1s)"><use href="#golem-forge-p1q" x="4" y="4" fill="#c77dff"/></g>
+</g>
+<circle cx="250" cy="308" r="90" fill="url(#golem-forge-r1t)"/>
+<path d="M315 295L266 309L304 344L259 319L261 371L247 322L212 360L237 315L185 317L234 303L196 268L241 293L239 241L253 290L288 252L263 297Z" fill="#ffe066"/>
+<path d="M285 313L258 312L270 336L252 316L243 341L244 314L220 326L240 308L215 299L242 300L230 276L248 296L257 271L256 298L280 286L260 304Z" fill="#ffffff"/>
+<path d="M150 260L153 266L150 271L147 266Z" fill="#ffbe0b" fill-opacity="0.89"/>
+<path d="M215 237L219 244L215 251L211 244Z" fill="#ffe066" fill-opacity="0.94"/>
+<path d="M279 233L281 237L279 241L277 237Z" fill="#e0b8ff" fill-opacity="0.97"/>
+<path d="M363 259L366 266L363 272L359 266Z" fill="#ffbe0b" fill-opacity="0.91"/>
+<path d="M329 319L331 323L329 327L327 323Z" fill="#ffe066" fill-opacity="0.99"/>
+<path d="M205 255L208 260L205 265L202 260Z" fill="#e0b8ff" fill-opacity="0.67"/>
+<path d="M328 314L330 318L328 321L326 318Z" fill="#ffbe0b" fill-opacity="0.96"/>
+<path d="M338 269L341 275L338 282L334 275Z" fill="#ffe066" fill-opacity="0.97"/>
+<path d="M277 228L279 232L277 237L274 232Z" fill="#e0b8ff" fill-opacity="0.6"/>
+<path d="M206 249L209 255L206 261L203 255Z" fill="#ffbe0b" fill-opacity="0.8"/>
+<path d="M271 267L274 272L271 277L268 272Z" fill="#ffe066" fill-opacity="0.6"/>
+<path d="M180 330L183 336L180 341L177 336Z" fill="#e0b8ff" fill-opacity="0.81"/>
+<path d="M258 306L260 309L258 313L256 309Z" fill="#ffbe0b" fill-opacity="0.92"/>
+<path d="M312 240L314 244L312 249L309 244Z" fill="#ffe066" fill-opacity="0.87"/>
+<path d="M199 274L202 280L199 286L196 280Z" fill="#e0b8ff" fill-opacity="1"/>
+<path d="M167 313L169 317L167 322L165 317Z" fill="#ffbe0b" fill-opacity="0.77"/>
+<path d="M311 249L313 252L311 255L309 252Z" fill="#ffe066" fill-opacity="0.73"/>
+<path d="M223 226L226 233L223 240L219 233Z" fill="#e0b8ff" fill-opacity="0.74"/>
+</svg>

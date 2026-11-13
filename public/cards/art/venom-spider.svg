@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="venom-spider-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0a140e"/><stop offset="0.55" stop-color="#1a2e1e"/><stop offset="1" stop-color="#0c140e"/></linearGradient><radialGradient id="venom-spider-r1" gradientUnits="userSpaceOnUse" cx="256" cy="240" r="250"><stop offset="0" stop-color="#7bd389" stop-opacity="0.3"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.135"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><linearGradient id="venom-spider-l2" gradientUnits="userSpaceOnUse" x1="0" y1="362" x2="0" y2="512"><stop offset="0" stop-color="#18301c"/><stop offset="1" stop-color="#0a160c"/></linearGradient><radialGradient id="venom-spider-r3" gradientUnits="userSpaceOnUse" cx="256" cy="410" r="160"><stop offset="0" stop-color="#7bd389" stop-opacity="0.55"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><path id="venom-spider-p4" d="M304 297C320 289 385 237 402 242C418 247 411 317 413 330C415 344 415 330 416 330C417 330 420 345 419 330C417 315 425 237 406 230C388 223 313 273 296 283C279 292 292 292 293 294C294 296 287 305 304 297Z"/><clipPath id="venom-spider-c5"><use href="#venom-spider-p4"/></clipPath><clipPath id="venom-spider-c6"><use href="#venom-spider-p4" x="-4" y="-4"/></clipPath><path id="venom-spider-p7" d="M295 312C312 314 379 304 396 317C413 330 407 386 409 398C411 411 411 398 412 398C413 398 416 411 415 398C414 384 422 322 404 307C386 292 314 297 297 296C279 295 288 301 288 303C288 306 279 310 295 312Z"/><clipPath id="venom-spider-c8"><use href="#venom-spider-p7"/></clipPath><clipPath id="venom-spider-c9"><use href="#venom-spider-p7" x="-4" y="-4"/></clipPath><path id="venom-spider-pa" d="M216 283C199 274 126 227 108 234C90 241 97 315 95 330C94 344 97 330 98 330C99 330 99 343 101 330C103 318 96 251 112 246C128 241 192 290 208 297C225 304 218 296 219 294C220 291 232 292 216 283Z"/><clipPath id="venom-spider-cb"><use href="#venom-spider-pa"/></clipPath><clipPath id="venom-spider-cc"><use href="#venom-spider-pa" x="-4" y="-4"/></clipPath><path id="venom-spider-pd" d="M217 298C200 299 129 296 112 311C94 326 102 385 101 398C100 411 103 398 104 398C105 398 105 410 107 398C109 387 103 334 120 321C137 308 203 316 219 314C235 312 226 308 226 305C226 303 234 297 217 298Z"/><clipPath id="venom-spider-ce"><use href="#venom-spider-pd"/></clipPath><clipPath id="venom-spider-cf"><use href="#venom-spider-pd" x="-4" y="-4"/></clipPath><path id="venom-spider-pg" d="M208 238A92 74 0 1 0 392 238A92 74 0 1 0 208 238Z"/><clipPath id="venom-spider-ch"><use href="#venom-spider-pg"/></clipPath><clipPath id="venom-spider-ci"><use href="#venom-spider-pg" x="-14" y="-12"/></clipPath><path id="venom-spider-pj" d="M227 311C214 315 169 331 156 345C142 359 140 394 137 403C135 412 139 404 140 404C141 404 139 412 143 405C146 398 151 367 164 355C178 343 222 331 233 325C244 319 238 317 237 315C236 312 239 306 227 311Z"/><clipPath id="venom-spider-ck"><use href="#venom-spider-pj"/></clipPath><clipPath id="venom-spider-cl"><use href="#venom-spider-pj" x="-4" y="-4"/></clipPath><path id="venom-spider-pm" d="M279 325C290 331 334 343 348 355C361 367 366 398 369 405C373 412 371 404 372 404C373 404 377 412 375 403C372 394 370 359 356 345C343 331 298 315 285 311C273 306 276 312 275 315C274 317 268 319 279 325Z"/><clipPath id="venom-spider-cn"><use href="#venom-spider-pm"/></clipPath><clipPath id="venom-spider-co"><use href="#venom-spider-pm" x="-4" y="-4"/></clipPath><path id="venom-spider-pp" d="M198 304A58 44 0 1 0 314 304A58 44 0 1 0 198 304Z"/><clipPath id="venom-spider-cq"><use href="#venom-spider-pp"/></clipPath><clipPath id="venom-spider-cr"><use href="#venom-spider-pp" x="-10" y="-8"/></clipPath><radialGradient id="venom-spider-rs" gradientUnits="userSpaceOnUse" cx="256" cy="296" r="40"><stop offset="0" stop-color="#7bd389" stop-opacity="0.5"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.225"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><path id="venom-spider-pt" d="M232 316C230 320 227 334 229 340C231 347 241 356 243 358C245 361 244 358 244 358C244 358 246 360 245 358C244 355 239 345 239 340C239 334 247 324 248 320C248 316 244 311 242 310C240 310 234 311 232 316Z"/><clipPath id="venom-spider-cu"><use href="#venom-spider-pt"/></clipPath><clipPath id="venom-spider-cv"><use href="#venom-spider-pt" x="-3" y="-3"/></clipPath><path id="venom-spider-pw" d="M264 320C265 324 273 334 273 340C273 345 268 355 267 358C266 360 268 358 268 358C268 358 267 361 269 358C271 356 281 347 283 340C285 334 282 320 280 316C278 311 272 310 270 310C268 311 264 316 264 320Z"/><clipPath id="venom-spider-cx"><use href="#venom-spider-pw"/></clipPath><clipPath id="venom-spider-cy"><use href="#venom-spider-pw" x="-3" y="-3"/></clipPath><path id="venom-spider-pz" d="M244 363.4C251 373.2 251 383 244 383C237 383 237 373.2 244 363.4Z"/><clipPath id="venom-spider-c10"><use href="#venom-spider-pz"/></clipPath><clipPath id="venom-spider-c11"><use href="#venom-spider-pz" x="-2" y="-2"/></clipPath><path id="venom-spider-p12" d="M268 373.2C274 381.6 274 390 268 390C262 390 262 381.6 268 373.2Z"/><clipPath id="venom-spider-c13"><use href="#venom-spider-p12"/></clipPath><clipPath id="venom-spider-c14"><use href="#venom-spider-p12" x="-2" y="-2"/></clipPath><path id="venom-spider-p15" d="M256 393C261 400 261 407 256 407C251 407 251 400 256 393Z"/><clipPath id="venom-spider-c16"><use href="#venom-spider-p15"/></clipPath><clipPath id="venom-spider-c17"><use href="#venom-spider-p15" x="-2" y="-2"/></clipPath><path id="venom-spider-p18" d="M242 281C233 266 190 212 175 192C160 172 148 155 143 148C137 142 141 150 140 150C139 150 134 144 137 152C141 159 151 179 165 200C178 221 218 277 230 291C241 305 239 294 241 292C243 291 252 296 242 281Z"/><clipPath id="venom-spider-c19"><use href="#venom-spider-p18"/></clipPath><clipPath id="venom-spider-c1a"><use href="#venom-spider-p18" x="-4" y="-4"/></clipPath><path id="venom-spider-p1b" d="M283 291C294 276 336 215 349 194C363 172 371 155 375 148C378 140 373 146 372 146C371 146 374 138 369 144C364 150 354 166 339 186C324 207 280 265 269 281C259 297 269 291 271 293C273 294 271 305 283 291Z"/><clipPath id="venom-spider-c1c"><use href="#venom-spider-p1b"/></clipPath><clipPath id="venom-spider-c1d"><use href="#venom-spider-p1b" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#venom-spider-l0)"/>
+<circle cx="256" cy="240" r="250" fill="url(#venom-spider-r1)"/>
+<path d="M0 0H140C90 80 60 200 70 512H0Z" fill="#081008"/>
+<path d="M512 0H380C430 90 460 210 446 512H512Z" fill="#081008"/>
+<path d="M120 70C130 120 116 180 96 230M400 60C380 120 410 170 430 210" fill="none" stroke="#0e1c10" stroke-width="10"/>
+<path d="M80 60L256 250L440 70M60 250H460M90 440L256 250L430 440M256 40V250" fill="none" stroke="#d8f0d8" stroke-width="2" stroke-opacity="0.25"/>
+<path d="M196 250Q256 214 316 250Q256 286 196 250" fill="none" stroke="#d8f0d8" stroke-width="2" stroke-opacity="0.18"/>
+<path d="M146 250Q256 184 366 250Q256 316 146 250" fill="none" stroke="#d8f0d8" stroke-width="2" stroke-opacity="0.18"/>
+<path d="M96 250Q256 154 416 250Q256 346 96 250" fill="none" stroke="#d8f0d8" stroke-width="2" stroke-opacity="0.18"/>
+<path d="M0 398Q256 362 512 398V512H0Z" fill="url(#venom-spider-l2)"/>
+<ellipse cx="256" cy="410" rx="160" ry="45" fill="url(#venom-spider-r3)"/>
+<ellipse cx="256" cy="404" rx="140" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#venom-spider-p4" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-c5)">
+<use href="#venom-spider-p4" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-p4" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-c6)"><use href="#venom-spider-p4" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M398 236A6 6 0 1 0 410 236A6 6 0 1 0 398 236Z" fill="#5a4670"/>
+<use href="#venom-spider-p7" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-c8)">
+<use href="#venom-spider-p7" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-p7" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-c9)"><use href="#venom-spider-p7" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M394 312A6 6 0 1 0 406 312A6 6 0 1 0 394 312Z" fill="#5a4670"/>
+<use href="#venom-spider-pa" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-cb)">
+<use href="#venom-spider-pa" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-pa" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-cc)"><use href="#venom-spider-pa" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M104 240A6 6 0 1 0 116 240A6 6 0 1 0 104 240Z" fill="#5a4670"/>
+<use href="#venom-spider-pd" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-ce)">
+<use href="#venom-spider-pd" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-pd" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-cf)"><use href="#venom-spider-pd" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M110 316A6 6 0 1 0 122 316A6 6 0 1 0 110 316Z" fill="#5a4670"/>
+<use href="#venom-spider-pg" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#venom-spider-ch)">
+<use href="#venom-spider-pg" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-pg" x="-14" y="-12" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-ci)"><use href="#venom-spider-pg" x="9" y="9" fill="#3a2a4a"/></g>
+</g>
+<path d="M260 196L300 214L340 196L332 208L300 226L268 208Z" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M244 226L300 244L356 226L348 238L300 256L252 238Z" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M240 258L300 276L360 258L352 270L300 288L248 270Z" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M260 196A16 10 0 1 0 292 196A16 10 0 1 0 260 196Z" fill="#ffffff" fill-opacity="0.15"/>
+<use href="#venom-spider-pj" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-ck)">
+<use href="#venom-spider-pj" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-pj" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-cl)"><use href="#venom-spider-pj" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M154 350A6 6 0 1 0 166 350A6 6 0 1 0 154 350Z" fill="#5a4670"/>
+<use href="#venom-spider-pm" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-cn)">
+<use href="#venom-spider-pm" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-pm" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-co)"><use href="#venom-spider-pm" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M346 350A6 6 0 1 0 358 350A6 6 0 1 0 346 350Z" fill="#5a4670"/>
+<use href="#venom-spider-pp" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#venom-spider-cq)">
+<use href="#venom-spider-pp" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-pp" x="-10" y="-8" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-cr)"><use href="#venom-spider-pp" x="6" y="6" fill="#3a2a4a"/></g>
+</g>
+<circle cx="256" cy="296" r="40" fill="url(#venom-spider-rs)"/>
+<path d="M231 292A9 9 0 1 0 249 292A9 9 0 1 0 231 292Z" fill="#1d0842"/>
+<path d="M235 292A5 5 0 1 0 245 292A5 5 0 1 0 235 292Z" fill="#b8f5c8"/>
+<path d="M235 289A2 2 0 1 0 240 289A2 2 0 1 0 235 289Z" fill="#ffffff"/>
+<path d="M263 292A9 9 0 1 0 281 292A9 9 0 1 0 263 292Z" fill="#1d0842"/>
+<path d="M267 292A5 5 0 1 0 277 292A5 5 0 1 0 267 292Z" fill="#b8f5c8"/>
+<path d="M267 289A2 2 0 1 0 272 289A2 2 0 1 0 267 289Z" fill="#ffffff"/>
+<path d="M221 280A5 5 0 1 0 231 280A5 5 0 1 0 221 280Z" fill="#1d0842"/>
+<path d="M223 280A3 3 0 1 0 229 280A3 3 0 1 0 223 280Z" fill="#b8f5c8"/>
+<path d="M223 279A1 1 0 1 0 226 279A1 1 0 1 0 223 279Z" fill="#ffffff"/>
+<path d="M281 280A5 5 0 1 0 291 280A5 5 0 1 0 281 280Z" fill="#1d0842"/>
+<path d="M283 280A3 3 0 1 0 289 280A3 3 0 1 0 283 280Z" fill="#b8f5c8"/>
+<path d="M283 279A1 1 0 1 0 286 279A1 1 0 1 0 283 279Z" fill="#ffffff"/>
+<path d="M244 278A4 4 0 1 0 252 278A4 4 0 1 0 244 278Z" fill="#1d0842"/>
+<path d="M246 278A2 2 0 1 0 250 278A2 2 0 1 0 246 278Z" fill="#b8f5c8"/>
+<path d="M246 277A1 1 0 1 0 248 277A1 1 0 1 0 246 277Z" fill="#ffffff"/>
+<path d="M260 278A4 4 0 1 0 268 278A4 4 0 1 0 260 278Z" fill="#1d0842"/>
+<path d="M262 278A2 2 0 1 0 266 278A2 2 0 1 0 262 278Z" fill="#b8f5c8"/>
+<path d="M262 277A1 1 0 1 0 264 277A1 1 0 1 0 262 277Z" fill="#ffffff"/>
+<use href="#venom-spider-pt" fill="#3d6b30" stroke-width="8"/>
+<g clip-path="url(#venom-spider-cu)">
+<use href="#venom-spider-pt" x="-3" y="-3" fill="#d8f5a2"/>
+<g clip-path="url(#venom-spider-cv)"><use href="#venom-spider-pt" x="2" y="2" fill="#7bd389"/></g>
+</g>
+<use href="#venom-spider-pw" fill="#3d6b30" stroke-width="8"/>
+<g clip-path="url(#venom-spider-cx)">
+<use href="#venom-spider-pw" x="-3" y="-3" fill="#d8f5a2"/>
+<g clip-path="url(#venom-spider-cy)"><use href="#venom-spider-pw" x="2" y="2" fill="#7bd389"/></g>
+</g>
+<use href="#venom-spider-pz" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#venom-spider-c10)">
+<use href="#venom-spider-pz" x="-2" y="-2" fill="#d8f5a2"/>
+<g clip-path="url(#venom-spider-c11)"><use href="#venom-spider-pz" x="1" y="1" fill="#7bd389"/></g>
+</g>
+<use href="#venom-spider-p12" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#venom-spider-c13)">
+<use href="#venom-spider-p12" x="-2" y="-2" fill="#d8f5a2"/>
+<g clip-path="url(#venom-spider-c14)"><use href="#venom-spider-p12" x="1" y="1" fill="#7bd389"/></g>
+</g>
+<use href="#venom-spider-p15" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#venom-spider-c16)">
+<use href="#venom-spider-p15" x="-2" y="-2" fill="#d8f5a2"/>
+<g clip-path="url(#venom-spider-c17)"><use href="#venom-spider-p15" x="1" y="1" fill="#7bd389"/></g>
+</g>
+<use href="#venom-spider-p18" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-c19)">
+<use href="#venom-spider-p18" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-p18" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-c1a)"><use href="#venom-spider-p18" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M164 196A6 6 0 1 0 176 196A6 6 0 1 0 164 196Z" fill="#5a4670"/>
+<use href="#venom-spider-p1b" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#venom-spider-c1c)">
+<use href="#venom-spider-p1b" x="-3" fill="#1e1430"/>
+<use href="#venom-spider-p1b" x="-4" y="-4" fill="#5a4670"/>
+<g clip-path="url(#venom-spider-c1d)"><use href="#venom-spider-p1b" x="3" y="3" fill="#3a2a4a"/></g>
+</g>
+<path d="M338 190A6 6 0 1 0 350 190A6 6 0 1 0 338 190Z" fill="#5a4670"/>
+<circle cx="358" cy="262" r="2" fill="#7bd389" fill-opacity="0.67"/>
+<circle cx="359" cy="258" r="3" fill="#7bd389" fill-opacity="0.62"/>
+<circle cx="136" cy="310" r="3" fill="#7bd389" fill-opacity="0.57"/>
+<circle cx="216" cy="370" r="2" fill="#7bd389" fill-opacity="0.51"/>
+<circle cx="194" cy="311" r="3" fill="#7bd389" fill-opacity="0.55"/>
+<circle cx="194" cy="270" r="2" fill="#7bd389" fill-opacity="0.59"/>
+<circle cx="162" cy="255" r="2" fill="#7bd389" fill-opacity="0.42"/>
+<circle cx="358" cy="183" r="2" fill="#7bd389" fill-opacity="0.73"/>
+<circle cx="254" cy="260" r="3" fill="#7bd389" fill-opacity="0.51"/>
+<circle cx="321" cy="250" r="2" fill="#7bd389" fill-opacity="0.49"/>
+</svg>

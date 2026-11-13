@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="scrap-golem-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1b1036"/><stop offset="0.55" stop-color="#33285a"/><stop offset="1" stop-color="#22163e"/></linearGradient><radialGradient id="scrap-golem-r1" gradientUnits="userSpaceOnUse" cx="256" cy="236" r="240"><stop offset="0" stop-color="#d8c08a" stop-opacity="0.24"/><stop offset="0.45" stop-color="#d8c08a" stop-opacity="0.108"/><stop offset="1" stop-color="#d8c08a" stop-opacity="0"/></radialGradient><linearGradient id="scrap-golem-l2" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#3d2c66"/><stop offset="1" stop-color="#1b1036"/></linearGradient><radialGradient id="scrap-golem-r3" gradientUnits="userSpaceOnUse" cx="256" cy="400" r="150"><stop offset="0" stop-color="#d8c08a" stop-opacity="0.55"/><stop offset="1" stop-color="#d8c08a" stop-opacity="0"/></radialGradient><path id="scrap-golem-p4" d="M213 339C210 348 208 379 209 389C210 399 217 403 221 403C225 403 232 400 235 391C238 382 240 351 239 341C238 331 231 327 227 327C223 327 216 330 213 339Z"/><clipPath id="scrap-golem-c5"><use href="#scrap-golem-p4"/></clipPath><clipPath id="scrap-golem-c6"><use href="#scrap-golem-p4" x="-5" y="-5"/></clipPath><path id="scrap-golem-p7" d="M190 396A26 10 0 1 0 242 396A26 10 0 1 0 190 396Z"/><clipPath id="scrap-golem-c8"><use href="#scrap-golem-p7"/></clipPath><clipPath id="scrap-golem-c9"><use href="#scrap-golem-p7" x="-4" y="-4"/></clipPath><path id="scrap-golem-pa" d="M272 338L306 338L310 398L268 398Z"/><clipPath id="scrap-golem-cb"><use href="#scrap-golem-pa"/></clipPath><clipPath id="scrap-golem-cc"><use href="#scrap-golem-pa" x="-6" y="-6"/></clipPath><path id="scrap-golem-pd" d="M334 360A24 24 0 1 0 382 360A24 24 0 1 0 334 360Z"/><clipPath id="scrap-golem-ce"><use href="#scrap-golem-pd"/></clipPath><clipPath id="scrap-golem-cf"><use href="#scrap-golem-pd" x="-7" y="-7"/></clipPath><path id="scrap-golem-pg" d="M198 230C190 270 190 312 202 346L310 346C322 312 322 270 314 230Z"/><clipPath id="scrap-golem-ch"><use href="#scrap-golem-pg"/></clipPath><clipPath id="scrap-golem-ci"><use href="#scrap-golem-pg" x="-12" y="-10"/></clipPath><path id="scrap-golem-pj" d="M196 256H316L318 270H194Z"/><clipPath id="scrap-golem-ck"><use href="#scrap-golem-pj"/></clipPath><clipPath id="scrap-golem-cl"><use href="#scrap-golem-pj" x="-2" y="-3"/></clipPath><path id="scrap-golem-pm" d="M198 318H314L312 332H200Z"/><clipPath id="scrap-golem-cn"><use href="#scrap-golem-pm"/></clipPath><clipPath id="scrap-golem-co"><use href="#scrap-golem-pm" x="-2" y="-3"/></clipPath><path id="scrap-golem-pp" d="M262 280L298 276L300 306L264 310Z"/><clipPath id="scrap-golem-cq"><use href="#scrap-golem-pp"/></clipPath><clipPath id="scrap-golem-cr"><use href="#scrap-golem-pp" x="-4" y="-4"/></clipPath><path id="scrap-golem-ps" d="M198 230A58 12 0 1 0 314 230A58 12 0 1 0 198 230Z"/><clipPath id="scrap-golem-ct"><use href="#scrap-golem-ps"/></clipPath><path id="scrap-golem-pv" d="M195 242C185 246 156 260 146 272C137 284 132 314 130 323C129 333 134 335 137 336C140 336 146 336 150 329C153 321 153 294 162 284C170 274 198 267 205 262C213 256 211 249 210 247C208 244 204 239 195 242Z"/><clipPath id="scrap-golem-cw"><use href="#scrap-golem-pv"/></clipPath><clipPath id="scrap-golem-cx"><use href="#scrap-golem-pv" x="-5" y="-5"/></clipPath><path id="scrap-golem-py" d="M139 278A15 15 0 1 0 169 278A15 15 0 1 0 139 278Z"/><clipPath id="scrap-golem-cz"><use href="#scrap-golem-py"/></clipPath><clipPath id="scrap-golem-c10"><use href="#scrap-golem-py" x="-4" y="-4"/></clipPath><path id="scrap-golem-p11" d="M124 334A16 9 0 1 0 156 334A16 9 0 1 0 124 334Z"/><clipPath id="scrap-golem-c12"><use href="#scrap-golem-p11"/></clipPath><clipPath id="scrap-golem-c13"><use href="#scrap-golem-p11" x="-4" y="-4"/></clipPath><path id="scrap-golem-p14" d="M222 228L230 164L256 168L264 160L284 162L292 228Z"/><clipPath id="scrap-golem-c15"><use href="#scrap-golem-p14"/></clipPath><clipPath id="scrap-golem-c16"><use href="#scrap-golem-p14" x="-8" y="-6"/></clipPath><radialGradient id="scrap-golem-r17" gradientUnits="userSpaceOnUse" cx="244" cy="194" r="32"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.75"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.3375"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="scrap-golem-p18" d="M272 163C274 158 275 142 278 137C281 132 289 132 291 130C293 129 290 129 290 128C290 127 291 125 289 126C286 127 277 129 274 135C271 140 268 157 268 161C267 166 269 164 269 164C270 165 271 167 272 163Z"/><clipPath id="scrap-golem-c19"><use href="#scrap-golem-p18"/></clipPath><clipPath id="scrap-golem-c1a"><use href="#scrap-golem-p18" x="-1" y="-1"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#scrap-golem-l0)"/>
+<circle cx="256" cy="236" r="240" fill="url(#scrap-golem-r1)"/>
+<path d="M199 370C197 390 174 411 154 425C135 439 108 449 81 453C54 457 20 457 -6 449C-32 441 -66 423 -76 404C-86 386 -79 357 -67 338C-55 319 -30 301 -5 292C20 283 53 283 82 285C110 288 148 293 168 307C188 321 201 350 199 370Z" fill="#2a1e48"/>
+<path d="M579 360C574 381 553 397 536 415C520 432 502 459 480 463C458 467 426 450 403 439C381 427 351 413 344 395C337 377 349 348 360 330C370 312 387 300 407 286C427 273 455 249 481 249C507 249 547 268 563 287C579 305 583 339 579 360Z" fill="#2a1e48"/>
+<path d="M70 296A34 34 0 1 0 138 296A34 34 0 1 0 70 296ZM104 262V330M70 296H138" fill="none" stroke="#2a1e48" stroke-width="8"/>
+<path d="M428 307C438 298 471 258 478 247C486 236 480 234 477 232C475 229 471 224 462 233C452 242 419 282 412 293C404 304 410 306 413 308C415 311 419 316 428 307Z" fill="#2a1e48"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#scrap-golem-l2)"/>
+<ellipse cx="256" cy="400" rx="150" ry="42" fill="url(#scrap-golem-r3)"/>
+<ellipse cx="256" cy="400" rx="110" ry="15" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#scrap-golem-p4" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#scrap-golem-c5)">
+<use href="#scrap-golem-p4" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#scrap-golem-c6)"><use href="#scrap-golem-p4" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<use href="#scrap-golem-p7" fill="#33374a" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-c8)">
+<use href="#scrap-golem-p7" x="-4" y="-4" fill="#8a92ab"/>
+<g clip-path="url(#scrap-golem-c9)"><use href="#scrap-golem-p7" x="3" y="3" fill="#5a6078"/></g>
+</g>
+<use href="#scrap-golem-pa" fill="#4a3020" stroke-width="10"/>
+<g clip-path="url(#scrap-golem-cb)">
+<use href="#scrap-golem-pa" x="-6" y="-6" fill="#a07850"/>
+<g clip-path="url(#scrap-golem-cc)"><use href="#scrap-golem-pa" x="4" y="4" fill="#7a5434"/></g>
+</g>
+<path d="M280 350V392M296 350V392" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<path d="M306 246A12 8 0 1 0 330 246A12 8 0 1 0 306 246Z" fill="none" stroke-width="12"/>
+<path d="M306 246A12 8 0 1 0 330 246A12 8 0 1 0 306 246Z" fill="none" stroke="#8a92ab" stroke-width="6"/>
+<path d="M326 264A8 12 0 1 0 342 264A8 12 0 1 0 326 264Z" fill="none" stroke-width="12"/>
+<path d="M326 264A8 12 0 1 0 342 264A8 12 0 1 0 326 264Z" fill="none" stroke="#8a92ab" stroke-width="6"/>
+<path d="M332 286A12 8 0 1 0 356 286A12 8 0 1 0 332 286Z" fill="none" stroke-width="12"/>
+<path d="M332 286A12 8 0 1 0 356 286A12 8 0 1 0 332 286Z" fill="none" stroke="#8a92ab" stroke-width="6"/>
+<path d="M342 310A8 12 0 1 0 358 310A8 12 0 1 0 342 310Z" fill="none" stroke-width="12"/>
+<path d="M342 310A8 12 0 1 0 358 310A8 12 0 1 0 342 310Z" fill="none" stroke="#8a92ab" stroke-width="6"/>
+<path d="M342 332A12 8 0 1 0 366 332A12 8 0 1 0 342 332Z" fill="none" stroke-width="12"/>
+<path d="M342 332A12 8 0 1 0 366 332A12 8 0 1 0 342 332Z" fill="none" stroke="#8a92ab" stroke-width="6"/>
+<use href="#scrap-golem-pd" fill="#33374a" stroke-width="10"/>
+<g clip-path="url(#scrap-golem-ce)">
+<use href="#scrap-golem-pd" x="-7" y="-7" fill="#8a92ab"/>
+<g clip-path="url(#scrap-golem-cf)"><use href="#scrap-golem-pd" x="5" y="5" fill="#5a6078"/></g>
+</g>
+<path d="M345 352A5 5 0 1 0 355 352A5 5 0 1 0 345 352Z" fill="#ffffff" fill-opacity="0.4"/>
+<use href="#scrap-golem-pg" fill="#4a3020" stroke-width="12"/>
+<g clip-path="url(#scrap-golem-ch)">
+<use href="#scrap-golem-pg" x="-12" y="-10" fill="#a07850"/>
+<g clip-path="url(#scrap-golem-ci)"><use href="#scrap-golem-pg" x="7" y="7" fill="#7a5434"/></g>
+</g>
+<path d="M226 236C222 280 224 316 230 344M256 236V346M286 236C290 280 288 316 282 344" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<use href="#scrap-golem-pj" fill="#33374a" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-ck)">
+<use href="#scrap-golem-pj" x="-2" y="-3" fill="#8a92ab"/>
+<g clip-path="url(#scrap-golem-cl)"><use href="#scrap-golem-pj" x="2" y="2" fill="#5a6078"/></g>
+</g>
+<use href="#scrap-golem-pm" fill="#33374a" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-cn)">
+<use href="#scrap-golem-pm" x="-2" y="-3" fill="#8a92ab"/>
+<g clip-path="url(#scrap-golem-co)"><use href="#scrap-golem-pm" x="2" y="2" fill="#5a6078"/></g>
+</g>
+<use href="#scrap-golem-pp" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-cq)">
+<use href="#scrap-golem-pp" x="-4" y="-4" fill="#e2ecf5"/>
+<g clip-path="url(#scrap-golem-cr)"><use href="#scrap-golem-pp" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M265 285A3 3 0 1 0 271 285A3 3 0 1 0 265 285Z" fill="#1d0842"/>
+<path d="M266 285A2 2 0 1 0 269 285A2 2 0 1 0 266 285Z" fill="#8a92ab"/>
+<path d="M289 282A3 3 0 1 0 295 282A3 3 0 1 0 289 282Z" fill="#1d0842"/>
+<path d="M290 282A2 2 0 1 0 293 282A2 2 0 1 0 290 282Z" fill="#8a92ab"/>
+<path d="M267 302A3 3 0 1 0 273 302A3 3 0 1 0 267 302Z" fill="#1d0842"/>
+<path d="M268 302A2 2 0 1 0 271 302A2 2 0 1 0 268 302Z" fill="#8a92ab"/>
+<path d="M291 299A3 3 0 1 0 297 299A3 3 0 1 0 291 299Z" fill="#1d0842"/>
+<path d="M292 299A2 2 0 1 0 295 299A2 2 0 1 0 292 299Z" fill="#8a92ab"/>
+<use href="#scrap-golem-ps" fill="#2a1c12" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-ct)">
+<use href="#scrap-golem-ps" x="0" y="0" fill="#3e2a1c"/>
+</g>
+<use href="#scrap-golem-pv" fill="#7a3a1e" stroke-width="12"/>
+<g clip-path="url(#scrap-golem-cw)">
+<use href="#scrap-golem-pv" x="-5" y="-5" fill="#f0a070"/>
+<g clip-path="url(#scrap-golem-cx)"><use href="#scrap-golem-pv" x="3" y="3" fill="#c46a3a"/></g>
+</g>
+<use href="#scrap-golem-py" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-cz)">
+<use href="#scrap-golem-py" x="-4" y="-4" fill="#f0a070"/>
+<g clip-path="url(#scrap-golem-c10)"><use href="#scrap-golem-py" x="3" y="3" fill="#c46a3a"/></g>
+</g>
+<use href="#scrap-golem-p11" fill="#7a3a1e" stroke-width="8"/>
+<g clip-path="url(#scrap-golem-c12)">
+<use href="#scrap-golem-p11" x="-4" y="-4" fill="#f0a070"/>
+<g clip-path="url(#scrap-golem-c13)"><use href="#scrap-golem-p11" x="3" y="3" fill="#c46a3a"/></g>
+</g>
+<path d="M131 335A9 4 0 1 0 149 335A9 4 0 1 0 131 335Z" fill="#1d0842"/>
+<use href="#scrap-golem-p14" fill="#33374a" stroke-width="12"/>
+<g clip-path="url(#scrap-golem-c15)">
+<use href="#scrap-golem-p14" x="-8" y="-6" fill="#8a92ab"/>
+<g clip-path="url(#scrap-golem-c16)"><use href="#scrap-golem-p14" x="5" y="5" fill="#7a8098"/></g>
+</g>
+<path d="M224 214H290M256 168L250 186L262 196" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<circle cx="244" cy="194" r="32" fill="url(#scrap-golem-r17)"/>
+<path d="M233 194A11 11 0 1 0 255 194A11 11 0 1 0 233 194Z" fill="#1d0842"/>
+<path d="M237 194A7 7 0 1 0 251 194A7 7 0 1 0 237 194Z" fill="#ffe066"/>
+<path d="M268 194A6 6 0 1 0 280 194A6 6 0 1 0 268 194Z" fill="#1d0842"/>
+<path d="M269 194A5 5 0 1 0 278 194A5 5 0 1 0 269 194Z" fill="#9fb3c8"/>
+<use href="#scrap-golem-p18" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#scrap-golem-c19)">
+<use href="#scrap-golem-p18" x="-1" y="-1" fill="#e2ecf5"/>
+<g clip-path="url(#scrap-golem-c1a)"><use href="#scrap-golem-p18" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+</svg>

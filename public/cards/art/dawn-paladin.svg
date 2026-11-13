@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="dawn-paladin-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#241a52"/><stop offset="0.55" stop-color="#a85a7a"/><stop offset="1" stop-color="#f2b97a"/></linearGradient><radialGradient id="dawn-paladin-r1" gradientUnits="userSpaceOnUse" cx="256" cy="300" r="270"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.6"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.27"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><radialGradient id="dawn-paladin-r2" gradientUnits="userSpaceOnUse" cx="256" cy="318" r="150"><stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.315"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><linearGradient id="dawn-paladin-l3" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#8a4a6a"/><stop offset="1" stop-color="#4a2a5a"/></linearGradient><radialGradient id="dawn-paladin-r4" gradientUnits="userSpaceOnUse" cx="250" cy="404" r="190"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.55"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="dawn-paladin-p5" d="M222 214C190 240 150 320 120 396L170 380L196 400L226 380L250 300Z"/><clipPath id="dawn-paladin-c6"><use href="#dawn-paladin-p5"/></clipPath><clipPath id="dawn-paladin-c7"><use href="#dawn-paladin-p5" x="-12" y="-10"/></clipPath><path id="dawn-paladin-p8" d="M216 306C210 313 205 334 201 345C196 357 185 373 183 382C182 390 186 399 190 401C193 402 203 401 209 394C214 388 222 369 227 359C233 348 246 331 248 322C250 313 245 300 240 298C235 295 222 299 216 306Z"/><clipPath id="dawn-paladin-c9"><use href="#dawn-paladin-p8"/></clipPath><clipPath id="dawn-paladin-ca"><use href="#dawn-paladin-p8" x="-8" y="-6"/></clipPath><path id="dawn-paladin-pb" d="M255 320C256 329 268 347 271 358C275 369 275 385 278 392C282 399 290 404 294 404C298 403 305 396 306 388C307 380 303 362 301 350C298 338 294 316 289 308C284 300 271 295 266 297C261 299 254 311 255 320Z"/><clipPath id="dawn-paladin-cc"><use href="#dawn-paladin-pb"/></clipPath><clipPath id="dawn-paladin-cd"><use href="#dawn-paladin-pb" x="-8" y="-6"/></clipPath><path id="dawn-paladin-pe" d="M166 408C166 394 176 386 190 386L212 388L212 408Z"/><clipPath id="dawn-paladin-cf"><use href="#dawn-paladin-pe"/></clipPath><clipPath id="dawn-paladin-cg"><use href="#dawn-paladin-pe" x="-5" y="-5"/></clipPath><path id="dawn-paladin-ph" d="M280 408L282 388L304 388C316 390 322 398 322 408Z"/><clipPath id="dawn-paladin-ci"><use href="#dawn-paladin-ph"/></clipPath><clipPath id="dawn-paladin-cj"><use href="#dawn-paladin-ph" x="-5" y="-5"/></clipPath><path id="dawn-paladin-pk" d="M216 226C221 218 248 210 256 210C264 210 295 214 300 222C305 230 310 284 306 292C302 300 266 302 256 302C246 302 214 298 210 290C206 282 211 234 216 226Z"/><clipPath id="dawn-paladin-cl"><use href="#dawn-paladin-pk"/></clipPath><clipPath id="dawn-paladin-cm"><use href="#dawn-paladin-pk" x="-14" y="-10"/></clipPath><path id="dawn-paladin-pn" d="M212 290L304 290L310 328L278 334L258 322L238 334L206 328Z"/><clipPath id="dawn-paladin-co"><use href="#dawn-paladin-pn"/></clipPath><clipPath id="dawn-paladin-cp"><use href="#dawn-paladin-pn" x="-8" y="-8"/></clipPath><path id="dawn-paladin-pq" d="M241 224C241 228 236 232 232 235C228 238 224 240 220 240C215 241 210 239 206 238C203 236 199 233 197 230C195 226 194 221 195 218C197 215 202 213 206 210C211 208 216 203 220 204C225 204 230 209 233 212C237 215 241 220 241 224Z"/><clipPath id="dawn-paladin-cr"><use href="#dawn-paladin-pq"/></clipPath><clipPath id="dawn-paladin-cs"><use href="#dawn-paladin-pq" x="-6" y="-6"/></clipPath><path id="dawn-paladin-pt" d="M201 224C195 228 181 249 174 252C167 255 160 245 155 244C150 244 143 248 142 251C142 254 143 260 149 264C155 267 171 275 182 272C192 269 213 251 219 244C224 237 222 228 220 225C217 223 208 220 201 224Z"/><clipPath id="dawn-paladin-cu"><use href="#dawn-paladin-pt"/></clipPath><clipPath id="dawn-paladin-cv"><use href="#dawn-paladin-pt" x="-6" y="-6"/></clipPath><radialGradient id="dawn-paladin-rw" gradientUnits="userSpaceOnUse" cx="140" cy="250" r="50"><stop offset="0" stop-color="#ffe066" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="dawn-paladin-px" d="M130 252A14 13 0 1 0 158 252A14 13 0 1 0 130 252Z"/><clipPath id="dawn-paladin-cy"><use href="#dawn-paladin-px"/></clipPath><clipPath id="dawn-paladin-cz"><use href="#dawn-paladin-px" x="-4" y="-4"/></clipPath><path id="dawn-paladin-p10" d="M324 220C323 224 319 227 315 231C311 234 308 240 303 241C298 241 291 238 286 236C281 233 275 231 273 227C272 223 274 218 277 214C279 210 283 208 287 205C291 203 297 198 303 198C309 198 317 202 321 205C324 209 325 216 324 220Z"/><clipPath id="dawn-paladin-c11"><use href="#dawn-paladin-p10"/></clipPath><clipPath id="dawn-paladin-c12"><use href="#dawn-paladin-p10" x="-8" y="-8"/></clipPath><path id="dawn-paladin-p13" d="M312 236C320 230 336 212 341 201C346 189 344 167 343 159C342 151 336 147 333 147C329 147 323 151 321 157C319 164 323 182 319 191C315 200 296 210 292 216C288 223 289 233 292 236C296 239 305 241 312 236Z"/><clipPath id="dawn-paladin-c14"><use href="#dawn-paladin-p13"/></clipPath><clipPath id="dawn-paladin-c15"><use href="#dawn-paladin-p13" x="-7" y="-7"/></clipPath><path id="dawn-paladin-p16" d="M331 197C334 185 342 133 343 121C344 109 340 115 339 115C337 115 336 107 333 119C330 131 322 183 321 195C320 207 324 201 325 201C327 201 328 209 331 197Z"/><clipPath id="dawn-paladin-c17"><use href="#dawn-paladin-p16"/></clipPath><clipPath id="dawn-paladin-c18"><use href="#dawn-paladin-p16" x="-3" y="-3"/></clipPath><radialGradient id="dawn-paladin-r19" gradientUnits="userSpaceOnUse" cx="340" cy="124" r="80"><stop offset="0" stop-color="#ffe066" stop-opacity="0.85"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.3825"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="dawn-paladin-p1a" d="M302 108L376 116L372 146L298 138Z"/><clipPath id="dawn-paladin-c1b"><use href="#dawn-paladin-p1a"/></clipPath><clipPath id="dawn-paladin-c1c"><use href="#dawn-paladin-p1a" x="-6" y="-6"/></clipPath><path id="dawn-paladin-p1d" d="M294 112L304 112L300 136L290 134Z"/><clipPath id="dawn-paladin-c1e"><use href="#dawn-paladin-p1d"/></clipPath><clipPath id="dawn-paladin-c1f"><use href="#dawn-paladin-p1d" x="-2" y="-2"/></clipPath><path id="dawn-paladin-p1g" d="M372 118L384 118L382 146L370 146Z"/><clipPath id="dawn-paladin-c1h"><use href="#dawn-paladin-p1g"/></clipPath><clipPath id="dawn-paladin-c1i"><use href="#dawn-paladin-p1g" x="-2" y="-2"/></clipPath><path id="dawn-paladin-p1j" d="M317 160A15 14 0 1 0 347 160A15 14 0 1 0 317 160Z"/><clipPath id="dawn-paladin-c1k"><use href="#dawn-paladin-p1j"/></clipPath><clipPath id="dawn-paladin-c1l"><use href="#dawn-paladin-p1j" x="-5" y="-5"/></clipPath><path id="dawn-paladin-p1m" d="M222 176C223 166 225 147 232 140C239 133 256 130 266 132C276 134 293 143 298 152C303 161 302 180 300 190C298 200 291 211 284 216C277 221 262 224 254 222C246 221 233 213 228 206C223 199 221 186 222 176Z"/><clipPath id="dawn-paladin-c1n"><use href="#dawn-paladin-p1m"/></clipPath><clipPath id="dawn-paladin-c1o"><use href="#dawn-paladin-p1m" x="-12" y="-8"/></clipPath><path id="dawn-paladin-p1p" d="M289 184A9 12 0 1 0 307 184A9 12 0 1 0 289 184Z"/><clipPath id="dawn-paladin-c1q"><use href="#dawn-paladin-p1p"/></clipPath><clipPath id="dawn-paladin-c1r"><use href="#dawn-paladin-p1p" x="-4" y="-4"/></clipPath><path id="dawn-paladin-p1s" d="M218 180C210 136 238 116 266 116C298 116 312 140 306 180C302 160 290 148 276 148C266 158 246 160 226 156C222 164 220 170 218 180Z"/><clipPath id="dawn-paladin-c1t"><use href="#dawn-paladin-p1s"/></clipPath><clipPath id="dawn-paladin-c1u"><use href="#dawn-paladin-p1s" x="-8" y="-8"/></clipPath><path id="dawn-paladin-p1v" d="M220 152C240 140 280 140 304 152L304 160C280 150 240 150 220 160Z"/><clipPath id="dawn-paladin-c1w"><use href="#dawn-paladin-p1v"/></clipPath><clipPath id="dawn-paladin-c1x"><use href="#dawn-paladin-p1v" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#dawn-paladin-l0)"/>
+<circle cx="256" cy="300" r="270" fill="url(#dawn-paladin-r1)"/>
+<path d="M256 -62L287 161L401 -33L345 185L525 49L389 229L607 173L413 287L636 318L413 349L607 463L389 407L525 587L345 451L401 669L287 475L256 698L225 475L111 669L167 451L-13 587L123 407L-95 463L99 349L-124 318L99 287L-95 173L123 229L-13 49L167 185L111 -33L225 161Z" fill="#fff1c1" fill-opacity="0.12"/>
+<circle cx="256" cy="318" r="150" fill="url(#dawn-paladin-r2)"/>
+<path d="M182 330A74 74 0 1 0 330 330A74 74 0 1 0 182 330Z" fill="#fff8ea" fill-opacity="0.85"/>
+<path d="M0 352L60 300L110 330L170 286L230 340L290 300L350 336L420 280L512 330V352Z" fill="#6a3a6a"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#dawn-paladin-l3)"/>
+<ellipse cx="250" cy="404" rx="190" ry="53" fill="url(#dawn-paladin-r4)"/>
+<ellipse cx="248" cy="404" rx="130" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#dawn-paladin-p5" fill="#7a1a2e" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-c6)">
+<use href="#dawn-paladin-p5" x="-12" y="-10" fill="#e86070"/>
+<g clip-path="url(#dawn-paladin-c7)"><use href="#dawn-paladin-p5" x="7" y="7" fill="#c23a4a"/></g>
+</g>
+<use href="#dawn-paladin-p8" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-c9)">
+<use href="#dawn-paladin-p8" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-p8" x="-8" y="-6" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-ca)"><use href="#dawn-paladin-p8" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#dawn-paladin-pb" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-cc)">
+<use href="#dawn-paladin-pb" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-pb" x="-8" y="-6" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-cd)"><use href="#dawn-paladin-pb" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#dawn-paladin-pe" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#dawn-paladin-cf)">
+<use href="#dawn-paladin-pe" x="-5" y="-5" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-cg)"><use href="#dawn-paladin-pe" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#dawn-paladin-ph" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#dawn-paladin-ci)">
+<use href="#dawn-paladin-ph" x="-5" y="-5" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-cj)"><use href="#dawn-paladin-ph" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#dawn-paladin-pk" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-cl)">
+<use href="#dawn-paladin-pk" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-pk" x="-14" y="-10" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-cm)"><use href="#dawn-paladin-pk" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<path d="M258 230L262 243L274 236L267 248L280 252L267 256L274 268L262 261L258 274L254 261L242 268L249 256L236 252L249 248L242 236L254 243Z" fill="#f2c14e"/>
+<path d="M250 252A8 8 0 1 0 266 252A8 8 0 1 0 250 252Z" fill="#fff1c1"/>
+<use href="#dawn-paladin-pn" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-co)">
+<use href="#dawn-paladin-pn" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-pn" x="-8" y="-8" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-cp)"><use href="#dawn-paladin-pn" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<path d="M212 296H304" fill="none" stroke="#a8742a" stroke-width="5"/>
+<use href="#dawn-paladin-pq" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-cr)">
+<use href="#dawn-paladin-pq" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-pq" x="-6" y="-6" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-cs)"><use href="#dawn-paladin-pq" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#dawn-paladin-pt" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-cu)">
+<use href="#dawn-paladin-pt" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-pt" x="-6" y="-6" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-cv)"><use href="#dawn-paladin-pt" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<circle cx="140" cy="250" r="50" fill="url(#dawn-paladin-rw)"/>
+<use href="#dawn-paladin-px" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#dawn-paladin-cy)">
+<use href="#dawn-paladin-px" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#dawn-paladin-cz)"><use href="#dawn-paladin-px" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#dawn-paladin-p10" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-c11)">
+<use href="#dawn-paladin-p10" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-p10" x="-8" y="-8" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-c12)"><use href="#dawn-paladin-p10" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#dawn-paladin-p13" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-c14)">
+<use href="#dawn-paladin-p13" x="-5" fill="#a59fbf"/>
+<use href="#dawn-paladin-p13" x="-7" y="-7" fill="#ffffff"/>
+<g clip-path="url(#dawn-paladin-c15)"><use href="#dawn-paladin-p13" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#dawn-paladin-p16" fill="#4e3220" stroke-width="8"/>
+<g clip-path="url(#dawn-paladin-c17)">
+<use href="#dawn-paladin-p16" x="-3" y="-3" fill="#a8784a"/>
+<g clip-path="url(#dawn-paladin-c18)"><use href="#dawn-paladin-p16" x="2" y="2" fill="#7a5232"/></g>
+</g>
+<circle cx="340" cy="124" r="80" fill="url(#dawn-paladin-r19)"/>
+<use href="#dawn-paladin-p1a" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#dawn-paladin-c1b)">
+<use href="#dawn-paladin-p1a" x="-6" y="-6" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-c1c)"><use href="#dawn-paladin-p1a" x="4" y="4" fill="#f2c14e"/></g>
+</g>
+<use href="#dawn-paladin-p1d" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#dawn-paladin-c1e)">
+<use href="#dawn-paladin-p1d" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-c1f)"><use href="#dawn-paladin-p1d" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<use href="#dawn-paladin-p1g" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#dawn-paladin-c1h)">
+<use href="#dawn-paladin-p1g" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-c1i)"><use href="#dawn-paladin-p1g" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<path d="M310 116L366 122" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.8"/>
+<use href="#dawn-paladin-p1j" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#dawn-paladin-c1k)">
+<use href="#dawn-paladin-p1j" x="-5" y="-5" fill="#ffe0c4"/>
+<g clip-path="url(#dawn-paladin-c1l)"><use href="#dawn-paladin-p1j" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<g transform="translate(-2 6)">
+<use href="#dawn-paladin-p1m" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-c1n)">
+<use href="#dawn-paladin-p1m" x="-12" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#dawn-paladin-c1o)"><use href="#dawn-paladin-p1m" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#dawn-paladin-p1p" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#dawn-paladin-c1q)">
+<use href="#dawn-paladin-p1p" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#dawn-paladin-c1r)"><use href="#dawn-paladin-p1p" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<path d="M233 184A5 7 0 1 0 243 184A5 7 0 1 0 233 184Z" fill="#1d0842"/>
+<path d="M261 184A5 7 0 1 0 271 184A5 7 0 1 0 261 184Z" fill="#1d0842"/>
+<path d="M235 182A2 2 0 1 0 238 182A2 2 0 1 0 235 182Z" fill="#ffffff"/>
+<path d="M263 182A2 2 0 1 0 266 182A2 2 0 1 0 263 182Z" fill="#ffffff"/>
+<path d="M228 168L246 170M258 170L276 166" fill="none" stroke-width="4"/>
+<path d="M240 202C248 208 258 208 264 202" fill="none" stroke-width="3.5"/>
+<path d="M225 198A7 4 0 1 0 239 198A7 4 0 1 0 225 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+<path d="M271 198A7 4 0 1 0 285 198A7 4 0 1 0 271 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+</g>
+<use href="#dawn-paladin-p1s" fill="#a8742a" stroke-width="12"/>
+<g clip-path="url(#dawn-paladin-c1t)">
+<use href="#dawn-paladin-p1s" x="-8" y="-8" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-c1u)"><use href="#dawn-paladin-p1s" x="7" y="7" fill="#e8c060"/></g>
+</g>
+<use href="#dawn-paladin-p1v" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#dawn-paladin-c1w)">
+<use href="#dawn-paladin-p1v" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#dawn-paladin-c1x)"><use href="#dawn-paladin-p1v" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<path d="M257 148A5 5 0 1 0 267 148A5 5 0 1 0 257 148Z" fill="#3fa9ff"/>
+<path d="M320 140L323 146L320 152L317 146Z" fill="#fff1c1" fill-opacity="0.58"/>
+<path d="M120 306L122 311L120 315L117 311Z" fill="#ffe066" fill-opacity="0.77"/>
+<path d="M177 281L181 288L177 295L173 288Z" fill="#fff1c1" fill-opacity="0.65"/>
+<path d="M170 141L174 148L170 154L167 148Z" fill="#ffe066" fill-opacity="0.87"/>
+<path d="M190 224L193 230L190 237L186 230Z" fill="#fff1c1" fill-opacity="0.83"/>
+<path d="M279 261L282 267L279 272L276 267Z" fill="#ffe066" fill-opacity="0.7"/>
+<path d="M112 101L116 109L112 116L108 109Z" fill="#fff1c1" fill-opacity="0.66"/>
+<path d="M234 268L238 274L234 280L231 274Z" fill="#ffe066" fill-opacity="0.52"/>
+<path d="M168 319L170 323L168 326L166 323Z" fill="#fff1c1" fill-opacity="0.98"/>
+<path d="M199 115L203 122L199 128L195 122Z" fill="#ffe066" fill-opacity="0.6"/>
+<path d="M223 297L225 301L223 304L221 301Z" fill="#fff1c1" fill-opacity="0.88"/>
+<path d="M174 318L178 325L174 333L170 325Z" fill="#ffe066" fill-opacity="0.68"/>
+<path d="M153 149L157 156L153 163L150 156Z" fill="#fff1c1" fill-opacity="0.78"/>
+<path d="M329 121L332 126L329 132L326 126Z" fill="#ffe066" fill-opacity="0.96"/>
+</svg>

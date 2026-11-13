@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="growing-crystal-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#081428"/><stop offset="0.55" stop-color="#14306a"/><stop offset="1" stop-color="#0a1430"/></linearGradient><radialGradient id="growing-crystal-r1" gradientUnits="userSpaceOnUse" cx="256" cy="220" r="270"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.2025"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><linearGradient id="growing-crystal-l2" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#1a2c5a"/><stop offset="1" stop-color="#0a1430"/></linearGradient><radialGradient id="growing-crystal-r3" gradientUnits="userSpaceOnUse" cx="256" cy="390" r="210"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.55"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><radialGradient id="growing-crystal-r4" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="160"><stop offset="0" stop-color="#9be7ff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#9be7ff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#9be7ff" stop-opacity="0"/></radialGradient><path id="growing-crystal-p5" d="M157 382L121 316L124 275L160 296L195 362L178 377Z"/><clipPath id="growing-crystal-c6"><use href="#growing-crystal-p5"/></clipPath><clipPath id="growing-crystal-c7"><use href="#growing-crystal-p5" x="-6" y="-6"/></clipPath><path id="growing-crystal-p8" d="M317 360L353 279L393 251L399 299L363 380L338 375Z"/><clipPath id="growing-crystal-c9"><use href="#growing-crystal-p8"/></clipPath><clipPath id="growing-crystal-ca"><use href="#growing-crystal-p8" x="-6" y="-6"/></clipPath><path id="growing-crystal-pb" d="M130 396L98 370L92 347L115 350L146 376L140 388Z"/><clipPath id="growing-crystal-cc"><use href="#growing-crystal-pb"/></clipPath><clipPath id="growing-crystal-cd"><use href="#growing-crystal-pb" x="-6" y="-6"/></clipPath><path id="growing-crystal-pe" d="M192 376L192 190L256 102L320 190L320 376L256 391Z"/><clipPath id="growing-crystal-cf"><use href="#growing-crystal-pe"/></clipPath><clipPath id="growing-crystal-cg"><use href="#growing-crystal-pe" x="-14" y="-12"/></clipPath><radialGradient id="growing-crystal-rh" gradientUnits="userSpaceOnUse" cx="256" cy="260" r="34"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.35"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.1575"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="growing-crystal-pi" d="M246 388L221 405L185 414L147 401L147 375L186 364L227 367Z"/><clipPath id="growing-crystal-cj"><use href="#growing-crystal-pi"/></clipPath><clipPath id="growing-crystal-ck"><use href="#growing-crystal-pi" x="-6" y="-6"/></clipPath><path id="growing-crystal-pl" d="M374 390L349 409L307 414L271 401L266 377L306 364L350 370Z"/><clipPath id="growing-crystal-cm"><use href="#growing-crystal-pl"/></clipPath><clipPath id="growing-crystal-cn"><use href="#growing-crystal-pl" x="-6" y="-6"/></clipPath><path id="growing-crystal-po" d="M320 400L288 415L243 421L209 408L198 390L243 379L293 383Z"/><clipPath id="growing-crystal-cp"><use href="#growing-crystal-po"/></clipPath><clipPath id="growing-crystal-cq"><use href="#growing-crystal-po" x="-6" y="-6"/></clipPath><path id="growing-crystal-pr" d="M414 400L398 412L374 414L356 406L355 394L373 384L396 389Z"/><clipPath id="growing-crystal-cs"><use href="#growing-crystal-pr"/></clipPath><clipPath id="growing-crystal-ct"><use href="#growing-crystal-pr" x="-6" y="-6"/></clipPath><path id="growing-crystal-pu" d="M356 391L375 365L394 359L395 379L376 405L364 400Z"/><clipPath id="growing-crystal-cv"><use href="#growing-crystal-pu"/></clipPath><clipPath id="growing-crystal-cw"><use href="#growing-crystal-pu" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#growing-crystal-l0)"/>
+<circle cx="256" cy="220" r="270" fill="url(#growing-crystal-r1)"/>
+<path d="M132 300L83 437L19 431L-8 300L19 168L85 152Z" fill="#0e1e40"/>
+<path d="M534 280L503 416L422 476L384 280L430 114L508 122Z" fill="#0e1e40"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#growing-crystal-l2)"/>
+<ellipse cx="256" cy="390" rx="210" ry="59" fill="url(#growing-crystal-r3)"/>
+<path d="M138 380A118 24 0 1 0 374 380A118 24 0 1 0 138 380Z" fill="none" stroke="#9be7ff" stroke-width="4" stroke-opacity="0.7"/>
+<path d="M96 380A160 32 0 1 0 416 380A160 32 0 1 0 96 380Z" fill="none" stroke="#9be7ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M56 380A200 40 0 1 0 456 380A200 40 0 1 0 56 380Z" fill="none" stroke="#9be7ff" stroke-width="4" stroke-opacity="0.25"/>
+<circle cx="256" cy="250" r="160" fill="url(#growing-crystal-r4)"/>
+<use href="#growing-crystal-p5" fill="#1f5fbf" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-c6)">
+<use href="#growing-crystal-p5" x="-6" y="-6" fill="#bfe6ff"/>
+<g clip-path="url(#growing-crystal-c7)"><use href="#growing-crystal-p5" x="4" y="4" fill="#3fa9ff"/></g>
+</g>
+<use href="#growing-crystal-p8" fill="#1f5fbf" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-c9)">
+<use href="#growing-crystal-p8" x="-6" y="-6" fill="#bfe6ff"/>
+<g clip-path="url(#growing-crystal-ca)"><use href="#growing-crystal-p8" x="4" y="4" fill="#3fa9ff"/></g>
+</g>
+<use href="#growing-crystal-pb" fill="#1f5fbf" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-cc)">
+<use href="#growing-crystal-pb" x="-6" y="-6" fill="#bfe6ff"/>
+<g clip-path="url(#growing-crystal-cd)"><use href="#growing-crystal-pb" x="4" y="4" fill="#3fa9ff"/></g>
+</g>
+<use href="#growing-crystal-pe" fill="#e6fbff" stroke-width="14"/>
+<g clip-path="url(#growing-crystal-cf)">
+<use href="#growing-crystal-pe" x="-5" fill="#1f5fbf"/>
+<use href="#growing-crystal-pe" x="-14" y="-12" fill="#bfe6ff"/>
+<g clip-path="url(#growing-crystal-cg)"><use href="#growing-crystal-pe" x="8" y="8" fill="#3fa9ff"/></g>
+</g>
+<path d="M218 350L218 207L256 140L294 207L294 350L256 359Z" fill="#0a1a3a" fill-opacity="0.9"/>
+<path d="M218 350L218 207L256 140L294 207L294 350L256 359Z" fill="none" stroke="#bfe6ff" stroke-width="4" stroke-opacity="0.9"/>
+<path d="M256 102V140M196 190L218 210M316 190L294 210M256 376V350" fill="none" stroke="#e6fbff" stroke-width="4" stroke-opacity="0.7"/>
+<circle cx="256" cy="260" r="34" fill="url(#growing-crystal-rh)"/>
+<use href="#growing-crystal-pi" fill="#2c2e52" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-cj)">
+<use href="#growing-crystal-pi" x="-6" y="-6" fill="#6a70a0"/>
+<g clip-path="url(#growing-crystal-ck)"><use href="#growing-crystal-pi" x="4" y="4" fill="#4a4e78"/></g>
+</g>
+<use href="#growing-crystal-pl" fill="#2c2e52" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-cm)">
+<use href="#growing-crystal-pl" x="-6" y="-6" fill="#6a70a0"/>
+<g clip-path="url(#growing-crystal-cn)"><use href="#growing-crystal-pl" x="4" y="4" fill="#4a4e78"/></g>
+</g>
+<use href="#growing-crystal-po" fill="#2c2e52" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-cp)">
+<use href="#growing-crystal-po" x="-6" y="-6" fill="#6a70a0"/>
+<g clip-path="url(#growing-crystal-cq)"><use href="#growing-crystal-po" x="4" y="4" fill="#4a4e78"/></g>
+</g>
+<use href="#growing-crystal-pr" fill="#2c2e52" stroke-width="10"/>
+<g clip-path="url(#growing-crystal-cs)">
+<use href="#growing-crystal-pr" x="-6" y="-6" fill="#6a70a0"/>
+<g clip-path="url(#growing-crystal-ct)"><use href="#growing-crystal-pr" x="4" y="4" fill="#4a4e78"/></g>
+</g>
+<use href="#growing-crystal-pu" fill="#1f5fbf" stroke-width="8"/>
+<g clip-path="url(#growing-crystal-cv)">
+<use href="#growing-crystal-pu" x="-4" y="-4" fill="#bfe6ff"/>
+<g clip-path="url(#growing-crystal-cw)"><use href="#growing-crystal-pu" x="3" y="3" fill="#3fa9ff"/></g>
+</g>
+<path d="M206 128L209 147L228 150L209 153L206 172L203 153L184 150L203 147Z" fill="#ffffff"/>
+<path d="M320 110L322 124L336 126L322 128L320 142L318 128L304 126L318 124Z" fill="#ffffff" fill-opacity="0.9"/>
+<path d="M182 126L184 130L182 134L180 130Z" fill="#bfe6ff" fill-opacity="0.53"/>
+<path d="M229 317L231 321L229 325L227 321Z" fill="#3fa9ff" fill-opacity="0.83"/>
+<path d="M309 157L311 160L309 163L307 160Z" fill="#bfe6ff" fill-opacity="0.51"/>
+<path d="M128 331L130 336L128 341L125 336Z" fill="#3fa9ff" fill-opacity="0.67"/>
+<path d="M283 300L285 304L283 307L281 304Z" fill="#bfe6ff" fill-opacity="0.51"/>
+<path d="M393 243L396 247L393 251L391 247Z" fill="#3fa9ff" fill-opacity="0.55"/>
+<path d="M300 119L303 124L300 129L297 124Z" fill="#bfe6ff" fill-opacity="0.96"/>
+<path d="M366 348L369 354L366 360L363 354Z" fill="#3fa9ff" fill-opacity="0.73"/>
+<path d="M276 330L280 337L276 344L272 337Z" fill="#bfe6ff" fill-opacity="0.58"/>
+<path d="M313 310L316 317L313 324L309 317Z" fill="#3fa9ff" fill-opacity="0.92"/>
+<path d="M346 320L350 327L346 334L342 327Z" fill="#bfe6ff" fill-opacity="0.76"/>
+<path d="M330 208L332 211L330 215L328 211Z" fill="#3fa9ff" fill-opacity="0.6"/>
+</svg>

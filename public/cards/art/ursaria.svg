@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="ursaria-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#081e1c"/><stop offset="0.55" stop-color="#14463a"/><stop offset="1" stop-color="#0e2a1e"/></linearGradient><radialGradient id="ursaria-r1" gradientUnits="userSpaceOnUse" cx="256" cy="190" r="290"><stop offset="0" stop-color="#c8f7a0" stop-opacity="0.4"/><stop offset="0.45" stop-color="#c8f7a0" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#c8f7a0" stop-opacity="0"/></radialGradient><linearGradient id="ursaria-l2" gradientUnits="userSpaceOnUse" x1="0" y1="352" x2="0" y2="512"><stop offset="0" stop-color="#2a5a30"/><stop offset="1" stop-color="#10301e"/></linearGradient><radialGradient id="ursaria-r3" gradientUnits="userSpaceOnUse" cx="256" cy="414" r="210"><stop offset="0" stop-color="#ffe066" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="ursaria-r4" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="200"><stop offset="0" stop-color="#ffe066" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.135"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="ursaria-p5" d="M203 182C199 174 182 149 175 137C167 125 157 108 153 103C149 97 149 101 149 101C148 102 145 99 147 105C150 112 159 130 165 143C171 155 184 182 189 190C194 197 198 194 200 193C202 192 207 190 203 182Z"/><clipPath id="ursaria-c6"><use href="#ursaria-p5"/></clipPath><clipPath id="ursaria-c7"><use href="#ursaria-p5" x="-10" y="-10"/></clipPath><path id="ursaria-p8" d="M172 100C172 103 166 107 161 110C157 113 150 117 145 116C139 116 131 111 129 107C128 103 131 98 134 94C136 91 142 88 146 87C150 87 155 89 160 92C164 94 172 97 172 100Z"/><clipPath id="ursaria-c9"><use href="#ursaria-p8"/></clipPath><clipPath id="ursaria-ca"><use href="#ursaria-p8" x="-4" y="-4"/></clipPath><path id="ursaria-pb" d="M181 143C175 139 151 128 141 127C132 125 121 132 117 133C114 135 115 136 115 137C115 137 115 139 119 139C122 139 130 135 139 137C147 140 168 155 175 157C182 160 184 156 185 153C186 151 188 147 181 143Z"/><clipPath id="ursaria-cc"><use href="#ursaria-pb"/></clipPath><clipPath id="ursaria-cd"><use href="#ursaria-pb" x="-10" y="-10"/></clipPath><path id="ursaria-pe" d="M141 134C141 138 136 145 131 147C126 149 118 148 112 147C106 145 99 144 96 141C93 137 91 129 94 127C97 124 107 124 113 124C119 123 125 120 130 122C134 124 140 130 141 134Z"/><clipPath id="ursaria-cf"><use href="#ursaria-pe"/></clipPath><clipPath id="ursaria-cg"><use href="#ursaria-pe" x="-4" y="-4"/></clipPath><path id="ursaria-ph" d="M323 190C328 183 342 156 349 143C356 130 366 112 369 106C371 99 368 102 368 101C367 101 368 97 363 102C359 108 347 125 339 137C331 149 313 173 309 182C305 190 310 192 312 193C314 194 317 198 323 190Z"/><clipPath id="ursaria-ci"><use href="#ursaria-ph"/></clipPath><clipPath id="ursaria-cj"><use href="#ursaria-ph" x="-10" y="-10"/></clipPath><path id="ursaria-pk" d="M389 100C389 104 384 109 379 112C374 114 366 117 361 116C356 115 352 109 350 105C348 102 348 98 350 95C352 91 356 84 360 83C365 82 375 85 379 88C384 91 389 96 389 100Z"/><clipPath id="ursaria-cl"><use href="#ursaria-pk"/></clipPath><clipPath id="ursaria-cm"><use href="#ursaria-pk" x="-4" y="-4"/></clipPath><path id="ursaria-pn" d="M340 159C347 156 365 140 373 137C382 134 392 139 396 139C399 139 399 137 399 136C399 136 401 135 396 133C392 132 380 125 371 127C361 128 338 141 332 145C326 149 328 154 329 156C330 158 333 162 340 159Z"/><clipPath id="ursaria-co"><use href="#ursaria-pn"/></clipPath><clipPath id="ursaria-cp"><use href="#ursaria-pn" x="-10" y="-10"/></clipPath><path id="ursaria-pq" d="M422 134C422 137 415 143 411 145C406 148 398 150 393 149C388 149 382 143 380 140C379 137 382 133 384 129C387 126 389 120 393 119C397 119 404 122 408 125C413 127 421 131 422 134Z"/><clipPath id="ursaria-cr"><use href="#ursaria-pq"/></clipPath><clipPath id="ursaria-cs"><use href="#ursaria-pq" x="-4" y="-4"/></clipPath><path id="ursaria-pt" d="M419 300C420 314 416 332 408 342C400 352 384 359 371 362C357 364 340 363 328 357C317 350 306 335 301 322C297 309 298 292 302 278C307 265 316 249 328 242C339 236 357 236 370 239C384 242 399 249 408 259C416 269 419 286 419 300Z"/><clipPath id="ursaria-cu"><use href="#ursaria-pt"/></clipPath><clipPath id="ursaria-cv"><use href="#ursaria-pt" x="-12" y="-12"/></clipPath><path id="ursaria-pw" d="M346 334C344 344 354 363 355 371C356 380 351 385 354 392C357 399 368 415 374 416C381 416 394 403 398 396C402 389 401 379 401 369C401 358 403 336 398 326C393 317 376 303 368 304C360 305 348 324 346 334Z"/><clipPath id="ursaria-cx"><use href="#ursaria-pw"/></clipPath><clipPath id="ursaria-cy"><use href="#ursaria-pw" x="-8" y="-8"/></clipPath><path id="ursaria-pz" d="M140 252C143 234 151 209 168 196C185 183 230 168 256 168C282 168 325 183 344 196C364 209 382 237 386 256C390 275 385 307 372 320C359 333 324 337 300 340C276 343 235 344 212 340C190 336 161 329 150 316C139 303 137 270 140 252Z"/><clipPath id="ursaria-c10"><use href="#ursaria-pz"/></clipPath><clipPath id="ursaria-c11"><use href="#ursaria-pz" x="-18" y="-16"/></clipPath><path id="ursaria-p12" d="M150 228C150 221 160 195 176 186C192 177 231 168 256 168C281 168 323 179 340 188C357 197 372 223 372 230C372 237 351 234 340 232C329 230 313 216 300 214C287 212 270 220 256 220C243 220 222 212 210 214C198 216 185 232 176 234C167 236 150 235 150 228Z"/><clipPath id="ursaria-c13"><use href="#ursaria-p12"/></clipPath><clipPath id="ursaria-c14"><use href="#ursaria-p12" x="-8" y="-8"/></clipPath><path id="ursaria-p15" d="M165 296C160 308 163 333 162 348C161 362 155 381 159 393C163 404 178 423 187 423C195 423 212 406 217 395C222 385 216 366 218 352C219 339 230 316 227 304C224 291 209 270 200 269C190 268 171 285 165 296Z"/><clipPath id="ursaria-c16"><use href="#ursaria-p15"/></clipPath><clipPath id="ursaria-c17"><use href="#ursaria-p15" x="-10" y="-10"/></clipPath><path id="ursaria-p18" d="M285 304C282 316 293 339 294 352C296 366 290 385 295 395C300 406 317 423 325 423C334 423 349 404 353 393C357 381 351 362 350 348C349 333 352 308 347 296C341 285 322 268 312 269C303 270 288 291 285 304Z"/><clipPath id="ursaria-c19"><use href="#ursaria-p18"/></clipPath><clipPath id="ursaria-c1a"><use href="#ursaria-p18" x="-10" y="-10"/></clipPath><path id="ursaria-p1b" d="M178 196A22 22 0 1 0 222 196A22 22 0 1 0 178 196Z"/><clipPath id="ursaria-c1c"><use href="#ursaria-p1b"/></clipPath><clipPath id="ursaria-c1d"><use href="#ursaria-p1b" x="-5" y="-5"/></clipPath><path id="ursaria-p1e" d="M282 196A22 22 0 1 0 326 196A22 22 0 1 0 282 196Z"/><clipPath id="ursaria-c1f"><use href="#ursaria-p1e"/></clipPath><clipPath id="ursaria-c1g"><use href="#ursaria-p1e" x="-5" y="-5"/></clipPath><path id="ursaria-p1h" d="M192 238C192 227 195 212 204 204C214 196 237 188 252 188C267 188 290 196 300 204C310 212 314 229 314 240C314 251 308 268 298 276C288 284 267 292 252 292C237 292 216 285 206 276C197 267 192 249 192 238Z"/><clipPath id="ursaria-c1i"><use href="#ursaria-p1h"/></clipPath><clipPath id="ursaria-c1j"><use href="#ursaria-p1h" x="-12" y="-10"/></clipPath><path id="ursaria-p1k" d="M216 262A34 24 0 1 0 284 262A34 24 0 1 0 216 262Z"/><clipPath id="ursaria-c1l"><use href="#ursaria-p1k"/></clipPath><clipPath id="ursaria-c1m"><use href="#ursaria-p1k" x="-5" y="-5"/></clipPath><path id="ursaria-p1n" d="M206 214C226 200 278 200 298 214L292 222C274 212 230 212 212 222Z"/><clipPath id="ursaria-c1o"><use href="#ursaria-p1n"/></clipPath><clipPath id="ursaria-c1p"><use href="#ursaria-p1n" x="-3" y="-3"/></clipPath><path id="ursaria-p1q" d="M252 196C262 204 262 216 252 224C242 216 242 204 252 196Z"/><clipPath id="ursaria-c1r"><use href="#ursaria-p1q"/></clipPath><clipPath id="ursaria-c1s"><use href="#ursaria-p1q" x="-3" y="-3"/></clipPath><path id="ursaria-p1t" d="M222 380A34 26 0 1 0 290 380A34 26 0 1 0 222 380Z"/><clipPath id="ursaria-c1u"><use href="#ursaria-p1t"/></clipPath><path id="ursaria-p1w" d="M227 346A9 9 0 1 0 245 346A9 9 0 1 0 227 346Z"/><clipPath id="ursaria-c1x"><use href="#ursaria-p1w"/></clipPath><path id="ursaria-p1z" d="M267 346A9 9 0 1 0 285 346A9 9 0 1 0 267 346Z"/><clipPath id="ursaria-c20"><use href="#ursaria-p1z"/></clipPath><path id="ursaria-p22" d="M230 360A26 22 0 1 0 282 360A26 22 0 1 0 230 360Z"/><clipPath id="ursaria-c23"><use href="#ursaria-p22"/></clipPath><path id="ursaria-p25" d="M400 383A28 21 0 1 0 456 383A28 21 0 1 0 400 383Z"/><clipPath id="ursaria-c26"><use href="#ursaria-p25"/></clipPath><path id="ursaria-p28" d="M404 355A7 7 0 1 0 419 355A7 7 0 1 0 404 355Z"/><clipPath id="ursaria-c29"><use href="#ursaria-p28"/></clipPath><path id="ursaria-p2b" d="M437 355A7 7 0 1 0 452 355A7 7 0 1 0 437 355Z"/><clipPath id="ursaria-c2c"><use href="#ursaria-p2b"/></clipPath><path id="ursaria-p2e" d="M407 366A21 18 0 1 0 449 366A21 18 0 1 0 407 366Z"/><clipPath id="ursaria-c2f"><use href="#ursaria-p2e"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#ursaria-l0)"/>
+<circle cx="256" cy="190" r="290" fill="url(#ursaria-r1)"/>
+<path d="M40 330C70 120 190 50 256 50C322 50 442 120 472 330" fill="none" stroke="#7bd389" stroke-width="34" stroke-opacity="0.18"/>
+<path d="M56 330C86 140 196 74 256 74C316 74 426 140 456 330" fill="none" stroke="#9be7ff" stroke-width="14" stroke-opacity="0.22"/>
+<path d="M72 330C102 160 202 98 256 98C310 98 410 160 440 330" fill="none" stroke="#ffe066" stroke-width="6" stroke-opacity="0.35"/>
+<path d="M53 247C61 255 61 263 53 271C45 263 45 255 53 247Z" transform="rotate(100 53 259)" fill="#f2c14e" fill-opacity="0.85"/>
+<path d="M64 202C72 210 72 218 64 226C56 218 56 210 64 202Z" transform="rotate(111 64 214)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M83 160C91 168 91 176 83 184C75 176 75 168 83 160Z" transform="rotate(123 83 172)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M108 123C116 131 116 139 108 147C100 139 100 131 108 123Z" transform="rotate(134 108 135)" fill="#f2c14e" fill-opacity="0.85"/>
+<path d="M140 93C148 101 148 109 140 117C132 109 132 101 140 93Z" transform="rotate(146 140 105)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M176 71C184 79 184 87 176 95C168 87 168 79 176 71Z" transform="rotate(157 176 83)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M215 57C223 65 223 73 215 81C207 73 207 65 215 57Z" transform="rotate(168 215 69)" fill="#f2c14e" fill-opacity="0.85"/>
+<path d="M255 52C263 60 263 68 255 76C247 68 247 60 255 52Z" transform="rotate(180 255 64)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M296 56C304 64 304 72 296 80C288 72 288 64 296 56Z" transform="rotate(191 296 68)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M335 70C343 78 343 86 335 94C327 86 327 78 335 70Z" transform="rotate(203 335 82)" fill="#f2c14e" fill-opacity="0.85"/>
+<path d="M371 92C379 100 379 108 371 116C363 108 363 100 371 92Z" transform="rotate(214 371 104)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M403 122C411 130 411 138 403 146C395 138 395 130 403 122Z" transform="rotate(225 403 134)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M428 159C436 167 436 175 428 183C420 175 420 167 428 159Z" transform="rotate(237 428 171)" fill="#f2c14e" fill-opacity="0.85"/>
+<path d="M447 200C455 208 455 216 447 224C439 216 439 208 447 200Z" transform="rotate(248 447 212)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M459 245C467 253 467 261 459 269C451 261 451 253 459 245Z" transform="rotate(260 459 257)" fill="#7bd389" fill-opacity="0.85"/>
+<path d="M65 523C73 484 74 360 72 300C70 239 50 168 50 120C50 73 70 10 70 -15C69 -41 54 -48 45 -50C36 -51 19 -50 10 -25C2 1 -12 71 -14 120C-16 168 2 241 0 300C-2 360 -27 477 -25 517C-22 556 3 564 17 565C30 566 57 563 65 523Z" fill="#0a1a14"/>
+<path d="M540 517C543 474 515 360 514 280C513 200 533 33 531 -18C529 -68 509 -54 498 -55C488 -56 470 -73 461 -22C452 28 441 198 438 280C435 362 436 480 444 523C453 566 481 569 495 568C510 567 537 560 540 517Z" fill="#0a1a14"/>
+<path d="M66 257C74 251 99 221 112 215C124 208 144 216 150 216C156 216 152 215 152 214C152 214 157 213 150 212C144 211 123 201 108 205C94 210 63 235 54 243C46 251 51 254 53 256C55 258 57 263 66 257Z" fill="#0a1a14"/>
+<path d="M456 212C448 206 415 188 401 185C388 182 373 192 368 194C362 196 366 196 366 196C366 197 363 198 368 198C373 198 387 190 399 195C410 199 438 223 448 228C457 232 458 227 460 224C461 222 465 218 456 212Z" fill="#0a1a14"/>
+<path d="M150 0L210 0L300 420L220 420Z" fill="#fff3b0" fill-opacity="0.07"/>
+<path d="M300 0L330 0L380 400L340 400Z" fill="#fff3b0" fill-opacity="0.05"/>
+<path d="M0 388Q256 352 512 388V512H0Z" fill="url(#ursaria-l2)"/>
+<ellipse cx="256" cy="414" rx="210" ry="59" fill="url(#ursaria-r3)"/>
+<path d="M55 430L61 406L68 426L74 399L79 428L88 410L88 430Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M436 440L442 418L448 436L454 412L458 438L466 422L466 440Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M107 480L113 460L118 476L124 455L127 478L134 464L134 480Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M386 486L392 464L398 482L404 458L408 484L416 468L416 486Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M96 401L98 407L105 407L100 411L101 417L96 414L91 417L92 411L87 407L94 407Z" fill="#ffd6e8" fill-opacity="0.9"/>
+<path d="M93 410A3 3 0 1 0 99 410A3 3 0 1 0 93 410Z" fill="#f2c14e"/>
+<path d="M420 411L422 417L429 417L424 421L425 427L420 424L415 427L416 421L411 417L418 417Z" fill="#ffd6e8" fill-opacity="0.9"/>
+<path d="M417 420A3 3 0 1 0 423 420A3 3 0 1 0 417 420Z" fill="#f2c14e"/>
+<path d="M150 447L152 453L159 453L154 457L155 463L150 460L145 463L146 457L141 453L148 453Z" fill="#ffd6e8" fill-opacity="0.9"/>
+<path d="M147 456A3 3 0 1 0 153 456A3 3 0 1 0 147 456Z" fill="#f2c14e"/>
+<path d="M370 461L372 467L379 467L374 471L375 477L370 474L365 477L366 471L361 467L368 467Z" fill="#ffd6e8" fill-opacity="0.9"/>
+<path d="M367 470A3 3 0 1 0 373 470A3 3 0 1 0 367 470Z" fill="#f2c14e"/>
+<g transform="translate(256 400) scale(0.92) translate(-256 -400)">
+<circle cx="256" cy="250" r="200" fill="url(#ursaria-r4)"/>
+<ellipse cx="256" cy="400" rx="190" ry="20" fill="#1d0842" fill-opacity="0.55"/>
+<use href="#ursaria-p5" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c6)">
+<use href="#ursaria-p5" x="-3" fill="#3f2a1a"/>
+<use href="#ursaria-p5" x="-10" y="-10" fill="#9a7048"/>
+<g clip-path="url(#ursaria-c7)"><use href="#ursaria-p5" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#ursaria-p8" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#ursaria-c9)">
+<use href="#ursaria-p8" x="-4" fill="#3d6b30"/>
+<use href="#ursaria-p8" x="-4" y="-4" fill="#7bd389"/>
+<g clip-path="url(#ursaria-ca)"><use href="#ursaria-p8" x="3" y="3" fill="#5f9a4a"/></g>
+</g>
+<use href="#ursaria-pb" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-cc)">
+<use href="#ursaria-pb" x="-3" fill="#3f2a1a"/>
+<use href="#ursaria-pb" x="-10" y="-10" fill="#9a7048"/>
+<g clip-path="url(#ursaria-cd)"><use href="#ursaria-pb" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#ursaria-pe" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#ursaria-cf)">
+<use href="#ursaria-pe" x="-4" fill="#3d6b30"/>
+<use href="#ursaria-pe" x="-4" y="-4" fill="#7bd389"/>
+<g clip-path="url(#ursaria-cg)"><use href="#ursaria-pe" x="3" y="3" fill="#5f9a4a"/></g>
+</g>
+<use href="#ursaria-ph" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-ci)">
+<use href="#ursaria-ph" x="-3" fill="#3f2a1a"/>
+<use href="#ursaria-ph" x="-10" y="-10" fill="#9a7048"/>
+<g clip-path="url(#ursaria-cj)"><use href="#ursaria-ph" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#ursaria-pk" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#ursaria-cl)">
+<use href="#ursaria-pk" x="-4" fill="#3d6b30"/>
+<use href="#ursaria-pk" x="-4" y="-4" fill="#7bd389"/>
+<g clip-path="url(#ursaria-cm)"><use href="#ursaria-pk" x="3" y="3" fill="#5f9a4a"/></g>
+</g>
+<use href="#ursaria-pn" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-co)">
+<use href="#ursaria-pn" x="-3" fill="#3f2a1a"/>
+<use href="#ursaria-pn" x="-10" y="-10" fill="#9a7048"/>
+<g clip-path="url(#ursaria-cp)"><use href="#ursaria-pn" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#ursaria-pq" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#ursaria-cr)">
+<use href="#ursaria-pq" x="-4" fill="#3d6b30"/>
+<use href="#ursaria-pq" x="-4" y="-4" fill="#7bd389"/>
+<g clip-path="url(#ursaria-cs)"><use href="#ursaria-pq" x="3" y="3" fill="#5f9a4a"/></g>
+</g>
+<use href="#ursaria-pt" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-cu)">
+<use href="#ursaria-pt" x="-5" fill="#46301e"/>
+<use href="#ursaria-pt" x="-12" y="-12" fill="#a8784e"/>
+<g clip-path="url(#ursaria-cv)"><use href="#ursaria-pt" x="7" y="7" fill="#5e3e2a"/></g>
+</g>
+<use href="#ursaria-pw" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-cx)">
+<use href="#ursaria-pw" x="-5" fill="#46301e"/>
+<use href="#ursaria-pw" x="-8" y="-8" fill="#a8784e"/>
+<g clip-path="url(#ursaria-cy)"><use href="#ursaria-pw" x="7" y="7" fill="#5e3e2a"/></g>
+</g>
+<use href="#ursaria-pz" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-c10)">
+<use href="#ursaria-pz" x="-5" fill="#46301e"/>
+<use href="#ursaria-pz" x="-18" y="-16" fill="#a8784e"/>
+<g clip-path="url(#ursaria-c11)"><use href="#ursaria-pz" x="10" y="10" fill="#7a5238"/></g>
+</g>
+<use href="#ursaria-p12" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c13)">
+<use href="#ursaria-p12" x="-4" fill="#3d6b30"/>
+<use href="#ursaria-p12" x="-8" y="-8" fill="#7bd389"/>
+<g clip-path="url(#ursaria-c14)"><use href="#ursaria-p12" x="5" y="5" fill="#5f9a4a"/></g>
+</g>
+<path d="M176 200L178 205L184 206L180 209L181 214L176 212L171 214L172 209L168 206L174 205Z" fill="#ffd6e8"/>
+<path d="M174 208A3 3 0 1 0 179 208A3 3 0 1 0 174 208Z" fill="#f2c14e"/>
+<path d="M216 184L218 189L224 190L220 193L221 198L216 196L211 198L212 193L208 190L214 189Z" fill="#fff1c1"/>
+<path d="M214 192A3 3 0 1 0 219 192A3 3 0 1 0 214 192Z" fill="#f2c14e"/>
+<path d="M300 184L302 189L308 190L304 193L305 198L300 196L295 198L296 193L292 190L298 189Z" fill="#ffd6e8"/>
+<path d="M298 192A3 3 0 1 0 303 192A3 3 0 1 0 298 192Z" fill="#f2c14e"/>
+<path d="M344 202L346 207L352 208L348 211L349 216L344 214L339 216L340 211L336 208L342 207Z" fill="#fff1c1"/>
+<path d="M342 210A3 3 0 1 0 347 210A3 3 0 1 0 342 210Z" fill="#f2c14e"/>
+<path d="M258 174L260 179L266 180L262 183L263 188L258 186L253 188L254 183L250 180L256 179Z" fill="#ffd6e8"/>
+<path d="M256 182A3 3 0 1 0 261 182A3 3 0 1 0 256 182Z" fill="#f2c14e"/>
+<use href="#ursaria-p15" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-c16)">
+<use href="#ursaria-p15" x="-5" fill="#46301e"/>
+<use href="#ursaria-p15" x="-10" y="-10" fill="#a8784e"/>
+<g clip-path="url(#ursaria-c17)"><use href="#ursaria-p15" x="7" y="7" fill="#7a5238"/></g>
+</g>
+<use href="#ursaria-p18" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-c19)">
+<use href="#ursaria-p18" x="-5" fill="#46301e"/>
+<use href="#ursaria-p18" x="-10" y="-10" fill="#a8784e"/>
+<g clip-path="url(#ursaria-c1a)"><use href="#ursaria-p18" x="7" y="7" fill="#7a5238"/></g>
+</g>
+<path d="M170 396V408M182 398V410M194 398V410M206 396V408M306 396V408M318 398V410M330 398V410M342 396V408" fill="none" stroke="#fff8ea" stroke-width="5"/>
+<g transform="translate(252 244) scale(1.15) translate(-252 -244)">
+<use href="#ursaria-p1b" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-c1c)">
+<use href="#ursaria-p1b" x="-5" fill="#46301e"/>
+<use href="#ursaria-p1b" x="-5" y="-5" fill="#a8784e"/>
+<g clip-path="url(#ursaria-c1d)"><use href="#ursaria-p1b" x="7" y="7" fill="#7a5238"/></g>
+</g>
+<use href="#ursaria-p1e" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-c1f)">
+<use href="#ursaria-p1e" x="-5" fill="#46301e"/>
+<use href="#ursaria-p1e" x="-5" y="-5" fill="#a8784e"/>
+<g clip-path="url(#ursaria-c1g)"><use href="#ursaria-p1e" x="7" y="7" fill="#7a5238"/></g>
+</g>
+<path d="M189 198A11 11 0 1 0 211 198A11 11 0 1 0 189 198Z" fill="#c99070"/>
+<path d="M293 198A11 11 0 1 0 315 198A11 11 0 1 0 293 198Z" fill="#c99070"/>
+<use href="#ursaria-p1h" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#ursaria-c1i)">
+<use href="#ursaria-p1h" x="-5" fill="#46301e"/>
+<use href="#ursaria-p1h" x="-12" y="-10" fill="#a8784e"/>
+<g clip-path="url(#ursaria-c1j)"><use href="#ursaria-p1h" x="7" y="7" fill="#7a5238"/></g>
+</g>
+<use href="#ursaria-p1k" fill="#94704a" stroke-width="8"/>
+<g clip-path="url(#ursaria-c1l)">
+<use href="#ursaria-p1k" x="-5" y="-5" fill="#e8c898"/>
+<g clip-path="url(#ursaria-c1m)"><use href="#ursaria-p1k" x="4" y="4" fill="#c8a070"/></g>
+</g>
+<path d="M238 248A12 8 0 1 0 262 248A12 8 0 1 0 238 248Z" fill="#1d0842"/>
+<path d="M242 245A4 3 0 1 0 250 245A4 3 0 1 0 242 245Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M250 256V266M236 272C244 276 256 276 264 272" fill="none" stroke-width="3.5"/>
+<path d="M217 232A7 6 0 1 0 231 232A7 6 0 1 0 217 232Z" fill="#1d0842"/>
+<path d="M219 232A4 5 0 1 0 227 232A4 5 0 1 0 219 232Z" fill="#7bd389"/>
+<path d="M220 232A2 3 0 1 0 224 232A2 3 0 1 0 220 232Z" fill="#1d0842"/>
+<path d="M219 230A2 2 0 1 0 222 230A2 2 0 1 0 219 230Z" fill="#ffffff" fill-opacity="0.9"/>
+<path d="M271 232A7 6 0 1 0 285 232A7 6 0 1 0 271 232Z" fill="#1d0842"/>
+<path d="M273 232A4 5 0 1 0 281 232A4 5 0 1 0 273 232Z" fill="#7bd389"/>
+<path d="M274 232A2 3 0 1 0 278 232A2 3 0 1 0 274 232Z" fill="#1d0842"/>
+<path d="M273 230A2 2 0 1 0 276 230A2 2 0 1 0 273 230Z" fill="#ffffff" fill-opacity="0.9"/>
+<path d="M212 222L234 226M290 222L268 226" fill="none" stroke-width="4"/>
+<use href="#ursaria-p1n" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#ursaria-c1o)">
+<use href="#ursaria-p1n" x="-3" fill="#a8742a"/>
+<use href="#ursaria-p1n" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#ursaria-c1p)"><use href="#ursaria-p1n" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#ursaria-p1q" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#ursaria-c1r)">
+<use href="#ursaria-p1q" x="-3" fill="#3d6b30"/>
+<use href="#ursaria-p1q" x="-3" y="-3" fill="#c8f7a0"/>
+<g clip-path="url(#ursaria-c1s)"><use href="#ursaria-p1q" x="2" y="2" fill="#7bd389"/></g>
+</g>
+</g>
+<use href="#ursaria-p1t" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c1u)">
+<use href="#ursaria-p1t" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p1t" x="-6" y="-6" fill="#8a5a34"/>
+</g>
+<use href="#ursaria-p1w" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c1x)">
+<use href="#ursaria-p1w" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p1w" x="-3" y="-3" fill="#8a5a34"/>
+</g>
+<use href="#ursaria-p1z" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c20)">
+<use href="#ursaria-p1z" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p1z" x="-3" y="-3" fill="#8a5a34"/>
+</g>
+<use href="#ursaria-p22" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c23)">
+<use href="#ursaria-p22" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p22" x="-6" y="-6" fill="#8a5a34"/>
+</g>
+<path d="M242 368A12 8 0 1 0 266 368A12 8 0 1 0 242 368Z" fill="#d8b080"/>
+<path d="M250 363A4 3 0 1 0 258 363A4 3 0 1 0 250 363Z" fill="#1d0842"/>
+<path d="M242 354A4 4 0 1 0 249 354A4 4 0 1 0 242 354Z" fill="#1d0842"/>
+<path d="M262 354A4 4 0 1 0 269 354A4 4 0 1 0 262 354Z" fill="#1d0842"/>
+<path d="M243 352A1 1 0 1 0 245 352A1 1 0 1 0 243 352Z" fill="#ffffff"/>
+<path d="M263 352A1 1 0 1 0 265 352A1 1 0 1 0 263 352Z" fill="#ffffff"/>
+<use href="#ursaria-p25" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c26)">
+<use href="#ursaria-p25" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p25" x="-6" y="-6" fill="#8a5a34"/>
+</g>
+<use href="#ursaria-p28" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c29)">
+<use href="#ursaria-p28" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p28" x="-3" y="-3" fill="#8a5a34"/>
+</g>
+<use href="#ursaria-p2b" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c2c)">
+<use href="#ursaria-p2b" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p2b" x="-3" y="-3" fill="#8a5a34"/>
+</g>
+<use href="#ursaria-p2e" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#ursaria-c2f)">
+<use href="#ursaria-p2e" x="-3" fill="#5c3a1f"/>
+<use href="#ursaria-p2e" x="-6" y="-6" fill="#8a5a34"/>
+</g>
+<path d="M417 373A10 7 0 1 0 436 373A10 7 0 1 0 417 373Z" fill="#d8b080"/>
+<path d="M423 369A3 2 0 1 0 430 369A3 2 0 1 0 423 369Z" fill="#1d0842"/>
+<path d="M416 361A3 3 0 1 0 422 361A3 3 0 1 0 416 361Z" fill="#1d0842"/>
+<path d="M433 361A3 3 0 1 0 438 361A3 3 0 1 0 433 361Z" fill="#1d0842"/>
+<path d="M417 360A1 1 0 1 0 419 360A1 1 0 1 0 417 360Z" fill="#ffffff"/>
+<path d="M433 360A1 1 0 1 0 436 360A1 1 0 1 0 433 360Z" fill="#ffffff"/>
+</g>
+<circle cx="274" cy="272" r="3" fill="#ffe066" fill-opacity="0.8"/>
+<circle cx="77" cy="120" r="3" fill="#7bd389" fill-opacity="0.63"/>
+<circle cx="213" cy="216" r="3" fill="#c8f7a0" fill-opacity="0.75"/>
+<circle cx="346" cy="180" r="3" fill="#ffe066" fill-opacity="0.63"/>
+<circle cx="392" cy="204" r="2" fill="#7bd389" fill-opacity="0.86"/>
+<circle cx="426" cy="245" r="3" fill="#c8f7a0" fill-opacity="0.51"/>
+<circle cx="65" cy="102" r="3" fill="#ffe066" fill-opacity="0.84"/>
+<circle cx="322" cy="125" r="3" fill="#7bd389" fill-opacity="0.88"/>
+<circle cx="138" cy="106" r="3" fill="#c8f7a0" fill-opacity="0.66"/>
+<circle cx="300" cy="226" r="2" fill="#ffe066" fill-opacity="0.46"/>
+<circle cx="144" cy="292" r="3" fill="#7bd389" fill-opacity="0.43"/>
+<circle cx="370" cy="137" r="3" fill="#c8f7a0" fill-opacity="0.85"/>
+<circle cx="74" cy="277" r="2" fill="#ffe066" fill-opacity="0.87"/>
+<circle cx="398" cy="356" r="2" fill="#7bd389" fill-opacity="0.54"/>
+<circle cx="353" cy="331" r="2" fill="#c8f7a0" fill-opacity="0.85"/>
+<circle cx="349" cy="169" r="2" fill="#ffe066" fill-opacity="0.8"/>
+</svg>

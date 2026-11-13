@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="sun-cleric-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#241a4e"/><stop offset="0.55" stop-color="#5a3f8a"/><stop offset="1" stop-color="#34265f"/></linearGradient><radialGradient id="sun-cleric-r1" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="240"><stop offset="0" stop-color="#ffe9a8" stop-opacity="0.4"/><stop offset="0.45" stop-color="#ffe9a8" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient><linearGradient id="sun-cleric-l2" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#4a3478"/><stop offset="1" stop-color="#241a4e"/></linearGradient><radialGradient id="sun-cleric-r3" gradientUnits="userSpaceOnUse" cx="256" cy="404" r="170"><stop offset="0" stop-color="#ffe9a8" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient><radialGradient id="sun-cleric-r4" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="160"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.05"/><stop offset="0.8" stop-color="#ffe066" stop-opacity="0.14"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0.35"/></radialGradient><path id="sun-cleric-p5" d="M228 220L284 220C302 270 320 340 334 396L178 396C192 340 210 270 228 220Z"/><clipPath id="sun-cleric-c6"><use href="#sun-cleric-p5"/></clipPath><clipPath id="sun-cleric-c7"><use href="#sun-cleric-p5" x="-14" y="-10"/></clipPath><path id="sun-cleric-p8" d="M222 268L290 268L292 282L220 282Z"/><clipPath id="sun-cleric-c9"><use href="#sun-cleric-p8"/></clipPath><clipPath id="sun-cleric-ca"><use href="#sun-cleric-p8" x="-3" y="-3"/></clipPath><path id="sun-cleric-pb" d="M345 398C345 376 340 294 339 260C337 225 336 182 335 168C334 153 331 163 330 163C328 163 325 154 325 168C325 183 328 226 329 260C331 295 333 377 335 398C337 420 339 403 340 403C342 403 345 419 345 398Z"/><clipPath id="sun-cleric-cc"><use href="#sun-cleric-pb"/></clipPath><clipPath id="sun-cleric-cd"><use href="#sun-cleric-pb" x="-3" y="-3"/></clipPath><radialGradient id="sun-cleric-re" gradientUnits="userSpaceOnUse" cx="330" cy="146" r="70"><stop offset="0" stop-color="#ffe066" stop-opacity="0.85"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.3825"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="sun-cleric-pf" d="M330 104L336 123L351 110L347 129L366 125L353 140L372 146L353 152L366 167L347 163L351 182L336 169L330 188L324 169L309 182L313 163L294 167L307 152L288 146L307 140L294 125L313 129L309 110L324 123Z"/><clipPath id="sun-cleric-cg"><use href="#sun-cleric-pf"/></clipPath><clipPath id="sun-cleric-ch"><use href="#sun-cleric-pf" x="-4" y="-4"/></clipPath><path id="sun-cleric-pi" d="M312 146A18 18 0 1 0 348 146A18 18 0 1 0 312 146Z"/><clipPath id="sun-cleric-cj"><use href="#sun-cleric-pi"/></clipPath><clipPath id="sun-cleric-ck"><use href="#sun-cleric-pi" x="-4" y="-4"/></clipPath><path id="sun-cleric-pl" d="M275 240C280 247 297 270 307 272C316 275 332 261 337 256C341 250 340 240 338 237C335 234 323 234 319 236C316 238 317 253 313 252C309 250 299 228 293 224C287 220 279 221 276 223C273 225 270 232 275 240Z"/><clipPath id="sun-cleric-cm"><use href="#sun-cleric-pl"/></clipPath><clipPath id="sun-cleric-cn"><use href="#sun-cleric-pl" x="-6" y="-6"/></clipPath><path id="sun-cleric-po" d="M320 240A12 11 0 1 0 344 240A12 11 0 1 0 320 240Z"/><clipPath id="sun-cleric-cp"><use href="#sun-cleric-po"/></clipPath><clipPath id="sun-cleric-cq"><use href="#sun-cleric-po" x="-4" y="-4"/></clipPath><path id="sun-cleric-pr" d="M219 227C214 235 200 268 204 275C209 282 241 277 249 275C257 272 260 263 259 259C258 255 248 248 243 249C238 250 224 267 224 265C223 263 239 243 241 237C243 230 238 222 235 221C231 220 223 219 219 227Z"/><clipPath id="sun-cleric-cs"><use href="#sun-cleric-pr"/></clipPath><clipPath id="sun-cleric-ct"><use href="#sun-cleric-pr" x="-6" y="-6"/></clipPath><path id="sun-cleric-pu" d="M239 258A11 10 0 1 0 261 258A11 10 0 1 0 239 258Z"/><clipPath id="sun-cleric-cv"><use href="#sun-cleric-pu"/></clipPath><clipPath id="sun-cleric-cw"><use href="#sun-cleric-pu" x="-4" y="-4"/></clipPath><path id="sun-cleric-px" d="M224 176C214 230 220 262 236 270L230 220Z"/><clipPath id="sun-cleric-cy"><use href="#sun-cleric-px"/></clipPath><clipPath id="sun-cleric-cz"><use href="#sun-cleric-px" x="-4" y="-4"/></clipPath><path id="sun-cleric-p10" d="M294 176C306 220 302 250 284 262L292 214Z"/><clipPath id="sun-cleric-c11"><use href="#sun-cleric-p10"/></clipPath><clipPath id="sun-cleric-c12"><use href="#sun-cleric-p10" x="-4" y="-4"/></clipPath><path id="sun-cleric-p13" d="M222 176C223 166 225 147 232 140C239 133 256 130 266 132C276 134 293 143 298 152C303 161 302 180 300 190C298 200 291 211 284 216C277 221 262 224 254 222C246 221 233 213 228 206C223 199 221 186 222 176Z"/><clipPath id="sun-cleric-c14"><use href="#sun-cleric-p13"/></clipPath><clipPath id="sun-cleric-c15"><use href="#sun-cleric-p13" x="-12" y="-8"/></clipPath><path id="sun-cleric-p16" d="M289 184A9 12 0 1 0 307 184A9 12 0 1 0 289 184Z"/><clipPath id="sun-cleric-c17"><use href="#sun-cleric-p16"/></clipPath><clipPath id="sun-cleric-c18"><use href="#sun-cleric-p16" x="-4" y="-4"/></clipPath><path id="sun-cleric-p19" d="M218 182C208 138 236 120 262 120C294 120 312 142 304 186C296 162 286 150 266 146C252 156 236 160 226 158C222 166 220 172 218 182Z"/><clipPath id="sun-cleric-c1a"><use href="#sun-cleric-p19"/></clipPath><clipPath id="sun-cleric-c1b"><use href="#sun-cleric-p19" x="-8" y="-8"/></clipPath><path id="sun-cleric-p1c" d="M226 140C244 130 278 130 298 142L294 150C276 140 246 140 230 148Z"/><clipPath id="sun-cleric-c1d"><use href="#sun-cleric-p1c"/></clipPath><clipPath id="sun-cleric-c1e"><use href="#sun-cleric-p1c" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#sun-cleric-l0)"/>
+<circle cx="256" cy="250" r="240" fill="url(#sun-cleric-r1)"/>
+<path d="M256 40L28 512L64 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M256 40L98 512L134 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M256 40L168 512L204 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M256 40L238 512L274 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M256 40L308 512L344 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M256 40L378 512L414 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M256 40L448 512L484 512Z" fill="#fff1c1" fill-opacity="0.05"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#sun-cleric-l2)"/>
+<ellipse cx="256" cy="404" rx="170" ry="48" fill="url(#sun-cleric-r3)"/>
+<ellipse cx="256" cy="404" rx="110" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<ellipse cx="256" cy="270" rx="150" ry="146" fill="url(#sun-cleric-r4)"/>
+<use href="#sun-cleric-p5" fill="#a59fbf" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-c6)">
+<use href="#sun-cleric-p5" x="-14" y="-10" fill="#ffffff"/>
+<g clip-path="url(#sun-cleric-c7)"><use href="#sun-cleric-p5" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<path d="M184 384L328 384" fill="none" stroke="#f2c14e" stroke-width="6"/>
+<path d="M256 232V396" fill="none" stroke="#a59fbf" stroke-width="3"/>
+<use href="#sun-cleric-p8" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#sun-cleric-c9)">
+<use href="#sun-cleric-p8" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#sun-cleric-ca)"><use href="#sun-cleric-p8" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<path d="M244 282L250 330L256 282Z" fill="#a8742a" fill-opacity="0.9"/>
+<use href="#sun-cleric-pb" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#sun-cleric-cc)">
+<use href="#sun-cleric-pb" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#sun-cleric-cd)"><use href="#sun-cleric-pb" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<circle cx="330" cy="146" r="70" fill="url(#sun-cleric-re)"/>
+<use href="#sun-cleric-pf" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#sun-cleric-cg)">
+<use href="#sun-cleric-pf" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#sun-cleric-ch)"><use href="#sun-cleric-pf" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#sun-cleric-pi" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#sun-cleric-cj)">
+<use href="#sun-cleric-pi" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#sun-cleric-ck)"><use href="#sun-cleric-pi" x="3" y="3" fill="#fff8d6"/></g>
+</g>
+<use href="#sun-cleric-pl" fill="#a59fbf" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-cm)">
+<use href="#sun-cleric-pl" x="-6" y="-6" fill="#ffffff"/>
+<g clip-path="url(#sun-cleric-cn)"><use href="#sun-cleric-pl" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#sun-cleric-po" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#sun-cleric-cp)">
+<use href="#sun-cleric-po" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#sun-cleric-cq)"><use href="#sun-cleric-po" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#sun-cleric-pr" fill="#a59fbf" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-cs)">
+<use href="#sun-cleric-pr" x="-6" y="-6" fill="#ffffff"/>
+<g clip-path="url(#sun-cleric-ct)"><use href="#sun-cleric-pr" x="7" y="7" fill="#e8e4f0"/></g>
+</g>
+<use href="#sun-cleric-pu" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#sun-cleric-cv)">
+<use href="#sun-cleric-pu" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#sun-cleric-cw)"><use href="#sun-cleric-pu" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#sun-cleric-px" fill="#3f2412" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-cy)">
+<use href="#sun-cleric-px" x="-4" y="-4" fill="#9a6235"/>
+<g clip-path="url(#sun-cleric-cz)"><use href="#sun-cleric-px" x="7" y="7" fill="#6b3f1f"/></g>
+</g>
+<use href="#sun-cleric-p10" fill="#3f2412" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-c11)">
+<use href="#sun-cleric-p10" x="-4" y="-4" fill="#9a6235"/>
+<g clip-path="url(#sun-cleric-c12)"><use href="#sun-cleric-p10" x="7" y="7" fill="#6b3f1f"/></g>
+</g>
+<g transform="translate(-4 4)">
+<use href="#sun-cleric-p13" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-c14)">
+<use href="#sun-cleric-p13" x="-12" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#sun-cleric-c15)"><use href="#sun-cleric-p13" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#sun-cleric-p16" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#sun-cleric-c17)">
+<use href="#sun-cleric-p16" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#sun-cleric-c18)"><use href="#sun-cleric-p16" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<path d="M233 184A5 7 0 1 0 243 184A5 7 0 1 0 233 184Z" fill="#1d0842"/>
+<path d="M261 184A5 7 0 1 0 271 184A5 7 0 1 0 261 184Z" fill="#1d0842"/>
+<path d="M235 182A2 2 0 1 0 238 182A2 2 0 1 0 235 182Z" fill="#ffffff"/>
+<path d="M263 182A2 2 0 1 0 266 182A2 2 0 1 0 263 182Z" fill="#ffffff"/>
+<path d="M228 172L244 172M260 172L276 170" fill="none" stroke-width="4"/>
+<path d="M242 204C248 208 256 208 260 204" fill="none" stroke-width="3.5"/>
+<path d="M225 198A7 4 0 1 0 239 198A7 4 0 1 0 225 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+<path d="M271 198A7 4 0 1 0 285 198A7 4 0 1 0 271 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+</g>
+<path d="M230 186L226 182M258 186L254 182" fill="none" stroke-width="3"/>
+<use href="#sun-cleric-p19" fill="#3f2412" stroke-width="12"/>
+<g clip-path="url(#sun-cleric-c1a)">
+<use href="#sun-cleric-p19" x="-8" y="-8" fill="#9a6235"/>
+<g clip-path="url(#sun-cleric-c1b)"><use href="#sun-cleric-p19" x="7" y="7" fill="#6b3f1f"/></g>
+</g>
+<use href="#sun-cleric-p1c" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#sun-cleric-c1d)">
+<use href="#sun-cleric-p1c" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#sun-cleric-c1e)"><use href="#sun-cleric-p1c" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<path d="M262 126L265 133L272 136L265 139L262 146L259 139L252 136L259 133Z" fill="#fff8d6"/>
+<ellipse cx="256" cy="270" rx="150" ry="146" fill="none" stroke="#ffe066" stroke-opacity="0.7" stroke-width="5"/>
+<path d="M132 225A132 132 0 0 1 211 146" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="7"/>
+<path d="M325 150A138 138 0 0 1 362 181" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="5"/>
+<path d="M177 165L179 169L177 173L175 169Z" fill="#fff1c1" fill-opacity="0.62"/>
+<path d="M225 216L227 220L225 224L222 220Z" fill="#ffe066" fill-opacity="0.66"/>
+<path d="M187 134L190 139L187 145L184 139Z" fill="#fff1c1" fill-opacity="0.5"/>
+<path d="M285 316L289 322L285 329L281 322Z" fill="#ffe066" fill-opacity="0.74"/>
+<path d="M308 138L312 144L308 151L304 144Z" fill="#fff1c1" fill-opacity="0.92"/>
+<path d="M324 196L327 201L324 207L321 201Z" fill="#ffe066" fill-opacity="0.55"/>
+<path d="M197 149L199 152L197 156L195 152Z" fill="#fff1c1" fill-opacity="0.81"/>
+<path d="M189 217L191 220L189 224L187 220Z" fill="#ffe066" fill-opacity="0.66"/>
+<path d="M289 205L292 211L289 218L285 211Z" fill="#fff1c1" fill-opacity="0.87"/>
+<path d="M287 209L291 215L287 222L284 215Z" fill="#ffe066" fill-opacity="0.77"/>
+<path d="M340 148L342 151L340 155L338 151Z" fill="#fff1c1" fill-opacity="0.89"/>
+<path d="M199 133L202 139L199 145L195 139Z" fill="#ffe066" fill-opacity="0.72"/>
+</svg>

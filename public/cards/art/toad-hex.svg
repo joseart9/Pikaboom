@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="toad-hex-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#10201a"/><stop offset="0.55" stop-color="#2c2a5a"/><stop offset="1" stop-color="#120a26"/></linearGradient><radialGradient id="toad-hex-r1" gradientUnits="userSpaceOnUse" cx="290" cy="260" r="250"><stop offset="0" stop-color="#7bd389" stop-opacity="0.35"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.1575"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><linearGradient id="toad-hex-l2" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#24304a"/><stop offset="1" stop-color="#120a26"/></linearGradient><radialGradient id="toad-hex-r3" gradientUnits="userSpaceOnUse" cx="290" cy="396" r="200"><stop offset="0" stop-color="#7bd389" stop-opacity="0.55"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><clipPath id="toad-hex-L"><rect width="290" height="512"/></clipPath><clipPath id="toad-hex-R"><rect x="290" width="222" height="512"/></clipPath><path id="toad-hex-p4" d="M242 329C239 341 238 380 240 391C242 403 249 406 253 406C257 406 265 404 268 393C271 382 275 343 274 331C273 319 264 314 259 314C254 314 245 317 242 329Z"/><clipPath id="toad-hex-c5"><use href="#toad-hex-p4"/></clipPath><clipPath id="toad-hex-c6"><use href="#toad-hex-p4" x="-6" y="-6"/></clipPath><path id="toad-hex-p7" d="M216 245C210 251 200 284 197 284C194 284 197 254 195 247C192 241 184 239 181 239C178 240 171 242 173 253C175 263 185 306 195 308C205 309 234 273 240 263C246 253 241 245 237 242C234 239 222 239 216 245Z"/><clipPath id="toad-hex-c8"><use href="#toad-hex-p7"/></clipPath><clipPath id="toad-hex-c9"><use href="#toad-hex-p7" x="-6" y="-6"/></clipPath><path id="toad-hex-pa" d="M164 240A16 16 0 1 0 196 240A16 16 0 1 0 164 240Z"/><clipPath id="toad-hex-cb"><use href="#toad-hex-pa"/></clipPath><clipPath id="toad-hex-cc"><use href="#toad-hex-pa" x="-4" y="-4"/></clipPath><path id="toad-hex-pd" d="M214 236L366 236L350 344L230 344Z"/><clipPath id="toad-hex-ce"><use href="#toad-hex-pd"/></clipPath><clipPath id="toad-hex-cf"><use href="#toad-hex-pd" x="-10" y="-8"/></clipPath><path id="toad-hex-pg" d="M240 250L340 250L332 340L248 340Z"/><clipPath id="toad-hex-ch"><use href="#toad-hex-pg"/></clipPath><clipPath id="toad-hex-ci"><use href="#toad-hex-pg" x="-6" y="-6"/></clipPath><path id="toad-hex-pj" d="M260 155C257 147 240 127 238 119C236 111 246 106 247 102C249 99 247 97 246 97C245 96 244 94 241 98C237 101 222 111 222 121C222 131 235 158 240 165C245 172 252 171 255 170C258 168 262 163 260 155Z"/><clipPath id="toad-hex-ck"><use href="#toad-hex-pj"/></clipPath><clipPath id="toad-hex-cl"><use href="#toad-hex-pj" x="-4" y="-4"/></clipPath><path id="toad-hex-pm" d="M238 196A52 50 0 1 0 342 196A52 50 0 1 0 238 196Z"/><clipPath id="toad-hex-cn"><use href="#toad-hex-pm"/></clipPath><clipPath id="toad-hex-co"><use href="#toad-hex-pm" x="-10" y="-10"/></clipPath><path id="toad-hex-pp" d="M415 382C414 385 405 388 399 391C393 393 387 397 381 398C374 398 365 396 357 394C350 392 339 391 335 388C332 385 335 380 338 377C342 373 348 370 355 368C362 367 372 367 380 368C388 369 395 370 401 372C407 375 415 379 415 382Z"/><clipPath id="toad-hex-cq"><use href="#toad-hex-pp"/></clipPath><clipPath id="toad-hex-cr"><use href="#toad-hex-pp" x="-4" y="-4"/></clipPath><path id="toad-hex-ps" d="M194 300A96 84 0 1 0 386 300A96 84 0 1 0 194 300Z"/><clipPath id="toad-hex-ct"><use href="#toad-hex-ps"/></clipPath><clipPath id="toad-hex-cu"><use href="#toad-hex-ps" x="-12" y="-12"/></clipPath><path id="toad-hex-pv" d="M226 324A64 50 0 1 0 354 324A64 50 0 1 0 226 324Z"/><clipPath id="toad-hex-cw"><use href="#toad-hex-pv"/></clipPath><clipPath id="toad-hex-cx"><use href="#toad-hex-pv" x="-6" y="-6"/></clipPath><path id="toad-hex-py" d="M216 224A74 52 0 1 0 364 224A74 52 0 1 0 216 224Z"/><clipPath id="toad-hex-cz"><use href="#toad-hex-py"/></clipPath><clipPath id="toad-hex-c10"><use href="#toad-hex-py" x="-10" y="-10"/></clipPath><path id="toad-hex-p11" d="M298 182A26 24 0 1 0 350 182A26 24 0 1 0 298 182Z"/><clipPath id="toad-hex-c12"><use href="#toad-hex-p11"/></clipPath><clipPath id="toad-hex-c13"><use href="#toad-hex-p11" x="-5" y="-5"/></clipPath><radialGradient id="toad-hex-r14" gradientUnits="userSpaceOnUse" cx="110" cy="112" r="60"><stop offset="0" stop-color="#7bd389" stop-opacity="0.7"/><stop offset="0.45" stop-color="#7bd389" stop-opacity="0.315"/><stop offset="1" stop-color="#7bd389" stop-opacity="0"/></radialGradient><radialGradient id="toad-hex-r15" gradientUnits="userSpaceOnUse" cx="266" cy="226" r="50"><stop offset="0" stop-color="#d8f5a2" stop-opacity="0.8"/><stop offset="0.45" stop-color="#d8f5a2" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#d8f5a2" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#toad-hex-l0)"/>
+<circle cx="290" cy="260" r="250" fill="url(#toad-hex-r1)"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#toad-hex-l2)"/>
+<ellipse cx="290" cy="396" rx="200" ry="56" fill="url(#toad-hex-r3)"/>
+<path d="M290 270C291 271 293 272 294 274C295 275 295 278 295 280C294 282 293 284 291 286C289 288 286 290 283 290C279 291 275 291 272 290C268 289 264 287 261 284C257 281 254 276 252 272C250 267 249 261 249 255C250 249 251 243 254 237C257 231 262 225 267 221C273 217 280 213 287 211C295 209 304 208 312 209C320 210 330 213 337 218C345 223 353 230 358 238C364 246 369 256 371 266C373 277 373 289 371 300C369 310 364 322 358 332C351 342 342 351 331 358C321 365 307 370 294 372C281 375 267 375 253 371C240 368 225 362 213 354C202 345 190 333 182 320C174 307 168 291 166 275C164 260 164 242 168 226C172 210 180 193 191 179C201 165 215 152 231 143C246 134 265 127 284 124C302 122 323 123 342 128C360 133 380 142 396 155C412 167 427 184 437 202C447 220 455 241 457 263C460 284 458 308 452 329C446 350 435 372 421 390C407 408 388 425 368 436C347 448 310 455 298 459" fill="none" stroke="#7bd389" stroke-width="5" stroke-opacity="0.35"/>
+<ellipse cx="290" cy="396" rx="120" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<g clip-path="url(#toad-hex-L)">
+<use href="#toad-hex-p4" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#toad-hex-c5)">
+<use href="#toad-hex-p4" x="-4" fill="#5e6f8a"/>
+<use href="#toad-hex-p4" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#toad-hex-c6)"><use href="#toad-hex-p4" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#toad-hex-p7" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#toad-hex-c8)">
+<use href="#toad-hex-p7" x="-4" fill="#5e6f8a"/>
+<use href="#toad-hex-p7" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#toad-hex-c9)"><use href="#toad-hex-p7" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#toad-hex-pa" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#toad-hex-cb)">
+<use href="#toad-hex-pa" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#toad-hex-cc)"><use href="#toad-hex-pa" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#toad-hex-pd" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#toad-hex-ce)">
+<use href="#toad-hex-pd" x="-4" fill="#5e6f8a"/>
+<use href="#toad-hex-pd" x="-10" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#toad-hex-cf)"><use href="#toad-hex-pd" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#toad-hex-pg" fill="#24418a" stroke-width="8"/>
+<g clip-path="url(#toad-hex-ch)">
+<use href="#toad-hex-pg" x="-6" y="-6" fill="#6a95e0"/>
+<g clip-path="url(#toad-hex-ci)"><use href="#toad-hex-pg" x="4" y="4" fill="#3d6fc4"/></g>
+</g>
+<use href="#toad-hex-pj" fill="#a8243c" stroke-width="8"/>
+<g clip-path="url(#toad-hex-ck)">
+<use href="#toad-hex-pj" x="-4" y="-4" fill="#ff8aa0"/>
+<g clip-path="url(#toad-hex-cl)"><use href="#toad-hex-pj" x="3" y="3" fill="#ff4d6d"/></g>
+</g>
+<use href="#toad-hex-pm" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#toad-hex-cn)">
+<use href="#toad-hex-pm" x="-4" fill="#5e6f8a"/>
+<use href="#toad-hex-pm" x="-10" y="-10" fill="#e2ecf5"/>
+<g clip-path="url(#toad-hex-co)"><use href="#toad-hex-pm" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<path d="M242 192L338 192L338 210L242 210Z" fill="#1d0842"/>
+<path d="M257 201A9 9 0 1 0 275 201A9 9 0 1 0 257 201Z" fill="#ffffff"/>
+<path d="M265 202A4 4 0 1 0 272 202A4 4 0 1 0 265 202Z" fill="#1d0842"/>
+<path d="M222 150C228 160 230 170 222 176C214 170 216 160 222 150Z" fill="#9be7ff"/>
+</g>
+<g clip-path="url(#toad-hex-R)">
+<use href="#toad-hex-pp" fill="#3d7a2a" stroke-width="10"/>
+<g clip-path="url(#toad-hex-cq)">
+<use href="#toad-hex-pp" x="-4" y="-4" fill="#a8e07a"/>
+<g clip-path="url(#toad-hex-cr)"><use href="#toad-hex-pp" x="3" y="3" fill="#6fbf4a"/></g>
+</g>
+<use href="#toad-hex-ps" fill="#3d7a2a" stroke-width="12"/>
+<g clip-path="url(#toad-hex-ct)">
+<use href="#toad-hex-ps" x="-12" y="-12" fill="#a8e07a"/>
+<g clip-path="url(#toad-hex-cu)"><use href="#toad-hex-ps" x="8" y="8" fill="#6fbf4a"/></g>
+</g>
+<use href="#toad-hex-pv" fill="#b9a98a"/>
+<g clip-path="url(#toad-hex-cw)">
+<use href="#toad-hex-pv" x="-6" y="-6" fill="#fff8ea"/>
+<g clip-path="url(#toad-hex-cx)"><use href="#toad-hex-pv" x="4" y="4" fill="#eadfc8"/></g>
+</g>
+<use href="#toad-hex-py" fill="#3d7a2a" stroke-width="12"/>
+<g clip-path="url(#toad-hex-cz)">
+<use href="#toad-hex-py" x="-10" y="-10" fill="#a8e07a"/>
+<g clip-path="url(#toad-hex-c10)"><use href="#toad-hex-py" x="6" y="6" fill="#6fbf4a"/></g>
+</g>
+<use href="#toad-hex-p11" fill="#3d7a2a" stroke-width="10"/>
+<g clip-path="url(#toad-hex-c12)">
+<use href="#toad-hex-p11" x="-5" y="-5" fill="#a8e07a"/>
+<g clip-path="url(#toad-hex-c13)"><use href="#toad-hex-p11" x="3" y="3" fill="#6fbf4a"/></g>
+</g>
+<path d="M307 182A17 17 0 1 0 341 182A17 17 0 1 0 307 182Z" fill="#ffd34d"/>
+<path d="M318 184A8 10 0 1 0 334 184A8 10 0 1 0 318 184Z" fill="#1d0842"/>
+<path d="M316 178A4 4 0 1 0 324 178A4 4 0 1 0 316 178Z" fill="#ffffff"/>
+<path d="M290 246C320 262 346 256 362 236" fill="none" stroke-width="5"/>
+<path d="M336 300A8 8 0 1 0 352 300A8 8 0 1 0 336 300Z" fill="#3d7a2a" fill-opacity="0.8"/>
+<path d="M360 268A6 6 0 1 0 372 268A6 6 0 1 0 360 268Z" fill="#3d7a2a" fill-opacity="0.8"/>
+<path d="M324 340A6 6 0 1 0 336 340A6 6 0 1 0 324 340Z" fill="#3d7a2a" fill-opacity="0.6"/>
+</g>
+<path d="M290 130L280 160L297 190L284 220L295 250L284 280L298 310L285 340L301 370L290 400" fill="none" stroke="#c77dff" stroke-width="14" stroke-opacity="0.5"/>
+<path d="M290 130L280 160L297 190L284 220L295 250L284 280L298 310L285 340L301 370L290 400" fill="none" stroke="#f0d8ff" stroke-width="5"/>
+<circle cx="110" cy="112" r="60" fill="url(#toad-hex-r14)"/>
+<path d="M108 110L128 148L178 147L193 191L241 192L262 228" fill="none" stroke-width="22"/>
+<path d="M108 110L128 148L178 147L193 191L241 192L262 228" fill="none" stroke="#7bd389" stroke-width="14"/>
+<path d="M108 110L128 148L178 147L193 191L241 192L262 228" fill="none" stroke="#f0ffe0" stroke-width="4.8999999999999995"/>
+<path d="M108 110L130 145L183 139L190 194L246 186L262 228" fill="none" stroke-width="15"/>
+<path d="M108 110L130 145L183 139L190 194L246 186L262 228" fill="none" stroke="#7bd389" stroke-width="7"/>
+<path d="M108 110L130 145L183 139L190 194L246 186L262 228" fill="none" stroke="#f0ffe0" stroke-width="2.4499999999999997"/>
+<path d="M108 80L115 100L137 101L119 114L126 134L108 122L90 134L97 114L79 101L101 100Z" fill="#c77dff"/>
+<path d="M108 94L112 105L123 105L114 112L117 123L108 116L99 123L102 112L93 105L104 105Z" fill="#ffffff"/>
+<circle cx="266" cy="226" r="50" fill="url(#toad-hex-r15)"/>
+<path d="M266 196L271 217L292 211L276 226L292 241L271 235L266 256L261 235L240 241L256 226L240 211L261 217Z" fill="#f0ffe0"/>
+<path d="M388 160A12 12 0 1 0 412 160A12 12 0 1 0 388 160Z" fill="none" stroke="#a8e07a" stroke-width="3" stroke-opacity="0.85"/>
+<path d="M393 156A3 3 0 1 0 399 156A3 3 0 1 0 393 156Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M412 210A8 8 0 1 0 428 210A8 8 0 1 0 412 210Z" fill="none" stroke="#a8e07a" stroke-width="3" stroke-opacity="0.85"/>
+<path d="M415 207A2 2 0 1 0 419 207A2 2 0 1 0 415 207Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M373 120A7 7 0 1 0 387 120A7 7 0 1 0 373 120Z" fill="none" stroke="#a8e07a" stroke-width="3" stroke-opacity="0.85"/>
+<path d="M376 118A2 2 0 1 0 379 118A2 2 0 1 0 376 118Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M121 300A9 9 0 1 0 139 300A9 9 0 1 0 121 300Z" fill="none" stroke="#a8e07a" stroke-width="3" stroke-opacity="0.85"/>
+<path d="M125 297A2 2 0 1 0 129 297A2 2 0 1 0 125 297Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M144 340A6 6 0 1 0 156 340A6 6 0 1 0 144 340Z" fill="none" stroke="#a8e07a" stroke-width="3" stroke-opacity="0.85"/>
+<path d="M146 338A2 2 0 1 0 149 338A2 2 0 1 0 146 338Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M164 117L166 121L164 125L161 121Z" fill="#a8e07a" fill-opacity="0.87"/>
+<path d="M296 341L298 345L296 348L295 345Z" fill="#c77dff" fill-opacity="0.5"/>
+<path d="M286 187L287 190L286 193L284 190Z" fill="#a8e07a" fill-opacity="0.51"/>
+<path d="M410 271L412 275L410 279L408 275Z" fill="#c77dff" fill-opacity="0.93"/>
+<path d="M414 212L417 217L414 223L411 217Z" fill="#a8e07a" fill-opacity="0.96"/>
+<path d="M171 154L174 160L171 166L168 160Z" fill="#c77dff" fill-opacity="0.89"/>
+<path d="M175 164L177 168L175 171L173 168Z" fill="#a8e07a" fill-opacity="0.73"/>
+<path d="M203 229L206 234L203 239L200 234Z" fill="#c77dff" fill-opacity="0.59"/>
+<path d="M196 173L198 176L196 180L194 176Z" fill="#a8e07a" fill-opacity="0.65"/>
+<path d="M294 374L297 380L294 385L291 380Z" fill="#c77dff" fill-opacity="0.99"/>
+</svg>

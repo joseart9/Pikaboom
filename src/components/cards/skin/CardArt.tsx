@@ -5,6 +5,9 @@ export interface CardArtProps {
   art: string;
   tribe?: Tribe;
   spell?: boolean;
+  /** Long lists (collection, deck editor — UI-07): a lazily loaded `<img>` instead of an inline SVG `<image>`, so
+   *  off-screen art is not fetched until it scrolls near. Never used on the battlefield (drag/gesture surfaces). */
+  lazy?: boolean;
 }
 
 function hash(s: string): number {
@@ -30,7 +33,21 @@ const DEFAULT_GLYPH = "M12 4 A8 8 0 1 1 11.9 4 Z";
  * Card illustration: `public/cards/art/<art>.svg` when the key is registered in `CARD_ART_FILES` (ART_GUIDE.md),
  * else a generated placeholder — a gradient whose hue comes from the art key, with a tribe (or spell) glyph.
  */
-export function CardArt({ art, tribe, spell = false }: CardArtProps) {
+export function CardArt({ art, tribe, spell = false, lazy = false }: CardArtProps) {
+  if (CARD_ART_FILES.has(art) && lazy) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element -- static same-origin SVG; next/image adds nothing here
+      <img
+        src={cardArtUrl(art)}
+        alt=""
+        aria-hidden
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+        style={{ width: "100%", height: "100%", display: "block", objectFit: "cover" }}
+      />
+    );
+  }
   if (CARD_ART_FILES.has(art)) {
     return (
       <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden style={{ width: "100%", height: "100%", display: "block" }}>

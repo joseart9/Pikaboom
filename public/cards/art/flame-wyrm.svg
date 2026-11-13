@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="flame-wyrm-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1e0610"/><stop offset="0.55" stop-color="#5a1018"/><stop offset="1" stop-color="#1a0408"/></linearGradient><radialGradient id="flame-wyrm-r1" gradientUnits="userSpaceOnUse" cx="300" cy="320" r="260"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.4"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><linearGradient id="flame-wyrm-l2" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#4a1010"/><stop offset="1" stop-color="#2a0808"/></linearGradient><path id="flame-wyrm-p3" d="M416 390L400 419L390 392ZM356 412L340 441L330 414ZM287 412L259 430L263 401ZM227 372L195 364L220 348ZM236 303L233 270L256 287ZM299 286L301 253L322 273ZM338 261L315 237L344 236ZM337 222L304 226L320 202ZM300 194L276 217L275 188Z"/><clipPath id="flame-wyrm-c4"><use href="#flame-wyrm-p3"/></clipPath><clipPath id="flame-wyrm-c5"><use href="#flame-wyrm-p3" x="-3" y="-3"/></clipPath><path id="flame-wyrm-p6" d="M460 393C451 390 421 380 403 379C386 378 360 389 343 389C326 389 303 382 290 376C278 370 265 356 262 349C259 342 260 334 271 329C281 324 313 327 330 317C346 307 377 279 381 260C386 240 372 203 360 187C347 171 316 159 297 155C279 150 245 152 236 155C227 158 236 170 236 176C236 182 228 194 236 197C244 200 273 194 287 197C300 200 317 209 324 217C332 224 337 239 335 248C332 257 320 269 306 275C292 281 255 278 241 291C228 304 213 345 218 363C223 381 255 404 274 412C293 421 325 421 345 419C364 417 387 400 405 397C422 394 451 399 460 399C468 399 463 397 463 396C463 396 469 396 460 393Z"/><clipPath id="flame-wyrm-c7"><use href="#flame-wyrm-p6"/></clipPath><clipPath id="flame-wyrm-c8"><use href="#flame-wyrm-p6" x="-12" y="-10"/></clipPath><path id="flame-wyrm-p9" d="M345 399C335 396 300 394 285 387C270 381 251 364 248 354C244 343 250 324 261 317C272 309 306 313 322 304C338 294 362 272 366 256C370 240 359 210 348 197C337 183 311 173 294 168C277 164 246 167 236 168C226 170 228 174 228 176C228 178 227 182 236 184C245 185 275 180 290 184C305 187 327 197 336 207C345 218 353 240 350 252C346 264 329 281 314 288C299 296 263 293 251 303C238 314 228 344 232 358C236 373 262 393 279 401C296 408 333 409 343 409C354 410 349 406 349 405C350 403 355 401 345 399Z"/><clipPath id="flame-wyrm-ca"><use href="#flame-wyrm-p9"/></clipPath><clipPath id="flame-wyrm-cb"><use href="#flame-wyrm-p9" x="-3" y="-3"/></clipPath><path id="flame-wyrm-pc" d="M252 161C244 156 209 143 202 140C194 137 201 141 201 141C201 141 194 137 201 142C207 147 236 170 244 175C252 179 254 174 255 172C256 170 260 166 252 161ZM255 164C250 156 227 127 222 121C217 114 221 121 221 121C221 121 217 114 220 122C223 129 236 164 241 172C246 180 250 176 252 175C254 174 259 172 255 164ZM256 168C256 159 250 122 249 114C248 106 248 114 248 114C248 114 248 106 247 114C246 122 240 159 240 168C240 177 246 176 248 176C250 176 256 177 256 168ZM255 172C260 164 273 129 276 122C279 114 275 121 275 121C275 121 279 114 274 121C269 127 246 156 241 164C237 172 242 174 244 175C246 176 250 180 255 172Z"/><clipPath id="flame-wyrm-cd"><use href="#flame-wyrm-pc"/></clipPath><clipPath id="flame-wyrm-ce"><use href="#flame-wyrm-pc" x="-3" y="-3"/></clipPath><path id="flame-wyrm-pf" d="M236 160C242 156 255 140 263 136C272 131 288 132 292 131C296 130 292 130 292 130C292 130 297 129 292 129C287 129 270 125 261 128C251 131 233 144 228 148C223 153 225 156 226 158C228 160 231 163 236 160Z"/><clipPath id="flame-wyrm-cg"><use href="#flame-wyrm-pf"/></clipPath><clipPath id="flame-wyrm-ch"><use href="#flame-wyrm-pf" x="-2" y="-2"/></clipPath><path id="flame-wyrm-pi" d="M256 160C246 140 214 138 190 148L148 160C140 166 142 174 150 176L196 178L252 192C262 184 262 170 256 160Z"/><clipPath id="flame-wyrm-cj"><use href="#flame-wyrm-pi"/></clipPath><clipPath id="flame-wyrm-ck"><use href="#flame-wyrm-pi" x="-8" y="-6"/></clipPath><path id="flame-wyrm-pl" d="M244 192L198 192L156 206C150 212 154 220 162 220L204 216L246 206Z"/><clipPath id="flame-wyrm-cm"><use href="#flame-wyrm-pl"/></clipPath><clipPath id="flame-wyrm-cn"><use href="#flame-wyrm-pl" x="-5" y="-5"/></clipPath><radialGradient id="flame-wyrm-ro" gradientUnits="userSpaceOnUse" cx="200" cy="152" r="14"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="flame-wyrm-rp" gradientUnits="userSpaceOnUse" cx="140" cy="210" r="70"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="flame-wyrm-pq" d="M166 196C162 192 139 185 130 186C121 187 105 197 96 200C87 203 69 205 62 210C55 215 39 235 40 240C41 245 68 245 70 250C72 255 49 277 52 280C55 283 87 275 96 270C105 265 111 247 120 240C129 233 154 220 160 214C166 208 170 200 166 196Z"/><clipPath id="flame-wyrm-cr"><use href="#flame-wyrm-pq"/></clipPath><clipPath id="flame-wyrm-cs"><use href="#flame-wyrm-pq" x="-6" y="-6"/></clipPath><path id="flame-wyrm-pt" d="M162 202C157 201 138 198 128 200C118 202 100 212 96 218C92 224 95 238 100 240C105 242 121 235 130 230C139 226 155 214 160 210C165 206 167 204 162 202Z"/><clipPath id="flame-wyrm-cu"><use href="#flame-wyrm-pt"/></clipPath><clipPath id="flame-wyrm-cv"><use href="#flame-wyrm-pt" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#flame-wyrm-l0)"/>
+<circle cx="300" cy="320" r="260" fill="url(#flame-wyrm-r1)"/>
+<path d="M0 200L40 150L70 190L110 120L150 200L0 260ZM512 180L470 120L440 170L400 110L380 180L512 240Z" fill="#2a0810"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#flame-wyrm-l2)"/>
+<path d="M549 430C545 438 492 447 456 452C419 458 375 463 330 465C285 467 230 465 186 463C141 461 94 457 62 452C31 446 -6 437 -5 430C-3 423 44 417 72 409C100 402 120 390 164 387C209 383 287 387 339 391C392 394 443 399 478 405C513 412 553 422 549 430Z" fill="#ff7b00" fill-opacity="0.85"/>
+<path d="M467 430C472 435 457 442 431 445C405 449 352 450 313 451C273 452 225 455 192 454C159 452 138 446 114 442C91 438 56 435 50 430C45 425 59 419 84 415C108 411 155 409 195 407C235 406 290 403 325 404C360 406 381 413 405 417C428 421 463 425 467 430Z" fill="#ffe066" fill-opacity="0.7"/>
+<ellipse cx="300" cy="400" rx="160" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#flame-wyrm-p3" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#flame-wyrm-c4)">
+<use href="#flame-wyrm-p3" x="-3" y="-3" fill="#ffbe0b"/>
+<g clip-path="url(#flame-wyrm-c5)"><use href="#flame-wyrm-p3" x="2" y="2" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-wyrm-p6" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#flame-wyrm-c7)">
+<use href="#flame-wyrm-p6" x="-4" fill="#7a1410"/>
+<use href="#flame-wyrm-p6" x="-12" y="-10" fill="#f05a3a"/>
+<g clip-path="url(#flame-wyrm-c8)"><use href="#flame-wyrm-p6" x="7" y="7" fill="#c8301e"/></g>
+</g>
+<use href="#flame-wyrm-p9" fill="#d97a00"/>
+<g clip-path="url(#flame-wyrm-ca)">
+<use href="#flame-wyrm-p9" x="-3" y="-3" fill="#ffe8a0"/>
+<g clip-path="url(#flame-wyrm-cb)"><use href="#flame-wyrm-p9" x="2" y="2" fill="#ffbe0b"/></g>
+</g>
+<path d="M345 398L343 410" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M287 388L277 400" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M249 359L231 353" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M258 319L254 301" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M325 303L311 289" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M367 251L349 257" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M346 194L338 210" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M292 167L292 185" fill="none" stroke="#a85400" stroke-width="3" stroke-opacity="0.8"/>
+<use href="#flame-wyrm-pc" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#flame-wyrm-cd)">
+<use href="#flame-wyrm-pc" x="-3" y="-3" fill="#ffbe0b"/>
+<g clip-path="url(#flame-wyrm-ce)"><use href="#flame-wyrm-pc" x="2" y="2" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-wyrm-pf" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#flame-wyrm-cg)">
+<use href="#flame-wyrm-pf" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#flame-wyrm-ch)"><use href="#flame-wyrm-pf" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#flame-wyrm-pi" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#flame-wyrm-cj)">
+<use href="#flame-wyrm-pi" x="-4" fill="#7a1410"/>
+<use href="#flame-wyrm-pi" x="-8" y="-6" fill="#f05a3a"/>
+<g clip-path="url(#flame-wyrm-ck)"><use href="#flame-wyrm-pi" x="7" y="7" fill="#c8301e"/></g>
+</g>
+<use href="#flame-wyrm-pl" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#flame-wyrm-cm)">
+<use href="#flame-wyrm-pl" x="-4" fill="#7a1410"/>
+<use href="#flame-wyrm-pl" x="-5" y="-5" fill="#f05a3a"/>
+<g clip-path="url(#flame-wyrm-cn)"><use href="#flame-wyrm-pl" x="7" y="7" fill="#c8301e"/></g>
+</g>
+<path d="M196 178L244 190L246 204L204 214L160 216L192 190Z" fill="#3a0612"/>
+<circle cx="200" cy="152" r="14" fill="url(#flame-wyrm-ro)"/>
+<path d="M190 150L212 150L206 158L192 158Z" fill="#ffe066"/>
+<path d="M199 154A2 4 0 1 0 203 154A2 4 0 1 0 199 154Z" fill="#1d0842"/>
+<path d="M156 176L164 176L160 184Z" fill="#fff1c1"/>
+<path d="M170 177L178 177L174 185Z" fill="#fff1c1"/>
+<path d="M184 178L192 178L188 186Z" fill="#fff1c1"/>
+<path d="M166 214L174 214L170 206Z" fill="#fff1c1"/>
+<path d="M180 213L188 213L184 205Z" fill="#fff1c1"/>
+<circle cx="140" cy="210" r="70" fill="url(#flame-wyrm-rp)"/>
+<use href="#flame-wyrm-pq" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-wyrm-cr)">
+<use href="#flame-wyrm-pq" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#flame-wyrm-cs)"><use href="#flame-wyrm-pq" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-wyrm-pt" fill="#ffbe0b"/>
+<g clip-path="url(#flame-wyrm-cu)">
+<use href="#flame-wyrm-pt" x="-3" y="-3" fill="#fff8d6"/>
+<g clip-path="url(#flame-wyrm-cv)"><use href="#flame-wyrm-pt" x="2" y="2" fill="#ffe066"/></g>
+</g>
+<path d="M59 363L61 366L59 370L57 366Z" fill="#ffbe0b" fill-opacity="0.98"/>
+<path d="M67 276L69 280L67 283L65 280Z" fill="#ff7b00" fill-opacity="0.89"/>
+<path d="M272 400L275 406L272 412L269 406Z" fill="#ffe066" fill-opacity="0.97"/>
+<path d="M361 361L365 369L361 377L356 369Z" fill="#ffbe0b" fill-opacity="0.79"/>
+<path d="M97 366L99 369L97 372L96 369Z" fill="#ff7b00" fill-opacity="0.76"/>
+<path d="M253 397L257 404L253 411L249 404Z" fill="#ffe066" fill-opacity="0.9"/>
+<path d="M131 319L134 324L131 329L128 324Z" fill="#ffbe0b" fill-opacity="0.57"/>
+<path d="M62 308L64 312L62 315L60 312Z" fill="#ff7b00" fill-opacity="0.57"/>
+<path d="M396 202L400 209L396 216L392 209Z" fill="#ffe066" fill-opacity="0.93"/>
+<path d="M79 398L83 406L79 413L74 406Z" fill="#ffbe0b" fill-opacity="0.74"/>
+<path d="M77 182L80 186L77 190L75 186Z" fill="#ff7b00" fill-opacity="0.94"/>
+<path d="M60 358L63 364L60 370L57 364Z" fill="#ffe066" fill-opacity="0.93"/>
+<path d="M383 141L387 149L383 157L379 149Z" fill="#ffbe0b" fill-opacity="0.95"/>
+<path d="M413 373L416 378L413 382L411 378Z" fill="#ff7b00" fill-opacity="0.82"/>
+<path d="M392 289L395 295L392 300L389 295Z" fill="#ffe066" fill-opacity="0.52"/>
+<path d="M314 122L318 129L314 137L310 129Z" fill="#ffbe0b" fill-opacity="0.72"/>
+</svg>

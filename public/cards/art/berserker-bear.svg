@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="berserker-bear-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1a0a14"/><stop offset="0.55" stop-color="#4a1a20"/><stop offset="1" stop-color="#1e0e12"/></linearGradient><radialGradient id="berserker-bear-r1" gradientUnits="userSpaceOnUse" cx="256" cy="220" r="270"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.2025"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><linearGradient id="berserker-bear-l2" gradientUnits="userSpaceOnUse" x1="0" y1="342" x2="0" y2="512"><stop offset="0" stop-color="#3e1a1c"/><stop offset="1" stop-color="#1a0a10"/></linearGradient><radialGradient id="berserker-bear-r3" gradientUnits="userSpaceOnUse" cx="256" cy="400" r="180"><stop offset="0" stop-color="#ff7b5a" stop-opacity="0.55"/><stop offset="1" stop-color="#ff7b5a" stop-opacity="0"/></radialGradient><radialGradient id="berserker-bear-r4" gradientUnits="userSpaceOnUse" cx="256" cy="230" r="200"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.5"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.225"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><path id="berserker-bear-p5" d="M186 331C179 338 179 353 178 361C176 369 171 375 173 383C174 392 180 413 187 415C195 418 213 406 219 401C226 395 227 387 230 379C234 372 244 360 242 349C241 339 232 314 223 312C215 309 192 323 186 331Z"/><clipPath id="berserker-bear-c6"><use href="#berserker-bear-p5"/></clipPath><clipPath id="berserker-bear-c7"><use href="#berserker-bear-p5" x="-8" y="-8"/></clipPath><path id="berserker-bear-p8" d="M272 351C272 361 282 373 286 380C290 387 290 395 297 401C303 406 321 418 329 415C336 413 342 392 343 383C345 375 340 368 338 360C336 352 335 336 328 329C320 322 297 309 289 312C281 315 273 341 272 351Z"/><clipPath id="berserker-bear-c9"><use href="#berserker-bear-p8"/></clipPath><clipPath id="berserker-bear-ca"><use href="#berserker-bear-p8" x="-8" y="-8"/></clipPath><path id="berserker-bear-pb" d="M190 220C198 202 209 184 224 178C239 172 274 172 290 178C306 184 323 202 330 220C338 238 341 279 340 300C339 321 335 350 322 362C309 374 276 380 256 380C236 380 203 374 190 362C177 350 172 321 172 300C172 279 182 238 190 220Z"/><clipPath id="berserker-bear-cc"><use href="#berserker-bear-pb"/></clipPath><clipPath id="berserker-bear-cd"><use href="#berserker-bear-pb" x="-18" y="-16"/></clipPath><path id="berserker-bear-pe" d="M220 250C227 237 245 236 256 236C267 236 289 239 296 252C304 265 312 303 306 320C300 337 271 364 256 364C241 364 213 337 208 320C203 303 213 263 220 250Z"/><clipPath id="berserker-bear-cf"><use href="#berserker-bear-pe"/></clipPath><clipPath id="berserker-bear-cg"><use href="#berserker-bear-pe" x="-8" y="-8"/></clipPath><path id="berserker-bear-ph" d="M219 188C212 179 186 173 175 164C164 155 155 134 146 128C137 122 123 120 118 124C113 128 110 141 114 152C118 163 134 184 145 196C156 208 177 228 189 232C201 237 222 232 226 225C231 219 227 197 219 188Z"/><clipPath id="berserker-bear-ci"><use href="#berserker-bear-ph"/></clipPath><clipPath id="berserker-bear-cj"><use href="#berserker-bear-ph" x="-8" y="-8"/></clipPath><path id="berserker-bear-pk" d="M324 233C337 229 357 210 368 199C380 188 395 169 399 159C404 149 401 134 397 131C392 127 377 128 369 133C360 138 351 157 340 165C329 173 303 178 296 187C288 196 283 218 287 224C292 231 312 237 324 233Z"/><clipPath id="berserker-bear-cl"><use href="#berserker-bear-pk"/></clipPath><clipPath id="berserker-bear-cm"><use href="#berserker-bear-pk" x="-8" y="-8"/></clipPath><path id="berserker-bear-pn" d="M102 136A26 22 0 1 0 154 136A26 22 0 1 0 102 136Z"/><clipPath id="berserker-bear-co"><use href="#berserker-bear-pn"/></clipPath><clipPath id="berserker-bear-cp"><use href="#berserker-bear-pn" x="-5" y="-5"/></clipPath><path id="berserker-bear-pq" d="M362 142A26 22 0 1 0 414 142A26 22 0 1 0 362 142Z"/><clipPath id="berserker-bear-cr"><use href="#berserker-bear-pq"/></clipPath><clipPath id="berserker-bear-cs"><use href="#berserker-bear-pq" x="-5" y="-5"/></clipPath><path id="berserker-bear-pt" d="M120 119C116 118 100 114 96 113C93 112 96 114 96 114C96 114 93 113 96 115C99 117 112 127 116 129C120 130 122 127 123 126C123 125 124 121 120 119Z"/><clipPath id="berserker-bear-cu"><use href="#berserker-bear-pt"/></clipPath><clipPath id="berserker-bear-cv"><use href="#berserker-bear-pt" x="-2" y="-2"/></clipPath><path id="berserker-bear-pw" d="M122 121C120 117 108 104 105 101C102 99 104 102 104 102C104 102 102 99 103 103C105 106 111 123 114 127C116 131 119 129 121 128C122 127 125 125 122 121Z"/><clipPath id="berserker-bear-cx"><use href="#berserker-bear-pw"/></clipPath><clipPath id="berserker-bear-cy"><use href="#berserker-bear-pw" x="-2" y="-2"/></clipPath><path id="berserker-bear-pz" d="M123 124C123 119 120 100 119 96C118 92 118 96 118 96C118 96 118 92 117 96C116 100 113 119 113 124C113 129 117 129 118 129C120 129 123 129 123 124Z"/><clipPath id="berserker-bear-c10"><use href="#berserker-bear-pz"/></clipPath><clipPath id="berserker-bear-c11"><use href="#berserker-bear-pz" x="-2" y="-2"/></clipPath><path id="berserker-bear-p12" d="M122 127C125 122 131 104 133 101C134 97 132 100 132 100C132 100 134 96 131 99C128 103 116 117 114 121C111 126 114 128 115 128C117 129 120 131 122 127Z"/><clipPath id="berserker-bear-c13"><use href="#berserker-bear-p12"/></clipPath><clipPath id="berserker-bear-c14"><use href="#berserker-bear-p12" x="-2" y="-2"/></clipPath><path id="berserker-bear-p15" d="M400 135C404 133 417 125 420 123C423 121 420 122 420 122C420 122 423 121 420 121C416 122 400 124 396 125C392 127 393 130 393 132C394 133 396 136 400 135Z"/><clipPath id="berserker-bear-c16"><use href="#berserker-bear-p15"/></clipPath><clipPath id="berserker-bear-c17"><use href="#berserker-bear-p15" x="-2" y="-2"/></clipPath><path id="berserker-bear-p18" d="M402 133C405 129 411 112 413 109C414 105 412 108 412 108C412 108 414 105 411 107C408 110 396 123 394 127C391 131 394 133 395 134C397 135 400 137 402 133Z"/><clipPath id="berserker-bear-c19"><use href="#berserker-bear-p18"/></clipPath><clipPath id="berserker-bear-c1a"><use href="#berserker-bear-p18" x="-2" y="-2"/></clipPath><path id="berserker-bear-p1b" d="M403 130C403 125 400 106 399 102C398 98 398 102 398 102C398 102 398 98 397 102C396 106 393 125 393 130C393 135 397 135 398 135C400 135 403 135 403 130Z"/><clipPath id="berserker-bear-c1c"><use href="#berserker-bear-p1b"/></clipPath><clipPath id="berserker-bear-c1d"><use href="#berserker-bear-p1b" x="-2" y="-2"/></clipPath><path id="berserker-bear-p1e" d="M402 127C400 123 388 109 385 105C382 102 384 106 384 106C384 106 382 103 383 107C385 110 391 128 394 133C396 137 399 135 401 134C402 134 405 132 402 127Z"/><clipPath id="berserker-bear-c1f"><use href="#berserker-bear-p1e"/></clipPath><clipPath id="berserker-bear-c1g"><use href="#berserker-bear-p1e" x="-2" y="-2"/></clipPath><path id="berserker-bear-p1h" d="M186 136A20 20 0 1 0 226 136A20 20 0 1 0 186 136Z"/><clipPath id="berserker-bear-c1i"><use href="#berserker-bear-p1h"/></clipPath><clipPath id="berserker-bear-c1j"><use href="#berserker-bear-p1h" x="-5" y="-5"/></clipPath><path id="berserker-bear-p1k" d="M260 128A20 20 0 1 0 300 128A20 20 0 1 0 260 128Z"/><clipPath id="berserker-bear-c1l"><use href="#berserker-bear-p1k"/></clipPath><clipPath id="berserker-bear-c1m"><use href="#berserker-bear-p1k" x="-5" y="-5"/></clipPath><path id="berserker-bear-p1n" d="M186 174C186 164 189 148 198 140C207 132 227 123 242 122C257 121 281 128 290 136C300 144 303 161 302 172C301 183 295 199 286 206C277 213 258 218 244 218C230 218 209 213 200 206C191 199 186 184 186 174Z"/><clipPath id="berserker-bear-c1o"><use href="#berserker-bear-p1n"/></clipPath><clipPath id="berserker-bear-c1p"><use href="#berserker-bear-p1n" x="-12" y="-10"/></clipPath><path id="berserker-bear-p1q" d="M182 168C190 150 214 148 232 156L250 186C242 210 210 214 190 204C180 194 178 180 182 168Z"/><clipPath id="berserker-bear-c1r"><use href="#berserker-bear-p1q"/></clipPath><clipPath id="berserker-bear-c1s"><use href="#berserker-bear-p1q" x="-5" y="-5"/></clipPath><path id="berserker-bear-p1t" d="M190 176C200 170 220 172 232 182C226 200 206 206 194 198Z"/><clipPath id="berserker-bear-c1u"><use href="#berserker-bear-p1t"/></clipPath><path id="berserker-bear-p1w" d="M196 194C204 192 214 194 220 198C214 202 202 202 196 194Z"/><clipPath id="berserker-bear-c1x"><use href="#berserker-bear-p1w"/></clipPath><clipPath id="berserker-bear-c1y"><use href="#berserker-bear-p1w" x="-3" y="-3"/></clipPath><radialGradient id="berserker-bear-r1z" gradientUnits="userSpaceOnUse" cx="232" cy="152" r="18"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><radialGradient id="berserker-bear-r20" gradientUnits="userSpaceOnUse" cx="266" cy="150" r="18"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#berserker-bear-l0)"/>
+<circle cx="256" cy="220" r="270" fill="url(#berserker-bear-r1)"/>
+<path d="M65 521C71 468 71 279 68 199C65 119 52 23 45 -12C37 -48 25 -36 18 -35C10 -34 -4 -43 -5 -8C-6 28 12 122 12 201C12 280 -8 466 -5 519C-2 572 18 555 29 555C39 555 59 574 65 521Z" fill="#140610"/>
+<path d="M523 519C526 471 507 319 506 240C505 161 521 33 519 -8C517 -50 502 -36 494 -37C486 -37 472 -53 465 -12C458 30 448 160 446 240C444 320 443 474 449 521C455 569 476 557 487 557C498 557 520 566 523 519Z" fill="#140610"/>
+<path d="M0 378Q256 342 512 378V512H0Z" fill="url(#berserker-bear-l2)"/>
+<ellipse cx="256" cy="400" rx="180" ry="50" fill="url(#berserker-bear-r3)"/>
+<circle cx="256" cy="230" r="200" fill="url(#berserker-bear-r4)"/>
+<ellipse cx="256" cy="398" rx="130" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#berserker-bear-p5" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-c6)">
+<use href="#berserker-bear-p5" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-p5" x="-8" y="-8" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-c7)"><use href="#berserker-bear-p5" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-p8" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-c9)">
+<use href="#berserker-bear-p8" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-p8" x="-8" y="-8" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-ca)"><use href="#berserker-bear-p8" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-pb" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-cc)">
+<use href="#berserker-bear-pb" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-pb" x="-18" y="-16" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-cd)"><use href="#berserker-bear-pb" x="10" y="10" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-pe" fill="#a8804e"/>
+<g clip-path="url(#berserker-bear-cf)">
+<use href="#berserker-bear-pe" x="-8" y="-8" fill="#f2d4a8"/>
+<g clip-path="url(#berserker-bear-cg)"><use href="#berserker-bear-pe" x="5" y="5" fill="#d8b080"/></g>
+</g>
+<use href="#berserker-bear-ph" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-ci)">
+<use href="#berserker-bear-ph" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-ph" x="-8" y="-8" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-cj)"><use href="#berserker-bear-ph" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-pk" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-cl)">
+<use href="#berserker-bear-pk" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-pk" x="-8" y="-8" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-cm)"><use href="#berserker-bear-pk" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-pn" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-co)">
+<use href="#berserker-bear-pn" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-pn" x="-5" y="-5" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-cp)"><use href="#berserker-bear-pn" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-pq" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-cr)">
+<use href="#berserker-bear-pq" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-pq" x="-5" y="-5" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-cs)"><use href="#berserker-bear-pq" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-pt" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-cu)">
+<use href="#berserker-bear-pt" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-cv)"><use href="#berserker-bear-pt" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-pw" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-cx)">
+<use href="#berserker-bear-pw" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-cy)"><use href="#berserker-bear-pw" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-pz" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c10)">
+<use href="#berserker-bear-pz" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-c11)"><use href="#berserker-bear-pz" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-p12" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c13)">
+<use href="#berserker-bear-p12" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-c14)"><use href="#berserker-bear-p12" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-p15" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c16)">
+<use href="#berserker-bear-p15" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-c17)"><use href="#berserker-bear-p15" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-p18" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c19)">
+<use href="#berserker-bear-p18" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-c1a)"><use href="#berserker-bear-p18" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-p1b" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c1c)">
+<use href="#berserker-bear-p1b" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-c1d)"><use href="#berserker-bear-p1b" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#berserker-bear-p1e" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c1f)">
+<use href="#berserker-bear-p1e" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#berserker-bear-c1g)"><use href="#berserker-bear-p1e" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<path d="M222 200L238 226M236 194L252 222M292 200L278 226" fill="none" stroke="#ff4d6d" stroke-width="7" stroke-opacity="0.9"/>
+<path d="M236 290L268 314M244 278L262 326" fill="none" stroke="#7a3a22" stroke-width="4" stroke-opacity="0.9"/>
+<use href="#berserker-bear-p1h" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-c1i)">
+<use href="#berserker-bear-p1h" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-p1h" x="-5" y="-5" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-c1j)"><use href="#berserker-bear-p1h" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-p1k" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-c1l)">
+<use href="#berserker-bear-p1k" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-p1k" x="-5" y="-5" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-c1m)"><use href="#berserker-bear-p1k" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-p1n" fill="#ff4d6d" stroke-width="14"/>
+<g clip-path="url(#berserker-bear-c1o)">
+<use href="#berserker-bear-p1n" x="-6" fill="#5c3a1f"/>
+<use href="#berserker-bear-p1n" x="-12" y="-10" fill="#b8804e"/>
+<g clip-path="url(#berserker-bear-c1p)"><use href="#berserker-bear-p1n" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#berserker-bear-p1q" fill="#a8804e" stroke-width="10"/>
+<g clip-path="url(#berserker-bear-c1r)">
+<use href="#berserker-bear-p1q" x="-5" y="-5" fill="#f2d4a8"/>
+<g clip-path="url(#berserker-bear-c1s)"><use href="#berserker-bear-p1q" x="4" y="4" fill="#d8b080"/></g>
+</g>
+<use href="#berserker-bear-p1t" fill="#2a0610" stroke-width="6"/>
+<g clip-path="url(#berserker-bear-c1u)">
+<use href="#berserker-bear-p1t" x="-2" y="-2" fill="#4a0a1a"/>
+</g>
+<path d="M196 176L204 177L199 188Z" fill="#fff8ea"/>
+<path d="M218 176L226 179L220 190Z" fill="#fff8ea"/>
+<path d="M200 200L208 199L205 190Z" fill="#fff8ea"/>
+<use href="#berserker-bear-p1w" fill="#c94d68" stroke-width="8"/>
+<g clip-path="url(#berserker-bear-c1x)">
+<use href="#berserker-bear-p1w" x="-3" y="-3" fill="#ffb3c1"/>
+<g clip-path="url(#berserker-bear-c1y)"><use href="#berserker-bear-p1w" x="2" y="2" fill="#ff7a93"/></g>
+</g>
+<path d="M176 160A10 7 0 1 0 196 160A10 7 0 1 0 176 160Z" fill="#1d0842"/>
+<circle cx="232" cy="152" r="18" fill="url(#berserker-bear-r1z)"/>
+<circle cx="266" cy="150" r="18" fill="url(#berserker-bear-r20)"/>
+<path d="M226 154A6 5 0 1 0 238 154A6 5 0 1 0 226 154Z" fill="#ffe066"/>
+<path d="M260 152A6 5 0 1 0 272 152A6 5 0 1 0 260 152Z" fill="#ffe066"/>
+<path d="M218 142L242 150M280 138L258 148" fill="none" stroke-width="5"/>
+<path d="M258 132L276 170" fill="none" stroke="#ffb3c1" stroke-width="4" stroke-opacity="0.85"/>
+<path d="M226 132L232 148M246 128L248 144" fill="none" stroke="#ff4d6d" stroke-width="5" stroke-opacity="0.9"/>
+<path d="M160 196L130 212M156 214L132 238M170 226L156 252" fill="none" stroke="#ffbe0b" stroke-width="5" stroke-opacity="0.7"/>
+<path d="M144 104L147 108L144 112L142 108Z" fill="#ff4d6d" fill-opacity="0.52"/>
+<path d="M215 166L217 171L215 175L212 171Z" fill="#ffbe0b" fill-opacity="0.56"/>
+<path d="M159 66L162 72L159 77L156 72Z" fill="#ff4d6d" fill-opacity="0.4"/>
+<path d="M305 290L309 297L305 304L301 297Z" fill="#ffbe0b" fill-opacity="0.64"/>
+<path d="M338 71L342 78L338 84L335 78Z" fill="#ff4d6d" fill-opacity="0.82"/>
+<path d="M362 142L365 148L362 153L359 148Z" fill="#ffbe0b" fill-opacity="0.45"/>
+<path d="M174 84L176 87L174 91L172 87Z" fill="#ff4d6d" fill-opacity="0.71"/>
+<path d="M162 168L164 171L162 175L160 171Z" fill="#ffbe0b" fill-opacity="0.56"/>
+<path d="M310 153L314 160L310 167L306 160Z" fill="#ff4d6d" fill-opacity="0.77"/>
+<path d="M308 159L311 165L308 171L304 165Z" fill="#ffbe0b" fill-opacity="0.67"/>
+<path d="M386 83L388 86L386 90L385 86Z" fill="#ff4d6d" fill-opacity="0.79"/>
+<path d="M176 66L180 72L176 78L173 72Z" fill="#ffbe0b" fill-opacity="0.62"/>
+<path d="M142 107L145 113L142 118L139 113Z" fill="#ff4d6d" fill-opacity="0.51"/>
+<path d="M160 259L163 264L160 270L157 264Z" fill="#ffbe0b" fill-opacity="0.46"/>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="charging-rhino-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#3a2a1e"/><stop offset="0.55" stop-color="#6a5a2e"/><stop offset="1" stop-color="#2a2416"/></linearGradient><radialGradient id="charging-rhino-r1" gradientUnits="userSpaceOnUse" cx="240" cy="200" r="260"><stop offset="0" stop-color="#ffe0a0" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffe0a0" stop-opacity="0.135"/><stop offset="1" stop-color="#ffe0a0" stop-opacity="0"/></radialGradient><linearGradient id="charging-rhino-l2" gradientUnits="userSpaceOnUse" x1="0" y1="312" x2="0" y2="512"><stop offset="0" stop-color="#6a6a30"/><stop offset="1" stop-color="#3a4a22"/></linearGradient><radialGradient id="charging-rhino-r3" gradientUnits="userSpaceOnUse" cx="250" cy="400" r="180"><stop offset="0" stop-color="#ffe0a0" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe0a0" stop-opacity="0"/></radialGradient><path id="charging-rhino-p4" d="M214 308C206 313 197 333 190 339C183 345 170 344 166 348C161 352 156 361 158 364C159 368 167 373 174 372C182 372 197 367 206 361C216 355 234 340 238 332C243 324 241 311 238 308C234 304 221 304 214 308Z"/><clipPath id="charging-rhino-c5"><use href="#charging-rhino-p4"/></clipPath><clipPath id="charging-rhino-c6"><use href="#charging-rhino-p4" x="-6" y="-6"/></clipPath><path id="charging-rhino-p7" d="M337 337C343 345 365 353 373 360C381 367 386 381 391 385C396 389 406 391 409 389C412 387 415 378 413 371C411 364 403 349 395 340C387 330 372 311 363 307C354 302 338 305 335 309C331 314 332 330 337 337Z"/><clipPath id="charging-rhino-c8"><use href="#charging-rhino-p7"/></clipPath><clipPath id="charging-rhino-c9"><use href="#charging-rhino-p7" x="-6" y="-6"/></clipPath><path id="charging-rhino-pa" d="M393 257C397 256 409 249 413 249C418 249 421 258 422 259C424 261 425 260 425 260C426 259 427 259 426 257C424 254 420 244 415 243C409 242 395 246 391 247C387 249 387 252 387 253C388 255 389 257 393 257Z"/><clipPath id="charging-rhino-cb"><use href="#charging-rhino-pa"/></clipPath><clipPath id="charging-rhino-cc"><use href="#charging-rhino-pa" x="-2" y="-2"/></clipPath><path id="charging-rhino-pd" d="M196 236C208 223 240 209 262 204C284 200 321 201 340 206C360 211 383 225 392 238C401 252 405 281 402 296C399 311 389 330 372 338C355 346 314 349 290 348C266 347 230 343 214 334C198 325 187 305 184 290C181 275 184 249 196 236Z"/><clipPath id="charging-rhino-ce"><use href="#charging-rhino-pd"/></clipPath><clipPath id="charging-rhino-cf"><use href="#charging-rhino-pd" x="-16" y="-14"/></clipPath><path id="charging-rhino-pg" d="M229 313C221 319 208 342 200 351C193 360 181 366 178 373C174 379 174 391 177 394C180 397 191 398 198 395C205 392 214 381 224 373C233 365 254 349 259 339C264 330 262 315 257 311C253 307 238 307 229 313Z"/><clipPath id="charging-rhino-ch"><use href="#charging-rhino-pg"/></clipPath><clipPath id="charging-rhino-ci"><use href="#charging-rhino-pg" x="-7" y="-7"/></clipPath><path id="charging-rhino-pj" d="M346 337C350 347 370 362 378 371C385 381 391 396 397 401C403 407 413 409 417 407C421 405 425 395 423 387C421 378 412 364 406 353C400 341 390 318 382 311C373 304 356 302 351 306C346 310 342 327 346 337Z"/><clipPath id="charging-rhino-ck"><use href="#charging-rhino-pj"/></clipPath><clipPath id="charging-rhino-cl"><use href="#charging-rhino-pj" x="-7" y="-7"/></clipPath><path id="charging-rhino-pm" d="M166 388A18 11 0 1 0 202 388A18 11 0 1 0 166 388Z"/><clipPath id="charging-rhino-cn"><use href="#charging-rhino-pm"/></clipPath><clipPath id="charging-rhino-co"><use href="#charging-rhino-pm" x="-3" y="-3"/></clipPath><path id="charging-rhino-pp" d="M394 398A18 11 0 1 0 430 398A18 11 0 1 0 394 398Z"/><clipPath id="charging-rhino-cq"><use href="#charging-rhino-pp"/></clipPath><clipPath id="charging-rhino-cr"><use href="#charging-rhino-pp" x="-3" y="-3"/></clipPath><path id="charging-rhino-ps" d="M212 232L222 196L238 236Z"/><clipPath id="charging-rhino-ct"><use href="#charging-rhino-ps"/></clipPath><clipPath id="charging-rhino-cu"><use href="#charging-rhino-ps" x="-5" y="-5"/></clipPath><path id="charging-rhino-pv" d="M232 236C224 230 203 239 190 244C177 249 158 262 146 270C134 278 115 292 108 300C101 308 99 320 102 326C105 332 115 339 126 340C137 342 163 339 178 336C193 333 214 326 224 318C234 310 241 296 242 284C243 272 240 242 232 236Z"/><clipPath id="charging-rhino-cw"><use href="#charging-rhino-pv"/></clipPath><clipPath id="charging-rhino-cx"><use href="#charging-rhino-pv" x="-10" y="-10"/></clipPath><path id="charging-rhino-py" d="M136 295C134 286 118 271 113 259C107 248 101 226 99 220C97 214 98 220 98 220C98 220 98 213 97 220C96 227 91 251 91 265C92 278 95 301 100 309C105 317 120 322 125 320C130 318 137 304 136 295Z"/><clipPath id="charging-rhino-cz"><use href="#charging-rhino-py"/></clipPath><clipPath id="charging-rhino-c10"><use href="#charging-rhino-py" x="-5" y="-5"/></clipPath><path id="charging-rhino-p11" d="M160 276C160 271 154 262 152 257C149 251 144 242 143 240C141 237 142 240 142 240C142 240 141 237 141 240C141 243 140 253 140 259C140 265 138 276 140 280C142 284 149 288 152 288C155 287 160 281 160 276Z"/><clipPath id="charging-rhino-c12"><use href="#charging-rhino-p11"/></clipPath><clipPath id="charging-rhino-c13"><use href="#charging-rhino-p11" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#charging-rhino-l0)"/>
+<circle cx="240" cy="200" r="260" fill="url(#charging-rhino-r1)"/>
+<path d="M0 310L40 280L140 276L170 300L512 300V330H0Z" fill="#4a3e24"/>
+<path d="M436 320C437 312 439 282 437 269C435 257 426 243 424 239C421 234 420 236 419 236C417 237 415 236 416 241C418 247 426 259 427 271C428 282 424 311 424 320C424 328 428 326 430 326C432 326 435 329 436 320Z" fill="#2a2416"/>
+<path d="M473 230C471 233 468 235 462 239C456 243 448 251 435 252C422 253 395 250 382 247C368 245 358 240 354 236C349 232 352 228 357 224C363 221 373 216 386 215C398 213 416 214 431 215C445 215 468 216 475 218C482 221 475 227 473 230Z" fill="#2a3a1e"/>
+<path d="M0 348Q256 312 512 348V512H0Z" fill="url(#charging-rhino-l2)"/>
+<ellipse cx="250" cy="400" rx="180" ry="50" fill="url(#charging-rhino-r3)"/>
+<path d="M30 400L90 390M300 450L380 438M120 470L190 462" fill="none" stroke="#2a3a1e" stroke-width="4" stroke-opacity="0.6"/>
+<path d="M503 370C501 379 484 387 474 394C463 401 454 411 440 412C426 414 401 412 389 405C378 398 367 380 369 370C371 360 389 350 401 343C413 336 426 327 440 326C454 325 476 330 486 338C497 345 505 361 503 370Z" fill="#cdbba5" fill-opacity="0.55"/>
+<path d="M450 392C450 399 439 408 430 413C422 418 411 421 400 421C389 422 376 420 367 415C358 410 347 400 347 392C347 384 357 373 366 368C375 363 389 359 400 360C411 360 422 365 431 371C439 376 450 385 450 392Z" fill="#cdbba5" fill-opacity="0.55"/>
+<path d="M518 330C518 336 503 343 495 348C487 353 479 360 470 360C461 360 452 353 444 348C436 343 422 337 421 330C421 323 431 313 439 308C447 303 460 299 470 299C480 300 489 306 497 311C505 316 518 324 518 330Z" fill="#cdbba5" fill-opacity="0.55"/>
+<path d="M407 404C406 409 398 415 392 418C386 421 378 423 372 423C366 422 359 419 354 416C350 413 346 409 345 404C345 399 346 392 351 389C355 386 364 387 372 387C380 386 391 383 397 386C403 389 408 399 407 404Z" fill="#cdbba5" fill-opacity="0.55"/>
+<path d="M400 230H480M410 260H500M396 290H470" fill="none" stroke="#fff1c1" stroke-width="6" stroke-opacity="0.5"/>
+<ellipse cx="250" cy="400" rx="150" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#charging-rhino-p4" fill="#6b5a4a" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-c5)">
+<use href="#charging-rhino-p4" x="-6" y="-6" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-c6)"><use href="#charging-rhino-p4" x="7" y="7" fill="#8a7a68"/></g>
+</g>
+<use href="#charging-rhino-p7" fill="#6b5a4a" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-c8)">
+<use href="#charging-rhino-p7" x="-6" y="-6" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-c9)"><use href="#charging-rhino-p7" x="7" y="7" fill="#8a7a68"/></g>
+</g>
+<use href="#charging-rhino-pa" fill="#6b5a4a" stroke-width="8"/>
+<g clip-path="url(#charging-rhino-cb)">
+<use href="#charging-rhino-pa" x="-2" y="-2" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-cc)"><use href="#charging-rhino-pa" x="7" y="7" fill="#a39280"/></g>
+</g>
+<use href="#charging-rhino-pd" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-ce)">
+<use href="#charging-rhino-pd" x="-4" fill="#6b5a4a"/>
+<use href="#charging-rhino-pd" x="-16" y="-14" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-cf)"><use href="#charging-rhino-pd" x="10" y="10" fill="#a39280"/></g>
+</g>
+<path d="M246 214C262 260 262 300 244 338M330 210C348 256 348 300 334 344" fill="none" stroke-width="5" stroke-opacity="0.7"/>
+<path d="M290 230C300 250 300 270 292 290" fill="none" stroke-width="3" stroke-opacity="0.35"/>
+<use href="#charging-rhino-pg" fill="#6b5a4a" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-ch)">
+<use href="#charging-rhino-pg" x="-7" y="-7" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-ci)"><use href="#charging-rhino-pg" x="7" y="7" fill="#a39280"/></g>
+</g>
+<use href="#charging-rhino-pj" fill="#6b5a4a" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-ck)">
+<use href="#charging-rhino-pj" x="-7" y="-7" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-cl)"><use href="#charging-rhino-pj" x="7" y="7" fill="#a39280"/></g>
+</g>
+<use href="#charging-rhino-pm" fill="#574a3c" stroke-width="8"/>
+<g clip-path="url(#charging-rhino-cn)">
+<use href="#charging-rhino-pm" x="-3" y="-3" fill="#b0a08a"/>
+<g clip-path="url(#charging-rhino-co)"><use href="#charging-rhino-pm" x="2" y="2" fill="#8a7a68"/></g>
+</g>
+<use href="#charging-rhino-pp" fill="#574a3c" stroke-width="8"/>
+<g clip-path="url(#charging-rhino-cq)">
+<use href="#charging-rhino-pp" x="-3" y="-3" fill="#b0a08a"/>
+<g clip-path="url(#charging-rhino-cr)"><use href="#charging-rhino-pp" x="2" y="2" fill="#8a7a68"/></g>
+</g>
+<use href="#charging-rhino-ps" fill="#6b5a4a" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-ct)">
+<use href="#charging-rhino-ps" x="-5" y="-5" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-cu)"><use href="#charging-rhino-ps" x="7" y="7" fill="#a39280"/></g>
+</g>
+<use href="#charging-rhino-pv" fill="#6b5a4a" stroke-width="12"/>
+<g clip-path="url(#charging-rhino-cw)">
+<use href="#charging-rhino-pv" x="-10" y="-10" fill="#cdbba5"/>
+<g clip-path="url(#charging-rhino-cx)"><use href="#charging-rhino-pv" x="7" y="7" fill="#a39280"/></g>
+</g>
+<path d="M204 252C210 280 206 306 194 330" fill="none" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#charging-rhino-py" fill="#a89f8a" stroke-width="10"/>
+<g clip-path="url(#charging-rhino-cz)">
+<use href="#charging-rhino-py" x="-5" y="-5" fill="#fffaf0"/>
+<g clip-path="url(#charging-rhino-c10)"><use href="#charging-rhino-py" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<use href="#charging-rhino-p11" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#charging-rhino-c12)">
+<use href="#charging-rhino-p11" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#charging-rhino-c13)"><use href="#charging-rhino-p11" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<path d="M109 322A3 4 0 1 0 115 322A3 4 0 1 0 109 322Z" fill="#1d0842"/>
+<path d="M166 290A6 5 0 1 0 178 290A6 5 0 1 0 166 290Z" fill="#1d0842"/>
+<path d="M168 288A2 2 0 1 0 172 288A2 2 0 1 0 168 288Z" fill="#ffffff"/>
+<path d="M160 280L182 286" fill="none" stroke-width="4"/>
+<circle cx="372" cy="408" r="2" fill="#cdbba5" fill-opacity="0.83"/>
+<circle cx="456" cy="395" r="2" fill="#cdbba5" fill-opacity="0.87"/>
+<circle cx="361" cy="391" r="3" fill="#cdbba5" fill-opacity="0.73"/>
+<circle cx="385" cy="415" r="2" fill="#cdbba5" fill-opacity="0.79"/>
+<circle cx="443" cy="369" r="3" fill="#cdbba5" fill-opacity="0.86"/>
+<circle cx="478" cy="376" r="3" fill="#cdbba5" fill-opacity="0.58"/>
+<circle cx="448" cy="367" r="2" fill="#cdbba5" fill-opacity="0.85"/>
+<circle cx="373" cy="382" r="2" fill="#cdbba5" fill-opacity="0.53"/>
+<circle cx="473" cy="396" r="2" fill="#cdbba5" fill-opacity="0.53"/>
+<circle cx="418" cy="365" r="3" fill="#cdbba5" fill-opacity="0.62"/>
+</svg>

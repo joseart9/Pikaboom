@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="bone-wall-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0e0a20"/><stop offset="0.55" stop-color="#22184a"/><stop offset="1" stop-color="#100a22"/></linearGradient><radialGradient id="bone-wall-r1" gradientUnits="userSpaceOnUse" cx="256" cy="250" r="280"><stop offset="0" stop-color="#8e5bd8" stop-opacity="0.35"/><stop offset="0.45" stop-color="#8e5bd8" stop-opacity="0.1575"/><stop offset="1" stop-color="#8e5bd8" stop-opacity="0"/></radialGradient><linearGradient id="bone-wall-l2" gradientUnits="userSpaceOnUse" x1="0" y1="352" x2="0" y2="512"><stop offset="0" stop-color="#2a1a52"/><stop offset="1" stop-color="#140c2c"/></linearGradient><radialGradient id="bone-wall-r3" gradientUnits="userSpaceOnUse" cx="256" cy="410" r="220"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="bone-wall-p4" d="M64 396L70 262L120 250L170 258L214 240L298 240L342 258L392 250L442 262L448 396Z"/><clipPath id="bone-wall-c5"><use href="#bone-wall-p4"/></clipPath><clipPath id="bone-wall-c6"><use href="#bone-wall-p4" x="-10" y="-10"/></clipPath><path id="bone-wall-p7" d="M99 261C99 254 91 235 91 227C91 218 98 206 99 202C100 199 98 202 98 202C98 202 100 198 97 202C94 205 82 216 81 225C79 235 83 257 85 263C87 270 91 269 93 269C95 269 99 267 99 261Z"/><clipPath id="bone-wall-c8"><use href="#bone-wall-p7"/></clipPath><clipPath id="bone-wall-c9"><use href="#bone-wall-p7" x="-3" y="-3"/></clipPath><path id="bone-wall-pa" d="M146 261C146 254 138 230 138 219C138 209 145 195 146 190C147 186 145 190 145 190C145 190 147 185 144 190C141 194 129 207 128 218C126 229 130 255 132 263C134 271 138 269 140 269C142 269 146 268 146 261Z"/><clipPath id="bone-wall-cb"><use href="#bone-wall-pa"/></clipPath><clipPath id="bone-wall-cc"><use href="#bone-wall-pa" x="-3" y="-3"/></clipPath><path id="bone-wall-pd" d="M193 261C193 253 185 224 185 212C185 200 192 183 193 178C194 173 192 178 192 178C192 178 194 173 191 178C188 183 176 198 175 211C173 224 177 254 179 263C181 271 185 269 187 269C189 269 193 270 193 261Z"/><clipPath id="bone-wall-ce"><use href="#bone-wall-pd"/></clipPath><clipPath id="bone-wall-cf"><use href="#bone-wall-pd" x="-3" y="-3"/></clipPath><path id="bone-wall-pg" d="M334 261C334 253 326 224 326 212C326 200 333 183 334 178C335 173 333 178 333 178C333 178 335 173 332 178C329 183 317 198 316 211C314 224 318 254 320 263C322 271 326 269 328 269C330 269 334 270 334 261Z"/><clipPath id="bone-wall-ch"><use href="#bone-wall-pg"/></clipPath><clipPath id="bone-wall-ci"><use href="#bone-wall-pg" x="-3" y="-3"/></clipPath><path id="bone-wall-pj" d="M381 261C381 254 373 235 373 227C373 218 380 206 381 202C382 199 380 202 380 202C380 202 382 198 379 202C376 205 364 216 363 225C361 235 365 257 367 263C369 270 373 269 375 269C377 269 381 267 381 261Z"/><clipPath id="bone-wall-ck"><use href="#bone-wall-pj"/></clipPath><clipPath id="bone-wall-cl"><use href="#bone-wall-pj" x="-3" y="-3"/></clipPath><path id="bone-wall-pm" d="M428 261C428 254 420 230 420 219C420 209 427 195 428 190C429 186 427 190 427 190C427 190 429 185 426 190C423 194 411 207 410 218C408 229 412 255 414 263C416 271 420 269 422 269C424 269 428 268 428 261Z"/><clipPath id="bone-wall-cn"><use href="#bone-wall-pm"/></clipPath><clipPath id="bone-wall-co"><use href="#bone-wall-pm" x="-3" y="-3"/></clipPath><path id="bone-wall-pp" d="M81 307C95 307 156 301 171 299C185 297 177 293 177 291C177 289 184 285 169 285C155 285 94 291 79 293C65 295 73 299 73 301C73 303 66 307 81 307ZM72 306A8 8 0 1 0 89 306A8 8 0 1 0 72 306ZM71 294A8 8 0 1 0 88 294A8 8 0 1 0 71 294ZM162 298A8 8 0 1 0 179 298A8 8 0 1 0 162 298ZM161 286A8 8 0 1 0 178 286A8 8 0 1 0 161 286Z"/><clipPath id="bone-wall-cq"><use href="#bone-wall-pp"/></clipPath><clipPath id="bone-wall-cr"><use href="#bone-wall-pp" x="-3" y="-3"/></clipPath><path id="bone-wall-ps" d="M341 299C356 301 417 307 431 307C446 307 439 303 439 301C439 299 447 295 433 293C418 291 357 285 343 285C328 285 335 289 335 291C335 293 327 297 341 299ZM333 298A8 8 0 1 0 350 298A8 8 0 1 0 333 298ZM334 286A8 8 0 1 0 351 286A8 8 0 1 0 334 286ZM423 306A8 8 0 1 0 440 306A8 8 0 1 0 423 306ZM424 294A8 8 0 1 0 441 294A8 8 0 1 0 424 294Z"/><clipPath id="bone-wall-ct"><use href="#bone-wall-ps"/></clipPath><clipPath id="bone-wall-cu"><use href="#bone-wall-ps" x="-3" y="-3"/></clipPath><path id="bone-wall-pv" d="M95 371C111 373 179 379 195 379C212 379 203 375 203 373C203 370 213 367 197 365C181 363 113 357 97 357C80 357 89 361 89 363C89 366 79 369 95 371ZM87 370A8 8 0 1 0 104 370A8 8 0 1 0 87 370ZM88 358A8 8 0 1 0 105 358A8 8 0 1 0 88 358ZM187 378A8 8 0 1 0 204 378A8 8 0 1 0 187 378ZM188 366A8 8 0 1 0 205 366A8 8 0 1 0 188 366Z"/><clipPath id="bone-wall-cw"><use href="#bone-wall-pv"/></clipPath><clipPath id="bone-wall-cx"><use href="#bone-wall-pv" x="-3" y="-3"/></clipPath><path id="bone-wall-py" d="M317 379C333 379 401 373 417 371C433 369 423 366 423 363C423 361 432 357 415 357C399 357 331 363 315 365C299 367 309 370 309 373C309 375 300 379 317 379ZM308 378A8 8 0 1 0 325 378A8 8 0 1 0 308 378ZM307 366A8 8 0 1 0 324 366A8 8 0 1 0 307 366ZM408 370A8 8 0 1 0 425 370A8 8 0 1 0 408 370ZM407 358A8 8 0 1 0 424 358A8 8 0 1 0 407 358Z"/><clipPath id="bone-wall-cz"><use href="#bone-wall-py"/></clipPath><clipPath id="bone-wall-c10"><use href="#bone-wall-py" x="-3" y="-3"/></clipPath><path id="bone-wall-p11" d="M200 391C218 392 294 392 312 391C330 390 319 386 319 384C319 382 330 378 312 377C294 376 218 376 200 377C182 378 193 382 193 384C193 386 182 390 200 391ZM192 390A8 8 0 1 0 208 390A8 8 0 1 0 192 390ZM192 378A8 8 0 1 0 208 378A8 8 0 1 0 192 378ZM304 390A8 8 0 1 0 320 390A8 8 0 1 0 304 390ZM304 378A8 8 0 1 0 320 378A8 8 0 1 0 304 378Z"/><clipPath id="bone-wall-c12"><use href="#bone-wall-p11"/></clipPath><clipPath id="bone-wall-c13"><use href="#bone-wall-p11" x="-3" y="-3"/></clipPath><path id="bone-wall-p14" d="M96 336C95 331 97 323 100 320C104 316 113 314 118 314C123 314 132 316 136 320C139 323 141 331 140 336C139 341 136 348 131 350C126 352 110 352 105 350C100 348 97 341 96 336Z"/><clipPath id="bone-wall-c15"><use href="#bone-wall-p14"/></clipPath><clipPath id="bone-wall-c16"><use href="#bone-wall-p14" x="-5.5" y="-5.5"/></clipPath><path id="bone-wall-p17" d="M152 334C151 330 153 322 156 319C159 316 167 314 172 314C177 314 185 316 188 319C191 322 193 330 192 334C191 338 189 345 184 346C179 348 165 348 160 346C155 345 153 338 152 334Z"/><clipPath id="bone-wall-c18"><use href="#bone-wall-p17"/></clipPath><clipPath id="bone-wall-c19"><use href="#bone-wall-p17" x="-5" y="-5"/></clipPath><path id="bone-wall-p1a" d="M204 340C203 335 205 327 208 324C212 320 221 318 226 318C231 318 240 320 244 324C247 327 249 335 248 340C247 345 244 352 239 354C234 356 218 356 213 354C208 352 205 345 204 340Z"/><clipPath id="bone-wall-c1b"><use href="#bone-wall-p1a"/></clipPath><clipPath id="bone-wall-c1c"><use href="#bone-wall-p1a" x="-5.5" y="-5.5"/></clipPath><path id="bone-wall-p1d" d="M264 340C263 335 265 327 268 324C272 320 281 318 286 318C291 318 300 320 304 324C307 327 309 335 308 340C307 345 304 352 299 354C294 356 278 356 273 354C268 352 265 345 264 340Z"/><clipPath id="bone-wall-c1e"><use href="#bone-wall-p1d"/></clipPath><clipPath id="bone-wall-c1f"><use href="#bone-wall-p1d" x="-5.5" y="-5.5"/></clipPath><path id="bone-wall-p1g" d="M320 334C319 330 321 322 324 319C327 316 335 314 340 314C345 314 353 316 356 319C359 322 361 330 360 334C359 338 357 345 352 346C347 348 333 348 328 346C323 345 321 338 320 334Z"/><clipPath id="bone-wall-c1h"><use href="#bone-wall-p1g"/></clipPath><clipPath id="bone-wall-c1i"><use href="#bone-wall-p1g" x="-5" y="-5"/></clipPath><path id="bone-wall-p1j" d="M372 336C371 331 373 323 376 320C380 316 389 314 394 314C399 314 408 316 412 320C415 323 417 331 416 336C415 341 412 348 407 350C402 352 386 352 381 350C376 348 373 341 372 336Z"/><clipPath id="bone-wall-c1k"><use href="#bone-wall-p1j"/></clipPath><clipPath id="bone-wall-c1l"><use href="#bone-wall-p1j" x="-5.5" y="-5.5"/></clipPath><path id="bone-wall-p1m" d="M84 276C84 273 85 266 87 264C90 262 96 260 100 260C104 260 110 262 113 264C115 266 116 273 116 276C116 279 113 284 110 286C106 287 94 287 90 286C87 284 84 279 84 276Z"/><clipPath id="bone-wall-c1n"><use href="#bone-wall-p1m"/></clipPath><clipPath id="bone-wall-c1o"><use href="#bone-wall-p1m" x="-4" y="-4"/></clipPath><path id="bone-wall-p1p" d="M396 276C396 273 397 266 399 264C402 262 408 260 412 260C416 260 422 262 425 264C427 266 428 273 428 276C428 279 425 284 422 286C418 287 406 287 402 286C399 284 396 279 396 276Z"/><clipPath id="bone-wall-c1q"><use href="#bone-wall-p1p"/></clipPath><clipPath id="bone-wall-c1r"><use href="#bone-wall-p1p" x="-4" y="-4"/></clipPath><path id="bone-wall-p1s" d="M229 199C221 196 195 198 185 191C175 183 168 156 165 150C162 144 164 150 164 150C164 150 161 143 163 150C165 158 166 191 175 201C184 212 214 219 223 221C232 222 236 216 237 213C237 210 237 203 229 199Z"/><clipPath id="bone-wall-c1t"><use href="#bone-wall-p1s"/></clipPath><clipPath id="bone-wall-c1u"><use href="#bone-wall-p1s" x="-4" y="-4"/></clipPath><path id="bone-wall-p1v" d="M289 221C298 219 328 212 337 201C346 191 347 158 349 150C351 143 348 150 348 150C348 150 350 144 347 150C344 156 337 183 327 191C317 198 291 196 283 199C275 203 275 210 275 213C276 216 280 222 289 221Z"/><clipPath id="bone-wall-c1w"><use href="#bone-wall-p1v"/></clipPath><clipPath id="bone-wall-c1x"><use href="#bone-wall-p1v" x="-4" y="-4"/></clipPath><path id="bone-wall-p1y" d="M216 196C222 168 290 168 296 196L286 238L272 270L240 270L226 238Z"/><clipPath id="bone-wall-c1z"><use href="#bone-wall-p1y"/></clipPath><clipPath id="bone-wall-c20"><use href="#bone-wall-p1y" x="-10" y="-10"/></clipPath><radialGradient id="bone-wall-r21" gradientUnits="userSpaceOnUse" cx="240" cy="214" r="22"><stop offset="0" stop-color="#c77dff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.405"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="bone-wall-r22" gradientUnits="userSpaceOnUse" cx="272" cy="214" r="22"><stop offset="0" stop-color="#c77dff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.405"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#bone-wall-l0)"/>
+<circle cx="256" cy="250" r="280" fill="url(#bone-wall-r1)"/>
+<path d="M0 388Q256 352 512 388V512H0Z" fill="url(#bone-wall-l2)"/>
+<ellipse cx="256" cy="410" rx="220" ry="62" fill="url(#bone-wall-r3)"/>
+<path d="M30 400A226 271 0 0 1 482 400Z" fill="#c77dff" fill-opacity="0.12"/>
+<path d="M30 400A226 271 0 0 1 482 400" fill="none" stroke="#e0b8ff" stroke-width="5" stroke-opacity="0.7"/>
+<path d="M60 400A196 235 0 0 1 452 400Z" fill="#c77dff" fill-opacity="0.14"/>
+<path d="M60 400A196 235 0 0 1 452 400" fill="none" stroke="#e0b8ff" stroke-width="5" stroke-opacity="0.7"/>
+<path d="M256 400L74 274" fill="none" stroke="#e0b8ff" stroke-width="2" stroke-opacity="0.25"/>
+<path d="M256 400L151 182" fill="none" stroke="#e0b8ff" stroke-width="2" stroke-opacity="0.25"/>
+<path d="M256 400L256 148" fill="none" stroke="#e0b8ff" stroke-width="2" stroke-opacity="0.25"/>
+<path d="M256 400L361 182" fill="none" stroke="#e0b8ff" stroke-width="2" stroke-opacity="0.25"/>
+<path d="M256 400L438 274" fill="none" stroke="#e0b8ff" stroke-width="2" stroke-opacity="0.25"/>
+<ellipse cx="256" cy="396" rx="200" ry="18" fill="#1d0842" fill-opacity="0.6"/>
+<use href="#bone-wall-p4" fill="#221a36" stroke-width="12"/>
+<g clip-path="url(#bone-wall-c5)">
+<use href="#bone-wall-p4" x="-10" y="-10" fill="#52466e"/>
+<g clip-path="url(#bone-wall-c6)"><use href="#bone-wall-p4" x="7" y="7" fill="#3a2e52"/></g>
+</g>
+<use href="#bone-wall-p7" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-c8)">
+<use href="#bone-wall-p7" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c9)"><use href="#bone-wall-p7" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pa" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-cb)">
+<use href="#bone-wall-pa" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-cc)"><use href="#bone-wall-pa" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pd" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-ce)">
+<use href="#bone-wall-pd" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-cf)"><use href="#bone-wall-pd" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pg" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-ch)">
+<use href="#bone-wall-pg" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-ci)"><use href="#bone-wall-pg" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pj" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-ck)">
+<use href="#bone-wall-pj" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-cl)"><use href="#bone-wall-pj" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pm" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-cn)">
+<use href="#bone-wall-pm" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-co)"><use href="#bone-wall-pm" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pp" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-cq)">
+<use href="#bone-wall-pp" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-cr)"><use href="#bone-wall-pp" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-ps" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-ct)">
+<use href="#bone-wall-ps" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-cu)"><use href="#bone-wall-ps" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-pv" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-cw)">
+<use href="#bone-wall-pv" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-cx)"><use href="#bone-wall-pv" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-py" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-cz)">
+<use href="#bone-wall-py" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c10)"><use href="#bone-wall-py" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-p11" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-c12)">
+<use href="#bone-wall-p11" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c13)"><use href="#bone-wall-p11" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-p14" fill="#9a8a66" stroke-width="8.8"/>
+<g clip-path="url(#bone-wall-c15)">
+<use href="#bone-wall-p14" x="-5.5" y="-5.5" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c16)"><use href="#bone-wall-p14" x="3.6666666666666665" y="3.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M109 349h18v7h-18Z" fill="#9a8a66" stroke-width="4"/>
+<path d="M103 336A6 7 0 1 0 115 336A6 7 0 1 0 103 336ZM121 336A6 7 0 1 0 133 336A6 7 0 1 0 121 336ZM118 341l3 5h-5Z" fill="#1d0842"/>
+<use href="#bone-wall-p17" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-c18)">
+<use href="#bone-wall-p17" x="-5" y="-5" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c19)"><use href="#bone-wall-p17" x="3.3333333333333335" y="3.3333333333333335" fill="#d8cba6"/></g>
+</g>
+<path d="M164 346h17v6h-17Z" fill="#9a8a66" stroke-width="4"/>
+<path d="M158 334A6 6 0 1 0 170 334A6 6 0 1 0 158 334ZM174 334A6 6 0 1 0 186 334A6 6 0 1 0 174 334ZM172 338l2 4h-5Z" fill="#1d0842"/>
+<use href="#bone-wall-p1a" fill="#9a8a66" stroke-width="8.8"/>
+<g clip-path="url(#bone-wall-c1b)">
+<use href="#bone-wall-p1a" x="-5.5" y="-5.5" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1c)"><use href="#bone-wall-p1a" x="3.6666666666666665" y="3.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M217 353h18v7h-18Z" fill="#9a8a66" stroke-width="4"/>
+<path d="M211 340A6 7 0 1 0 223 340A6 7 0 1 0 211 340ZM229 340A6 7 0 1 0 241 340A6 7 0 1 0 229 340ZM226 345l3 5h-5Z" fill="#1d0842"/>
+<use href="#bone-wall-p1d" fill="#9a8a66" stroke-width="8.8"/>
+<g clip-path="url(#bone-wall-c1e)">
+<use href="#bone-wall-p1d" x="-5.5" y="-5.5" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1f)"><use href="#bone-wall-p1d" x="3.6666666666666665" y="3.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M277 353h18v7h-18Z" fill="#9a8a66" stroke-width="4"/>
+<path d="M271 340A6 7 0 1 0 283 340A6 7 0 1 0 271 340ZM289 340A6 7 0 1 0 301 340A6 7 0 1 0 289 340ZM286 345l3 5h-5Z" fill="#1d0842"/>
+<use href="#bone-wall-p1g" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#bone-wall-c1h)">
+<use href="#bone-wall-p1g" x="-5" y="-5" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1i)"><use href="#bone-wall-p1g" x="3.3333333333333335" y="3.3333333333333335" fill="#d8cba6"/></g>
+</g>
+<path d="M332 346h17v6h-17Z" fill="#9a8a66" stroke-width="4"/>
+<path d="M326 334A6 6 0 1 0 338 334A6 6 0 1 0 326 334ZM342 334A6 6 0 1 0 354 334A6 6 0 1 0 342 334ZM340 338l2 4h-5Z" fill="#1d0842"/>
+<use href="#bone-wall-p1j" fill="#9a8a66" stroke-width="8.8"/>
+<g clip-path="url(#bone-wall-c1k)">
+<use href="#bone-wall-p1j" x="-5.5" y="-5.5" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1l)"><use href="#bone-wall-p1j" x="3.6666666666666665" y="3.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M385 349h18v7h-18Z" fill="#9a8a66" stroke-width="4"/>
+<path d="M379 336A6 7 0 1 0 391 336A6 7 0 1 0 379 336ZM397 336A6 7 0 1 0 409 336A6 7 0 1 0 397 336ZM394 341l3 5h-5Z" fill="#1d0842"/>
+<use href="#bone-wall-p1m" fill="#9a8a66" stroke-width="6.4"/>
+<g clip-path="url(#bone-wall-c1n)">
+<use href="#bone-wall-p1m" x="-4" y="-4" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1o)"><use href="#bone-wall-p1m" x="2.6666666666666665" y="2.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M93 286h13v5h-13Z" fill="#9a8a66" stroke-width="3"/>
+<path d="M89 276A4 5 0 1 0 98 276A4 5 0 1 0 89 276ZM102 276A4 5 0 1 0 111 276A4 5 0 1 0 102 276ZM100 280l2 4h-4Z" fill="#1d0842"/>
+<use href="#bone-wall-p1p" fill="#9a8a66" stroke-width="6.4"/>
+<g clip-path="url(#bone-wall-c1q)">
+<use href="#bone-wall-p1p" x="-4" y="-4" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1r)"><use href="#bone-wall-p1p" x="2.6666666666666665" y="2.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M405 286h13v5h-13Z" fill="#9a8a66" stroke-width="3"/>
+<path d="M401 276A4 5 0 1 0 410 276A4 5 0 1 0 401 276ZM414 276A4 5 0 1 0 423 276A4 5 0 1 0 414 276ZM412 280l2 4h-4Z" fill="#1d0842"/>
+<use href="#bone-wall-p1s" fill="#9a8a66" stroke-width="12"/>
+<g clip-path="url(#bone-wall-c1t)">
+<use href="#bone-wall-p1s" x="-4" y="-4" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1u)"><use href="#bone-wall-p1s" x="3" y="3" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-p1v" fill="#9a8a66" stroke-width="12"/>
+<g clip-path="url(#bone-wall-c1w)">
+<use href="#bone-wall-p1v" x="-4" y="-4" fill="#f5ecd0"/>
+<g clip-path="url(#bone-wall-c1x)"><use href="#bone-wall-p1v" x="3" y="3" fill="#d8cba6"/></g>
+</g>
+<use href="#bone-wall-p1y" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#bone-wall-c1z)">
+<use href="#bone-wall-p1y" x="-4" fill="#a89f8a"/>
+<use href="#bone-wall-p1y" x="-10" y="-10" fill="#fffaf0"/>
+<g clip-path="url(#bone-wall-c20)"><use href="#bone-wall-p1y" x="7" y="7" fill="#e9e2cf"/></g>
+</g>
+<circle cx="240" cy="214" r="22" fill="url(#bone-wall-r21)"/>
+<circle cx="272" cy="214" r="22" fill="url(#bone-wall-r22)"/>
+<path d="M228 206C230 203 245 202 248 204C251 206 252 219 250 222C248 225 237 228 234 226C231 224 226 209 228 206Z" fill="#1d0842"/>
+<path d="M284 206C282 203 267 202 264 204C261 206 260 219 262 222C264 225 275 228 278 226C281 224 286 209 284 206Z" fill="#1d0842"/>
+<path d="M237 214A4 4 0 1 0 245 214A4 4 0 1 0 237 214Z" fill="#e9c8ff"/>
+<path d="M267 214A4 4 0 1 0 275 214A4 4 0 1 0 267 214Z" fill="#e9c8ff"/>
+<path d="M248 246L256 236L264 246L262 258H250Z" fill="#1d0842"/>
+<path d="M240 180L252 194L246 204" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<circle cx="394" cy="252" r="3" fill="#e0b8ff" fill-opacity="0.67"/>
+<circle cx="394" cy="248" r="3" fill="#e0b8ff" fill-opacity="0.62"/>
+<circle cx="83" cy="304" r="3" fill="#e0b8ff" fill-opacity="0.57"/>
+<circle cx="194" cy="369" r="2" fill="#e0b8ff" fill-opacity="0.51"/>
+<circle cx="163" cy="305" r="3" fill="#e0b8ff" fill-opacity="0.55"/>
+<circle cx="164" cy="261" r="2" fill="#e0b8ff" fill-opacity="0.59"/>
+<circle cx="119" cy="244" r="2" fill="#e0b8ff" fill-opacity="0.42"/>
+<circle cx="394" cy="167" r="2" fill="#e0b8ff" fill-opacity="0.73"/>
+<circle cx="248" cy="250" r="3" fill="#e0b8ff" fill-opacity="0.51"/>
+<circle cx="342" cy="239" r="3" fill="#e0b8ff" fill-opacity="0.49"/>
+<circle cx="135" cy="306" r="3" fill="#e0b8ff" fill-opacity="0.53"/>
+<circle cx="404" cy="305" r="2" fill="#e0b8ff" fill-opacity="0.42"/>
+<circle cx="152" cy="120" r="2" fill="#e0b8ff" fill-opacity="0.49"/>
+<circle cx="281" cy="153" r="2" fill="#e0b8ff" fill-opacity="0.84"/>
+</svg>

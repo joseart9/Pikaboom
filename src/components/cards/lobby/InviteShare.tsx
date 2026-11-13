@@ -4,7 +4,7 @@
 // and a QR of the link `/cards/play?sala=CODE` (§13.7).
 import { useSyncExternalStore } from "react";
 import { t } from "@/game/cards/i18n";
-import { QrCode } from "../skin";
+import { GameIcon, QrCode } from "../skin";
 
 const noSubscribe = () => () => {};
 
@@ -43,11 +43,14 @@ export function InviteShare({ code, onNotice }: InviteShareProps) {
 
   return (
     <div className="cg-invite">
-      <span className="cg-invite-label">{t("lobby.roomCode")}</span>
-      <span className="cg-code" aria-label={`${t("lobby.codeLabel")}: ${code.split("").join(" ")}`}>
-        {code}
-      </span>
+      <div className="cg-code-plate">
+        <span className="cg-invite-label">{t("lobby.roomCode")}</span>
+        <span className="cg-code" aria-label={`${t("lobby.codeLabel")}: ${code.split("").join(" ")}`}>
+          {code}
+        </span>
+      </div>
       <button type="button" className="cg-button cg-button--primary" data-haptic="medium" onClick={() => void share()}>
+        <GameIcon name="share" size="1em" />
         {t("lobby.share")}
       </button>
       {url && <QrCode text={url} size="min(30dvh, 150px)" label={t("lobby.qrLabel")} />}

@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="soul-thief-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0b0b22"/><stop offset="0.55" stop-color="#1e2a50"/><stop offset="1" stop-color="#120a26"/></linearGradient><radialGradient id="soul-thief-r1" gradientUnits="userSpaceOnUse" cx="170" cy="200" r="220"><stop offset="0" stop-color="#4ee6d0" stop-opacity="0.22"/><stop offset="0.45" stop-color="#4ee6d0" stop-opacity="0.099"/><stop offset="1" stop-color="#4ee6d0" stop-opacity="0"/></radialGradient><path id="soul-thief-p2" d="M0 352L512 300V512H0Z"/><clipPath id="soul-thief-c3"><use href="#soul-thief-p2"/></clipPath><clipPath id="soul-thief-c4"><use href="#soul-thief-p2" x="0" y="-10"/></clipPath><path id="soul-thief-p5" d="M430 250L478 250L478 312L430 316Z"/><clipPath id="soul-thief-c6"><use href="#soul-thief-p5"/></clipPath><clipPath id="soul-thief-c7"><use href="#soul-thief-p5" x="-6" y="-6"/></clipPath><path id="soul-thief-p8" d="M288 196C295 185 333 210 350 220C367 230 398 254 410 270C422 286 440 323 436 330C432 337 394 315 380 316C366 317 351 342 340 340C329 338 307 320 300 300C293 280 281 207 288 196Z"/><clipPath id="soul-thief-c9"><use href="#soul-thief-p8"/></clipPath><clipPath id="soul-thief-ca"><use href="#soul-thief-p8" x="-12" y="-10"/></clipPath><path id="soul-thief-pb" d="M306 312C311 320 339 337 341 342C344 348 329 348 323 350C317 352 304 351 299 353C294 355 289 361 289 365C289 368 294 374 301 375C307 376 323 380 333 374C344 368 371 350 371 338C370 325 340 296 330 288C321 281 310 284 306 288C303 291 300 304 306 312Z"/><clipPath id="soul-thief-cc"><use href="#soul-thief-pb"/></clipPath><clipPath id="soul-thief-cd"><use href="#soul-thief-pb" x="-6" y="-6"/></clipPath><path id="soul-thief-pe" d="M258 290C250 295 229 313 226 326C222 338 233 363 237 371C242 380 250 382 253 381C257 380 262 372 263 365C263 358 252 342 254 334C257 327 277 321 282 314C286 308 286 294 282 290C279 287 267 284 258 290Z"/><clipPath id="soul-thief-cf"><use href="#soul-thief-pe"/></clipPath><clipPath id="soul-thief-cg"><use href="#soul-thief-pe" x="-6" y="-6"/></clipPath><path id="soul-thief-ph" d="M222 376C222 362 234 356 248 356L266 358V376Z"/><clipPath id="soul-thief-ci"><use href="#soul-thief-ph"/></clipPath><clipPath id="soul-thief-cj"><use href="#soul-thief-ph" x="-4" y="-4"/></clipPath><path id="soul-thief-pk" d="M248 230C254 222 279 208 290 208C301 208 325 219 330 230C335 241 332 279 328 290C324 301 309 311 300 314C291 317 265 316 258 310C251 304 245 281 244 270C243 259 242 238 248 230Z"/><clipPath id="soul-thief-cl"><use href="#soul-thief-pk"/></clipPath><clipPath id="soul-thief-cm"><use href="#soul-thief-pk" x="-12" y="-10"/></clipPath><path id="soul-thief-pn" d="M250 286L326 278L328 294L252 302Z"/><clipPath id="soul-thief-co"><use href="#soul-thief-pn"/></clipPath><clipPath id="soul-thief-cp"><use href="#soul-thief-pn" x="-3" y="-3"/></clipPath><path id="soul-thief-pq" d="M311 254C317 260 340 278 351 281C361 283 374 275 379 271C385 268 386 261 385 259C384 256 377 252 373 253C368 253 364 262 357 259C350 257 332 238 325 234C318 231 310 234 308 237C306 240 305 247 311 254Z"/><clipPath id="soul-thief-cr"><use href="#soul-thief-pq"/></clipPath><clipPath id="soul-thief-cs"><use href="#soul-thief-pq" x="-6" y="-6"/></clipPath><path id="soul-thief-pt" d="M369 262A11 10 0 1 0 391 262A11 10 0 1 0 369 262Z"/><clipPath id="soul-thief-cu"><use href="#soul-thief-pt"/></clipPath><clipPath id="soul-thief-cv"><use href="#soul-thief-pt" x="-4" y="-4"/></clipPath><path id="soul-thief-pw" d="M379 269C382 275 395 291 400 298C404 306 409 317 411 320C413 324 412 320 412 320C412 320 413 324 413 320C412 316 412 302 408 294C405 285 393 268 389 263C385 258 382 260 381 261C379 262 376 264 379 269Z"/><clipPath id="soul-thief-cx"><use href="#soul-thief-pw"/></clipPath><clipPath id="soul-thief-cy"><use href="#soul-thief-pw" x="-3" y="-3"/></clipPath><path id="soul-thief-pz" d="M370 261C373 264 386 276 390 279C393 281 394 279 395 278C395 278 397 277 394 273C391 270 378 258 374 255C371 253 370 255 369 256C369 256 367 257 370 261Z"/><clipPath id="soul-thief-c10"><use href="#soul-thief-pz"/></clipPath><clipPath id="soul-thief-c11"><use href="#soul-thief-pz" x="-2" y="-2"/></clipPath><path id="soul-thief-p12" d="M257 227C249 225 228 227 217 225C206 223 191 214 184 213C177 212 172 215 171 218C170 221 170 227 176 231C182 236 200 243 211 247C223 250 246 254 255 253C263 252 269 245 269 241C269 237 265 229 257 227Z"/><clipPath id="soul-thief-c13"><use href="#soul-thief-p12"/></clipPath><clipPath id="soul-thief-c14"><use href="#soul-thief-p12" x="-6" y="-6"/></clipPath><path id="soul-thief-p15" d="M160 220A12 11 0 1 0 184 220A12 11 0 1 0 160 220Z"/><clipPath id="soul-thief-c16"><use href="#soul-thief-p15"/></clipPath><clipPath id="soul-thief-c17"><use href="#soul-thief-p15" x="-4" y="-4"/></clipPath><path id="soul-thief-p18" d="M168 218C165 215 156 209 153 208C151 207 150 208 150 209C150 209 148 210 151 212C153 214 162 221 164 222C167 224 168 222 168 222C169 221 170 220 168 218Z"/><clipPath id="soul-thief-c19"><use href="#soul-thief-p18"/></clipPath><clipPath id="soul-thief-c1a"><use href="#soul-thief-p18" x="-1" y="-1"/></clipPath><path id="soul-thief-p1b" d="M166 217C163 217 153 217 150 218C147 218 148 219 148 220C148 221 147 222 150 223C153 223 163 223 166 223C169 223 169 221 169 220C169 219 169 217 166 217Z"/><clipPath id="soul-thief-c1c"><use href="#soul-thief-p1b"/></clipPath><clipPath id="soul-thief-c1d"><use href="#soul-thief-p1b" x="-1" y="-1"/></clipPath><path id="soul-thief-p1e" d="M164 218C162 219 154 225 153 227C151 229 152 230 152 231C152 231 153 232 156 231C158 230 166 224 168 222C170 220 169 219 168 218C168 217 167 216 164 218Z"/><clipPath id="soul-thief-c1f"><use href="#soul-thief-p1e"/></clipPath><clipPath id="soul-thief-c1g"><use href="#soul-thief-p1e" x="-1" y="-1"/></clipPath><radialGradient id="soul-thief-r1h" gradientUnits="userSpaceOnUse" cx="132" cy="176" r="80"><stop offset="0" stop-color="#4ee6d0" stop-opacity="0.6"/><stop offset="0.45" stop-color="#4ee6d0" stop-opacity="0.27"/><stop offset="1" stop-color="#4ee6d0" stop-opacity="0"/></radialGradient><path id="soul-thief-p1i" d="M104 132L152 132L152 200L104 200Z"/><clipPath id="soul-thief-c1j"><use href="#soul-thief-p1i"/></clipPath><clipPath id="soul-thief-c1k"><use href="#soul-thief-p1i" x="-5" y="-5"/></clipPath><path id="soul-thief-p1l" d="M238 210C226 172 238 136 270 124C300 128 318 156 314 196C306 214 290 222 270 222C254 222 244 218 238 210Z"/><clipPath id="soul-thief-c1m"><use href="#soul-thief-p1l"/></clipPath><clipPath id="soul-thief-c1n"><use href="#soul-thief-p1l" x="-10" y="-8"/></clipPath><path id="soul-thief-p1o" d="M248 168C252 163 263 153 270 152C277 151 290 156 294 162C298 168 300 183 298 190C296 197 288 208 282 210C276 212 263 209 258 206C253 203 248 194 246 188C245 182 244 173 248 168Z"/><clipPath id="soul-thief-c1p"><use href="#soul-thief-p1o"/></clipPath><clipPath id="soul-thief-c1q"><use href="#soul-thief-p1o" x="-6" y="-5"/></clipPath><path id="soul-thief-p1r" d="M246 186C260 194 284 194 300 186L298 208C284 216 260 216 248 206Z"/><clipPath id="soul-thief-c1s"><use href="#soul-thief-p1r"/></clipPath><clipPath id="soul-thief-c1t"><use href="#soul-thief-p1r" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#soul-thief-l0)"/>
+<circle cx="170" cy="200" r="220" fill="url(#soul-thief-r1)"/>
+<path d="M606 140C603 150 523 158 491 168C459 177 445 196 414 198C383 199 347 184 306 179C264 173 181 174 162 164C144 154 174 132 194 120C214 107 245 93 281 88C316 84 369 90 408 93C446 96 478 99 511 107C545 115 610 130 606 140Z" fill="#8e5bd8" fill-opacity="0.12"/>
+<path d="M410 70A30 30 0 1 0 440 112A22 22 0 1 1 410 70Z" fill="#e6f6ff" fill-opacity="0.75"/>
+<path d="M0 300V220H40V190H70V230H110V170L130 150L150 170V240H200V210H240V260H300V200H330V180H350V240H400V190L420 170L440 190V230H480V210H512V300Z" fill="#141432"/>
+<path d="M54 206h8v10h-8Z" fill="#ffbe0b" fill-opacity="0.5"/>
+<path d="M124 186h8v10h-8Z" fill="#ffbe0b" fill-opacity="0.5"/>
+<path d="M212 226h8v10h-8Z" fill="#ffbe0b" fill-opacity="0.5"/>
+<path d="M316 214h8v10h-8Z" fill="#ffbe0b" fill-opacity="0.5"/>
+<path d="M424 204h8v10h-8Z" fill="#ffbe0b" fill-opacity="0.5"/>
+<path d="M490 226h8v10h-8Z" fill="#ffbe0b" fill-opacity="0.5"/>
+<use href="#soul-thief-p2" fill="#22163a" stroke-width="10"/>
+<g clip-path="url(#soul-thief-c3)">
+<use href="#soul-thief-p2" x="0" y="-10" fill="#54407a"/>
+<g clip-path="url(#soul-thief-c4)"><use href="#soul-thief-p2" x="0" y="4" fill="#3a2a5a"/></g>
+</g>
+<path d="M0 392L512 340M0 436L512 384M0 480L512 428M60 346V512M150 336V512M240 328V512M330 318V512M420 308V512" fill="none" stroke-width="3" stroke-opacity="0.35"/>
+<use href="#soul-thief-p5" fill="#3a2424" stroke-width="10"/>
+<g clip-path="url(#soul-thief-c6)">
+<use href="#soul-thief-p5" x="-6" y="-6" fill="#7a5050"/>
+<g clip-path="url(#soul-thief-c7)"><use href="#soul-thief-p5" x="3" y="3" fill="#5a3a3a"/></g>
+</g>
+<path d="M476 220C475 224 473 227 470 231C467 235 462 241 456 243C450 244 440 241 434 238C428 236 424 231 422 227C420 223 420 217 423 213C425 209 430 205 435 203C441 201 448 201 455 202C461 203 470 204 473 207C477 210 476 216 476 220Z" fill="#8e5bd8" fill-opacity="0.2"/>
+<ellipse cx="290" cy="372" rx="100" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#soul-thief-p8" fill="#4ee6d0" stroke-width="12"/>
+<g clip-path="url(#soul-thief-c9)">
+<use href="#soul-thief-p8" x="-4" fill="#1c2e3a"/>
+<use href="#soul-thief-p8" x="-12" y="-10" fill="#4a6e80"/>
+<g clip-path="url(#soul-thief-ca)"><use href="#soul-thief-p8" x="7" y="7" fill="#2f4a5a"/></g>
+</g>
+<use href="#soul-thief-pb" fill="#160b2e" stroke-width="12"/>
+<g clip-path="url(#soul-thief-cc)">
+<use href="#soul-thief-pb" x="-6" y="-6" fill="#44406a"/>
+<g clip-path="url(#soul-thief-cd)"><use href="#soul-thief-pb" x="4" y="4" fill="#2a2448"/></g>
+</g>
+<use href="#soul-thief-pe" fill="#160b2e" stroke-width="12"/>
+<g clip-path="url(#soul-thief-cf)">
+<use href="#soul-thief-pe" x="-6" y="-6" fill="#44406a"/>
+<g clip-path="url(#soul-thief-cg)"><use href="#soul-thief-pe" x="4" y="4" fill="#2a2448"/></g>
+</g>
+<use href="#soul-thief-ph" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#soul-thief-ci)">
+<use href="#soul-thief-ph" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#soul-thief-cj)"><use href="#soul-thief-ph" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#soul-thief-pk" fill="#4ee6d0" stroke-width="12"/>
+<g clip-path="url(#soul-thief-cl)">
+<use href="#soul-thief-pk" x="-4" fill="#1c2e3a"/>
+<use href="#soul-thief-pk" x="-12" y="-10" fill="#4a6e80"/>
+<g clip-path="url(#soul-thief-cm)"><use href="#soul-thief-pk" x="7" y="7" fill="#2f4a5a"/></g>
+</g>
+<use href="#soul-thief-pn" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#soul-thief-co)">
+<use href="#soul-thief-pn" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#soul-thief-cp)"><use href="#soul-thief-pn" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#soul-thief-pq" fill="#4ee6d0" stroke-width="12"/>
+<g clip-path="url(#soul-thief-cr)">
+<use href="#soul-thief-pq" x="-4" fill="#1c2e3a"/>
+<use href="#soul-thief-pq" x="-6" y="-6" fill="#4a6e80"/>
+<g clip-path="url(#soul-thief-cs)"><use href="#soul-thief-pq" x="7" y="7" fill="#2f4a5a"/></g>
+</g>
+<use href="#soul-thief-pt" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#soul-thief-cu)">
+<use href="#soul-thief-pt" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#soul-thief-cv)"><use href="#soul-thief-pt" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#soul-thief-pw" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#soul-thief-cx)">
+<use href="#soul-thief-pw" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#soul-thief-cy)"><use href="#soul-thief-pw" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<path d="M388 272L406 304" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.7"/>
+<use href="#soul-thief-pz" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#soul-thief-c10)">
+<use href="#soul-thief-pz" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#soul-thief-c11)"><use href="#soul-thief-pz" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<use href="#soul-thief-p12" fill="#4ee6d0" stroke-width="12"/>
+<g clip-path="url(#soul-thief-c13)">
+<use href="#soul-thief-p12" x="-4" fill="#1c2e3a"/>
+<use href="#soul-thief-p12" x="-6" y="-6" fill="#4a6e80"/>
+<g clip-path="url(#soul-thief-c14)"><use href="#soul-thief-p12" x="7" y="7" fill="#2f4a5a"/></g>
+</g>
+<use href="#soul-thief-p15" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#soul-thief-c16)">
+<use href="#soul-thief-p15" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#soul-thief-c17)"><use href="#soul-thief-p15" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#soul-thief-p18" fill="#c98f6a" stroke-width="6"/>
+<g clip-path="url(#soul-thief-c19)">
+<use href="#soul-thief-p18" x="-1" y="-1" fill="#ffe0c4"/>
+<g clip-path="url(#soul-thief-c1a)"><use href="#soul-thief-p18" x="1" y="1" fill="#f2c29b"/></g>
+</g>
+<use href="#soul-thief-p1b" fill="#c98f6a" stroke-width="6"/>
+<g clip-path="url(#soul-thief-c1c)">
+<use href="#soul-thief-p1b" x="-1" y="-1" fill="#ffe0c4"/>
+<g clip-path="url(#soul-thief-c1d)"><use href="#soul-thief-p1b" x="1" y="1" fill="#f2c29b"/></g>
+</g>
+<use href="#soul-thief-p1e" fill="#c98f6a" stroke-width="6"/>
+<g clip-path="url(#soul-thief-c1f)">
+<use href="#soul-thief-p1e" x="-1" y="-1" fill="#ffe0c4"/>
+<g clip-path="url(#soul-thief-c1g)"><use href="#soul-thief-p1e" x="1" y="1" fill="#f2c29b"/></g>
+</g>
+<circle cx="132" cy="176" r="80" fill="url(#soul-thief-r1h)"/>
+<path d="M160 210C155 209 142 198 136 196C130 195 117 202 118 200C119 199 135 186 142 186C150 186 165 196 168 200C171 204 165 211 160 210Z" fill="#4ee6d0" fill-opacity="0.4"/>
+<g transform="rotate(18 128 166)">
+<use href="#soul-thief-p1i" fill="#4ee6d0" stroke-width="10"/>
+<g clip-path="url(#soul-thief-c1j)">
+<use href="#soul-thief-p1i" x="-5" y="-5" fill="#e6fffb"/>
+<g clip-path="url(#soul-thief-c1k)"><use href="#soul-thief-p1i" x="3" y="3" fill="#9ff5e8"/></g>
+</g>
+<path d="M111 139H145V193H111Z" fill="none" stroke="#1c8a80" stroke-width="3"/>
+<path d="M128 150L132 162L144 166L132 170L128 182L124 170L112 166L124 162Z" fill="#1c8a80"/>
+</g>
+<path d="M110 230C90 214 92 196 104 186M150 236C140 226 146 212 156 208" fill="none" stroke="#9ff5e8" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#soul-thief-p1l" fill="#4ee6d0" stroke-width="12"/>
+<g clip-path="url(#soul-thief-c1m)">
+<use href="#soul-thief-p1l" x="-4" fill="#1c2e3a"/>
+<use href="#soul-thief-p1l" x="-10" y="-8" fill="#4a6e80"/>
+<g clip-path="url(#soul-thief-c1n)"><use href="#soul-thief-p1l" x="7" y="7" fill="#2f4a5a"/></g>
+</g>
+<use href="#soul-thief-p1o" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#soul-thief-c1p)">
+<use href="#soul-thief-p1o" x="-6" y="-5" fill="#ffe0c4"/>
+<g clip-path="url(#soul-thief-c1q)"><use href="#soul-thief-p1o" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#soul-thief-p1r" fill="#160b2e" stroke-width="8"/>
+<g clip-path="url(#soul-thief-c1s)">
+<use href="#soul-thief-p1r" x="-3" y="-3" fill="#44406a"/>
+<g clip-path="url(#soul-thief-c1t)"><use href="#soul-thief-p1r" x="2" y="2" fill="#2a2448"/></g>
+</g>
+<path d="M244 160C256 150 284 148 300 160L300 166C284 158 258 160 246 168Z" fill="#160b2e"/>
+<path d="M254 176L270 172L268 180Z" fill="#4ee6d0"/>
+<path d="M278 172L294 176L280 180Z" fill="#4ee6d0"/>
+<path d="M261 176A3 3 0 1 0 266 176A3 3 0 1 0 261 176Z" fill="#1d0842"/>
+<path d="M283 176A3 3 0 1 0 288 176A3 3 0 1 0 283 176Z" fill="#1d0842"/>
+<path d="M252 170L268 168M282 168L296 172" fill="none" stroke-width="3.5"/>
+<circle cx="204" cy="254" r="3" fill="#9ff5e8" fill-opacity="0.43"/>
+<circle cx="161" cy="175" r="2" fill="#4ee6d0" fill-opacity="0.96"/>
+<circle cx="228" cy="226" r="2" fill="#c77dff" fill-opacity="0.84"/>
+<circle cx="187" cy="187" r="3" fill="#9ff5e8" fill-opacity="0.43"/>
+<circle cx="211" cy="242" r="3" fill="#4ee6d0" fill-opacity="0.57"/>
+<circle cx="240" cy="253" r="3" fill="#c77dff" fill-opacity="0.88"/>
+<circle cx="253" cy="225" r="3" fill="#9ff5e8" fill-opacity="0.42"/>
+<circle cx="119" cy="149" r="3" fill="#4ee6d0" fill-opacity="0.57"/>
+<circle cx="137" cy="228" r="3" fill="#c77dff" fill-opacity="0.99"/>
+<circle cx="229" cy="253" r="3" fill="#9ff5e8" fill-opacity="0.6"/>
+<circle cx="155" cy="180" r="2" fill="#4ee6d0" fill-opacity="0.9"/>
+<circle cx="91" cy="185" r="2" fill="#c77dff" fill-opacity="0.67"/>
+</svg>

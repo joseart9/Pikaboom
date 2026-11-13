@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="drain-life-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#160828"/><stop offset="0.55" stop-color="#3a1450"/><stop offset="1" stop-color="#1a0a2a"/></linearGradient><radialGradient id="drain-life-r1" gradientUnits="userSpaceOnUse" cx="270" cy="250" r="270"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.32"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><linearGradient id="drain-life-l2" gradientUnits="userSpaceOnUse" x1="0" y1="366" x2="0" y2="512"><stop offset="0" stop-color="#2a1040"/><stop offset="1" stop-color="#14061e"/></linearGradient><radialGradient id="drain-life-r3" gradientUnits="userSpaceOnUse" cx="256" cy="424" r="210"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.55"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><path id="drain-life-p4" d="M100 288C95 298 86 332 84 349C82 365 86 391 88 400C90 409 94 408 96 408C99 408 103 408 104 400C105 391 101 367 104 351C107 336 123 307 124 296C126 285 120 281 116 280C112 278 104 278 100 288Z"/><clipPath id="drain-life-c5"><use href="#drain-life-p4"/></clipPath><clipPath id="drain-life-c6"><use href="#drain-life-p4" x="-4" y="-4"/></clipPath><path id="drain-life-p7" d="M84 414C66 400 89 343 94 322C99 301 112 284 120 276C128 268 140 266 150 266C160 266 177 268 186 276C195 284 204 301 208 322C213 343 235 400 216 414C197 428 102 428 84 414Z"/><clipPath id="drain-life-c8"><use href="#drain-life-p7"/></clipPath><clipPath id="drain-life-c9"><use href="#drain-life-p7" x="-12" y="-10"/></clipPath><path id="drain-life-pa" d="M168 270C169 262 165 242 162 234C159 227 151 222 146 222C142 223 136 230 134 238C133 245 133 266 136 274C139 281 149 288 154 288C159 287 167 278 168 270Z"/><clipPath id="drain-life-cb"><use href="#drain-life-pa"/></clipPath><clipPath id="drain-life-cc"><use href="#drain-life-pa" x="-4" y="-4"/></clipPath><path id="drain-life-pd" d="M116 214C113 205 117 188 122 180C127 173 141 165 150 164C159 163 174 169 180 176C186 183 189 201 188 210C187 219 179 233 172 238C165 243 148 246 140 242C132 238 119 223 116 214Z"/><clipPath id="drain-life-ce"><use href="#drain-life-pd"/></clipPath><clipPath id="drain-life-cf"><use href="#drain-life-pd" x="-8" y="-8"/></clipPath><radialGradient id="drain-life-rg" gradientUnits="userSpaceOnUse" cx="170" cy="302" r="60"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.85"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.3825"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><radialGradient id="drain-life-rh" gradientUnits="userSpaceOnUse" cx="266" cy="276" r="120"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.135"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><path id="drain-life-pi" d="M179 311C187 306 204 273 217 273C230 272 248 310 262 308C277 306 301 271 316 262C332 252 359 248 368 244C376 240 372 238 372 236C371 235 374 231 364 232C355 234 323 238 308 246C292 254 275 284 262 284C248 284 230 242 215 243C200 244 169 282 161 293C153 303 158 308 161 311C163 314 171 317 179 311Z"/><clipPath id="drain-life-cj"><use href="#drain-life-pi"/></clipPath><clipPath id="drain-life-ck"><use href="#drain-life-pi" x="-5" y="-5"/></clipPath><path id="drain-life-pl" d="M204 308C206 312 209 314 209 318A5 5 0 0 1 199 318C199 314 202 312 204 308Z"/><clipPath id="drain-life-cm"><use href="#drain-life-pl"/></clipPath><clipPath id="drain-life-cn"><use href="#drain-life-pl" x="-2" y="-2"/></clipPath><path id="drain-life-po" d="M246 219C249 226 253 228 253 233A7 7 0 0 1 239 233C239 228 243 226 246 219Z"/><clipPath id="drain-life-cp"><use href="#drain-life-po"/></clipPath><clipPath id="drain-life-cq"><use href="#drain-life-po" x="-2" y="-2"/></clipPath><path id="drain-life-pr" d="M292 299C296 307 301 311 301 317A9 9 0 0 1 283 317C283 311 288 307 292 299Z"/><clipPath id="drain-life-cs"><use href="#drain-life-pr"/></clipPath><clipPath id="drain-life-ct"><use href="#drain-life-pr" x="-2" y="-2"/></clipPath><path id="drain-life-pu" d="M330 216C332 220 335 222 335 226A5 5 0 0 1 325 226C325 222 328 220 330 216Z"/><clipPath id="drain-life-cv"><use href="#drain-life-pu"/></clipPath><clipPath id="drain-life-cw"><use href="#drain-life-pu" x="-2" y="-2"/></clipPath><path id="drain-life-px" d="M232 321C235 328 239 330 239 335A7 7 0 0 1 225 335C225 330 229 328 232 321Z"/><clipPath id="drain-life-cy"><use href="#drain-life-px"/></clipPath><clipPath id="drain-life-cz"><use href="#drain-life-px" x="-2" y="-2"/></clipPath><path id="drain-life-p10" d="M348 251C352 259 357 263 357 269A9 9 0 0 1 339 269C339 263 344 259 348 251Z"/><clipPath id="drain-life-c11"><use href="#drain-life-p10"/></clipPath><clipPath id="drain-life-c12"><use href="#drain-life-p10" x="-2" y="-2"/></clipPath><path id="drain-life-p13" d="M580 337C568 317 520 288 499 274C478 260 456 248 441 244C426 241 404 245 398 253C393 260 399 283 407 296C414 308 433 317 449 334C466 351 495 397 516 407C536 418 574 415 583 404C593 394 593 356 580 337Z"/><clipPath id="drain-life-c14"><use href="#drain-life-p13"/></clipPath><clipPath id="drain-life-c15"><use href="#drain-life-p13" x="-10" y="-10"/></clipPath><path id="drain-life-p16" d="M467 258C464 248 459 247 450 245C440 244 410 241 403 248C397 256 404 286 406 295C409 304 411 309 421 310C431 312 463 315 470 307C477 299 470 267 467 258Z"/><clipPath id="drain-life-c17"><use href="#drain-life-p16"/></clipPath><clipPath id="drain-life-c18"><use href="#drain-life-p16" x="-4" y="-4"/></clipPath><radialGradient id="drain-life-r19" gradientUnits="userSpaceOnUse" cx="372" cy="232" r="84"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><path id="drain-life-p1a" d="M422 252C419 245 408 231 400 226C393 222 379 220 372 222C365 224 356 234 354 240C353 246 356 258 362 264C368 270 385 277 394 278C403 280 416 278 420 274C424 270 425 259 422 252Z"/><clipPath id="drain-life-c1b"><use href="#drain-life-p1a"/></clipPath><clipPath id="drain-life-c1c"><use href="#drain-life-p1a" x="-6" y="-6"/></clipPath><path id="drain-life-p1d" d="M372 225C370 220 358 209 353 203C348 197 341 186 339 184C337 181 338 184 338 184C338 184 336 181 337 184C338 188 339 202 343 209C346 217 355 231 360 235C364 239 369 238 371 236C373 235 375 230 372 225Z"/><clipPath id="drain-life-c1e"><use href="#drain-life-p1d"/></clipPath><clipPath id="drain-life-c1f"><use href="#drain-life-p1d" x="-3" y="-3"/></clipPath><path id="drain-life-p1g" d="M390 219C389 213 382 198 378 190C373 182 364 171 361 168C358 164 360 168 360 168C360 168 358 165 359 168C360 172 364 186 366 194C369 203 372 219 374 225C377 230 382 230 385 230C387 229 391 225 390 219Z"/><clipPath id="drain-life-c1h"><use href="#drain-life-p1g"/></clipPath><clipPath id="drain-life-c1i"><use href="#drain-life-p1g" x="-3" y="-3"/></clipPath><path id="drain-life-p1j" d="M406 222C406 215 404 198 402 189C399 180 391 167 389 164C387 160 388 164 388 164C388 164 387 160 387 164C387 168 390 182 390 191C391 200 389 217 390 222C391 228 396 230 398 230C401 230 405 228 406 222Z"/><clipPath id="drain-life-c1k"><use href="#drain-life-p1j"/></clipPath><clipPath id="drain-life-c1l"><use href="#drain-life-p1j" x="-3" y="-3"/></clipPath><path id="drain-life-p1m" d="M420 232C422 227 425 212 424 204C423 196 416 182 415 178C413 174 414 178 414 178C414 178 413 174 413 178C413 182 413 196 412 204C411 211 404 223 404 228C404 233 408 237 410 238C413 238 418 237 420 232Z"/><clipPath id="drain-life-c1n"><use href="#drain-life-p1m"/></clipPath><clipPath id="drain-life-c1o"><use href="#drain-life-p1m" x="-3" y="-3"/></clipPath><path id="drain-life-p1p" d="M364 249C359 248 345 253 339 252C332 251 325 241 323 239C320 238 322 240 322 240C322 240 319 237 321 241C323 244 327 260 333 264C340 268 358 268 364 267C370 266 373 261 373 258C373 255 369 250 364 249Z"/><clipPath id="drain-life-c1q"><use href="#drain-life-p1p"/></clipPath><clipPath id="drain-life-c1r"><use href="#drain-life-p1p" x="-3" y="-3"/></clipPath><path id="drain-life-p1s" d="M357 226A15 15 0 1 0 387 226A15 15 0 1 0 357 226Z"/><clipPath id="drain-life-c1t"><use href="#drain-life-p1s"/></clipPath><clipPath id="drain-life-c1u"><use href="#drain-life-p1s" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#drain-life-l0)"/>
+<circle cx="270" cy="250" r="270" fill="url(#drain-life-r1)"/>
+<path d="M16 512L16 150L66 128L66 512Z" fill="#22103a"/>
+<path d="M446 512L446 120L496 100L496 512Z" fill="#22103a"/>
+<path d="M16 200H66M16 300H66M446 180H496M446 290H496" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<path d="M0 402Q256 366 512 402V512H0Z" fill="url(#drain-life-l2)"/>
+<ellipse cx="256" cy="424" rx="210" ry="59" fill="url(#drain-life-r3)"/>
+<ellipse cx="150" cy="408" rx="84" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#drain-life-p4" fill="#524c64" stroke-width="12"/>
+<g clip-path="url(#drain-life-c5)">
+<use href="#drain-life-p4" x="-4" y="-4" fill="#b4aec2"/>
+<g clip-path="url(#drain-life-c6)"><use href="#drain-life-p4" x="3" y="3" fill="#8a8498"/></g>
+</g>
+<use href="#drain-life-p7" fill="#524c64" stroke-width="12"/>
+<g clip-path="url(#drain-life-c8)">
+<use href="#drain-life-p7" x="-12" y="-10" fill="#b4aec2"/>
+<g clip-path="url(#drain-life-c9)"><use href="#drain-life-p7" x="7" y="7" fill="#8a8498"/></g>
+</g>
+<path d="M124 330L140 352L130 380M186 320L174 346L182 372M150 280V300" fill="none" stroke-width="3.5" stroke-opacity="0.55"/>
+<use href="#drain-life-pa" fill="#524c64" stroke-width="12"/>
+<g clip-path="url(#drain-life-cb)">
+<use href="#drain-life-pa" x="-4" y="-4" fill="#b4aec2"/>
+<g clip-path="url(#drain-life-cc)"><use href="#drain-life-pa" x="3" y="3" fill="#8a8498"/></g>
+</g>
+<use href="#drain-life-pd" fill="#524c64" stroke-width="12"/>
+<g clip-path="url(#drain-life-ce)">
+<use href="#drain-life-pd" x="-8" y="-8" fill="#b4aec2"/>
+<g clip-path="url(#drain-life-cf)"><use href="#drain-life-pd" x="7" y="7" fill="#8a8498"/></g>
+</g>
+<path d="M132 204A8 10 0 1 0 148 204A8 10 0 1 0 132 204Z" fill="#1d0842"/>
+<path d="M161 202A7 9 0 1 0 175 202A7 9 0 1 0 161 202Z" fill="#1d0842"/>
+<path d="M149 228A7 9 0 1 0 163 228A7 9 0 1 0 149 228Z" fill="#1d0842"/>
+<path d="M128 216L134 232M180 212L176 228M130 186C140 180 156 178 170 184" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<circle cx="170" cy="302" r="60" fill="url(#drain-life-rg)"/>
+<circle cx="266" cy="276" r="120" fill="url(#drain-life-rh)"/>
+<use href="#drain-life-pi" fill="#8a0f2e" stroke-width="10"/>
+<g clip-path="url(#drain-life-cj)">
+<use href="#drain-life-pi" x="-5" y="-5" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-ck)"><use href="#drain-life-pi" x="3" y="3" fill="#e0234a"/></g>
+</g>
+<path d="M170 302C178 295 201 259 216 258C231 257 246 297 262 296C278 295 295 264 312 254C329 244 357 241 366 238" fill="none" stroke="#ffd0d8" stroke-width="4" stroke-opacity="0.85"/>
+<use href="#drain-life-pl" fill="#8a0f2e" stroke-width="6"/>
+<g clip-path="url(#drain-life-cm)">
+<use href="#drain-life-pl" x="-2" y="-2" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-cn)"><use href="#drain-life-pl" x="1" y="1" fill="#e0234a"/></g>
+</g>
+<use href="#drain-life-po" fill="#8a0f2e" stroke-width="6"/>
+<g clip-path="url(#drain-life-cp)">
+<use href="#drain-life-po" x="-2" y="-2" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-cq)"><use href="#drain-life-po" x="1" y="1" fill="#e0234a"/></g>
+</g>
+<use href="#drain-life-pr" fill="#8a0f2e" stroke-width="6"/>
+<g clip-path="url(#drain-life-cs)">
+<use href="#drain-life-pr" x="-2" y="-2" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-ct)"><use href="#drain-life-pr" x="1" y="1" fill="#e0234a"/></g>
+</g>
+<use href="#drain-life-pu" fill="#8a0f2e" stroke-width="6"/>
+<g clip-path="url(#drain-life-cv)">
+<use href="#drain-life-pu" x="-2" y="-2" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-cw)"><use href="#drain-life-pu" x="1" y="1" fill="#e0234a"/></g>
+</g>
+<use href="#drain-life-px" fill="#8a0f2e" stroke-width="6"/>
+<g clip-path="url(#drain-life-cy)">
+<use href="#drain-life-px" x="-2" y="-2" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-cz)"><use href="#drain-life-px" x="1" y="1" fill="#e0234a"/></g>
+</g>
+<use href="#drain-life-p10" fill="#8a0f2e" stroke-width="6"/>
+<g clip-path="url(#drain-life-c11)">
+<use href="#drain-life-p10" x="-2" y="-2" fill="#ff8fa3"/>
+<g clip-path="url(#drain-life-c12)"><use href="#drain-life-p10" x="1" y="1" fill="#e0234a"/></g>
+</g>
+<use href="#drain-life-p13" fill="#160a2e" stroke-width="12"/>
+<g clip-path="url(#drain-life-c14)">
+<use href="#drain-life-p13" x="-10" y="-10" fill="#4a2a7a"/>
+<g clip-path="url(#drain-life-c15)"><use href="#drain-life-p13" x="7" y="7" fill="#2a1450"/></g>
+</g>
+<use href="#drain-life-p16" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#drain-life-c17)">
+<use href="#drain-life-p16" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#drain-life-c18)"><use href="#drain-life-p16" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<circle cx="372" cy="232" r="84" fill="url(#drain-life-r19)"/>
+<use href="#drain-life-p1a" fill="#ff4d6d" stroke-width="12"/>
+<g clip-path="url(#drain-life-c1b)">
+<use href="#drain-life-p1a" x="-4" fill="#422078"/>
+<use href="#drain-life-p1a" x="-6" y="-6" fill="#a77ae0"/>
+<g clip-path="url(#drain-life-c1c)"><use href="#drain-life-p1a" x="7" y="7" fill="#7a48b8"/></g>
+</g>
+<use href="#drain-life-p1d" fill="#ff4d6d" stroke-width="8"/>
+<g clip-path="url(#drain-life-c1e)">
+<use href="#drain-life-p1d" x="-4" fill="#422078"/>
+<use href="#drain-life-p1d" x="-3" y="-3" fill="#a77ae0"/>
+<g clip-path="url(#drain-life-c1f)"><use href="#drain-life-p1d" x="2" y="2" fill="#7a48b8"/></g>
+</g>
+<use href="#drain-life-p1g" fill="#ff4d6d" stroke-width="8"/>
+<g clip-path="url(#drain-life-c1h)">
+<use href="#drain-life-p1g" x="-4" fill="#422078"/>
+<use href="#drain-life-p1g" x="-3" y="-3" fill="#a77ae0"/>
+<g clip-path="url(#drain-life-c1i)"><use href="#drain-life-p1g" x="2" y="2" fill="#7a48b8"/></g>
+</g>
+<use href="#drain-life-p1j" fill="#ff4d6d" stroke-width="8"/>
+<g clip-path="url(#drain-life-c1k)">
+<use href="#drain-life-p1j" x="-4" fill="#422078"/>
+<use href="#drain-life-p1j" x="-3" y="-3" fill="#a77ae0"/>
+<g clip-path="url(#drain-life-c1l)"><use href="#drain-life-p1j" x="2" y="2" fill="#7a48b8"/></g>
+</g>
+<use href="#drain-life-p1m" fill="#ff4d6d" stroke-width="8"/>
+<g clip-path="url(#drain-life-c1n)">
+<use href="#drain-life-p1m" x="-4" fill="#422078"/>
+<use href="#drain-life-p1m" x="-3" y="-3" fill="#a77ae0"/>
+<g clip-path="url(#drain-life-c1o)"><use href="#drain-life-p1m" x="2" y="2" fill="#7a48b8"/></g>
+</g>
+<use href="#drain-life-p1p" fill="#ff4d6d" stroke-width="8"/>
+<g clip-path="url(#drain-life-c1q)">
+<use href="#drain-life-p1p" x="-4" fill="#422078"/>
+<use href="#drain-life-p1p" x="-3" y="-3" fill="#a77ae0"/>
+<g clip-path="url(#drain-life-c1r)"><use href="#drain-life-p1p" x="2" y="2" fill="#7a48b8"/></g>
+</g>
+<use href="#drain-life-p1s" fill="#e0234a" stroke-width="8"/>
+<g clip-path="url(#drain-life-c1t)">
+<use href="#drain-life-p1s" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#drain-life-c1u)"><use href="#drain-life-p1s" x="3" y="3" fill="#ff8fa3"/></g>
+</g>
+<path d="M286 301L290 307L286 314L283 307Z" fill="#ff8fa3" fill-opacity="0.77"/>
+<path d="M115 175L118 180L115 185L112 180Z" fill="#ff4d6d" fill-opacity="0.61"/>
+<path d="M233 254L237 260L233 266L230 260Z" fill="#ff8fa3" fill-opacity="0.71"/>
+<path d="M349 224L352 230L349 236L346 230Z" fill="#ff4d6d" fill-opacity="0.61"/>
+<path d="M389 245L392 250L389 255L386 250Z" fill="#ff8fa3" fill-opacity="0.82"/>
+<path d="M419 277L423 284L419 291L415 284Z" fill="#ff4d6d" fill-opacity="0.5"/>
+<path d="M104 158L108 165L104 172L101 165Z" fill="#ff8fa3" fill-opacity="0.8"/>
+<path d="M328 178L331 184L328 190L325 184Z" fill="#ff4d6d" fill-opacity="0.83"/>
+<path d="M168 162L172 168L168 175L165 168Z" fill="#ff8fa3" fill-opacity="0.63"/>
+<path d="M310 264L312 269L310 274L307 269Z" fill="#ff4d6d" fill-opacity="0.45"/>
+<path d="M173 318L176 323L173 329L171 323Z" fill="#ff8fa3" fill-opacity="0.43"/>
+<path d="M370 189L373 194L370 199L367 194Z" fill="#ff4d6d" fill-opacity="0.81"/>
+<path d="M112 307L114 311L112 314L110 311Z" fill="#ff8fa3" fill-opacity="0.83"/>
+<path d="M395 372L397 377L395 381L392 377Z" fill="#ff4d6d" fill-opacity="0.53"/>
+</svg>

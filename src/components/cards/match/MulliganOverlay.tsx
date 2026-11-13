@@ -29,9 +29,9 @@ export function MulliganOverlay({ client, me, iGoFirst, canMulligan, pending }: 
   const locked = !canMulligan || pending;
 
   return (
-    <div className="cg-overlay cg-mulligan" data-cg-tap>
+    <div className="cg-overlay cg-mulligan" data-cg-tap role="dialog" aria-modal aria-labelledby="cg-mulligan-title">
       <div className="cg-mulligan-head">
-        <h2 className="cg-mulligan-title">{t("match.mulliganTitle")}</h2>
+        <h2 id="cg-mulligan-title" className="cg-mulligan-title">{t("match.mulliganTitle")}</h2>
         <TurnTimer client={client} silent />
       </div>
       <p className="cg-mulligan-sub">{iGoFirst ? t("match.youGoFirst") : t("match.foeGoesFirst")}</p>

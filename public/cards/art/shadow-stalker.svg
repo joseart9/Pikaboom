@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="shadow-stalker-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#06040e"/><stop offset="0.55" stop-color="#1a0e32"/><stop offset="1" stop-color="#08040e"/></linearGradient><radialGradient id="shadow-stalker-r1" gradientUnits="userSpaceOnUse" cx="280" cy="210" r="250"><stop offset="0" stop-color="#9d6bff" stop-opacity="0.35"/><stop offset="0.45" stop-color="#9d6bff" stop-opacity="0.1575"/><stop offset="1" stop-color="#9d6bff" stop-opacity="0"/></radialGradient><linearGradient id="shadow-stalker-l2" gradientUnits="userSpaceOnUse" x1="0" y1="334" x2="0" y2="512"><stop offset="0" stop-color="#20143e"/><stop offset="1" stop-color="#0a0618"/></linearGradient><radialGradient id="shadow-stalker-r3" gradientUnits="userSpaceOnUse" cx="250" cy="392" r="200"><stop offset="0" stop-color="#9d6bff" stop-opacity="0.55"/><stop offset="1" stop-color="#9d6bff" stop-opacity="0"/></radialGradient><path id="shadow-stalker-p4" d="M217 249C211 256 200 280 190 289C180 298 159 305 153 310C147 314 149 317 150 319C151 321 151 325 159 322C167 320 191 312 202 303C213 294 230 271 235 263C239 254 235 249 233 247C230 245 224 243 217 249Z"/><clipPath id="shadow-stalker-c5"><use href="#shadow-stalker-p4"/></clipPath><clipPath id="shadow-stalker-c6"><use href="#shadow-stalker-p4" x="-4" y="-4"/></clipPath><path id="shadow-stalker-p7" d="M317 285C323 293 354 300 357 310C361 319 338 339 340 351C342 362 366 381 373 387C379 392 381 389 383 387C384 386 387 383 383 377C380 372 359 360 360 349C360 338 389 317 387 302C384 288 354 262 343 255C332 248 319 252 315 257C311 262 311 277 317 285Z"/><clipPath id="shadow-stalker-c8"><use href="#shadow-stalker-p7"/></clipPath><clipPath id="shadow-stalker-c9"><use href="#shadow-stalker-p7" x="-6" y="-6"/></clipPath><path id="shadow-stalker-pa" d="M227 223C230 217 234 196 235 191C236 187 234 191 234 191C234 191 236 187 233 191C230 194 215 210 213 215C210 221 214 225 216 226C219 227 224 228 227 223ZM251 211C254 205 258 179 259 173C260 167 258 173 258 173C258 172 260 167 257 172C254 177 239 199 237 206C234 212 239 215 241 216C243 217 249 218 251 211ZM275 206C278 201 282 180 283 175C284 170 282 175 282 175C282 175 284 171 281 174C278 178 263 194 261 199C258 205 262 209 264 210C267 211 272 212 275 206ZM299 206C302 199 306 173 307 167C308 161 306 167 306 167C306 167 308 161 305 166C302 171 287 193 285 200C282 206 287 209 289 210C291 211 297 212 299 206ZM323 212C326 207 330 186 331 181C332 176 330 181 330 181C330 180 332 176 329 180C326 184 311 200 309 205C306 210 310 215 312 216C315 217 320 217 323 212ZM347 222C350 215 354 189 355 183C356 178 354 183 354 183C354 183 356 178 353 183C350 188 335 210 333 216C330 223 335 226 337 226C339 227 345 228 347 222Z"/><clipPath id="shadow-stalker-cb"><use href="#shadow-stalker-pa"/></clipPath><clipPath id="shadow-stalker-cc"><use href="#shadow-stalker-pa" x="-3" y="-3"/></clipPath><path id="shadow-stalker-pd" d="M196 254C197 243 216 223 230 214C244 205 272 196 290 196C308 196 337 204 350 214C364 224 379 248 380 260C381 272 370 291 356 296C343 301 310 297 290 296C270 295 236 294 222 288C208 282 195 265 196 254Z"/><clipPath id="shadow-stalker-ce"><use href="#shadow-stalker-pd"/></clipPath><clipPath id="shadow-stalker-cf"><use href="#shadow-stalker-pd" x="-12" y="-12"/></clipPath><path id="shadow-stalker-pg" d="M213 257C204 263 183 285 171 295C159 306 139 321 133 328C127 334 130 337 132 339C133 341 135 344 143 340C151 336 172 322 185 313C198 303 224 287 231 279C238 271 235 262 233 259C230 256 222 252 213 257Z"/><clipPath id="shadow-stalker-ch"><use href="#shadow-stalker-pg"/></clipPath><clipPath id="shadow-stalker-ci"><use href="#shadow-stalker-pg" x="-5" y="-5"/></clipPath><path id="shadow-stalker-pj" d="M137 329C132 328 117 325 108 326C100 326 84 330 80 331C76 332 80 332 80 332C80 332 76 333 80 333C84 333 100 332 108 332C116 333 130 339 135 339C140 339 141 336 141 335C141 333 142 330 137 329ZM135 329C130 330 117 332 110 336C102 339 89 349 86 351C82 354 86 352 86 352C86 352 83 354 86 353C90 351 105 344 112 342C120 340 133 340 137 339C141 338 141 334 141 333C141 332 140 329 135 329ZM133 330C129 332 121 339 116 344C111 350 102 364 99 367C97 371 100 368 100 368C100 368 98 371 101 369C104 366 115 354 120 350C126 345 136 341 139 338C142 335 141 332 140 331C139 330 137 328 133 330Z"/><clipPath id="shadow-stalker-ck"><use href="#shadow-stalker-pj"/></clipPath><clipPath id="shadow-stalker-cl"><use href="#shadow-stalker-pj" x="-2" y="-2"/></clipPath><path id="shadow-stalker-pm" d="M211 230C221 226 243 205 259 197C275 190 304 185 320 183C337 181 362 187 370 187C377 187 370 186 370 186C370 186 378 187 370 185C363 183 337 173 320 173C302 173 271 176 253 183C235 189 209 207 201 214C192 220 196 225 198 227C199 230 202 235 211 230Z"/><clipPath id="shadow-stalker-cn"><use href="#shadow-stalker-pm"/></clipPath><clipPath id="shadow-stalker-co"><use href="#shadow-stalker-pm" x="-4" y="-4"/></clipPath><path id="shadow-stalker-pp" d="M199 236C206 233 221 219 233 215C246 210 275 208 282 207C289 206 282 206 282 206C282 206 290 205 282 205C274 205 244 202 231 205C217 208 199 220 193 224C186 228 189 232 190 233C191 235 193 239 199 236Z"/><clipPath id="shadow-stalker-cq"><use href="#shadow-stalker-pp"/></clipPath><clipPath id="shadow-stalker-cr"><use href="#shadow-stalker-pp" x="-3" y="-3"/></clipPath><path id="shadow-stalker-ps" d="M132 252C140 226 176 210 212 218C232 226 236 252 222 270C196 280 160 278 132 262Z"/><clipPath id="shadow-stalker-ct"><use href="#shadow-stalker-ps"/></clipPath><clipPath id="shadow-stalker-cu"><use href="#shadow-stalker-ps" x="-8" y="-8"/></clipPath><radialGradient id="shadow-stalker-rv" gradientUnits="userSpaceOnUse" cx="170" cy="240" r="46"><stop offset="0" stop-color="#ff4dd2" stop-opacity="0.6"/><stop offset="0.45" stop-color="#ff4dd2" stop-opacity="0.27"/><stop offset="1" stop-color="#ff4dd2" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#shadow-stalker-l0)"/>
+<circle cx="280" cy="210" r="250" fill="url(#shadow-stalker-r1)"/>
+<path d="M372 70A56 56 0 1 0 412 166A44 44 0 1 1 372 70Z" fill="#e0d0ff" fill-opacity="0.85"/>
+<path d="M60 521C64 479 67 320 64 260C61 199 45 149 37 119C29 89 16 68 12 59C8 50 10 58 9 58C9 58 6 51 8 61C10 70 19 91 23 121C27 151 36 201 36 260C36 320 20 477 20 519C20 561 33 540 39 540C45 540 56 563 60 521Z" fill="#05030a"/>
+<path d="M54 235C63 229 93 205 103 193C113 180 118 157 121 150C124 144 121 149 120 149C120 149 123 144 119 150C116 155 108 176 97 187C86 199 53 217 46 225C38 232 43 233 45 234C46 236 46 242 54 235Z" fill="#05030a"/>
+<path d="M492 519C493 480 478 334 477 280C476 227 483 187 487 162C491 136 500 119 502 111C504 103 501 108 501 108C500 108 502 102 498 109C494 117 481 133 473 158C465 184 451 225 447 280C443 334 444 481 448 521C452 560 464 542 471 542C477 542 491 559 492 519Z" fill="#05030a"/>
+<path d="M471 255C463 248 433 229 423 218C413 206 408 185 405 180C402 174 404 179 404 179C403 179 401 174 403 180C405 187 408 210 417 222C426 235 453 259 461 265C470 272 470 266 471 265C473 263 478 262 471 255Z" fill="#05030a"/>
+<path d="M0 370Q256 334 512 370V512H0Z" fill="url(#shadow-stalker-l2)"/>
+<ellipse cx="250" cy="392" rx="200" ry="56" fill="url(#shadow-stalker-r3)"/>
+<ellipse cx="240" cy="390" rx="150" ry="12" fill="#1d0842" fill-opacity="0.6"/>
+<path d="M453 300C452 309 436 318 426 325C416 333 407 342 392 346C378 349 354 350 340 346C325 341 309 328 305 318C301 308 312 295 319 285C325 275 331 264 344 259C356 253 378 250 393 252C408 254 422 263 432 271C442 279 454 291 453 300Z" fill="#1a1030" fill-opacity="0.75"/>
+<path d="M484 250C483 257 474 265 466 271C459 276 448 280 438 281C428 283 415 283 405 280C395 277 382 270 378 263C374 256 377 245 381 238C386 231 395 224 405 221C415 217 427 217 438 218C449 219 464 221 472 226C479 232 484 243 484 250Z" fill="#1a1030" fill-opacity="0.55"/>
+<path d="M435 360C435 365 415 371 403 376C391 380 378 386 364 387C349 388 331 384 315 381C299 378 276 375 269 370C262 365 268 356 275 350C282 345 296 338 310 336C325 333 346 334 362 335C379 336 395 339 407 343C419 347 436 355 435 360Z" fill="#1a1030" fill-opacity="0.7"/>
+<path d="M498 200C498 205 490 211 485 215C479 218 472 221 465 222C459 222 451 221 445 218C439 216 433 212 431 208C428 203 426 196 428 192C430 187 439 185 445 182C452 179 460 173 467 173C474 173 482 180 487 184C492 189 499 195 498 200Z" fill="#1a1030" fill-opacity="0.4"/>
+<use href="#shadow-stalker-p4" fill="#b48cff" stroke-width="12"/>
+<g clip-path="url(#shadow-stalker-c5)">
+<use href="#shadow-stalker-p4" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-p4" x="-4" y="-4" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-c6)"><use href="#shadow-stalker-p4" x="7" y="7" fill="#1a1230"/></g>
+</g>
+<use href="#shadow-stalker-p7" fill="#b48cff" stroke-width="12"/>
+<g clip-path="url(#shadow-stalker-c8)">
+<use href="#shadow-stalker-p7" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-p7" x="-6" y="-6" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-c9)"><use href="#shadow-stalker-p7" x="7" y="7" fill="#241a3e"/></g>
+</g>
+<use href="#shadow-stalker-pa" fill="#b48cff" stroke-width="8"/>
+<g clip-path="url(#shadow-stalker-cb)">
+<use href="#shadow-stalker-pa" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-pa" x="-3" y="-3" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-cc)"><use href="#shadow-stalker-pa" x="2" y="2" fill="#241a3e"/></g>
+</g>
+<use href="#shadow-stalker-pd" fill="#b48cff" stroke-width="12"/>
+<g clip-path="url(#shadow-stalker-ce)">
+<use href="#shadow-stalker-pd" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-pd" x="-12" y="-12" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-cf)"><use href="#shadow-stalker-pd" x="7" y="7" fill="#241a3e"/></g>
+</g>
+<path d="M250 250C260 266 262 280 258 290M276 246C286 262 288 280 284 292" fill="none" stroke="#b48cff" stroke-width="4" stroke-opacity="0.35"/>
+<path d="M408 266C408 273 405 282 400 287C395 291 385 292 377 293C370 294 360 296 354 293C349 290 347 281 344 275C341 269 338 262 339 255C341 249 347 241 354 238C360 235 370 236 378 237C386 238 396 240 401 244C406 249 408 259 408 266Z" fill="#2e2050" fill-opacity="0.8"/>
+<path d="M420 236C419 240 415 243 412 247C408 250 405 256 400 257C396 257 390 254 385 252C381 249 375 247 373 243C372 239 374 234 376 230C378 226 382 224 386 221C390 219 395 214 401 214C406 214 414 218 417 221C420 225 421 232 420 236Z" fill="#2e2050" fill-opacity="0.8"/>
+<path d="M376 300C375 304 373 307 370 310C367 313 362 319 356 320C350 321 340 319 334 317C328 314 324 310 322 306C320 302 320 298 323 294C325 290 330 286 335 285C341 283 348 283 355 284C361 284 370 286 373 288C377 291 376 296 376 300Z" fill="#2e2050" fill-opacity="0.8"/>
+<circle cx="441" cy="209" r="4" fill="#3e2e66" fill-opacity="0.57"/>
+<circle cx="371" cy="294" r="3" fill="#3e2e66" fill-opacity="0.72"/>
+<circle cx="391" cy="283" r="4" fill="#3e2e66" fill-opacity="0.62"/>
+<circle cx="388" cy="210" r="4" fill="#3e2e66" fill-opacity="0.8"/>
+<circle cx="395" cy="253" r="4" fill="#3e2e66" fill-opacity="0.77"/>
+<circle cx="427" cy="271" r="4" fill="#3e2e66" fill-opacity="0.66"/>
+<circle cx="368" cy="190" r="5" fill="#3e2e66" fill-opacity="0.63"/>
+<circle cx="411" cy="275" r="4" fill="#3e2e66" fill-opacity="0.52"/>
+<circle cx="388" cy="300" r="2" fill="#3e2e66" fill-opacity="0.88"/>
+<circle cx="398" cy="196" r="4" fill="#3e2e66" fill-opacity="0.58"/>
+<circle cx="407" cy="289" r="2" fill="#3e2e66" fill-opacity="0.81"/>
+<circle cx="390" cy="302" r="5" fill="#3e2e66" fill-opacity="0.64"/>
+<use href="#shadow-stalker-pg" fill="#b48cff" stroke-width="12"/>
+<g clip-path="url(#shadow-stalker-ch)">
+<use href="#shadow-stalker-pg" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-pg" x="-5" y="-5" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-ci)"><use href="#shadow-stalker-pg" x="7" y="7" fill="#241a3e"/></g>
+</g>
+<use href="#shadow-stalker-pj" fill="#7a5ac8" stroke-width="6"/>
+<g clip-path="url(#shadow-stalker-ck)">
+<use href="#shadow-stalker-pj" x="-2" y="-2" fill="#ffffff"/>
+<g clip-path="url(#shadow-stalker-cl)"><use href="#shadow-stalker-pj" x="1" y="1" fill="#d6c8ff"/></g>
+</g>
+<use href="#shadow-stalker-pm" fill="#b48cff" stroke-width="10"/>
+<g clip-path="url(#shadow-stalker-cn)">
+<use href="#shadow-stalker-pm" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-pm" x="-4" y="-4" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-co)"><use href="#shadow-stalker-pm" x="3" y="3" fill="#241a3e"/></g>
+</g>
+<use href="#shadow-stalker-pp" fill="#b48cff" stroke-width="8"/>
+<g clip-path="url(#shadow-stalker-cq)">
+<use href="#shadow-stalker-pp" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-pp" x="-3" y="-3" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-cr)"><use href="#shadow-stalker-pp" x="2" y="2" fill="#1a1230"/></g>
+</g>
+<use href="#shadow-stalker-ps" fill="#b48cff" stroke-width="12"/>
+<g clip-path="url(#shadow-stalker-ct)">
+<use href="#shadow-stalker-ps" x="-5" fill="#120a24"/>
+<use href="#shadow-stalker-ps" x="-8" y="-8" fill="#3e2e66"/>
+<g clip-path="url(#shadow-stalker-cu)"><use href="#shadow-stalker-ps" x="7" y="7" fill="#241a3e"/></g>
+</g>
+<circle cx="170" cy="240" r="46" fill="url(#shadow-stalker-rv)"/>
+<path d="M150 240L184 232L178 242Z" fill="#ff9fe6"/>
+<path d="M190 236L212 234L206 242Z" fill="#ff9fe6"/>
+<path d="M140 260C160 266 184 266 206 258" fill="none" stroke="#ff9fe6" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M150 262l4 8l4-8zM164 264l4 8l4-8zM178 264l4 8l4-8z" fill="#ff9fe6" fill-opacity="0.9"/>
+</svg>

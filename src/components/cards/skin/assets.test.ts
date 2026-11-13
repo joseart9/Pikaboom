@@ -58,6 +58,28 @@ function check(url: string, viewBox: string, key: string): string[] {
 
 /** UI-03 pilot roster (DUELO_UI_UX_ENHANCEMENT_PLAN.md §5 UI-03). */
 const UI03_PILOTS = ["squire", "wolf-pup", "stone-golem", "restless-skeleton", "arcane-spark", "flame-lance", "morvath", "ignis"];
+/** UI-04 wave: 30 humanoid, beast, construct and elemental keys (plan §5 UI-04, manifest phase column). */
+const UI04_WAVE = [
+  "shield-bearer", "forest-boar", "iron-guard", "berserker-bear", "charging-rhino", "thornback-tortoise", "alpha-wolf",
+  "twin-claw-panther", "line-breaker", "ursaria", "apprentice-mage", "grave-digger", "scholar", "dawn-paladin",
+  "necromancer", "swamp-ent", "storm-weaver", "last-stand-knight", "blood-hound", "silence-monk", "sun-cleric",
+  "clockwork-sentinel", "venom-spider", "phoenix-chick", "iron-colossus", "soul-thief", "wolf", "bear-cub", "toad",
+  "scrap-golem",
+];
+/** UI-05 wave: 16 undead, demon and dragon keys (plan §5 UI-05). */
+const UI05_WAVE = [
+  "vampire-bat", "bone-wall", "hungry-ghoul", "crypt-banshee", "skeleton-king", "ember-imp", "flame-wyrm", "curse-weaver",
+  "shadow-stalker", "ash-drake", "storm-drake", "larval-drake", "mana-leech", "vaelra", "nyxara", "skeleton",
+];
+/** UI-06 wave: the 26 remaining spell keys (plan §5 UI-06). */
+const UI06_WAVE = [
+  "healing-touch", "drain-life", "savage-strike", "pack-call", "wild-roar", "arcane-insight", "soul-harvest", "bone-storm",
+  "chain-lightning", "growing-crystal", "ice-shard", "blessing-of-light", "purify", "shatter-armor", "disarming-strike",
+  "stone-sleep", "aegis-ward", "frozen-gale", "banish", "dark-pact", "golem-forge", "toad-hex", "raise-dead", "arcane-echo",
+  "mind-thrall", "mana-spark",
+];
+/** The six Legendaria/Única illustrations (plan §5 UI-05 flagship sheet). */
+const PREMIUM = ["morvath", "skeleton-king", "ursaria", "vaelra", "ignis", "nyxara"];
 
 describe("drop-in SVG art (ART_GUIDE.md)", () => {
   it("every registered card art key is a catalog art key, and its file follows the guide", () => {
@@ -70,6 +92,40 @@ describe("drop-in SVG art (ART_GUIDE.md)", () => {
 
   it("the 8 UI-03 pilot illustrations are registered", () => {
     for (const key of UI03_PILOTS) expect(CARD_ART_FILES.has(key), key).toBe(true);
+  });
+
+  it("the 30 UI-04 illustrations are registered (art coverage 38/80)", () => {
+    expect(new Set(UI04_WAVE).size).toBe(30);
+    for (const key of UI04_WAVE) expect(CARD_ART_FILES.has(key), key).toBe(true);
+    expect(CARD_ART_FILES.size).toBeGreaterThanOrEqual(38);
+  });
+
+  it("the 16 UI-05 illustrations and all six premium artworks are registered (art coverage 54/80)", () => {
+    expect(new Set(UI05_WAVE).size).toBe(16);
+    for (const key of [...UI05_WAVE, ...PREMIUM]) expect(CARD_ART_FILES.has(key), key).toBe(true);
+    expect(CARD_ART_FILES.size).toBeGreaterThanOrEqual(54);
+  });
+
+  it("the 26 UI-06 spell illustrations are registered", () => {
+    expect(new Set(UI06_WAVE).size).toBe(26);
+    for (const key of UI06_WAVE) expect(CARD_ART_FILES.has(key), key).toBe(true);
+  });
+
+  // UI-06 full-catalog gate: every CURRENT card (collectible and token) has exactly one registered, existing,
+  // contract-compliant file. The placeholder fallback in the primitives stays for FUTURE cards; adding a card without
+  // art makes this test fail until its SVG is drawn and registered.
+  it("every current CardDef.art has exactly one registered, existing, compliant SVG (art coverage 80/80)", () => {
+    const keys = [...new Set(Object.values(CATALOG).map((d) => d.art))].sort();
+    expect(keys).toHaveLength(80);
+    const missing = keys.filter((k) => !CARD_ART_FILES.has(k));
+    expect(missing, "catalog art keys without a registered file").toEqual([]);
+    expect([...CARD_ART_FILES].sort()).toEqual(keys);
+    const dir = join(ROOT, "public", "cards", "art");
+    const files = readdirSync(dir).filter((n) => n.endsWith(".svg")).map((n) => n.replace(/\.svg$/, ""));
+    for (const key of keys) {
+      expect(files.filter((n) => n === key), `${key}: exactly one file`).toHaveLength(1);
+      expect(check(cardArtUrl(key), VIEWBOX_ART, key), key).toEqual([]);
+    }
   });
 
   it("every file in public/cards/art is a registered key (no orphan or misspelled art)", () => {

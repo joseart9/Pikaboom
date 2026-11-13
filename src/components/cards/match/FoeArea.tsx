@@ -1,11 +1,13 @@
-// The opponent's strip in the top bar (§17.3): portrait + health, mana, hand as card backs with a count, deck count.
+// The opponent's strip in the top bar (§17.3): portrait + health, name + mana, hidden hand (card backs + count — the
+// cards themselves are never sent to this client), deck count. UI-08: compact HUD chips, mana as a small gauge.
 import type { EntityId } from "@/game/cards/engine/types";
 import { t } from "@/game/cards/i18n";
 import type { SideView } from "@/game/cards/server/view";
-import { CardBack, ManaCrystals } from "../skin";
+import { CardBack, ManaGauge } from "../skin";
 import { HeroButton } from "./HeroButton";
+import { manaLabel } from "./PlayerArea";
 
-const MAX_BACKS = 10;
+const MAX_BACKS = 5;
 
 export interface FoeAreaProps {
   foe: SideView;
@@ -30,28 +32,20 @@ export function FoeArea({ foe, active, targets, hoverTarget = null, onTapEntity 
         size="calc(max(12dvh, 48px) - 8px)"
         onTap={onTapEntity}
       />
-      <span className="cg-counter" style={{ color: "var(--cg-text)" }}>
-        {foe.name}
+      <span className="cg-foe-id">
+        <span className="cg-foe-name">{foe.name}</span>
+        <ManaGauge current={foe.mana.current} max={foe.mana.max} temporary={foe.mana.temporary} pips={false} label={manaLabel(foe.mana)} />
       </span>
-      <ManaCrystals
-        current={foe.mana.current}
-        max={foe.mana.max}
-        temporary={foe.mana.temporary}
-        size="clamp(10px, 2.6dvh, 16px)"
-        label={t("match.mana", { current: foe.mana.current, max: foe.mana.max })}
-      />
-      <span className="cg-counter" data-cg-anchor="foe-hand" title={t("match.handCount", { n: foe.handCount })} aria-label={t("match.handCount", { n: foe.handCount })}>
-        <span style={{ display: "inline-flex" }} aria-hidden>
+      <span className="cg-hud-chip" data-cg-anchor="foe-hand" role="img" title={t("match.handCount", { n: foe.handCount })} aria-label={t("match.handCount", { n: foe.handCount })}>
+        <span className="cg-hud-backs" aria-hidden>
           {Array.from({ length: backs }, (_, i) => (
-            <span key={i} style={{ marginLeft: i === 0 ? 0 : "calc(clamp(18px, 6dvh, 34px) * -0.55)" }}>
-              <CardBack height="clamp(18px, 6dvh, 34px)" />
-            </span>
+            <CardBack key={i} height="var(--cg-chip-card)" />
           ))}
         </span>
         {foe.handCount}
       </span>
-      <span className="cg-counter" data-cg-anchor="foe-deck" title={t("match.deckCount", { n: foe.deckCount })} aria-label={t("match.deckCount", { n: foe.deckCount })}>
-        <CardBack height="clamp(16px, 5dvh, 28px)" />
+      <span className="cg-hud-chip" data-cg-anchor="foe-deck" role="img" title={t("match.deckCount", { n: foe.deckCount })} aria-label={t("match.deckCount", { n: foe.deckCount })}>
+        <CardBack height="var(--cg-chip-card)" />
         {foe.deckCount}
       </span>
     </>

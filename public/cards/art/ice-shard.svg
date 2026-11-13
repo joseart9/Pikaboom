@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="ice-shard-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0a1a3a"/><stop offset="0.55" stop-color="#1f4f8a"/><stop offset="1" stop-color="#0c1f40"/></linearGradient><radialGradient id="ice-shard-r1" gradientUnits="userSpaceOnUse" cx="310" cy="270" r="250"><stop offset="0" stop-color="#bfe6ff" stop-opacity="0.38"/><stop offset="0.45" stop-color="#bfe6ff" stop-opacity="0.171"/><stop offset="1" stop-color="#bfe6ff" stop-opacity="0"/></radialGradient><linearGradient id="ice-shard-l2" gradientUnits="userSpaceOnUse" x1="0" y1="334" x2="0" y2="512"><stop offset="0" stop-color="#2a5a8a"/><stop offset="1" stop-color="#5a8ac0"/></linearGradient><radialGradient id="ice-shard-r3" gradientUnits="userSpaceOnUse" cx="320" cy="396" r="180"><stop offset="0" stop-color="#e6f6ff" stop-opacity="0.55"/><stop offset="1" stop-color="#e6f6ff" stop-opacity="0"/></radialGradient><path id="ice-shard-p4" d="M266 378A26 12 0 1 0 318 378A26 12 0 1 0 266 378Z"/><clipPath id="ice-shard-c5"><use href="#ice-shard-p4"/></clipPath><clipPath id="ice-shard-c6"><use href="#ice-shard-p4" x="-4" y="-4"/></clipPath><path id="ice-shard-p7" d="M334 378A26 12 0 1 0 386 378A26 12 0 1 0 334 378Z"/><clipPath id="ice-shard-c8"><use href="#ice-shard-p7"/></clipPath><clipPath id="ice-shard-c9"><use href="#ice-shard-p7" x="-4" y="-4"/></clipPath><path id="ice-shard-pa" d="M288 291C283 287 264 286 258 280C251 275 250 258 246 253C243 249 239 249 237 250C235 250 232 252 234 259C235 265 239 284 246 292C253 299 273 307 280 309C287 311 292 307 293 304C294 301 293 294 288 291Z"/><clipPath id="ice-shard-cb"><use href="#ice-shard-pa"/></clipPath><clipPath id="ice-shard-cc"><use href="#ice-shard-pa" x="-4" y="-4"/></clipPath><path id="ice-shard-pd" d="M375 313C382 310 403 300 410 291C417 283 420 265 421 258C422 252 418 250 416 249C414 249 410 249 407 254C405 258 404 274 398 281C392 287 371 291 365 295C360 299 360 306 361 309C363 311 367 315 375 313Z"/><clipPath id="ice-shard-ce"><use href="#ice-shard-pd"/></clipPath><clipPath id="ice-shard-cf"><use href="#ice-shard-pd" x="-4" y="-4"/></clipPath><path id="ice-shard-pg" d="M262 270L214 236L270 248Z"/><clipPath id="ice-shard-ch"><use href="#ice-shard-pg"/></clipPath><clipPath id="ice-shard-ci"><use href="#ice-shard-pg" x="-4" y="-4"/></clipPath><path id="ice-shard-pj" d="M390 270L438 236L384 248Z"/><clipPath id="ice-shard-ck"><use href="#ice-shard-pj"/></clipPath><clipPath id="ice-shard-cl"><use href="#ice-shard-pj" x="-4" y="-4"/></clipPath><path id="ice-shard-pm" d="M262 312C261 296 262 269 272 258C282 247 310 236 326 236C342 236 370 247 380 258C390 269 391 296 390 312C389 328 382 356 372 366C362 376 340 380 326 380C312 380 290 376 280 366C270 356 263 328 262 312Z"/><clipPath id="ice-shard-cn"><use href="#ice-shard-pm"/></clipPath><clipPath id="ice-shard-co"><use href="#ice-shard-pm" x="-12" y="-12"/></clipPath><path id="ice-shard-pp" d="M399 305L382 324L364 313L365 274L390 269Z"/><clipPath id="ice-shard-cq"><use href="#ice-shard-pp"/></clipPath><clipPath id="ice-shard-cr"><use href="#ice-shard-pp" x="-5" y="-5"/></clipPath><path id="ice-shard-ps" d="M405 353L389 362L379 342L386 318L404 322Z"/><clipPath id="ice-shard-ct"><use href="#ice-shard-ps"/></clipPath><clipPath id="ice-shard-cu"><use href="#ice-shard-ps" x="-5" y="-5"/></clipPath><path id="ice-shard-pv" d="M380 370L362 381L339 378L341 363L364 355Z"/><clipPath id="ice-shard-cw"><use href="#ice-shard-pv"/></clipPath><clipPath id="ice-shard-cx"><use href="#ice-shard-pv" x="-5" y="-5"/></clipPath><path id="ice-shard-py" d="M417 251L411 276L398 276L394 255L404 240Z"/><clipPath id="ice-shard-cz"><use href="#ice-shard-py"/></clipPath><clipPath id="ice-shard-c10"><use href="#ice-shard-py" x="-5" y="-5"/></clipPath><path id="ice-shard-p11" d="M333 384L321 395L305 389L302 378L320 376Z"/><clipPath id="ice-shard-c12"><use href="#ice-shard-p11"/></clipPath><clipPath id="ice-shard-c13"><use href="#ice-shard-p11" x="-5" y="-5"/></clipPath><path id="ice-shard-p14" d="M434 380L422 389L404 388L407 374L423 368Z"/><clipPath id="ice-shard-c15"><use href="#ice-shard-p14"/></clipPath><clipPath id="ice-shard-c16"><use href="#ice-shard-p14" x="-5" y="-5"/></clipPath><radialGradient id="ice-shard-r17" gradientUnits="userSpaceOnUse" cx="300" cy="256" r="70"><stop offset="0" stop-color="#e6f6ff" stop-opacity="0.85"/><stop offset="0.45" stop-color="#e6f6ff" stop-opacity="0.3825"/><stop offset="1" stop-color="#e6f6ff" stop-opacity="0"/></radialGradient><path id="ice-shard-p18" d="M78 117C93 134 146 176 179 198C212 220 281 253 299 263C318 272 300 262 300 262C300 262 315 275 301 261C286 247 230 196 201 170C172 143 125 96 106 83C87 71 80 81 75 86C71 91 62 100 78 117Z"/><clipPath id="ice-shard-c19"><use href="#ice-shard-p18"/></clipPath><clipPath id="ice-shard-c1a"><use href="#ice-shard-p18" x="-8" y="-8"/></clipPath><path id="ice-shard-p1b" d="M317 231L308 254L333 251L310 261L329 277L306 268L309 293L299 270L283 289L292 266L267 269L290 259L271 243L294 252L291 227L301 250Z"/><clipPath id="ice-shard-c1c"><use href="#ice-shard-p1b"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#ice-shard-l0)"/>
+<circle cx="310" cy="270" r="250" fill="url(#ice-shard-r1)"/>
+<path d="M40 130L0 350L80 350Z" fill="#12305e"/>
+<path d="M96 190L56 350L136 350Z" fill="#12305e"/>
+<path d="M440 140L400 350L480 350Z" fill="#12305e"/>
+<path d="M486 180L446 350L526 350Z" fill="#12305e"/>
+<path d="M0 370Q256 334 512 370V512H0Z" fill="url(#ice-shard-l2)"/>
+<ellipse cx="320" cy="396" rx="180" ry="50" fill="url(#ice-shard-r3)"/>
+<ellipse cx="326" cy="384" rx="96" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#ice-shard-p4" fill="#4a6a2a" stroke-width="8"/>
+<g clip-path="url(#ice-shard-c5)">
+<use href="#ice-shard-p4" x="-4" y="-4" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-c6)"><use href="#ice-shard-p4" x="3" y="3" fill="#7aa04a"/></g>
+</g>
+<use href="#ice-shard-p7" fill="#4a6a2a" stroke-width="8"/>
+<g clip-path="url(#ice-shard-c8)">
+<use href="#ice-shard-p7" x="-4" y="-4" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-c9)"><use href="#ice-shard-p7" x="3" y="3" fill="#7aa04a"/></g>
+</g>
+<use href="#ice-shard-pa" fill="#4a6a2a" stroke-width="12"/>
+<g clip-path="url(#ice-shard-cb)">
+<use href="#ice-shard-pa" x="-4" y="-4" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-cc)"><use href="#ice-shard-pa" x="3" y="3" fill="#7aa04a"/></g>
+</g>
+<use href="#ice-shard-pd" fill="#4a6a2a" stroke-width="12"/>
+<g clip-path="url(#ice-shard-ce)">
+<use href="#ice-shard-pd" x="-4" y="-4" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-cf)"><use href="#ice-shard-pd" x="3" y="3" fill="#7aa04a"/></g>
+</g>
+<use href="#ice-shard-pg" fill="#4a6a2a" stroke-width="10"/>
+<g clip-path="url(#ice-shard-ch)">
+<use href="#ice-shard-pg" x="-4" y="-4" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-ci)"><use href="#ice-shard-pg" x="3" y="3" fill="#7aa04a"/></g>
+</g>
+<use href="#ice-shard-pj" fill="#4a6a2a" stroke-width="10"/>
+<g clip-path="url(#ice-shard-ck)">
+<use href="#ice-shard-pj" x="-4" y="-4" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-cl)"><use href="#ice-shard-pj" x="3" y="3" fill="#7aa04a"/></g>
+</g>
+<use href="#ice-shard-pm" fill="#4a6a2a" stroke-width="12"/>
+<g clip-path="url(#ice-shard-cn)">
+<use href="#ice-shard-pm" x="-12" y="-12" fill="#a8cc6a"/>
+<g clip-path="url(#ice-shard-co)"><use href="#ice-shard-pm" x="7" y="7" fill="#7aa04a"/></g>
+</g>
+<path d="M285 290A15 18 0 1 0 315 290A15 18 0 1 0 285 290Z" fill="#ffffff"/>
+<path d="M335 290A15 18 0 1 0 365 290A15 18 0 1 0 335 290Z" fill="#ffffff"/>
+<path d="M285 290A15 18 0 1 0 315 290A15 18 0 1 0 285 290ZM335 290A15 18 0 1 0 365 290A15 18 0 1 0 335 290Z" fill="none" stroke-width="4"/>
+<path d="M290 282A6 6 0 1 0 302 282A6 6 0 1 0 290 282Z" fill="#1d0842"/>
+<path d="M340 282A6 6 0 1 0 352 282A6 6 0 1 0 340 282Z" fill="#1d0842"/>
+<path d="M314 334A12 15 0 1 0 338 334A12 15 0 1 0 314 334Z" fill="#3a0612"/>
+<path d="M314 334A12 15 0 1 0 338 334A12 15 0 1 0 314 334Z" fill="none" stroke-width="4"/>
+<path d="M286 264L310 272M366 264L342 272" fill="none" stroke-width="4"/>
+<path d="M300 262C303 256 359 249 372 254C385 259 392 286 394 300C396 314 393 349 386 360C379 371 349 385 340 382C331 379 320 351 322 340C324 329 355 310 352 300C349 290 297 268 300 262Z" fill="#e6f6ff" fill-opacity="0.45"/>
+<use href="#ice-shard-pp" fill="#3fa9ff" stroke-width="8"/>
+<g clip-path="url(#ice-shard-cq)">
+<use href="#ice-shard-pp" x="-5" y="-5" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-cr)"><use href="#ice-shard-pp" x="3" y="3" fill="#9be7ff"/></g>
+</g>
+<use href="#ice-shard-ps" fill="#3fa9ff" stroke-width="8"/>
+<g clip-path="url(#ice-shard-ct)">
+<use href="#ice-shard-ps" x="-5" y="-5" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-cu)"><use href="#ice-shard-ps" x="3" y="3" fill="#9be7ff"/></g>
+</g>
+<use href="#ice-shard-pv" fill="#3fa9ff" stroke-width="8"/>
+<g clip-path="url(#ice-shard-cw)">
+<use href="#ice-shard-pv" x="-5" y="-5" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-cx)"><use href="#ice-shard-pv" x="3" y="3" fill="#9be7ff"/></g>
+</g>
+<use href="#ice-shard-py" fill="#3fa9ff" stroke-width="8"/>
+<g clip-path="url(#ice-shard-cz)">
+<use href="#ice-shard-py" x="-5" y="-5" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-c10)"><use href="#ice-shard-py" x="3" y="3" fill="#9be7ff"/></g>
+</g>
+<use href="#ice-shard-p11" fill="#3fa9ff" stroke-width="8"/>
+<g clip-path="url(#ice-shard-c12)">
+<use href="#ice-shard-p11" x="-5" y="-5" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-c13)"><use href="#ice-shard-p11" x="3" y="3" fill="#9be7ff"/></g>
+</g>
+<use href="#ice-shard-p14" fill="#3fa9ff" stroke-width="8"/>
+<g clip-path="url(#ice-shard-c15)">
+<use href="#ice-shard-p14" x="-5" y="-5" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-c16)"><use href="#ice-shard-p14" x="3" y="3" fill="#9be7ff"/></g>
+</g>
+<path d="M296 262L330 280L360 270M330 280L344 314L376 330M344 314L330 350" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M60 140L150 226M86 104L168 186M50 196L120 262" fill="none" stroke="#e6f6ff" stroke-width="4" stroke-opacity="0.45"/>
+<circle cx="300" cy="256" r="70" fill="url(#ice-shard-r17)"/>
+<use href="#ice-shard-p18" fill="#3fa9ff" stroke-width="10"/>
+<g clip-path="url(#ice-shard-c19)">
+<use href="#ice-shard-p18" x="-8" y="-8" fill="#e6f6ff"/>
+<g clip-path="url(#ice-shard-c1a)"><use href="#ice-shard-p18" x="5" y="5" fill="#9be7ff"/></g>
+</g>
+<path d="M100 108L294 258" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.85"/>
+<path d="M108 86L124 124M144 124L156 160" fill="none" stroke="#3fa9ff" stroke-width="3" stroke-opacity="0.8"/>
+<use href="#ice-shard-p1b" fill="#9be7ff" stroke-width="6"/>
+<g clip-path="url(#ice-shard-c1c)">
+<use href="#ice-shard-p1b" x="-3" y="-3" fill="#ffffff"/>
+</g>
+<path d="M98 105L101 111L98 117L95 111Z" fill="#ffffff" fill-opacity="0.65"/>
+<path d="M193 151L196 156L193 162L190 156Z" fill="#bfe6ff" fill-opacity="0.98"/>
+<path d="M399 86L402 93L399 99L395 93Z" fill="#ffffff" fill-opacity="0.6"/>
+<path d="M95 388L99 395L95 403L91 395Z" fill="#bfe6ff" fill-opacity="0.74"/>
+<path d="M364 102L367 107L364 112L361 107Z" fill="#ffffff" fill-opacity="0.83"/>
+<path d="M464 149L468 156L464 163L460 156Z" fill="#bfe6ff" fill-opacity="0.62"/>
+<path d="M138 329L140 333L138 337L136 333Z" fill="#ffffff" fill-opacity="0.86"/>
+<path d="M212 240L217 248L212 255L208 248Z" fill="#bfe6ff" fill-opacity="0.88"/>
+<path d="M427 367L430 373L427 379L423 373Z" fill="#ffffff" fill-opacity="0.91"/>
+<path d="M351 153L353 157L351 162L348 157Z" fill="#bfe6ff" fill-opacity="0.76"/>
+<path d="M427 378L431 385L427 392L423 385Z" fill="#ffffff" fill-opacity="0.82"/>
+<path d="M190 367L193 371L190 375L188 371Z" fill="#bfe6ff" fill-opacity="0.7"/>
+<path d="M389 134L392 140L389 146L385 140Z" fill="#ffffff" fill-opacity="0.95"/>
+<path d="M378 86L381 92L378 97L375 92Z" fill="#bfe6ff" fill-opacity="0.77"/>
+<path d="M368 198L370 202L368 207L366 202Z" fill="#ffffff" fill-opacity="0.53"/>
+<path d="M64 146L68 153L64 159L61 153Z" fill="#bfe6ff" fill-opacity="0.54"/>
+<path d="M296 374L299 381L296 387L292 381Z" fill="#ffffff" fill-opacity="0.59"/>
+<path d="M131 311L134 317L131 323L128 317Z" fill="#bfe6ff" fill-opacity="0.65"/>
+</svg>

@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="mind-thrall-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0c0420"/><stop offset="0.55" stop-color="#3a0e5a"/><stop offset="1" stop-color="#140626"/></linearGradient><radialGradient id="mind-thrall-r1" gradientUnits="userSpaceOnUse" cx="256" cy="160" r="300"><stop offset="0" stop-color="#b5179e" stop-opacity="0.5"/><stop offset="0.45" stop-color="#b5179e" stop-opacity="0.225"/><stop offset="1" stop-color="#b5179e" stop-opacity="0"/></radialGradient><linearGradient id="mind-thrall-l2" gradientUnits="userSpaceOnUse" x1="0" y1="362" x2="0" y2="512"><stop offset="0" stop-color="#2a0e46"/><stop offset="1" stop-color="#120626"/></linearGradient><radialGradient id="mind-thrall-r3" gradientUnits="userSpaceOnUse" cx="256" cy="420" r="200"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="mind-thrall-p4" d="M198 338C194 350 191 389 192 402C194 414 202 421 208 422C213 423 223 418 228 406C232 394 239 355 238 342C237 330 226 321 220 320C215 319 202 325 198 338Z"/><clipPath id="mind-thrall-c5"><use href="#mind-thrall-p4"/></clipPath><clipPath id="mind-thrall-c6"><use href="#mind-thrall-p4" x="-6" y="-6"/></clipPath><path id="mind-thrall-p7" d="M274 342C273 355 280 394 284 406C289 418 299 423 304 422C310 421 318 414 320 402C321 389 318 350 314 338C310 325 297 319 292 320C286 321 275 330 274 342Z"/><clipPath id="mind-thrall-c8"><use href="#mind-thrall-p7"/></clipPath><clipPath id="mind-thrall-c9"><use href="#mind-thrall-p7" x="-6" y="-6"/></clipPath><path id="mind-thrall-pa" d="M368 314C368 330 367 350 354 362C341 374 313 380 290 385C268 390 241 395 219 391C197 387 173 374 160 361C146 348 137 329 137 314C138 299 151 282 165 269C178 256 197 240 218 236C239 232 268 238 290 243C312 248 338 256 351 267C364 279 367 298 368 314Z"/><clipPath id="mind-thrall-cb"><use href="#mind-thrall-pa"/></clipPath><clipPath id="mind-thrall-cc"><use href="#mind-thrall-pa" x="-14" y="-12"/></clipPath><path id="mind-thrall-pd" d="M317 334C318 344 310 357 300 363C290 370 270 373 256 373C242 373 222 369 213 363C203 356 199 344 199 334C199 324 204 312 213 305C223 299 242 293 256 293C270 293 288 299 298 306C308 313 317 324 317 334Z"/><clipPath id="mind-thrall-ce"><use href="#mind-thrall-pd"/></clipPath><clipPath id="mind-thrall-cf"><use href="#mind-thrall-pd" x="-6" y="-6"/></clipPath><path id="mind-thrall-pg" d="M135 257C125 269 110 307 108 326C106 346 115 373 120 384C125 394 136 399 142 398C147 397 155 386 156 376C157 367 144 348 148 334C152 319 178 293 181 279C185 266 176 248 169 245C162 241 144 244 135 257Z"/><clipPath id="mind-thrall-ch"><use href="#mind-thrall-pg"/></clipPath><clipPath id="mind-thrall-ci"><use href="#mind-thrall-pg" x="-8" y="-8"/></clipPath><path id="mind-thrall-pj" d="M331 279C334 293 360 319 364 334C368 348 355 367 356 376C357 386 365 397 370 398C376 399 387 394 392 384C397 373 406 346 404 326C402 307 387 269 377 257C368 244 350 241 343 245C336 248 327 266 331 279Z"/><clipPath id="mind-thrall-ck"><use href="#mind-thrall-pj"/></clipPath><clipPath id="mind-thrall-cl"><use href="#mind-thrall-pj" x="-8" y="-8"/></clipPath><path id="mind-thrall-pm" d="M170 392C170 396 163 401 158 404C154 408 150 413 145 413C140 414 133 411 128 409C122 406 114 404 112 400C109 396 111 389 114 385C116 380 121 375 126 373C131 371 139 372 144 373C150 374 156 376 160 379C164 382 170 388 170 392Z"/><clipPath id="mind-thrall-cn"><use href="#mind-thrall-pm"/></clipPath><clipPath id="mind-thrall-co"><use href="#mind-thrall-pm" x="-5" y="-5"/></clipPath><path id="mind-thrall-pp" d="M404 392C403 397 397 402 392 405C388 409 382 411 376 412C371 412 365 411 360 409C355 407 350 403 348 399C345 395 344 388 346 384C348 381 354 378 360 375C365 372 372 367 378 367C383 368 390 373 394 377C399 381 404 387 404 392Z"/><clipPath id="mind-thrall-cq"><use href="#mind-thrall-pp"/></clipPath><clipPath id="mind-thrall-cr"><use href="#mind-thrall-pp" x="-5" y="-5"/></clipPath><path id="mind-thrall-ps" d="M322 248C321 258 312 267 303 275C293 283 281 293 268 294C255 296 237 291 225 286C212 281 198 273 194 264C189 255 193 242 198 233C204 225 214 217 226 211C237 206 254 199 268 200C282 200 301 208 310 216C319 224 324 238 322 248Z"/><clipPath id="mind-thrall-ct"><use href="#mind-thrall-ps"/></clipPath><clipPath id="mind-thrall-cu"><use href="#mind-thrall-ps" x="-10" y="-10"/></clipPath><path id="mind-thrall-pv" d="M232 201C226 196 206 193 200 186C193 179 189 160 187 156C185 151 186 156 186 156C186 156 185 151 185 156C185 162 183 185 188 194C194 204 213 216 220 219C227 223 234 219 235 216C237 213 237 205 232 201Z"/><clipPath id="mind-thrall-cw"><use href="#mind-thrall-pv"/></clipPath><clipPath id="mind-thrall-cx"><use href="#mind-thrall-pv" x="-3" y="-3"/></clipPath><path id="mind-thrall-py" d="M292 219C299 216 318 204 324 194C329 185 327 162 327 156C327 151 326 156 326 156C326 156 327 151 325 156C323 160 319 179 312 186C306 193 286 196 280 201C275 205 275 213 277 216C278 219 285 223 292 219Z"/><clipPath id="mind-thrall-cz"><use href="#mind-thrall-py"/></clipPath><clipPath id="mind-thrall-c10"><use href="#mind-thrall-py" x="-3" y="-3"/></clipPath><path id="mind-thrall-p11" d="M214 230C213 221 216 203 222 196C228 189 246 182 256 182C266 182 284 189 290 196C296 203 299 221 298 230C297 239 292 252 282 256C272 260 240 260 230 256C220 252 215 239 214 230Z"/><clipPath id="mind-thrall-c12"><use href="#mind-thrall-p11"/></clipPath><clipPath id="mind-thrall-c13"><use href="#mind-thrall-p11" x="-8" y="-8"/></clipPath><radialGradient id="mind-thrall-r14" gradientUnits="userSpaceOnUse" cx="256" cy="214" r="60"><stop offset="0" stop-color="#c77dff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.315"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="mind-thrall-r15" gradientUnits="userSpaceOnUse" cx="238" cy="228" r="18"><stop offset="0" stop-color="#c77dff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.405"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="mind-thrall-r16" gradientUnits="userSpaceOnUse" cx="274" cy="228" r="18"><stop offset="0" stop-color="#c77dff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.405"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="mind-thrall-r17" gradientUnits="userSpaceOnUse" cx="256" cy="110" r="170"><stop offset="0" stop-color="#e0b8ff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#e0b8ff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#e0b8ff" stop-opacity="0"/></radialGradient><path id="mind-thrall-p18" d="M212 -42C204 -18 203 44 210 68C217 92 242 117 256 118C271 118 298 95 306 72C314 48 318 -14 312 -38C306 -62 279 -89 264 -90C249 -91 220 -66 212 -42Z"/><clipPath id="mind-thrall-c19"><use href="#mind-thrall-p18"/></clipPath><clipPath id="mind-thrall-c1a"><use href="#mind-thrall-p18" x="-8" y="-8"/></clipPath><path id="mind-thrall-p1b" d="M314 112C324 116 355 110 365 116C376 122 380 146 385 152C391 158 398 158 402 157C405 155 409 150 407 140C404 131 395 102 383 92C370 81 335 73 322 72C310 72 300 82 298 88C297 94 304 107 314 112Z"/><clipPath id="mind-thrall-c1c"><use href="#mind-thrall-p1b"/></clipPath><clipPath id="mind-thrall-c1d"><use href="#mind-thrall-p1b" x="-6" y="-6"/></clipPath><path id="mind-thrall-p1e" d="M183 97C176 103 164 120 161 131C158 143 159 167 161 175C163 184 168 187 171 187C175 187 181 183 183 177C185 170 183 149 187 141C191 132 206 125 209 119C212 112 211 98 207 95C202 91 189 92 183 97Z"/><clipPath id="mind-thrall-c1f"><use href="#mind-thrall-p1e"/></clipPath><clipPath id="mind-thrall-c1g"><use href="#mind-thrall-p1e" x="-6" y="-6"/></clipPath><path id="mind-thrall-p1h" d="M221 99C216 105 207 120 205 134C204 147 208 181 211 191C214 201 219 201 223 201C226 201 231 199 233 189C235 180 230 149 233 138C235 127 249 124 251 117C252 110 249 96 245 93C240 91 227 93 221 99Z"/><clipPath id="mind-thrall-c1i"><use href="#mind-thrall-p1h"/></clipPath><clipPath id="mind-thrall-c1j"><use href="#mind-thrall-p1h" x="-6" y="-6"/></clipPath><path id="mind-thrall-p1k" d="M263 116C265 123 278 127 280 138C283 149 278 180 279 189C280 199 286 201 289 201C292 201 298 201 301 191C304 181 309 148 308 134C307 120 299 106 293 100C287 93 274 91 270 93C265 96 262 110 263 116Z"/><clipPath id="mind-thrall-c1l"><use href="#mind-thrall-p1k"/></clipPath><clipPath id="mind-thrall-c1m"><use href="#mind-thrall-p1k" x="-6" y="-6"/></clipPath><path id="mind-thrall-p1n" d="M304 118C307 125 322 132 326 140C329 149 327 169 329 176C331 183 337 187 340 187C344 187 349 184 351 176C353 167 355 143 352 132C349 120 338 103 332 98C325 92 312 91 308 94C304 97 302 111 304 118Z"/><clipPath id="mind-thrall-c1o"><use href="#mind-thrall-p1n"/></clipPath><clipPath id="mind-thrall-c1p"><use href="#mind-thrall-p1n" x="-6" y="-6"/></clipPath><path id="mind-thrall-p1q" d="M188 70C198 63 238 54 256 54C274 54 316 63 326 70C336 77 343 101 334 108C325 115 276 124 256 124C236 124 191 115 182 108C173 101 178 77 188 70Z"/><clipPath id="mind-thrall-c1r"><use href="#mind-thrall-p1q"/></clipPath><clipPath id="mind-thrall-c1s"><use href="#mind-thrall-p1q" x="-10" y="-10"/></clipPath><radialGradient id="mind-thrall-r1t" gradientUnits="userSpaceOnUse" cx="172" cy="176" r="16"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.405"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="mind-thrall-r1u" gradientUnits="userSpaceOnUse" cx="222" cy="190" r="16"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.405"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="mind-thrall-r1v" gradientUnits="userSpaceOnUse" cx="290" cy="190" r="16"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.405"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><radialGradient id="mind-thrall-r1w" gradientUnits="userSpaceOnUse" cx="340" cy="176" r="16"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.405"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#mind-thrall-l0)"/>
+<circle cx="256" cy="160" r="300" fill="url(#mind-thrall-r1)"/>
+<path d="M256 40L-44 512L-4 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L26 512L66 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L96 512L136 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L166 512L206 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L236 512L276 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L306 512L346 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L376 512L416 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L446 512L486 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M256 40L516 512L556 512Z" fill="#e0b8ff" fill-opacity="0.05"/>
+<path d="M0 398Q256 362 512 398V512H0Z" fill="url(#mind-thrall-l2)"/>
+<ellipse cx="256" cy="420" rx="200" ry="56" fill="url(#mind-thrall-r3)"/>
+<path d="M76 420A180 34 0 1 0 436 420A180 34 0 1 0 76 420ZM106 420A150 26 0 1 0 406 420A150 26 0 1 0 106 420Z" fill="none" stroke="#c77dff" stroke-width="4" stroke-opacity="0.5"/>
+<ellipse cx="256" cy="410" rx="130" ry="18" fill="#1d0842" fill-opacity="0.5"/>
+<g transform="translate(256 410) scale(0.92) translate(-256 -410)">
+<use href="#mind-thrall-p4" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-c5)">
+<use href="#mind-thrall-p4" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-p4" x="-6" y="-6" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-c6)"><use href="#mind-thrall-p4" x="7" y="7" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-p7" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-c8)">
+<use href="#mind-thrall-p7" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-p7" x="-6" y="-6" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-c9)"><use href="#mind-thrall-p7" x="7" y="7" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-pa" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-cb)">
+<use href="#mind-thrall-pa" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-pa" x="-14" y="-12" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-cc)"><use href="#mind-thrall-pa" x="8" y="8" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-pd" fill="#5a7078"/>
+<g clip-path="url(#mind-thrall-ce)">
+<use href="#mind-thrall-pd" x="-6" y="-6" fill="#b8ccd0"/>
+<g clip-path="url(#mind-thrall-cf)"><use href="#mind-thrall-pd" x="4" y="4" fill="#8aa0a4"/></g>
+</g>
+<use href="#mind-thrall-pg" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-ch)">
+<use href="#mind-thrall-pg" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-pg" x="-8" y="-8" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-ci)"><use href="#mind-thrall-pg" x="7" y="7" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-pj" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-ck)">
+<use href="#mind-thrall-pj" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-pj" x="-8" y="-8" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-cl)"><use href="#mind-thrall-pj" x="7" y="7" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-pm" fill="#c77dff" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-cn)">
+<use href="#mind-thrall-pm" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-pm" x="-5" y="-5" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-co)"><use href="#mind-thrall-pm" x="3" y="3" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-pp" fill="#c77dff" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-cq)">
+<use href="#mind-thrall-pp" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-pp" x="-5" y="-5" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-cr)"><use href="#mind-thrall-pp" x="3" y="3" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-ps" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-ct)">
+<use href="#mind-thrall-ps" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-ps" x="-10" y="-10" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-cu)"><use href="#mind-thrall-ps" x="7" y="7" fill="#6a7f86"/></g>
+</g>
+<use href="#mind-thrall-pv" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#mind-thrall-cw)">
+<use href="#mind-thrall-pv" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#mind-thrall-cx)"><use href="#mind-thrall-pv" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#mind-thrall-py" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#mind-thrall-cz)">
+<use href="#mind-thrall-py" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#mind-thrall-c10)"><use href="#mind-thrall-py" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#mind-thrall-p11" fill="#c77dff" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-c12)">
+<use href="#mind-thrall-p11" x="-5" fill="#3a4a58"/>
+<use href="#mind-thrall-p11" x="-8" y="-8" fill="#9ab4b8"/>
+<g clip-path="url(#mind-thrall-c13)"><use href="#mind-thrall-p11" x="7" y="7" fill="#6a7f86"/></g>
+</g>
+<circle cx="256" cy="214" r="60" fill="url(#mind-thrall-r14)"/>
+<path d="M256 206C256 206 256 206 256 206C257 206 257 207 257 207C257 207 257 207 257 207C256 208 256 208 256 208C256 208 255 208 255 208C255 208 254 208 254 208C253 208 253 208 253 207C252 207 252 207 252 206C252 205 252 205 252 204C252 204 252 203 252 202C253 202 253 201 254 201C254 201 255 200 256 200C257 200 258 200 258 200C259 200 260 201 261 201C262 202 262 202 263 203C263 204 264 205 264 206C264 207 264 208 264 209C264 210 263 211 262 212C262 213 261 214 260 215C259 215 257 216 256 216C255 216 253 216 252 216C251 215 249 215 248 214C247 213 246 212 245 210C245 209 244 208 244 206C244 204 244 203 244 201C245 200 246 198 247 197C248 196 249 194 251 194C252 193 254 192 256 192C258 192 260 192 262 193C263 193 265 194 267 195C268 197 269 198 270 200C271 202 272 205 272 206" fill="none" stroke="#f0d8ff" stroke-width="4"/>
+<path d="M229 228A9 6 0 1 0 247 228A9 6 0 1 0 229 228Z" fill="#f0d8ff"/>
+<circle cx="238" cy="228" r="18" fill="url(#mind-thrall-r15)"/>
+<path d="M265 228A9 6 0 1 0 283 228A9 6 0 1 0 265 228Z" fill="#f0d8ff"/>
+<circle cx="274" cy="228" r="18" fill="url(#mind-thrall-r16)"/>
+<path d="M236 244C250 250 262 250 276 244" fill="none" stroke-width="4"/>
+<path d="M240 244L244 232L248 245Z" fill="#e9e2cf"/>
+<path d="M264 245L268 232L272 244Z" fill="#e9e2cf"/>
+</g>
+<path d="M172 176L140 380" fill="none" stroke="#c77dff" stroke-width="6" stroke-opacity="0.35"/>
+<path d="M172 176L140 380" fill="none" stroke="#f0d8ff" stroke-width="2.5"/>
+<path d="M222 190L240 214" fill="none" stroke="#c77dff" stroke-width="6" stroke-opacity="0.35"/>
+<path d="M222 190L240 214" fill="none" stroke="#f0d8ff" stroke-width="2.5"/>
+<path d="M290 190L272 214" fill="none" stroke="#c77dff" stroke-width="6" stroke-opacity="0.35"/>
+<path d="M290 190L272 214" fill="none" stroke="#f0d8ff" stroke-width="2.5"/>
+<path d="M340 176L372 380" fill="none" stroke="#c77dff" stroke-width="6" stroke-opacity="0.35"/>
+<path d="M340 176L372 380" fill="none" stroke="#f0d8ff" stroke-width="2.5"/>
+<g opacity="0.92">
+<circle cx="256" cy="110" r="170" fill="url(#mind-thrall-r17)"/>
+<use href="#mind-thrall-p18" fill="#b5179e" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-c19)">
+<use href="#mind-thrall-p18" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p18" x="-8" y="-8" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1a)"><use href="#mind-thrall-p18" x="5" y="5" fill="#b48cff"/></g>
+</g>
+<use href="#mind-thrall-p1b" fill="#b5179e" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-c1c)">
+<use href="#mind-thrall-p1b" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p1b" x="-6" y="-6" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1d)"><use href="#mind-thrall-p1b" x="4" y="4" fill="#b48cff"/></g>
+</g>
+<use href="#mind-thrall-p1e" fill="#b5179e" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-c1f)">
+<use href="#mind-thrall-p1e" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p1e" x="-6" y="-6" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1g)"><use href="#mind-thrall-p1e" x="4" y="4" fill="#b48cff"/></g>
+</g>
+<use href="#mind-thrall-p1h" fill="#b5179e" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-c1i)">
+<use href="#mind-thrall-p1h" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p1h" x="-6" y="-6" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1j)"><use href="#mind-thrall-p1h" x="4" y="4" fill="#b48cff"/></g>
+</g>
+<use href="#mind-thrall-p1k" fill="#b5179e" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-c1l)">
+<use href="#mind-thrall-p1k" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p1k" x="-6" y="-6" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1m)"><use href="#mind-thrall-p1k" x="4" y="4" fill="#b48cff"/></g>
+</g>
+<use href="#mind-thrall-p1n" fill="#b5179e" stroke-width="10"/>
+<g clip-path="url(#mind-thrall-c1o)">
+<use href="#mind-thrall-p1n" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p1n" x="-6" y="-6" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1p)"><use href="#mind-thrall-p1n" x="4" y="4" fill="#b48cff"/></g>
+</g>
+<use href="#mind-thrall-p1q" fill="#b5179e" stroke-width="12"/>
+<g clip-path="url(#mind-thrall-c1r)">
+<use href="#mind-thrall-p1q" x="-5" fill="#6a3ab8"/>
+<use href="#mind-thrall-p1q" x="-10" y="-10" fill="#efe2ff"/>
+<g clip-path="url(#mind-thrall-c1s)"><use href="#mind-thrall-p1q" x="6" y="6" fill="#b48cff"/></g>
+</g>
+<path d="M204 104L210 92M240 110L242 98M276 110L274 98M310 104L304 92" fill="none" stroke="#6a3ab8" stroke-width="4" stroke-opacity="0.7"/>
+</g>
+<circle cx="172" cy="176" r="16" fill="url(#mind-thrall-r1t)"/>
+<path d="M167 176A5 5 0 1 0 177 176A5 5 0 1 0 167 176Z" fill="#ffffff"/>
+<circle cx="222" cy="190" r="16" fill="url(#mind-thrall-r1u)"/>
+<path d="M217 190A5 5 0 1 0 227 190A5 5 0 1 0 217 190Z" fill="#ffffff"/>
+<circle cx="290" cy="190" r="16" fill="url(#mind-thrall-r1v)"/>
+<path d="M285 190A5 5 0 1 0 295 190A5 5 0 1 0 285 190Z" fill="#ffffff"/>
+<circle cx="340" cy="176" r="16" fill="url(#mind-thrall-r1w)"/>
+<path d="M335 176A5 5 0 1 0 345 176A5 5 0 1 0 335 176Z" fill="#ffffff"/>
+<path d="M414 215L417 220L414 226L411 220Z" fill="#f0d8ff" fill-opacity="0.63"/>
+<path d="M203 308L205 313L203 318L200 313Z" fill="#c77dff" fill-opacity="0.6"/>
+<path d="M322 134L325 140L322 145L319 140Z" fill="#ff006e" fill-opacity="0.57"/>
+<path d="M363 182L365 186L363 189L361 186Z" fill="#f0d8ff" fill-opacity="0.59"/>
+<path d="M318 114L320 119L318 123L316 119Z" fill="#c77dff" fill-opacity="0.67"/>
+<path d="M293 204L294 207L293 210L291 207Z" fill="#ff006e" fill-opacity="0.67"/>
+<path d="M218 118L221 124L218 131L214 124Z" fill="#f0d8ff" fill-opacity="0.83"/>
+<path d="M358 97L360 101L358 105L356 101Z" fill="#c77dff" fill-opacity="0.67"/>
+<path d="M346 323L348 327L346 331L344 327Z" fill="#ff006e" fill-opacity="0.52"/>
+<path d="M215 345L219 352L215 359L212 352Z" fill="#f0d8ff" fill-opacity="0.81"/>
+<path d="M368 109L372 116L368 123L365 116Z" fill="#c77dff" fill-opacity="0.82"/>
+<path d="M321 348L323 352L321 355L320 352Z" fill="#ff006e" fill-opacity="0.42"/>
+<path d="M162 229L165 234L162 239L159 234Z" fill="#f0d8ff" fill-opacity="0.78"/>
+<path d="M351 142L354 148L351 154L348 148Z" fill="#c77dff" fill-opacity="0.89"/>
+</svg>

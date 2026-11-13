@@ -10,6 +10,7 @@ import { deckProblemText, type DeckListResponse, type SavedDeck } from "@/game/c
 import { t } from "@/game/cards/i18n";
 import type { DeckChoice } from "@/game/cards/server/commands";
 import { DeckCover } from "../decks/DeckCover";
+import { StateMessage } from "../screen/StateMessage";
 import { GameIcon } from "../skin";
 
 export interface DeckPickerProps {
@@ -18,11 +19,23 @@ export interface DeckPickerProps {
   onSelect: (deckId: string) => void;
   /** Data source (tests / previews can inject one). Remount the picker (React `key`) to reload. */
   load?: () => Promise<ApiResult<DeckListResponse>>;
+  /** Show the "Editar mazos" link under the tiles (default true). */
+  editLink?: boolean;
 }
 
 type Load = { status: "loading" } | { status: "error"; message: string } | { status: "ready"; decks: SavedDeck[] };
 
-export function DeckPicker({ selected, disabled, onSelect, load = listDecks }: DeckPickerProps) {
+/** "Editar mazos" → /cards/decks. The lobby renders it in the section heading (UI-07) to save a row on phones. */
+export function EditDecksLink() {
+  return (
+    <Link href="/cards/decks" className="cg-lobby-edit-decks">
+      <GameIcon name="decks" size="1em" />
+      {t("lobby.editDecks")}
+    </Link>
+  );
+}
+
+export function DeckPicker({ selected, disabled, onSelect, load = listDecks, editLink = true }: DeckPickerProps) {
   const [state, setState] = useState<Load>({ status: "loading" });
   const [attempt, setAttempt] = useState(0);
 
@@ -38,7 +51,7 @@ export function DeckPicker({ selected, disabled, onSelect, load = listDecks }: D
     };
   }, [load, attempt]);
 
-  if (state.status === "loading") return <p className="cg-lobby-help">{t("lobby.decksLoading")}</p>;
+  if (state.status === "loading") return <StateMessage kind="loading" text={t("lobby.decksLoading")} />;
   if (state.status === "error") {
     return (
       <div className="cg-lobby-row">
@@ -60,7 +73,7 @@ export function DeckPicker({ selected, disabled, onSelect, load = listDecks }: D
   return (
     <div className="cg-deck-picker-wrap">
       {state.decks.length === 0 ? (
-        <p className="cg-lobby-help">{t("lobby.noDecks")}</p>
+        <StateMessage kind="empty" icon="decks" text={t("lobby.noDecks")} />
       ) : (
         <div className="cg-deck-picker" role="radiogroup" aria-label={t("lobby.chooseDeck")}>
           {state.decks.map((deck) => {
@@ -92,9 +105,7 @@ export function DeckPicker({ selected, disabled, onSelect, load = listDecks }: D
           })}
         </div>
       )}
-      <Link href="/cards/decks" className="cg-lobby-edit-decks">
-        {t("lobby.editDecks")}
-      </Link>
+      {editLink && <EditDecksLink />}
     </div>
   );
 }

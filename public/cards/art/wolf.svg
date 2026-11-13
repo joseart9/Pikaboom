@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="wolf-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1c2a3a"/><stop offset="0.55" stop-color="#2e4a4a"/><stop offset="1" stop-color="#1a2a24"/></linearGradient><radialGradient id="wolf-r1" gradientUnits="userSpaceOnUse" cx="250" cy="230" r="240"><stop offset="0" stop-color="#c3e8c0" stop-opacity="0.28"/><stop offset="0.45" stop-color="#c3e8c0" stop-opacity="0.12600000000000003"/><stop offset="1" stop-color="#c3e8c0" stop-opacity="0"/></radialGradient><linearGradient id="wolf-l2" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#35603a"/><stop offset="1" stop-color="#1c3424"/></linearGradient><radialGradient id="wolf-r3" gradientUnits="userSpaceOnUse" cx="256" cy="396" r="180"><stop offset="0" stop-color="#c3e8c0" stop-opacity="0.55"/><stop offset="1" stop-color="#c3e8c0" stop-opacity="0"/></radialGradient><path id="wolf-p4" d="M347 273C352 278 370 284 376 291C383 298 389 311 391 319C393 328 392 344 392 349C393 354 394 354 395 354C396 354 397 357 400 351C403 345 417 329 417 317C417 304 409 279 400 269C391 259 366 253 357 251C349 249 343 253 341 257C340 260 341 268 347 273Z"/><clipPath id="wolf-c5"><use href="#wolf-p4"/></clipPath><clipPath id="wolf-c6"><use href="#wolf-p4" x="-7" y="-7"/></clipPath><path id="wolf-p7" d="M201 304C202 314 213 337 219 350C224 362 234 381 239 387C243 394 247 392 249 391C252 390 255 388 253 381C251 373 241 355 237 342C233 330 232 304 227 296C223 288 214 285 210 287C206 288 199 295 201 304Z"/><clipPath id="wolf-c8"><use href="#wolf-p7"/></clipPath><clipPath id="wolf-c9"><use href="#wolf-p7" x="-6" y="-6"/></clipPath><path id="wolf-pa" d="M316 295C311 303 308 327 305 341C301 354 293 376 292 383C291 391 295 393 297 394C300 394 304 395 308 389C311 382 318 360 323 347C329 335 342 314 344 305C346 296 339 287 335 286C331 284 320 287 316 295Z"/><clipPath id="wolf-cb"><use href="#wolf-pa"/></clipPath><clipPath id="wolf-cc"><use href="#wolf-pa" x="-6" y="-6"/></clipPath><path id="wolf-pd" d="M224 388A16 8 0 1 0 256 388A16 8 0 1 0 224 388Z"/><clipPath id="wolf-ce"><use href="#wolf-pd"/></clipPath><clipPath id="wolf-cf"><use href="#wolf-pd" x="-4" y="-4"/></clipPath><path id="wolf-pg" d="M278 390A16 8 0 1 0 310 390A16 8 0 1 0 278 390Z"/><clipPath id="wolf-ch"><use href="#wolf-pg"/></clipPath><clipPath id="wolf-ci"><use href="#wolf-pg" x="-4" y="-4"/></clipPath><path id="wolf-pj" d="M184 252C189 242 206 234 222 232C238 230 272 234 290 236C308 238 332 238 344 244C356 250 367 266 368 276C369 286 359 306 348 312C337 318 310 315 292 316C274 317 243 318 228 316C213 314 197 310 190 300C183 290 179 262 184 252Z"/><clipPath id="wolf-ck"><use href="#wolf-pj"/></clipPath><clipPath id="wolf-cl"><use href="#wolf-pj" x="-12" y="-12"/></clipPath><path id="wolf-pm" d="M206 300C211 300 236 308 250 310C264 312 299 311 300 312C302 313 273 318 260 318C247 318 222 315 214 312C206 309 201 300 206 300Z"/><clipPath id="wolf-cn"><use href="#wolf-pm"/></clipPath><clipPath id="wolf-co"><use href="#wolf-pm" x="-3" y="-3"/></clipPath><path id="wolf-pp" d="M198 293C192 301 186 328 180 341C175 353 163 370 160 377C158 385 161 388 163 390C166 391 170 392 176 387C181 381 192 363 200 351C207 339 224 317 226 307C229 297 223 288 219 286C215 283 203 285 198 293Z"/><clipPath id="wolf-cq"><use href="#wolf-pp"/></clipPath><clipPath id="wolf-cr"><use href="#wolf-pp" x="-7" y="-7"/></clipPath><path id="wolf-ps" d="M325 304C328 313 348 328 350 341C352 353 342 377 341 386C341 394 345 396 348 397C350 397 355 399 359 390C363 382 373 354 374 339C375 324 368 298 363 288C357 279 342 275 336 277C331 280 323 294 325 304Z"/><clipPath id="wolf-ct"><use href="#wolf-ps"/></clipPath><clipPath id="wolf-cu"><use href="#wolf-ps" x="-7" y="-7"/></clipPath><path id="wolf-pv" d="M143 386A17 8 0 1 0 177 386A17 8 0 1 0 143 386Z"/><clipPath id="wolf-cw"><use href="#wolf-pv"/></clipPath><clipPath id="wolf-cx"><use href="#wolf-pv" x="-4" y="-4"/></clipPath><path id="wolf-py" d="M327 392A17 8 0 1 0 361 392A17 8 0 1 0 327 392Z"/><clipPath id="wolf-cz"><use href="#wolf-py"/></clipPath><clipPath id="wolf-c10"><use href="#wolf-py" x="-4" y="-4"/></clipPath><path id="wolf-p11" d="M250 254C250 263 241 272 235 279C228 286 221 295 213 297C205 298 195 293 187 288C179 284 167 278 164 270C161 262 163 248 167 239C170 230 177 220 185 216C193 212 204 212 213 214C221 216 230 221 236 227C243 234 251 245 250 254Z"/><clipPath id="wolf-c12"><use href="#wolf-p11"/></clipPath><clipPath id="wolf-c13"><use href="#wolf-p11" x="-8" y="-8"/></clipPath><path id="wolf-p14" d="M196 196L210 146L228 200Z"/><clipPath id="wolf-c15"><use href="#wolf-p14"/></clipPath><clipPath id="wolf-c16"><use href="#wolf-p14" x="-5" y="-5"/></clipPath><path id="wolf-p17" d="M150 196C158 192 172 183 182 182C192 181 207 186 214 192C221 198 229 212 230 222C231 232 224 249 218 256C212 263 197 266 188 266C179 266 168 259 158 256C148 253 128 251 120 248C112 245 106 240 104 236C103 232 106 226 110 222C114 218 126 216 132 212C138 208 143 201 150 196Z"/><clipPath id="wolf-c18"><use href="#wolf-p17"/></clipPath><clipPath id="wolf-c19"><use href="#wolf-p17" x="-12" y="-10"/></clipPath><path id="wolf-p1a" d="M170 196L180 142L204 192Z"/><clipPath id="wolf-c1b"><use href="#wolf-p1a"/></clipPath><clipPath id="wolf-c1c"><use href="#wolf-p1a" x="-5" y="-5"/></clipPath><path id="wolf-p1d" d="M106 238C118 232 150 238 176 246C170 258 150 262 128 256C116 252 108 246 106 238Z"/><clipPath id="wolf-c1e"><use href="#wolf-p1d"/></clipPath><clipPath id="wolf-c1f"><use href="#wolf-p1d" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#wolf-l0)"/>
+<circle cx="250" cy="230" r="240" fill="url(#wolf-r1)"/>
+<path d="M0 300Q120 250 240 290T512 270V512H0Z" fill="#1e3a30"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#wolf-l2)"/>
+<ellipse cx="256" cy="396" rx="180" ry="50" fill="url(#wolf-r3)"/>
+<path d="M56 400L62 378L68 396L74 372L78 398L86 382L86 400Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M415 410L421 386L428 406L434 379L439 408L448 390L448 410Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M287 460L293 440L298 456L304 435L307 458L314 444L314 460Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<ellipse cx="262" cy="394" rx="140" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#wolf-p4" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-c5)">
+<use href="#wolf-p4" x="-4" fill="#5f6880"/>
+<use href="#wolf-p4" x="-7" y="-7" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-c6)"><use href="#wolf-p4" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<path d="M392 300L398 330" fill="none" stroke-width="4" stroke-opacity="0.35"/>
+<use href="#wolf-p7" fill="#5f6880" stroke-width="12"/>
+<g clip-path="url(#wolf-c8)">
+<use href="#wolf-p7" x="-6" y="-6" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-c9)"><use href="#wolf-p7" x="7" y="7" fill="#7a8399"/></g>
+</g>
+<use href="#wolf-pa" fill="#5f6880" stroke-width="12"/>
+<g clip-path="url(#wolf-cb)">
+<use href="#wolf-pa" x="-6" y="-6" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-cc)"><use href="#wolf-pa" x="7" y="7" fill="#7a8399"/></g>
+</g>
+<use href="#wolf-pd" fill="#b9a98a" stroke-width="8"/>
+<g clip-path="url(#wolf-ce)">
+<use href="#wolf-pd" x="-4" y="-4" fill="#fff8ea"/>
+<g clip-path="url(#wolf-cf)"><use href="#wolf-pd" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pg" fill="#b9a98a" stroke-width="8"/>
+<g clip-path="url(#wolf-ch)">
+<use href="#wolf-pg" x="-4" y="-4" fill="#fff8ea"/>
+<g clip-path="url(#wolf-ci)"><use href="#wolf-pg" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pj" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-ck)">
+<use href="#wolf-pj" x="-4" fill="#5f6880"/>
+<use href="#wolf-pj" x="-12" y="-12" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-cl)"><use href="#wolf-pj" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<use href="#wolf-pm" fill="#b9a98a"/>
+<g clip-path="url(#wolf-cn)">
+<use href="#wolf-pm" x="-3" y="-3" fill="#fff8ea"/>
+<g clip-path="url(#wolf-co)"><use href="#wolf-pm" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pp" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-cq)">
+<use href="#wolf-pp" x="-4" fill="#5f6880"/>
+<use href="#wolf-pp" x="-7" y="-7" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-cr)"><use href="#wolf-pp" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<use href="#wolf-ps" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-ct)">
+<use href="#wolf-ps" x="-4" fill="#5f6880"/>
+<use href="#wolf-ps" x="-7" y="-7" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-cu)"><use href="#wolf-ps" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<use href="#wolf-pv" fill="#b9a98a" stroke-width="8"/>
+<g clip-path="url(#wolf-cw)">
+<use href="#wolf-pv" x="-4" y="-4" fill="#fff8ea"/>
+<g clip-path="url(#wolf-cx)"><use href="#wolf-pv" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-py" fill="#b9a98a" stroke-width="8"/>
+<g clip-path="url(#wolf-cz)">
+<use href="#wolf-py" x="-4" y="-4" fill="#fff8ea"/>
+<g clip-path="url(#wolf-c10)"><use href="#wolf-py" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-p11" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-c12)">
+<use href="#wolf-p11" x="-4" fill="#5f6880"/>
+<use href="#wolf-p11" x="-8" y="-8" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-c13)"><use href="#wolf-p11" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<use href="#wolf-p14" fill="#5f6880" stroke-width="12"/>
+<g clip-path="url(#wolf-c15)">
+<use href="#wolf-p14" x="-5" y="-5" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-c16)"><use href="#wolf-p14" x="7" y="7" fill="#7a8399"/></g>
+</g>
+<use href="#wolf-p17" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-c18)">
+<use href="#wolf-p17" x="-4" fill="#5f6880"/>
+<use href="#wolf-p17" x="-12" y="-10" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-c19)"><use href="#wolf-p17" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<use href="#wolf-p1a" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-c1b)">
+<use href="#wolf-p1a" x="-4" fill="#5f6880"/>
+<use href="#wolf-p1a" x="-5" y="-5" fill="#d0d6e2"/>
+<g clip-path="url(#wolf-c1c)"><use href="#wolf-p1a" x="7" y="7" fill="#9aa3b5"/></g>
+</g>
+<path d="M178 190L182 160L196 190Z" fill="#ff9aad" fill-opacity="0.7"/>
+<use href="#wolf-p1d" fill="#b9a98a"/>
+<g clip-path="url(#wolf-c1e)">
+<use href="#wolf-p1d" x="-3" y="-3" fill="#fff8ea"/>
+<g clip-path="url(#wolf-c1f)"><use href="#wolf-p1d" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<path d="M98 232A8 6 0 1 0 114 232A8 6 0 1 0 98 232Z" fill="#1d0842"/>
+<path d="M100 229A3 2 0 1 0 106 229A3 2 0 1 0 100 229Z" fill="#ffffff" fill-opacity="0.7"/>
+<path d="M112 244C128 250 146 250 162 246" fill="none" stroke-width="3.5"/>
+<path d="M155 214A9 6 0 1 0 173 214A9 6 0 1 0 155 214Z" fill="#1d0842"/>
+<path d="M157 214A5 5 0 1 0 168 214A5 5 0 1 0 157 214Z" fill="#ffbe0b"/>
+<path d="M159 214A3 3 0 1 0 164 214A3 3 0 1 0 159 214Z" fill="#1d0842"/>
+<path d="M158 212A2 2 0 1 0 162 212A2 2 0 1 0 158 212Z" fill="#ffffff" fill-opacity="0.9"/>
+<path d="M152 206L176 206" fill="none" stroke-width="3.5" stroke-opacity="0.8"/>
+</svg>

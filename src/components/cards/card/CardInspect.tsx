@@ -3,7 +3,11 @@
 // Enlarged card + glossary (§17.4, Phase 12 G.6): opened by long-press, right-click or "i". Shows the full card
 // (live stats for a unit on the board), its type, tribe and rarity in Spanish, and one glossary row per keyword,
 // ability word and status on it.
+// UI-08: for a unit on the board it is the enemy-card explainer — owner, live attack/health against the printed
+// values, every active keyword/status as an icon chip (the token only shows the top few), the rules text, then the
+// glossary rows with their icons. Opened by a plain tap on a foe unit too (MatchScreen).
 import { useEffect, useRef } from "react";
+import { markerName, statDeltas, unitMarkers } from "@/game/cards/client/unitMarkers";
 import { KEYWORDS } from "@/game/cards/catalog/keywords";
 import { STATUS_DEFS } from "@/game/cards/catalog/statuses";
 import type { CardDef, KeywordId, Keywords, StatusId } from "@/game/cards/catalog/types";
@@ -11,8 +15,9 @@ import type { UnitSnapshot } from "@/game/cards/engine/events";
 import type { Seat } from "@/game/cards/engine/types";
 import { cardName, cardText, t } from "@/game/cards/i18n";
 import { es } from "@/game/cards/i18n/es";
-import { RarityGem } from "../skin";
+import { AttackBadge, HealthBadge, KeywordIcon, RarityGem, StatDelta, StatusIcon } from "../skin";
 import { CardFace, type CardOverrides } from "./CardFace";
+import { CardText } from "./CardText";
 
 export interface CardInspectProps {
   def: CardDef;
@@ -21,6 +26,8 @@ export interface CardInspectProps {
   unit?: UnitSnapshot | null;
   /** The current turn, to say how long each status of `unit` lasts. */
   turn?: TurnRef | null;
+  /** Whose unit it is (shows "Tu criatura" / "Criatura rival"); only with `unit`. */
+  mine?: boolean;
   /** Extra line under the rarity (the collection's "not discovered yet" hint, Phase 14). */
   note?: string;
   onClose: () => void;
@@ -123,7 +130,15 @@ export function glossaryRows(def: CardDef, unit?: UnitSnapshot | null, turn?: Tu
   return rows;
 }
 
-export function CardInspect({ def, overrides, unit, turn, note, onClose }: CardInspectProps) {
+/** The icon for a glossary row, when it names a keyword or status the skin has a glyph for. */
+function RowIcon({ row }: { row: GlossaryRow }) {
+  if (row.key.startsWith("kw-")) return <KeywordIcon keyword={row.key.slice(3) as KeywordId} size="1.5em" />;
+  if (row.key.startsWith("st-")) return <StatusIcon status={row.key.slice(3) as StatusId} size="1.5em" />;
+  if (row.key === "silenced") return <StatusIcon status="silenced" size="1.5em" />;
+  return null;
+}
+
+export function CardInspect({ def, overrides, unit, turn, mine, note, onClose }: CardInspectProps) {
   const closeRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     const prev = document.activeElement instanceof HTMLElement ? document.activeElement : null;
@@ -135,6 +150,10 @@ export function CardInspect({ def, overrides, unit, turn, note, onClose }: CardI
   const name = cardName(def.id);
   const typeLine = [def.type === "mob" ? t("inspect.mob") : t("inspect.spell"), ...(def.type === "mob" ? def.tribes.map((tr) => t(`tribe.${tr}`)) : [])];
   if (!def.collectible) typeLine.push(t("inspect.token"));
+  const text = cardText(def.id);
+  const markers = unit ? unitMarkers(unit) : [];
+  const delta = unit ? statDeltas(unit, def) : { attack: 0, health: 0 };
+  const printed = def.type === "mob" ? def : null;
 
   return (
     <div
@@ -147,10 +166,13 @@ export function CardInspect({ def, overrides, unit, turn, note, onClose }: CardI
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="cg-inspect-card">
+      <div className={`cg-inspect-card cg-sheen cg-sheen--${def.rarity}`}>
         <CardFace def={def} overrides={overrides} />
       </div>
       <div className="cg-inspect-info">
+        {unit && mine !== undefined && (
+          <span className={`cg-inspect-owner cg-inspect-owner--${mine ? "mine" : "foe"}`}>{t(mine ? "inspect.yourUnit" : "inspect.foeUnit")}</span>
+        )}
         <h2 className="cg-inspect-name">{name}</h2>
         <p className="cg-inspect-type">{typeLine.join(" · ")}</p>
         <p className="cg-inspect-rarity">
@@ -159,8 +181,41 @@ export function CardInspect({ def, overrides, unit, turn, note, onClose }: CardI
         </p>
         {note && <p className="cg-inspect-note">{note}</p>}
         {unit && (
-          <p className="cg-inspect-stats">{t("inspect.onBoard", { attack: unit.attack, health: unit.health, max: unit.maxHealth })}</p>
+          <div className="cg-inspect-stats" aria-label={t("inspect.onBoard", { attack: unit.attack, health: unit.health, max: unit.maxHealth })}>
+            <span className="cg-inspect-stat" aria-hidden>
+              <AttackBadge value={unit.attack} buffed={delta.attack > 0} debuffed={delta.attack < 0} size="2.2em" />
+              <StatDelta delta={delta.attack} size="1em" />
+              <span>
+                {t("inspect.attack")}
+                {printed && delta.attack !== 0 && <small> ({t("inspect.base", { n: printed.attack })})</small>}
+              </span>
+            </span>
+            <span className="cg-inspect-stat" aria-hidden>
+              <HealthBadge value={unit.health} damaged={unit.health < unit.maxHealth} buffed={delta.health > 0} size="2.2em" />
+              <StatDelta delta={delta.health} size="1em" />
+              <span>
+                {t("inspect.health")} {unit.health}/{unit.maxHealth}
+                {printed && delta.health !== 0 && <small> ({t("inspect.base", { n: printed.health })})</small>}
+              </span>
+            </span>
+          </div>
         )}
+        {unit && (markers.length > 0 || unit.sleeping) && (
+          <>
+            <h3 className="cg-inspect-subtitle">{t("inspect.state")}</h3>
+            <ul className="cg-inspect-chips">
+              {markers.map((m) => (
+                <li key={`${m.kind}-${m.id}`} className={`cg-inspect-chip${m.kind === "status" && m.harmful ? " cg-inspect-chip--harmful" : ""}`}>
+                  {m.kind === "keyword" ? <KeywordIcon keyword={m.id} value={m.value} size="1.4em" /> : <StatusIcon status={m.id} magnitude={m.magnitude} size="1.4em" />}
+                  {markerName(m)}
+                </li>
+              ))}
+              {unit.sleeping && <li className="cg-inspect-chip">zZz {t("match.sleeping")}</li>}
+            </ul>
+          </>
+        )}
+        <h3 className="cg-inspect-subtitle">{t("inspect.rulesText")}</h3>
+        <p className="cg-inspect-text">{text ? <CardText text={text} /> : t("inspect.noText")}</p>
         <h3 className="cg-inspect-subtitle">{t("inspect.glossary")}</h3>
         {rows.length === 0 ? (
           <p className="cg-inspect-empty">{t("inspect.empty")}</p>
@@ -168,7 +223,10 @@ export function CardInspect({ def, overrides, unit, turn, note, onClose }: CardI
           <dl className="cg-inspect-glossary">
             {rows.map((r) => (
               <div key={r.key} className={`cg-inspect-row cg-inspect-row--${r.kind}`}>
-                <dt>{r.name}</dt>
+                <dt>
+                  <RowIcon row={r} />
+                  {r.name}
+                </dt>
                 {r.text && <dd>{r.text}</dd>}
               </div>
             ))}

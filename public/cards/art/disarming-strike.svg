@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="disarming-strike-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#120a2e"/><stop offset="0.55" stop-color="#2e1f6a"/><stop offset="1" stop-color="#160c34"/></linearGradient><radialGradient id="disarming-strike-r1" gradientUnits="userSpaceOnUse" cx="240" cy="200" r="260"><stop offset="0" stop-color="#ffe066" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.135"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><linearGradient id="disarming-strike-l2" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#3a2a6e"/><stop offset="1" stop-color="#1a1036"/></linearGradient><radialGradient id="disarming-strike-r3" gradientUnits="userSpaceOnUse" cx="300" cy="400" r="200"><stop offset="0" stop-color="#ffe066" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="disarming-strike-r4" gradientUnits="userSpaceOnUse" cx="240" cy="196" r="120"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.35"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.1575"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="disarming-strike-p5" d="M-24 -12L118 -10L154 0L118 10L-24 12Z"/><clipPath id="disarming-strike-c6"><use href="#disarming-strike-p5"/></clipPath><clipPath id="disarming-strike-c7"><use href="#disarming-strike-p5" x="-5" y="-5"/></clipPath><path id="disarming-strike-p8" d="M-35 -40C-36 -27 -36 27 -35 40C-34 53 -30 47 -28 47C-26 47 -22 53 -21 40C-20 27 -20 -27 -21 -40C-22 -53 -26 -47 -28 -47C-30 -47 -34 -53 -35 -40Z"/><clipPath id="disarming-strike-c9"><use href="#disarming-strike-p8"/></clipPath><clipPath id="disarming-strike-ca"><use href="#disarming-strike-p8" x="-3" y="-3"/></clipPath><path id="disarming-strike-pb" d="M-34 -8C-42 -9 -74 -9 -82 -8C-90 -7 -90 -2 -90 0C-90 2 -90 7 -82 8C-74 9 -42 9 -34 8C-26 7 -26 2 -26 0C-26 -2 -26 -7 -34 -8Z"/><clipPath id="disarming-strike-cc"><use href="#disarming-strike-pb"/></clipPath><clipPath id="disarming-strike-cd"><use href="#disarming-strike-pb" x="-3" y="-3"/></clipPath><path id="disarming-strike-pe" d="M-104 0A12 12 0 1 0 -80 0A12 12 0 1 0 -104 0Z"/><clipPath id="disarming-strike-cf"><use href="#disarming-strike-pe"/></clipPath><clipPath id="disarming-strike-cg"><use href="#disarming-strike-pe" x="-3" y="-3"/></clipPath><path id="disarming-strike-ph" d="M541 442C528 426 480 403 458 387C436 372 407 345 391 338C376 331 362 335 358 341C353 346 351 361 361 374C370 388 401 414 422 433C443 451 480 489 499 498C518 507 542 499 548 491C554 483 554 458 541 442Z"/><clipPath id="disarming-strike-ci"><use href="#disarming-strike-ph"/></clipPath><clipPath id="disarming-strike-cj"><use href="#disarming-strike-ph" x="-8" y="-8"/></clipPath><path id="disarming-strike-pk" d="M425 350C422 341 415 335 405 332C396 330 367 327 360 335C354 342 359 370 363 380C366 389 373 395 383 398C392 400 421 403 428 395C434 388 429 360 425 350Z"/><clipPath id="disarming-strike-cl"><use href="#disarming-strike-pk"/></clipPath><clipPath id="disarming-strike-cm"><use href="#disarming-strike-pk" x="-4" y="-4"/></clipPath><path id="disarming-strike-pn" d="M367 338C364 333 349 323 342 317C335 311 326 302 322 300C317 297 315 299 314 300C313 302 311 304 314 308C317 312 327 321 333 327C340 333 351 347 357 350C362 353 366 351 368 349C370 348 371 343 367 338Z"/><clipPath id="disarming-strike-co"><use href="#disarming-strike-pn"/></clipPath><clipPath id="disarming-strike-cp"><use href="#disarming-strike-pn" x="-3" y="-3"/></clipPath><path id="disarming-strike-pq" d="M364 336C358 334 341 332 333 331C324 330 312 327 307 327C302 327 301 329 301 331C300 332 300 335 305 337C309 339 322 342 330 344C338 346 354 352 360 352C366 352 369 348 370 346C370 343 369 338 364 336Z"/><clipPath id="disarming-strike-cr"><use href="#disarming-strike-pq"/></clipPath><clipPath id="disarming-strike-cs"><use href="#disarming-strike-pq" x="-3" y="-3"/></clipPath><path id="disarming-strike-pt" d="M360 336C354 337 339 344 331 347C324 349 312 352 308 355C304 357 304 360 305 362C305 363 307 366 312 365C316 365 327 361 335 359C343 357 359 354 364 352C370 349 370 344 370 342C369 339 365 336 360 336Z"/><clipPath id="disarming-strike-cu"><use href="#disarming-strike-pt"/></clipPath><clipPath id="disarming-strike-cv"><use href="#disarming-strike-pt" x="-3" y="-3"/></clipPath><path id="disarming-strike-pw" d="M357 338C352 341 342 352 337 358C331 363 323 370 320 374C318 377 319 380 320 382C321 383 324 384 328 382C331 380 339 372 345 368C351 363 364 354 367 350C371 346 370 340 368 339C366 337 361 335 357 338Z"/><clipPath id="disarming-strike-cx"><use href="#disarming-strike-pw"/></clipPath><clipPath id="disarming-strike-cy"><use href="#disarming-strike-pw" x="-3" y="-3"/></clipPath><path id="disarming-strike-pz" d="M383 331C380 325 366 304 359 299C352 293 342 294 337 294C333 294 331 297 330 299C330 300 332 304 335 306C338 307 344 304 349 309C354 314 364 336 369 341C374 346 379 344 381 343C383 342 386 338 383 331Z"/><clipPath id="disarming-strike-c10"><use href="#disarming-strike-pz"/></clipPath><clipPath id="disarming-strike-c11"><use href="#disarming-strike-pz" x="-3" y="-3"/></clipPath><path id="disarming-strike-p12" d="M342 346A26 22 0 1 0 394 346A26 22 0 1 0 342 346Z"/><clipPath id="disarming-strike-c13"><use href="#disarming-strike-p12"/></clipPath><clipPath id="disarming-strike-c14"><use href="#disarming-strike-p12" x="-5" y="-5"/></clipPath><radialGradient id="disarming-strike-r15" gradientUnits="userSpaceOnUse" cx="372" cy="352" r="80"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.85"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.3825"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="disarming-strike-p16" d="M390 299L384 336L419 323L390 347L425 359L388 359L407 391L378 367L372 404L366 367L337 391L356 359L319 359L354 347L325 323L360 336L354 299L372 332Z"/><clipPath id="disarming-strike-c17"><use href="#disarming-strike-p16"/></clipPath><clipPath id="disarming-strike-c18"><use href="#disarming-strike-p16" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#disarming-strike-l0)"/>
+<circle cx="240" cy="200" r="260" fill="url(#disarming-strike-r1)"/>
+<path d="M0 330V120H60V330ZM452 330V140H512V330Z" fill="#1e1448"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#disarming-strike-l2)"/>
+<ellipse cx="300" cy="400" rx="200" ry="56" fill="url(#disarming-strike-r3)"/>
+<path d="M30 380L120 372M170 430L280 418M350 450L470 436" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<path d="M104 250A150 150 0 0 1 220 58M384 130A150 150 0 0 1 300 330" fill="none" stroke="#fff8d6" stroke-opacity="0.45" stroke-width="10"/>
+<path d="M126 286A150 150 0 0 1 120 160M372 252A150 150 0 0 1 344 300" fill="none" stroke="#ffe066" stroke-opacity="0.35" stroke-width="5"/>
+<circle cx="240" cy="196" r="120" fill="url(#disarming-strike-r4)"/>
+<g transform="translate(240 196) rotate(-34)">
+<use href="#disarming-strike-p5" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#disarming-strike-c6)">
+<use href="#disarming-strike-p5" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-c7)"><use href="#disarming-strike-p5" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M-14 0H124" fill="none" stroke="#5e6f8a" stroke-width="3"/>
+<path d="M-14 -6H118" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.75"/>
+<use href="#disarming-strike-p8" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#disarming-strike-c9)">
+<use href="#disarming-strike-p8" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#disarming-strike-ca)"><use href="#disarming-strike-p8" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#disarming-strike-pb" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#disarming-strike-cc)">
+<use href="#disarming-strike-pb" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#disarming-strike-cd)"><use href="#disarming-strike-pb" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<path d="M-46 -8L-42 8M-58 -8L-54 8M-70 -8L-66 8" fill="none" stroke-width="2.5" stroke-opacity="0.6"/>
+<use href="#disarming-strike-pe" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#disarming-strike-cf)">
+<use href="#disarming-strike-pe" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#disarming-strike-cg)"><use href="#disarming-strike-pe" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+</g>
+<path d="M219 280L221 284L219 288L217 284Z" fill="#ffe066" fill-opacity="0.85"/>
+<path d="M159 266L162 271L159 277L155 271Z" fill="#ffe066" fill-opacity="0.78"/>
+<path d="M241 240L244 246L241 252L237 246Z" fill="#ffe066" fill-opacity="0.9"/>
+<path d="M216 226L219 231L216 236L213 231Z" fill="#ffe066" fill-opacity="0.72"/>
+<path d="M240 244L243 250L240 256L236 250Z" fill="#ffe066" fill-opacity="0.89"/>
+<path d="M175 225L179 231L175 238L172 231Z" fill="#ffe066" fill-opacity="0.68"/>
+<path d="M177 234L180 239L177 244L175 239Z" fill="#ffe066" fill-opacity="1"/>
+<path d="M175 229L178 236L175 242L171 236Z" fill="#ffe066" fill-opacity="0.73"/>
+<use href="#disarming-strike-ph" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#disarming-strike-ci)">
+<use href="#disarming-strike-ph" x="-8" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-cj)"><use href="#disarming-strike-ph" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<path d="M470 452L500 412M430 418L456 380M404 390L424 356" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#disarming-strike-pk" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#disarming-strike-cl)">
+<use href="#disarming-strike-pk" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#disarming-strike-cm)"><use href="#disarming-strike-pk" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#disarming-strike-pn" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#disarming-strike-co)">
+<use href="#disarming-strike-pn" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-cp)"><use href="#disarming-strike-pn" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#disarming-strike-pq" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#disarming-strike-cr)">
+<use href="#disarming-strike-pq" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-cs)"><use href="#disarming-strike-pq" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#disarming-strike-pt" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#disarming-strike-cu)">
+<use href="#disarming-strike-pt" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-cv)"><use href="#disarming-strike-pt" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#disarming-strike-pw" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#disarming-strike-cx)">
+<use href="#disarming-strike-pw" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-cy)"><use href="#disarming-strike-pw" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#disarming-strike-pz" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#disarming-strike-c10)">
+<use href="#disarming-strike-pz" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-c11)"><use href="#disarming-strike-pz" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#disarming-strike-p12" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#disarming-strike-c13)">
+<use href="#disarming-strike-p12" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#disarming-strike-c14)"><use href="#disarming-strike-p12" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M30 430C90 400 150 440 210 410C260 386 300 400 340 366" fill="none" stroke="#ffe066" stroke-width="22" stroke-opacity="0.2"/>
+<path d="M30 430C90 400 150 440 210 410C260 386 300 400 340 366" fill="none" stroke-width="12"/>
+<path d="M30 430C90 400 150 440 210 410C260 386 300 400 340 366" fill="none" stroke="#ffbe0b" stroke-width="7"/>
+<path d="M30 430C90 400 150 440 210 410C260 386 300 400 340 366" fill="none" stroke="#fff8d6" stroke-width="3"/>
+<path d="M40 424L77 435L104 398L142 413L171 387L209 399L237 368L275 383L303 349L340 360" fill="none" stroke="#ffe066" stroke-width="29" stroke-opacity="0.18"/>
+<path d="M40 424L77 435L104 398L142 413L171 387L209 399L237 368L275 383L303 349L340 360" fill="none" stroke-width="11"/>
+<path d="M40 424L77 435L104 398L142 413L171 387L209 399L237 368L275 383L303 349L340 360" fill="none" stroke="#ffbe0b" stroke-width="6"/>
+<path d="M40 424L77 435L104 398L142 413L171 387L209 399L237 368L275 383L303 349L340 360" fill="none" stroke="#fff8d6" stroke-width="1.6500000000000001"/>
+<circle cx="372" cy="352" r="80" fill="url(#disarming-strike-r15)"/>
+<use href="#disarming-strike-p16" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#disarming-strike-c17)">
+<use href="#disarming-strike-p16" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#disarming-strike-c18)"><use href="#disarming-strike-p16" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<path d="M393 329L379 350L393 371L372 357L351 371L365 350L351 329L372 343Z" fill="#ffffff"/>
+<path d="M372 350L397 339L407 312L430 300" fill="none" stroke="#ffe066" stroke-width="29" stroke-opacity="0.18"/>
+<path d="M372 350L397 339L407 312L430 300" fill="none" stroke-width="11"/>
+<path d="M372 350L397 339L407 312L430 300" fill="none" stroke="#ffbe0b" stroke-width="6"/>
+<path d="M372 350L397 339L407 312L430 300" fill="none" stroke="#fff8d6" stroke-width="1.6500000000000001"/>
+<path d="M372 350L382 375L407 387L420 410" fill="none" stroke="#ffe066" stroke-width="29" stroke-opacity="0.18"/>
+<path d="M372 350L382 375L407 387L420 410" fill="none" stroke-width="11"/>
+<path d="M372 350L382 375L407 387L420 410" fill="none" stroke="#ffbe0b" stroke-width="6"/>
+<path d="M372 350L382 375L407 387L420 410" fill="none" stroke="#fff8d6" stroke-width="1.6500000000000001"/>
+<path d="M372 350L348 362L342 392L318 404" fill="none" stroke="#ffe066" stroke-width="29" stroke-opacity="0.18"/>
+<path d="M372 350L348 362L342 392L318 404" fill="none" stroke-width="11"/>
+<path d="M372 350L348 362L342 392L318 404" fill="none" stroke="#ffbe0b" stroke-width="6"/>
+<path d="M372 350L348 362L342 392L318 404" fill="none" stroke="#fff8d6" stroke-width="1.6500000000000001"/>
+</svg>

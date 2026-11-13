@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="hungry-ghoul-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0c1410"/><stop offset="0.55" stop-color="#1e2e26"/><stop offset="1" stop-color="#0e1612"/></linearGradient><radialGradient id="hungry-ghoul-r1" gradientUnits="userSpaceOnUse" cx="220" cy="240" r="250"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.22"/><stop offset="0.45" stop-color="#b5e48c" stop-opacity="0.099"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><path id="hungry-ghoul-p2" d="M352 330L392 190L452 196L470 336Z"/><clipPath id="hungry-ghoul-c3"><use href="#hungry-ghoul-p2"/></clipPath><clipPath id="hungry-ghoul-c4"><use href="#hungry-ghoul-p2" x="-8" y="-8"/></clipPath><linearGradient id="hungry-ghoul-l5" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#2a3a2e"/><stop offset="1" stop-color="#0e1a14"/></linearGradient><radialGradient id="hungry-ghoul-r6" gradientUnits="userSpaceOnUse" cx="240" cy="392" r="200"><stop offset="0" stop-color="#b5e48c" stop-opacity="0.55"/><stop offset="1" stop-color="#b5e48c" stop-opacity="0"/></radialGradient><path id="hungry-ghoul-p7" d="M371 401C381 400 422 389 431 385C441 382 436 380 435 379C435 377 439 373 429 375C419 376 378 387 369 391C359 394 364 396 365 397C365 399 361 403 371 401ZM365 401A7 7 0 1 0 378 401A7 7 0 1 0 365 401ZM362 391A7 7 0 1 0 375 391A7 7 0 1 0 362 391ZM425 385A7 7 0 1 0 438 385A7 7 0 1 0 425 385ZM422 375A7 7 0 1 0 435 375A7 7 0 1 0 422 375Z"/><clipPath id="hungry-ghoul-c8"><use href="#hungry-ghoul-p7"/></clipPath><clipPath id="hungry-ghoul-c9"><use href="#hungry-ghoul-p7" x="-3" y="-3"/></clipPath><path id="hungry-ghoul-pa" d="M318 312C324 320 357 331 359 342C361 352 329 372 331 381C333 390 366 398 373 401C381 403 382 398 383 397C383 395 384 390 379 387C374 385 348 387 349 379C350 372 386 352 385 338C384 325 352 295 342 288C332 280 321 285 318 288C314 292 312 304 318 312Z"/><clipPath id="hungry-ghoul-cb"><use href="#hungry-ghoul-pa"/></clipPath><clipPath id="hungry-ghoul-cc"><use href="#hungry-ghoul-pa" x="-6" y="-6"/></clipPath><path id="hungry-ghoul-pd" d="M221 262C212 270 190 299 179 313C167 327 149 347 144 355C139 363 143 364 145 366C146 368 149 371 156 365C163 359 181 340 193 327C206 314 232 288 239 278C246 268 241 263 238 261C235 259 230 254 221 262Z"/><clipPath id="hungry-ghoul-ce"><use href="#hungry-ghoul-pd"/></clipPath><clipPath id="hungry-ghoul-cf"><use href="#hungry-ghoul-pd" x="-5" y="-5"/></clipPath><path id="hungry-ghoul-pg" d="M300 300L356 296L352 340L338 326L326 346L312 324L298 338Z"/><clipPath id="hungry-ghoul-ch"><use href="#hungry-ghoul-pg"/></clipPath><clipPath id="hungry-ghoul-ci"><use href="#hungry-ghoul-pg" x="-5" y="-5"/></clipPath><path id="hungry-ghoul-pj" d="M196 262C201 250 222 224 238 214C254 204 283 194 300 196C317 198 343 216 352 230C361 244 365 277 360 290C355 303 337 314 320 316C304 318 267 310 250 306C233 302 214 299 206 292C198 285 191 274 196 262Z"/><clipPath id="hungry-ghoul-ck"><use href="#hungry-ghoul-pj"/></clipPath><clipPath id="hungry-ghoul-cl"><use href="#hungry-ghoul-pj" x="-14" y="-12"/></clipPath><path id="hungry-ghoul-pm" d="M233 212A7 7 0 1 0 247 212A7 7 0 1 0 233 212Z"/><clipPath id="hungry-ghoul-cn"><use href="#hungry-ghoul-pm"/></clipPath><clipPath id="hungry-ghoul-co"><use href="#hungry-ghoul-pm" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-pp" d="M253 205A7 7 0 1 0 267 205A7 7 0 1 0 253 205Z"/><clipPath id="hungry-ghoul-cq"><use href="#hungry-ghoul-pp"/></clipPath><clipPath id="hungry-ghoul-cr"><use href="#hungry-ghoul-pp" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-ps" d="M273 201A7 7 0 1 0 287 201A7 7 0 1 0 273 201Z"/><clipPath id="hungry-ghoul-ct"><use href="#hungry-ghoul-ps"/></clipPath><clipPath id="hungry-ghoul-cu"><use href="#hungry-ghoul-ps" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-pv" d="M293 201A7 7 0 1 0 307 201A7 7 0 1 0 293 201Z"/><clipPath id="hungry-ghoul-cw"><use href="#hungry-ghoul-pv"/></clipPath><clipPath id="hungry-ghoul-cx"><use href="#hungry-ghoul-pv" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-py" d="M313 205A7 7 0 1 0 327 205A7 7 0 1 0 313 205Z"/><clipPath id="hungry-ghoul-cz"><use href="#hungry-ghoul-py"/></clipPath><clipPath id="hungry-ghoul-c10"><use href="#hungry-ghoul-py" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-p11" d="M333 212A7 7 0 1 0 347 212A7 7 0 1 0 333 212Z"/><clipPath id="hungry-ghoul-c12"><use href="#hungry-ghoul-p11"/></clipPath><clipPath id="hungry-ghoul-c13"><use href="#hungry-ghoul-p11" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-p14" d="M328 309C336 315 370 314 372 323C375 332 342 358 345 369C348 380 382 393 390 397C398 401 400 396 401 394C402 392 403 387 398 383C393 379 366 377 367 367C368 357 406 331 404 317C401 302 364 277 352 271C339 266 325 273 321 278C318 284 321 302 328 309Z"/><clipPath id="hungry-ghoul-c15"><use href="#hungry-ghoul-p14"/></clipPath><clipPath id="hungry-ghoul-c16"><use href="#hungry-ghoul-p14" x="-7" y="-7"/></clipPath><path id="hungry-ghoul-p17" d="M394 387C397 388 411 387 414 387C417 387 414 386 414 386C414 386 417 386 414 385C411 384 398 381 394 381C391 380 391 383 391 384C390 385 390 387 394 387Z"/><clipPath id="hungry-ghoul-c18"><use href="#hungry-ghoul-p17"/></clipPath><clipPath id="hungry-ghoul-c19"><use href="#hungry-ghoul-p17" x="-1" y="-1"/></clipPath><path id="hungry-ghoul-p1a" d="M394 397C397 398 411 397 414 397C417 397 414 396 414 396C414 396 417 396 414 395C411 394 398 391 394 391C391 390 391 393 391 394C390 395 390 397 394 397Z"/><clipPath id="hungry-ghoul-c1b"><use href="#hungry-ghoul-p1a"/></clipPath><clipPath id="hungry-ghoul-c1c"><use href="#hungry-ghoul-p1a" x="-1" y="-1"/></clipPath><path id="hungry-ghoul-p1d" d="M216 263C205 266 183 282 168 289C153 295 126 301 118 305C109 309 111 314 111 316C112 319 113 323 122 323C132 322 160 316 176 311C192 307 219 299 228 293C238 287 239 276 237 272C235 267 226 261 216 263Z"/><clipPath id="hungry-ghoul-c1e"><use href="#hungry-ghoul-p1d"/></clipPath><clipPath id="hungry-ghoul-c1f"><use href="#hungry-ghoul-p1d" x="-6" y="-6"/></clipPath><path id="hungry-ghoul-p1g" d="M120 310C118 308 109 304 104 302C100 300 91 298 88 297C86 297 88 298 88 298C88 298 86 298 88 299C90 300 97 304 102 307C106 310 113 316 116 318C119 319 121 318 122 316C123 315 123 312 120 310Z"/><clipPath id="hungry-ghoul-c1h"><use href="#hungry-ghoul-p1g"/></clipPath><clipPath id="hungry-ghoul-c1i"><use href="#hungry-ghoul-p1g" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-p1j" d="M118 310C114 309 106 311 101 312C96 313 86 314 84 315C81 316 84 316 84 316C84 316 81 317 84 317C87 317 96 318 101 318C106 318 115 319 118 318C122 318 123 315 122 314C122 312 121 310 118 310Z"/><clipPath id="hungry-ghoul-c1k"><use href="#hungry-ghoul-p1j"/></clipPath><clipPath id="hungry-ghoul-c1l"><use href="#hungry-ghoul-p1j" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-p1m" d="M115 310C112 312 106 319 102 322C99 325 91 330 90 331C88 333 90 332 90 332C90 332 88 334 90 333C93 332 101 330 106 327C110 325 118 320 121 318C123 315 122 312 122 311C121 310 118 309 115 310Z"/><clipPath id="hungry-ghoul-c1n"><use href="#hungry-ghoul-p1m"/></clipPath><clipPath id="hungry-ghoul-c1o"><use href="#hungry-ghoul-p1m" x="-2" y="-2"/></clipPath><path id="hungry-ghoul-p1p" d="M206 212L240 196L222 232Z"/><clipPath id="hungry-ghoul-c1q"><use href="#hungry-ghoul-p1p"/></clipPath><clipPath id="hungry-ghoul-c1r"><use href="#hungry-ghoul-p1p" x="-4" y="-4"/></clipPath><path id="hungry-ghoul-p1s" d="M150 228C151 220 159 205 168 200C177 195 200 193 210 196C220 199 230 214 232 222C234 230 231 246 226 252C221 258 206 261 196 262C186 263 167 261 160 256C153 251 149 236 150 228Z"/><clipPath id="hungry-ghoul-c1t"><use href="#hungry-ghoul-p1s"/></clipPath><clipPath id="hungry-ghoul-c1u"><use href="#hungry-ghoul-p1s" x="-10" y="-8"/></clipPath><path id="hungry-ghoul-p1v" d="M148 244L196 252L226 250L214 282L176 290L146 270Z"/><clipPath id="hungry-ghoul-c1w"><use href="#hungry-ghoul-p1v"/></clipPath><clipPath id="hungry-ghoul-c1x"><use href="#hungry-ghoul-p1v" x="-6" y="-6"/></clipPath><radialGradient id="hungry-ghoul-r1y" gradientUnits="userSpaceOnUse" cx="176" cy="226" r="20"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#hungry-ghoul-l0)"/>
+<circle cx="220" cy="240" r="250" fill="url(#hungry-ghoul-r1)"/>
+<use href="#hungry-ghoul-p2" fill="#22160e" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-c3)">
+<use href="#hungry-ghoul-p2" x="-8" y="-8" fill="#5a4436"/>
+<g clip-path="url(#hungry-ghoul-c4)"><use href="#hungry-ghoul-p2" x="7" y="7" fill="#3a2a22"/></g>
+</g>
+<path d="M372 250L452 256M364 290L460 296" fill="none" stroke-width="4" stroke-opacity="0.6"/>
+<path d="M20 340V244" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M54 340V232" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M88 340V238" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M122 340V244" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M156 340V232" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M190 340V238" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M224 340V244" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M258 340V232" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M292 340V238" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M326 340V244" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M360 340V232" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M394 340V238" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M428 340V244" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M462 340V232" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M496 340V238" fill="none" stroke="#08100c" stroke-width="5"/>
+<path d="M0 260H512M0 300H512" fill="none" stroke="#08100c" stroke-width="4"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#hungry-ghoul-l5)"/>
+<ellipse cx="240" cy="392" rx="200" ry="56" fill="url(#hungry-ghoul-r6)"/>
+<ellipse cx="250" cy="392" rx="170" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#hungry-ghoul-p7" fill="#9a8a66" stroke-width="8"/>
+<g clip-path="url(#hungry-ghoul-c8)">
+<use href="#hungry-ghoul-p7" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#hungry-ghoul-c9)"><use href="#hungry-ghoul-p7" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<path d="M430 250H500M440 280H512M420 220H480" fill="none" stroke="#b5e48c" stroke-width="5" stroke-opacity="0.3"/>
+<path d="M374 384L376 389L374 394L371 389Z" fill="#3a2a22" fill-opacity="0.95"/>
+<path d="M437 376L440 382L437 387L434 382Z" fill="#3a2a22" fill-opacity="0.98"/>
+<path d="M366 372L370 379L366 387L362 379Z" fill="#3a2a22" fill-opacity="0.88"/>
+<path d="M384 388L387 393L384 399L381 393Z" fill="#3a2a22" fill-opacity="0.92"/>
+<path d="M427 360L431 367L427 374L423 367Z" fill="#3a2a22" fill-opacity="0.97"/>
+<path d="M454 363L458 371L454 379L449 371Z" fill="#3a2a22" fill-opacity="0.76"/>
+<path d="M431 361L434 365L431 370L429 365Z" fill="#3a2a22" fill-opacity="0.96"/>
+<path d="M375 368L378 374L375 381L371 374Z" fill="#3a2a22" fill-opacity="0.72"/>
+<path d="M450 377L453 382L450 387L447 382Z" fill="#3a2a22" fill-opacity="0.72"/>
+<path d="M409 357L413 364L409 372L405 364Z" fill="#3a2a22" fill-opacity="0.79"/>
+<use href="#hungry-ghoul-pa" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-cb)">
+<use href="#hungry-ghoul-pa" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-pa" x="-6" y="-6" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-cc)"><use href="#hungry-ghoul-pa" x="7" y="7" fill="#748a70"/></g>
+</g>
+<use href="#hungry-ghoul-pd" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-ce)">
+<use href="#hungry-ghoul-pd" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-pd" x="-5" y="-5" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-cf)"><use href="#hungry-ghoul-pd" x="7" y="7" fill="#748a70"/></g>
+</g>
+<use href="#hungry-ghoul-pg" fill="#2a2220" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-ch)">
+<use href="#hungry-ghoul-pg" x="-5" y="-5" fill="#6a5a54"/>
+<g clip-path="url(#hungry-ghoul-ci)"><use href="#hungry-ghoul-pg" x="3" y="3" fill="#4a3d3a"/></g>
+</g>
+<use href="#hungry-ghoul-pj" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-ck)">
+<use href="#hungry-ghoul-pj" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-pj" x="-14" y="-12" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-cl)"><use href="#hungry-ghoul-pj" x="7" y="7" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-pm" fill="#b5e48c" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-cn)">
+<use href="#hungry-ghoul-pm" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-pm" x="-2" y="-2" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-co)"><use href="#hungry-ghoul-pm" x="1" y="1" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-pp" fill="#b5e48c" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-cq)">
+<use href="#hungry-ghoul-pp" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-pp" x="-2" y="-2" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-cr)"><use href="#hungry-ghoul-pp" x="1" y="1" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-ps" fill="#b5e48c" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-ct)">
+<use href="#hungry-ghoul-ps" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-ps" x="-2" y="-2" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-cu)"><use href="#hungry-ghoul-ps" x="1" y="1" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-pv" fill="#b5e48c" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-cw)">
+<use href="#hungry-ghoul-pv" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-pv" x="-2" y="-2" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-cx)"><use href="#hungry-ghoul-pv" x="1" y="1" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-py" fill="#b5e48c" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-cz)">
+<use href="#hungry-ghoul-py" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-py" x="-2" y="-2" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c10)"><use href="#hungry-ghoul-py" x="1" y="1" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-p11" fill="#b5e48c" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-c12)">
+<use href="#hungry-ghoul-p11" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-p11" x="-2" y="-2" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c13)"><use href="#hungry-ghoul-p11" x="1" y="1" fill="#8fa38a"/></g>
+</g>
+<path d="M262 252C270 270 268 290 262 300M282 248C290 268 290 290 284 304M302 252C310 270 310 292 304 306" fill="none" stroke-width="4" stroke-opacity="0.55"/>
+<use href="#hungry-ghoul-p14" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-c15)">
+<use href="#hungry-ghoul-p14" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-p14" x="-7" y="-7" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c16)"><use href="#hungry-ghoul-p14" x="7" y="7" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-p17" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-c18)">
+<use href="#hungry-ghoul-p17" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#hungry-ghoul-c19)"><use href="#hungry-ghoul-p17" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#hungry-ghoul-p1a" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-c1b)">
+<use href="#hungry-ghoul-p1a" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#hungry-ghoul-c1c)"><use href="#hungry-ghoul-p1a" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#hungry-ghoul-p1d" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-c1e)">
+<use href="#hungry-ghoul-p1d" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-p1d" x="-6" y="-6" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c1f)"><use href="#hungry-ghoul-p1d" x="7" y="7" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-p1g" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-c1h)">
+<use href="#hungry-ghoul-p1g" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#hungry-ghoul-c1i)"><use href="#hungry-ghoul-p1g" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#hungry-ghoul-p1j" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-c1k)">
+<use href="#hungry-ghoul-p1j" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#hungry-ghoul-c1l)"><use href="#hungry-ghoul-p1j" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#hungry-ghoul-p1m" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#hungry-ghoul-c1n)">
+<use href="#hungry-ghoul-p1m" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#hungry-ghoul-c1o)"><use href="#hungry-ghoul-p1m" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#hungry-ghoul-p1p" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-c1q)">
+<use href="#hungry-ghoul-p1p" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-p1p" x="-4" y="-4" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c1r)"><use href="#hungry-ghoul-p1p" x="3" y="3" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-p1s" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-c1t)">
+<use href="#hungry-ghoul-p1s" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-p1s" x="-10" y="-8" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c1u)"><use href="#hungry-ghoul-p1s" x="7" y="7" fill="#8fa38a"/></g>
+</g>
+<use href="#hungry-ghoul-p1v" fill="#b5e48c" stroke-width="12"/>
+<g clip-path="url(#hungry-ghoul-c1w)">
+<use href="#hungry-ghoul-p1v" x="-4" fill="#5a6e5a"/>
+<use href="#hungry-ghoul-p1v" x="-6" y="-6" fill="#bccfb2"/>
+<g clip-path="url(#hungry-ghoul-c1x)"><use href="#hungry-ghoul-p1v" x="7" y="7" fill="#8fa38a"/></g>
+</g>
+<path d="M154 250L208 256L196 276L166 280Z" fill="#2a0a14"/>
+<path d="M158 250L164 251L161 262Z" fill="#f0ead2"/>
+<path d="M160 280L166 279L163 270Z" fill="#f0ead2"/>
+<path d="M166 251L172 252L169 263Z" fill="#f0ead2"/>
+<path d="M168 280L174 279L171 270Z" fill="#f0ead2"/>
+<path d="M174 252L180 253L177 264Z" fill="#f0ead2"/>
+<path d="M176 279L182 278L179 269Z" fill="#f0ead2"/>
+<path d="M182 253L188 254L185 265Z" fill="#f0ead2"/>
+<path d="M184 279L190 278L187 269Z" fill="#f0ead2"/>
+<path d="M190 254L196 255L193 266Z" fill="#f0ead2"/>
+<path d="M192 278L198 277L195 268Z" fill="#f0ead2"/>
+<path d="M198 255L204 256L201 267Z" fill="#f0ead2"/>
+<path d="M200 278L206 277L203 268Z" fill="#f0ead2"/>
+<circle cx="176" cy="226" r="20" fill="url(#hungry-ghoul-r1y)"/>
+<path d="M164 222L190 216L186 232L168 232Z" fill="#ffe066"/>
+<path d="M175 225A4 5 0 1 0 182 225A4 5 0 1 0 175 225Z" fill="#1d0842"/>
+<path d="M160 214L196 206" fill="none" stroke-width="5"/>
+<path d="M184 292C186 295 188 297 188 300A4 4 0 0 1 180 300C180 297 182 295 184 292Z" fill="#b5e48c" fill-opacity="0.9"/>
+<path d="M186 172C190 180 200 186 214 186" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<path d="M180 196l-6 -14" fill="none" stroke="#2a2220" stroke-width="3"/>
+<path d="M196 190l-6 -14" fill="none" stroke="#2a2220" stroke-width="3"/>
+<path d="M210 194l-6 -14" fill="none" stroke="#2a2220" stroke-width="3"/>
+</svg>

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="chain-lightning-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0c0a2a"/><stop offset="0.55" stop-color="#1e2a5e"/><stop offset="1" stop-color="#140c30"/></linearGradient><radialGradient id="chain-lightning-r1" gradientUnits="userSpaceOnUse" cx="260" cy="250" r="270"><stop offset="0" stop-color="#ffe066" stop-opacity="0.26"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.117"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><linearGradient id="chain-lightning-l2" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="512"><stop offset="0" stop-color="#2a2a5e"/><stop offset="1" stop-color="#120a2c"/></linearGradient><radialGradient id="chain-lightning-r3" gradientUnits="userSpaceOnUse" cx="250" cy="380" r="230"><stop offset="0" stop-color="#ffe066" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="chain-lightning-p4" d="M392 214C391 228 391 288 392 302C392 316 395 306 396 306C397 306 400 316 400 302C401 288 401 228 400 214C400 200 397 210 396 210C395 210 392 200 392 214Z"/><clipPath id="chain-lightning-c5"><use href="#chain-lightning-p4"/></clipPath><clipPath id="chain-lightning-c6"><use href="#chain-lightning-p4" x="-3" y="-3"/></clipPath><path id="chain-lightning-p7" d="M366 214A30 30 0 1 0 426 214A30 30 0 1 0 366 214Z"/><clipPath id="chain-lightning-c8"><use href="#chain-lightning-p7"/></clipPath><clipPath id="chain-lightning-c9"><use href="#chain-lightning-p7" x="-5" y="-5"/></clipPath><path id="chain-lightning-pa" d="M372 214A24 24 0 1 0 420 214A24 24 0 1 0 372 214Z"/><clipPath id="chain-lightning-cb"><use href="#chain-lightning-pa"/></clipPath><clipPath id="chain-lightning-cc"><use href="#chain-lightning-pa" x="-5" y="-5"/></clipPath><path id="chain-lightning-pd" d="M298 250C297 264 297 326 298 340C299 354 302 346 304 346C306 346 309 354 310 340C311 326 311 264 310 250C309 236 306 244 304 244C302 244 299 236 298 250Z"/><clipPath id="chain-lightning-ce"><use href="#chain-lightning-pd"/></clipPath><clipPath id="chain-lightning-cf"><use href="#chain-lightning-pd" x="-3" y="-3"/></clipPath><path id="chain-lightning-pg" d="M262 250A42 42 0 1 0 346 250A42 42 0 1 0 262 250Z"/><clipPath id="chain-lightning-ch"><use href="#chain-lightning-pg"/></clipPath><clipPath id="chain-lightning-ci"><use href="#chain-lightning-pg" x="-7" y="-7"/></clipPath><path id="chain-lightning-pj" d="M270 250A34 34 0 1 0 338 250A34 34 0 1 0 270 250Z"/><clipPath id="chain-lightning-ck"><use href="#chain-lightning-pj"/></clipPath><clipPath id="chain-lightning-cl"><use href="#chain-lightning-pj" x="-7" y="-7"/></clipPath><path id="chain-lightning-pm" d="M168 300C167 316 167 384 168 400C169 416 174 408 176 408C178 408 183 416 184 400C185 384 185 316 184 300C183 284 178 292 176 292C174 292 169 284 168 300Z"/><clipPath id="chain-lightning-cn"><use href="#chain-lightning-pm"/></clipPath><clipPath id="chain-lightning-co"><use href="#chain-lightning-pm" x="-3" y="-3"/></clipPath><path id="chain-lightning-pp" d="M118 300A58 58 0 1 0 234 300A58 58 0 1 0 118 300Z"/><clipPath id="chain-lightning-cq"><use href="#chain-lightning-pp"/></clipPath><clipPath id="chain-lightning-cr"><use href="#chain-lightning-pp" x="-9.666666666666666" y="-9.666666666666666"/></clipPath><path id="chain-lightning-ps" d="M130 300A46 46 0 1 0 222 300A46 46 0 1 0 130 300Z"/><clipPath id="chain-lightning-ct"><use href="#chain-lightning-ps"/></clipPath><clipPath id="chain-lightning-cu"><use href="#chain-lightning-ps" x="-9.666666666666666" y="-9.666666666666666"/></clipPath><path id="chain-lightning-pv" d="M203 92C202 101 182 109 169 116C156 123 144 132 126 136C107 139 77 140 59 136C40 131 18 119 14 109C9 100 23 87 31 78C39 69 48 58 63 53C79 47 108 44 127 46C146 48 165 57 177 64C190 72 205 83 203 92Z"/><clipPath id="chain-lightning-cw"><use href="#chain-lightning-pv"/></clipPath><clipPath id="chain-lightning-cx"><use href="#chain-lightning-pv" x="-10" y="-10"/></clipPath><path id="chain-lightning-py" d="M317 76C315 87 298 100 283 108C267 116 247 122 226 124C206 126 180 126 159 122C139 117 113 106 105 96C98 85 103 68 112 58C121 47 141 36 160 31C179 26 204 26 227 27C249 28 278 32 293 40C308 48 319 65 317 76Z"/><clipPath id="chain-lightning-cz"><use href="#chain-lightning-py"/></clipPath><clipPath id="chain-lightning-c10"><use href="#chain-lightning-py" x="-10" y="-10"/></clipPath><path id="chain-lightning-p11" d="M395 96C395 104 375 112 363 118C351 125 338 134 324 135C309 136 291 130 275 126C259 122 236 118 229 111C222 103 228 91 235 82C242 74 256 65 270 61C285 58 306 59 322 61C339 62 355 66 367 72C379 78 396 88 395 96Z"/><clipPath id="chain-lightning-c12"><use href="#chain-lightning-p11"/></clipPath><clipPath id="chain-lightning-c13"><use href="#chain-lightning-p11" x="-10" y="-10"/></clipPath><path id="chain-lightning-p14" d="M315 110C314 117 287 126 267 131C248 136 222 140 199 141C176 142 148 139 128 136C107 132 86 127 76 121C66 114 58 104 67 98C76 92 105 89 128 84C150 80 179 71 204 72C228 72 257 81 275 87C294 94 317 103 315 110Z"/><clipPath id="chain-lightning-c15"><use href="#chain-lightning-p14"/></clipPath><clipPath id="chain-lightning-c16"><use href="#chain-lightning-p14" x="-10" y="-10"/></clipPath><radialGradient id="chain-lightning-r17" gradientUnits="userSpaceOnUse" cx="196" cy="120" r="80"><stop offset="0" stop-color="#ffe066" stop-opacity="0.45"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.2025"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="chain-lightning-r18" gradientUnits="userSpaceOnUse" cx="176" cy="300" r="104"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.75"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.3375"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="chain-lightning-p19" d="M184 252L183 288L216 272L190 297L224 308L188 307L204 340L179 314L168 348L169 312L136 328L162 303L128 292L164 293L148 260L173 286Z"/><clipPath id="chain-lightning-c1a"><use href="#chain-lightning-p19"/></clipPath><clipPath id="chain-lightning-c1b"><use href="#chain-lightning-p19" x="-4" y="-4"/></clipPath><radialGradient id="chain-lightning-r1c" gradientUnits="userSpaceOnUse" cx="304" cy="250" r="76"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.75"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.3375"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="chain-lightning-p1d" d="M309 219L309 241L330 232L314 248L335 255L313 255L322 276L306 260L299 281L299 259L278 268L294 252L273 245L295 245L286 224L302 240Z"/><clipPath id="chain-lightning-c1e"><use href="#chain-lightning-p1d"/></clipPath><clipPath id="chain-lightning-c1f"><use href="#chain-lightning-p1d" x="-4" y="-4"/></clipPath><radialGradient id="chain-lightning-r1g" gradientUnits="userSpaceOnUse" cx="396" cy="214" r="54"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.75"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.3375"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="chain-lightning-p1h" d="M400 193L400 208L414 202L403 212L417 218L402 218L408 232L398 221L392 235L392 220L378 226L389 216L375 210L390 210L384 196L394 207Z"/><clipPath id="chain-lightning-c1i"><use href="#chain-lightning-p1h"/></clipPath><clipPath id="chain-lightning-c1j"><use href="#chain-lightning-p1h" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#chain-lightning-l0)"/>
+<circle cx="260" cy="250" r="270" fill="url(#chain-lightning-r1)"/>
+<path d="M0 300L70 254L140 284L220 236L300 272L380 226L440 250L512 232V340H0Z" fill="#1a1a46"/>
+<path d="M40 120L20 170M110 140L90 190M330 120L310 170M440 110L420 160M470 190L450 240M60 220L40 270" fill="none" stroke="#9be7ff" stroke-width="2" stroke-opacity="0.25"/>
+<path d="M0 336Q256 300 512 336V512H0Z" fill="url(#chain-lightning-l2)"/>
+<ellipse cx="250" cy="380" rx="230" ry="64" fill="url(#chain-lightning-r3)"/>
+<ellipse cx="396" cy="302" rx="24" ry="4" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#chain-lightning-p4" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#chain-lightning-c5)">
+<use href="#chain-lightning-p4" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#chain-lightning-c6)"><use href="#chain-lightning-p4" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#chain-lightning-p7" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-c8)">
+<use href="#chain-lightning-p7" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#chain-lightning-c9)"><use href="#chain-lightning-p7" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#chain-lightning-pa" fill="#5c3a1c" stroke-width="6"/>
+<g clip-path="url(#chain-lightning-cb)">
+<use href="#chain-lightning-pa" x="-5" y="-5" fill="#b07a40"/>
+<g clip-path="url(#chain-lightning-cc)"><use href="#chain-lightning-pa" x="3.3333333333333335" y="3.3333333333333335" fill="#8a5a2b"/></g>
+</g>
+<path d="M372 214L396 190L420 214L396 238Z" fill="#3d6fc4" fill-opacity="0.85"/>
+<ellipse cx="304" cy="340" rx="34" ry="6" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#chain-lightning-pd" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#chain-lightning-ce)">
+<use href="#chain-lightning-pd" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#chain-lightning-cf)"><use href="#chain-lightning-pd" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#chain-lightning-pg" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-ch)">
+<use href="#chain-lightning-pg" x="-7" y="-7" fill="#e2ecf5"/>
+<g clip-path="url(#chain-lightning-ci)"><use href="#chain-lightning-pg" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#chain-lightning-pj" fill="#5c3a1c" stroke-width="6"/>
+<g clip-path="url(#chain-lightning-ck)">
+<use href="#chain-lightning-pj" x="-7" y="-7" fill="#b07a40"/>
+<g clip-path="url(#chain-lightning-cl)"><use href="#chain-lightning-pj" x="4.666666666666667" y="4.666666666666667" fill="#8a5a2b"/></g>
+</g>
+<path d="M270 250L304 216L338 250L304 284Z" fill="#3d6fc4" fill-opacity="0.85"/>
+<ellipse cx="176" cy="400" rx="46" ry="8" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#chain-lightning-pm" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#chain-lightning-cn)">
+<use href="#chain-lightning-pm" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#chain-lightning-co)"><use href="#chain-lightning-pm" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#chain-lightning-pp" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-cq)">
+<use href="#chain-lightning-pp" x="-9.666666666666666" y="-9.666666666666666" fill="#e2ecf5"/>
+<g clip-path="url(#chain-lightning-cr)"><use href="#chain-lightning-pp" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#chain-lightning-ps" fill="#5c3a1c" stroke-width="6"/>
+<g clip-path="url(#chain-lightning-ct)">
+<use href="#chain-lightning-ps" x="-9.666666666666666" y="-9.666666666666666" fill="#b07a40"/>
+<g clip-path="url(#chain-lightning-cu)"><use href="#chain-lightning-ps" x="6.444444444444445" y="6.444444444444445" fill="#8a5a2b"/></g>
+</g>
+<path d="M130 300L176 254L222 300L176 346Z" fill="#3d6fc4" fill-opacity="0.85"/>
+<use href="#chain-lightning-pv" fill="#22244e" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-cw)">
+<use href="#chain-lightning-pv" x="-10" y="-10" fill="#5a62a8"/>
+<g clip-path="url(#chain-lightning-cx)"><use href="#chain-lightning-pv" x="7" y="7" fill="#3a3f78"/></g>
+</g>
+<use href="#chain-lightning-py" fill="#22244e" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-cz)">
+<use href="#chain-lightning-py" x="-10" y="-10" fill="#5a62a8"/>
+<g clip-path="url(#chain-lightning-c10)"><use href="#chain-lightning-py" x="7" y="7" fill="#3a3f78"/></g>
+</g>
+<use href="#chain-lightning-p11" fill="#22244e" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-c12)">
+<use href="#chain-lightning-p11" x="-10" y="-10" fill="#5a62a8"/>
+<g clip-path="url(#chain-lightning-c13)"><use href="#chain-lightning-p11" x="7" y="7" fill="#3a3f78"/></g>
+</g>
+<use href="#chain-lightning-p14" fill="#22244e" stroke-width="10"/>
+<g clip-path="url(#chain-lightning-c15)">
+<use href="#chain-lightning-p14" x="-10" y="-10" fill="#5a62a8"/>
+<g clip-path="url(#chain-lightning-c16)"><use href="#chain-lightning-p14" x="7" y="7" fill="#3a3f78"/></g>
+</g>
+<circle cx="196" cy="120" r="80" fill="url(#chain-lightning-r17)"/>
+<path d="M196 112L169 139L202 173L166 199L196 232L155 258L176 290" fill="none" stroke="#ffe066" stroke-width="39" stroke-opacity="0.18"/>
+<path d="M196 112L169 139L202 173L166 199L196 232L155 258L176 290" fill="none" stroke-width="21"/>
+<path d="M196 112L169 139L202 173L166 199L196 232L155 258L176 290" fill="none" stroke="#ffbe0b" stroke-width="16"/>
+<path d="M196 112L169 139L202 173L166 199L196 232L155 258L176 290" fill="none" stroke="#fff8d6" stroke-width="7.15"/>
+<path d="M188 168L162 176L150 203L126 214" fill="none" stroke="#ffe066" stroke-width="30" stroke-opacity="0.18"/>
+<path d="M188 168L162 176L150 203L126 214" fill="none" stroke-width="12"/>
+<path d="M188 168L162 176L150 203L126 214" fill="none" stroke="#ffbe0b" stroke-width="7"/>
+<path d="M188 168L162 176L150 203L126 214" fill="none" stroke="#fff8d6" stroke-width="2.2"/>
+<path d="M180 296L209 297L224 262L259 280L273 243L304 250" fill="none" stroke="#ffe066" stroke-width="35" stroke-opacity="0.18"/>
+<path d="M180 296L209 297L224 262L259 280L273 243L304 250" fill="none" stroke-width="17"/>
+<path d="M180 296L209 297L224 262L259 280L273 243L304 250" fill="none" stroke="#ffbe0b" stroke-width="12"/>
+<path d="M180 296L209 297L224 262L259 280L273 243L304 250" fill="none" stroke="#fff8d6" stroke-width="4.95"/>
+<path d="M304 250L331 252L346 221L378 235L396 214" fill="none" stroke="#ffe066" stroke-width="32" stroke-opacity="0.18"/>
+<path d="M304 250L331 252L346 221L378 235L396 214" fill="none" stroke-width="14"/>
+<path d="M304 250L331 252L346 221L378 235L396 214" fill="none" stroke="#ffbe0b" stroke-width="9"/>
+<path d="M304 250L331 252L346 221L378 235L396 214" fill="none" stroke="#fff8d6" stroke-width="3.3000000000000003"/>
+<circle cx="176" cy="300" r="104" fill="url(#chain-lightning-r18)"/>
+<use href="#chain-lightning-p19" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#chain-lightning-c1a)">
+<use href="#chain-lightning-p19" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#chain-lightning-c1b)"><use href="#chain-lightning-p19" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<path d="M197 279L183 300L197 321L176 307L155 321L169 300L155 279L176 293Z" fill="#ffffff"/>
+<circle cx="304" cy="250" r="76" fill="url(#chain-lightning-r1c)"/>
+<use href="#chain-lightning-p1d" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#chain-lightning-c1e)">
+<use href="#chain-lightning-p1d" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#chain-lightning-c1f)"><use href="#chain-lightning-p1d" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<path d="M319 235L309 250L319 265L304 255L289 265L299 250L289 235L304 245Z" fill="#ffffff"/>
+<circle cx="396" cy="214" r="54" fill="url(#chain-lightning-r1g)"/>
+<use href="#chain-lightning-p1h" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#chain-lightning-c1i)">
+<use href="#chain-lightning-p1h" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#chain-lightning-c1j)"><use href="#chain-lightning-p1h" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<path d="M407 203L400 214L407 225L396 218L385 225L392 214L385 203L396 210Z" fill="#ffffff"/>
+<path d="M337 189L340 194L337 199L334 194Z" fill="#fff8d6" fill-opacity="0.58"/>
+<path d="M131 321L133 325L131 329L128 325Z" fill="#ffe066" fill-opacity="0.77"/>
+<path d="M190 301L193 307L190 313L186 307Z" fill="#fff8d6" fill-opacity="0.65"/>
+<path d="M183 190L186 196L183 201L180 196Z" fill="#ffe066" fill-opacity="0.87"/>
+<path d="M203 255L206 261L203 267L200 261Z" fill="#fff8d6" fill-opacity="0.83"/>
+<path d="M295 285L298 290L295 295L292 290Z" fill="#ffe066" fill-opacity="0.7"/>
+<path d="M122 158L126 165L122 171L119 165Z" fill="#fff8d6" fill-opacity="0.66"/>
+<path d="M249 291L252 296L249 301L246 296Z" fill="#ffe066" fill-opacity="0.52"/>
+<path d="M180 331L182 335L180 338L179 335Z" fill="#fff8d6" fill-opacity="0.98"/>
+<path d="M212 169L215 175L212 181L209 175Z" fill="#ffe066" fill-opacity="0.6"/>
+<path d="M237 314L239 317L237 321L235 317Z" fill="#fff8d6" fill-opacity="0.88"/>
+<path d="M187 330L190 337L187 343L183 337Z" fill="#ffe066" fill-opacity="0.68"/>
+<path d="M165 196L169 202L165 208L162 202Z" fill="#fff8d6" fill-opacity="0.78"/>
+<path d="M346 174L348 179L346 184L343 179Z" fill="#ffe066" fill-opacity="0.96"/>
+<path d="M306 339L307 342L306 346L304 342Z" fill="#fff8d6" fill-opacity="0.89"/>
+<path d="M433 209L434 212L433 215L431 212Z" fill="#ffe066" fill-opacity="0.84"/>
+</svg>

@@ -165,13 +165,17 @@ text/raster/filters/animation, ids prefixed with the key). Style grammar on top:
 Card art is **compiled offline** and committed: `scripts/cards-art/lib.mjs` (shared grammar) + `scripts/cards-art/art.mjs`
 (one recipe per art key) → `public/cards/art/<key>.svg`. Nothing there is imported by the app.
 
-1. Add a recipe `"<key>"() { const a = new Art("<key>"); …; return a; }` to `RECIPES` in `art.mjs`, starting from the
-   closest template below (copy its structure, **change geometry, pose, prop and scene** — never only colours).
+1. Add a recipe `"<key>"() { const a = new Art("<key>"); …; return a; }` — pilots live in `RECIPES` in `art.mjs`; from
+   UI-04 on, each wave group has its own module `scripts/cards-art/recipes/<wave>-<group>.mjs` (default export = object
+   of recipes, listed in `art.mjs`; a key defined twice throws). Palette + material ramps are in `materials.mjs`. Start
+   from the closest template below (copy its structure, **change geometry, pose, prop and scene** — never only colours).
 2. `node scripts/cards-art/art.mjs <key>` (prints the byte size; keep ≤ 30 720 B).
 3. Register the key in `CARD_ART_FILES` (`skin/assets.ts`), set its manifest row in `UI_ASSET_STATUS.md` to
    `registered` with the recipe/size/notes, run `npm test`.
 4. Look at it: sandbox toolbar → **"Galería de arte"** (64/40 px thumbnails, both crop masks, full card, board token,
-   inspect, pack opening) at 568×320 and 1280×720. Compare with related cards for clone-like silhouettes.
+   inspect, pack opening) at 568×320 and 1280×720. Compare with related cards for clone-like silhouettes. Offline
+   contact sheet: `node scripts/cards-art/sheet.mjs <out.png> <tile px> <cols> <key …>` (`CROP=1` overlays the safe box
+   and both crop lines) — write the PNG outside the repo.
 
 **Grammar primitives** (`lib.mjs`):
 
@@ -204,6 +208,34 @@ FX/motes. Interior detail (eyes, ribs, cracks, seams) is `a.line` / `a.fill` on 
 Pilot review (UI-03): all 8 checked at 64/40 px, both crops, card, token, inspect and pack at 568×320 and 1280×720 —
 distinct silhouettes and actions; two spells move in opposite diagonals; premium pair has richer scenes and rarity rims.
 
+UI-04 wave (30 keys, 2026-11-13): new body plans beyond the templates — seated/kneeling/floating humanoids
+(`silence-monk`, `last-stand-knight`, `sun-cleric` dome), biped beast (`line-breaker`), arachnid (`venom-spider`),
+frontal token animals (`toad`, `bear-cub`), cloud-vortex elemental (`storm-weaver`), tree elemental (`swamp-ent`), and a
+legendary quadruped group (`ursaria` over two cubs, gold rim, scaled 0.92 about the feet). Related sets were compared at
+64 px: `wolf-pup` play-bow / `wolf` trot / `alpha-wolf` seated howl / `blood-hound` nose-down; `bear-cub` sitting /
+`berserker-bear` rearing / `ursaria` standing guard; `clockwork-sentinel` small brass / `scrap-golem` junk / `stone-golem`
+stone + cyan rune / `iron-colossus` frame-filling iron + orange furnace core.
+
+UI-05 wave (16 keys, 2026-11-13): undead/demon/dragon body plans from `recipes/ui05-parts.mjs` (`wing`, `skull`,
+`bone`, `drop`) — every undead and demon has its own body plan (standing skeleton, bat, wall, ghoul, ghost, enthroned
+king; imp, smoke beast, four-armed weaver, leech, asymmetric empress) and the five dragons are separate silhouettes
+(curled larva, coiled wingless wyrm, side-on flier, frontal diver, perched swan-neck) against Ignis. Merge repeated
+small parts (spikes, claws, bone knobs) into one `mass` path: each `mass` costs ~0.4–0.6 KB.
+
+UI-06 wave (26 spells, 2026-11-13; catalog **80/80**): four modules grouped by element/action —
+`recipes/ui06-light-nature.mjs` (heal, buff, cleanse, ward, attack buff, summon, team buff), `ui06-shadow.mjs` (drain,
+destroy, AoE, vulnerability, return-to-hand, sacrifice, revive), `ui06-arcane.mjs` (draw, copy, mana, summon,
+transform, control), `ui06-storm-ice.mjs` (chain, freeze one, freeze all, disarm, stun). Spell rule: **draw the
+effect acting on its object** (a hand being healed, armour cracking, a sword flying from a struck wrist, a knight half
+turned into a toad), never a floating orb; one target vs many is shown literally (`ice-shard` one spear / one goblin vs
+`frozen-gale` a gale over three ice blocks; `chain-lightning` one bolt forking to three shields). Cards drawn as props
+are blank face-down backs or a spiral portal face — never text. Shadow spells avoid all-violet sameness through hue
+accents: crimson (`drain-life`, `dark-pact`), teal (`soul-harvest`, `banish`), necrotic green (`raise-dead`), ember
+(`shatter-armor`), bone white (`bone-storm`). Required pairs checked at 64 px: `arcane-spark` violet diagonal wand zap
+vs `mana-spark` small cyan vertical flash over a palm; `ice-shard` vs `frozen-gale`; `arcane-insight` eye + grimoire +
+two rising cards vs `arcane-echo` prism mirroring a wolf; `blessing-of-light` gold vertical sunbeam + light wings vs
+`purify` cool diagonal chalice pour breaking taint chains.
+
 ### 6.3 Shared controls (UI-02)
 
 | Need | Use |
@@ -214,6 +246,12 @@ distinct silhouettes and actions; two spells move in opposite diagonals; premium
 | Inline status mark | `<GameIcon name="check" className="cg-mark cg-mark--ok" />` next to its label |
 | Skin images | `public/cards/skin/*.svg`, regenerated by `scripts/cards-art/skin.mjs` |
 | Card illustrations | `public/cards/art/<key>.svg`, compiled by `scripts/cards-art/art.mjs` (§6.1) |
+| Screen header (UI-07) | `screen/ScreenHeader` — quiet back (label hides < 700px, stays the accessible name) · engraved title plate + gold icon medallion · end slot |
+| Loading / empty / error (UI-07) | `screen/StateMessage kind="loading/empty/error"` (+ `fill` for full-page, + `action`) |
+| Section heading (UI-07) | `<h2 className="cg-section-title"><GameIcon …/>Texto</h2>` (gold rule under it); `.cg-section-row` to put a link beside it |
+| Oro plate (UI-07) | `<span className="cg-resource"><CurrencyBadge …/></span>` (`--optional` hides it on phones) |
+| Crest / pack art (UI-07) | `skin/GameCrest`, `skin/PackArt` — import from their modules, not the barrel (keeps them off the match route) |
+| Long art lists (UI-07) | `CardFace lazyArt` / `CardArt lazy` (lazy `<img>`); never on the battlefield |
 
 All of it is visible in the sandbox → "Kit de UI".
 
@@ -288,3 +326,44 @@ All of it is visible in the sandbox → "Kit de UI".
 - Contrast: text ≥4.5:1 on its surface, numerals on gems ≥3:1 plus ink stroke.
 - Reduced motion (OS and in-game setting): no shakes/particles/loops; fades only.
 - Overlays use `justify-content: safe center` (or equivalent) so content never clips above the fold at 320px tall.
+- **UI-10 rules (enforced or checked):**
+  - Touch (`pointer: coarse`) gets ≥ 44px on every compact control: filter chips, search fields, deck-editor rows,
+    "−" and actions. Mouse layouts may stay compact (32px chips). Where the drawn size must stay small (editor "ⓘ",
+    "−" on narrow phones, the foe hero portrait, board units at 568×320), an absolutely positioned `::after` extends the
+    hit area — a pseudo-element hit-tests as its element, so `closest("[data-cg-…]")` and click handling are unchanged.
+  - Every endless CSS animation must also be stopped in a `@media (prefers-reduced-motion: reduce)` block —
+    `src/components/cards/reducedMotion.test.ts` fails otherwise. Battlefield motion is additionally governed by the
+    in-game setting (`.cg-battlefield--reduced`).
+  - Card rules text steps down by length (`cardTextClass` in `CardFace.tsx`: > 56 → `--long`, > 75 → `--xlong`)
+    rather than clipping. Keep new card texts ≤ 100 visible characters (current max: Vaelra, 100).
+  - Grids inside height-capped scrollers whose items have a `min-height` need `grid-auto-rows: max-content`, or rows
+    shrink to the min-height and content overlaps (UI-10 lobby deck-picker bug).
+  - Every overlay is a labelled dialog (`role="dialog"` + `aria-modal` + `aria-labelledby`); live state (turn chip,
+    toasts, connection, rewards) uses `role="status"`.
+
+## 10. Maintenance (UI-10 final handoff)
+
+**Adding or changing a card's art.** (1) Add/adjust its recipe in `scripts/cards-art/recipes/<wave>.mjs` (or
+`art.mjs` for the pilots), reusing `lib.mjs` grammar and `materials.mjs` ramps. (2) `node scripts/cards-art/art.mjs
+<key>` writes `public/cards/art/<key>.svg`; regenerating everything must leave untouched files byte-identical.
+(3) Register the key in `CARD_ART_FILES` (`skin/assets.ts`) and update its row in `UI_ASSET_STATUS.md`. (4) Review:
+`CROP=1 node scripts/cards-art/sheet.mjs <tmp>/x.png 300 4 <key> <its siblings>` (safe box + both crops) and the 64px
+sheet of all keys; then the dev sandbox → "Galería de arte" (card, token, inspect, pack). (5) `npm test` —
+`skin/assets.test.ts` enforces the SVG contract (≤ 30 720 B, viewBox, no text/filter/animation/external refs, id
+prefix), one file per catalog key (80/80 today) and no orphan files. A **new card** fails that gate until its art
+exists; the runtime placeholder in `CardArt` still covers it in development.
+
+**Skin files.** `node scripts/cards-art/skin.mjs` regenerates the 10 `public/cards/skin/*.svg` slots (exact viewBoxes
+in `ART_GUIDE.md` §3); `SKIN_FILES` registers them.
+
+**Icons.** Keyword/status glyphs: `skin/icons/keywordGlyphs.tsx`, `statusGlyphs.ts`; UI icons: `skin/icons/gameIcons.ts`
+via `GameIcon`. One path per glyph inside 24×24 (tests check bounds and uniqueness); no emoji or dingbats anywhere in
+the card game's UI or copy (`noEmoji.test.ts`).
+
+**Premium reveals.** Add a `SignatureSpec` in `client/animation/signatures.ts`, a `CardVisual.signature` entry in
+`catalog/visuals.ts` and two CSS variants (`.cg-fx-aura--<id>`, `.cg-fx-accent--<id>`); `cinematics.test.ts` checks the
+≤ 1.6 s cap at every speed and the reduced-motion variant.
+
+**Styling.** Tokens only from `cards.css` `.cg-root`; new components reuse `.cg-button` variants, `.cg-surface`,
+`.cg-panel`, `.cg-dialog`, `ScreenHeader`, `StateMessage`. Check 568×320 and 1280×720 at least; with touch emulation
+for tap targets.

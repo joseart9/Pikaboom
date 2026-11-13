@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="storm-weaver-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#070c28"/><stop offset="0.55" stop-color="#1c2a6a"/><stop offset="1" stop-color="#0b1238"/></linearGradient><radialGradient id="storm-weaver-r1" gradientUnits="userSpaceOnUse" cx="256" cy="210" r="260"><stop offset="0" stop-color="#9ab8ff" stop-opacity="0.35"/><stop offset="0.45" stop-color="#9ab8ff" stop-opacity="0.1575"/><stop offset="1" stop-color="#9ab8ff" stop-opacity="0"/></radialGradient><radialGradient id="storm-weaver-r2" gradientUnits="userSpaceOnUse" cx="84" cy="84" r="40"><stop offset="0" stop-color="#ffe066" stop-opacity="0.7"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.315"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="storm-weaver-p3" d="M103 99L87 92L80 108L78 91L62 93L75 83L65 69L81 76L88 60L90 77L106 75L93 85Z"/><clipPath id="storm-weaver-c4"><use href="#storm-weaver-p3"/></clipPath><clipPath id="storm-weaver-c5"><use href="#storm-weaver-p3" x="-2" y="-2"/></clipPath><radialGradient id="storm-weaver-r6" gradientUnits="userSpaceOnUse" cx="82" cy="306" r="40"><stop offset="0" stop-color="#ffe066" stop-opacity="0.7"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.315"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="storm-weaver-p7" d="M92 328L81 315L68 326L74 310L58 304L75 301L72 284L83 297L96 286L90 302L106 308L89 311Z"/><clipPath id="storm-weaver-c8"><use href="#storm-weaver-p7"/></clipPath><clipPath id="storm-weaver-c9"><use href="#storm-weaver-p7" x="-2" y="-2"/></clipPath><radialGradient id="storm-weaver-ra" gradientUnits="userSpaceOnUse" cx="440" cy="300" r="40"><stop offset="0" stop-color="#ffe066" stop-opacity="0.7"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.315"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="storm-weaver-pb" d="M434 323L434 306L417 307L431 298L423 283L438 291L446 277L446 294L463 293L449 302L457 317L442 309Z"/><clipPath id="storm-weaver-cc"><use href="#storm-weaver-pb"/></clipPath><clipPath id="storm-weaver-cd"><use href="#storm-weaver-pb" x="-2" y="-2"/></clipPath><path id="storm-weaver-pe" d="M271 133C281 130 295 111 308 107C320 102 340 110 353 106C367 102 390 85 397 81C403 78 396 80 396 80C396 80 402 78 395 79C389 80 365 86 351 86C336 86 315 75 300 77C286 80 261 95 253 103C244 110 244 123 247 127C250 132 262 136 271 133Z"/><clipPath id="storm-weaver-cf"><use href="#storm-weaver-pe"/></clipPath><clipPath id="storm-weaver-cg"><use href="#storm-weaver-pe" x="-6" y="-6"/></clipPath><path id="storm-weaver-ph" d="M281 151C291 151 312 137 326 136C339 135 356 147 370 145C384 143 413 123 420 119C428 115 420 118 420 118C420 118 427 116 420 117C412 117 384 125 370 123C356 121 341 106 326 104C312 102 282 108 271 113C261 117 255 131 257 137C258 143 270 152 281 151Z"/><clipPath id="storm-weaver-ci"><use href="#storm-weaver-ph"/></clipPath><clipPath id="storm-weaver-cj"><use href="#storm-weaver-ph" x="-6" y="-6"/></clipPath><path id="storm-weaver-pk" d="M279 167C286 169 305 165 316 167C328 170 342 183 354 184C367 185 392 175 398 173C405 172 398 172 398 172C398 172 404 171 398 171C392 170 369 172 358 168C346 164 335 149 324 145C312 140 290 136 281 137C273 138 266 146 265 151C265 155 271 164 279 167Z"/><clipPath id="storm-weaver-cl"><use href="#storm-weaver-pk"/></clipPath><clipPath id="storm-weaver-cm"><use href="#storm-weaver-pk" x="-6" y="-6"/></clipPath><path id="storm-weaver-pn" d="M196 246C216 239 295 239 316 246C337 253 337 279 334 292C331 305 305 321 296 334C287 347 282 368 276 378C270 389 263 404 258 404C254 404 252 387 246 376C240 366 230 347 220 334C210 321 184 305 180 292C176 279 176 253 196 246Z"/><clipPath id="storm-weaver-co"><use href="#storm-weaver-pn"/></clipPath><clipPath id="storm-weaver-cp"><use href="#storm-weaver-pn" x="-12" y="-10"/></clipPath><path id="storm-weaver-pq" d="M211 266C210 271 203 276 198 279C192 282 185 286 178 285C171 285 161 280 157 276C154 271 154 261 157 256C161 252 171 249 179 248C186 247 195 247 201 250C206 253 211 261 211 266Z"/><clipPath id="storm-weaver-cr"><use href="#storm-weaver-pq"/></clipPath><clipPath id="storm-weaver-cs"><use href="#storm-weaver-pq" x="-4" y="-4"/></clipPath><path id="storm-weaver-pt" d="M356 268C356 273 349 279 344 281C339 284 331 285 325 284C319 284 311 280 308 276C305 272 303 264 306 259C309 255 318 251 324 250C331 249 340 251 345 254C350 257 356 263 356 268Z"/><clipPath id="storm-weaver-cu"><use href="#storm-weaver-pt"/></clipPath><clipPath id="storm-weaver-cv"><use href="#storm-weaver-pt" x="-4" y="-4"/></clipPath><path id="storm-weaver-pw" d="M231 330C231 333 226 337 222 339C218 341 212 344 208 343C204 342 200 338 198 335C196 332 193 327 195 324C196 321 203 318 208 317C213 316 219 317 223 319C227 322 231 327 231 330Z"/><clipPath id="storm-weaver-cx"><use href="#storm-weaver-pw"/></clipPath><clipPath id="storm-weaver-cy"><use href="#storm-weaver-pw" x="-4" y="-4"/></clipPath><path id="storm-weaver-pz" d="M320 334C320 337 315 342 311 344C307 346 300 347 296 346C292 345 288 342 286 339C284 336 283 332 285 329C287 326 292 321 296 321C300 320 306 323 310 325C314 327 320 331 320 334Z"/><clipPath id="storm-weaver-c10"><use href="#storm-weaver-pz"/></clipPath><clipPath id="storm-weaver-c11"><use href="#storm-weaver-pz" x="-4" y="-4"/></clipPath><path id="storm-weaver-p12" d="M226 186C236 178 276 178 286 186C296 194 302 234 298 244C294 254 267 262 256 262C245 262 218 254 214 244C210 234 216 194 226 186Z"/><clipPath id="storm-weaver-c13"><use href="#storm-weaver-p12"/></clipPath><clipPath id="storm-weaver-c14"><use href="#storm-weaver-p12" x="-10" y="-8"/></clipPath><path id="storm-weaver-p15" d="M222 196C240 210 272 210 290 196L288 212C270 226 242 226 224 212Z"/><clipPath id="storm-weaver-c16"><use href="#storm-weaver-p15"/></clipPath><clipPath id="storm-weaver-c17"><use href="#storm-weaver-p15" x="-3" y="-3"/></clipPath><path id="storm-weaver-p18" d="M234 190C226 185 201 182 188 176C176 170 158 152 151 148C144 144 141 147 140 149C138 151 135 154 141 160C147 167 167 184 180 192C192 199 217 209 226 210C235 212 239 207 240 204C241 200 241 194 234 190Z"/><clipPath id="storm-weaver-c19"><use href="#storm-weaver-p18"/></clipPath><clipPath id="storm-weaver-c1a"><use href="#storm-weaver-p18" x="-5" y="-5"/></clipPath><path id="storm-weaver-p1b" d="M286 211C295 210 321 204 334 198C346 192 366 176 373 171C379 165 376 161 375 159C373 158 371 154 363 157C356 161 339 177 326 182C314 187 290 186 282 189C274 192 273 199 273 202C274 206 277 211 286 211Z"/><clipPath id="storm-weaver-c1c"><use href="#storm-weaver-p1b"/></clipPath><clipPath id="storm-weaver-c1d"><use href="#storm-weaver-p1b" x="-5" y="-5"/></clipPath><radialGradient id="storm-weaver-r1e" gradientUnits="userSpaceOnUse" cx="140" cy="150" r="50"><stop offset="0" stop-color="#ffe066" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="storm-weaver-r1f" gradientUnits="userSpaceOnUse" cx="374" cy="158" r="50"><stop offset="0" stop-color="#ffe066" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="storm-weaver-p1g" d="M126 150A14 14 0 1 0 154 150A14 14 0 1 0 126 150Z"/><clipPath id="storm-weaver-c1h"><use href="#storm-weaver-p1g"/></clipPath><clipPath id="storm-weaver-c1i"><use href="#storm-weaver-p1g" x="-4" y="-4"/></clipPath><path id="storm-weaver-p1j" d="M360 158A14 14 0 1 0 388 158A14 14 0 1 0 360 158Z"/><clipPath id="storm-weaver-c1k"><use href="#storm-weaver-p1j"/></clipPath><clipPath id="storm-weaver-c1l"><use href="#storm-weaver-p1j" x="-4" y="-4"/></clipPath><path id="storm-weaver-p1m" d="M264 186C265 183 265 175 264 172C263 169 258 164 256 164C254 164 249 169 248 172C247 175 247 183 248 186C249 189 254 194 256 194C258 194 263 189 264 186Z"/><clipPath id="storm-weaver-c1n"><use href="#storm-weaver-p1m"/></clipPath><clipPath id="storm-weaver-c1o"><use href="#storm-weaver-p1m" x="-3" y="0"/></clipPath><path id="storm-weaver-p1p" d="M228 146C230 139 234 126 240 122C246 118 259 116 266 118C273 120 281 127 284 134C287 141 287 155 284 162C281 169 272 177 266 180C260 183 250 181 244 178C238 175 233 169 230 164C227 159 226 153 228 146Z"/><clipPath id="storm-weaver-c1q"><use href="#storm-weaver-p1p"/></clipPath><clipPath id="storm-weaver-c1r"><use href="#storm-weaver-p1p" x="-8" y="-6"/></clipPath><path id="storm-weaver-p1s" d="M226 150C222 120 250 104 274 110C292 116 296 136 290 150C280 134 264 132 252 136C242 138 232 144 226 150Z"/><clipPath id="storm-weaver-c1t"><use href="#storm-weaver-p1s"/></clipPath><clipPath id="storm-weaver-c1u"><use href="#storm-weaver-p1s" x="-5" y="-5"/></clipPath><radialGradient id="storm-weaver-r1v" gradientUnits="userSpaceOnUse" cx="246" cy="152" r="14"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="storm-weaver-r1w" gradientUnits="userSpaceOnUse" cx="272" cy="150" r="14"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#storm-weaver-l0)"/>
+<circle cx="256" cy="210" r="260" fill="url(#storm-weaver-r1)"/>
+<path d="M210 60C211 71 186 85 167 93C149 102 126 109 100 113C75 117 44 120 16 118C-12 115 -49 109 -66 99C-83 90 -88 72 -85 60C-83 48 -71 34 -53 25C-36 16 -8 10 19 5C45 1 83 -6 107 -2C131 2 143 19 160 29C177 39 209 49 210 60Z" fill="#16205a"/>
+<path d="M630 40C627 51 594 61 575 70C556 80 540 93 516 96C492 100 459 93 430 90C400 87 357 86 339 78C321 70 319 52 321 40C323 28 331 13 349 5C367 -4 401 -8 428 -11C456 -14 486 -16 513 -13C541 -10 574 -5 593 4C613 13 633 29 630 40Z" fill="#16205a"/>
+<path d="M272 470C269 482 235 495 211 504C187 512 158 520 128 522C99 525 63 523 34 520C5 517 -26 511 -47 502C-67 494 -92 481 -90 470C-89 459 -59 450 -40 439C-22 428 -9 410 20 405C49 400 100 406 134 411C169 415 203 423 225 433C248 443 274 458 272 470Z" fill="#111a4a"/>
+<path d="M619 480C623 492 611 509 590 518C569 527 527 529 495 532C463 536 425 543 399 539C372 536 356 521 337 511C318 501 290 491 286 480C281 469 293 452 312 442C331 433 369 428 401 424C433 419 477 412 505 416C533 420 550 437 569 448C588 458 616 468 619 480Z" fill="#111a4a"/>
+<path d="M430 60L425 92L454 114L446 146L468 170L470 200" fill="none" stroke="#ffe066" stroke-width="3" stroke-opacity="0.3"/>
+<path d="M138 150L143 128L113 134L122 108L94 112L107 83L84 84M116 120L99 116L90 139L72 132" fill="none" stroke-width="16"/>
+<path d="M138 150L143 128L113 134L122 108L94 112L107 83L84 84M116 120L99 116L90 139L72 132" fill="none" stroke="#ffe066" stroke-width="9"/>
+<path d="M138 150L143 128L113 134L122 108L94 112L107 83L84 84" fill="none" stroke="#ffffff" stroke-width="3.5"/>
+<circle cx="84" cy="84" r="40" fill="url(#storm-weaver-r2)"/>
+<use href="#storm-weaver-p3" fill="#ffbe0b" stroke-width="6"/>
+<g clip-path="url(#storm-weaver-c4)">
+<use href="#storm-weaver-p3" x="-2" y="-2" fill="#fff8d6"/>
+<g clip-path="url(#storm-weaver-c5)"><use href="#storm-weaver-p3" x="2" y="2" fill="#ffe066"/></g>
+</g>
+<path d="M136 160L110 178L136 215L98 229L116 263L82 278L82 306M110 230L92 225L77 239L60 236" fill="none" stroke-width="16"/>
+<path d="M136 160L110 178L136 215L98 229L116 263L82 278L82 306M110 230L92 225L77 239L60 236" fill="none" stroke="#ffe066" stroke-width="9"/>
+<path d="M136 160L110 178L136 215L98 229L116 263L82 278L82 306" fill="none" stroke="#ffffff" stroke-width="3.5"/>
+<circle cx="82" cy="306" r="40" fill="url(#storm-weaver-r6)"/>
+<use href="#storm-weaver-p7" fill="#ffbe0b" stroke-width="6"/>
+<g clip-path="url(#storm-weaver-c8)">
+<use href="#storm-weaver-p7" x="-2" y="-2" fill="#fff8d6"/>
+<g clip-path="url(#storm-weaver-c9)"><use href="#storm-weaver-p7" x="2" y="2" fill="#ffe066"/></g>
+</g>
+<path d="M376 160L377 188L413 200L396 235L435 246L414 283L440 300M406 226L424 227L436 208L454 210" fill="none" stroke-width="16"/>
+<path d="M376 160L377 188L413 200L396 235L435 246L414 283L440 300M406 226L424 227L436 208L454 210" fill="none" stroke="#ffe066" stroke-width="9"/>
+<path d="M376 160L377 188L413 200L396 235L435 246L414 283L440 300" fill="none" stroke="#ffffff" stroke-width="3.5"/>
+<circle cx="440" cy="300" r="40" fill="url(#storm-weaver-ra)"/>
+<use href="#storm-weaver-pb" fill="#ffbe0b" stroke-width="6"/>
+<g clip-path="url(#storm-weaver-cc)">
+<use href="#storm-weaver-pb" x="-2" y="-2" fill="#fff8d6"/>
+<g clip-path="url(#storm-weaver-cd)"><use href="#storm-weaver-pb" x="2" y="2" fill="#ffe066"/></g>
+</g>
+<use href="#storm-weaver-pe" fill="#3a86c8" stroke-width="10"/>
+<g clip-path="url(#storm-weaver-cf)">
+<use href="#storm-weaver-pe" x="-6" y="-6" fill="#e0f8ff"/>
+<g clip-path="url(#storm-weaver-cg)"><use href="#storm-weaver-pe" x="4" y="4" fill="#8fe0ff"/></g>
+</g>
+<use href="#storm-weaver-ph" fill="#3a86c8" stroke-width="10"/>
+<g clip-path="url(#storm-weaver-ci)">
+<use href="#storm-weaver-ph" x="-6" y="-6" fill="#e0f8ff"/>
+<g clip-path="url(#storm-weaver-cj)"><use href="#storm-weaver-ph" x="4" y="4" fill="#8fe0ff"/></g>
+</g>
+<use href="#storm-weaver-pk" fill="#3a86c8" stroke-width="10"/>
+<g clip-path="url(#storm-weaver-cl)">
+<use href="#storm-weaver-pk" x="-6" y="-6" fill="#e0f8ff"/>
+<g clip-path="url(#storm-weaver-cm)"><use href="#storm-weaver-pk" x="4" y="4" fill="#8fe0ff"/></g>
+</g>
+<use href="#storm-weaver-pn" fill="#ffe066" stroke-width="12"/>
+<g clip-path="url(#storm-weaver-co)">
+<use href="#storm-weaver-pn" x="-4" fill="#40508e"/>
+<use href="#storm-weaver-pn" x="-12" y="-10" fill="#c3cff0"/>
+<g clip-path="url(#storm-weaver-cp)"><use href="#storm-weaver-pn" x="8" y="8" fill="#7a8cc8"/></g>
+</g>
+<path d="M200 280C240 296 290 290 322 272M216 316C250 328 286 320 304 306M240 352C256 358 270 354 280 346" fill="none" stroke="#e2ecf5" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#storm-weaver-pq" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-cr)">
+<use href="#storm-weaver-pq" x="-4" fill="#40508e"/>
+<use href="#storm-weaver-pq" x="-4" y="-4" fill="#c3cff0"/>
+<g clip-path="url(#storm-weaver-cs)"><use href="#storm-weaver-pq" x="3" y="3" fill="#7a8cc8"/></g>
+</g>
+<use href="#storm-weaver-pt" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-cu)">
+<use href="#storm-weaver-pt" x="-4" fill="#40508e"/>
+<use href="#storm-weaver-pt" x="-4" y="-4" fill="#c3cff0"/>
+<g clip-path="url(#storm-weaver-cv)"><use href="#storm-weaver-pt" x="3" y="3" fill="#7a8cc8"/></g>
+</g>
+<use href="#storm-weaver-pw" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-cx)">
+<use href="#storm-weaver-pw" x="-4" fill="#40508e"/>
+<use href="#storm-weaver-pw" x="-4" y="-4" fill="#c3cff0"/>
+<g clip-path="url(#storm-weaver-cy)"><use href="#storm-weaver-pw" x="3" y="3" fill="#7a8cc8"/></g>
+</g>
+<use href="#storm-weaver-pz" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-c10)">
+<use href="#storm-weaver-pz" x="-4" fill="#40508e"/>
+<use href="#storm-weaver-pz" x="-4" y="-4" fill="#c3cff0"/>
+<g clip-path="url(#storm-weaver-c11)"><use href="#storm-weaver-pz" x="3" y="3" fill="#7a8cc8"/></g>
+</g>
+<use href="#storm-weaver-p12" fill="#7f94d6" stroke-width="12"/>
+<g clip-path="url(#storm-weaver-c13)">
+<use href="#storm-weaver-p12" x="-10" y="-8" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c14)"><use href="#storm-weaver-p12" x="7" y="7" fill="#bcd0ff"/></g>
+</g>
+<use href="#storm-weaver-p15" fill="#ffe066" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-c16)">
+<use href="#storm-weaver-p15" x="-4" fill="#40508e"/>
+<use href="#storm-weaver-p15" x="-3" y="-3" fill="#c3cff0"/>
+<g clip-path="url(#storm-weaver-c17)"><use href="#storm-weaver-p15" x="2" y="2" fill="#7a8cc8"/></g>
+</g>
+<use href="#storm-weaver-p18" fill="#7f94d6" stroke-width="12"/>
+<g clip-path="url(#storm-weaver-c19)">
+<use href="#storm-weaver-p18" x="-5" y="-5" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c1a)"><use href="#storm-weaver-p18" x="3" y="3" fill="#bcd0ff"/></g>
+</g>
+<use href="#storm-weaver-p1b" fill="#7f94d6" stroke-width="12"/>
+<g clip-path="url(#storm-weaver-c1c)">
+<use href="#storm-weaver-p1b" x="-5" y="-5" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c1d)"><use href="#storm-weaver-p1b" x="3" y="3" fill="#bcd0ff"/></g>
+</g>
+<circle cx="140" cy="150" r="50" fill="url(#storm-weaver-r1e)"/>
+<circle cx="374" cy="158" r="50" fill="url(#storm-weaver-r1f)"/>
+<use href="#storm-weaver-p1g" fill="#7f94d6" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-c1h)">
+<use href="#storm-weaver-p1g" x="-4" y="-4" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c1i)"><use href="#storm-weaver-p1g" x="3" y="3" fill="#bcd0ff"/></g>
+</g>
+<use href="#storm-weaver-p1j" fill="#7f94d6" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-c1k)">
+<use href="#storm-weaver-p1j" x="-4" y="-4" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c1l)"><use href="#storm-weaver-p1j" x="3" y="3" fill="#bcd0ff"/></g>
+</g>
+<use href="#storm-weaver-p1m" fill="#7f94d6" stroke-width="8"/>
+<g clip-path="url(#storm-weaver-c1n)">
+<use href="#storm-weaver-p1m" x="-3" y="0" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c1o)"><use href="#storm-weaver-p1m" x="2" y="2" fill="#bcd0ff"/></g>
+</g>
+<use href="#storm-weaver-p1p" fill="#7f94d6" stroke-width="12"/>
+<g clip-path="url(#storm-weaver-c1q)">
+<use href="#storm-weaver-p1p" x="-8" y="-6" fill="#eef3ff"/>
+<g clip-path="url(#storm-weaver-c1r)"><use href="#storm-weaver-p1p" x="5" y="5" fill="#bcd0ff"/></g>
+</g>
+<use href="#storm-weaver-p1s" fill="#3a86c8" stroke-width="10"/>
+<g clip-path="url(#storm-weaver-c1t)">
+<use href="#storm-weaver-p1s" x="-5" y="-5" fill="#e0f8ff"/>
+<g clip-path="url(#storm-weaver-c1u)"><use href="#storm-weaver-p1s" x="3" y="3" fill="#8fe0ff"/></g>
+</g>
+<circle cx="246" cy="152" r="14" fill="url(#storm-weaver-r1v)"/>
+<circle cx="272" cy="150" r="14" fill="url(#storm-weaver-r1w)"/>
+<path d="M238 150L254 152L252 156L240 155Z" fill="#fff8d6"/>
+<path d="M264 151L280 148L280 153L266 155Z" fill="#fff8d6"/>
+<path d="M252 168C258 170 264 170 268 167" fill="none" stroke-width="3"/>
+<path d="M97 87L100 93L97 98L94 93Z" fill="#ffe066" fill-opacity="0.58"/>
+<path d="M190 136L192 141L190 146L187 141Z" fill="#e2ecf5" fill-opacity="0.97"/>
+<path d="M390 67L394 73L390 79L387 73Z" fill="#ffe066" fill-opacity="0.53"/>
+<path d="M94 389L98 395L94 402L91 395Z" fill="#e2ecf5" fill-opacity="0.68"/>
+<path d="M357 83L359 88L357 93L354 88Z" fill="#ffe066" fill-opacity="0.79"/>
+<path d="M454 134L458 140L454 147L451 140Z" fill="#e2ecf5" fill-opacity="0.54"/>
+<path d="M136 325L138 328L136 332L134 328Z" fill="#ffe066" fill-opacity="0.83"/>
+<path d="M209 231L212 238L209 245L205 238Z" fill="#e2ecf5" fill-opacity="0.86"/>
+<path d="M418 366L421 371L418 377L415 371Z" fill="#ffe066" fill-opacity="0.89"/>
+<path d="M343 137L346 142L343 146L341 142Z" fill="#e2ecf5" fill-opacity="0.71"/>
+<path d="M418 378L422 384L418 390L415 384Z" fill="#ffe066" fill-opacity="0.79"/>
+<path d="M187 366L189 369L187 373L185 369Z" fill="#e2ecf5" fill-opacity="0.64"/>
+<path d="M381 117L384 123L381 129L378 123Z" fill="#ffe066" fill-opacity="0.94"/>
+<path d="M370 66L373 72L370 77L367 72Z" fill="#e2ecf5" fill-opacity="0.72"/>
+</svg>

@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="line-breaker-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1e1a10"/><stop offset="0.55" stop-color="#4a3a20"/><stop offset="1" stop-color="#1e1a12"/></linearGradient><radialGradient id="line-breaker-r1" gradientUnits="userSpaceOnUse" cx="260" cy="230" r="260"><stop offset="0" stop-color="#ffd08a" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffd08a" stop-opacity="0.135"/><stop offset="1" stop-color="#ffd08a" stop-opacity="0"/></radialGradient><linearGradient id="line-breaker-l2" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#4a4426"/><stop offset="1" stop-color="#2a2a16"/></linearGradient><radialGradient id="line-breaker-r3" gradientUnits="userSpaceOnUse" cx="262" cy="404" r="180"><stop offset="0" stop-color="#ffd08a" stop-opacity="0.55"/><stop offset="1" stop-color="#ffd08a" stop-opacity="0"/></radialGradient><path id="line-breaker-p4" d="M402 154C412 149 453 129 462 124C471 118 464 119 464 118C463 117 468 112 458 116C448 121 407 141 398 146C389 152 396 151 396 152C397 153 392 158 402 154Z"/><clipPath id="line-breaker-c5"><use href="#line-breaker-p4"/></clipPath><clipPath id="line-breaker-c6"><use href="#line-breaker-p4" x="-2" y="-2"/></clipPath><path id="line-breaker-p7" d="M456 110L476 112L470 126Z"/><clipPath id="line-breaker-c8"><use href="#line-breaker-p7"/></clipPath><clipPath id="line-breaker-c9"><use href="#line-breaker-p7" x="-2" y="-2"/></clipPath><path id="line-breaker-pa" d="M58 163C64 169 91 189 98 193C104 198 102 193 103 192C104 191 109 192 102 187C96 181 69 161 62 157C56 152 58 157 57 158C56 159 51 158 58 163Z"/><clipPath id="line-breaker-cb"><use href="#line-breaker-pa"/></clipPath><clipPath id="line-breaker-cc"><use href="#line-breaker-pa" x="-2" y="-2"/></clipPath><path id="line-breaker-pd" d="M52 380A28 20 0 1 0 108 380A28 20 0 1 0 52 380Z"/><clipPath id="line-breaker-ce"><use href="#line-breaker-pd"/></clipPath><clipPath id="line-breaker-cf"><use href="#line-breaker-pd" x="-4" y="-4"/></clipPath><path id="line-breaker-pg" d="M457 380L444 388L427 386L429 375L445 369Z"/><clipPath id="line-breaker-ch"><use href="#line-breaker-pg"/></clipPath><clipPath id="line-breaker-ci"><use href="#line-breaker-pg" x="-2" y="-2"/></clipPath><path id="line-breaker-pj" d="M218 310C213 319 214 341 213 353C212 365 210 381 212 388C214 396 220 403 224 404C229 404 237 398 240 392C243 385 243 370 247 359C250 349 262 331 262 322C262 312 252 295 246 294C239 292 223 302 218 310Z"/><clipPath id="line-breaker-ck"><use href="#line-breaker-pj"/></clipPath><clipPath id="line-breaker-cl"><use href="#line-breaker-pj" x="-7" y="-7"/></clipPath><path id="line-breaker-pm" d="M278 324C279 334 293 350 298 360C302 371 302 386 306 392C310 399 318 405 322 404C327 403 333 395 334 388C335 380 332 363 330 352C329 340 327 317 322 308C316 300 299 292 292 294C286 297 278 314 278 324Z"/><clipPath id="line-breaker-cn"><use href="#line-breaker-pm"/></clipPath><clipPath id="line-breaker-co"><use href="#line-breaker-pm" x="-7" y="-7"/></clipPath><path id="line-breaker-pp" d="M205 402L208 388L236 388L239 402Z"/><clipPath id="line-breaker-cq"><use href="#line-breaker-pp"/></clipPath><clipPath id="line-breaker-cr"><use href="#line-breaker-pp" x="-3" y="-3"/></clipPath><path id="line-breaker-ps" d="M307 402L310 388L338 388L341 402Z"/><clipPath id="line-breaker-ct"><use href="#line-breaker-ps"/></clipPath><clipPath id="line-breaker-cu"><use href="#line-breaker-ps" x="-3" y="-3"/></clipPath><path id="line-breaker-pv" d="M212 222C219 208 243 198 258 196C273 194 307 199 318 208C329 217 336 242 336 258C336 274 331 308 318 318C305 328 262 330 246 326C230 322 211 307 206 292C201 277 205 236 212 222Z"/><clipPath id="line-breaker-cw"><use href="#line-breaker-pv"/></clipPath><clipPath id="line-breaker-cx"><use href="#line-breaker-pv" x="-14" y="-12"/></clipPath><path id="line-breaker-py" d="M232 226C237 219 259 215 270 216C281 217 300 223 304 230C309 238 306 259 300 266C294 273 276 276 266 276C256 276 241 272 236 264C231 257 227 233 232 226Z"/><clipPath id="line-breaker-cz"><use href="#line-breaker-py"/></clipPath><clipPath id="line-breaker-c10"><use href="#line-breaker-py" x="-5" y="-5"/></clipPath><path id="line-breaker-p11" d="M222 304L320 304L328 346L290 336L272 360L252 336L216 346Z"/><clipPath id="line-breaker-c12"><use href="#line-breaker-p11"/></clipPath><clipPath id="line-breaker-c13"><use href="#line-breaker-p11" x="-6" y="-6"/></clipPath><path id="line-breaker-p14" d="M262 300L282 300L282 316L262 316Z"/><clipPath id="line-breaker-c15"><use href="#line-breaker-p14"/></clipPath><clipPath id="line-breaker-c16"><use href="#line-breaker-p14" x="-3" y="-3"/></clipPath><path id="line-breaker-p17" d="M297 215C292 222 297 244 292 250C286 256 266 251 260 254C253 257 248 266 248 270C249 274 254 281 264 282C274 282 302 282 312 274C323 266 333 239 335 229C336 218 328 205 323 203C317 201 302 208 297 215Z"/><clipPath id="line-breaker-c18"><use href="#line-breaker-p17"/></clipPath><clipPath id="line-breaker-c19"><use href="#line-breaker-p17" x="-6" y="-6"/></clipPath><path id="line-breaker-p1a" d="M344 264C310 260 155 249 120 248C86 246 114 252 114 254C113 255 85 257 120 260C154 264 309 275 344 276C378 278 350 272 350 270C351 269 379 267 344 264Z"/><clipPath id="line-breaker-c1b"><use href="#line-breaker-p1a"/></clipPath><clipPath id="line-breaker-c1c"><use href="#line-breaker-p1a" x="-3" y="-3"/></clipPath><path id="line-breaker-p1d" d="M116 250C112 248 102 229 100 224C98 219 94 190 96 188C98 186 120 195 124 196C129 198 148 202 150 206C152 210 149 244 146 248C143 252 120 252 116 250Z"/><clipPath id="line-breaker-c1e"><use href="#line-breaker-p1d"/></clipPath><clipPath id="line-breaker-c1f"><use href="#line-breaker-p1d" x="-6" y="-6"/></clipPath><path id="line-breaker-p1g" d="M116 262C120 260 143 258 146 262C149 266 152 302 150 306C148 311 129 315 124 316C120 318 98 326 96 324C94 322 98 293 100 288C102 283 112 264 116 262Z"/><clipPath id="line-breaker-c1h"><use href="#line-breaker-p1g"/></clipPath><clipPath id="line-breaker-c1i"><use href="#line-breaker-p1g" x="-6" y="-6"/></clipPath><path id="line-breaker-p1j" d="M115 244C114 249 114 263 115 268C116 273 121 277 124 277C127 277 132 273 133 268C134 263 134 249 133 244C132 239 127 235 124 235C121 235 116 239 115 244Z"/><clipPath id="line-breaker-c1k"><use href="#line-breaker-p1j"/></clipPath><clipPath id="line-breaker-c1l"><use href="#line-breaker-p1j" x="-3" y="-3"/></clipPath><path id="line-breaker-p1m" d="M200 207C191 212 179 232 175 240C171 248 173 256 175 262C177 268 186 277 190 277C195 277 203 265 205 262C207 259 201 264 205 260C209 256 228 245 232 237C236 229 236 210 231 206C226 201 208 202 200 207Z"/><clipPath id="line-breaker-c1n"><use href="#line-breaker-p1m"/></clipPath><clipPath id="line-breaker-c1o"><use href="#line-breaker-p1m" x="-6" y="-6"/></clipPath><path id="line-breaker-p1p" d="M172 262A18 16 0 1 0 208 262A18 16 0 1 0 172 262Z"/><clipPath id="line-breaker-c1q"><use href="#line-breaker-p1p"/></clipPath><clipPath id="line-breaker-c1r"><use href="#line-breaker-p1p" x="-4" y="-4"/></clipPath><path id="line-breaker-p1s" d="M237 268A17 15 0 1 0 271 268A17 15 0 1 0 237 268Z"/><clipPath id="line-breaker-c1t"><use href="#line-breaker-p1s"/></clipPath><clipPath id="line-breaker-c1u"><use href="#line-breaker-p1s" x="-4" y="-4"/></clipPath><path id="line-breaker-p1v" d="M243 129C237 125 217 119 209 115C201 112 192 109 189 105C187 102 191 96 191 94C191 93 190 94 190 94C190 94 191 91 189 94C187 96 177 105 179 111C180 116 191 127 199 133C207 139 225 149 233 151C240 153 247 148 249 145C250 142 249 134 243 129Z"/><clipPath id="line-breaker-c1w"><use href="#line-breaker-p1v"/></clipPath><clipPath id="line-breaker-c1x"><use href="#line-breaker-p1v" x="-4" y="-4"/></clipPath><path id="line-breaker-p1y" d="M295 151C303 149 323 139 331 133C339 126 348 116 350 110C351 104 341 96 339 94C337 91 338 94 338 94C338 94 337 93 337 94C337 96 341 103 338 106C336 109 329 112 321 115C313 119 291 125 285 129C279 133 278 142 279 145C280 148 287 153 295 151Z"/><clipPath id="line-breaker-c1z"><use href="#line-breaker-p1y"/></clipPath><clipPath id="line-breaker-c20"><use href="#line-breaker-p1y" x="-4" y="-4"/></clipPath><path id="line-breaker-p21" d="M226 150L208 146L224 166Z"/><clipPath id="line-breaker-c22"><use href="#line-breaker-p21"/></clipPath><clipPath id="line-breaker-c23"><use href="#line-breaker-p21" x="-3" y="-3"/></clipPath><path id="line-breaker-p24" d="M302 150L320 146L304 166Z"/><clipPath id="line-breaker-c25"><use href="#line-breaker-p24"/></clipPath><clipPath id="line-breaker-c26"><use href="#line-breaker-p24" x="-3" y="-3"/></clipPath><path id="line-breaker-p27" d="M234 136C239 129 255 126 264 126C273 126 289 131 294 138C299 145 302 162 300 172C299 182 292 200 284 206C276 212 254 215 246 210C238 206 230 187 228 176C226 165 229 144 234 136Z"/><clipPath id="line-breaker-c28"><use href="#line-breaker-p27"/></clipPath><clipPath id="line-breaker-c29"><use href="#line-breaker-p27" x="-10" y="-8"/></clipPath><path id="line-breaker-p2a" d="M236 196A26 18 0 1 0 288 196A26 18 0 1 0 236 196Z"/><clipPath id="line-breaker-c2b"><use href="#line-breaker-p2a"/></clipPath><clipPath id="line-breaker-c2c"><use href="#line-breaker-p2a" x="-4" y="-4"/></clipPath><radialGradient id="line-breaker-r2d" gradientUnits="userSpaceOnUse" cx="248" cy="164" r="14"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient><radialGradient id="line-breaker-r2e" gradientUnits="userSpaceOnUse" cx="278" cy="164" r="14"><stop offset="0" stop-color="#ff4d6d" stop-opacity="0.8"/><stop offset="0.45" stop-color="#ff4d6d" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#line-breaker-l0)"/>
+<circle cx="260" cy="230" r="260" fill="url(#line-breaker-r1)"/>
+<path d="M0 330L80 300L180 316L300 296L420 314L512 300V340H0Z" fill="#2e2614"/>
+<path d="M10 330L18 266L26 330Z" fill="#24200f"/>
+<path d="M56 330L64 266L72 330Z" fill="#24200f"/>
+<path d="M102 330L110 266L118 330Z" fill="#24200f"/>
+<path d="M424 330L432 266L440 330Z" fill="#24200f"/>
+<path d="M470 330L478 266L486 330Z" fill="#24200f"/>
+<path d="M430 150L482 150L470 200L482 250L430 240Z" fill="#3d6b30" fill-opacity="0.7"/>
+<path d="M430 140V300" fill="none" stroke="#24200f" stroke-width="5"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#line-breaker-l2)"/>
+<ellipse cx="262" cy="404" rx="180" ry="50" fill="url(#line-breaker-r3)"/>
+<ellipse cx="268" cy="402" rx="120" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<path d="M130 226C220 160 404 176 418 326L384 312C372 222 250 206 136 250Z" fill="#fff1c1" fill-opacity="0.28"/>
+<path d="M150 232C240 184 390 196 404 316" fill="none" stroke="#ffffff" stroke-width="5" stroke-opacity="0.5"/>
+<use href="#line-breaker-p4" fill="#46301e" stroke-width="8"/>
+<g clip-path="url(#line-breaker-c5)">
+<use href="#line-breaker-p4" x="-2" y="-2" fill="#9a6a45"/>
+<g clip-path="url(#line-breaker-c6)"><use href="#line-breaker-p4" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#line-breaker-p7" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#line-breaker-c8)">
+<use href="#line-breaker-p7" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#line-breaker-c9)"><use href="#line-breaker-p7" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#line-breaker-pa" fill="#46301e" stroke-width="8"/>
+<g clip-path="url(#line-breaker-cb)">
+<use href="#line-breaker-pa" x="-2" y="-2" fill="#9a6a45"/>
+<g clip-path="url(#line-breaker-cc)"><use href="#line-breaker-pa" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#line-breaker-pd" fill="#24418a" stroke-width="8"/>
+<g clip-path="url(#line-breaker-ce)">
+<use href="#line-breaker-pd" x="-4" y="-4" fill="#6a95e0"/>
+<g clip-path="url(#line-breaker-cf)"><use href="#line-breaker-pd" x="3" y="3" fill="#3d6fc4"/></g>
+</g>
+<path d="M64 372L96 390" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#line-breaker-pg" fill="#5e6f8a" stroke-width="6"/>
+<g clip-path="url(#line-breaker-ch)">
+<use href="#line-breaker-pg" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#line-breaker-ci)"><use href="#line-breaker-pg" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#line-breaker-pj" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#line-breaker-ck)">
+<use href="#line-breaker-pj" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-pj" x="-7" y="-7" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-cl)"><use href="#line-breaker-pj" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-pm" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#line-breaker-cn)">
+<use href="#line-breaker-pm" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-pm" x="-7" y="-7" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-co)"><use href="#line-breaker-pm" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-pp" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#line-breaker-cq)">
+<use href="#line-breaker-pp" x="-3" y="-3" fill="#5a4444"/>
+<g clip-path="url(#line-breaker-cr)"><use href="#line-breaker-pp" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#line-breaker-ps" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#line-breaker-ct)">
+<use href="#line-breaker-ps" x="-3" y="-3" fill="#5a4444"/>
+<g clip-path="url(#line-breaker-cu)"><use href="#line-breaker-ps" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#line-breaker-pv" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#line-breaker-cw)">
+<use href="#line-breaker-pv" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-pv" x="-14" y="-12" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-cx)"><use href="#line-breaker-pv" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-py" fill="#8a5a3a"/>
+<g clip-path="url(#line-breaker-cz)">
+<use href="#line-breaker-py" x="-5" y="-5" fill="#d6a070"/>
+<g clip-path="url(#line-breaker-c10)"><use href="#line-breaker-py" x="3" y="3" fill="#b07a50"/></g>
+</g>
+<path d="M268 222V270M240 290C256 296 286 296 304 288" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<use href="#line-breaker-p11" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c12)">
+<use href="#line-breaker-p11" x="-6" y="-6" fill="#b07a40"/>
+<g clip-path="url(#line-breaker-c13)"><use href="#line-breaker-p11" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#line-breaker-p14" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#line-breaker-c15)">
+<use href="#line-breaker-p14" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#line-breaker-c16)"><use href="#line-breaker-p14" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#line-breaker-p17" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#line-breaker-c18)">
+<use href="#line-breaker-p17" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p17" x="-6" y="-6" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c19)"><use href="#line-breaker-p17" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p1a" fill="#46301e" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1b)">
+<use href="#line-breaker-p1a" x="-3" y="-3" fill="#9a6a45"/>
+<g clip-path="url(#line-breaker-c1c)"><use href="#line-breaker-p1a" x="2" y="2" fill="#6b4a2f"/></g>
+</g>
+<use href="#line-breaker-p1d" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1e)">
+<use href="#line-breaker-p1d" x="-3" fill="#4a566e"/>
+<use href="#line-breaker-p1d" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#line-breaker-c1f)"><use href="#line-breaker-p1d" x="4" y="4" fill="#8a9ab0"/></g>
+</g>
+<use href="#line-breaker-p1g" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1h)">
+<use href="#line-breaker-p1g" x="-3" fill="#4a566e"/>
+<use href="#line-breaker-p1g" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#line-breaker-c1i)"><use href="#line-breaker-p1g" x="4" y="4" fill="#8a9ab0"/></g>
+</g>
+<path d="M104 196C98 214 100 234 108 246M106 316C98 300 98 282 104 268" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.7"/>
+<use href="#line-breaker-p1j" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#line-breaker-c1k)">
+<use href="#line-breaker-p1j" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#line-breaker-c1l)"><use href="#line-breaker-p1j" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#line-breaker-p1m" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#line-breaker-c1n)">
+<use href="#line-breaker-p1m" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p1m" x="-6" y="-6" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c1o)"><use href="#line-breaker-p1m" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p1p" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1q)">
+<use href="#line-breaker-p1p" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p1p" x="-4" y="-4" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c1r)"><use href="#line-breaker-p1p" x="3" y="3" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p1s" fill="#7bd389" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1t)">
+<use href="#line-breaker-p1s" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p1s" x="-4" y="-4" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c1u)"><use href="#line-breaker-p1s" x="3" y="3" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p1v" fill="#a89f8a" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1w)">
+<use href="#line-breaker-p1v" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#line-breaker-c1x)"><use href="#line-breaker-p1v" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<use href="#line-breaker-p1y" fill="#a89f8a" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c1z)">
+<use href="#line-breaker-p1y" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#line-breaker-c20)"><use href="#line-breaker-p1y" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<use href="#line-breaker-p21" fill="#7bd389" stroke-width="8"/>
+<g clip-path="url(#line-breaker-c22)">
+<use href="#line-breaker-p21" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p21" x="-3" y="-3" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c23)"><use href="#line-breaker-p21" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p24" fill="#7bd389" stroke-width="8"/>
+<g clip-path="url(#line-breaker-c25)">
+<use href="#line-breaker-p24" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p24" x="-3" y="-3" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c26)"><use href="#line-breaker-p24" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p27" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#line-breaker-c28)">
+<use href="#line-breaker-p27" x="-4" fill="#5a361e"/>
+<use href="#line-breaker-p27" x="-10" y="-8" fill="#b07a50"/>
+<g clip-path="url(#line-breaker-c29)"><use href="#line-breaker-p27" x="7" y="7" fill="#8a5a3a"/></g>
+</g>
+<use href="#line-breaker-p2a" fill="#9a5a3a" stroke-width="10"/>
+<g clip-path="url(#line-breaker-c2b)">
+<use href="#line-breaker-p2a" x="-4" y="-4" fill="#e8b48a"/>
+<g clip-path="url(#line-breaker-c2c)"><use href="#line-breaker-p2a" x="3" y="3" fill="#c98f6a"/></g>
+</g>
+<path d="M248 194A4 5 0 1 0 256 194A4 5 0 1 0 248 194Z" fill="#1d0842"/>
+<path d="M268 194A4 5 0 1 0 276 194A4 5 0 1 0 268 194Z" fill="#1d0842"/>
+<path d="M253 210A9 9 0 1 0 271 210A9 9 0 1 0 253 210Z" fill="none" stroke="#f2c14e" stroke-width="4"/>
+<circle cx="248" cy="164" r="14" fill="url(#line-breaker-r2d)"/>
+<circle cx="278" cy="164" r="14" fill="url(#line-breaker-r2e)"/>
+<path d="M238 160L256 164L252 170L240 168Z" fill="#ffd0a0"/>
+<path d="M288 160L270 164L274 170L286 168Z" fill="#ffd0a0"/>
+<path d="M234 154L256 162M292 154L270 162" fill="none" stroke-width="5"/>
+<circle cx="315" cy="384" r="3" fill="#cdbba5" fill-opacity="0.42"/>
+<circle cx="233" cy="335" r="2" fill="#cdbba5" fill-opacity="0.77"/>
+<circle cx="360" cy="366" r="2" fill="#cdbba5" fill-opacity="0.69"/>
+<circle cx="283" cy="342" r="3" fill="#cdbba5" fill-opacity="0.42"/>
+<circle cx="328" cy="376" r="3" fill="#cdbba5" fill-opacity="0.51"/>
+<circle cx="382" cy="383" r="3" fill="#cdbba5" fill-opacity="0.72"/>
+<circle cx="406" cy="366" r="3" fill="#cdbba5" fill-opacity="0.41"/>
+<circle cx="155" cy="318" r="3" fill="#cdbba5" fill-opacity="0.51"/>
+<circle cx="189" cy="367" r="3" fill="#cdbba5" fill-opacity="0.79"/>
+<circle cx="362" cy="383" r="3" fill="#cdbba5" fill-opacity="0.53"/>
+</svg>

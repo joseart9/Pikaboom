@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="grave-digger-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0e1430"/><stop offset="0.55" stop-color="#262a5a"/><stop offset="1" stop-color="#141030"/></linearGradient><radialGradient id="grave-digger-r1" gradientUnits="userSpaceOnUse" cx="300" cy="200" r="240"><stop offset="0" stop-color="#9aa6d8" stop-opacity="0.22"/><stop offset="0.45" stop-color="#9aa6d8" stop-opacity="0.099"/><stop offset="1" stop-color="#9aa6d8" stop-opacity="0"/></radialGradient><linearGradient id="grave-digger-l2" gradientUnits="userSpaceOnUse" x1="0" y1="320" x2="0" y2="512"><stop offset="0" stop-color="#2e2860"/><stop offset="1" stop-color="#141030"/></linearGradient><radialGradient id="grave-digger-r3" gradientUnits="userSpaceOnUse" cx="330" cy="404" r="170"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="grave-digger-p4" d="M145 372C146 378 140 389 132 392C124 396 108 395 96 395C84 395 68 395 62 391C55 387 58 378 58 372C58 366 56 358 62 353C69 348 85 344 96 344C107 344 120 349 128 354C136 359 145 366 145 372Z"/><clipPath id="grave-digger-c5"><use href="#grave-digger-p4"/></clipPath><clipPath id="grave-digger-c6"><use href="#grave-digger-p4" x="-6" y="-6"/></clipPath><path id="grave-digger-p7" d="M81 348L76 354L68 355L61 352L60 344L68 340L76 342Z"/><clipPath id="grave-digger-c8"><use href="#grave-digger-p7"/></clipPath><clipPath id="grave-digger-c9"><use href="#grave-digger-p7" x="-2" y="-2"/></clipPath><radialGradient id="grave-digger-ra" gradientUnits="userSpaceOnUse" cx="126" cy="360" r="40"><stop offset="0" stop-color="#c77dff" stop-opacity="0.5"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.225"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="grave-digger-pb" d="M136 397C136 391 131 367 129 361C128 355 125 356 123 357C121 357 118 357 119 363C119 369 122 393 124 399C126 405 129 404 131 404C133 404 136 403 136 397Z"/><clipPath id="grave-digger-cc"><use href="#grave-digger-pb"/></clipPath><clipPath id="grave-digger-cd"><use href="#grave-digger-pb" x="-2" y="-2"/></clipPath><path id="grave-digger-pe" d="M113 356A11 9 0 1 0 135 356A11 9 0 1 0 113 356Z"/><clipPath id="grave-digger-cf"><use href="#grave-digger-pe"/></clipPath><clipPath id="grave-digger-cg"><use href="#grave-digger-pe" x="-2" y="-2"/></clipPath><path id="grave-digger-ph" d="M120 350C119 348 113 344 111 343C109 342 110 344 110 344C110 344 108 344 109 345C110 347 115 353 116 354C118 356 120 355 121 354C121 353 122 352 120 350Z"/><clipPath id="grave-digger-ci"><use href="#grave-digger-ph"/></clipPath><clipPath id="grave-digger-cj"><use href="#grave-digger-ph" x="-1" y="-1"/></clipPath><path id="grave-digger-pk" d="M125 351C125 348 121 337 120 335C120 332 119 335 119 335C119 335 118 333 118 335C118 338 118 350 119 353C120 355 122 355 123 355C123 355 125 355 125 351Z"/><clipPath id="grave-digger-cl"><use href="#grave-digger-pk"/></clipPath><clipPath id="grave-digger-cm"><use href="#grave-digger-pk" x="-1" y="-1"/></clipPath><path id="grave-digger-pn" d="M129 353C130 350 130 338 130 335C130 333 129 335 129 335C129 335 128 332 128 335C127 337 123 348 123 351C123 355 125 355 125 355C126 355 128 355 129 353Z"/><clipPath id="grave-digger-co"><use href="#grave-digger-pn"/></clipPath><clipPath id="grave-digger-cp"><use href="#grave-digger-pn" x="-1" y="-1"/></clipPath><path id="grave-digger-pq" d="M132 354C133 353 138 347 139 345C140 344 138 344 138 344C138 344 139 342 137 343C135 344 129 348 128 350C126 352 127 353 127 354C128 355 130 356 132 354Z"/><clipPath id="grave-digger-cr"><use href="#grave-digger-pq"/></clipPath><clipPath id="grave-digger-cs"><use href="#grave-digger-pq" x="-1" y="-1"/></clipPath><radialGradient id="grave-digger-rt" gradientUnits="userSpaceOnUse" cx="380" cy="372" r="90"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="grave-digger-pu" d="M364 360L396 360L400 400L360 400Z"/><clipPath id="grave-digger-cv"><use href="#grave-digger-pu"/></clipPath><clipPath id="grave-digger-cw"><use href="#grave-digger-pu" x="-3" y="-3"/></clipPath><path id="grave-digger-px" d="M270 311C265 319 261 340 259 351C257 363 255 381 256 389C257 396 263 402 267 402C270 402 277 398 280 391C283 385 282 367 285 357C287 346 298 329 298 321C299 312 293 303 289 302C284 300 274 304 270 311Z"/><clipPath id="grave-digger-cy"><use href="#grave-digger-px"/></clipPath><clipPath id="grave-digger-cz"><use href="#grave-digger-px" x="-6" y="-6"/></clipPath><path id="grave-digger-p10" d="M303 320C304 328 313 347 315 357C317 368 312 383 314 389C316 396 322 402 325 402C329 402 336 398 338 391C340 384 342 366 341 355C340 343 337 320 333 312C329 304 319 300 314 301C310 303 303 311 303 320Z"/><clipPath id="grave-digger-c11"><use href="#grave-digger-p10"/></clipPath><clipPath id="grave-digger-c12"><use href="#grave-digger-p10" x="-6" y="-6"/></clipPath><path id="grave-digger-p13" d="M240 406C240 392 252 386 266 386L282 386V406Z"/><clipPath id="grave-digger-c14"><use href="#grave-digger-p13"/></clipPath><clipPath id="grave-digger-c15"><use href="#grave-digger-p13" x="-4" y="-4"/></clipPath><path id="grave-digger-p16" d="M312 406V386L330 386C344 388 350 398 348 406Z"/><clipPath id="grave-digger-c17"><use href="#grave-digger-p16"/></clipPath><clipPath id="grave-digger-c18"><use href="#grave-digger-p16" x="-4" y="-4"/></clipPath><path id="grave-digger-p19" d="M250 236C257 226 284 215 296 214C308 213 333 219 340 230C347 241 351 285 352 300C353 315 351 333 344 340C337 347 311 350 300 350C289 350 269 348 262 340C255 332 248 304 246 290C244 276 243 246 250 236Z"/><clipPath id="grave-digger-c1a"><use href="#grave-digger-p19"/></clipPath><clipPath id="grave-digger-c1b"><use href="#grave-digger-p19" x="-12" y="-10"/></clipPath><path id="grave-digger-p1c" d="M332 232C332 237 333 243 327 246C321 249 306 248 296 248C286 248 272 249 265 246C258 243 253 237 253 232C254 227 259 221 266 219C273 216 286 215 296 215C306 215 322 215 328 218C334 220 332 227 332 232Z"/><clipPath id="grave-digger-c1d"><use href="#grave-digger-p1c"/></clipPath><clipPath id="grave-digger-c1e"><use href="#grave-digger-p1c" x="-5" y="-5"/></clipPath><path id="grave-digger-p1f" d="M208 219C204 231 195 279 190 298C185 318 175 342 173 350C171 359 175 356 176 357C178 357 179 362 183 354C187 345 196 321 202 302C207 282 218 234 220 221C222 208 217 215 215 214C214 214 212 206 208 219Z"/><clipPath id="grave-digger-c1g"><use href="#grave-digger-p1f"/></clipPath><clipPath id="grave-digger-c1h"><use href="#grave-digger-p1f" x="-3" y="-3"/></clipPath><path id="grave-digger-p1i" d="M160 346L200 358L190 392L166 396L150 384Z"/><clipPath id="grave-digger-c1j"><use href="#grave-digger-p1i"/></clipPath><clipPath id="grave-digger-c1k"><use href="#grave-digger-p1i" x="-5" y="-5"/></clipPath><path id="grave-digger-p1l" d="M202 219C206 221 220 226 224 227C229 227 230 225 231 224C231 222 231 219 228 217C224 215 210 210 206 209C201 209 200 211 199 212C199 214 199 217 202 219Z"/><clipPath id="grave-digger-c1m"><use href="#grave-digger-p1l"/></clipPath><clipPath id="grave-digger-c1n"><use href="#grave-digger-p1l" x="-2" y="-2"/></clipPath><path id="grave-digger-p1o" d="M266 224C260 227 249 243 244 243C239 243 235 229 231 226C226 224 215 224 212 227C210 230 209 239 213 246C218 252 234 269 244 269C254 269 276 254 282 248C288 242 288 232 286 228C283 225 272 222 266 224Z"/><clipPath id="grave-digger-c1p"><use href="#grave-digger-p1o"/></clipPath><clipPath id="grave-digger-c1q"><use href="#grave-digger-p1o" x="-6" y="-6"/></clipPath><path id="grave-digger-p1r" d="M313 231C304 232 282 248 269 249C257 250 240 236 232 236C224 235 217 240 216 244C214 248 216 256 224 260C232 265 256 275 271 275C285 275 314 262 323 257C332 252 333 243 331 239C330 235 322 229 313 231Z"/><clipPath id="grave-digger-c1s"><use href="#grave-digger-p1r"/></clipPath><clipPath id="grave-digger-c1t"><use href="#grave-digger-p1r" x="-6" y="-6"/></clipPath><path id="grave-digger-p1u" d="M205 230A13 12 0 1 0 231 230A13 12 0 1 0 205 230Z"/><clipPath id="grave-digger-c1v"><use href="#grave-digger-p1u"/></clipPath><clipPath id="grave-digger-c1w"><use href="#grave-digger-p1u" x="-4" y="-4"/></clipPath><path id="grave-digger-p1x" d="M209 250A13 11 0 1 0 235 250A13 11 0 1 0 209 250Z"/><clipPath id="grave-digger-c1y"><use href="#grave-digger-p1x"/></clipPath><clipPath id="grave-digger-c1z"><use href="#grave-digger-p1x" x="-4" y="-4"/></clipPath><path id="grave-digger-p20" d="M218 200C217 192 220 178 226 172C232 166 249 161 258 162C267 163 280 169 284 176C288 183 289 200 286 208C283 216 274 225 266 228C259 231 243 232 236 228C229 224 220 208 218 200Z"/><clipPath id="grave-digger-c21"><use href="#grave-digger-p20"/></clipPath><clipPath id="grave-digger-c22"><use href="#grave-digger-p20" x="-10" y="-8"/></clipPath><path id="grave-digger-p23" d="M218 196C215 195 205 204 204 206C203 208 209 213 212 214C215 215 227 212 228 210C229 208 221 197 218 196Z"/><clipPath id="grave-digger-c24"><use href="#grave-digger-p23"/></clipPath><clipPath id="grave-digger-c25"><use href="#grave-digger-p23" x="-3" y="-3"/></clipPath><path id="grave-digger-p26" d="M180 172C185 169 216 158 230 156C244 154 285 154 296 156C307 158 324 167 324 170C324 173 311 177 300 178C289 179 245 177 232 178C219 179 196 185 190 184C184 183 175 175 180 172Z"/><clipPath id="grave-digger-c27"><use href="#grave-digger-p26"/></clipPath><clipPath id="grave-digger-c28"><use href="#grave-digger-p26" x="-5" y="-5"/></clipPath><path id="grave-digger-p29" d="M226 162C220 158 230 129 234 124C238 119 260 116 266 116C272 116 287 119 290 124C293 129 298 158 292 162C286 166 232 166 226 162Z"/><clipPath id="grave-digger-c2a"><use href="#grave-digger-p29"/></clipPath><clipPath id="grave-digger-c2b"><use href="#grave-digger-p29" x="-8" y="-6"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#grave-digger-l0)"/>
+<circle cx="300" cy="200" r="240" fill="url(#grave-digger-r1)"/>
+<path d="M0 300C120 260 240 270 340 250C420 236 470 250 512 260V350H0Z" fill="#1b1840"/>
+<path d="M392 252V176L420 146L448 176V252Z" fill="#151236"/>
+<path d="M416 120H424V146H416Z" fill="#151236"/>
+<path d="M410 130H430V136H410Z" fill="#151236"/>
+<path d="M414 196A6 9 0 1 0 426 196A6 9 0 1 0 414 196Z" fill="#ffd98a" fill-opacity="0.6"/>
+<g transform="rotate(-8 40 300)">
+<path d="M36 300V254H44V300ZM24 266H56V274H24Z" fill="#2a2558"/>
+</g>
+<g transform="rotate(6 92 290)">
+<path d="M88 290V244H96V290ZM76 256H108V264H76Z" fill="#2a2558"/>
+</g>
+<g transform="rotate(10 480 268)">
+<path d="M476 268V222H484V268ZM464 234H496V242H464Z" fill="#2a2558"/>
+</g>
+<path d="M0 356Q256 320 512 356V512H0Z" fill="url(#grave-digger-l2)"/>
+<ellipse cx="330" cy="404" rx="170" ry="48" fill="url(#grave-digger-r3)"/>
+<path d="M70 394A70 17 0 1 0 210 394A70 17 0 1 0 70 394Z" fill="#0b0418"/>
+<use href="#grave-digger-p4" fill="#2c2238" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c5)">
+<use href="#grave-digger-p4" x="-6" y="-6" fill="#6a5680"/>
+<g clip-path="url(#grave-digger-c6)"><use href="#grave-digger-p4" x="4" y="4" fill="#4a3a5a"/></g>
+</g>
+<use href="#grave-digger-p7" fill="#2c2238" stroke-width="6"/>
+<g clip-path="url(#grave-digger-c8)">
+<use href="#grave-digger-p7" x="-2" y="-2" fill="#6a5680"/>
+<g clip-path="url(#grave-digger-c9)"><use href="#grave-digger-p7" x="2" y="2" fill="#4a3a5a"/></g>
+</g>
+<circle cx="126" cy="360" r="40" fill="url(#grave-digger-ra)"/>
+<use href="#grave-digger-pb" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#grave-digger-cc)">
+<use href="#grave-digger-pb" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#grave-digger-cd)"><use href="#grave-digger-pb" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#grave-digger-pe" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#grave-digger-cf)">
+<use href="#grave-digger-pe" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#grave-digger-cg)"><use href="#grave-digger-pe" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#grave-digger-ph" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#grave-digger-ci)">
+<use href="#grave-digger-ph" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#grave-digger-cj)"><use href="#grave-digger-ph" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#grave-digger-pk" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#grave-digger-cl)">
+<use href="#grave-digger-pk" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#grave-digger-cm)"><use href="#grave-digger-pk" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#grave-digger-pn" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#grave-digger-co)">
+<use href="#grave-digger-pn" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#grave-digger-cp)"><use href="#grave-digger-pn" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#grave-digger-pq" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#grave-digger-cr)">
+<use href="#grave-digger-pq" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#grave-digger-cs)"><use href="#grave-digger-pq" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<ellipse cx="300" cy="404" rx="96" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<circle cx="380" cy="372" r="90" fill="url(#grave-digger-rt)"/>
+<use href="#grave-digger-pu" fill="#1d1612" stroke-width="10"/>
+<g clip-path="url(#grave-digger-cv)">
+<use href="#grave-digger-pu" x="-3" y="-3" fill="#5a4a3a"/>
+<g clip-path="url(#grave-digger-cw)"><use href="#grave-digger-pu" x="2" y="2" fill="#3a2e24"/></g>
+</g>
+<path d="M368 366L392 366L394 394L366 394Z" fill="#ffe066"/>
+<path d="M375 384A5 8 0 1 0 385 384A5 8 0 1 0 375 384Z" fill="#fff8d6"/>
+<path d="M368 360C368 340 392 340 392 360" fill="none" stroke-width="4"/>
+<use href="#grave-digger-px" fill="#3a2e24" stroke-width="12"/>
+<g clip-path="url(#grave-digger-cy)">
+<use href="#grave-digger-px" x="-6" y="-6" fill="#7e6a52"/>
+<g clip-path="url(#grave-digger-cz)"><use href="#grave-digger-px" x="4" y="4" fill="#5a4a3a"/></g>
+</g>
+<use href="#grave-digger-p10" fill="#3a2e24" stroke-width="12"/>
+<g clip-path="url(#grave-digger-c11)">
+<use href="#grave-digger-p10" x="-6" y="-6" fill="#7e6a52"/>
+<g clip-path="url(#grave-digger-c12)"><use href="#grave-digger-p10" x="4" y="4" fill="#5a4a3a"/></g>
+</g>
+<use href="#grave-digger-p13" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c14)">
+<use href="#grave-digger-p13" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#grave-digger-c15)"><use href="#grave-digger-p13" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#grave-digger-p16" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c17)">
+<use href="#grave-digger-p16" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#grave-digger-c18)"><use href="#grave-digger-p16" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#grave-digger-p19" fill="#3a2e24" stroke-width="12"/>
+<g clip-path="url(#grave-digger-c1a)">
+<use href="#grave-digger-p19" x="-12" y="-10" fill="#7e6a52"/>
+<g clip-path="url(#grave-digger-c1b)"><use href="#grave-digger-p19" x="7" y="7" fill="#5a4a3a"/></g>
+</g>
+<path d="M296 240L300 340" fill="none" stroke-width="4" stroke-opacity="0.4"/>
+<use href="#grave-digger-p1c" fill="#4a1a3a" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c1d)">
+<use href="#grave-digger-p1c" x="-5" y="-5" fill="#a8547a"/>
+<g clip-path="url(#grave-digger-c1e)"><use href="#grave-digger-p1c" x="3" y="3" fill="#7a3456"/></g>
+</g>
+<use href="#grave-digger-p1f" fill="#4e321c" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c1g)">
+<use href="#grave-digger-p1f" x="-3" y="-3" fill="#a2743f"/>
+<g clip-path="url(#grave-digger-c1h)"><use href="#grave-digger-p1f" x="2" y="2" fill="#7a5230"/></g>
+</g>
+<use href="#grave-digger-p1i" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c1j)">
+<use href="#grave-digger-p1i" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#grave-digger-c1k)"><use href="#grave-digger-p1i" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<use href="#grave-digger-p1l" fill="#4e321c" stroke-width="8"/>
+<g clip-path="url(#grave-digger-c1m)">
+<use href="#grave-digger-p1l" x="-2" y="-2" fill="#a2743f"/>
+<g clip-path="url(#grave-digger-c1n)"><use href="#grave-digger-p1l" x="2" y="2" fill="#7a5230"/></g>
+</g>
+<use href="#grave-digger-p1o" fill="#3a2e24" stroke-width="12"/>
+<g clip-path="url(#grave-digger-c1p)">
+<use href="#grave-digger-p1o" x="-6" y="-6" fill="#7e6a52"/>
+<g clip-path="url(#grave-digger-c1q)"><use href="#grave-digger-p1o" x="7" y="7" fill="#5a4a3a"/></g>
+</g>
+<use href="#grave-digger-p1r" fill="#3a2e24" stroke-width="12"/>
+<g clip-path="url(#grave-digger-c1s)">
+<use href="#grave-digger-p1r" x="-6" y="-6" fill="#7e6a52"/>
+<g clip-path="url(#grave-digger-c1t)"><use href="#grave-digger-p1r" x="7" y="7" fill="#5a4a3a"/></g>
+</g>
+<use href="#grave-digger-p1u" fill="#b98864" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c1v)">
+<use href="#grave-digger-p1u" x="-4" y="-4" fill="#fbd6b6"/>
+<g clip-path="url(#grave-digger-c1w)"><use href="#grave-digger-p1u" x="3" y="3" fill="#e8b993"/></g>
+</g>
+<use href="#grave-digger-p1x" fill="#b98864" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c1y)">
+<use href="#grave-digger-p1x" x="-4" y="-4" fill="#fbd6b6"/>
+<g clip-path="url(#grave-digger-c1z)"><use href="#grave-digger-p1x" x="3" y="3" fill="#e8b993"/></g>
+</g>
+<use href="#grave-digger-p20" fill="#b98864" stroke-width="12"/>
+<g clip-path="url(#grave-digger-c21)">
+<use href="#grave-digger-p20" x="-10" y="-8" fill="#fbd6b6"/>
+<g clip-path="url(#grave-digger-c22)"><use href="#grave-digger-p20" x="7" y="7" fill="#e8b993"/></g>
+</g>
+<use href="#grave-digger-p23" fill="#b98864" stroke-width="8"/>
+<g clip-path="url(#grave-digger-c24)">
+<use href="#grave-digger-p23" x="-3" y="-3" fill="#fbd6b6"/>
+<g clip-path="url(#grave-digger-c25)"><use href="#grave-digger-p23" x="2" y="2" fill="#e8b993"/></g>
+</g>
+<path d="M222 214C225 214 243 225 250 226C257 227 271 219 274 220C277 221 274 228 270 230C266 232 252 235 246 234C240 233 229 229 226 226C223 223 219 214 222 214Z" fill="#5a4a3a" fill-opacity="0.6"/>
+<path d="M236 192A4 5 0 1 0 244 192A4 5 0 1 0 236 192Z" fill="#1d0842"/>
+<path d="M238 190A2 2 0 1 0 241 190A2 2 0 1 0 238 190Z" fill="#ffffff"/>
+<path d="M230 182L248 186" fill="none" stroke-width="4"/>
+<path d="M234 216C240 218 246 218 250 216" fill="none" stroke-width="3"/>
+<use href="#grave-digger-p26" fill="#1d1612" stroke-width="10"/>
+<g clip-path="url(#grave-digger-c27)">
+<use href="#grave-digger-p26" x="-5" y="-5" fill="#5a4a3a"/>
+<g clip-path="url(#grave-digger-c28)"><use href="#grave-digger-p26" x="3" y="3" fill="#3a2e24"/></g>
+</g>
+<use href="#grave-digger-p29" fill="#1d1612" stroke-width="12"/>
+<g clip-path="url(#grave-digger-c2a)">
+<use href="#grave-digger-p29" x="-8" y="-6" fill="#5a4a3a"/>
+<g clip-path="url(#grave-digger-c2b)"><use href="#grave-digger-p29" x="4" y="4" fill="#3a2e24"/></g>
+</g>
+<path d="M228 148H292V158H228Z" fill="#7a3456"/>
+<path d="M390 339L391 342L390 344L388 342Z" fill="#ffe066" fill-opacity="0.5"/>
+<path d="M369 372L371 375L369 378L368 375Z" fill="#ffe066" fill-opacity="0.74"/>
+<path d="M400 329L401 331L400 333L398 331Z" fill="#ffe066" fill-opacity="0.47"/>
+<path d="M355 353L356 355L355 357L353 355Z" fill="#ffe066" fill-opacity="0.68"/>
+<path d="M358 355L360 358L358 362L356 358Z" fill="#ffe066" fill-opacity="0.73"/>
+<path d="M402 332L404 335L402 338L400 335Z" fill="#ffe066" fill-opacity="0.61"/>
+</svg>

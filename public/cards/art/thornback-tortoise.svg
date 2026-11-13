@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="thornback-tortoise-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0e2420"/><stop offset="0.55" stop-color="#1e4a3a"/><stop offset="1" stop-color="#10201c"/></linearGradient><radialGradient id="thornback-tortoise-r1" gradientUnits="userSpaceOnUse" cx="260" cy="230" r="260"><stop offset="0" stop-color="#a0e0b0" stop-opacity="0.28"/><stop offset="0.45" stop-color="#a0e0b0" stop-opacity="0.12600000000000003"/><stop offset="1" stop-color="#a0e0b0" stop-opacity="0"/></radialGradient><linearGradient id="thornback-tortoise-l2" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#24503e"/><stop offset="1" stop-color="#14302a"/></linearGradient><radialGradient id="thornback-tortoise-r3" gradientUnits="userSpaceOnUse" cx="256" cy="400" r="200"><stop offset="0" stop-color="#a0e0b0" stop-opacity="0.55"/><stop offset="1" stop-color="#a0e0b0" stop-opacity="0"/></radialGradient><path id="thornback-tortoise-p4" d="M158 372L132 387L100 395L77 381L66 360L100 349L137 353Z"/><clipPath id="thornback-tortoise-c5"><use href="#thornback-tortoise-p4"/></clipPath><clipPath id="thornback-tortoise-c6"><use href="#thornback-tortoise-p4" x="-6" y="-6"/></clipPath><path id="thornback-tortoise-p7" d="M155 330C151 341 150 369 153 380C156 391 171 405 178 405C186 405 200 391 203 380C206 369 205 341 201 330C197 319 185 307 178 307C171 307 159 319 155 330Z"/><clipPath id="thornback-tortoise-c8"><use href="#thornback-tortoise-p7"/></clipPath><clipPath id="thornback-tortoise-c9"><use href="#thornback-tortoise-p7" x="-8" y="-8"/></clipPath><path id="thornback-tortoise-pa" d="M319 332C315 343 313 370 317 382C321 394 336 409 344 409C352 409 367 394 371 382C375 370 373 343 369 332C365 321 352 307 344 307C337 307 323 321 319 332Z"/><clipPath id="thornback-tortoise-cb"><use href="#thornback-tortoise-pa"/></clipPath><clipPath id="thornback-tortoise-cc"><use href="#thornback-tortoise-pa" x="-8" y="-8"/></clipPath><path id="thornback-tortoise-pd" d="M374 320C371 331 369 359 372 370C375 381 387 392 394 392C401 392 413 381 416 370C419 359 417 331 414 320C411 310 400 300 394 300C388 300 377 310 374 320Z"/><clipPath id="thornback-tortoise-ce"><use href="#thornback-tortoise-pd"/></clipPath><clipPath id="thornback-tortoise-cf"><use href="#thornback-tortoise-pd" x="-8" y="-8"/></clipPath><path id="thornback-tortoise-pg" d="M201 342C197 353 195 380 199 392C203 404 218 419 226 419C234 419 249 404 253 392C257 380 255 353 251 342C247 331 234 317 226 317C219 317 205 331 201 342Z"/><clipPath id="thornback-tortoise-ch"><use href="#thornback-tortoise-pg"/></clipPath><clipPath id="thornback-tortoise-ci"><use href="#thornback-tortoise-pg" x="-8" y="-8"/></clipPath><path id="thornback-tortoise-pj" d="M141 283C132 283 100 296 93 299C86 301 93 299 93 300C93 300 86 299 93 301C101 302 134 310 143 309C152 308 155 299 155 295C155 291 150 282 141 283Z"/><clipPath id="thornback-tortoise-ck"><use href="#thornback-tortoise-pj"/></clipPath><clipPath id="thornback-tortoise-cl"><use href="#thornback-tortoise-pj" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-pm" d="M161 241C152 239 118 240 110 240C102 240 110 241 110 241C110 241 103 238 110 242C116 246 145 264 154 267C163 269 169 261 170 257C171 254 170 244 161 241Z"/><clipPath id="thornback-tortoise-cn"><use href="#thornback-tortoise-pm"/></clipPath><clipPath id="thornback-tortoise-co"><use href="#thornback-tortoise-pm" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-pp" d="M193 209C186 204 153 193 146 191C139 188 146 191 146 191C146 192 140 186 145 192C150 198 170 225 178 231C186 236 194 231 196 228C199 224 201 215 193 209Z"/><clipPath id="thornback-tortoise-cq"><use href="#thornback-tortoise-pp"/></clipPath><clipPath id="thornback-tortoise-cr"><use href="#thornback-tortoise-pp" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-ps" d="M235 190C230 183 203 162 197 157C191 152 197 157 196 157C196 157 193 151 196 158C198 165 208 197 214 205C219 213 228 211 232 208C235 206 240 198 235 190Z"/><clipPath id="thornback-tortoise-ct"><use href="#thornback-tortoise-ps"/></clipPath><clipPath id="thornback-tortoise-cu"><use href="#thornback-tortoise-ps" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-pv" d="M281 187C278 178 260 149 257 142C253 136 256 142 256 142C255 143 255 135 255 143C255 150 253 184 255 193C258 202 267 204 271 203C275 202 283 196 281 187Z"/><clipPath id="thornback-tortoise-cw"><use href="#thornback-tortoise-pv"/></clipPath><clipPath id="thornback-tortoise-cx"><use href="#thornback-tortoise-pv" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-py" d="M325 199C326 190 319 156 318 149C316 141 317 149 317 149C316 149 318 142 316 149C313 156 300 187 299 196C298 206 307 210 311 211C314 211 324 208 325 199Z"/><clipPath id="thornback-tortoise-cz"><use href="#thornback-tortoise-py"/></clipPath><clipPath id="thornback-tortoise-c10"><use href="#thornback-tortoise-py" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p11" d="M362 226C366 217 371 184 372 176C374 169 372 176 371 176C371 175 375 169 371 175C366 181 342 206 339 214C335 223 341 230 345 232C348 233 358 234 362 226Z"/><clipPath id="thornback-tortoise-c12"><use href="#thornback-tortoise-p11"/></clipPath><clipPath id="thornback-tortoise-c13"><use href="#thornback-tortoise-p11" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p14" d="M388 263C395 257 411 227 415 220C419 214 414 220 414 220C414 219 420 215 413 219C407 223 376 238 370 245C363 251 367 260 370 263C372 266 381 270 388 263Z"/><clipPath id="thornback-tortoise-c15"><use href="#thornback-tortoise-p14"/></clipPath><clipPath id="thornback-tortoise-c16"><use href="#thornback-tortoise-p14" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p17" d="M399 308C408 304 433 281 439 276C445 272 439 276 439 275C439 275 446 273 438 275C431 276 397 280 389 284C380 288 381 298 382 301C384 305 391 311 399 308Z"/><clipPath id="thornback-tortoise-c18"><use href="#thornback-tortoise-p17"/></clipPath><clipPath id="thornback-tortoise-c19"><use href="#thornback-tortoise-p17" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p1a" d="M132 326C100 317 138 268 146 252C155 236 184 209 200 200C216 192 254 184 272 184C290 184 329 192 344 200C359 208 387 234 394 250C402 266 437 317 404 326C371 336 164 335 132 326Z"/><clipPath id="thornback-tortoise-c1b"><use href="#thornback-tortoise-p1a"/></clipPath><clipPath id="thornback-tortoise-c1c"><use href="#thornback-tortoise-p1a" x="-16" y="-14"/></clipPath><path id="thornback-tortoise-p1d" d="M124 322C190 340 340 342 412 322L410 344C340 362 190 362 126 344Z"/><clipPath id="thornback-tortoise-c1e"><use href="#thornback-tortoise-p1d"/></clipPath><clipPath id="thornback-tortoise-c1f"><use href="#thornback-tortoise-p1d" x="-4" y="-4"/></clipPath><path id="thornback-tortoise-p1g" d="M282 266C282 259 275 237 273 232C272 227 272 232 272 232C272 232 273 227 271 232C270 237 262 259 262 266C262 273 269 276 272 276C275 276 282 273 282 266Z"/><clipPath id="thornback-tortoise-c1h"><use href="#thornback-tortoise-p1g"/></clipPath><clipPath id="thornback-tortoise-c1i"><use href="#thornback-tortoise-p1g" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p1j" d="M237 245C233 240 217 227 213 223C209 220 212 224 212 224C212 224 210 220 211 225C212 229 216 250 219 255C223 260 231 260 233 259C236 257 240 250 237 245Z"/><clipPath id="thornback-tortoise-c1k"><use href="#thornback-tortoise-p1j"/></clipPath><clipPath id="thornback-tortoise-c1l"><use href="#thornback-tortoise-p1j" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p1m" d="M327 255C330 250 334 229 335 225C336 220 334 224 334 224C334 224 337 220 333 223C329 227 313 240 309 245C306 250 310 257 313 259C315 260 323 260 327 255Z"/><clipPath id="thornback-tortoise-c1n"><use href="#thornback-tortoise-p1m"/></clipPath><clipPath id="thornback-tortoise-c1o"><use href="#thornback-tortoise-p1m" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p1p" d="M201 281C196 278 177 276 173 275C168 274 172 276 172 276C172 276 169 273 171 277C174 280 186 296 191 299C196 301 203 298 205 295C206 292 206 284 201 281Z"/><clipPath id="thornback-tortoise-c1q"><use href="#thornback-tortoise-p1p"/></clipPath><clipPath id="thornback-tortoise-c1r"><use href="#thornback-tortoise-p1p" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p1s" d="M357 299C362 296 374 280 377 277C379 273 376 276 376 276C376 276 380 274 375 275C371 276 352 278 347 281C342 284 342 292 343 295C345 298 352 301 357 299Z"/><clipPath id="thornback-tortoise-c1t"><use href="#thornback-tortoise-p1s"/></clipPath><clipPath id="thornback-tortoise-c1u"><use href="#thornback-tortoise-p1s" x="-3" y="-3"/></clipPath><path id="thornback-tortoise-p1v" d="M191 289C193 286 196 272 197 269C198 266 196 269 196 269C196 269 197 266 195 268C193 270 183 280 181 283C179 286 181 290 183 291C185 292 189 292 191 289Z"/><clipPath id="thornback-tortoise-c1w"><use href="#thornback-tortoise-p1v"/></clipPath><clipPath id="thornback-tortoise-c1x"><use href="#thornback-tortoise-p1v" x="-2" y="-2"/></clipPath><path id="thornback-tortoise-p1y" d="M258 254C256 250 248 239 246 237C244 234 245 237 245 237C245 237 244 234 244 238C244 241 245 254 246 258C248 262 252 262 254 262C256 261 259 258 258 254Z"/><clipPath id="thornback-tortoise-c1z"><use href="#thornback-tortoise-p1y"/></clipPath><clipPath id="thornback-tortoise-c20"><use href="#thornback-tortoise-p1y" x="-2" y="-2"/></clipPath><path id="thornback-tortoise-p21" d="M335 266C337 263 342 250 344 247C345 244 343 247 343 247C343 246 345 244 342 246C339 248 328 255 325 258C323 261 325 265 326 267C328 268 332 269 335 266Z"/><clipPath id="thornback-tortoise-c22"><use href="#thornback-tortoise-p21"/></clipPath><clipPath id="thornback-tortoise-c23"><use href="#thornback-tortoise-p21" x="-2" y="-2"/></clipPath><path id="thornback-tortoise-p24" d="M381 257C379 254 369 244 367 242C365 240 366 243 366 243C366 243 364 240 365 243C366 246 369 260 371 263C373 266 377 266 379 265C381 264 383 260 381 257Z"/><clipPath id="thornback-tortoise-c25"><use href="#thornback-tortoise-p24"/></clipPath><clipPath id="thornback-tortoise-c26"><use href="#thornback-tortoise-p24" x="-2" y="-2"/></clipPath><path id="thornback-tortoise-p27" d="M159 302C154 297 139 294 134 291C128 288 128 284 123 283C118 282 102 281 99 285C96 289 99 304 101 309C103 314 108 317 114 321C120 326 133 336 141 338C149 339 165 335 168 329C170 324 165 308 159 302Z"/><clipPath id="thornback-tortoise-c28"><use href="#thornback-tortoise-p27"/></clipPath><clipPath id="thornback-tortoise-c29"><use href="#thornback-tortoise-p27" x="-8" y="-8"/></clipPath><path id="thornback-tortoise-p2a" d="M86 286C88 279 94 268 100 264C106 260 121 258 128 260C135 262 144 273 146 280C148 287 145 300 140 306C135 312 122 317 114 318C107 319 94 315 90 310C86 305 85 293 86 286Z"/><clipPath id="thornback-tortoise-c2b"><use href="#thornback-tortoise-p2a"/></clipPath><clipPath id="thornback-tortoise-c2c"><use href="#thornback-tortoise-p2a" x="-6" y="-6"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#thornback-tortoise-l0)"/>
+<circle cx="260" cy="230" r="260" fill="url(#thornback-tortoise-r1)"/>
+<path d="M75 521C81 474 83 319 78 239C73 159 54 28 45 -13C36 -54 24 -36 17 -35C10 -34 -6 -48 -5 -7C-4 34 21 162 22 241C23 320 3 472 5 519C8 566 28 555 39 555C49 555 69 569 75 521Z" fill="#0a1a16"/>
+<path d="M514 519C517 469 499 300 500 221C501 142 521 31 520 -7C519 -46 503 -37 495 -38C486 -39 472 -51 464 -13C456 26 444 139 440 219C436 299 432 470 438 521C444 572 465 558 477 558C488 558 511 570 514 519Z" fill="#0a1a16"/>
+<path d="M65 120C65 132 71 172 71 190C71 208 67 232 67 240C67 248 68 241 68 241C68 241 68 248 69 240C70 232 76 208 77 190C78 172 76 131 75 120C74 108 71 115 70 115C68 115 65 109 65 120Z" fill="#2a5a3a" fill-opacity="0.8"/>
+<path d="M95 120C95 132 101 172 101 190C101 208 97 232 97 240C97 248 98 241 98 241C98 241 98 248 99 240C100 232 106 208 107 190C108 172 106 131 105 120C104 108 101 115 100 115C98 115 95 109 95 120Z" fill="#2a5a3a" fill-opacity="0.8"/>
+<path d="M425 120C425 132 431 172 431 190C431 208 427 232 427 240C427 248 428 241 428 241C428 241 428 248 429 240C430 232 436 208 437 190C438 172 436 131 435 120C434 108 431 115 430 115C428 115 425 109 425 120Z" fill="#2a5a3a" fill-opacity="0.8"/>
+<path d="M455 120C455 132 461 172 461 190C461 208 457 232 457 240C457 248 458 241 458 241C458 241 458 248 459 240C460 232 466 208 467 190C468 172 466 131 465 120C464 108 461 115 460 115C458 115 455 109 455 120Z" fill="#2a5a3a" fill-opacity="0.8"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#thornback-tortoise-l2)"/>
+<ellipse cx="256" cy="400" rx="200" ry="56" fill="url(#thornback-tortoise-r3)"/>
+<path d="M30 440H140M360 452H480M180 480H320" fill="none" stroke="#a0e0b0" stroke-width="4" stroke-opacity="0.3"/>
+<path d="M63 360C64 349 65 301 65 290C65 280 64 290 64 290C64 290 64 279 63 290C62 300 57 349 57 360C57 371 59 363 60 363C61 363 62 371 63 360Z" fill="#3d6b30"/>
+<path d="M83 360C84 352 85 318 85 310C85 303 84 310 84 310C84 310 84 302 83 310C82 317 77 352 77 360C77 368 79 363 80 363C81 363 82 368 83 360Z" fill="#3d6b30"/>
+<path d="M443 360C444 348 445 292 445 280C445 268 444 280 444 280C444 280 444 268 443 280C442 292 437 347 437 360C437 372 439 363 440 363C441 363 442 373 443 360Z" fill="#3d6b30"/>
+<path d="M465 360C466 351 467 313 467 304C467 296 466 304 466 304C466 304 466 296 465 304C464 312 459 351 459 360C459 369 461 363 462 363C463 363 464 369 465 360Z" fill="#3d6b30"/>
+<use href="#thornback-tortoise-p4" fill="#575275" stroke-width="10"/>
+<g clip-path="url(#thornback-tortoise-c5)">
+<use href="#thornback-tortoise-p4" x="-6" y="-6" fill="#bdb9d6"/>
+<g clip-path="url(#thornback-tortoise-c6)"><use href="#thornback-tortoise-p4" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<path d="M151 356C150 358 142 361 136 362C130 364 123 365 116 365C109 365 100 365 94 364C88 363 82 361 79 359C76 357 74 354 76 353C79 351 87 350 94 348C101 347 110 345 117 345C125 345 133 347 139 349C144 351 151 354 151 356Z" fill="#5f9a4a"/>
+<ellipse cx="262" cy="398" rx="172" ry="18" fill="#1d0842" fill-opacity="0.55"/>
+<use href="#thornback-tortoise-p7" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#thornback-tortoise-c8)">
+<use href="#thornback-tortoise-p7" x="-8" y="-8" fill="#a8c47a"/>
+<g clip-path="url(#thornback-tortoise-c9)"><use href="#thornback-tortoise-p7" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<path d="M161 386V378M178 388V380M195 386V378" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#thornback-tortoise-pa" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#thornback-tortoise-cb)">
+<use href="#thornback-tortoise-pa" x="-8" y="-8" fill="#a8c47a"/>
+<g clip-path="url(#thornback-tortoise-cc)"><use href="#thornback-tortoise-pa" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<path d="M325 388V380M344 390V382M363 388V380" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#thornback-tortoise-pd" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#thornback-tortoise-ce)">
+<use href="#thornback-tortoise-pd" x="-8" y="-8" fill="#a8c47a"/>
+<g clip-path="url(#thornback-tortoise-cf)"><use href="#thornback-tortoise-pd" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<path d="M380 376V368M394 378V370M408 376V368" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#thornback-tortoise-pg" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#thornback-tortoise-ch)">
+<use href="#thornback-tortoise-pg" x="-8" y="-8" fill="#a8c47a"/>
+<g clip-path="url(#thornback-tortoise-ci)"><use href="#thornback-tortoise-pg" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<path d="M207 398V390M226 400V392M245 398V390" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#thornback-tortoise-pj" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-ck)">
+<use href="#thornback-tortoise-pj" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-cl)"><use href="#thornback-tortoise-pj" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-pm" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-cn)">
+<use href="#thornback-tortoise-pm" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-co)"><use href="#thornback-tortoise-pm" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-pp" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-cq)">
+<use href="#thornback-tortoise-pp" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-cr)"><use href="#thornback-tortoise-pp" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-ps" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-ct)">
+<use href="#thornback-tortoise-ps" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-cu)"><use href="#thornback-tortoise-ps" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-pv" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-cw)">
+<use href="#thornback-tortoise-pv" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-cx)"><use href="#thornback-tortoise-pv" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-py" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-cz)">
+<use href="#thornback-tortoise-py" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c10)"><use href="#thornback-tortoise-py" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p11" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c12)">
+<use href="#thornback-tortoise-p11" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c13)"><use href="#thornback-tortoise-p11" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p14" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c15)">
+<use href="#thornback-tortoise-p14" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c16)"><use href="#thornback-tortoise-p14" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p17" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c18)">
+<use href="#thornback-tortoise-p17" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c19)"><use href="#thornback-tortoise-p17" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p1a" fill="#7bd389" stroke-width="14"/>
+<g clip-path="url(#thornback-tortoise-c1b)">
+<use href="#thornback-tortoise-p1a" x="-5" fill="#4a3e20"/>
+<use href="#thornback-tortoise-p1a" x="-16" y="-14" fill="#a8945a"/>
+<g clip-path="url(#thornback-tortoise-c1c)"><use href="#thornback-tortoise-p1a" x="10" y="10" fill="#7a6a3a"/></g>
+</g>
+<path d="M180 248L224 222L272 222L316 222L356 248M224 222L210 276L244 310L300 310L330 276L316 222M210 276L160 290M330 276L388 290M244 310L238 326M300 310L306 326" fill="none" stroke-width="5" stroke-opacity="0.75"/>
+<use href="#thornback-tortoise-p1d" fill="#7a6a3a" stroke-width="10"/>
+<g clip-path="url(#thornback-tortoise-c1e)">
+<use href="#thornback-tortoise-p1d" x="-4" y="-4" fill="#d6c48a"/>
+<g clip-path="url(#thornback-tortoise-c1f)"><use href="#thornback-tortoise-p1d" x="3" y="3" fill="#a8945a"/></g>
+</g>
+<use href="#thornback-tortoise-p1g" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c1h)">
+<use href="#thornback-tortoise-p1g" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c1i)"><use href="#thornback-tortoise-p1g" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p1j" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c1k)">
+<use href="#thornback-tortoise-p1j" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c1l)"><use href="#thornback-tortoise-p1j" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p1m" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c1n)">
+<use href="#thornback-tortoise-p1m" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c1o)"><use href="#thornback-tortoise-p1m" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p1p" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c1q)">
+<use href="#thornback-tortoise-p1p" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c1r)"><use href="#thornback-tortoise-p1p" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<use href="#thornback-tortoise-p1s" fill="#9a8a5a" stroke-width="8"/>
+<g clip-path="url(#thornback-tortoise-c1t)">
+<use href="#thornback-tortoise-p1s" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#thornback-tortoise-c1u)"><use href="#thornback-tortoise-p1s" x="2" y="2" fill="#d6c9a0"/></g>
+</g>
+<path d="M150 270C190 300 230 250 272 262C320 276 340 240 392 268" fill="none" stroke-width="9"/>
+<path d="M150 270C190 300 230 250 272 262C320 276 340 240 392 268" fill="none" stroke="#5f9a4a" stroke-width="5"/>
+<use href="#thornback-tortoise-p1v" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#thornback-tortoise-c1w)">
+<use href="#thornback-tortoise-p1v" x="-2" y="-2" fill="#7bd389"/>
+<g clip-path="url(#thornback-tortoise-c1x)"><use href="#thornback-tortoise-p1v" x="2" y="2" fill="#5f9a4a"/></g>
+</g>
+<use href="#thornback-tortoise-p1y" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#thornback-tortoise-c1z)">
+<use href="#thornback-tortoise-p1y" x="-2" y="-2" fill="#7bd389"/>
+<g clip-path="url(#thornback-tortoise-c20)"><use href="#thornback-tortoise-p1y" x="2" y="2" fill="#5f9a4a"/></g>
+</g>
+<use href="#thornback-tortoise-p21" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#thornback-tortoise-c22)">
+<use href="#thornback-tortoise-p21" x="-2" y="-2" fill="#7bd389"/>
+<g clip-path="url(#thornback-tortoise-c23)"><use href="#thornback-tortoise-p21" x="2" y="2" fill="#5f9a4a"/></g>
+</g>
+<use href="#thornback-tortoise-p24" fill="#3d6b30" stroke-width="6"/>
+<g clip-path="url(#thornback-tortoise-c25)">
+<use href="#thornback-tortoise-p24" x="-2" y="-2" fill="#7bd389"/>
+<g clip-path="url(#thornback-tortoise-c26)"><use href="#thornback-tortoise-p24" x="2" y="2" fill="#5f9a4a"/></g>
+</g>
+<use href="#thornback-tortoise-p27" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#thornback-tortoise-c28)">
+<use href="#thornback-tortoise-p27" x="-8" y="-8" fill="#a8c47a"/>
+<g clip-path="url(#thornback-tortoise-c29)"><use href="#thornback-tortoise-p27" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<use href="#thornback-tortoise-p2a" fill="#4a6a3a" stroke-width="12"/>
+<g clip-path="url(#thornback-tortoise-c2b)">
+<use href="#thornback-tortoise-p2a" x="-6" y="-6" fill="#a8c47a"/>
+<g clip-path="url(#thornback-tortoise-c2c)"><use href="#thornback-tortoise-p2a" x="7" y="7" fill="#7a9a5a"/></g>
+</g>
+<path d="M90 300C104 304 118 302 128 296" fill="none" stroke-width="4"/>
+<path d="M106 280A6 6 0 1 0 118 280A6 6 0 1 0 106 280Z" fill="#1d0842"/>
+<path d="M108 278A2 2 0 1 0 112 278A2 2 0 1 0 108 278Z" fill="#ffffff"/>
+<path d="M100 270L122 274" fill="none" stroke-width="4"/>
+<path d="M90 290A3 3 0 1 0 95 290A3 3 0 1 0 90 290Z" fill="#1d0842"/>
+<circle cx="324" cy="163" r="2" fill="#a0e0b0" fill-opacity="0.37"/>
+<circle cx="112" cy="231" r="2" fill="#a0e0b0" fill-opacity="0.52"/>
+<circle cx="172" cy="222" r="3" fill="#a0e0b0" fill-opacity="0.42"/>
+<circle cx="165" cy="164" r="2" fill="#a0e0b0" fill-opacity="0.6"/>
+<circle cx="186" cy="198" r="3" fill="#a0e0b0" fill-opacity="0.57"/>
+<circle cx="280" cy="213" r="2" fill="#a0e0b0" fill-opacity="0.46"/>
+<circle cx="103" cy="148" r="3" fill="#a0e0b0" fill-opacity="0.43"/>
+<circle cx="233" cy="216" r="2" fill="#a0e0b0" fill-opacity="0.32"/>
+</svg>

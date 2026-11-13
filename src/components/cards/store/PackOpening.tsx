@@ -16,11 +16,14 @@ import { cardName, t } from "@/game/cards/i18n";
 import { CardFace } from "../card/CardFace";
 import { CardInspect } from "../card/CardInspect";
 import { CardBack, CurrencyBadge } from "../skin";
+import { PackArt } from "../skin/PackArt";
 
 const RARITY_RANK: Record<Rarity, number> = { basic: 0, common: 1, rare: 2, magic: 3, legendary: 4, unique: 5 };
 
 export interface PackOpeningProps {
   packName: string;
+  /** Pack type key, for the drawn pack next to the title (UI-07). */
+  packType?: string;
   cards: readonly CardId[];
   /** Parallel to `cards`: show "¡Nueva!" (see `markNewCards`). */
   isNew: readonly boolean[];
@@ -44,7 +47,7 @@ function hintClass(def: CardDef | null): string {
   return def && RARITY_RANK[def.rarity] >= RARITY_RANK.rare ? ` cg-pack-slot--hint cg-pack-slot--${def.rarity}` : "";
 }
 
-export function PackOpening({ packName, cards, isNew, replayed = false, anotherPrice, onOpenAnother, onClose }: PackOpeningProps) {
+export function PackOpening({ packName, packType = "arcane", cards, isNew, replayed = false, anotherPrice, onOpenAnother, onClose }: PackOpeningProps) {
   const defs = useMemo(() => cards.map((id) => (hasDef(id) ? CATALOG[id] : null)), [cards]);
   const [revealed, setRevealed] = useState<boolean[]>(() => cards.map(() => false));
   const [inspect, setInspect] = useState<CardDef | null>(null);
@@ -94,6 +97,7 @@ export function PackOpening({ packName, cards, isNew, replayed = false, anotherP
   return (
     <div className="cg-pack-overlay" role="dialog" aria-modal aria-labelledby="cg-pack-title">
       <p id="cg-pack-title" className="cg-pack-title">
+        <PackArt variant={packType} height="1.6em" className="cg-pack-title-art" />
         {packName}
       </p>
       {replayed && <p className="cg-pack-note">{t("store.replayed")}</p>}

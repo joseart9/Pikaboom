@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="iron-colossus-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#170812"/><stop offset="0.55" stop-color="#4a1a1a"/><stop offset="1" stop-color="#2a0e14"/></linearGradient><radialGradient id="iron-colossus-r1" gradientUnits="userSpaceOnUse" cx="256" cy="300" r="290"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.38"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.171"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><linearGradient id="iron-colossus-l2" gradientUnits="userSpaceOnUse" x1="0" y1="360" x2="0" y2="512"><stop offset="0" stop-color="#3a1418"/><stop offset="1" stop-color="#1a0810"/></linearGradient><radialGradient id="iron-colossus-r3" gradientUnits="userSpaceOnUse" cx="256" cy="420" r="230"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.55"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><path id="iron-colossus-p4" d="M178 316L240 316L246 400L164 400Z"/><clipPath id="iron-colossus-c5"><use href="#iron-colossus-p4"/></clipPath><clipPath id="iron-colossus-c6"><use href="#iron-colossus-p4" x="-10" y="-8"/></clipPath><path id="iron-colossus-p7" d="M274 316L336 316L350 400L268 400Z"/><clipPath id="iron-colossus-c8"><use href="#iron-colossus-p7"/></clipPath><clipPath id="iron-colossus-c9"><use href="#iron-colossus-p7" x="-10" y="-8"/></clipPath><path id="iron-colossus-pa" d="M146 394L254 394L258 418L140 418Z"/><clipPath id="iron-colossus-cb"><use href="#iron-colossus-pa"/></clipPath><clipPath id="iron-colossus-cc"><use href="#iron-colossus-pa" x="-6" y="-6"/></clipPath><path id="iron-colossus-pd" d="M262 394L368 394L374 418L258 418Z"/><clipPath id="iron-colossus-ce"><use href="#iron-colossus-pd"/></clipPath><clipPath id="iron-colossus-cf"><use href="#iron-colossus-pd" x="-6" y="-6"/></clipPath><path id="iron-colossus-pg" d="M335 209C337 224 363 252 368 268C373 284 364 304 367 315C371 326 384 341 391 341C399 341 413 330 417 317C421 304 424 276 420 256C417 236 404 196 393 183C383 169 359 163 351 167C342 171 332 194 335 209Z"/><clipPath id="iron-colossus-ch"><use href="#iron-colossus-pg"/></clipPath><clipPath id="iron-colossus-ci"><use href="#iron-colossus-pg" x="-12" y="-10"/></clipPath><path id="iron-colossus-pj" d="M431 352L409 374L373 379L351 351L362 320L396 309L428 323Z"/><clipPath id="iron-colossus-ck"><use href="#iron-colossus-pj"/></clipPath><clipPath id="iron-colossus-cl"><use href="#iron-colossus-pj" x="-10" y="-10"/></clipPath><path id="iron-colossus-pm" d="M223 159C223 149 218 114 215 105C212 95 207 97 205 97C202 97 197 98 197 107C197 117 202 152 205 161C208 171 213 169 215 169C218 169 223 168 223 159Z"/><clipPath id="iron-colossus-cn"><use href="#iron-colossus-pm"/></clipPath><clipPath id="iron-colossus-co"><use href="#iron-colossus-pm" x="-4" y="-4"/></clipPath><path id="iron-colossus-pp" d="M319 161C322 151 327 113 327 103C327 93 322 93 319 93C317 93 312 91 309 101C306 111 301 149 301 159C301 169 306 169 309 169C311 169 316 171 319 161Z"/><clipPath id="iron-colossus-cq"><use href="#iron-colossus-pp"/></clipPath><clipPath id="iron-colossus-cr"><use href="#iron-colossus-pp" x="-4" y="-4"/></clipPath><path id="iron-colossus-ps" d="M150 174L374 174L360 296L318 334L206 334L164 296Z"/><clipPath id="iron-colossus-ct"><use href="#iron-colossus-ps"/></clipPath><clipPath id="iron-colossus-cu"><use href="#iron-colossus-ps" x="-16" y="-14"/></clipPath><radialGradient id="iron-colossus-rv" gradientUnits="userSpaceOnUse" cx="262" cy="258" r="120"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.7"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.315"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><path id="iron-colossus-pw" d="M216 258A46 46 0 1 0 308 258A46 46 0 1 0 216 258Z"/><clipPath id="iron-colossus-cx"><use href="#iron-colossus-pw"/></clipPath><clipPath id="iron-colossus-cy"><use href="#iron-colossus-pw" x="-8" y="-8"/></clipPath><path id="iron-colossus-pz" d="M228 258A34 34 0 1 0 296 258A34 34 0 1 0 228 258Z"/><clipPath id="iron-colossus-c10"><use href="#iron-colossus-pz"/></clipPath><clipPath id="iron-colossus-c11"><use href="#iron-colossus-pz" x="-6" y="-6"/></clipPath><path id="iron-colossus-p12" d="M236 176L238 146C244 130 280 130 286 146L288 176Z"/><clipPath id="iron-colossus-c13"><use href="#iron-colossus-p12"/></clipPath><clipPath id="iron-colossus-c14"><use href="#iron-colossus-p12" x="-6" y="-6"/></clipPath><radialGradient id="iron-colossus-r15" gradientUnits="userSpaceOnUse" cx="262" cy="156" r="34"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.7"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.315"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><path id="iron-colossus-p16" d="M96 176A64 46 0 1 0 224 176A64 46 0 1 0 96 176Z"/><clipPath id="iron-colossus-c17"><use href="#iron-colossus-p16"/></clipPath><clipPath id="iron-colossus-c18"><use href="#iron-colossus-p16" x="-12" y="-12"/></clipPath><path id="iron-colossus-p19" d="M102 196C130 228 190 228 218 196L214 214C186 246 134 246 106 214Z"/><clipPath id="iron-colossus-c1a"><use href="#iron-colossus-p19"/></clipPath><clipPath id="iron-colossus-c1b"><use href="#iron-colossus-p19" x="-5" y="-5"/></clipPath><path id="iron-colossus-p1c" d="M300 176A64 46 0 1 0 428 176A64 46 0 1 0 300 176Z"/><clipPath id="iron-colossus-c1d"><use href="#iron-colossus-p1c"/></clipPath><clipPath id="iron-colossus-c1e"><use href="#iron-colossus-p1c" x="-12" y="-12"/></clipPath><path id="iron-colossus-p1f" d="M306 196C334 228 394 228 422 196L418 214C390 246 338 246 310 214Z"/><clipPath id="iron-colossus-c1g"><use href="#iron-colossus-p1f"/></clipPath><clipPath id="iron-colossus-c1h"><use href="#iron-colossus-p1f" x="-5" y="-5"/></clipPath><path id="iron-colossus-p1i" d="M96 170L198 156L206 378L152 406L102 378Z"/><clipPath id="iron-colossus-c1j"><use href="#iron-colossus-p1i"/></clipPath><clipPath id="iron-colossus-c1k"><use href="#iron-colossus-p1i" x="-12" y="-10"/></clipPath><path id="iron-colossus-p1l" d="M112 186L186 176L192 368L152 390L116 368Z"/><clipPath id="iron-colossus-c1m"><use href="#iron-colossus-p1l"/></clipPath><clipPath id="iron-colossus-c1n"><use href="#iron-colossus-p1l" x="-8" y="-8"/></clipPath><path id="iron-colossus-p1o" d="M130 270A20 20 0 1 0 170 270A20 20 0 1 0 130 270Z"/><clipPath id="iron-colossus-c1p"><use href="#iron-colossus-p1o"/></clipPath><clipPath id="iron-colossus-c1q"><use href="#iron-colossus-p1o" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#iron-colossus-l0)"/>
+<circle cx="256" cy="300" r="290" fill="url(#iron-colossus-r1)"/>
+<path d="M18 512L26 120L72 120L80 512Z" fill="#240c18"/>
+<path d="M430 512L438 80L486 80L494 512Z" fill="#240c18"/>
+<path d="M16 112H82V128H16ZM428 72H496V88H428Z" fill="#36142a"/>
+<path d="M114 76C113 82 99 89 91 94C83 99 74 106 64 107C53 108 41 103 30 100C19 97 2 94 -3 88C-7 82 -3 72 2 65C6 59 16 51 26 48C36 45 51 46 63 48C74 49 85 52 94 57C102 62 114 70 114 76Z" fill="#3a2a3a" fill-opacity="0.75"/>
+<path d="M158 40C157 46 143 52 134 56C124 60 111 63 100 63C88 64 74 62 64 60C54 57 43 53 38 48C33 43 29 36 33 31C38 26 52 24 64 20C75 17 90 10 102 11C114 11 128 18 138 23C147 28 158 34 158 40Z" fill="#3a2a3a" fill-opacity="0.5"/>
+<path d="M532 44C531 52 527 61 517 66C507 71 487 72 472 73C458 74 439 76 428 73C417 70 413 60 408 54C403 47 395 39 398 33C401 26 414 18 427 14C439 11 458 12 473 13C489 14 509 16 519 21C528 26 532 36 532 44Z" fill="#3a2a3a" fill-opacity="0.75"/>
+<path d="M0 396Q256 360 512 396V512H0Z" fill="url(#iron-colossus-l2)"/>
+<ellipse cx="256" cy="420" rx="230" ry="64" fill="url(#iron-colossus-r3)"/>
+<path d="M0 470C80 450 140 486 230 462M300 486C380 456 440 490 512 466" fill="none" stroke="#ff7b00" stroke-width="6" stroke-opacity="0.6"/>
+<ellipse cx="256" cy="412" rx="196" ry="22" fill="#1d0842" fill-opacity="0.6"/>
+<use href="#iron-colossus-p4" fill="#33374a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-c5)">
+<use href="#iron-colossus-p4" x="-10" y="-8" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-c6)"><use href="#iron-colossus-p4" x="7" y="7" fill="#5a6078"/></g>
+</g>
+<use href="#iron-colossus-p7" fill="#33374a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-c8)">
+<use href="#iron-colossus-p7" x="-10" y="-8" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-c9)"><use href="#iron-colossus-p7" x="7" y="7" fill="#5a6078"/></g>
+</g>
+<use href="#iron-colossus-pa" fill="#272a3a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-cb)">
+<use href="#iron-colossus-pa" x="-6" y="-6" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-cc)"><use href="#iron-colossus-pa" x="7" y="7" fill="#464b62"/></g>
+</g>
+<use href="#iron-colossus-pd" fill="#272a3a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-ce)">
+<use href="#iron-colossus-pd" x="-6" y="-6" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-cf)"><use href="#iron-colossus-pd" x="7" y="7" fill="#464b62"/></g>
+</g>
+<path d="M168 350H244M272 350H344" fill="none" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#iron-colossus-pg" fill="#33374a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-ch)">
+<use href="#iron-colossus-pg" x="-12" y="-10" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-ci)"><use href="#iron-colossus-pg" x="7" y="7" fill="#5a6078"/></g>
+</g>
+<path d="M372 250L414 262M378 290L410 296" fill="none" stroke-width="4" stroke-opacity="0.6"/>
+<use href="#iron-colossus-pj" fill="#272a3a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-ck)">
+<use href="#iron-colossus-pj" x="-10" y="-10" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-cl)"><use href="#iron-colossus-pj" x="7" y="7" fill="#464b62"/></g>
+</g>
+<path d="M362 344L392 336L424 344" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<use href="#iron-colossus-pm" fill="#272a3a" stroke-width="8"/>
+<g clip-path="url(#iron-colossus-cn)">
+<use href="#iron-colossus-pm" x="-4" y="-4" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-co)"><use href="#iron-colossus-pm" x="3" y="3" fill="#464b62"/></g>
+</g>
+<use href="#iron-colossus-pp" fill="#272a3a" stroke-width="8"/>
+<g clip-path="url(#iron-colossus-cq)">
+<use href="#iron-colossus-pp" x="-4" y="-4" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-cr)"><use href="#iron-colossus-pp" x="3" y="3" fill="#464b62"/></g>
+</g>
+<path d="M223 86C223 90 224 95 221 98C217 101 210 102 204 103C199 103 191 104 186 103C181 101 177 96 175 92C173 89 174 84 176 80C178 76 181 71 186 69C190 67 198 69 204 70C210 71 217 72 220 74C223 77 223 82 223 86Z" fill="#6a5a6a" fill-opacity="0.7"/>
+<path d="M353 82C354 86 355 92 351 95C348 97 338 97 331 98C324 99 315 101 310 99C304 98 298 93 296 89C294 85 294 79 296 75C299 72 306 70 312 68C318 65 326 61 332 62C338 63 343 68 346 72C350 75 352 78 353 82Z" fill="#6a5a6a" fill-opacity="0.7"/>
+<use href="#iron-colossus-ps" fill="#33374a" stroke-width="14"/>
+<g clip-path="url(#iron-colossus-ct)">
+<use href="#iron-colossus-ps" x="-16" y="-14" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-cu)"><use href="#iron-colossus-ps" x="10" y="10" fill="#5a6078"/></g>
+</g>
+<path d="M162 228H362M178 296H346M262 174V200" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<path d="M167 186A5 5 0 1 0 177 186A5 5 0 1 0 167 186Z" fill="#1d0842"/>
+<path d="M168 186A4 4 0 1 0 175 186A4 4 0 1 0 168 186Z" fill="#8a92ab"/>
+<path d="M195 186A5 5 0 1 0 205 186A5 5 0 1 0 195 186Z" fill="#1d0842"/>
+<path d="M196 186A4 4 0 1 0 203 186A4 4 0 1 0 196 186Z" fill="#8a92ab"/>
+<path d="M319 186A5 5 0 1 0 329 186A5 5 0 1 0 319 186Z" fill="#1d0842"/>
+<path d="M320 186A4 4 0 1 0 327 186A4 4 0 1 0 320 186Z" fill="#8a92ab"/>
+<path d="M347 186A5 5 0 1 0 357 186A5 5 0 1 0 347 186Z" fill="#1d0842"/>
+<path d="M348 186A4 4 0 1 0 355 186A4 4 0 1 0 348 186Z" fill="#8a92ab"/>
+<path d="M171 238A5 5 0 1 0 181 238A5 5 0 1 0 171 238Z" fill="#1d0842"/>
+<path d="M172 238A4 4 0 1 0 179 238A4 4 0 1 0 172 238Z" fill="#8a92ab"/>
+<path d="M343 238A5 5 0 1 0 353 238A5 5 0 1 0 343 238Z" fill="#1d0842"/>
+<path d="M344 238A4 4 0 1 0 351 238A4 4 0 1 0 344 238Z" fill="#8a92ab"/>
+<path d="M185 308A5 5 0 1 0 195 308A5 5 0 1 0 185 308Z" fill="#1d0842"/>
+<path d="M186 308A4 4 0 1 0 193 308A4 4 0 1 0 186 308Z" fill="#8a92ab"/>
+<path d="M329 308A5 5 0 1 0 339 308A5 5 0 1 0 329 308Z" fill="#1d0842"/>
+<path d="M330 308A4 4 0 1 0 337 308A4 4 0 1 0 330 308Z" fill="#8a92ab"/>
+<path d="M221 324A5 5 0 1 0 231 324A5 5 0 1 0 221 324Z" fill="#1d0842"/>
+<path d="M222 324A4 4 0 1 0 229 324A4 4 0 1 0 222 324Z" fill="#8a92ab"/>
+<path d="M293 324A5 5 0 1 0 303 324A5 5 0 1 0 293 324Z" fill="#1d0842"/>
+<path d="M294 324A4 4 0 1 0 301 324A4 4 0 1 0 294 324Z" fill="#8a92ab"/>
+<circle cx="262" cy="258" r="120" fill="url(#iron-colossus-rv)"/>
+<use href="#iron-colossus-pw" fill="#272a3a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-cx)">
+<use href="#iron-colossus-pw" x="-8" y="-8" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-cy)"><use href="#iron-colossus-pw" x="5" y="5" fill="#464b62"/></g>
+</g>
+<use href="#iron-colossus-pz" fill="#c2410c"/>
+<g clip-path="url(#iron-colossus-c10)">
+<use href="#iron-colossus-pz" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#iron-colossus-c11)"><use href="#iron-colossus-pz" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<path d="M240 252A18 18 0 1 0 276 252A18 18 0 1 0 240 252Z" fill="#ffe066"/>
+<path d="M244 228V288M262 224V292M280 228V288" fill="none" stroke-width="6"/>
+<use href="#iron-colossus-p12" fill="#272a3a" stroke-width="12"/>
+<g clip-path="url(#iron-colossus-c13)">
+<use href="#iron-colossus-p12" x="-6" y="-6" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-c14)"><use href="#iron-colossus-p12" x="4" y="4" fill="#464b62"/></g>
+</g>
+<circle cx="262" cy="156" r="34" fill="url(#iron-colossus-r15)"/>
+<path d="M244 150L280 150L278 160L246 160Z" fill="#1d0842"/>
+<path d="M248 153L276 153L275 157L249 157Z" fill="#ffe066"/>
+<use href="#iron-colossus-p16" fill="#33374a" stroke-width="14"/>
+<g clip-path="url(#iron-colossus-c17)">
+<use href="#iron-colossus-p16" x="-12" y="-12" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-c18)"><use href="#iron-colossus-p16" x="8" y="8" fill="#5a6078"/></g>
+</g>
+<use href="#iron-colossus-p19" fill="#272a3a" stroke-width="10"/>
+<g clip-path="url(#iron-colossus-c1a)">
+<use href="#iron-colossus-p19" x="-5" y="-5" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-c1b)"><use href="#iron-colossus-p19" x="3" y="3" fill="#464b62"/></g>
+</g>
+<path d="M119 162A5 5 0 1 0 129 162A5 5 0 1 0 119 162Z" fill="#1d0842"/>
+<path d="M120 162A4 4 0 1 0 127 162A4 4 0 1 0 120 162Z" fill="#8a92ab"/>
+<path d="M155 148A5 5 0 1 0 165 148A5 5 0 1 0 155 148Z" fill="#1d0842"/>
+<path d="M156 148A4 4 0 1 0 163 148A4 4 0 1 0 156 148Z" fill="#8a92ab"/>
+<path d="M191 162A5 5 0 1 0 201 162A5 5 0 1 0 191 162Z" fill="#1d0842"/>
+<path d="M192 162A4 4 0 1 0 199 162A4 4 0 1 0 192 162Z" fill="#8a92ab"/>
+<use href="#iron-colossus-p1c" fill="#33374a" stroke-width="14"/>
+<g clip-path="url(#iron-colossus-c1d)">
+<use href="#iron-colossus-p1c" x="-12" y="-12" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-c1e)"><use href="#iron-colossus-p1c" x="8" y="8" fill="#5a6078"/></g>
+</g>
+<use href="#iron-colossus-p1f" fill="#272a3a" stroke-width="10"/>
+<g clip-path="url(#iron-colossus-c1g)">
+<use href="#iron-colossus-p1f" x="-5" y="-5" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-c1h)"><use href="#iron-colossus-p1f" x="3" y="3" fill="#464b62"/></g>
+</g>
+<path d="M323 162A5 5 0 1 0 333 162A5 5 0 1 0 323 162Z" fill="#1d0842"/>
+<path d="M324 162A4 4 0 1 0 331 162A4 4 0 1 0 324 162Z" fill="#8a92ab"/>
+<path d="M359 148A5 5 0 1 0 369 148A5 5 0 1 0 359 148Z" fill="#1d0842"/>
+<path d="M360 148A4 4 0 1 0 367 148A4 4 0 1 0 360 148Z" fill="#8a92ab"/>
+<path d="M395 162A5 5 0 1 0 405 162A5 5 0 1 0 395 162Z" fill="#1d0842"/>
+<path d="M396 162A4 4 0 1 0 403 162A4 4 0 1 0 396 162Z" fill="#8a92ab"/>
+<use href="#iron-colossus-p1i" fill="#272a3a" stroke-width="14"/>
+<g clip-path="url(#iron-colossus-c1j)">
+<use href="#iron-colossus-p1i" x="-12" y="-10" fill="#6e7590"/>
+<g clip-path="url(#iron-colossus-c1k)"><use href="#iron-colossus-p1i" x="8" y="8" fill="#464b62"/></g>
+</g>
+<use href="#iron-colossus-p1l" fill="#33374a" stroke-width="8"/>
+<g clip-path="url(#iron-colossus-c1m)">
+<use href="#iron-colossus-p1l" x="-8" y="-8" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-c1n)"><use href="#iron-colossus-p1l" x="6" y="6" fill="#5a6078"/></g>
+</g>
+<path d="M150 182V390M114 270H190" fill="none" stroke="#272a3a" stroke-width="8"/>
+<use href="#iron-colossus-p1o" fill="#33374a" stroke-width="10"/>
+<g clip-path="url(#iron-colossus-c1p)">
+<use href="#iron-colossus-p1o" x="-4" y="-4" fill="#8a92ab"/>
+<g clip-path="url(#iron-colossus-c1q)"><use href="#iron-colossus-p1o" x="3" y="3" fill="#5a6078"/></g>
+</g>
+<path d="M101 182A5 5 0 1 0 111 182A5 5 0 1 0 101 182Z" fill="#1d0842"/>
+<path d="M102 182A4 4 0 1 0 109 182A4 4 0 1 0 102 182Z" fill="#8a92ab"/>
+<path d="M187 170A5 5 0 1 0 197 170A5 5 0 1 0 187 170Z" fill="#1d0842"/>
+<path d="M188 170A4 4 0 1 0 195 170A4 4 0 1 0 188 170Z" fill="#8a92ab"/>
+<path d="M103 270A5 5 0 1 0 113 270A5 5 0 1 0 103 270Z" fill="#1d0842"/>
+<path d="M104 270A4 4 0 1 0 111 270A4 4 0 1 0 104 270Z" fill="#8a92ab"/>
+<path d="M191 270A5 5 0 1 0 201 270A5 5 0 1 0 191 270Z" fill="#1d0842"/>
+<path d="M192 270A4 4 0 1 0 199 270A4 4 0 1 0 192 270Z" fill="#8a92ab"/>
+<path d="M105 362A5 5 0 1 0 115 362A5 5 0 1 0 105 362Z" fill="#1d0842"/>
+<path d="M106 362A4 4 0 1 0 113 362A4 4 0 1 0 106 362Z" fill="#8a92ab"/>
+<path d="M193 366A5 5 0 1 0 203 366A5 5 0 1 0 193 366Z" fill="#1d0842"/>
+<path d="M194 366A4 4 0 1 0 201 366A4 4 0 1 0 194 366Z" fill="#8a92ab"/>
+<path d="M147 398A5 5 0 1 0 157 398A5 5 0 1 0 147 398Z" fill="#1d0842"/>
+<path d="M148 398A4 4 0 1 0 155 398A4 4 0 1 0 148 398Z" fill="#8a92ab"/>
+<path d="M184 190L190 366L178 372L174 196Z" fill="#ff7b00" fill-opacity="0.35"/>
+<path d="M289 225L291 228L289 231L287 228Z" fill="#ffbe0b" fill-opacity="0.52"/>
+<path d="M56 119L58 122L56 125L54 122Z" fill="#ff7b00" fill-opacity="0.68"/>
+<path d="M286 376L289 381L286 387L283 381Z" fill="#ffbe0b" fill-opacity="0.88"/>
+<path d="M168 165L171 170L168 175L165 170Z" fill="#ff7b00" fill-opacity="0.68"/>
+<path d="M294 301L296 305L294 308L292 305Z" fill="#ffbe0b" fill-opacity="0.82"/>
+<path d="M231 312L234 317L231 321L229 317Z" fill="#ff7b00" fill-opacity="0.55"/>
+<path d="M368 238L370 241L368 244L366 241Z" fill="#ffbe0b" fill-opacity="0.66"/>
+<path d="M58 134L60 138L58 143L55 138Z" fill="#ff7b00" fill-opacity="0.96"/>
+<path d="M201 334L203 337L201 341L199 337Z" fill="#ffbe0b" fill-opacity="0.68"/>
+<path d="M169 328L171 331L169 334L168 331Z" fill="#ff7b00" fill-opacity="0.76"/>
+<path d="M76 172L79 177L76 182L74 177Z" fill="#ffbe0b" fill-opacity="0.56"/>
+<path d="M116 192L119 199L116 205L112 199Z" fill="#ff7b00" fill-opacity="0.56"/>
+<path d="M115 344L117 348L115 351L113 348Z" fill="#ffbe0b" fill-opacity="0.55"/>
+<path d="M156 383L160 390L156 397L152 390Z" fill="#ff7b00" fill-opacity="0.88"/>
+<path d="M97 230L99 233L97 236L95 233Z" fill="#ffbe0b" fill-opacity="0.89"/>
+<path d="M106 189L108 193L106 197L104 193Z" fill="#ff7b00" fill-opacity="0.85"/>
+</svg>

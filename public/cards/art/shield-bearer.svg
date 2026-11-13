@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="shield-bearer-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1b1036"/><stop offset="0.55" stop-color="#35245f"/><stop offset="1" stop-color="#22144a"/></linearGradient><radialGradient id="shield-bearer-r1" gradientUnits="userSpaceOnUse" cx="250" cy="220" r="250"><stop offset="0" stop-color="#b9a8e8" stop-opacity="0.3"/><stop offset="0.45" stop-color="#b9a8e8" stop-opacity="0.135"/><stop offset="1" stop-color="#b9a8e8" stop-opacity="0"/></radialGradient><linearGradient id="shield-bearer-l2" gradientUnits="userSpaceOnUse" x1="0" y1="316" x2="0" y2="512"><stop offset="0" stop-color="#3a2874"/><stop offset="1" stop-color="#1e1240"/></linearGradient><radialGradient id="shield-bearer-r3" gradientUnits="userSpaceOnUse" cx="250" cy="404" r="180"><stop offset="0" stop-color="#b9a8e8" stop-opacity="0.55"/><stop offset="1" stop-color="#b9a8e8" stop-opacity="0"/></radialGradient><path id="shield-bearer-p4" d="M290 330C295 340 317 357 325 367C333 377 338 393 344 399C349 404 359 406 363 404C366 402 370 394 368 385C367 377 358 361 351 349C344 337 330 313 322 306C313 299 298 299 294 302C289 306 286 321 290 330Z"/><clipPath id="shield-bearer-c5"><use href="#shield-bearer-p4"/></clipPath><clipPath id="shield-bearer-c6"><use href="#shield-bearer-p4" x="-8" y="-6"/></clipPath><path id="shield-bearer-p7" d="M336 408L340 382L366 380C380 384 388 396 386 408Z"/><clipPath id="shield-bearer-c8"><use href="#shield-bearer-p7"/></clipPath><clipPath id="shield-bearer-c9"><use href="#shield-bearer-p7" x="-6" y="-6"/></clipPath><path id="shield-bearer-pa" d="M390 332C378 316 327 261 304 236C282 211 250 175 238 164C227 153 231 162 230 164C229 165 220 160 230 172C239 184 273 219 296 244C318 269 367 326 382 340C396 354 389 342 390 340C391 339 403 348 390 332Z"/><clipPath id="shield-bearer-cb"><use href="#shield-bearer-pa"/></clipPath><clipPath id="shield-bearer-cc"><use href="#shield-bearer-pa" x="-4" y="-4"/></clipPath><path id="shield-bearer-pd" d="M244 167C241 161 232 146 223 138C214 130 192 117 187 113C181 110 186 114 186 114C186 114 182 109 185 115C188 121 198 145 205 154C212 163 226 174 232 177C238 181 242 180 243 178C245 176 247 173 244 167Z"/><clipPath id="shield-bearer-ce"><use href="#shield-bearer-pd"/></clipPath><clipPath id="shield-bearer-cf"><use href="#shield-bearer-pd" x="-5" y="-5"/></clipPath><path id="shield-bearer-pg" d="M250 175C248 171 242 163 238 161C235 159 229 158 227 160C225 161 224 167 226 171C228 175 234 183 238 185C241 187 247 188 249 186C251 185 252 179 250 175Z"/><clipPath id="shield-bearer-ch"><use href="#shield-bearer-pg"/></clipPath><clipPath id="shield-bearer-ci"><use href="#shield-bearer-pg" x="-3" y="-3"/></clipPath><path id="shield-bearer-pj" d="M236 226C241 216 281 208 292 208C303 208 341 217 348 226C355 235 367 290 362 300C357 310 312 325 300 326C288 327 246 322 240 312C234 302 231 236 236 226Z"/><clipPath id="shield-bearer-ck"><use href="#shield-bearer-pj"/></clipPath><clipPath id="shield-bearer-cl"><use href="#shield-bearer-pj" x="-12" y="-10"/></clipPath><path id="shield-bearer-pm" d="M286 220L350 228L362 318L300 330Z"/><clipPath id="shield-bearer-cn"><use href="#shield-bearer-pm"/></clipPath><clipPath id="shield-bearer-co"><use href="#shield-bearer-pm" x="-10" y="-8"/></clipPath><path id="shield-bearer-pp" d="M308 222A30 22 0 1 0 368 222A30 22 0 1 0 308 222Z"/><clipPath id="shield-bearer-cq"><use href="#shield-bearer-pp"/></clipPath><clipPath id="shield-bearer-cr"><use href="#shield-bearer-pp" x="-8" y="-8"/></clipPath><path id="shield-bearer-ps" d="M328 234C327 241 338 261 336 262C335 264 324 247 318 245C313 243 303 246 301 250C299 253 298 262 306 267C313 273 344 291 352 286C360 281 361 244 360 234C359 224 349 218 344 218C339 218 329 227 328 234Z"/><clipPath id="shield-bearer-ct"><use href="#shield-bearer-ps"/></clipPath><clipPath id="shield-bearer-cu"><use href="#shield-bearer-ps" x="-8" y="-8"/></clipPath><path id="shield-bearer-pv" d="M288 252A16 15 0 1 0 320 252A16 15 0 1 0 288 252Z"/><clipPath id="shield-bearer-cw"><use href="#shield-bearer-pv"/></clipPath><clipPath id="shield-bearer-cx"><use href="#shield-bearer-pv" x="-6" y="-6"/></clipPath><path id="shield-bearer-py" d="M222 176C223 166 225 147 232 140C239 133 256 130 266 132C276 134 293 143 298 152C303 161 302 180 300 190C298 200 291 211 284 216C277 221 262 224 254 222C246 221 233 213 228 206C223 199 221 186 222 176Z"/><clipPath id="shield-bearer-cz"><use href="#shield-bearer-py"/></clipPath><clipPath id="shield-bearer-c10"><use href="#shield-bearer-py" x="-12" y="-8"/></clipPath><path id="shield-bearer-p11" d="M289 184A9 12 0 1 0 307 184A9 12 0 1 0 289 184Z"/><clipPath id="shield-bearer-c12"><use href="#shield-bearer-p11"/></clipPath><clipPath id="shield-bearer-c13"><use href="#shield-bearer-p11" x="-4" y="-4"/></clipPath><path id="shield-bearer-p14" d="M250 160C250 118 342 118 342 160Z"/><clipPath id="shield-bearer-c15"><use href="#shield-bearer-p14"/></clipPath><clipPath id="shield-bearer-c16"><use href="#shield-bearer-p14" x="-10" y="-8"/></clipPath><path id="shield-bearer-p17" d="M232 160A64 13 0 1 0 360 160A64 13 0 1 0 232 160Z"/><clipPath id="shield-bearer-c18"><use href="#shield-bearer-p17"/></clipPath><clipPath id="shield-bearer-c19"><use href="#shield-bearer-p17" x="-6" y="-6"/></clipPath><path id="shield-bearer-p1a" d="M118 206Q208 172 298 206L298 384Q208 414 118 384Z"/><clipPath id="shield-bearer-c1b"><use href="#shield-bearer-p1a"/></clipPath><clipPath id="shield-bearer-c1c"><use href="#shield-bearer-p1a" x="-12" y="-12"/></clipPath><path id="shield-bearer-p1d" d="M132 216Q208 188 284 216L284 374Q208 400 132 374Z"/><clipPath id="shield-bearer-c1e"><use href="#shield-bearer-p1d"/></clipPath><clipPath id="shield-bearer-c1f"><use href="#shield-bearer-p1d" x="-16" y="-14"/></clipPath><path id="shield-bearer-p1g" d="M176 330L176 276L186 276L186 266L198 266L198 276L218 276L218 266L230 266L230 276L240 276L240 330Z"/><clipPath id="shield-bearer-c1h"><use href="#shield-bearer-p1g"/></clipPath><clipPath id="shield-bearer-c1i"><use href="#shield-bearer-p1g" x="-5" y="-5"/></clipPath><path id="shield-bearer-p1j" d="M100 410C100 396 112 390 126 390L146 390L146 410Z"/><clipPath id="shield-bearer-c1k"><use href="#shield-bearer-p1j"/></clipPath><clipPath id="shield-bearer-c1l"><use href="#shield-bearer-p1j" x="-5" y="-5"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#shield-bearer-l0)"/>
+<circle cx="250" cy="220" r="250" fill="url(#shield-bearer-r1)"/>
+<path d="M-10 334L-10 214L9 190L28 214L28 334Z" fill="#2a1b55"/>
+<path d="M36 334L36 214L55 190L74 214L74 334Z" fill="#2a1b55"/>
+<path d="M82 334L82 214L101 190L120 214L120 334Z" fill="#2a1b55"/>
+<path d="M128 334L128 214L147 190L166 214L166 334Z" fill="#2a1b55"/>
+<path d="M174 334L174 214L193 190L212 214L212 334Z" fill="#2a1b55"/>
+<path d="M220 334L220 214L239 190L258 214L258 334Z" fill="#2a1b55"/>
+<path d="M266 334L266 214L285 190L304 214L304 334Z" fill="#2a1b55"/>
+<path d="M312 334L312 214L331 190L350 214L350 334Z" fill="#2a1b55"/>
+<path d="M358 334L358 214L377 190L396 214L396 334Z" fill="#2a1b55"/>
+<path d="M404 334L404 214L423 190L442 214L442 334Z" fill="#2a1b55"/>
+<path d="M450 334L450 214L469 190L488 214L488 334Z" fill="#2a1b55"/>
+<path d="M496 334L496 214L515 190L534 214L534 334Z" fill="#2a1b55"/>
+<path d="M0 252H512M0 300H512" fill="none" stroke="#1f1446" stroke-width="5" stroke-opacity="0.8"/>
+<path d="M0 352Q256 316 512 352V512H0Z" fill="url(#shield-bearer-l2)"/>
+<ellipse cx="250" cy="404" rx="180" ry="50" fill="url(#shield-bearer-r3)"/>
+<path d="M30 380L110 370M380 410L470 396M150 456L240 444" fill="none" stroke="#1e1240" stroke-width="3" stroke-opacity="0.6"/>
+<ellipse cx="244" cy="404" rx="150" ry="18" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#shield-bearer-p4" fill="#46301e" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-c5)">
+<use href="#shield-bearer-p4" x="-8" y="-6" fill="#8e6a45"/>
+<g clip-path="url(#shield-bearer-c6)"><use href="#shield-bearer-p4" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#shield-bearer-p7" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#shield-bearer-c8)">
+<use href="#shield-bearer-p7" x="-6" y="-6" fill="#b07a40"/>
+<g clip-path="url(#shield-bearer-c9)"><use href="#shield-bearer-p7" x="4" y="4" fill="#8a5a2b"/></g>
+</g>
+<use href="#shield-bearer-pa" fill="#4e3220" stroke-width="8"/>
+<g clip-path="url(#shield-bearer-cb)">
+<use href="#shield-bearer-pa" x="-4" y="-4" fill="#a8784a"/>
+<g clip-path="url(#shield-bearer-cc)"><use href="#shield-bearer-pa" x="3" y="3" fill="#7a5232"/></g>
+</g>
+<use href="#shield-bearer-pd" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#shield-bearer-ce)">
+<use href="#shield-bearer-pd" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-cf)"><use href="#shield-bearer-pd" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M230 164L196 126" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.7"/>
+<use href="#shield-bearer-pg" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#shield-bearer-ch)">
+<use href="#shield-bearer-pg" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#shield-bearer-ci)"><use href="#shield-bearer-pg" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#shield-bearer-pj" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-ck)">
+<use href="#shield-bearer-pj" x="-12" y="-10" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-cl)"><use href="#shield-bearer-pj" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shield-bearer-pm" fill="#6e2232" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-cn)">
+<use href="#shield-bearer-pm" x="-10" y="-8" fill="#cf5a64"/>
+<g clip-path="url(#shield-bearer-co)"><use href="#shield-bearer-pm" x="7" y="7" fill="#a33a4a"/></g>
+</g>
+<use href="#shield-bearer-pp" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-cq)">
+<use href="#shield-bearer-pp" x="-8" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-cr)"><use href="#shield-bearer-pp" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shield-bearer-ps" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-ct)">
+<use href="#shield-bearer-ps" x="-8" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-cu)"><use href="#shield-bearer-ps" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shield-bearer-pv" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#shield-bearer-cw)">
+<use href="#shield-bearer-pv" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#shield-bearer-cx)"><use href="#shield-bearer-pv" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<g transform="translate(34 6)">
+<use href="#shield-bearer-py" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-cz)">
+<use href="#shield-bearer-py" x="-12" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#shield-bearer-c10)"><use href="#shield-bearer-py" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#shield-bearer-p11" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#shield-bearer-c12)">
+<use href="#shield-bearer-p11" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#shield-bearer-c13)"><use href="#shield-bearer-p11" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<path d="M233 184A5 7 0 1 0 243 184A5 7 0 1 0 233 184Z" fill="#1d0842"/>
+<path d="M261 184A5 7 0 1 0 271 184A5 7 0 1 0 261 184Z" fill="#1d0842"/>
+<path d="M235 182A2 2 0 1 0 238 182A2 2 0 1 0 235 182Z" fill="#ffffff"/>
+<path d="M263 182A2 2 0 1 0 266 182A2 2 0 1 0 263 182Z" fill="#ffffff"/>
+<path d="M228 166L248 176M256 176L276 168" fill="none" stroke-width="4"/>
+<path d="M242 206L262 204" fill="none" stroke-width="3.5"/>
+<path d="M225 198A7 4 0 1 0 239 198A7 4 0 1 0 225 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+<path d="M271 198A7 4 0 1 0 285 198A7 4 0 1 0 271 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+</g>
+<use href="#shield-bearer-p14" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#shield-bearer-c15)">
+<use href="#shield-bearer-p14" x="-10" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-c16)"><use href="#shield-bearer-p14" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shield-bearer-p17" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#shield-bearer-c18)">
+<use href="#shield-bearer-p17" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-c19)"><use href="#shield-bearer-p17" x="4" y="4" fill="#9fb3c8"/></g>
+</g>
+<path d="M296 122V158" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<use href="#shield-bearer-p1a" fill="#5e6f8a" stroke-width="14"/>
+<g clip-path="url(#shield-bearer-c1b)">
+<use href="#shield-bearer-p1a" x="-12" y="-12" fill="#e2ecf5"/>
+<g clip-path="url(#shield-bearer-c1c)"><use href="#shield-bearer-p1a" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#shield-bearer-p1d" fill="#6e2232" stroke-width="8"/>
+<g clip-path="url(#shield-bearer-c1e)">
+<use href="#shield-bearer-p1d" x="-16" y="-14" fill="#cf5a64"/>
+<g clip-path="url(#shield-bearer-c1f)"><use href="#shield-bearer-p1d" x="8" y="8" fill="#a33a4a"/></g>
+</g>
+<path d="M132 252Q208 230 284 252M132 342Q208 320 284 342" fill="none" stroke="#5e6f8a" stroke-width="8"/>
+<path d="M132 252Q208 230 284 252M132 342Q208 320 284 342" fill="none" stroke="#b8c2d6" stroke-width="4"/>
+<use href="#shield-bearer-p1g" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#shield-bearer-c1h)">
+<use href="#shield-bearer-p1g" x="-5" y="-5" fill="#fff1c1"/>
+<g clip-path="url(#shield-bearer-c1i)"><use href="#shield-bearer-p1g" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<path d="M200 330L200 306Q208 296 216 306L216 330Z" fill="#1d0842" fill-opacity="0.8"/>
+<path d="M122 222A4 4 0 1 0 130 222A4 4 0 1 0 122 222Z" fill="#e2ecf5"/>
+<path d="M286 222A4 4 0 1 0 294 222A4 4 0 1 0 286 222Z" fill="#e2ecf5"/>
+<path d="M122 300A4 4 0 1 0 130 300A4 4 0 1 0 122 300Z" fill="#e2ecf5"/>
+<path d="M286 300A4 4 0 1 0 294 300A4 4 0 1 0 286 300Z" fill="#e2ecf5"/>
+<path d="M122 372A4 4 0 1 0 130 372A4 4 0 1 0 122 372Z" fill="#e2ecf5"/>
+<path d="M286 372A4 4 0 1 0 294 372A4 4 0 1 0 286 372Z" fill="#e2ecf5"/>
+<path d="M204 200A4 4 0 1 0 212 200A4 4 0 1 0 204 200Z" fill="#e2ecf5"/>
+<path d="M204 392A4 4 0 1 0 212 392A4 4 0 1 0 204 392Z" fill="#e2ecf5"/>
+<path d="M128 236Q160 206 196 200" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5"/>
+<use href="#shield-bearer-p1j" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#shield-bearer-c1k)">
+<use href="#shield-bearer-p1j" x="-5" y="-5" fill="#b07a40"/>
+<g clip-path="url(#shield-bearer-c1l)"><use href="#shield-bearer-p1j" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+</svg>

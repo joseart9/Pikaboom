@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="aegis-ward-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#160c2e"/><stop offset="0.55" stop-color="#3b2a6b"/><stop offset="1" stop-color="#1b1036"/></linearGradient><radialGradient id="aegis-ward-r1" gradientUnits="userSpaceOnUse" cx="256" cy="290" r="260"><stop offset="0" stop-color="#ffe066" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.135"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><linearGradient id="aegis-ward-l2" gradientUnits="userSpaceOnUse" x1="0" y1="364" x2="0" y2="512"><stop offset="0" stop-color="#2f1f62"/><stop offset="1" stop-color="#1b1036"/></linearGradient><radialGradient id="aegis-ward-r3" gradientUnits="userSpaceOnUse" cx="256" cy="396" r="200"><stop offset="0" stop-color="#ffe066" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="aegis-ward-p4" d="M242 338C237 343 233 361 228 366C223 371 213 368 209 370C205 372 202 377 202 379C203 382 206 386 211 386C217 386 233 387 240 382C248 376 260 357 262 350C265 343 261 336 258 334C255 332 246 333 242 338Z"/><clipPath id="aegis-ward-c5"><use href="#aegis-ward-p4"/></clipPath><clipPath id="aegis-ward-c6"><use href="#aegis-ward-p4" x="-5" y="-5"/></clipPath><path id="aegis-ward-p7" d="M227 307C227 316 236 339 241 347C246 354 256 359 261 357C265 356 271 346 271 337C271 328 266 305 261 297C256 289 244 283 239 285C234 286 226 298 227 307Z"/><clipPath id="aegis-ward-c8"><use href="#aegis-ward-p7"/></clipPath><clipPath id="aegis-ward-c9"><use href="#aegis-ward-p7" x="-5" y="-5"/></clipPath><path id="aegis-ward-pa" d="M256 356C262 357 280 349 285 352C289 356 284 373 285 379C286 384 292 387 295 387C297 387 302 385 303 377C304 370 306 343 299 336C292 329 264 331 256 332C248 333 244 340 244 344C244 348 250 355 256 356Z"/><clipPath id="aegis-ward-cb"><use href="#aegis-ward-pa"/></clipPath><clipPath id="aegis-ward-cc"><use href="#aegis-ward-pa" x="-5" y="-5"/></clipPath><path id="aegis-ward-pd" d="M223 290A15 15 0 1 0 253 290A15 15 0 1 0 223 290Z"/><clipPath id="aegis-ward-ce"><use href="#aegis-ward-pd"/></clipPath><clipPath id="aegis-ward-cf"><use href="#aegis-ward-pd" x="-5" y="-5"/></clipPath><path id="aegis-ward-pg" d="M252 300C248 298 232 299 227 295C222 291 222 276 220 272C218 268 214 268 212 268C211 269 208 270 208 276C209 281 211 299 217 305C223 311 242 315 248 316C254 316 257 313 258 310C258 308 257 303 252 300Z"/><clipPath id="aegis-ward-ch"><use href="#aegis-ward-pg"/></clipPath><clipPath id="aegis-ward-ci"><use href="#aegis-ward-pg" x="-5" y="-5"/></clipPath><radialGradient id="aegis-ward-rj" gradientUnits="userSpaceOnUse" cx="256" cy="340" r="290"><stop offset="0" stop-color="#ffe066" stop-opacity="0.08"/><stop offset="0.65" stop-color="#ffbe0b" stop-opacity="0.24"/><stop offset="1" stop-color="#ff9f1c" stop-opacity="0.55"/></radialGradient><clipPath id="aegis-ward-ck"><path d="M96 384C96 200 176 120 256 120C336 120 416 200 416 384Z"/></clipPath><radialGradient id="aegis-ward-rl" gradientUnits="userSpaceOnUse" cx="256" cy="184" r="60"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.8"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="aegis-ward-pm" d="M256 144L263 159L276 149L274 166L291 164L281 177L296 184L281 191L291 204L274 202L276 219L263 209L256 224L249 209L236 219L238 202L221 204L231 191L216 184L231 177L221 164L238 166L236 149L249 159Z"/><clipPath id="aegis-ward-cn"><use href="#aegis-ward-pm"/></clipPath><clipPath id="aegis-ward-co"><use href="#aegis-ward-pm" x="-4" y="-4"/></clipPath><path id="aegis-ward-pp" d="M240 184A16 16 0 1 0 272 184A16 16 0 1 0 240 184Z"/><clipPath id="aegis-ward-cq"><use href="#aegis-ward-pp"/></clipPath><clipPath id="aegis-ward-cr"><use href="#aegis-ward-pp" x="-3" y="-3"/></clipPath><radialGradient id="aegis-ward-rs" gradientUnits="userSpaceOnUse" cx="392" cy="232" r="54"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.8"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="aegis-ward-pt" d="M422 227L403 234L417 249L398 242L397 262L390 243L375 257L382 238L362 237L381 230L367 215L386 222L387 202L394 221L409 207L402 226Z"/><clipPath id="aegis-ward-cu"><use href="#aegis-ward-pt"/></clipPath><radialGradient id="aegis-ward-rw" gradientUnits="userSpaceOnUse" cx="410" cy="304" r="47"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.8"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="aegis-ward-px" d="M436 299L420 306L431 319L415 312L415 330L408 314L395 325L402 309L384 309L400 302L389 289L405 296L405 278L412 294L425 283L418 299Z"/><clipPath id="aegis-ward-cy"><use href="#aegis-ward-px"/></clipPath><radialGradient id="aegis-ward-r10" gradientUnits="userSpaceOnUse" cx="372" cy="180" r="43"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.8"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="aegis-ward-p11" d="M396 176L381 182L392 194L377 188L376 204L370 189L358 200L364 185L348 184L363 178L352 166L367 172L368 156L374 171L386 160L380 175Z"/><clipPath id="aegis-ward-c12"><use href="#aegis-ward-p11"/></clipPath><radialGradient id="aegis-ward-r14" gradientUnits="userSpaceOnUse" cx="146" cy="198" r="72"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.8"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="aegis-ward-p15" d="M185 191L161 201L179 221L154 211L153 237L143 213L123 231L133 206L107 205L131 195L113 175L138 185L139 159L149 183L169 165L159 190Z"/><clipPath id="aegis-ward-c16"><use href="#aegis-ward-p15"/></clipPath><path id="aegis-ward-p18" d="M51 91C62 108 119 171 132 185C145 199 135 183 136 182C137 181 150 195 140 179C130 163 83 92 69 77C56 61 55 72 53 75C50 77 39 75 51 91Z"/><clipPath id="aegis-ward-c19"><use href="#aegis-ward-p18"/></clipPath><clipPath id="aegis-ward-c1a"><use href="#aegis-ward-p18" x="-4" y="-4"/></clipPath><path id="aegis-ward-p1b" d="M40 114C49 107 80 73 86 64C93 55 87 57 86 56C85 54 86 48 78 56C69 63 38 97 32 106C25 115 31 113 32 114C33 116 32 122 40 114Z"/><clipPath id="aegis-ward-c1c"><use href="#aegis-ward-p1b"/></clipPath><clipPath id="aegis-ward-c1d"><use href="#aegis-ward-p1b" x="-3" y="-3"/></clipPath><path id="aegis-ward-p1e" d="M54 70C51 65 37 50 32 46C28 42 25 44 24 46C23 47 20 49 24 54C27 59 41 74 46 78C50 82 53 80 54 78C55 77 58 75 54 70Z"/><clipPath id="aegis-ward-c1f"><use href="#aegis-ward-p1e"/></clipPath><clipPath id="aegis-ward-c1g"><use href="#aegis-ward-p1e" x="-3" y="-3"/></clipPath><path id="aegis-ward-p1h" d="M112 236L124 214L132 246Z"/><clipPath id="aegis-ward-c1i"><use href="#aegis-ward-p1h"/></clipPath><clipPath id="aegis-ward-c1j"><use href="#aegis-ward-p1h" x="-2" y="-2"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#aegis-ward-l0)"/>
+<circle cx="256" cy="290" r="260" fill="url(#aegis-ward-r1)"/>
+<path d="M0 400Q256 364 512 400V512H0Z" fill="url(#aegis-ward-l2)"/>
+<ellipse cx="256" cy="396" rx="200" ry="56" fill="url(#aegis-ward-r3)"/>
+<use href="#aegis-ward-p4" fill="#22144a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-c5)">
+<use href="#aegis-ward-p4" x="-5" y="-5" fill="#5a48a0"/>
+<g clip-path="url(#aegis-ward-c6)"><use href="#aegis-ward-p4" x="3" y="3" fill="#3d2a7c"/></g>
+</g>
+<use href="#aegis-ward-p7" fill="#22144a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-c8)">
+<use href="#aegis-ward-p7" x="-5" y="-5" fill="#5a48a0"/>
+<g clip-path="url(#aegis-ward-c9)"><use href="#aegis-ward-p7" x="3" y="3" fill="#3d2a7c"/></g>
+</g>
+<use href="#aegis-ward-pa" fill="#22144a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-cb)">
+<use href="#aegis-ward-pa" x="-5" y="-5" fill="#5a48a0"/>
+<g clip-path="url(#aegis-ward-cc)"><use href="#aegis-ward-pa" x="3" y="3" fill="#3d2a7c"/></g>
+</g>
+<use href="#aegis-ward-pd" fill="#22144a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-ce)">
+<use href="#aegis-ward-pd" x="-5" y="-5" fill="#5a48a0"/>
+<g clip-path="url(#aegis-ward-cf)"><use href="#aegis-ward-pd" x="3" y="3" fill="#3d2a7c"/></g>
+</g>
+<use href="#aegis-ward-pg" fill="#22144a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-ch)">
+<use href="#aegis-ward-pg" x="-5" y="-5" fill="#5a48a0"/>
+<g clip-path="url(#aegis-ward-ci)"><use href="#aegis-ward-pg" x="3" y="3" fill="#3d2a7c"/></g>
+</g>
+<path d="M96 384C96 200 176 120 256 120C336 120 416 200 416 384Z" fill="url(#aegis-ward-rj)"/>
+<g clip-path="url(#aegis-ward-ck)"><path d="M97 130L80 140L63 130L63 110L80 100L97 110ZM133 130L116 140L99 130L99 110L116 100L133 110ZM169 130L152 140L135 130L135 110L152 100L169 110ZM205 130L188 140L171 130L171 110L188 100L205 110ZM241 130L224 140L207 130L207 110L224 100L241 110ZM277 130L260 140L243 130L243 110L260 100L277 110ZM313 130L296 140L279 130L279 110L296 100L313 110ZM349 130L332 140L315 130L315 110L332 100L349 110ZM385 130L368 140L351 130L351 110L368 100L385 110ZM421 130L404 140L387 130L387 110L404 100L421 110ZM457 130L440 140L423 130L423 110L440 100L457 110ZM115 161L98 171L81 161L81 141L98 131L115 141ZM151 161L134 171L117 161L117 141L134 131L151 141ZM187 161L170 171L153 161L153 141L170 131L187 141ZM223 161L206 171L189 161L189 141L206 131L223 141ZM259 161L242 171L225 161L225 141L242 131L259 141ZM295 161L278 171L261 161L261 141L278 131L295 141ZM331 161L314 171L297 161L297 141L314 131L331 141ZM367 161L350 171L333 161L333 141L350 131L367 141ZM403 161L386 171L369 161L369 141L386 131L403 141ZM439 161L422 171L405 161L405 141L422 131L439 141ZM475 161L458 171L441 161L441 141L458 131L475 141ZM97 192L80 202L63 192L63 172L80 162L97 172ZM133 192L116 202L99 192L99 172L116 162L133 172ZM169 192L152 202L135 192L135 172L152 162L169 172ZM205 192L188 202L171 192L171 172L188 162L205 172ZM241 192L224 202L207 192L207 172L224 162L241 172ZM277 192L260 202L243 192L243 172L260 162L277 172ZM313 192L296 202L279 192L279 172L296 162L313 172ZM349 192L332 202L315 192L315 172L332 162L349 172ZM385 192L368 202L351 192L351 172L368 162L385 172ZM421 192L404 202L387 192L387 172L404 162L421 172ZM457 192L440 202L423 192L423 172L440 162L457 172ZM115 223L98 233L81 223L81 203L98 193L115 203ZM151 223L134 233L117 223L117 203L134 193L151 203ZM187 223L170 233L153 223L153 203L170 193L187 203ZM223 223L206 233L189 223L189 203L206 193L223 203ZM259 223L242 233L225 223L225 203L242 193L259 203ZM295 223L278 233L261 223L261 203L278 193L295 203ZM331 223L314 233L297 223L297 203L314 193L331 203ZM367 223L350 233L333 223L333 203L350 193L367 203ZM403 223L386 233L369 223L369 203L386 193L403 203ZM439 223L422 233L405 223L405 203L422 193L439 203ZM475 223L458 233L441 223L441 203L458 193L475 203ZM97 254L80 264L63 254L63 234L80 224L97 234ZM133 254L116 264L99 254L99 234L116 224L133 234ZM169 254L152 264L135 254L135 234L152 224L169 234ZM205 254L188 264L171 254L171 234L188 224L205 234ZM241 254L224 264L207 254L207 234L224 224L241 234ZM277 254L260 264L243 254L243 234L260 224L277 234ZM313 254L296 264L279 254L279 234L296 224L313 234ZM349 254L332 264L315 254L315 234L332 224L349 234ZM385 254L368 264L351 254L351 234L368 224L385 234ZM421 254L404 264L387 254L387 234L404 224L421 234ZM457 254L440 264L423 254L423 234L440 224L457 234ZM115 285L98 295L81 285L81 265L98 255L115 265ZM151 285L134 295L117 285L117 265L134 255L151 265ZM187 285L170 295L153 285L153 265L170 255L187 265ZM223 285L206 295L189 285L189 265L206 255L223 265ZM259 285L242 295L225 285L225 265L242 255L259 265ZM295 285L278 295L261 285L261 265L278 255L295 265ZM331 285L314 295L297 285L297 265L314 255L331 265ZM367 285L350 295L333 285L333 265L350 255L367 265ZM403 285L386 295L369 285L369 265L386 255L403 265ZM439 285L422 295L405 285L405 265L422 255L439 265ZM475 285L458 295L441 285L441 265L458 255L475 265ZM97 316L80 326L63 316L63 296L80 286L97 296ZM133 316L116 326L99 316L99 296L116 286L133 296ZM169 316L152 326L135 316L135 296L152 286L169 296ZM205 316L188 326L171 316L171 296L188 286L205 296ZM241 316L224 326L207 316L207 296L224 286L241 296ZM277 316L260 326L243 316L243 296L260 286L277 296ZM313 316L296 326L279 316L279 296L296 286L313 296ZM349 316L332 326L315 316L315 296L332 286L349 296ZM385 316L368 326L351 316L351 296L368 286L385 296ZM421 316L404 326L387 316L387 296L404 286L421 296ZM457 316L440 326L423 316L423 296L440 286L457 296ZM115 347L98 357L81 347L81 327L98 317L115 327ZM151 347L134 357L117 347L117 327L134 317L151 327ZM187 347L170 357L153 347L153 327L170 317L187 327ZM223 347L206 357L189 347L189 327L206 317L223 327ZM259 347L242 357L225 347L225 327L242 317L259 327ZM295 347L278 357L261 347L261 327L278 317L295 327ZM331 347L314 357L297 347L297 327L314 317L331 327ZM367 347L350 357L333 347L333 327L350 317L367 327ZM403 347L386 357L369 347L369 327L386 317L403 327ZM439 347L422 357L405 347L405 327L422 317L439 327ZM475 347L458 357L441 347L441 327L458 317L475 327ZM97 378L80 388L63 378L63 358L80 348L97 358ZM133 378L116 388L99 378L99 358L116 348L133 358ZM169 378L152 388L135 378L135 358L152 348L169 358ZM205 378L188 388L171 378L171 358L188 348L205 358ZM241 378L224 388L207 378L207 358L224 348L241 358ZM277 378L260 388L243 378L243 358L260 348L277 358ZM313 378L296 388L279 378L279 358L296 348L313 358ZM349 378L332 388L315 378L315 358L332 348L349 358ZM385 378L368 388L351 378L351 358L368 348L385 358ZM421 378L404 388L387 378L387 358L404 348L421 358ZM457 378L440 388L423 378L423 358L440 348L457 358Z" fill="none" stroke="#f2c14e" stroke-opacity="0.45" stroke-width="3"/></g>
+<path d="M96 384C96 200 176 120 256 120C336 120 416 200 416 384" fill="none" stroke-width="16"/>
+<path d="M96 384C96 200 176 120 256 120C336 120 416 200 416 384" fill="none" stroke="#f2c14e" stroke-width="9"/>
+<path d="M104 300C110 210 170 136 256 128" fill="none" stroke="#fff1c1" stroke-width="3"/>
+<circle cx="256" cy="184" r="60" fill="url(#aegis-ward-rl)"/>
+<use href="#aegis-ward-pm" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-cn)">
+<use href="#aegis-ward-pm" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#aegis-ward-co)"><use href="#aegis-ward-pm" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#aegis-ward-pp" fill="#ffbe0b" stroke-width="8"/>
+<g clip-path="url(#aegis-ward-cq)">
+<use href="#aegis-ward-pp" x="-3" y="-3" fill="#fff8d6"/>
+<g clip-path="url(#aegis-ward-cr)"><use href="#aegis-ward-pp" x="2" y="2" fill="#ffe066"/></g>
+</g>
+<path d="M500 214L396 232" fill="none" stroke-width="10"/>
+<path d="M500 214L396 232" fill="none" stroke="#8a5a2b" stroke-width="5"/>
+<path d="M390 233L414 219L417 238Z" fill="#c8cce0" stroke-width="4"/>
+<path d="M500 214L477 209L478 218L480 227Z" fill="#e9e2cf" stroke-width="3"/>
+<path d="M512 330L414 304" fill="none" stroke-width="10"/>
+<path d="M512 330L414 304" fill="none" stroke="#8a5a2b" stroke-width="5"/>
+<path d="M408 302L436 299L431 319Z" fill="#c8cce0" stroke-width="4"/>
+<path d="M512 330L493 316L491 324L488 333Z" fill="#e9e2cf" stroke-width="3"/>
+<path d="M488 120L376 178" fill="none" stroke-width="10"/>
+<path d="M488 120L376 178" fill="none" stroke="#8a5a2b" stroke-width="5"/>
+<path d="M371 181L389 160L398 178Z" fill="#c8cce0" stroke-width="4"/>
+<path d="M488 120L464 122L468 130L473 138Z" fill="#e9e2cf" stroke-width="3"/>
+<path d="M426 392L470 380" fill="none" stroke-width="9"/>
+<path d="M426 392L470 380" fill="none" stroke="#8a5a2b" stroke-width="4"/>
+<path d="M444 404L488 410" fill="none" stroke-width="9"/>
+<path d="M444 404L488 410" fill="none" stroke="#8a5a2b" stroke-width="4"/>
+<circle cx="392" cy="232" r="54" fill="url(#aegis-ward-rs)"/>
+<use href="#aegis-ward-pt" fill="#ffe066" stroke-width="6"/>
+<g clip-path="url(#aegis-ward-cu)">
+<use href="#aegis-ward-pt" x="-2" y="-2" fill="#ffffff"/>
+</g>
+<circle cx="410" cy="304" r="47" fill="url(#aegis-ward-rw)"/>
+<use href="#aegis-ward-px" fill="#ffe066" stroke-width="6"/>
+<g clip-path="url(#aegis-ward-cy)">
+<use href="#aegis-ward-px" x="-2" y="-2" fill="#ffffff"/>
+</g>
+<circle cx="372" cy="180" r="43" fill="url(#aegis-ward-r10)"/>
+<use href="#aegis-ward-p11" fill="#ffe066" stroke-width="6"/>
+<g clip-path="url(#aegis-ward-c12)">
+<use href="#aegis-ward-p11" x="-2" y="-2" fill="#ffffff"/>
+</g>
+<circle cx="146" cy="198" r="72" fill="url(#aegis-ward-r14)"/>
+<use href="#aegis-ward-p15" fill="#ffe066" stroke-width="6"/>
+<g clip-path="url(#aegis-ward-c16)">
+<use href="#aegis-ward-p15" x="-2" y="-2" fill="#ffffff"/>
+</g>
+<use href="#aegis-ward-p18" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#aegis-ward-c19)">
+<use href="#aegis-ward-p18" x="-4" y="-4" fill="#e2ecf5"/>
+<g clip-path="url(#aegis-ward-c1a)"><use href="#aegis-ward-p18" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<use href="#aegis-ward-p1b" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-c1c)">
+<use href="#aegis-ward-p1b" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#aegis-ward-c1d)"><use href="#aegis-ward-p1b" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#aegis-ward-p1e" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#aegis-ward-c1f)">
+<use href="#aegis-ward-p1e" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#aegis-ward-c1g)"><use href="#aegis-ward-p1e" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#aegis-ward-p1h" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#aegis-ward-c1i)">
+<use href="#aegis-ward-p1h" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#aegis-ward-c1j)"><use href="#aegis-ward-p1h" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<path d="M286 295L289 300L286 306L283 300Z" fill="#fff1c1" fill-opacity="0.41"/>
+<path d="M253 314L255 318L253 322L251 318Z" fill="#ffe066" fill-opacity="0.7"/>
+<path d="M363 347L365 351L363 356L360 351Z" fill="#fff1c1" fill-opacity="0.8"/>
+<path d="M183 312L186 318L183 325L179 318Z" fill="#ffe066" fill-opacity="0.71"/>
+<path d="M292 156L294 159L292 163L291 159Z" fill="#fff1c1" fill-opacity="0.54"/>
+<path d="M378 177L381 183L378 189L375 183Z" fill="#ffe066" fill-opacity="0.68"/>
+<path d="M288 267L291 273L288 279L284 273Z" fill="#fff1c1" fill-opacity="0.74"/>
+<path d="M245 280L248 287L245 293L241 287Z" fill="#ffe066" fill-opacity="0.75"/>
+<path d="M224 330L228 336L224 343L221 336Z" fill="#fff1c1" fill-opacity="0.67"/>
+<path d="M293 155L295 160L293 164L290 160Z" fill="#ffe066" fill-opacity="0.52"/>
+<path d="M276 320L278 323L276 327L274 323Z" fill="#fff1c1" fill-opacity="0.86"/>
+<path d="M394 334L397 340L394 345L391 340Z" fill="#ffe066" fill-opacity="0.84"/>
+</svg>

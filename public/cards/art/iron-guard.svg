@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="iron-guard-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#161430"/><stop offset="0.55" stop-color="#2e2c58"/><stop offset="1" stop-color="#1c1a3e"/></linearGradient><radialGradient id="iron-guard-r1" gradientUnits="userSpaceOnUse" cx="250" cy="230" r="250"><stop offset="0" stop-color="#a8b4dc" stop-opacity="0.28"/><stop offset="0.45" stop-color="#a8b4dc" stop-opacity="0.12600000000000003"/><stop offset="1" stop-color="#a8b4dc" stop-opacity="0"/></radialGradient><linearGradient id="iron-guard-l2" gradientUnits="userSpaceOnUse" x1="0" y1="334" x2="0" y2="512"><stop offset="0" stop-color="#34305e"/><stop offset="1" stop-color="#16142c"/></linearGradient><radialGradient id="iron-guard-r3" gradientUnits="userSpaceOnUse" cx="250" cy="404" r="170"><stop offset="0" stop-color="#a8b4dc" stop-opacity="0.55"/><stop offset="1" stop-color="#a8b4dc" stop-opacity="0"/></radialGradient><path id="iron-guard-p4" d="M357 400C357 376 352 293 349 250C347 206 344 133 341 112C339 90 337 106 336 107C334 107 330 91 331 112C331 134 336 207 339 250C341 294 344 377 347 400C349 424 351 406 352 405C354 405 358 423 357 400Z"/><clipPath id="iron-guard-c5"><use href="#iron-guard-p4"/></clipPath><clipPath id="iron-guard-c6"><use href="#iron-guard-p4" x="-4" y="-4"/></clipPath><path id="iron-guard-p7" d="M342 138C372 132 390 150 392 178C380 168 362 168 344 174Z"/><clipPath id="iron-guard-c8"><use href="#iron-guard-p7"/></clipPath><clipPath id="iron-guard-c9"><use href="#iron-guard-p7" x="-6" y="-6"/></clipPath><path id="iron-guard-pa" d="M332 152L314 140L334 144Z"/><clipPath id="iron-guard-cb"><use href="#iron-guard-pa"/></clipPath><clipPath id="iron-guard-cc"><use href="#iron-guard-pa" x="-2" y="-2"/></clipPath><path id="iron-guard-pd" d="M345 135C345 130 341 116 339 109C337 103 334 94 333 92C332 89 332 92 332 92C332 92 331 89 331 92C331 95 329 104 329 111C329 117 330 132 331 137C333 142 337 143 339 143C341 143 345 140 345 135Z"/><clipPath id="iron-guard-ce"><use href="#iron-guard-pd"/></clipPath><clipPath id="iron-guard-cf"><use href="#iron-guard-pd" x="-3" y="-3"/></clipPath><path id="iron-guard-pg" d="M216 311C213 320 214 343 213 354C212 366 209 381 210 388C211 396 218 403 222 404C227 404 235 399 238 392C241 385 241 369 243 358C245 347 253 326 252 317C251 307 242 297 237 296C231 295 220 303 216 311Z"/><clipPath id="iron-guard-ch"><use href="#iron-guard-pg"/></clipPath><clipPath id="iron-guard-ci"><use href="#iron-guard-pg" x="-8" y="-6"/></clipPath><path id="iron-guard-pj" d="M256 317C256 327 265 347 267 359C270 370 271 386 274 392C278 399 286 405 290 404C295 403 301 395 302 388C303 380 298 365 297 353C295 342 296 319 292 311C288 302 276 295 271 296C265 297 257 308 256 317Z"/><clipPath id="iron-guard-ck"><use href="#iron-guard-pj"/></clipPath><clipPath id="iron-guard-cl"><use href="#iron-guard-pj" x="-8" y="-6"/></clipPath><path id="iron-guard-pm" d="M212 360A16 12 0 1 0 244 360A16 12 0 1 0 212 360Z"/><clipPath id="iron-guard-cn"><use href="#iron-guard-pm"/></clipPath><clipPath id="iron-guard-co"><use href="#iron-guard-pm" x="-4" y="-4"/></clipPath><path id="iron-guard-pp" d="M266 360A16 12 0 1 0 298 360A16 12 0 1 0 266 360Z"/><clipPath id="iron-guard-cq"><use href="#iron-guard-pp"/></clipPath><clipPath id="iron-guard-cr"><use href="#iron-guard-pp" x="-4" y="-4"/></clipPath><path id="iron-guard-ps" d="M196 408C196 394 206 388 220 388L240 388L242 408Z"/><clipPath id="iron-guard-ct"><use href="#iron-guard-ps"/></clipPath><clipPath id="iron-guard-cu"><use href="#iron-guard-ps" x="-5" y="-5"/></clipPath><path id="iron-guard-pv" d="M278 408L280 388L300 388C312 390 318 398 318 408Z"/><clipPath id="iron-guard-cw"><use href="#iron-guard-pv"/></clipPath><clipPath id="iron-guard-cx"><use href="#iron-guard-pv" x="-5" y="-5"/></clipPath><path id="iron-guard-py" d="M214 224C219 216 245 208 254 208C263 208 295 214 300 222C305 230 312 280 308 288C304 296 266 300 256 300C246 300 212 296 208 288C204 280 209 232 214 224Z"/><clipPath id="iron-guard-cz"><use href="#iron-guard-py"/></clipPath><clipPath id="iron-guard-c10"><use href="#iron-guard-py" x="-14" y="-10"/></clipPath><path id="iron-guard-p11" d="M210 290L304 290L312 330L200 330Z"/><clipPath id="iron-guard-c12"><use href="#iron-guard-p11"/></clipPath><clipPath id="iron-guard-c13"><use href="#iron-guard-p11" x="-8" y="-8"/></clipPath><path id="iron-guard-p14" d="M210 286L306 286L306 298L210 298Z"/><clipPath id="iron-guard-c15"><use href="#iron-guard-p14"/></clipPath><clipPath id="iron-guard-c16"><use href="#iron-guard-p14" x="-3" y="-3"/></clipPath><path id="iron-guard-p17" d="M324 222C323 226 317 230 313 233C309 236 305 241 300 241C296 242 290 239 285 237C280 235 272 233 270 229C267 226 269 219 272 215C274 211 278 207 283 205C288 203 295 203 300 204C305 205 311 207 315 210C318 213 324 218 324 222Z"/><clipPath id="iron-guard-c18"><use href="#iron-guard-p17"/></clipPath><clipPath id="iron-guard-c19"><use href="#iron-guard-p17" x="-8" y="-8"/></clipPath><path id="iron-guard-p1a" d="M288 240C294 250 314 284 327 287C339 291 365 267 372 261C379 255 377 249 375 246C373 243 366 240 360 243C354 246 341 267 333 265C326 262 318 231 312 224C305 218 296 218 292 220C289 223 283 230 288 240Z"/><clipPath id="iron-guard-c1b"><use href="#iron-guard-p1a"/></clipPath><clipPath id="iron-guard-c1c"><use href="#iron-guard-p1a" x="-7" y="-7"/></clipPath><path id="iron-guard-p1d" d="M355 248A15 14 0 1 0 385 248A15 14 0 1 0 355 248Z"/><clipPath id="iron-guard-c1e"><use href="#iron-guard-p1d"/></clipPath><clipPath id="iron-guard-c1f"><use href="#iron-guard-p1d" x="-5" y="-5"/></clipPath><path id="iron-guard-p1g" d="M269 138C276 135 288 119 294 115C301 112 308 112 313 115C318 117 326 130 328 133C331 136 329 132 330 132C331 132 333 136 332 131C331 127 330 107 323 101C316 96 296 90 286 93C275 96 259 115 255 122C250 129 252 135 254 137C256 140 263 141 269 138Z"/><clipPath id="iron-guard-c1h"><use href="#iron-guard-p1g"/></clipPath><clipPath id="iron-guard-c1i"><use href="#iron-guard-p1g" x="-6" y="-6"/></clipPath><path id="iron-guard-p1j" d="M224 214L220 156C222 132 242 124 260 124C280 124 298 134 298 158L296 214C284 222 238 222 224 214Z"/><clipPath id="iron-guard-c1k"><use href="#iron-guard-p1j"/></clipPath><clipPath id="iron-guard-c1l"><use href="#iron-guard-p1j" x="-12" y="-8"/></clipPath><path id="iron-guard-p1m" d="M114 232Q160 214 210 230L212 300Q200 352 160 378Q122 350 112 300Z"/><clipPath id="iron-guard-c1n"><use href="#iron-guard-p1m"/></clipPath><clipPath id="iron-guard-c1o"><use href="#iron-guard-p1m" x="-10" y="-10"/></clipPath><path id="iron-guard-p1p" d="M126 240Q160 228 198 240L200 298Q190 338 160 360Q130 338 124 298Z"/><clipPath id="iron-guard-c1q"><use href="#iron-guard-p1p"/></clipPath><clipPath id="iron-guard-c1r"><use href="#iron-guard-p1p" x="-12" y="-12"/></clipPath><path id="iron-guard-p1s" d="M150 288A12 12 0 1 0 174 288A12 12 0 1 0 150 288Z"/><clipPath id="iron-guard-c1t"><use href="#iron-guard-p1s"/></clipPath><clipPath id="iron-guard-c1u"><use href="#iron-guard-p1s" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#iron-guard-l0)"/>
+<circle cx="250" cy="230" r="250" fill="url(#iron-guard-r1)"/>
+<path d="M70 360V170C70 80 442 80 442 170V360Z" fill="#24224a"/>
+<path d="M120 360V190C120 120 392 120 392 190V360Z" fill="#13112a"/>
+<path d="M150 150V360M190 128V360M230 118V360M270 118V360M310 124V360M350 140V360M120 200H392M120 250H392M120 300H392" fill="none" stroke="#3a3866" stroke-width="5" stroke-opacity="0.8"/>
+<path d="M70 170C70 80 442 80 442 170" fill="none" stroke="#3a3866" stroke-width="4" stroke-opacity="0.6"/>
+<path d="M0 370Q256 334 512 370V512H0Z" fill="url(#iron-guard-l2)"/>
+<ellipse cx="250" cy="404" rx="170" ry="48" fill="url(#iron-guard-r3)"/>
+<path d="M0 384H512M0 440H512M80 352V384M200 384V440M330 352V384M440 384V440M130 440V512M390 440V512" fill="none" stroke="#16142c" stroke-width="3" stroke-opacity="0.7"/>
+<ellipse cx="252" cy="402" rx="130" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<g transform="translate(28 0)">
+<use href="#iron-guard-p4" fill="#4e3220" stroke-width="8"/>
+<g clip-path="url(#iron-guard-c5)">
+<use href="#iron-guard-p4" x="-4" y="-4" fill="#a8784a"/>
+<g clip-path="url(#iron-guard-c6)"><use href="#iron-guard-p4" x="3" y="3" fill="#7a5232"/></g>
+</g>
+<use href="#iron-guard-p7" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#iron-guard-c8)">
+<use href="#iron-guard-p7" x="-6" y="-6" fill="#e2ecf5"/>
+<g clip-path="url(#iron-guard-c9)"><use href="#iron-guard-p7" x="4" y="4" fill="#9fb3c8"/></g>
+</g>
+<path d="M352 142C374 142 386 154 388 170" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.6"/>
+<use href="#iron-guard-pa" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#iron-guard-cb)">
+<use href="#iron-guard-pa" x="-2" y="-2" fill="#e2ecf5"/>
+<g clip-path="url(#iron-guard-cc)"><use href="#iron-guard-pa" x="1" y="1" fill="#9fb3c8"/></g>
+</g>
+<use href="#iron-guard-pd" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#iron-guard-ce)">
+<use href="#iron-guard-pd" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#iron-guard-cf)"><use href="#iron-guard-pd" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+</g>
+<use href="#iron-guard-pg" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-ch)">
+<use href="#iron-guard-pg" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-pg" x="-8" y="-6" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-ci)"><use href="#iron-guard-pg" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-pj" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-ck)">
+<use href="#iron-guard-pj" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-pj" x="-8" y="-6" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-cl)"><use href="#iron-guard-pj" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-pm" fill="#4a5068" stroke-width="8"/>
+<g clip-path="url(#iron-guard-cn)">
+<use href="#iron-guard-pm" x="-4" y="-4" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-co)"><use href="#iron-guard-pm" x="3" y="3" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-pp" fill="#4a5068" stroke-width="8"/>
+<g clip-path="url(#iron-guard-cq)">
+<use href="#iron-guard-pp" x="-4" y="-4" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-cr)"><use href="#iron-guard-pp" x="3" y="3" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-ps" fill="#4a5068" stroke-width="10"/>
+<g clip-path="url(#iron-guard-ct)">
+<use href="#iron-guard-ps" x="-5" y="-5" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-cu)"><use href="#iron-guard-ps" x="3" y="3" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-pv" fill="#4a5068" stroke-width="10"/>
+<g clip-path="url(#iron-guard-cw)">
+<use href="#iron-guard-pv" x="-5" y="-5" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-cx)"><use href="#iron-guard-pv" x="3" y="3" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-py" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-cz)">
+<use href="#iron-guard-py" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-py" x="-14" y="-10" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-c10)"><use href="#iron-guard-py" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<path d="M254 214L258 292" fill="none" stroke-width="4" stroke-opacity="0.5"/>
+<use href="#iron-guard-p11" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-c12)">
+<use href="#iron-guard-p11" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-p11" x="-8" y="-8" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-c13)"><use href="#iron-guard-p11" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<path d="M208 306H308M222 290V330M258 292V330M292 290V330" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#iron-guard-p14" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#iron-guard-c15)">
+<use href="#iron-guard-p14" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#iron-guard-c16)"><use href="#iron-guard-p14" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#iron-guard-p17" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-c18)">
+<use href="#iron-guard-p17" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-p17" x="-8" y="-8" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-c19)"><use href="#iron-guard-p17" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-p1a" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-c1b)">
+<use href="#iron-guard-p1a" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-p1a" x="-7" y="-7" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-c1c)"><use href="#iron-guard-p1a" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<use href="#iron-guard-p1d" fill="#4a5068" stroke-width="10"/>
+<g clip-path="url(#iron-guard-c1e)">
+<use href="#iron-guard-p1d" x="-5" y="-5" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-c1f)"><use href="#iron-guard-p1d" x="3" y="3" fill="#7f8aa3"/></g>
+</g>
+<path d="M359 242H381M359 252H381" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<use href="#iron-guard-p1g" fill="#7a1a2e" stroke-width="10"/>
+<g clip-path="url(#iron-guard-c1h)">
+<use href="#iron-guard-p1g" x="-6" y="-6" fill="#e86070"/>
+<g clip-path="url(#iron-guard-c1i)"><use href="#iron-guard-p1g" x="4" y="4" fill="#c23a4a"/></g>
+</g>
+<use href="#iron-guard-p1j" fill="#c4cede" stroke-width="12"/>
+<g clip-path="url(#iron-guard-c1k)">
+<use href="#iron-guard-p1j" x="-4" fill="#4a5068"/>
+<use href="#iron-guard-p1j" x="-12" y="-8" fill="#b8c2d6"/>
+<g clip-path="url(#iron-guard-c1l)"><use href="#iron-guard-p1j" x="7" y="7" fill="#7f8aa3"/></g>
+</g>
+<path d="M226 164L282 164L280 176L228 176Z" fill="#1d0842"/>
+<path d="M234 168L276 168L275 172L235 172Z" fill="#ffbe0b" fill-opacity="0.55"/>
+<path d="M248 178V206M232 190H244M232 200H244" fill="none" stroke-width="4" stroke-opacity="0.8"/>
+<path d="M260 128V160" fill="none" stroke-width="3" stroke-opacity="0.4"/>
+<path d="M228 150C230 136 242 130 252 130" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="4"/>
+<use href="#iron-guard-p1m" fill="#5e6f8a" stroke-width="14"/>
+<g clip-path="url(#iron-guard-c1n)">
+<use href="#iron-guard-p1m" x="-10" y="-10" fill="#e2ecf5"/>
+<g clip-path="url(#iron-guard-c1o)"><use href="#iron-guard-p1m" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#iron-guard-p1p" fill="#2e3348" stroke-width="8"/>
+<g clip-path="url(#iron-guard-c1q)">
+<use href="#iron-guard-p1p" x="-12" y="-12" fill="#6a7290"/>
+<g clip-path="url(#iron-guard-c1r)"><use href="#iron-guard-p1p" x="6" y="6" fill="#4a5068"/></g>
+</g>
+<path d="M126 262L198 300L198 320L126 282Z" fill="#a33a4a" fill-opacity="0.95"/>
+<use href="#iron-guard-p1s" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#iron-guard-c1t)">
+<use href="#iron-guard-p1s" x="-4" y="-4" fill="#e2ecf5"/>
+<g clip-path="url(#iron-guard-c1u)"><use href="#iron-guard-p1s" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M122 250Q140 236 170 232" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="4"/>
+</svg>

@@ -19,7 +19,14 @@ export type GameIconName =
   | "back"
   | "endTurn"
   | "coin"
-  | "hand";
+  | "hand"
+  | "plus"
+  | "minus"
+  | "info"
+  | "search"
+  | "share"
+  | "home"
+  | "crown";
 
 export const GAME_ICONS: Record<GameIconName, Omit<Glyph, "fill">> = {
   play: { d: "M5.04 4.27L8.76 4.96L14.78 11.65L11.36 14.73L5.34 8.04ZM9.21 16.67L16.93 9.71L18.81 11.79L11.08 18.75ZM13.9 16.21L15.98 14.33L18.39 17.01L16.31 18.88ZM15.44 19.4L19 16.19L20.74 18.12L17.18 21.33ZM18.96 4.27L18.66 8.04L12.64 14.73L9.22 11.65L15.24 4.96ZM7.07 9.71L14.79 16.67L12.92 18.75L5.19 11.79ZM8.02 14.33L10.1 16.21L7.69 18.88L5.61 17.01ZM5 16.19L8.56 19.4L6.82 21.33L3.26 18.12ZM7.4 12.6A4.6 4.6 0 1 0 16.6 12.6A4.6 4.6 0 1 0 7.4 12.6Z", rule: "nonzero" },
@@ -38,4 +45,12 @@ export const GAME_ICONS: Record<GameIconName, Omit<Glyph, "fill">> = {
   endTurn: { d: "M3 7.8H12.6V2.6L21.6 12L12.6 21.4V16.2H3Z" },
   coin: { d: "M2 12A10 10 0 1 0 22 12A10 10 0 1 0 2 12ZM12 5.6L13.56 10.44L18.4 12L13.56 13.56L12 18.4L10.44 13.56L5.6 12L10.44 10.44Z" },
   hand: { d: "M2.56 6.9L11.21 4.42L14.9 17.3L6.25 19.78ZM12.53 4.51L21.26 6.68L18.02 19.69L9.29 17.51Z", rule: "nonzero" },
+  // UI-07 (non-match screens): quantity controls, inspect, search, invite, home, host seat.
+  plus: { d: "M10 3H14V10H21V14H14V21H10V14H3V10H10Z" },
+  minus: { d: "M3 10H21V14H3Z" },
+  info: { d: "M2 12A10 10 0 1 0 22 12A10 10 0 1 0 2 12ZM10.5 7A1.5 1.5 0 1 0 13.5 7A1.5 1.5 0 1 0 10.5 7ZM10.6 10H13.4V18H10.6Z" },
+  search: { d: "M3 10A7 7 0 1 0 17 10A7 7 0 1 0 3 10ZM6 10A4 4 0 1 0 14 10A4 4 0 1 0 6 10ZM13.9 16.1L16.1 13.9L21.6 19.4L19.4 21.6Z" },
+  share: { d: "M12 2L18 8.4H14V15H10V8.4H6ZM3 12H6.4V18.6H17.6V12H21V22H3Z" },
+  home: { d: "M12 2.6L22 11.4H19V21.4H14.4V15H9.6V21.4H5V11.4H2Z" },
+  crown: { d: "M2.6 7L7.4 11.6L12 3.6L16.6 11.6L21.4 7L19.4 18H4.6ZM4.6 19.6H19.4V21.6H4.6Z" },
 };

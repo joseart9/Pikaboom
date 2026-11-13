@@ -19,8 +19,10 @@ import { CODE_LENGTH, normalizeCode } from "@/game/cards/server/lobbyCode";
 import type { LobbySeatView, MatchView } from "@/game/cards/server/view";
 import { ConnectionBadge } from "../match/ConnectionBadge";
 import { Toasts, ToastView } from "../match/Toasts";
-import { DeckPicker } from "./DeckPicker";
+import { DeckPicker, EditDecksLink } from "./DeckPicker";
 import { InviteShare } from "./InviteShare";
+import { ScreenHeader } from "../screen/ScreenHeader";
+import { StateMessage } from "../screen/StateMessage";
 import { GameIcon } from "../skin";
 
 type Stage =
@@ -130,7 +132,7 @@ export function LobbyScreen({ initialCode }: { initialCode: string | null }) {
 
   let body;
   if (stage.k === "loading") {
-    body = <div className="cg-center-message">{stage.text}</div>;
+    body = <StateMessage kind="loading" text={stage.text} fill />;
   } else if (stage.k === "home") {
     body = (
       <LobbyHome
@@ -143,19 +145,23 @@ export function LobbyScreen({ initialCode }: { initialCode: string | null }) {
   } else if (stage.k === "conflict") {
     body = (
       <div className="cg-center-message cg-lobby-conflict">
-        <p>{t("lobby.otherMatch")}</p>
-        <p className="cg-lobby-help">{t("lobby.otherMatchHelp")}</p>
-        <div className="cg-lobby-row">
-          <button type="button" className="cg-button cg-button--primary" onClick={() => openMatchId(stage.matchId)}>
-            {t("lobby.goToOther")}
-          </button>
-          <button type="button" className="cg-button" onClick={() => void leaveOtherAndJoin(stage.matchId, stage.code)}>
-            {t("lobby.leaveOtherAndJoin")}
-          </button>
+        <div className="cg-dialog cg-lobby-conflict-panel" role="alert">
+          <GameIcon name="warning" className="cg-mark cg-mark--warn" size="1.4em" />
+          <p className="cg-dialog-title">{t("lobby.otherMatch")}</p>
+          <p className="cg-dialog-help">{t("lobby.otherMatchHelp")}</p>
+          <div className="cg-lobby-row">
+            <button type="button" className="cg-button cg-button--primary" onClick={() => openMatchId(stage.matchId)}>
+              {t("lobby.goToOther")}
+            </button>
+            <button type="button" className="cg-button" onClick={() => void leaveOtherAndJoin(stage.matchId, stage.code)}>
+              {t("lobby.leaveOtherAndJoin")}
+            </button>
+          </div>
+          <Link href="/cards" className="cg-button cg-button--quiet">
+            <GameIcon name="back" size="1.1em" />
+            {t("match.backToMenu")}
+          </Link>
         </div>
-        <Link href="/cards" className="cg-button">
-          {t("match.backToMenu")}
-        </Link>
       </div>
     );
   } else {
@@ -182,28 +188,31 @@ export function LobbyScreen({ initialCode }: { initialCode: string | null }) {
 function LobbyHome({ code, onCode, onCreate, onJoin }: { code: string; onCode: (c: string) => void; onCreate: () => void; onJoin: () => void }) {
   return (
     <div className="cg-lobby-home">
-      <header className="cg-lobby-header">
-        <Link href="/cards" className="cg-button">
-          {t("match.backToMenu")}
-        </Link>
-        <h1 className="cg-lobby-title">{t("lobby.title")}</h1>
-        <span />
-      </header>
+      <ScreenHeader title={t("lobby.title")} icon="play" back={{ href: "/cards" }} />
       <div className="cg-lobby-columns">
-        <section className="cg-panel">
+        <section className="cg-panel cg-lobby-create" aria-labelledby="cg-lobby-create-title">
+          <h2 id="cg-lobby-create-title" className="cg-section-title">
+            <GameIcon name="crown" />
+            {t("lobby.createTitle")}
+          </h2>
           <p className="cg-lobby-help">{t("lobby.createHelp")}</p>
           <button type="button" className="cg-button cg-button--primary cg-button--big" data-haptic="medium" onClick={onCreate}>
+            <GameIcon name="sparkle" size="1em" />
             {t("lobby.create")}
           </button>
         </section>
         <form
-          className="cg-panel"
+          className="cg-panel cg-lobby-join"
+          aria-labelledby="cg-lobby-join-title"
           onSubmit={(e) => {
             e.preventDefault();
             onJoin();
           }}
         >
-          <h2 className="cg-panel-title">{t("lobby.joinTitle")}</h2>
+          <h2 id="cg-lobby-join-title" className="cg-section-title">
+            <GameIcon name="share" />
+            {t("lobby.joinTitle")}
+          </h2>
           <label className="cg-lobby-help" htmlFor="cg-join-code">
             {t("lobby.joinHelp")}
           </label>
@@ -233,12 +242,18 @@ function LobbyHome({ code, onCode, onCreate, onJoin }: { code: string; onCode: (
 }
 
 function SeatRow({ seat, view, mine }: { seat: Seat; view: LobbySeatView | null; mine: boolean }) {
+  const online = !!view?.online;
   return (
-    <li className="cg-seat">
-      <span className={`cg-seat-dot${view?.online ? " cg-seat-dot--on" : ""}`} title={view?.online ? t("lobby.online") : t("lobby.offline")} />
+    <li className={`cg-seat${view ? "" : " cg-seat--empty"}${view?.ready ? " cg-seat--ready" : ""}${mine ? " cg-seat--mine" : ""}`}>
+      <span className="cg-seat-avatar" aria-hidden>
+        {view ? <span className="cg-seat-initial">{view.name.trim().charAt(0).toUpperCase() || "?"}</span> : <GameIcon name="hourglass" />}
+        {view && <span className={`cg-seat-dot${online ? " cg-seat-dot--on" : ""}`} title={online ? t("lobby.online") : t("lobby.offline")} />}
+      </span>
       <span className="cg-seat-who">
         <span className="cg-seat-role">
+          {seat === 0 && <GameIcon name="crown" />}
           {t(seat === 0 ? "lobby.host" : "lobby.guest")} {mine && t("lobby.you")}
+          {view && <span className="cg-sr-only">, {online ? t("lobby.online") : t("lobby.offline")}</span>}
         </span>
         <span className="cg-seat-name">{view ? view.name : t("lobby.waitingGuest")}</span>
       </span>
@@ -256,7 +271,9 @@ function SeatRow({ seat, view, mine }: { seat: Seat; view: LobbySeatView | null;
               <GameIcon name="check" /> {t("lobby.isReady")}
             </>
           ) : (
-            t("lobby.notReadyYet")
+            <>
+              <GameIcon name="hourglass" /> {t("lobby.notReadyYet")}
+            </>
           )}</span>
         </span>
       )}
@@ -313,7 +330,7 @@ function LobbyRoom({ client, onClosed }: { client: MatchClient; onClosed: (messa
 
   const lobby = view?.lobby;
   if (!view || !lobby) {
-    return <div className="cg-center-message">{status && status !== "lobby" ? t("match.loading") : t("lobby.loading")}</div>;
+    return <StateMessage kind="loading" text={status && status !== "lobby" ? t("match.loading") : t("lobby.loading")} fill />;
   }
 
   const me = view.seat === 0 ? lobby.host : lobby.guest;
@@ -330,23 +347,32 @@ function LobbyRoom({ client, onClosed }: { client: MatchClient; onClosed: (messa
 
   return (
     <div className="cg-lobby-room">
-      <header className="cg-lobby-header">
-        <button type="button" className="cg-button" disabled={pending} onClick={() => void leave()}>
-          {t("lobby.leave")}
-        </button>
-        <h1 className="cg-lobby-title">{t("lobby.title")}</h1>
+      <ScreenHeader title={t("lobby.title")} icon="play" back={{ onClick: () => void leave(), label: t("lobby.leave"), disabled: pending }}>
         <ConnectionBadge client={client} />
-      </header>
+      </ScreenHeader>
       <div className="cg-lobby-columns">
-        <section className="cg-panel cg-panel--invite">
+        <section className="cg-panel cg-panel--invite" aria-labelledby="cg-lobby-invite-title">
+          <h2 id="cg-lobby-invite-title" className="cg-section-title">
+            <GameIcon name="share" />
+            {t("lobby.inviteTitle")}
+          </h2>
           <InviteShare code={lobby.code} onNotice={(text, tone) => (tone === "info" ? client.showInfo(text) : client.showError(text))} />
         </section>
         <section className="cg-panel cg-panel--setup">
           <ul className="cg-seats">
             <SeatRow seat={0} view={lobby.host} mine={view.seat === 0} />
+            <li className="cg-seats-vs" aria-hidden>
+              {t("lobby.versus")}
+            </li>
             <SeatRow seat={1} view={lobby.guest} mine={view.seat === 1} />
           </ul>
-          <h2 className="cg-panel-title">{t("lobby.chooseDeck")}</h2>
+          <div className="cg-section-row">
+            <h2 className="cg-section-title">
+              <GameIcon name="decks" />
+              {t("lobby.chooseDeck")}
+            </h2>
+            <EditDecksLink />
+          </div>
           {lastError && (
             <p className="cg-lobby-error" role="alert">
               {lastError.seat === view.seat ? t("lobby.deckGone") : t("lobby.foeDeckGone")}
@@ -356,18 +382,22 @@ function LobbyRoom({ client, onClosed }: { client: MatchClient; onClosed: (messa
             key={lastError ? `gone-${lastError.seat}` : "decks"}
             selected={lobby.myDeck}
             disabled={pending}
+            editLink={false}
             onSelect={(id) => void client.send({ t: "lobby.selectDeck", deck: { kind: "saved", id } })}
           />
           <div className="cg-lobby-ready">
+            {/* The label follows the server-confirmed state; while a command is in flight it reads "Confirmando…". */}
             <button
               type="button"
-              className={`cg-button cg-button--big${ready ? "" : " cg-button--primary"}`}
+              className={`cg-button cg-button--big${ready ? "" : " cg-button--primary"}${pending ? " cg-button--loading" : ""}`}
               data-haptic="medium"
               disabled={pending || !lobby.myDeck}
               aria-pressed={ready}
+              aria-busy={pending}
               onClick={() => void client.send({ t: "lobby.ready", ready: !ready })}
             >
-              {ready ? t("lobby.unready") : t("lobby.ready")}
+              <GameIcon name={pending ? "hourglass" : ready ? "close" : "check"} size="1em" />
+              {pending ? t("lobby.confirming") : ready ? t("lobby.unready") : t("lobby.ready")}
             </button>
             <span className="cg-lobby-help">{lobby.myDeck ? t("lobby.waitingBoth") : t("lobby.pickDeckFirst")}</span>
           </div>

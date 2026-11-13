@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="skeleton-king-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0e0620"/><stop offset="0.55" stop-color="#2c1250"/><stop offset="1" stop-color="#120826"/></linearGradient><radialGradient id="skeleton-king-r1" gradientUnits="userSpaceOnUse" cx="256" cy="170" r="260"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.135"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="skeleton-king-p2" d="M60 128L64 136L72 140L64 144L60 152L56 144L48 140L56 136Z"/><clipPath id="skeleton-king-c3"><use href="#skeleton-king-p2"/></clipPath><clipPath id="skeleton-king-c4"><use href="#skeleton-king-p2" x="-2" y="-2"/></clipPath><path id="skeleton-king-p5" d="M452 128L456 136L464 140L456 144L452 152L448 144L440 140L448 136Z"/><clipPath id="skeleton-king-c6"><use href="#skeleton-king-p5"/></clipPath><clipPath id="skeleton-king-c7"><use href="#skeleton-king-p5" x="-2" y="-2"/></clipPath><linearGradient id="skeleton-king-l8" gradientUnits="userSpaceOnUse" x1="0" y1="362" x2="0" y2="512"><stop offset="0" stop-color="#2c1a52"/><stop offset="1" stop-color="#120826"/></linearGradient><radialGradient id="skeleton-king-r9" gradientUnits="userSpaceOnUse" cx="256" cy="420" r="200"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="skeleton-king-pa" d="M145 298C144 287 136 247 131 230C126 213 116 192 113 186C110 179 112 186 112 186C112 186 110 179 111 186C112 193 115 216 117 233C120 250 124 290 127 302C130 313 135 309 138 309C140 308 146 310 145 298ZM175 299C174 285 168 237 164 216C160 196 151 170 149 162C147 154 148 162 148 162C148 162 147 154 147 162C147 171 149 197 150 218C152 239 155 287 157 301C160 315 164 309 167 309C170 309 175 313 175 299ZM205 299C205 283 200 227 197 202C194 178 187 148 185 138C183 128 184 138 184 138C184 138 183 128 183 138C183 148 182 179 183 203C184 228 185 285 187 301C189 316 194 309 197 309C199 309 205 315 205 299ZM235 300C236 282 232 216 230 188C228 160 222 125 221 114C219 103 220 114 220 114C220 114 220 103 219 114C218 125 216 161 216 189C216 217 215 282 217 300C219 318 224 309 226 309C229 309 234 318 235 300ZM265 300C266 280 264 206 263 174C262 143 258 103 257 90C256 77 256 90 256 90C256 90 256 77 255 90C254 103 250 143 249 174C248 206 246 280 247 300C248 320 253 309 256 309C259 309 264 320 265 300ZM295 300C297 282 296 217 296 189C296 161 294 125 293 114C292 103 292 114 292 114C292 114 293 103 291 114C290 125 284 160 282 188C280 216 276 282 277 300C278 318 283 309 286 309C288 309 293 318 295 300ZM325 301C327 285 328 228 329 203C330 179 329 148 329 138C329 128 328 138 328 138C328 138 329 128 327 138C325 148 318 178 315 202C312 227 307 283 307 299C307 315 313 309 315 309C318 309 323 316 325 301ZM355 301C357 287 360 239 362 218C363 197 365 171 365 162C365 154 364 162 364 162C364 162 365 154 363 162C361 170 352 196 348 216C344 237 338 285 337 299C337 313 342 309 345 309C348 309 352 315 355 301ZM385 302C388 290 392 250 395 233C397 216 400 193 401 186C402 179 400 186 400 186C400 186 402 179 399 186C396 192 386 213 381 230C376 247 368 287 367 298C366 310 372 308 374 309C377 309 382 313 385 302Z"/><clipPath id="skeleton-king-cb"><use href="#skeleton-king-pa"/></clipPath><clipPath id="skeleton-king-cc"><use href="#skeleton-king-pa" x="-3" y="-3"/></clipPath><path id="skeleton-king-pd" d="M150 400L160 250L352 250L362 400Z"/><clipPath id="skeleton-king-ce"><use href="#skeleton-king-pd"/></clipPath><clipPath id="skeleton-king-cf"><use href="#skeleton-king-pd" x="-10" y="-10"/></clipPath><path id="skeleton-king-pg" d="M124 248C123 243 125 235 128 232C132 228 141 226 146 226C151 226 160 228 164 232C167 235 169 243 168 248C167 253 164 260 159 262C154 264 138 264 133 262C128 260 125 253 124 248Z"/><clipPath id="skeleton-king-ch"><use href="#skeleton-king-pg"/></clipPath><clipPath id="skeleton-king-ci"><use href="#skeleton-king-pg" x="-5.5" y="-5.5"/></clipPath><radialGradient id="skeleton-king-rj" gradientUnits="userSpaceOnUse" cx="146" cy="247" r="24"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="skeleton-king-pk" d="M344 248C343 243 345 235 348 232C352 228 361 226 366 226C371 226 380 228 384 232C387 235 389 243 388 248C387 253 384 260 379 262C374 264 358 264 353 262C348 260 345 253 344 248Z"/><clipPath id="skeleton-king-cl"><use href="#skeleton-king-pk"/></clipPath><clipPath id="skeleton-king-cm"><use href="#skeleton-king-pk" x="-5.5" y="-5.5"/></clipPath><radialGradient id="skeleton-king-rn" gradientUnits="userSpaceOnUse" cx="366" cy="247" r="24"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="skeleton-king-po" d="M192 214C170 260 160 340 170 400L342 400C352 340 342 260 320 214L256 230Z"/><clipPath id="skeleton-king-cp"><use href="#skeleton-king-po"/></clipPath><clipPath id="skeleton-king-cq"><use href="#skeleton-king-po" x="-12" y="-10"/></clipPath><path id="skeleton-king-pr" d="M232 396L200 398L200 410L236 410ZM280 396L312 398L312 410L276 410Z"/><clipPath id="skeleton-king-cs"><use href="#skeleton-king-pr"/></clipPath><clipPath id="skeleton-king-ct"><use href="#skeleton-king-pr" x="-2" y="-2"/></clipPath><path id="skeleton-king-pu" d="M222 236C227 225 246 226 256 226C266 226 285 225 290 236C295 247 297 288 292 300C287 312 267 316 256 316C245 316 225 312 220 300C215 288 217 247 222 236Z"/><clipPath id="skeleton-king-cv"><use href="#skeleton-king-pu"/></clipPath><clipPath id="skeleton-king-cw"><use href="#skeleton-king-pu" x="-8" y="-8"/></clipPath><path id="skeleton-king-px" d="M243 282A13 13 0 1 0 269 282A13 13 0 1 0 243 282Z"/><clipPath id="skeleton-king-cy"><use href="#skeleton-king-px"/></clipPath><clipPath id="skeleton-king-cz"><use href="#skeleton-king-px" x="-4" y="-4"/></clipPath><path id="skeleton-king-p10" d="M176 218C179 212 199 201 210 200C221 199 244 214 256 214C268 214 291 199 302 200C313 201 333 212 336 218C339 224 333 242 322 244C311 246 274 236 256 236C238 236 201 246 190 244C179 242 173 224 176 218Z"/><clipPath id="skeleton-king-c11"><use href="#skeleton-king-p10"/></clipPath><clipPath id="skeleton-king-c12"><use href="#skeleton-king-p10" x="-6" y="-6"/></clipPath><path id="skeleton-king-p13" d="M191 228C186 236 167 274 163 284C159 293 164 290 166 291C167 291 167 297 173 288C178 280 197 242 201 232C205 223 200 226 198 225C197 225 197 219 191 228ZM185 228A6 6 0 1 0 198 228A6 6 0 1 0 185 228ZM194 232A6 6 0 1 0 207 232A6 6 0 1 0 194 232ZM157 284A6 6 0 1 0 170 284A6 6 0 1 0 157 284ZM166 288A6 6 0 1 0 179 288A6 6 0 1 0 166 288Z"/><clipPath id="skeleton-king-c14"><use href="#skeleton-king-p13"/></clipPath><clipPath id="skeleton-king-c15"><use href="#skeleton-king-p13" x="-3" y="-3"/></clipPath><path id="skeleton-king-p16" d="M172 286C170 279 158 252 154 246C151 240 149 243 148 244C147 244 143 243 146 250C148 257 160 284 164 290C167 296 169 293 170 292C171 292 175 293 172 286ZM166 286A5 5 0 1 0 177 286A5 5 0 1 0 166 286ZM159 290A5 5 0 1 0 170 290A5 5 0 1 0 159 290ZM148 246A5 5 0 1 0 159 246A5 5 0 1 0 148 246ZM141 250A5 5 0 1 0 152 250A5 5 0 1 0 141 250Z"/><clipPath id="skeleton-king-c17"><use href="#skeleton-king-p16"/></clipPath><clipPath id="skeleton-king-c18"><use href="#skeleton-king-p16" x="-3" y="-3"/></clipPath><path id="skeleton-king-p19" d="M137 236A11 10 0 1 0 159 236A11 10 0 1 0 137 236Z"/><clipPath id="skeleton-king-c1a"><use href="#skeleton-king-p19"/></clipPath><clipPath id="skeleton-king-c1b"><use href="#skeleton-king-p19" x="-3" y="-3"/></clipPath><path id="skeleton-king-p1c" d="M381 404C381 367 377 197 375 160C373 123 371 155 370 155C368 155 365 123 365 160C365 197 369 367 371 404C373 441 375 409 376 409C378 409 381 441 381 404Z"/><clipPath id="skeleton-king-c1d"><use href="#skeleton-king-p1c"/></clipPath><clipPath id="skeleton-king-c1e"><use href="#skeleton-king-p1c" x="-3" y="-3"/></clipPath><radialGradient id="skeleton-king-r1f" gradientUnits="userSpaceOnUse" cx="368" cy="136" r="46"><stop offset="0" stop-color="#c77dff" stop-opacity="0.8"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="skeleton-king-p1g" d="M350 136C349 132 351 125 354 123C356 120 364 118 368 118C372 118 380 120 382 123C385 125 387 132 386 136C385 140 383 145 379 147C374 149 362 149 357 147C353 145 351 140 350 136Z"/><clipPath id="skeleton-king-c1h"><use href="#skeleton-king-p1g"/></clipPath><clipPath id="skeleton-king-c1i"><use href="#skeleton-king-p1g" x="-4.5" y="-4.5"/></clipPath><radialGradient id="skeleton-king-r1j" gradientUnits="userSpaceOnUse" cx="368" cy="135" r="20"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="skeleton-king-p1k" d="M311 233C316 241 336 275 341 283C347 290 347 285 349 285C350 284 355 286 351 277C346 269 326 235 321 227C315 220 315 225 313 225C312 226 307 224 311 233ZM306 232A6 6 0 1 0 318 232A6 6 0 1 0 306 232ZM314 228A6 6 0 1 0 326 228A6 6 0 1 0 314 228ZM336 282A6 6 0 1 0 348 282A6 6 0 1 0 336 282ZM344 278A6 6 0 1 0 356 278A6 6 0 1 0 344 278Z"/><clipPath id="skeleton-king-c1l"><use href="#skeleton-king-p1k"/></clipPath><clipPath id="skeleton-king-c1m"><use href="#skeleton-king-p1k" x="-3" y="-3"/></clipPath><path id="skeleton-king-p1n" d="M349 285C353 282 366 269 369 265C372 261 370 260 369 259C368 258 367 256 363 259C359 262 346 275 343 279C340 283 342 284 343 285C344 286 345 288 349 285ZM343 285A5 5 0 1 0 354 285A5 5 0 1 0 343 285ZM338 279A5 5 0 1 0 349 279A5 5 0 1 0 338 279ZM363 265A5 5 0 1 0 374 265A5 5 0 1 0 363 265ZM358 259A5 5 0 1 0 369 259A5 5 0 1 0 358 259Z"/><clipPath id="skeleton-king-c1o"><use href="#skeleton-king-p1n"/></clipPath><clipPath id="skeleton-king-c1p"><use href="#skeleton-king-p1n" x="-3" y="-3"/></clipPath><path id="skeleton-king-p1q" d="M359 260A11 12 0 1 0 381 260A11 12 0 1 0 359 260Z"/><clipPath id="skeleton-king-c1r"><use href="#skeleton-king-p1q"/></clipPath><clipPath id="skeleton-king-c1s"><use href="#skeleton-king-p1q" x="-3" y="-3"/></clipPath><path id="skeleton-king-p1t" d="M216 170C215 162 218 146 224 140C230 134 246 130 256 130C266 130 282 134 288 140C294 146 297 162 296 170C295 178 290 191 280 195C270 199 242 199 232 195C222 191 217 178 216 170Z"/><clipPath id="skeleton-king-c1u"><use href="#skeleton-king-p1t"/></clipPath><clipPath id="skeleton-king-c1v"><use href="#skeleton-king-p1t" x="-10" y="-10"/></clipPath><radialGradient id="skeleton-king-r1w" gradientUnits="userSpaceOnUse" cx="256" cy="168" r="44"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="skeleton-king-p1x" d="M206 140L214 76L234 112L256 60L278 112L298 76L306 140C276 130 236 130 206 140Z"/><clipPath id="skeleton-king-c1y"><use href="#skeleton-king-p1x"/></clipPath><clipPath id="skeleton-king-c1z"><use href="#skeleton-king-p1x" x="-8" y="-8"/></clipPath><path id="skeleton-king-p20" d="M249 118A7 7 0 1 0 263 118A7 7 0 1 0 249 118Z"/><clipPath id="skeleton-king-c21"><use href="#skeleton-king-p20"/></clipPath><clipPath id="skeleton-king-c22"><use href="#skeleton-king-p20" x="-2" y="-2"/></clipPath><path id="skeleton-king-p23" d="M221 126A7 7 0 1 0 235 126A7 7 0 1 0 221 126Z"/><clipPath id="skeleton-king-c24"><use href="#skeleton-king-p23"/></clipPath><clipPath id="skeleton-king-c25"><use href="#skeleton-king-p23" x="-2" y="-2"/></clipPath><path id="skeleton-king-p26" d="M277 126A7 7 0 1 0 291 126A7 7 0 1 0 277 126Z"/><clipPath id="skeleton-king-c27"><use href="#skeleton-king-p26"/></clipPath><clipPath id="skeleton-king-c28"><use href="#skeleton-king-p26" x="-2" y="-2"/></clipPath><radialGradient id="skeleton-king-r29" gradientUnits="userSpaceOnUse" cx="104" cy="392" r="38"><stop offset="0" stop-color="#c77dff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.27"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="skeleton-king-p2a" d="M85 392C84 388 86 381 89 378C92 375 99 373 104 373C109 373 116 375 119 378C122 381 124 388 123 392C122 396 120 402 115 404C111 406 97 406 93 404C88 402 86 396 85 392Z"/><clipPath id="skeleton-king-c2b"><use href="#skeleton-king-p2a"/></clipPath><clipPath id="skeleton-king-c2c"><use href="#skeleton-king-p2a" x="-4.75" y="-4.75"/></clipPath><radialGradient id="skeleton-king-r2d" gradientUnits="userSpaceOnUse" cx="104" cy="391" r="21"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="skeleton-king-r2e" gradientUnits="userSpaceOnUse" cx="176" cy="410" r="32"><stop offset="0" stop-color="#c77dff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.27"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="skeleton-king-p2f" d="M160 410C160 407 161 400 163 398C166 396 172 394 176 394C180 394 186 396 189 398C191 400 192 407 192 410C192 413 189 418 186 420C182 421 170 421 166 420C163 418 160 413 160 410Z"/><clipPath id="skeleton-king-c2g"><use href="#skeleton-king-p2f"/></clipPath><clipPath id="skeleton-king-c2h"><use href="#skeleton-king-p2f" x="-4" y="-4"/></clipPath><radialGradient id="skeleton-king-r2i" gradientUnits="userSpaceOnUse" cx="176" cy="409" r="18"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="skeleton-king-r2j" gradientUnits="userSpaceOnUse" cx="336" cy="410" r="32"><stop offset="0" stop-color="#c77dff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.27"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="skeleton-king-p2k" d="M320 410C320 407 321 400 323 398C326 396 332 394 336 394C340 394 346 396 349 398C351 400 352 407 352 410C352 413 349 418 346 420C342 421 330 421 326 420C323 418 320 413 320 410Z"/><clipPath id="skeleton-king-c2l"><use href="#skeleton-king-p2k"/></clipPath><clipPath id="skeleton-king-c2m"><use href="#skeleton-king-p2k" x="-4" y="-4"/></clipPath><radialGradient id="skeleton-king-r2n" gradientUnits="userSpaceOnUse" cx="336" cy="409" r="18"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="skeleton-king-r2o" gradientUnits="userSpaceOnUse" cx="408" cy="392" r="38"><stop offset="0" stop-color="#c77dff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.27"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="skeleton-king-p2p" d="M389 392C388 388 390 381 393 378C396 375 403 373 408 373C413 373 420 375 423 378C426 381 428 388 427 392C426 396 424 402 419 404C415 406 401 406 397 404C392 402 390 396 389 392Z"/><clipPath id="skeleton-king-c2q"><use href="#skeleton-king-p2p"/></clipPath><clipPath id="skeleton-king-c2r"><use href="#skeleton-king-p2p" x="-4.75" y="-4.75"/></clipPath><radialGradient id="skeleton-king-r2s" gradientUnits="userSpaceOnUse" cx="408" cy="391" r="21"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#skeleton-king-l0)"/>
+<circle cx="256" cy="170" r="260" fill="url(#skeleton-king-r1)"/>
+<path d="M30 512L30 80L90 80L90 512Z" fill="#160a2e"/>
+<path d="M38 90L82 90L82 230L60 210L38 230Z" fill="#640c1e"/>
+<use href="#skeleton-king-p2" fill="#a8742a" stroke-width="6"/>
+<g clip-path="url(#skeleton-king-c3)">
+<use href="#skeleton-king-p2" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#skeleton-king-c4)"><use href="#skeleton-king-p2" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<path d="M422 512L422 80L482 80L482 512Z" fill="#160a2e"/>
+<path d="M430 90L474 90L474 230L452 210L430 230Z" fill="#640c1e"/>
+<use href="#skeleton-king-p5" fill="#a8742a" stroke-width="6"/>
+<g clip-path="url(#skeleton-king-c6)">
+<use href="#skeleton-king-p5" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#skeleton-king-c7)"><use href="#skeleton-king-p5" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<path d="M0 398Q256 362 512 398V512H0Z" fill="url(#skeleton-king-l8)"/>
+<ellipse cx="256" cy="420" rx="200" ry="56" fill="url(#skeleton-king-r9)"/>
+<g transform="translate(256 410) scale(0.9) translate(-256 -410)">
+<use href="#skeleton-king-pa" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-cb)">
+<use href="#skeleton-king-pa" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-pa" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-cc)"><use href="#skeleton-king-pa" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-pd" fill="#221a36" stroke-width="12"/>
+<g clip-path="url(#skeleton-king-ce)">
+<use href="#skeleton-king-pd" x="-10" y="-10" fill="#52466e"/>
+<g clip-path="url(#skeleton-king-cf)"><use href="#skeleton-king-pd" x="7" y="7" fill="#3a2e52"/></g>
+</g>
+<use href="#skeleton-king-pg" fill="#ff9f1c" stroke-width="8.8"/>
+<g clip-path="url(#skeleton-king-ch)">
+<use href="#skeleton-king-pg" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-pg" x="-5.5" y="-5.5" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-ci)"><use href="#skeleton-king-pg" x="3.6666666666666665" y="3.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M137 261h18v7h-18Z" fill="#9a8a66" stroke-width="4"/>
+<circle cx="146" cy="247" r="24" fill="url(#skeleton-king-rj)"/>
+<path d="M131 248A6 7 0 1 0 143 248A6 7 0 1 0 131 248ZM149 248A6 7 0 1 0 161 248A6 7 0 1 0 149 248ZM146 253l3 5h-5Z" fill="#1d0842"/>
+<path d="M135 248A2 2 0 1 0 139 248A2 2 0 1 0 135 248ZM153 248A2 2 0 1 0 157 248A2 2 0 1 0 153 248Z" fill="#ffbe0b"/>
+<use href="#skeleton-king-pk" fill="#ff9f1c" stroke-width="8.8"/>
+<g clip-path="url(#skeleton-king-cl)">
+<use href="#skeleton-king-pk" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-pk" x="-5.5" y="-5.5" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-cm)"><use href="#skeleton-king-pk" x="3.6666666666666665" y="3.6666666666666665" fill="#d8cba6"/></g>
+</g>
+<path d="M357 261h18v7h-18Z" fill="#9a8a66" stroke-width="4"/>
+<circle cx="366" cy="247" r="24" fill="url(#skeleton-king-rn)"/>
+<path d="M351 248A6 7 0 1 0 363 248A6 7 0 1 0 351 248ZM369 248A6 7 0 1 0 381 248A6 7 0 1 0 369 248ZM366 253l3 5h-5Z" fill="#1d0842"/>
+<path d="M355 248A2 2 0 1 0 359 248A2 2 0 1 0 355 248ZM373 248A2 2 0 1 0 377 248A2 2 0 1 0 373 248Z" fill="#ffbe0b"/>
+<ellipse cx="256" cy="410" rx="150" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#skeleton-king-po" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#skeleton-king-cp)">
+<use href="#skeleton-king-po" x="-5" fill="#640c1e"/>
+<use href="#skeleton-king-po" x="-12" y="-10" fill="#d6304c"/>
+<g clip-path="url(#skeleton-king-cq)"><use href="#skeleton-king-po" x="7" y="7" fill="#a3172f"/></g>
+</g>
+<path d="M206 260C200 310 200 360 206 396M306 260C312 310 312 360 306 396" fill="none" stroke-width="4" stroke-opacity="0.45"/>
+<use href="#skeleton-king-pr" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-cs)">
+<use href="#skeleton-king-pr" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-pr" x="-2" y="-2" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-ct)"><use href="#skeleton-king-pr" x="1" y="1" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-pu" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#skeleton-king-cv)">
+<use href="#skeleton-king-pu" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-pu" x="-8" y="-8" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-cw)"><use href="#skeleton-king-pu" x="7" y="7" fill="#d8cba6"/></g>
+</g>
+<path d="M228 252C244 246 268 246 284 252M226 270C244 264 268 264 286 270M230 288C246 282 266 282 282 288M256 232V312" fill="none" stroke-width="5"/>
+<path d="M220 240C236 280 276 280 292 240" fill="none" stroke="#f2c14e" stroke-width="5"/>
+<use href="#skeleton-king-px" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-cy)">
+<use href="#skeleton-king-px" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#skeleton-king-cz)"><use href="#skeleton-king-px" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<path d="M251 282A5 5 0 1 0 261 282A5 5 0 1 0 251 282Z" fill="#ff4d6d"/>
+<use href="#skeleton-king-p10" fill="#bdb3a2" stroke-width="12"/>
+<g clip-path="url(#skeleton-king-c11)">
+<use href="#skeleton-king-p10" x="-6" y="-6" fill="#ffffff"/>
+<g clip-path="url(#skeleton-king-c12)"><use href="#skeleton-king-p10" x="4" y="4" fill="#f4efe6"/></g>
+</g>
+<path d="M193 222A3 5 0 1 0 199 222A3 5 0 1 0 193 222Z" fill="#1d0842"/>
+<path d="M223 222A3 5 0 1 0 229 222A3 5 0 1 0 223 222Z" fill="#1d0842"/>
+<path d="M283 222A3 5 0 1 0 289 222A3 5 0 1 0 283 222Z" fill="#1d0842"/>
+<path d="M313 222A3 5 0 1 0 319 222A3 5 0 1 0 313 222Z" fill="#1d0842"/>
+<use href="#skeleton-king-p13" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c14)">
+<use href="#skeleton-king-p13" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p13" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c15)"><use href="#skeleton-king-p13" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-p16" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c17)">
+<use href="#skeleton-king-p16" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p16" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c18)"><use href="#skeleton-king-p16" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-p19" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c1a)">
+<use href="#skeleton-king-p19" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p19" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c1b)"><use href="#skeleton-king-p19" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-p1c" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c1d)">
+<use href="#skeleton-king-p1c" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#skeleton-king-c1e)"><use href="#skeleton-king-p1c" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<circle cx="368" cy="136" r="46" fill="url(#skeleton-king-r1f)"/>
+<use href="#skeleton-king-p1g" fill="#ff9f1c" stroke-width="7.2"/>
+<g clip-path="url(#skeleton-king-c1h)">
+<use href="#skeleton-king-p1g" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p1g" x="-4.5" y="-4.5" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c1i)"><use href="#skeleton-king-p1g" x="3" y="3" fill="#d8cba6"/></g>
+</g>
+<path d="M360 147h15v6h-15Z" fill="#9a8a66" stroke-width="4"/>
+<circle cx="368" cy="135" r="20" fill="url(#skeleton-king-r1j)"/>
+<path d="M356 136A5 5 0 1 0 366 136A5 5 0 1 0 356 136ZM370 136A5 5 0 1 0 380 136A5 5 0 1 0 370 136ZM368 140l2 4h-4Z" fill="#1d0842"/>
+<path d="M359 136A2 2 0 1 0 363 136A2 2 0 1 0 359 136ZM373 136A2 2 0 1 0 377 136A2 2 0 1 0 373 136Z" fill="#c77dff"/>
+<use href="#skeleton-king-p1k" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c1l)">
+<use href="#skeleton-king-p1k" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p1k" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c1m)"><use href="#skeleton-king-p1k" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-p1n" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c1o)">
+<use href="#skeleton-king-p1n" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p1n" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c1p)"><use href="#skeleton-king-p1n" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-p1q" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#skeleton-king-c1r)">
+<use href="#skeleton-king-p1q" x="-3" fill="#9a8a66"/>
+<use href="#skeleton-king-p1q" x="-3" y="-3" fill="#f5ecd0"/>
+<g clip-path="url(#skeleton-king-c1s)"><use href="#skeleton-king-p1q" x="2" y="2" fill="#d8cba6"/></g>
+</g>
+<use href="#skeleton-king-p1t" fill="#ff9f1c" stroke-width="16"/>
+<g clip-path="url(#skeleton-king-c1u)">
+<use href="#skeleton-king-p1t" x="-4" fill="#a89f8a"/>
+<use href="#skeleton-king-p1t" x="-10" y="-10" fill="#fffaf0"/>
+<g clip-path="url(#skeleton-king-c1v)"><use href="#skeleton-king-p1t" x="6.666666666666667" y="6.666666666666667" fill="#e9e2cf"/></g>
+</g>
+<path d="M239 194h34v13h-34Z" fill="#a89f8a" stroke-width="8"/>
+<circle cx="256" cy="168" r="44" fill="url(#skeleton-king-r1w)"/>
+<path d="M229 170A11 12 0 1 0 251 170A11 12 0 1 0 229 170ZM261 170A11 12 0 1 0 283 170A11 12 0 1 0 261 170ZM256 179l5 9h-10Z" fill="#1d0842"/>
+<path d="M236 170A4 4 0 1 0 244 170A4 4 0 1 0 236 170ZM268 170A4 4 0 1 0 276 170A4 4 0 1 0 268 170Z" fill="#ffbe0b"/>
+<path d="M282 150L274 166L284 176" fill="none" stroke-width="3.5" stroke-opacity="0.6"/>
+<use href="#skeleton-king-p1x" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#skeleton-king-c1y)">
+<use href="#skeleton-king-p1x" x="-4" fill="#a8742a"/>
+<use href="#skeleton-king-p1x" x="-8" y="-8" fill="#fff1c1"/>
+<g clip-path="url(#skeleton-king-c1z)"><use href="#skeleton-king-p1x" x="5" y="5" fill="#f2c14e"/></g>
+</g>
+<use href="#skeleton-king-p20" fill="#1d0842" stroke-width="6"/>
+<g clip-path="url(#skeleton-king-c21)">
+<use href="#skeleton-king-p20" x="-2" y="-2" fill="#ffffff"/>
+<g clip-path="url(#skeleton-king-c22)"><use href="#skeleton-king-p20" x="1" y="1" fill="#ff4d6d"/></g>
+</g>
+<use href="#skeleton-king-p23" fill="#1d0842" stroke-width="6"/>
+<g clip-path="url(#skeleton-king-c24)">
+<use href="#skeleton-king-p23" x="-2" y="-2" fill="#ffffff"/>
+<g clip-path="url(#skeleton-king-c25)"><use href="#skeleton-king-p23" x="1" y="1" fill="#3fa9ff"/></g>
+</g>
+<use href="#skeleton-king-p26" fill="#1d0842" stroke-width="6"/>
+<g clip-path="url(#skeleton-king-c27)">
+<use href="#skeleton-king-p26" x="-2" y="-2" fill="#ffffff"/>
+<g clip-path="url(#skeleton-king-c28)"><use href="#skeleton-king-p26" x="1" y="1" fill="#3fa9ff"/></g>
+</g>
+<path d="M209 76A5 5 0 1 0 219 76A5 5 0 1 0 209 76Z" fill="#fff1c1"/>
+<path d="M251 60A5 5 0 1 0 261 60A5 5 0 1 0 251 60Z" fill="#fff1c1"/>
+<path d="M293 76A5 5 0 1 0 303 76A5 5 0 1 0 293 76Z" fill="#fff1c1"/>
+</g>
+<circle cx="104" cy="392" r="38" fill="url(#skeleton-king-r29)"/>
+<use href="#skeleton-king-p2a" fill="#c77dff" stroke-width="7.6"/>
+<g clip-path="url(#skeleton-king-c2b)">
+<use href="#skeleton-king-p2a" x="-4" fill="#a89f8a"/>
+<use href="#skeleton-king-p2a" x="-4.75" y="-4.75" fill="#fffaf0"/>
+<g clip-path="url(#skeleton-king-c2c)"><use href="#skeleton-king-p2a" x="3.1666666666666665" y="3.1666666666666665" fill="#e9e2cf"/></g>
+</g>
+<path d="M96 403h16v6h-16Z" fill="#a89f8a" stroke-width="4"/>
+<circle cx="104" cy="391" r="21" fill="url(#skeleton-king-r2d)"/>
+<path d="M91 392A5 6 0 1 0 102 392A5 6 0 1 0 91 392ZM106 392A5 6 0 1 0 117 392A5 6 0 1 0 106 392ZM104 396l2 4h-5Z" fill="#1d0842"/>
+<path d="M95 392A2 2 0 1 0 98 392A2 2 0 1 0 95 392ZM110 392A2 2 0 1 0 114 392A2 2 0 1 0 110 392Z" fill="#c77dff"/>
+<circle cx="176" cy="410" r="32" fill="url(#skeleton-king-r2e)"/>
+<use href="#skeleton-king-p2f" fill="#c77dff" stroke-width="6.4"/>
+<g clip-path="url(#skeleton-king-c2g)">
+<use href="#skeleton-king-p2f" x="-4" fill="#a89f8a"/>
+<use href="#skeleton-king-p2f" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#skeleton-king-c2h)"><use href="#skeleton-king-p2f" x="2.6666666666666665" y="2.6666666666666665" fill="#e9e2cf"/></g>
+</g>
+<path d="M169 420h13v5h-13Z" fill="#a89f8a" stroke-width="3"/>
+<circle cx="176" cy="409" r="18" fill="url(#skeleton-king-r2i)"/>
+<path d="M165 410A4 5 0 1 0 174 410A4 5 0 1 0 165 410ZM178 410A4 5 0 1 0 187 410A4 5 0 1 0 178 410ZM176 414l2 4h-4Z" fill="#1d0842"/>
+<path d="M168 410A2 2 0 1 0 171 410A2 2 0 1 0 168 410ZM181 410A2 2 0 1 0 184 410A2 2 0 1 0 181 410Z" fill="#c77dff"/>
+<circle cx="336" cy="410" r="32" fill="url(#skeleton-king-r2j)"/>
+<use href="#skeleton-king-p2k" fill="#c77dff" stroke-width="6.4"/>
+<g clip-path="url(#skeleton-king-c2l)">
+<use href="#skeleton-king-p2k" x="-4" fill="#a89f8a"/>
+<use href="#skeleton-king-p2k" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#skeleton-king-c2m)"><use href="#skeleton-king-p2k" x="2.6666666666666665" y="2.6666666666666665" fill="#e9e2cf"/></g>
+</g>
+<path d="M329 420h13v5h-13Z" fill="#a89f8a" stroke-width="3"/>
+<circle cx="336" cy="409" r="18" fill="url(#skeleton-king-r2n)"/>
+<path d="M325 410A4 5 0 1 0 334 410A4 5 0 1 0 325 410ZM338 410A4 5 0 1 0 347 410A4 5 0 1 0 338 410ZM336 414l2 4h-4Z" fill="#1d0842"/>
+<path d="M328 410A2 2 0 1 0 331 410A2 2 0 1 0 328 410ZM341 410A2 2 0 1 0 344 410A2 2 0 1 0 341 410Z" fill="#c77dff"/>
+<circle cx="408" cy="392" r="38" fill="url(#skeleton-king-r2o)"/>
+<use href="#skeleton-king-p2p" fill="#c77dff" stroke-width="7.6"/>
+<g clip-path="url(#skeleton-king-c2q)">
+<use href="#skeleton-king-p2p" x="-4" fill="#a89f8a"/>
+<use href="#skeleton-king-p2p" x="-4.75" y="-4.75" fill="#fffaf0"/>
+<g clip-path="url(#skeleton-king-c2r)"><use href="#skeleton-king-p2p" x="3.1666666666666665" y="3.1666666666666665" fill="#e9e2cf"/></g>
+</g>
+<path d="M400 403h16v6h-16Z" fill="#a89f8a" stroke-width="4"/>
+<circle cx="408" cy="391" r="21" fill="url(#skeleton-king-r2s)"/>
+<path d="M395 392A5 6 0 1 0 406 392A5 6 0 1 0 395 392ZM410 392A5 6 0 1 0 421 392A5 6 0 1 0 410 392ZM408 396l2 4h-5Z" fill="#1d0842"/>
+<path d="M399 392A2 2 0 1 0 402 392A2 2 0 1 0 399 392ZM414 392A2 2 0 1 0 418 392A2 2 0 1 0 414 392Z" fill="#c77dff"/>
+</svg>

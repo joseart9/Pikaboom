@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="larval-drake-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#200a10"/><stop offset="0.55" stop-color="#4a1a1a"/><stop offset="1" stop-color="#1a0808"/></linearGradient><radialGradient id="larval-drake-r1" gradientUnits="userSpaceOnUse" cx="256" cy="300" r="240"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.35"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.1575"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><linearGradient id="larval-drake-l2" gradientUnits="userSpaceOnUse" x1="0" y1="332" x2="0" y2="512"><stop offset="0" stop-color="#4a1e14"/><stop offset="1" stop-color="#1e0a0a"/></linearGradient><radialGradient id="larval-drake-r3" gradientUnits="userSpaceOnUse" cx="256" cy="390" r="190"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="larval-drake-p4" d="M117 390L104 399L86 401L72 390L84 377L105 380Z"/><clipPath id="larval-drake-c5"><use href="#larval-drake-p4"/></clipPath><clipPath id="larval-drake-c6"><use href="#larval-drake-p4" x="-3" y="-3"/></clipPath><path id="larval-drake-p7" d="M126 381L113 391L95 391L84 381L92 368L114 369Z"/><clipPath id="larval-drake-c8"><use href="#larval-drake-p7"/></clipPath><clipPath id="larval-drake-c9"><use href="#larval-drake-p7" x="-3" y="-3"/></clipPath><path id="larval-drake-pa" d="M148 372L135 382L117 383L110 372L116 360L136 361Z"/><clipPath id="larval-drake-cb"><use href="#larval-drake-pa"/></clipPath><clipPath id="larval-drake-cc"><use href="#larval-drake-pa" x="-3" y="-3"/></clipPath><path id="larval-drake-pd" d="M185 366L171 376L153 376L145 366L153 356L172 354Z"/><clipPath id="larval-drake-ce"><use href="#larval-drake-pd"/></clipPath><clipPath id="larval-drake-cf"><use href="#larval-drake-pd" x="-3" y="-3"/></clipPath><path id="larval-drake-pg" d="M228 361L218 374L198 371L186 361L198 352L217 350Z"/><clipPath id="larval-drake-ch"><use href="#larval-drake-pg"/></clipPath><clipPath id="larval-drake-ci"><use href="#larval-drake-pg" x="-3" y="-3"/></clipPath><path id="larval-drake-pj" d="M276 360L264 369L245 372L238 360L246 349L264 351Z"/><clipPath id="larval-drake-ck"><use href="#larval-drake-pj"/></clipPath><clipPath id="larval-drake-cl"><use href="#larval-drake-pj" x="-3" y="-3"/></clipPath><path id="larval-drake-pm" d="M322 361L314 371L294 375L284 361L295 350L315 351Z"/><clipPath id="larval-drake-cn"><use href="#larval-drake-pm"/></clipPath><clipPath id="larval-drake-co"><use href="#larval-drake-pm" x="-3" y="-3"/></clipPath><path id="larval-drake-pp" d="M367 366L361 378L341 376L328 366L340 354L360 355Z"/><clipPath id="larval-drake-cq"><use href="#larval-drake-pp"/></clipPath><clipPath id="larval-drake-cr"><use href="#larval-drake-pp" x="-3" y="-3"/></clipPath><path id="larval-drake-ps" d="M403 372L397 385L377 382L363 372L375 360L396 360Z"/><clipPath id="larval-drake-ct"><use href="#larval-drake-ps"/></clipPath><clipPath id="larval-drake-cu"><use href="#larval-drake-ps" x="-3" y="-3"/></clipPath><path id="larval-drake-pv" d="M428 381L420 394L397 393L386 381L398 370L418 370Z"/><clipPath id="larval-drake-cw"><use href="#larval-drake-pv"/></clipPath><clipPath id="larval-drake-cx"><use href="#larval-drake-pv" x="-3" y="-3"/></clipPath><path id="larval-drake-py" d="M436 390L426 401L406 402L395 390L405 377L426 379Z"/><clipPath id="larval-drake-cz"><use href="#larval-drake-py"/></clipPath><clipPath id="larval-drake-c10"><use href="#larval-drake-py" x="-3" y="-3"/></clipPath><radialGradient id="larval-drake-r11" gradientUnits="userSpaceOnUse" cx="256" cy="390" r="120"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.6"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.27"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><path id="larval-drake-p12" d="M150 380C140 300 176 240 232 232L250 260L268 236L290 270L312 240C352 260 370 320 362 380Z"/><clipPath id="larval-drake-c13"><use href="#larval-drake-p12"/></clipPath><clipPath id="larval-drake-c14"><use href="#larval-drake-p12" x="-12" y="-10"/></clipPath><path id="larval-drake-p15" d="M333 392C344 386 372 369 379 352C385 336 384 299 376 281C368 263 342 240 325 232C309 224 279 224 264 227C250 231 232 246 231 256C230 265 249 283 260 289C270 294 290 289 299 292C308 295 315 304 320 311C324 317 331 327 329 336C327 344 310 359 307 368C304 376 304 389 308 393C312 397 322 398 333 392Z"/><clipPath id="larval-drake-c16"><use href="#larval-drake-p15"/></clipPath><clipPath id="larval-drake-c17"><use href="#larval-drake-p15" x="-10" y="-10"/></clipPath><path id="larval-drake-p18" d="M316 381C322 376 342 361 346 349C350 337 348 312 343 300C338 289 320 276 313 272C306 268 297 270 294 273C292 276 292 286 295 292C299 297 313 304 317 312C321 320 324 334 322 343C320 352 306 365 304 371C301 377 303 381 305 382C307 384 310 386 316 381Z"/><clipPath id="larval-drake-c19"><use href="#larval-drake-p18"/></clipPath><clipPath id="larval-drake-c1a"><use href="#larval-drake-p18" x="-4" y="-4"/></clipPath><path id="larval-drake-p1b" d="M355 324C359 323 368 316 370 315C372 313 370 314 370 314C370 314 372 313 370 313C367 313 356 311 353 312C349 313 348 318 348 319C349 321 352 324 355 324ZM352 297C355 294 361 283 363 281C364 278 362 280 362 280C362 280 364 278 361 279C359 280 347 285 344 287C341 290 342 295 343 296C345 297 349 299 352 297ZM337 273C339 270 340 257 341 254C341 252 340 254 340 254C340 254 341 252 339 254C337 256 328 264 327 267C325 271 328 275 329 275C331 276 336 276 337 273ZM314 257C315 253 312 241 311 238C310 235 310 238 310 238C310 238 310 235 309 238C308 240 302 252 302 255C302 259 306 262 307 262C309 262 313 260 314 257Z"/><clipPath id="larval-drake-c1c"><use href="#larval-drake-p1b"/></clipPath><clipPath id="larval-drake-c1d"><use href="#larval-drake-p1b" x="-2" y="-2"/></clipPath><path id="larval-drake-p1e" d="M318 250C326 222 350 210 366 216C356 230 352 244 340 262Z"/><clipPath id="larval-drake-c1f"><use href="#larval-drake-p1e"/></clipPath><clipPath id="larval-drake-c1g"><use href="#larval-drake-p1e" x="-3" y="-3"/></clipPath><path id="larval-drake-p1h" d="M231 295C227 301 218 319 216 328C214 337 217 348 219 353C221 357 225 359 227 359C229 359 232 355 233 351C234 347 229 339 232 332C234 325 247 311 249 305C251 299 247 293 245 291C242 290 235 290 231 295ZM266 303C264 309 263 328 264 336C265 345 269 354 271 358C274 362 278 363 280 363C282 362 285 358 285 354C285 350 280 343 280 336C280 328 286 311 286 305C286 299 280 294 277 294C274 294 268 296 266 303Z"/><clipPath id="larval-drake-c1i"><use href="#larval-drake-p1h"/></clipPath><clipPath id="larval-drake-c1j"><use href="#larval-drake-p1h" x="-4" y="-4"/></clipPath><path id="larval-drake-p1k" d="M234 229C232 225 222 212 220 209C218 206 219 210 218 210C217 210 216 207 216 211C216 214 217 230 218 235C220 239 226 240 229 240C231 239 235 234 234 229ZM258 226C259 221 258 204 258 200C258 197 257 200 256 200C255 200 256 196 254 200C252 203 243 217 242 222C241 227 246 231 248 232C250 232 256 231 258 226Z"/><clipPath id="larval-drake-c1l"><use href="#larval-drake-p1k"/></clipPath><clipPath id="larval-drake-c1m"><use href="#larval-drake-p1k" x="-2" y="-2"/></clipPath><path id="larval-drake-p1n" d="M184 268C184 260 184 243 190 236C196 229 211 221 222 220C233 219 254 223 262 230C270 237 278 256 278 266C278 277 272 294 262 300C252 306 225 307 214 306C203 305 193 298 188 292C184 286 184 276 184 268Z"/><clipPath id="larval-drake-c1o"><use href="#larval-drake-p1n"/></clipPath><clipPath id="larval-drake-c1p"><use href="#larval-drake-p1n" x="-10" y="-8"/></clipPath><path id="larval-drake-p1q" d="M170 278C172 273 179 264 186 262C193 261 209 264 214 268C219 272 221 285 218 290C215 295 203 301 196 302C189 303 176 300 172 296C168 292 168 283 170 278Z"/><clipPath id="larval-drake-c1r"><use href="#larval-drake-p1q"/></clipPath><clipPath id="larval-drake-c1s"><use href="#larval-drake-p1q" x="-5" y="-5"/></clipPath><path id="larval-drake-p1t" d="M150 380C152 352 160 340 176 336L188 352L204 340L214 366L232 360L238 392Z"/><clipPath id="larval-drake-c1u"><use href="#larval-drake-p1t"/></clipPath><clipPath id="larval-drake-c1v"><use href="#larval-drake-p1t" x="-8" y="-6"/></clipPath><path id="larval-drake-p1w" d="M406 384L396 395L378 389L374 377L396 374Z"/><clipPath id="larval-drake-c1x"><use href="#larval-drake-p1w"/></clipPath><clipPath id="larval-drake-c1y"><use href="#larval-drake-p1w" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#larval-drake-l0)"/>
+<circle cx="256" cy="300" r="240" fill="url(#larval-drake-r1)"/>
+<path d="M256 200L200 120L120 70L150 130L90 120L140 170L80 190L180 200L230 230ZM256 200L312 120L392 70L362 130L422 120L372 170L432 190L332 200L282 230ZM222 210A34 50 0 1 0 290 210A34 50 0 1 0 222 210ZM269 170C270 160 268 130 265 118C261 106 250 96 246 92C242 88 238 89 236 90C234 91 233 95 234 100C236 105 246 111 247 122C249 132 242 161 243 170C244 179 252 183 256 183C260 183 268 180 269 170Z" fill="#1d0842" fill-opacity="0.35"/>
+<path d="M0 368Q256 332 512 368V512H0Z" fill="url(#larval-drake-l2)"/>
+<ellipse cx="256" cy="390" rx="190" ry="53" fill="url(#larval-drake-r3)"/>
+<use href="#larval-drake-p4" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-c5)">
+<use href="#larval-drake-p4" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-c6)"><use href="#larval-drake-p4" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-p7" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-c8)">
+<use href="#larval-drake-p7" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-c9)"><use href="#larval-drake-p7" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pa" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-cb)">
+<use href="#larval-drake-pa" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-cc)"><use href="#larval-drake-pa" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pd" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-ce)">
+<use href="#larval-drake-pd" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-cf)"><use href="#larval-drake-pd" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pg" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-ch)">
+<use href="#larval-drake-pg" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-ci)"><use href="#larval-drake-pg" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pj" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-ck)">
+<use href="#larval-drake-pj" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-cl)"><use href="#larval-drake-pj" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pm" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-cn)">
+<use href="#larval-drake-pm" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-co)"><use href="#larval-drake-pm" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pp" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-cq)">
+<use href="#larval-drake-pp" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-cr)"><use href="#larval-drake-pp" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-ps" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-ct)">
+<use href="#larval-drake-ps" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-cu)"><use href="#larval-drake-ps" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-pv" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-cw)">
+<use href="#larval-drake-pv" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-cx)"><use href="#larval-drake-pv" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<use href="#larval-drake-py" fill="#1e1018" stroke-width="8"/>
+<g clip-path="url(#larval-drake-cz)">
+<use href="#larval-drake-py" x="-3" y="-3" fill="#5a3a48"/>
+<g clip-path="url(#larval-drake-c10)"><use href="#larval-drake-py" x="2" y="2" fill="#3a2430"/></g>
+</g>
+<circle cx="256" cy="390" r="120" fill="url(#larval-drake-r11)"/>
+<use href="#larval-drake-p12" fill="#b9a98a" stroke-width="12"/>
+<g clip-path="url(#larval-drake-c13)">
+<use href="#larval-drake-p12" x="-12" y="-10" fill="#fff8ea"/>
+<g clip-path="url(#larval-drake-c14)"><use href="#larval-drake-p12" x="7" y="7" fill="#eadfc8"/></g>
+</g>
+<path d="M211 300C211 302 209 303 207 304C206 305 204 306 202 306C200 307 197 307 195 306C193 306 190 304 190 303C189 301 189 299 190 298C191 296 193 295 195 294C197 293 199 293 202 293C204 294 207 294 208 295C210 296 211 298 211 300Z" fill="#c98f6a" fill-opacity="0.6"/>
+<path d="M341 320C340 321 338 322 337 323C336 324 335 326 333 326C332 326 330 325 329 325C327 324 325 323 324 322C323 321 324 319 325 318C325 317 327 315 328 315C329 314 332 314 333 315C335 315 336 316 338 316C339 317 341 319 341 320Z" fill="#c98f6a" fill-opacity="0.6"/>
+<use href="#larval-drake-p15" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#larval-drake-c16)">
+<use href="#larval-drake-p15" x="-4" fill="#7a2414"/>
+<use href="#larval-drake-p15" x="-10" y="-10" fill="#ee8048"/>
+<g clip-path="url(#larval-drake-c17)"><use href="#larval-drake-p15" x="7" y="7" fill="#c0502e"/></g>
+</g>
+<use href="#larval-drake-p18" fill="#d97a00"/>
+<g clip-path="url(#larval-drake-c19)">
+<use href="#larval-drake-p18" x="-4" y="-4" fill="#ffe8a0"/>
+<g clip-path="url(#larval-drake-c1a)"><use href="#larval-drake-p18" x="3" y="3" fill="#ffbe0b"/></g>
+</g>
+<path d="M300 360L326 368M316 334L342 330M314 306L338 296" fill="none" stroke="#a85400" stroke-width="4" stroke-opacity="0.8"/>
+<use href="#larval-drake-p1b" fill="#1e1414" stroke-width="6"/>
+<g clip-path="url(#larval-drake-c1c)">
+<use href="#larval-drake-p1b" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#larval-drake-c1d)"><use href="#larval-drake-p1b" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#larval-drake-p1e" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#larval-drake-c1f)">
+<use href="#larval-drake-p1e" x="-3" y="-3" fill="#ffbe0b"/>
+<g clip-path="url(#larval-drake-c1g)"><use href="#larval-drake-p1e" x="2" y="2" fill="#ff7b00"/></g>
+</g>
+<use href="#larval-drake-p1h" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#larval-drake-c1i)">
+<use href="#larval-drake-p1h" x="-4" fill="#7a2414"/>
+<use href="#larval-drake-p1h" x="-4" y="-4" fill="#ee8048"/>
+<g clip-path="url(#larval-drake-c1j)"><use href="#larval-drake-p1h" x="3" y="3" fill="#c0502e"/></g>
+</g>
+<use href="#larval-drake-p1k" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#larval-drake-c1l)">
+<use href="#larval-drake-p1k" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#larval-drake-c1m)"><use href="#larval-drake-p1k" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#larval-drake-p1n" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#larval-drake-c1o)">
+<use href="#larval-drake-p1n" x="-4" fill="#7a2414"/>
+<use href="#larval-drake-p1n" x="-10" y="-8" fill="#ee8048"/>
+<g clip-path="url(#larval-drake-c1p)"><use href="#larval-drake-p1n" x="7" y="7" fill="#c0502e"/></g>
+</g>
+<use href="#larval-drake-p1q" fill="#ffbe0b" stroke-width="12"/>
+<g clip-path="url(#larval-drake-c1r)">
+<use href="#larval-drake-p1q" x="-4" fill="#7a2414"/>
+<use href="#larval-drake-p1q" x="-5" y="-5" fill="#ee8048"/>
+<g clip-path="url(#larval-drake-c1s)"><use href="#larval-drake-p1q" x="3" y="3" fill="#c0502e"/></g>
+</g>
+<path d="M181 278A3 4 0 1 0 187 278A3 4 0 1 0 181 278ZM193 276A3 4 0 1 0 199 276A3 4 0 1 0 193 276Z" fill="#1d0842"/>
+<path d="M205 256A17 19 0 1 0 239 256A17 19 0 1 0 205 256Z" fill="#fff8ea"/>
+<path d="M205 256A17 19 0 1 0 239 256A17 19 0 1 0 205 256Z" fill="none" stroke-width="4"/>
+<path d="M209 258A10 12 0 1 0 229 258A10 12 0 1 0 209 258Z" fill="#1d0842"/>
+<path d="M211 251A4 4 0 1 0 219 251A4 4 0 1 0 211 251Z" fill="#ffffff"/>
+<path d="M239 256A15 17 0 1 0 269 256A15 17 0 1 0 239 256Z" fill="#fff8ea"/>
+<path d="M239 256A15 17 0 1 0 269 256A15 17 0 1 0 239 256Z" fill="none" stroke-width="4"/>
+<path d="M242 258A9 11 0 1 0 260 258A9 11 0 1 0 242 258Z" fill="#1d0842"/>
+<path d="M243 251A4 4 0 1 0 251 251A4 4 0 1 0 243 251Z" fill="#ffffff"/>
+<path d="M200 292C206 298 214 298 220 292" fill="none" stroke-width="3"/>
+<path d="M148 250A12 12 0 1 0 172 250A12 12 0 1 0 148 250Z" fill="#8a7a80" fill-opacity="0.7"/>
+<path d="M130 230A16 16 0 1 0 162 230A16 16 0 1 0 130 230Z" fill="#8a7a80" fill-opacity="0.55"/>
+<path d="M120 202A20 20 0 1 0 160 202A20 20 0 1 0 120 202Z" fill="#8a7a80" fill-opacity="0.4"/>
+<use href="#larval-drake-p1t" fill="#b9a98a" stroke-width="12"/>
+<g clip-path="url(#larval-drake-c1u)">
+<use href="#larval-drake-p1t" x="-8" y="-6" fill="#fff8ea"/>
+<g clip-path="url(#larval-drake-c1v)"><use href="#larval-drake-p1t" x="5" y="5" fill="#eadfc8"/></g>
+</g>
+<use href="#larval-drake-p1w" fill="#b9a98a" stroke-width="8"/>
+<g clip-path="url(#larval-drake-c1x)">
+<use href="#larval-drake-p1w" x="-3" y="-3" fill="#fff8ea"/>
+<g clip-path="url(#larval-drake-c1y)"><use href="#larval-drake-p1w" x="2" y="2" fill="#eadfc8"/></g>
+</g>
+<path d="M301 214L304 219L301 224L299 219Z" fill="#ffbe0b" fill-opacity="0.77"/>
+<path d="M260 326L263 331L260 337L257 331Z" fill="#ff7b00" fill-opacity="0.8"/>
+<path d="M109 309L111 313L109 316L107 313Z" fill="#ffbe0b" fill-opacity="0.54"/>
+<path d="M214 239L216 244L214 249L211 244Z" fill="#ff7b00" fill-opacity="0.74"/>
+<path d="M355 249L358 254L355 260L352 254Z" fill="#ffbe0b" fill-opacity="0.82"/>
+<path d="M355 216L358 221L355 226L352 221Z" fill="#ff7b00" fill-opacity="0.94"/>
+<path d="M350 321L353 327L350 333L346 327Z" fill="#ffbe0b" fill-opacity="0.51"/>
+<path d="M357 396L359 400L357 403L355 400Z" fill="#ff7b00" fill-opacity="0.52"/>
+<path d="M215 225L216 228L215 231L213 228Z" fill="#ffbe0b" fill-opacity="0.66"/>
+<path d="M290 237L293 241L290 245L288 241Z" fill="#ff7b00" fill-opacity="0.78"/>
+<path d="M313 301L315 304L313 307L311 304Z" fill="#ffbe0b" fill-opacity="0.63"/>
+<path d="M164 375L167 379L164 384L162 379Z" fill="#ff7b00" fill-opacity="0.88"/>
+</svg>

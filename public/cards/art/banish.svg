@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="banish-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#081a22"/><stop offset="0.55" stop-color="#174250"/><stop offset="1" stop-color="#0a141e"/></linearGradient><radialGradient id="banish-r1" gradientUnits="userSpaceOnUse" cx="330" cy="210" r="250"><stop offset="0" stop-color="#5ae0d0" stop-opacity="0.38"/><stop offset="0.45" stop-color="#5ae0d0" stop-opacity="0.171"/><stop offset="1" stop-color="#5ae0d0" stop-opacity="0"/></radialGradient><linearGradient id="banish-l2" gradientUnits="userSpaceOnUse" x1="0" y1="366" x2="0" y2="512"><stop offset="0" stop-color="#123440"/><stop offset="1" stop-color="#06121a"/></linearGradient><radialGradient id="banish-r3" gradientUnits="userSpaceOnUse" cx="170" cy="420" r="170"><stop offset="0" stop-color="#5ae0d0" stop-opacity="0.55"/><stop offset="1" stop-color="#5ae0d0" stop-opacity="0"/></radialGradient><radialGradient id="banish-r4" gradientUnits="userSpaceOnUse" cx="334" cy="206" r="150"><stop offset="0" stop-color="#5ae0d0" stop-opacity="0.5"/><stop offset="0.45" stop-color="#5ae0d0" stop-opacity="0.225"/><stop offset="1" stop-color="#5ae0d0" stop-opacity="0"/></radialGradient><path id="banish-p5" d="M286 92L418 115L425 124L391 314L382 320L250 297L243 288L277 98Z"/><clipPath id="banish-c6"><use href="#banish-p5"/></clipPath><clipPath id="banish-c7"><use href="#banish-p5" x="-8" y="-8"/></clipPath><radialGradient id="banish-r8" gradientUnits="userSpaceOnUse" cx="334" cy="206" r="70"><stop offset="0" stop-color="#5ae0d0" stop-opacity="0.75"/><stop offset="0.45" stop-color="#5ae0d0" stop-opacity="0.3375"/><stop offset="1" stop-color="#5ae0d0" stop-opacity="0"/></radialGradient><path id="banish-p9" d="M300 76L338 104L298 118Z"/><clipPath id="banish-ca"><use href="#banish-p9"/></clipPath><path id="banish-pc" d="M124 332C120 340 116 363 113 373C111 384 108 396 108 402C109 408 113 413 116 414C119 414 125 411 128 406C131 401 132 389 135 379C138 369 148 348 148 340C149 331 143 325 140 324C136 322 128 325 124 332Z"/><clipPath id="banish-cd"><use href="#banish-pc"/></clipPath><clipPath id="banish-ce"><use href="#banish-pc" x="-5" y="-5"/></clipPath><path id="banish-pf" d="M163 343C164 351 172 372 176 381C179 391 183 403 187 408C190 412 197 414 200 413C202 412 206 406 205 400C205 395 199 384 196 375C194 365 192 344 189 337C185 330 176 326 173 327C169 328 163 335 163 343Z"/><clipPath id="banish-cg"><use href="#banish-pf"/></clipPath><clipPath id="banish-ch"><use href="#banish-pf" x="-5" y="-5"/></clipPath><path id="banish-pi" d="M110 340C105 329 112 300 118 288C124 276 138 265 150 262C162 259 186 263 196 270C206 277 213 294 214 306C215 318 210 342 200 350C190 358 164 362 150 360C137 359 115 351 110 340Z"/><clipPath id="banish-cj"><use href="#banish-pi"/></clipPath><clipPath id="banish-ck"><use href="#banish-pi" x="-10" y="-10"/></clipPath><path id="banish-pl" d="M117 283C110 287 92 301 85 311C78 320 72 342 71 349C69 356 73 359 75 359C77 360 82 361 85 355C89 349 92 330 99 321C106 313 126 306 131 301C136 295 135 288 133 285C131 283 125 279 117 283Z"/><clipPath id="banish-cm"><use href="#banish-pl"/></clipPath><clipPath id="banish-cn"><use href="#banish-pl" x="-4" y="-4"/></clipPath><path id="banish-po" d="M150 260C146 253 151 235 156 228C161 221 178 215 186 216C194 217 208 225 212 232C216 239 214 256 210 262C206 268 193 274 184 274C175 274 154 267 150 260Z"/><clipPath id="banish-cp"><use href="#banish-po"/></clipPath><clipPath id="banish-cq"><use href="#banish-po" x="-6" y="-6"/></clipPath><path id="banish-pr" d="M166 226C163 221 147 211 143 205C140 199 143 189 143 186C143 183 142 186 142 186C142 186 142 183 141 186C140 189 134 200 137 207C139 215 153 230 158 234C162 238 165 236 166 234C167 233 170 230 166 226Z"/><clipPath id="banish-cs"><use href="#banish-pr"/></clipPath><clipPath id="banish-ct"><use href="#banish-pr" x="-2" y="-2"/></clipPath><path id="banish-pu" d="M205 227C208 222 210 206 214 200C219 195 231 193 234 191C237 189 234 190 234 190C234 190 237 188 234 189C230 190 215 191 210 196C204 200 196 216 195 221C193 227 196 229 197 229C199 230 203 231 205 227Z"/><clipPath id="banish-cv"><use href="#banish-pu"/></clipPath><clipPath id="banish-cw"><use href="#banish-pu" x="-2" y="-2"/></clipPath><path id="banish-px" d="M208 270C217 266 241 250 254 242C266 234 282 219 294 214C305 208 323 207 328 205C333 204 328 204 328 204C328 204 333 202 328 203C322 203 303 202 290 206C278 210 260 223 246 230C233 237 207 249 200 254C192 260 195 264 196 266C197 269 200 273 208 270Z"/><clipPath id="banish-cy"><use href="#banish-px"/></clipPath><clipPath id="banish-cz"><use href="#banish-px" x="-4" y="-4"/></clipPath><path id="banish-p10" d="M214 317C224 316 253 312 266 303C280 293 293 266 304 253C314 240 331 223 335 217C340 211 334 216 334 216C334 216 339 210 333 215C327 220 308 236 296 247C285 258 271 282 258 289C245 297 218 292 210 295C201 298 201 305 201 308C202 311 204 318 214 317Z"/><clipPath id="banish-c11"><use href="#banish-p10"/></clipPath><clipPath id="banish-c12"><use href="#banish-p10" x="-4" y="-4"/></clipPath><path id="banish-p13" d="M199 355C209 357 242 366 259 357C275 349 297 318 309 298C321 279 335 237 339 227C344 216 338 226 338 226C338 226 342 215 337 225C331 236 315 276 303 294C290 312 269 340 253 347C238 353 210 337 201 337C192 337 191 342 191 345C191 348 189 353 199 355Z"/><clipPath id="banish-c14"><use href="#banish-p13"/></clipPath><clipPath id="banish-c15"><use href="#banish-p13" x="-4" y="-4"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#banish-l0)"/>
+<circle cx="330" cy="210" r="250" fill="url(#banish-r1)"/>
+<path d="M0 402Q256 366 512 402V512H0Z" fill="url(#banish-l2)"/>
+<ellipse cx="170" cy="420" rx="170" ry="48" fill="url(#banish-r3)"/>
+<circle cx="334" cy="206" r="150" fill="url(#banish-r4)"/>
+<use href="#banish-p5" fill="#5ae0d0" stroke-width="12"/>
+<g clip-path="url(#banish-c6)">
+<use href="#banish-p5" x="-5" fill="#2a1a52"/>
+<use href="#banish-p5" x="-8" y="-8" fill="#6a48b8"/>
+<g clip-path="url(#banish-c7)"><use href="#banish-p5" x="5" y="5" fill="#4b2f8f"/></g>
+</g>
+<path d="M296 111L402 129L407 136L379 297L372 301L266 283L261 276L289 115Z" fill="#0a0820"/>
+<circle cx="334" cy="206" r="70" fill="url(#banish-r8)"/>
+<path d="M338 206L339 208L338 211L336 214L332 215L327 214L323 211L321 206L322 199L325 194L331 190L339 189L347 192L353 198L355 207L354 217L347 226L338 231L326 231L315 226L307 216L304 203L307 189L317 178L330 172L346 173L360 181L370 194L373 211L367 229L355 242L337 249L318 247L300 236L289 219L287 198L294 177L310 162L332 155L355 158L375 171L388 193L389 218L380 242L360 259" fill="none" stroke="#bffaf2" stroke-width="4" stroke-opacity="0.85"/>
+<path d="M296 111L402 129L407 136L379 297L372 301L266 283L261 276L289 115Z" fill="none" stroke="#f2c14e" stroke-width="4" stroke-opacity="0.9"/>
+<path d="M188 120C226 82 290 76 318 96" fill="none" stroke-width="14"/>
+<path d="M188 120C226 82 290 76 318 96" fill="none" stroke="#bffaf2" stroke-width="7"/>
+<use href="#banish-p9" fill="#5ae0d0" stroke-width="10"/>
+<g clip-path="url(#banish-ca)">
+<use href="#banish-p9" x="-3" y="-3" fill="#bffaf2"/>
+</g>
+<ellipse cx="160" cy="410" rx="80" ry="12" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#banish-pc" fill="#5ae0d0" stroke-width="12"/>
+<g clip-path="url(#banish-cd)">
+<use href="#banish-pc" x="-4" fill="#36525e"/>
+<use href="#banish-pc" x="-5" y="-5" fill="#90bac6"/>
+<g clip-path="url(#banish-ce)"><use href="#banish-pc" x="7" y="7" fill="#5e8492"/></g>
+</g>
+<use href="#banish-pf" fill="#5ae0d0" stroke-width="12"/>
+<g clip-path="url(#banish-cg)">
+<use href="#banish-pf" x="-4" fill="#36525e"/>
+<use href="#banish-pf" x="-5" y="-5" fill="#90bac6"/>
+<g clip-path="url(#banish-ch)"><use href="#banish-pf" x="7" y="7" fill="#5e8492"/></g>
+</g>
+<use href="#banish-pi" fill="#5ae0d0" stroke-width="12"/>
+<g clip-path="url(#banish-cj)">
+<use href="#banish-pi" x="-4" fill="#36525e"/>
+<use href="#banish-pi" x="-10" y="-10" fill="#90bac6"/>
+<g clip-path="url(#banish-ck)"><use href="#banish-pi" x="7" y="7" fill="#5e8492"/></g>
+</g>
+<use href="#banish-pl" fill="#5ae0d0" stroke-width="12"/>
+<g clip-path="url(#banish-cm)">
+<use href="#banish-pl" x="-4" fill="#36525e"/>
+<use href="#banish-pl" x="-4" y="-4" fill="#90bac6"/>
+<g clip-path="url(#banish-cn)"><use href="#banish-pl" x="3" y="3" fill="#5e8492"/></g>
+</g>
+<use href="#banish-po" fill="#5ae0d0" stroke-width="12"/>
+<g clip-path="url(#banish-cp)">
+<use href="#banish-po" x="-4" fill="#36525e"/>
+<use href="#banish-po" x="-6" y="-6" fill="#90bac6"/>
+<g clip-path="url(#banish-cq)"><use href="#banish-po" x="7" y="7" fill="#5e8492"/></g>
+</g>
+<use href="#banish-pr" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#banish-cs)">
+<use href="#banish-pr" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#banish-ct)"><use href="#banish-pr" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#banish-pu" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#banish-cv)">
+<use href="#banish-pu" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#banish-cw)"><use href="#banish-pu" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<path d="M177 246A5 5 0 1 0 187 246A5 5 0 1 0 177 246Z" fill="#e6fffa"/>
+<path d="M196 244A4 4 0 1 0 204 244A4 4 0 1 0 196 244Z" fill="#e6fffa"/>
+<path d="M186 262A6 4 0 1 0 198 262A6 4 0 1 0 186 262Z" fill="#1d0842"/>
+<use href="#banish-px" fill="#2fb8a8" stroke-width="8"/>
+<g clip-path="url(#banish-cy)">
+<use href="#banish-px" x="-4" y="-4" fill="#e6fffa"/>
+<g clip-path="url(#banish-cz)"><use href="#banish-px" x="2" y="2" fill="#7ff5e0"/></g>
+</g>
+<use href="#banish-p10" fill="#2fb8a8" stroke-width="8"/>
+<g clip-path="url(#banish-c11)">
+<use href="#banish-p10" x="-4" y="-4" fill="#e6fffa"/>
+<g clip-path="url(#banish-c12)"><use href="#banish-p10" x="2" y="2" fill="#7ff5e0"/></g>
+</g>
+<use href="#banish-p13" fill="#2fb8a8" stroke-width="8"/>
+<g clip-path="url(#banish-c14)">
+<use href="#banish-p13" x="-4" y="-4" fill="#e6fffa"/>
+<g clip-path="url(#banish-c15)"><use href="#banish-p13" x="2" y="2" fill="#7ff5e0"/></g>
+</g>
+<path d="M242 270L236 275L230 270L236 263Z" fill="#bffaf2" fill-opacity="0.85"/>
+<path d="M272 326L262 334L254 326L262 317Z" fill="#bffaf2" fill-opacity="0.85"/>
+<path d="M293 238L286 243L280 238L286 233Z" fill="#bffaf2" fill-opacity="0.85"/>
+<path d="M311 336L300 344L292 336L300 329Z" fill="#bffaf2" fill-opacity="0.85"/>
+<path d="M252 228L246 235L241 228L246 222Z" fill="#bffaf2" fill-opacity="0.85"/>
+<circle cx="136" cy="226" r="3" fill="#bffaf2" fill-opacity="0.76"/>
+<circle cx="212" cy="180" r="3" fill="#5ae0d0" fill-opacity="0.83"/>
+<circle cx="288" cy="165" r="2" fill="#bffaf2" fill-opacity="0.86"/>
+<circle cx="386" cy="225" r="3" fill="#5ae0d0" fill-opacity="0.78"/>
+<circle cx="346" cy="344" r="2" fill="#bffaf2" fill-opacity="0.89"/>
+<circle cx="200" cy="213" r="3" fill="#5ae0d0" fill-opacity="0.49"/>
+<circle cx="345" cy="333" r="2" fill="#bffaf2" fill-opacity="0.85"/>
+<circle cx="357" cy="245" r="3" fill="#5ae0d0" fill-opacity="0.87"/>
+<circle cx="285" cy="156" r="2" fill="#bffaf2" fill-opacity="0.41"/>
+<circle cx="202" cy="203" r="3" fill="#5ae0d0" fill-opacity="0.64"/>
+<circle cx="278" cy="238" r="3" fill="#bffaf2" fill-opacity="0.41"/>
+<circle cx="171" cy="371" r="3" fill="#5ae0d0" fill-opacity="0.66"/>
+</svg>

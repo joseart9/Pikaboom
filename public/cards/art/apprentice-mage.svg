@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="apprentice-mage-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#140a2e"/><stop offset="0.55" stop-color="#2f1f62"/><stop offset="1" stop-color="#1b1036"/></linearGradient><radialGradient id="apprentice-mage-r1" gradientUnits="userSpaceOnUse" cx="250" cy="230" r="250"><stop offset="0" stop-color="#c77dff" stop-opacity="0.3"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.135"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><linearGradient id="apprentice-mage-l2" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#3b2a6b"/><stop offset="1" stop-color="#1b1036"/></linearGradient><radialGradient id="apprentice-mage-r3" gradientUnits="userSpaceOnUse" cx="276" cy="404" r="160"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="apprentice-mage-p4" d="M226 402A20 11 0 1 0 266 402A20 11 0 1 0 226 402Z"/><clipPath id="apprentice-mage-c5"><use href="#apprentice-mage-p4"/></clipPath><clipPath id="apprentice-mage-c6"><use href="#apprentice-mage-p4" x="-4" y="-4"/></clipPath><path id="apprentice-mage-p7" d="M282 404A20 11 0 1 0 322 404A20 11 0 1 0 282 404Z"/><clipPath id="apprentice-mage-c8"><use href="#apprentice-mage-p7"/></clipPath><clipPath id="apprentice-mage-c9"><use href="#apprentice-mage-p7" x="-4" y="-4"/></clipPath><path id="apprentice-mage-pa" d="M244 238C255 227 301 227 312 238C323 249 332 311 336 330C340 349 355 389 348 398C341 407 292 408 276 408C260 408 216 409 210 400C204 391 218 349 222 330C226 311 234 249 244 238Z"/><clipPath id="apprentice-mage-cb"><use href="#apprentice-mage-pa"/></clipPath><clipPath id="apprentice-mage-cc"><use href="#apprentice-mage-pa" x="-12" y="-10"/></clipPath><path id="apprentice-mage-pd" d="M236 300L320 300L322 316L234 316Z"/><clipPath id="apprentice-mage-ce"><use href="#apprentice-mage-pd"/></clipPath><clipPath id="apprentice-mage-cf"><use href="#apprentice-mage-pd" x="-3" y="-3"/></clipPath><path id="apprentice-mage-pg" d="M318 276L356 266L366 318L328 328Z"/><clipPath id="apprentice-mage-ch"><use href="#apprentice-mage-pg"/></clipPath><clipPath id="apprentice-mage-ci"><use href="#apprentice-mage-pg" x="-4" y="-4"/></clipPath><path id="apprentice-mage-pj" d="M296 259C298 267 316 284 317 291C318 297 305 298 303 302C301 306 301 317 304 319C307 321 315 322 321 318C327 314 343 300 343 289C343 278 326 252 320 245C314 238 305 238 301 240C297 242 293 251 296 259Z"/><clipPath id="apprentice-mage-ck"><use href="#apprentice-mage-pj"/></clipPath><clipPath id="apprentice-mage-cl"><use href="#apprentice-mage-pj" x="-6" y="-6"/></clipPath><path id="apprentice-mage-pm" d="M243 243C235 245 220 261 213 261C205 261 199 245 192 244C185 243 168 248 166 254C163 259 168 275 176 280C183 286 203 293 215 291C228 289 250 275 257 269C264 263 265 253 263 249C261 245 250 241 243 243Z"/><clipPath id="apprentice-mage-cn"><use href="#apprentice-mage-pm"/></clipPath><clipPath id="apprentice-mage-co"><use href="#apprentice-mage-pm" x="-8" y="-8"/></clipPath><path id="apprentice-mage-pp" d="M177 254C171 250 148 236 142 233C136 230 137 233 137 234C136 235 133 235 138 239C143 244 165 259 171 262C177 265 177 262 178 261C179 259 182 258 177 254Z"/><clipPath id="apprentice-mage-cq"><use href="#apprentice-mage-pp"/></clipPath><clipPath id="apprentice-mage-cr"><use href="#apprentice-mage-pp" x="-3" y="-3"/></clipPath><path id="apprentice-mage-ps" d="M163 260A13 12 0 1 0 189 260A13 12 0 1 0 163 260Z"/><clipPath id="apprentice-mage-ct"><use href="#apprentice-mage-ps"/></clipPath><clipPath id="apprentice-mage-cu"><use href="#apprentice-mage-ps" x="-4" y="-4"/></clipPath><path id="apprentice-mage-pv" d="M248 206C250 199 254 187 262 182C270 178 291 174 300 176C309 178 321 188 324 196C327 204 326 223 322 230C318 238 308 244 300 246C292 248 276 248 268 246C261 244 253 236 250 230C247 224 246 213 248 206Z"/><clipPath id="apprentice-mage-cw"><use href="#apprentice-mage-pv"/></clipPath><clipPath id="apprentice-mage-cx"><use href="#apprentice-mage-pv" x="-10" y="-8"/></clipPath><path id="apprentice-mage-py" d="M313 216A7 10 0 1 0 327 216A7 10 0 1 0 313 216Z"/><clipPath id="apprentice-mage-cz"><use href="#apprentice-mage-py"/></clipPath><clipPath id="apprentice-mage-c10"><use href="#apprentice-mage-py" x="-3" y="-3"/></clipPath><path id="apprentice-mage-p11" d="M262 180C258 175 279 158 286 150C293 142 307 125 314 120C321 115 333 111 340 112C347 113 362 120 366 124C370 128 374 140 372 142C370 144 357 135 352 136C347 137 339 143 334 150C329 157 328 182 318 186C308 190 266 185 262 180Z"/><clipPath id="apprentice-mage-c12"><use href="#apprentice-mage-p11"/></clipPath><clipPath id="apprentice-mage-c13"><use href="#apprentice-mage-p11" x="-10" y="-8"/></clipPath><path id="apprentice-mage-p14" d="M361 140A11 11 0 1 0 383 140A11 11 0 1 0 361 140Z"/><clipPath id="apprentice-mage-c15"><use href="#apprentice-mage-p14"/></clipPath><clipPath id="apprentice-mage-c16"><use href="#apprentice-mage-p14" x="-4" y="-4"/></clipPath><path id="apprentice-mage-p17" d="M218 210C221 205 241 190 252 186C263 182 289 177 302 178C315 179 341 186 348 190C355 194 362 204 356 206C350 208 319 203 306 204C293 205 269 212 258 214C247 216 231 223 226 222C221 221 215 215 218 210Z"/><clipPath id="apprentice-mage-c18"><use href="#apprentice-mage-p17"/></clipPath><clipPath id="apprentice-mage-c19"><use href="#apprentice-mage-p17" x="-6" y="-6"/></clipPath><radialGradient id="apprentice-mage-r1a" gradientUnits="userSpaceOnUse" cx="136" cy="230" r="46"><stop offset="0" stop-color="#c77dff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.315"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="apprentice-mage-r1b" gradientUnits="userSpaceOnUse" cx="112" cy="146" r="34"><stop offset="0" stop-color="#f0d8ff" stop-opacity="0.8"/><stop offset="0.45" stop-color="#f0d8ff" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#f0d8ff" stop-opacity="0"/></radialGradient><path id="apprentice-mage-p1c" d="M112 128L116 140L129 140L119 148L123 161L112 153L101 161L105 148L95 140L108 140Z"/><clipPath id="apprentice-mage-c1d"><use href="#apprentice-mage-p1c"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#apprentice-mage-l0)"/>
+<circle cx="250" cy="230" r="250" fill="url(#apprentice-mage-r1)"/>
+<path d="M0 0H512V340H0Z" fill="#24164c"/>
+<path d="M0 60H512M0 130H512M0 200H512M0 270H512M60 0V60M180 0V60M120 60V130M240 60V130M60 130V200M180 200V270M90 270V340M470 130V200M440 200V270" fill="none" stroke="#1b1036" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M330 290V150C330 104 370 84 400 84C430 84 470 104 470 150V290Z" fill="#3d2a7c"/>
+<path d="M344 280V154C344 118 376 98 400 98C424 98 456 118 456 154V280Z" fill="#0e1a3a"/>
+<path d="M432 128A22 22 0 1 0 446 160A17 17 0 1 1 432 128Z" fill="#e6f6ff" fill-opacity="0.85"/>
+<path d="M418 231L420 234L418 236L417 234Z" fill="#e6f6ff" fill-opacity="0.71"/>
+<path d="M360 201L362 205L360 209L358 205Z" fill="#e6f6ff" fill-opacity="0.63"/>
+<path d="M439 142L441 147L439 151L437 147Z" fill="#e6f6ff" fill-opacity="0.77"/>
+<path d="M415 109L417 112L415 116L414 112Z" fill="#e6f6ff" fill-opacity="0.55"/>
+<path d="M438 152L440 156L438 160L436 156Z" fill="#e6f6ff" fill-opacity="0.76"/>
+<path d="M376 109L379 113L376 117L374 113Z" fill="#e6f6ff" fill-opacity="0.5"/>
+<path d="M378 126L380 130L378 133L376 130Z" fill="#e6f6ff" fill-opacity="0.9"/>
+<path d="M376 118L378 123L376 127L373 123Z" fill="#e6f6ff" fill-opacity="0.56"/>
+<path d="M391 265L393 268L391 271L390 268Z" fill="#e6f6ff" fill-opacity="0.59"/>
+<path d="M400 98V280M344 200H456" fill="none" stroke="#3d2a7c" stroke-width="6"/>
+<path d="M40 250H190V262H40Z" fill="#4e321c"/>
+<path d="M44 250V200H62V250Z" fill="#3d6fc4" fill-opacity="0.55"/>
+<path d="M62 250V210H76V250Z" fill="#b5179e" fill-opacity="0.55"/>
+<path d="M76 250V200H96V250Z" fill="#5f9a4a" fill-opacity="0.55"/>
+<path d="M96 250V210H108V250Z" fill="#a8742a" fill-opacity="0.55"/>
+<path d="M108 250V200H126V250Z" fill="#3d6fc4" fill-opacity="0.55"/>
+<path d="M130 250L140 206L160 210L150 250Z" fill="#b5179e" fill-opacity="0.5"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#apprentice-mage-l2)"/>
+<ellipse cx="276" cy="404" rx="160" ry="45" fill="url(#apprentice-mage-r3)"/>
+<ellipse cx="276" cy="402" rx="96" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#apprentice-mage-p4" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#apprentice-mage-c5)">
+<use href="#apprentice-mage-p4" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#apprentice-mage-c6)"><use href="#apprentice-mage-p4" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#apprentice-mage-p7" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#apprentice-mage-c8)">
+<use href="#apprentice-mage-p7" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#apprentice-mage-c9)"><use href="#apprentice-mage-p7" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#apprentice-mage-pa" fill="#4b2f8f" stroke-width="12"/>
+<g clip-path="url(#apprentice-mage-cb)">
+<use href="#apprentice-mage-pa" x="-12" y="-10" fill="#9a7ae0"/>
+<g clip-path="url(#apprentice-mage-cc)"><use href="#apprentice-mage-pa" x="7" y="7" fill="#6a48b8"/></g>
+</g>
+<path d="M276 260V404" fill="none" stroke-width="4" stroke-opacity="0.35"/>
+<path d="M214 384C221 383 263 394 276 394C289 394 335 383 342 384C349 385 353 397 346 400C339 403 290 410 276 410C262 410 216 403 210 400C204 397 207 385 214 384Z" fill="#f2c14e" fill-opacity="0.8"/>
+<use href="#apprentice-mage-pd" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#apprentice-mage-ce)">
+<use href="#apprentice-mage-pd" x="-3" y="-3" fill="#b07a40"/>
+<g clip-path="url(#apprentice-mage-cf)"><use href="#apprentice-mage-pd" x="2" y="2" fill="#8a5a2b"/></g>
+</g>
+<use href="#apprentice-mage-pg" fill="#24418a" stroke-width="10"/>
+<g clip-path="url(#apprentice-mage-ch)">
+<use href="#apprentice-mage-pg" x="-4" y="-4" fill="#6a95e0"/>
+<g clip-path="url(#apprentice-mage-ci)"><use href="#apprentice-mage-pg" x="3" y="3" fill="#3d6fc4"/></g>
+</g>
+<path d="M326 282L352 275L358 306Z" fill="#f2c14e" fill-opacity="0.6"/>
+<use href="#apprentice-mage-pj" fill="#4b2f8f" stroke-width="12"/>
+<g clip-path="url(#apprentice-mage-ck)">
+<use href="#apprentice-mage-pj" x="-6" y="-6" fill="#9a7ae0"/>
+<g clip-path="url(#apprentice-mage-cl)"><use href="#apprentice-mage-pj" x="7" y="7" fill="#6a48b8"/></g>
+</g>
+<use href="#apprentice-mage-pm" fill="#4b2f8f" stroke-width="12"/>
+<g clip-path="url(#apprentice-mage-cn)">
+<use href="#apprentice-mage-pm" x="-8" y="-8" fill="#9a7ae0"/>
+<g clip-path="url(#apprentice-mage-co)"><use href="#apprentice-mage-pm" x="7" y="7" fill="#6a48b8"/></g>
+</g>
+<use href="#apprentice-mage-pp" fill="#4e321c" stroke-width="8"/>
+<g clip-path="url(#apprentice-mage-cq)">
+<use href="#apprentice-mage-pp" x="-3" y="-3" fill="#a2743f"/>
+<g clip-path="url(#apprentice-mage-cr)"><use href="#apprentice-mage-pp" x="2" y="2" fill="#7a5230"/></g>
+</g>
+<use href="#apprentice-mage-ps" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#apprentice-mage-ct)">
+<use href="#apprentice-mage-ps" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#apprentice-mage-cu)"><use href="#apprentice-mage-ps" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#apprentice-mage-pv" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#apprentice-mage-cw)">
+<use href="#apprentice-mage-pv" x="-10" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#apprentice-mage-cx)"><use href="#apprentice-mage-pv" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#apprentice-mage-py" fill="#c98f6a" stroke-width="8"/>
+<g clip-path="url(#apprentice-mage-cz)">
+<use href="#apprentice-mage-py" x="-3" y="-3" fill="#ffe0c4"/>
+<g clip-path="url(#apprentice-mage-c10)"><use href="#apprentice-mage-py" x="2" y="2" fill="#f2c29b"/></g>
+</g>
+<use href="#apprentice-mage-p11" fill="#3a1a6e" stroke-width="12"/>
+<g clip-path="url(#apprentice-mage-c12)">
+<use href="#apprentice-mage-p11" x="-10" y="-8" fill="#8a5ad0"/>
+<g clip-path="url(#apprentice-mage-c13)"><use href="#apprentice-mage-p11" x="7" y="7" fill="#5a2fa0"/></g>
+</g>
+<use href="#apprentice-mage-p14" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#apprentice-mage-c15)">
+<use href="#apprentice-mage-p14" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#apprentice-mage-c16)"><use href="#apprentice-mage-p14" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#apprentice-mage-p17" fill="#3a1a6e" stroke-width="12"/>
+<g clip-path="url(#apprentice-mage-c18)">
+<use href="#apprentice-mage-p17" x="-6" y="-6" fill="#8a5ad0"/>
+<g clip-path="url(#apprentice-mage-c19)"><use href="#apprentice-mage-p17" x="7" y="7" fill="#5a2fa0"/></g>
+</g>
+<path d="M300 150L301 157L308 159L302 162L302 169L297 164L291 167L294 161L289 155L296 156Z" fill="#f2c14e" fill-opacity="0.9"/>
+<path d="M332 127L332 132L337 134L332 136L332 141L329 137L324 138L327 134L324 130L329 131Z" fill="#f2c14e" fill-opacity="0.9"/>
+<path d="M258 226A4 3 0 1 0 266 226A4 3 0 1 0 258 226Z" fill="#1d0842" fill-opacity="0.6"/>
+<path d="M268 236A6 5 0 1 0 280 236A6 5 0 1 0 268 236Z" fill="#1d0842"/>
+<path d="M242 226A8 5 0 1 0 258 226A8 5 0 1 0 242 226Z" fill="#ff4d6d" fill-opacity="0.3"/>
+<path d="M294 228A8 5 0 1 0 310 228A8 5 0 1 0 294 228Z" fill="#ff4d6d" fill-opacity="0.3"/>
+<path d="M246 214C254 220 266 222 276 220" fill="none" stroke-width="3" stroke-opacity="0.5"/>
+<circle cx="136" cy="230" r="46" fill="url(#apprentice-mage-r1a)"/>
+<path d="M153 226L143 233L150 244L138 239L133 250L132 237L119 238L129 231L122 220L134 225L139 214L140 227Z" fill="#f0d8ff"/>
+<path d="M132 226L138 208L118 197L126 179L111 166L112 150" fill="none" stroke-width="13"/>
+<path d="M132 226L138 208L118 197L126 179L111 166L112 150" fill="none" stroke="#c77dff" stroke-width="7"/>
+<path d="M132 226L138 208L118 197L126 179L111 166L112 150" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+<circle cx="112" cy="146" r="34" fill="url(#apprentice-mage-r1b)"/>
+<use href="#apprentice-mage-p1c" fill="#e0b8ff" stroke-width="8"/>
+<g clip-path="url(#apprentice-mage-c1d)">
+<use href="#apprentice-mage-p1c" x="-2" y="-2" fill="#ffffff"/>
+</g>
+<path d="M117 214L119 218L117 221L115 218Z" fill="#f0d8ff" fill-opacity="0.85"/>
+<path d="M164 187L167 193L164 198L161 193Z" fill="#c77dff" fill-opacity="0.62"/>
+<path d="M156 134L158 138L156 143L153 138Z" fill="#f0d8ff" fill-opacity="0.54"/>
+<path d="M163 157L165 161L163 164L161 161Z" fill="#c77dff" fill-opacity="0.98"/>
+<path d="M176 139L178 143L176 146L174 143Z" fill="#f0d8ff" fill-opacity="0.52"/>
+<path d="M161 187L164 192L161 197L158 192Z" fill="#c77dff" fill-opacity="0.89"/>
+<path d="M104 189L107 194L104 198L102 194Z" fill="#f0d8ff" fill-opacity="0.75"/>
+<path d="M135 199L137 203L135 206L133 203Z" fill="#c77dff" fill-opacity="0.93"/>
+</svg>

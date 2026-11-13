@@ -6,7 +6,6 @@ import { t } from "@/game/cards/i18n";
 import type { SideView } from "@/game/cards/server/view";
 import { ConnectionBadge } from "./ConnectionBadge";
 import { FoeArea } from "./FoeArea";
-import { TurnTimer } from "./TurnTimer";
 
 export interface TopBarProps {
   client: MatchClient;
@@ -19,17 +18,17 @@ export interface TopBarProps {
   onToggleMenu: () => void;
 }
 
+/** Foe strip + connection + menu. UI-08: the turn timer moved to the turn chip on the centre divider. */
 export function TopBar({ client, foe, foeActive, targets, hoverTarget = null, menuOpen, onTapEntity, onToggleMenu }: TopBarProps) {
   return (
     <div className="cg-topbar">
       <FoeArea foe={foe} active={foeActive} targets={targets} hoverTarget={hoverTarget} onTapEntity={onTapEntity} />
       <span className="cg-topbar-spacer" />
       <ConnectionBadge client={client} />
-      <TurnTimer client={client} />
       <button
         type="button"
         data-cg-tap
-        className={`cg-button${menuOpen ? " cg-button--active" : ""}`}
+        className={`cg-button cg-topbar-menu${menuOpen ? " cg-button--active" : ""}`}
         aria-expanded={menuOpen}
         aria-label={t("match.menu")}
         onClick={onToggleMenu}

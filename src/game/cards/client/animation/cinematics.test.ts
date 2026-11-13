@@ -1,5 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { CATALOG } from "../../catalog";
+import { cardSignature, SIGNATURE_IDS, type SignatureId } from "../../catalog/visuals";
+import { SIGNATURES } from "./signatures";
 import type { FxApi } from "./fx";
 import { CINEMATIC, CINEMATIC_CAP_MS, CinematicPacer, entranceTimeline, playEntrance, REPEAT_CINEMATIC_SPEED, type StepKind } from "./cinematics";
 
@@ -120,5 +122,79 @@ describe("playEntrance", () => {
     abort.abort();
     await vi.runAllTimersAsync();
     expect(log).toEqual(["0 dim", `${CINEMATIC.raysAt} rays`]);
+  });
+});
+
+describe("UI-09 signature reveals (six premium cards, data-driven)", () => {
+  const ids = SIGNATURE_IDS;
+  const tl = (signature: SignatureId, speed = 1, reducedMotion = false) => entranceTimeline("cinematic", { speed, reducedMotion, signature });
+
+  it("exactly the six Legendaria/Única cards have a signature, each with its own spec", () => {
+    const premium = Object.values(CATALOG)
+      .filter((d) => d.rarity === "legendary" || d.rarity === "unique")
+      .map((d) => d.id)
+      .sort();
+    expect(premium).toEqual([...ids].sort());
+    for (const id of ids) expect(cardSignature(CATALOG[id])).toBe(id);
+    expect(cardSignature(CATALOG["flame-lance"])).toBeNull();
+    // No two signatures share the same aura + accent + mote recipe.
+    const recipes = ids.map((id) => JSON.stringify([SIGNATURES[id].aura, SIGNATURES[id].accent, SIGNATURES[id].motes.map((m) => m.kind)]));
+    expect(new Set(recipes).size).toBe(ids.length);
+  });
+
+  it("a signature replaces the rays with aura + accent + motes, stays ≤ 1.6 s and scales with speed", () => {
+    for (const id of ids) {
+      for (const speed of [1, 1.5, 2, 2 * REPEAT_CINEMATIC_SPEED]) {
+        const t = tl(id, speed);
+        expect(kinds(t).has("rays")).toBe(false);
+        expect(kinds(t).has("aura")).toBe(true);
+        expect(kinds(t).has("accent")).toBe(true);
+        expect(t.steps.filter((s) => s.kind === "motes").length).toBe(SIGNATURES[id].motes.length);
+        expect(t.total).toBe(Math.round(CINEMATIC.totalMs / speed));
+        expect(t.total).toBeLessThanOrEqual(CINEMATIC_CAP_MS);
+        expect(end(t)).toBeLessThanOrEqual(t.total);
+        for (const s of t.steps) if (s.kind === "aura" || s.kind === "accent" || s.kind === "motes") expect(s.signature ?? id).toBe(id);
+      }
+    }
+    expect(tl("ignis").steps.find((s) => s.kind === "shake")!.intensity).toBe(8);
+    expect(tl("vaelra").steps.find((s) => s.kind === "shake")!.intensity).toBe(CINEMATIC.shakeIntensity);
+  });
+
+  it("reduced motion: a still aura (fade-only rim) — no spin, accent, particles or shake", () => {
+    for (const id of ids) {
+      const t = tl(id, 1, true);
+      expect(kinds(t)).toEqual(new Set(["dim", "name", "aura", "reveal", "sound"]));
+      expect(t.steps.find((s) => s.kind === "aura")!.still).toBe(true);
+      expect(t.total).toBeLessThanOrEqual(CINEMATIC_CAP_MS);
+    }
+  });
+
+  it("playEntrance drives the signature primitives at their offsets", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(0);
+    const log: string[] = [];
+    const wait = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
+    const fx = {
+      wait,
+      dim: (ms: number) => wait(ms),
+      reveal: (_d: string, _m: string, ms: number) => wait(ms),
+      shake: (_i: number, ms: number) => wait(ms),
+      nameBanner: (_t: string, _r: string, ms: number) => wait(ms),
+      aura: (sig: string, ms: number) => (log.push(`${Date.now()} aura ${sig}`), wait(ms)),
+      accent: (sig: string, motion: string, ms: number) => (log.push(`${Date.now()} accent ${sig} ${motion}`), wait(ms)),
+      motes: (kind: string, n: number, from: string) => void log.push(`${Date.now()} motes ${kind} ${n} ${from}`),
+    } as unknown as FxApi;
+    const t = tl("morvath");
+    void playEntrance(CATALOG.morvath, "Morvath", t, { fx, signal: new AbortController().signal, sound: () => {} });
+    await vi.runAllTimersAsync();
+    const m = SIGNATURES.morvath;
+    expect(log).toEqual(
+      expect.arrayContaining([
+        `${m.aura.at} aura morvath`,
+        `${m.accent.at} accent morvath pulse`,
+        ...m.motes.map((x) => `${x.at} motes ${x.kind} ${x.count} ${x.from}`),
+      ]),
+    );
+    vi.useRealTimers();
   });
 });

@@ -1,14 +1,15 @@
 // A unit on the board (§17.4): art, attack bottom-left, health bottom-right, keyword icons, Escudo charges, status
 // icons with magnitudes (+ the Silencio marker), "zZz" while sleeping, green ring when it can attack (from
 // `legal.attacks`), red glow when targetable, an icy rim while Congelado; Phase 20: Escudo Divino bubble, Sigilo shimmer.
+// UI-08: one prioritized marker row on the top edge (at most 3 slots, the last one "+N" when more apply — the inspect
+// sheet lists everything), a shield-plate frame for Provocar, a dimmed "sleeping" look with a moon badge, and
+// buff/debuff chevrons next to the stat badges.
 import { memo, type MouseEvent } from "react";
 import { CATALOG } from "@/game/cards/catalog";
-import { KEYWORDS } from "@/game/cards/catalog/keywords";
-import { STATUS_DEFS } from "@/game/cards/catalog/statuses";
-import type { KeywordId, StatusId } from "@/game/cards/catalog/types";
 import type { UnitSnapshot } from "@/game/cards/engine/events";
 import { cardName, t } from "@/game/cards/i18n";
-import { AttackBadge, CardArt, HealthBadge, KeywordIcon, StatusIcon } from "../skin";
+import { AttackBadge, CardArt, HealthBadge, KeywordIcon, StatDelta, StatusIcon } from "../skin";
+import { markerName, statDeltas, unitMarkers, visibleMarkers } from "@/game/cards/client/unitMarkers";
 
 export interface UnitTokenProps {
   unit: UnitSnapshot;
@@ -25,43 +26,24 @@ export interface UnitTokenProps {
   onTap: (unit: UnitSnapshot, e: MouseEvent<HTMLButtonElement>) => void;
 }
 
-const MAX_ICONS = 4;
-
-function keywordIcons(unit: UnitSnapshot): { id: KeywordId; value?: number }[] {
-  if (unit.silenced) return [];
-  const out: { id: KeywordId; value?: number }[] = [];
-  for (const meta of Object.values(KEYWORDS).sort((a, b) => a.order - b.order)) {
-    const v = unit.keywords[meta.id];
-    if (v === undefined || meta.id === "taunt") continue; // Provocar is shown by the frame
-    if (meta.id === "shield") {
-      if (unit.shieldCharges > 0) out.push({ id: "shield", value: unit.shieldCharges });
-      continue;
-    }
-    out.push({ id: meta.id, value: typeof v === "number" ? v : undefined });
-  }
-  return out.slice(0, MAX_ICONS);
-}
-
-const MAX_STATUS_ICONS = 4;
-
-function statusIcons(unit: UnitSnapshot): { id: StatusId | "silenced"; magnitude?: number }[] {
-  const out: { id: StatusId | "silenced"; magnitude?: number }[] = [];
-  if (unit.silenced) out.push({ id: "silenced" });
-  for (const st of unit.statuses) out.push({ id: st.id, magnitude: STATUS_DEFS[st.id].hasMagnitude ? st.magnitude : undefined });
-  return out.slice(0, MAX_STATUS_ICONS);
-}
+/** Marker slots on the token's top edge (the last becomes "+N" when more apply). */
+export const MAX_UNIT_MARKERS = 3;
 
 export const UnitToken = memo(function UnitToken({ unit, mine, canAttack, targetable, hovered, selected, pending, actionable, onTap }: UnitTokenProps) {
   const def = CATALOG[unit.defId];
-  const baseAttack = def?.type === "mob" ? def.attack : unit.attack;
+  const markers = unitMarkers(unit);
+  const { shown, hidden } = visibleMarkers(markers, MAX_UNIT_MARKERS);
+  const delta = statDeltas(unit, def);
   const taunt = !unit.silenced && unit.keywords.taunt === true;
-  const classes = ["cg-unit"];
+  const classes = ["cg-unit", mine ? "cg-unit--mine" : "cg-unit--foe"];
   if (taunt) classes.push("cg-unit--taunt");
   if (unit.silenced) classes.push("cg-unit-silenced");
   if (unit.statuses.some((st) => st.id === "freeze")) classes.push("cg-unit--frozen");
   // Phase 20: a holy bubble while Escudo Divino holds, a shimmer while hidden by Sigilo.
   if (!unit.silenced && unit.keywords.divineShield) classes.push("cg-unit--divine");
   if (!unit.silenced && unit.keywords.stealth) classes.push("cg-unit--stealth");
+  if (unit.sleeping) classes.push("cg-unit--sleeping");
+  if (unit.health < unit.maxHealth) classes.push("cg-unit--damaged");
   if (actionable || targetable) classes.push("cg-unit--actionable");
   if (selected) classes.push("cg-unit--selected");
   else if (targetable) classes.push("cg-unit--targetable");
@@ -69,7 +51,8 @@ export const UnitToken = memo(function UnitToken({ unit, mine, canAttack, target
   if (pending) classes.push("cg-unit--pending");
   if (hovered) classes.push(targetable ? "cg-unit--hover-valid" : "cg-unit--hover");
   const name = cardName(unit.defId);
-  const label = t("match.unitLabel", { name, attack: unit.attack, health: unit.health });
+  const state = unit.sleeping ? t("match.sleeping") : canAttack ? t("match.canAttack") : null;
+  const label = [t("match.unitLabel", { name, attack: unit.attack, health: unit.health }), ...markers.map(markerName), ...(state ? [state] : [])].join(", ");
   return (
     <button
       type="button"
@@ -82,38 +65,40 @@ export const UnitToken = memo(function UnitToken({ unit, mine, canAttack, target
       className={classes.join(" ")}
       aria-label={label}
       aria-pressed={selected}
-      title={`${name}${unit.sleeping ? ` — ${t("match.sleeping")}` : canAttack ? ` — ${t("match.canAttack")}` : ""}`}
+      title={`${name}${state ? ` — ${state}` : ""}`}
       onClick={(e) => onTap(unit, e)}
     >
       <span className="cg-unit-body">
         <CardArt art={def?.art ?? unit.defId} tribe={def?.type === "mob" ? def.tribes[0] : undefined} />
       </span>
-      <span className="cg-unit-keywords">
-        {keywordIcons(unit).map((k) => (
-          <KeywordIcon key={k.id} keyword={k.id} value={k.value} size="17cqh" title={t(`keyword.${k.id}.name`)} />
-        ))}
-      </span>
-      <span className="cg-unit-statuses">
-        {statusIcons(unit).map((st) => (
-          <StatusIcon
-            key={st.id}
-            status={st.id}
-            magnitude={st.magnitude}
-            size="17cqh"
-            title={st.id === "silenced" ? t("abilityWords.silence.name") : t(`status.${st.id}.name`)}
-          />
-        ))}
-      </span>
+      {(shown.length > 0 || hidden > 0) && (
+        <span className="cg-unit-markers">
+          {shown.map((m) =>
+            m.kind === "keyword" ? (
+              <KeywordIcon key={`k-${m.id}`} keyword={m.id} value={m.value} size="22cqh" title={markerName(m)} />
+            ) : (
+              <StatusIcon key={`s-${m.id}`} status={m.id} magnitude={m.magnitude} size="22cqh" title={markerName(m)} />
+            ),
+          )}
+          {hidden > 0 && (
+            <span className="cg-unit-more" title={markers.slice(shown.length).map(markerName).join(", ")}>
+              +{hidden}
+            </span>
+          )}
+        </span>
+      )}
       {unit.sleeping && (
         <span className="cg-unit-sleep" aria-hidden>
           zZz
         </span>
       )}
       <span className="cg-unit-attack">
-        <AttackBadge value={unit.attack} buffed={unit.attack > baseAttack} debuffed={unit.attack < baseAttack} size="30cqh" />
+        <AttackBadge value={unit.attack} buffed={delta.attack > 0} debuffed={delta.attack < 0} size="30cqh" />
+        <StatDelta delta={delta.attack} size="13cqh" />
       </span>
       <span className="cg-unit-health">
-        <HealthBadge value={unit.health} max={unit.maxHealth} damaged={unit.health < unit.maxHealth} size="30cqh" />
+        <HealthBadge value={unit.health} max={unit.maxHealth} damaged={unit.health < unit.maxHealth} buffed={delta.health > 0} size="30cqh" />
+        <StatDelta delta={delta.health} size="13cqh" />
       </span>
     </button>
   );

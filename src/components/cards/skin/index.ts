@@ -13,8 +13,11 @@ export { EndTurnButton, type EndTurnButtonProps, type EndTurnState } from "./End
 export { HealthBadge, type HealthBadgeProps } from "./HealthBadge";
 export { HeroPortrait, type HeroPortraitProps } from "./HeroPortrait";
 export { KeywordIcon, type KeywordIconProps } from "./KeywordIcon";
-export { ManaCrystals, type ManaCrystalsProps } from "./ManaCrystals";
+export { ManaCrystals, ManaGauge, type ManaCrystalsProps, type ManaGaugeProps } from "./ManaCrystals";
 export { RarityGem, type RarityGemProps } from "./RarityGem";
+export { StatDelta, type StatDeltaProps } from "./StatDelta";
 export { StatusIcon, type StatusIconProps } from "./StatusIcon";
 export { TribeLabel, type TribeLabelProps } from "./TribeLabel";
+// Non-match visuals (GameCrest, PackArt — UI-07) are imported from their own modules, not from this barrel, so the
+// shared skin chunk that the match route loads stays free of them (route-size budget, PERFORMANCE.md).
 export { QrCode, type QrCodeProps } from "./QrCode";

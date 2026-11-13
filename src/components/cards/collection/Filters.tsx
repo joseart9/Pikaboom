@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import { RARITIES } from "@/game/cards/catalog";
 import { COST_BUCKETS, EMPTY_FILTER, isActive, MAX_COST_BUCKET, NO_TRIBE, TRIBE_CHIPS, toggleChip, type CollectionFilter, type Ownership } from "@/game/cards/collection/filter";
 import { t } from "@/game/cards/i18n";
-import { RarityGem } from "../skin";
+import { GameIcon, RarityGem } from "../skin";
 
 export interface FiltersProps {
   filter: CollectionFilter;
@@ -29,22 +29,27 @@ export function Filters({ filter, onChange, shown, total }: FiltersProps) {
 
   return (
     <aside className="cg-filters" aria-label={t("collection.filters")}>
-      <input
-        type="search"
-        className="cg-filter-search"
-        value={filter.query}
-        maxLength={60}
-        placeholder={t("collection.search")}
-        aria-label={t("collection.searchLabel")}
-        autoComplete="off"
-        spellCheck={false}
-        onChange={(e) => set({ query: e.target.value })}
-      />
+      <span className="cg-search-field">
+        <GameIcon name="search" className="cg-search-icon" />
+        <input
+          type="search"
+          className="cg-filter-search"
+          value={filter.query}
+          maxLength={60}
+          placeholder={t("collection.search")}
+          aria-label={t("collection.searchLabel")}
+          autoComplete="off"
+          spellCheck={false}
+          onChange={(e) => set({ query: e.target.value })}
+        />
+      </span>
       <div className="cg-filter-row">
         <Chip pressed={filter.ownership === "owned"} onClick={() => ownership("owned")}>
+          <GameIcon name="check" />
           {t("collection.owned")}
         </Chip>
         <Chip pressed={filter.ownership === "missing"} onClick={() => ownership("missing")}>
+          <GameIcon name="lock" />
           {t("collection.missing")}
         </Chip>
       </div>

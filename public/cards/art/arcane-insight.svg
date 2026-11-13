@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="arcane-insight-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#120830"/><stop offset="0.55" stop-color="#34186e"/><stop offset="1" stop-color="#160a30"/></linearGradient><radialGradient id="arcane-insight-r1" gradientUnits="userSpaceOnUse" cx="256" cy="170" r="260"><stop offset="0" stop-color="#c77dff" stop-opacity="0.4"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.18000000000000002"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="arcane-insight-r2" gradientUnits="userSpaceOnUse" cx="256" cy="160" r="120"><stop offset="0" stop-color="#e0b8ff" stop-opacity="0.7"/><stop offset="0.45" stop-color="#e0b8ff" stop-opacity="0.315"/><stop offset="1" stop-color="#e0b8ff" stop-opacity="0"/></radialGradient><path id="arcane-insight-p3" d="M150 160Q256 74 362 160Q256 246 150 160Z"/><clipPath id="arcane-insight-c4"><use href="#arcane-insight-p3"/></clipPath><clipPath id="arcane-insight-c5"><use href="#arcane-insight-p3" x="-8" y="-8"/></clipPath><path id="arcane-insight-p6" d="M216 160A40 40 0 1 0 296 160A40 40 0 1 0 216 160Z"/><clipPath id="arcane-insight-c7"><use href="#arcane-insight-p6"/></clipPath><clipPath id="arcane-insight-c8"><use href="#arcane-insight-p6" x="-8" y="-8"/></clipPath><path id="arcane-insight-p9" d="M112 352L256 336L400 352L394 418L256 404L118 418Z"/><clipPath id="arcane-insight-ca"><use href="#arcane-insight-p9"/></clipPath><clipPath id="arcane-insight-cb"><use href="#arcane-insight-p9" x="-8" y="-8"/></clipPath><radialGradient id="arcane-insight-rc" gradientUnits="userSpaceOnUse" cx="256" cy="352" r="130"><stop offset="0" stop-color="#fff1c1" stop-opacity="0.55"/><stop offset="0.45" stop-color="#fff1c1" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#fff1c1" stop-opacity="0"/></radialGradient><path id="arcane-insight-pd" d="M124 344L252 330L256 398L130 410Z"/><clipPath id="arcane-insight-ce"><use href="#arcane-insight-pd"/></clipPath><clipPath id="arcane-insight-cf"><use href="#arcane-insight-pd" x="-8" y="-6"/></clipPath><path id="arcane-insight-pg" d="M388 344L260 330L256 398L382 410Z"/><clipPath id="arcane-insight-ch"><use href="#arcane-insight-pg"/></clipPath><clipPath id="arcane-insight-ci"><use href="#arcane-insight-pg" x="-8" y="-6"/></clipPath><path id="arcane-insight-pj" d="M146 208L206 208L206 296L146 296Z"/><clipPath id="arcane-insight-ck"><use href="#arcane-insight-pj"/></clipPath><clipPath id="arcane-insight-cl"><use href="#arcane-insight-pj" x="-6" y="-6"/></clipPath><path id="arcane-insight-pm" d="M299 179L377 179L377 293L299 293Z"/><clipPath id="arcane-insight-cn"><use href="#arcane-insight-pm"/></clipPath><clipPath id="arcane-insight-co"><use href="#arcane-insight-pm" x="-6" y="-6"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#arcane-insight-l0)"/>
+<circle cx="256" cy="170" r="260" fill="url(#arcane-insight-r1)"/>
+<path d="M106 160A150 92 0 1 0 406 160A150 92 0 1 0 106 160ZM124 160A132 80 0 1 0 388 160A132 80 0 1 0 124 160Z" fill="none" stroke="#c77dff" stroke-width="3" stroke-opacity="0.3"/>
+<path d="M368 160L406 160" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M359 186L378 190" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M335 208L362 224" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M299 222L307 233" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M256 227L256 250" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M213 222L205 233" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M177 208L150 224" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M153 186L134 190" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M144 160L106 160" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M153 134L134 130" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M177 112L150 96" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M213 98L205 87" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M256 93L256 70" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M299 98L307 87" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M335 112L362 96" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<path d="M359 134L378 130" fill="none" stroke="#e0b8ff" stroke-width="4" stroke-opacity="0.45"/>
+<circle cx="256" cy="160" r="120" fill="url(#arcane-insight-r2)"/>
+<use href="#arcane-insight-p3" fill="#b48cff" stroke-width="12"/>
+<g clip-path="url(#arcane-insight-c4)">
+<use href="#arcane-insight-p3" x="-8" y="-8" fill="#ffffff"/>
+<g clip-path="url(#arcane-insight-c5)"><use href="#arcane-insight-p3" x="5" y="5" fill="#f3e8ff"/></g>
+</g>
+<use href="#arcane-insight-p6" fill="#1f5fbf" stroke-width="8"/>
+<g clip-path="url(#arcane-insight-c7)">
+<use href="#arcane-insight-p6" x="-8" y="-8" fill="#bfe6ff"/>
+<g clip-path="url(#arcane-insight-c8)"><use href="#arcane-insight-p6" x="5" y="5" fill="#3fa9ff"/></g>
+</g>
+<path d="M228 160A28 28 0 1 0 284 160A28 28 0 1 0 228 160Z" fill="none" stroke="#9be7ff" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M256 128C266 144 266 176 256 192C246 176 246 144 256 128Z" fill="#1d0842"/>
+<path d="M236 146A6 6 0 1 0 248 146A6 6 0 1 0 236 146Z" fill="#ffffff"/>
+<path d="M150 160Q256 74 362 160M150 160Q256 246 362 160" fill="none" stroke-width="7"/>
+<path d="M168 120L180 136M210 98L216 116M256 92V110M302 98L296 116M344 120L332 136" fill="none" stroke-width="5"/>
+<use href="#arcane-insight-p9" fill="#3e0c2a" stroke-width="12"/>
+<g clip-path="url(#arcane-insight-ca)">
+<use href="#arcane-insight-p9" x="-8" y="-8" fill="#94306a"/>
+<g clip-path="url(#arcane-insight-cb)"><use href="#arcane-insight-p9" x="7" y="7" fill="#6a1f4a"/></g>
+</g>
+<circle cx="256" cy="352" r="130" fill="url(#arcane-insight-rc)"/>
+<use href="#arcane-insight-pd" fill="#c2b08a" stroke-width="10"/>
+<g clip-path="url(#arcane-insight-ce)">
+<use href="#arcane-insight-pd" x="-8" y="-6" fill="#fffaf0"/>
+<g clip-path="url(#arcane-insight-cf)"><use href="#arcane-insight-pd" x="4" y="4" fill="#efe4c8"/></g>
+</g>
+<use href="#arcane-insight-pg" fill="#c2b08a" stroke-width="10"/>
+<g clip-path="url(#arcane-insight-ch)">
+<use href="#arcane-insight-pg" x="-8" y="-6" fill="#fffaf0"/>
+<g clip-path="url(#arcane-insight-ci)"><use href="#arcane-insight-pg" x="4" y="4" fill="#efe4c8"/></g>
+</g>
+<path d="M146 358L232 349M148 372L234 363M150 386L234 377M366 358L280 349M364 372L278 363M362 386L278 377" fill="none" stroke="#c2b08a" stroke-width="3"/>
+<path d="M236 340C232 335 225 318 214 312C203 306 179 310 168 304C157 298 150 283 150 274C150 265 167 256 170 252" fill="none" stroke="#9be7ff" stroke-width="6" stroke-opacity="0.65"/>
+<path d="M276 338C281 335 289 322 304 318C319 314 353 318 366 312C379 306 386 290 384 280C382 270 361 258 356 254" fill="none" stroke="#e0b8ff" stroke-width="7" stroke-opacity="0.7"/>
+<g transform="rotate(-20 176 252)">
+<use href="#arcane-insight-pj" fill="#f2c14e" stroke-width="10"/>
+<g clip-path="url(#arcane-insight-ck)">
+<use href="#arcane-insight-pj" x="-4" fill="#2f1f62"/>
+<use href="#arcane-insight-pj" x="-6" y="-6" fill="#7a5ad0"/>
+<g clip-path="url(#arcane-insight-cl)"><use href="#arcane-insight-pj" x="4" y="4" fill="#4b2f8f"/></g>
+</g>
+<path d="M153 215L199 215L199 289L153 289Z" fill="none" stroke="#f2c14e" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M176 234L180 248L194 252L180 256L176 270L172 256L158 252L172 248Z" fill="#f2c14e"/>
+<path d="M172 252A4 4 0 1 0 180 252A4 4 0 1 0 172 252Z" fill="#ff006e"/>
+</g>
+<g transform="rotate(14 338 236)">
+<use href="#arcane-insight-pm" fill="#f2c14e" stroke-width="10"/>
+<g clip-path="url(#arcane-insight-cn)">
+<use href="#arcane-insight-pm" x="-4" fill="#2f1f62"/>
+<use href="#arcane-insight-pm" x="-6" y="-6" fill="#7a5ad0"/>
+<g clip-path="url(#arcane-insight-co)"><use href="#arcane-insight-pm" x="4" y="4" fill="#4b2f8f"/></g>
+</g>
+<path d="M306 186L370 186L370 286L306 286Z" fill="none" stroke="#f2c14e" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M338 213L344 230L361 236L344 242L338 259L332 242L315 236L332 230Z" fill="#f2c14e"/>
+<path d="M333 236A5 5 0 1 0 343 236A5 5 0 1 0 333 236Z" fill="#ff006e"/>
+</g>
+<path d="M274 292L279 299L274 307L270 299Z" fill="#9be7ff" fill-opacity="0.87"/>
+<path d="M123 222L126 228L123 234L120 228Z" fill="#e0b8ff" fill-opacity="0.71"/>
+<path d="M228 266L232 273L228 280L224 273Z" fill="#fff1c1" fill-opacity="0.81"/>
+<path d="M330 249L334 256L330 262L326 256Z" fill="#9be7ff" fill-opacity="0.71"/>
+<path d="M365 262L368 267L365 273L362 267Z" fill="#e0b8ff" fill-opacity="0.92"/>
+<path d="M391 278L396 286L391 294L387 286Z" fill="#fff1c1" fill-opacity="0.6"/>
+<path d="M114 212L118 220L114 228L110 220Z" fill="#9be7ff" fill-opacity="0.9"/>
+<path d="M311 224L315 230L311 237L308 230Z" fill="#e0b8ff" fill-opacity="0.93"/>
+<path d="M170 214L174 222L170 229L166 222Z" fill="#fff1c1" fill-opacity="0.73"/>
+<path d="M295 272L298 278L295 283L292 278Z" fill="#9be7ff" fill-opacity="0.55"/>
+<path d="M175 302L178 308L175 314L172 308Z" fill="#e0b8ff" fill-opacity="0.53"/>
+<path d="M348 230L351 236L348 242L345 236Z" fill="#fff1c1" fill-opacity="0.91"/>
+<path d="M121 298L123 301L121 305L119 301Z" fill="#9be7ff" fill-opacity="0.93"/>
+<path d="M370 333L373 338L370 343L367 338Z" fill="#e0b8ff" fill-opacity="0.63"/>
+<path d="M335 323L337 326L335 330L333 326Z" fill="#fff1c1" fill-opacity="0.91"/>
+<path d="M332 247L335 251L332 256L330 251Z" fill="#9be7ff" fill-opacity="0.87"/>
+</svg>

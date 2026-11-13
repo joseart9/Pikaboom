@@ -28,7 +28,8 @@ describe("replay (Phase 8 row 13)", () => {
       const shuffled = [...log].reverse();
       expect(replay(setup, shuffled), `game ${g}`).toEqual(s);
     }
-  });
+    // ~4 s alone; the default 5 s limit is too tight when the whole suite runs in parallel (UI-10).
+  }, 30_000);
 
   it("refuses setups from another engine version", () => {
     const setup = { ...makeSetup(), engineVersion: 999 };

@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="nyxara-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#05020c"/><stop offset="0.55" stop-color="#1a0830"/><stop offset="1" stop-color="#08030f"/></linearGradient><radialGradient id="nyxara-r1" gradientUnits="userSpaceOnUse" cx="300" cy="150" r="240"><stop offset="0" stop-color="#ff006e" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ff006e" stop-opacity="0.135"/><stop offset="1" stop-color="#ff006e" stop-opacity="0"/></radialGradient><radialGradient id="nyxara-r2" gradientUnits="userSpaceOnUse" cx="304" cy="144" r="150"><stop offset="0" stop-color="#ff4dd2" stop-opacity="0.6"/><stop offset="0.45" stop-color="#ff4dd2" stop-opacity="0.27"/><stop offset="1" stop-color="#ff4dd2" stop-opacity="0"/></radialGradient><linearGradient id="nyxara-l3" gradientUnits="userSpaceOnUse" x1="0" y1="382" x2="0" y2="512"><stop offset="0" stop-color="#1e0c34"/><stop offset="1" stop-color="#0a0418"/></linearGradient><radialGradient id="nyxara-r4" gradientUnits="userSpaceOnUse" cx="250" cy="430" r="190"><stop offset="0" stop-color="#ff006e" stop-opacity="0.55"/><stop offset="1" stop-color="#ff006e" stop-opacity="0"/></radialGradient><path id="nyxara-p5" d="M222 214L130 132L56 84Q71 135 34 188Q73 203 64 278Q105 250 124 324Q146 262 182 312Q180 250 222 290Z"/><clipPath id="nyxara-c6"><use href="#nyxara-p5"/></clipPath><clipPath id="nyxara-c7"><use href="#nyxara-p5" x="-8" y="-8"/></clipPath><path id="nyxara-p8" d="M227 209C213 195 149 140 134 128C119 116 127 127 126 128C125 130 113 123 126 136C140 150 202 207 217 219C232 232 226 220 227 219C229 217 241 222 227 209Z"/><clipPath id="nyxara-c9"><use href="#nyxara-p8"/></clipPath><clipPath id="nyxara-ca"><use href="#nyxara-p8" x="-3" y="-3"/></clipPath><path id="nyxara-pb" d="M133 127C122 120 71 90 59 84C48 77 57 84 56 84C56 85 47 79 57 87C68 95 115 130 127 137C139 144 134 136 135 135C136 134 144 135 133 127Z"/><clipPath id="nyxara-cc"><use href="#nyxara-pb"/></clipPath><clipPath id="nyxara-cd"><use href="#nyxara-pb" x="-3" y="-3"/></clipPath><path id="nyxara-pe" d="M296 239C306 235 333 207 347 204C362 201 381 223 393 219C406 215 425 183 431 177C436 170 430 176 430 176C430 176 435 170 429 175C423 180 404 207 391 209C378 211 361 186 345 188C329 190 294 213 284 221C275 228 279 233 281 236C282 239 286 244 296 239Z"/><clipPath id="nyxara-cf"><use href="#nyxara-pe"/></clipPath><clipPath id="nyxara-cg"><use href="#nyxara-pe" x="-4" y="-4"/></clipPath><path id="nyxara-ph" d="M292 262C303 265 337 262 353 268C370 275 388 301 403 304C418 307 445 290 452 287C460 284 452 286 452 286C452 286 459 284 452 285C445 287 419 301 405 296C391 292 375 264 359 256C342 247 307 243 296 242C284 241 285 247 284 250C284 253 282 259 292 262Z"/><clipPath id="nyxara-ci"><use href="#nyxara-ph"/></clipPath><clipPath id="nyxara-cj"><use href="#nyxara-ph" x="-4" y="-4"/></clipPath><path id="nyxara-pk" d="M293 216C299 208 310 177 322 164C334 151 360 141 372 130C384 119 400 97 405 91C410 85 404 90 404 90C404 90 409 84 403 89C398 95 382 116 368 126C355 136 327 143 314 156C300 168 284 198 279 208C274 217 280 218 282 219C284 220 287 224 293 216Z"/><clipPath id="nyxara-cl"><use href="#nyxara-pk"/></clipPath><clipPath id="nyxara-cm"><use href="#nyxara-pk" x="-4" y="-4"/></clipPath><path id="nyxara-pn" d="M226 150C228 138 252 122 262 120C273 119 284 128 296 140C308 152 329 181 340 200C351 220 374 261 372 270C371 279 341 268 330 262C319 256 306 232 298 230C290 228 283 255 276 250C269 246 258 215 250 200C243 185 224 162 226 150Z"/><clipPath id="nyxara-co"><use href="#nyxara-pn"/></clipPath><clipPath id="nyxara-cp"><use href="#nyxara-pn" x="-8" y="-8"/></clipPath><path id="nyxara-pq" d="M222 270C230 262 282 262 290 270L370 420L342 404L320 428L296 406L272 430L248 406L224 428L204 404L176 424L150 404Z"/><clipPath id="nyxara-cr"><use href="#nyxara-pq"/></clipPath><clipPath id="nyxara-cs"><use href="#nyxara-pq" x="-14" y="-10"/></clipPath><path id="nyxara-pt" d="M226 214C242 206 270 206 286 214L292 276C276 284 236 284 220 276Z"/><clipPath id="nyxara-cu"><use href="#nyxara-pt"/></clipPath><clipPath id="nyxara-cv"><use href="#nyxara-pt" x="-8" y="-8"/></clipPath><path id="nyxara-pw" d="M256 230L268 244L256 262L244 244Z"/><clipPath id="nyxara-cx"><use href="#nyxara-pw"/></clipPath><clipPath id="nyxara-cy"><use href="#nyxara-pw" x="-3" y="-3"/></clipPath><path id="nyxara-pz" d="M219 218C214 225 202 248 198 260C194 272 191 292 191 299C190 306 193 305 195 305C196 306 199 307 201 301C204 295 205 276 210 264C215 253 230 233 233 226C236 218 232 216 230 215C228 214 224 211 219 218Z"/><clipPath id="nyxara-c10"><use href="#nyxara-pz"/></clipPath><clipPath id="nyxara-c11"><use href="#nyxara-pz" x="-4" y="-4"/></clipPath><path id="nyxara-p12" d="M193 299C192 303 190 318 189 322C189 325 190 322 190 322C190 322 190 325 191 322C192 319 198 305 199 301C200 297 198 297 197 297C196 297 194 296 193 299ZM195 300C195 304 198 321 199 324C200 328 200 324 200 324C200 324 201 328 201 324C201 320 201 304 201 300C201 296 199 297 198 297C197 297 195 296 195 300ZM188 302A9 8 0 1 0 206 302A9 8 0 1 0 188 302Z"/><clipPath id="nyxara-c13"><use href="#nyxara-p12"/></clipPath><clipPath id="nyxara-c14"><use href="#nyxara-p12" x="-2" y="-2"/></clipPath><path id="nyxara-p15" d="M282 229C290 234 316 251 329 252C343 254 365 241 372 237C379 234 376 232 375 230C375 229 375 225 368 227C362 228 343 241 331 240C319 238 298 218 290 215C282 212 280 216 279 218C278 220 275 224 282 229Z"/><clipPath id="nyxara-c16"><use href="#nyxara-p15"/></clipPath><clipPath id="nyxara-c17"><use href="#nyxara-p15" x="-4" y="-4"/></clipPath><radialGradient id="nyxara-r18" gradientUnits="userSpaceOnUse" cx="400" cy="224" r="64"><stop offset="0" stop-color="#ff4dd2" stop-opacity="0.85"/><stop offset="0.45" stop-color="#ff4dd2" stop-opacity="0.3825"/><stop offset="1" stop-color="#ff4dd2" stop-opacity="0"/></radialGradient><path id="nyxara-p19" d="M400 188L405 215L431 206L410 224L431 242L405 233L400 260L395 233L369 242L390 224L369 206L395 215Z"/><clipPath id="nyxara-c1a"><use href="#nyxara-p19"/></clipPath><path id="nyxara-p1c" d="M247 139C243 131 223 112 220 99C217 86 224 58 225 50C226 43 224 50 224 50C224 50 225 42 223 50C221 57 207 86 208 101C209 116 224 141 229 149C234 157 240 154 243 153C245 151 250 147 247 139Z"/><clipPath id="nyxara-c1d"><use href="#nyxara-p1c"/></clipPath><clipPath id="nyxara-c1e"><use href="#nyxara-p1c" x="-3" y="-3"/></clipPath><path id="nyxara-p1f" d="M279 149C283 146 289 132 291 127C293 123 294 121 294 118C295 116 294 112 292 112C291 111 287 112 286 114C284 115 284 117 281 121C278 125 267 134 265 139C263 143 265 150 267 151C269 153 276 153 279 149Z"/><clipPath id="nyxara-c1g"><use href="#nyxara-p1f"/></clipPath><clipPath id="nyxara-c1h"><use href="#nyxara-p1f" x="-3" y="-3"/></clipPath><path id="nyxara-p1i" d="M248 196L264 196L266 214L246 214Z"/><clipPath id="nyxara-c1j"><use href="#nyxara-p1i"/></clipPath><clipPath id="nyxara-c1k"><use href="#nyxara-p1i" x="-4" y="0"/></clipPath><path id="nyxara-p1l" d="M232 164C232 156 236 141 240 136C244 131 251 128 256 128C261 128 270 131 274 136C278 141 282 156 282 164C282 172 276 186 272 192C268 198 261 202 256 202C251 202 244 198 240 192C236 186 232 172 232 164Z"/><clipPath id="nyxara-c1m"><use href="#nyxara-p1l"/></clipPath><clipPath id="nyxara-c1n"><use href="#nyxara-p1l" x="-8" y="-8"/></clipPath><path id="nyxara-p1o" d="M230 150C236 126 276 126 284 150L256 140Z"/><clipPath id="nyxara-c1p"><use href="#nyxara-p1o"/></clipPath><clipPath id="nyxara-c1q"><use href="#nyxara-p1o" x="-3" y="-3"/></clipPath><path id="nyxara-p1r" d="M256 132L262 142L256 152L250 142Z"/><clipPath id="nyxara-c1s"><use href="#nyxara-p1r"/></clipPath><clipPath id="nyxara-c1t"><use href="#nyxara-p1r" x="-2" y="-2"/></clipPath><radialGradient id="nyxara-r1u" gradientUnits="userSpaceOnUse" cx="244" cy="168" r="12"><stop offset="0" stop-color="#ff4dd2" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4dd2" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4dd2" stop-opacity="0"/></radialGradient><radialGradient id="nyxara-r1v" gradientUnits="userSpaceOnUse" cx="268" cy="168" r="12"><stop offset="0" stop-color="#ff4dd2" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff4dd2" stop-opacity="0.405"/><stop offset="1" stop-color="#ff4dd2" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#nyxara-l0)"/>
+<circle cx="300" cy="150" r="240" fill="url(#nyxara-r1)"/>
+<circle cx="304" cy="144" r="150" fill="url(#nyxara-r2)"/>
+<path d="M327 16L337 67L380 38L367 88L418 82L385 121L434 138L387 159L424 194L372 193L390 241L344 218L339 269L308 228L281 272L271 221L228 250L241 200L190 206L223 167L174 150L221 129L184 94L236 95L218 47L264 70L269 19L300 60Z" fill="#ff006e" fill-opacity="0.18"/>
+<circle cx="304" cy="144" r="80" fill="#05020c" stroke="#ff4dd2" stroke-width="6"/>
+<path d="M240 96A80 80 0 0 1 344 74" fill="none" stroke="#ffd6f0" stroke-width="3" stroke-opacity="0.8"/>
+<circle cx="264" cy="299" r="1" fill="#ffffff" fill-opacity="0.77"/>
+<circle cx="113" cy="185" r="1" fill="#ff9fe6" fill-opacity="0.88"/>
+<circle cx="322" cy="159" r="2" fill="#ffffff" fill-opacity="0.8"/>
+<circle cx="125" cy="229" r="2" fill="#ff9fe6" fill-opacity="0.84"/>
+<circle cx="474" cy="84" r="2" fill="#ffffff" fill-opacity="0.78"/>
+<circle cx="71" cy="153" r="1" fill="#ff9fe6" fill-opacity="0.73"/>
+<circle cx="164" cy="231" r="1" fill="#ffffff" fill-opacity="0.73"/>
+<circle cx="244" cy="182" r="2" fill="#ff9fe6" fill-opacity="0.58"/>
+<circle cx="190" cy="167" r="1" fill="#ffffff" fill-opacity="0.85"/>
+<circle cx="451" cy="56" r="1" fill="#ff9fe6" fill-opacity="0.69"/>
+<circle cx="349" cy="109" r="2" fill="#ffffff" fill-opacity="0.49"/>
+<circle cx="123" cy="207" r="1" fill="#ff9fe6" fill-opacity="0.68"/>
+<circle cx="488" cy="273" r="1" fill="#ffffff" fill-opacity="0.55"/>
+<circle cx="166" cy="269" r="2" fill="#ff9fe6" fill-opacity="0.61"/>
+<circle cx="391" cy="228" r="2" fill="#ffffff" fill-opacity="0.55"/>
+<circle cx="236" cy="296" r="2" fill="#ff9fe6" fill-opacity="0.53"/>
+<circle cx="75" cy="43" r="2" fill="#ffffff" fill-opacity="0.64"/>
+<circle cx="180" cy="253" r="2" fill="#ff9fe6" fill-opacity="0.85"/>
+<circle cx="237" cy="158" r="1" fill="#ffffff" fill-opacity="0.55"/>
+<circle cx="174" cy="258" r="2" fill="#ff9fe6" fill-opacity="0.54"/>
+<circle cx="201" cy="22" r="2" fill="#ffffff" fill-opacity="0.76"/>
+<circle cx="25" cy="31" r="1" fill="#ff9fe6" fill-opacity="0.59"/>
+<path d="M0 418Q256 382 512 418V512H0Z" fill="url(#nyxara-l3)"/>
+<ellipse cx="250" cy="430" rx="190" ry="53" fill="url(#nyxara-r4)"/>
+<use href="#nyxara-p5" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#nyxara-c6)">
+<use href="#nyxara-p5" x="-4" fill="#1c0a2e"/>
+<use href="#nyxara-p5" x="-8" y="-8" fill="#5a2a7e"/>
+<g clip-path="url(#nyxara-c7)"><use href="#nyxara-p5" x="5" y="5" fill="#3a1858"/></g>
+</g>
+<path d="M130 132L40 185" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M130 132L68 269" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M130 132L124 312" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M130 132L179 301" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#nyxara-p8" fill="#ff006e" stroke-width="8"/>
+<g clip-path="url(#nyxara-c9)">
+<use href="#nyxara-p8" x="-5" fill="#0e0820"/>
+<use href="#nyxara-p8" x="-3" y="-3" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-ca)"><use href="#nyxara-p8" x="2" y="2" fill="#1e1238"/></g>
+</g>
+<use href="#nyxara-pb" fill="#ff006e" stroke-width="8"/>
+<g clip-path="url(#nyxara-cc)">
+<use href="#nyxara-pb" x="-5" fill="#0e0820"/>
+<use href="#nyxara-pb" x="-3" y="-3" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-cd)"><use href="#nyxara-pb" x="2" y="2" fill="#1e1238"/></g>
+</g>
+<use href="#nyxara-pe" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#nyxara-cf)">
+<use href="#nyxara-pe" x="-5" fill="#0e0820"/>
+<use href="#nyxara-pe" x="-4" y="-4" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-cg)"><use href="#nyxara-pe" x="3" y="3" fill="#1e1238"/></g>
+</g>
+<use href="#nyxara-ph" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#nyxara-ci)">
+<use href="#nyxara-ph" x="-5" fill="#0e0820"/>
+<use href="#nyxara-ph" x="-4" y="-4" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-cj)"><use href="#nyxara-ph" x="3" y="3" fill="#1e1238"/></g>
+</g>
+<use href="#nyxara-pk" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#nyxara-cl)">
+<use href="#nyxara-pk" x="-5" fill="#0e0820"/>
+<use href="#nyxara-pk" x="-4" y="-4" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-cm)"><use href="#nyxara-pk" x="3" y="3" fill="#1e1238"/></g>
+</g>
+<path d="M190 122A76 76 0 0 1 230 89" fill="none" stroke="#ff006e" stroke-width="9"/>
+<path d="M190 122A76 76 0 0 1 230 89" fill="none" stroke="#ffd6f0" stroke-width="3"/>
+<path d="M249 84A76 76 0 0 1 294 94" fill="none" stroke="#ff006e" stroke-width="9"/>
+<path d="M249 84A76 76 0 0 1 294 94" fill="none" stroke="#ffd6f0" stroke-width="3"/>
+<path d="M310 106A76 76 0 0 1 329 140" fill="none" stroke="#ff006e" stroke-width="9"/>
+<path d="M310 106A76 76 0 0 1 329 140" fill="none" stroke="#ffd6f0" stroke-width="3"/>
+<use href="#nyxara-pn" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#nyxara-co)">
+<use href="#nyxara-pn" x="-4" fill="#0a0416"/>
+<use href="#nyxara-pn" x="-8" y="-8" fill="#3a2456"/>
+<g clip-path="url(#nyxara-cp)"><use href="#nyxara-pn" x="7" y="7" fill="#1a0e2e"/></g>
+</g>
+<use href="#nyxara-pq" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#nyxara-cr)">
+<use href="#nyxara-pq" x="-5" fill="#0e0820"/>
+<use href="#nyxara-pq" x="-14" y="-10" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-cs)"><use href="#nyxara-pq" x="7" y="7" fill="#1e1238"/></g>
+</g>
+<path d="M240 290L210 400M256 290L256 410M272 290L300 400" fill="none" stroke="#ff006e" stroke-width="3" stroke-opacity="0.5"/>
+<path d="M320 324L322 328L320 331L318 328Z" fill="#ffffff" fill-opacity="0.53"/>
+<path d="M208 372L209 374L208 377L206 374Z" fill="#ff9fe6" fill-opacity="0.53"/>
+<path d="M306 316L307 319L306 322L304 319Z" fill="#ffffff" fill-opacity="0.93"/>
+<path d="M312 302L314 306L312 309L310 306Z" fill="#ff9fe6" fill-opacity="0.64"/>
+<path d="M244 365L246 369L244 373L241 369Z" fill="#ffffff" fill-opacity="0.97"/>
+<path d="M229 301L231 306L229 311L226 306Z" fill="#ff9fe6" fill-opacity="0.69"/>
+<path d="M276 338L278 342L276 347L273 342Z" fill="#ffffff" fill-opacity="0.84"/>
+<path d="M275 397L276 399L275 402L273 399Z" fill="#ff9fe6" fill-opacity="0.79"/>
+<path d="M228 297L230 301L228 306L225 301Z" fill="#ffffff" fill-opacity="0.93"/>
+<path d="M262 386L264 391L262 395L259 391Z" fill="#ff9fe6" fill-opacity="0.9"/>
+<path d="M320 351L322 355L320 359L318 355Z" fill="#ffffff" fill-opacity="0.65"/>
+<path d="M232 377L233 380L232 382L230 380Z" fill="#ff9fe6" fill-opacity="0.66"/>
+<use href="#nyxara-pt" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#nyxara-cu)">
+<use href="#nyxara-pt" x="-5" fill="#0e0820"/>
+<use href="#nyxara-pt" x="-8" y="-8" fill="#3a2a5e"/>
+<g clip-path="url(#nyxara-cv)"><use href="#nyxara-pt" x="7" y="7" fill="#1e1238"/></g>
+</g>
+<use href="#nyxara-pw" fill="#9a0042" stroke-width="8"/>
+<g clip-path="url(#nyxara-cx)">
+<use href="#nyxara-pw" x="-3" y="-3" fill="#ff9fe6"/>
+<g clip-path="url(#nyxara-cy)"><use href="#nyxara-pw" x="2" y="2" fill="#ff006e"/></g>
+</g>
+<use href="#nyxara-pz" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#nyxara-c10)">
+<use href="#nyxara-pz" x="-3" fill="#9a7ac0"/>
+<use href="#nyxara-pz" x="-4" y="-4" fill="#f3e8ff"/>
+<g clip-path="url(#nyxara-c11)"><use href="#nyxara-pz" x="3" y="3" fill="#d7c0f0"/></g>
+</g>
+<use href="#nyxara-p12" fill="#9a7ac0" stroke-width="6"/>
+<g clip-path="url(#nyxara-c13)">
+<use href="#nyxara-p12" x="-2" y="-2" fill="#f3e8ff"/>
+<g clip-path="url(#nyxara-c14)"><use href="#nyxara-p12" x="1" y="1" fill="#d7c0f0"/></g>
+</g>
+<use href="#nyxara-p15" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#nyxara-c16)">
+<use href="#nyxara-p15" x="-3" fill="#9a7ac0"/>
+<use href="#nyxara-p15" x="-4" y="-4" fill="#f3e8ff"/>
+<g clip-path="url(#nyxara-c17)"><use href="#nyxara-p15" x="3" y="3" fill="#d7c0f0"/></g>
+</g>
+<circle cx="400" cy="224" r="64" fill="url(#nyxara-r18)"/>
+<use href="#nyxara-p19" fill="#ff006e" stroke-width="8"/>
+<g clip-path="url(#nyxara-c1a)">
+<use href="#nyxara-p19" x="-3" y="-3" fill="#ffd6f0"/>
+</g>
+<path d="M354 224A46 46 0 1 0 446 224A46 46 0 1 0 354 224Z" fill="none" stroke="#ffd6f0" stroke-width="3" stroke-opacity="0.6"/>
+<use href="#nyxara-p1c" fill="#ff006e" stroke-width="8"/>
+<g clip-path="url(#nyxara-c1d)">
+<use href="#nyxara-p1c" x="-3" fill="#1e1414"/>
+<use href="#nyxara-p1c" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#nyxara-c1e)"><use href="#nyxara-p1c" x="2" y="2" fill="#2a2030"/></g>
+</g>
+<use href="#nyxara-p1f" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#nyxara-c1g)">
+<use href="#nyxara-p1f" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#nyxara-c1h)"><use href="#nyxara-p1f" x="2" y="2" fill="#2a2030"/></g>
+</g>
+<path d="M282 116L298 120" fill="none" stroke="#ff006e" stroke-width="3"/>
+<use href="#nyxara-p1i" fill="#9a7ac0" stroke-width="12"/>
+<g clip-path="url(#nyxara-c1j)">
+<use href="#nyxara-p1i" x="-4" y="0" fill="#f3e8ff"/>
+<g clip-path="url(#nyxara-c1k)"><use href="#nyxara-p1i" x="7" y="7" fill="#d7c0f0"/></g>
+</g>
+<use href="#nyxara-p1l" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#nyxara-c1m)">
+<use href="#nyxara-p1l" x="-3" fill="#9a7ac0"/>
+<use href="#nyxara-p1l" x="-8" y="-8" fill="#f3e8ff"/>
+<g clip-path="url(#nyxara-c1n)"><use href="#nyxara-p1l" x="7" y="7" fill="#d7c0f0"/></g>
+</g>
+<use href="#nyxara-p1o" fill="#0a0416" stroke-width="8"/>
+<g clip-path="url(#nyxara-c1p)">
+<use href="#nyxara-p1o" x="-3" y="-3" fill="#3a2456"/>
+<g clip-path="url(#nyxara-c1q)"><use href="#nyxara-p1o" x="2" y="2" fill="#1a0e2e"/></g>
+</g>
+<use href="#nyxara-p1r" fill="#9a0042" stroke-width="6"/>
+<g clip-path="url(#nyxara-c1s)">
+<use href="#nyxara-p1r" x="-2" y="-2" fill="#ff9fe6"/>
+<g clip-path="url(#nyxara-c1t)"><use href="#nyxara-p1r" x="1" y="1" fill="#ff006e"/></g>
+</g>
+<circle cx="244" cy="168" r="12" fill="url(#nyxara-r1u)"/>
+<path d="M252 168L234 162L238 172Z" fill="#ffd6f0"/>
+<circle cx="268" cy="168" r="12" fill="url(#nyxara-r1v)"/>
+<path d="M260 168L278 162L274 172Z" fill="#ffd6f0"/>
+<path d="M248 186C252 190 260 190 264 186C260 192 252 192 248 186Z" fill="#5a0a3a"/>
+</svg>

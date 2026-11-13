@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="ash-drake-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#2a1a24"/><stop offset="0.55" stop-color="#6a3e36"/><stop offset="1" stop-color="#1e1418"/></linearGradient><radialGradient id="ash-drake-r1" gradientUnits="userSpaceOnUse" cx="300" cy="300" r="260"><stop offset="0" stop-color="#ff9a4a" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ff9a4a" stop-opacity="0.135"/><stop offset="1" stop-color="#ff9a4a" stop-opacity="0"/></radialGradient><path id="ash-drake-p2" d="M232 246L168 300L86 352Q123 348 124 380Q155 359 176 384Q192 349 226 352Q223 306 262 266Z"/><clipPath id="ash-drake-c3"><use href="#ash-drake-p2"/></clipPath><clipPath id="ash-drake-c4"><use href="#ash-drake-p2" x="-8" y="-8"/></clipPath><path id="ash-drake-p5" d="M228 241C217 250 174 287 165 296C155 306 163 302 164 303C165 304 160 312 171 304C182 296 226 260 236 251C246 241 238 244 237 242C235 241 239 233 228 241Z"/><clipPath id="ash-drake-c6"><use href="#ash-drake-p5"/></clipPath><clipPath id="ash-drake-c7"><use href="#ash-drake-p5" x="-3" y="-3"/></clipPath><path id="ash-drake-p8" d="M165 296C153 304 99 341 87 349C76 357 87 351 87 351C87 352 77 359 89 352C102 345 158 312 171 304C183 296 173 299 172 297C171 296 178 288 165 296Z"/><clipPath id="ash-drake-c9"><use href="#ash-drake-p8"/></clipPath><clipPath id="ash-drake-ca"><use href="#ash-drake-p8" x="-3" y="-3"/></clipPath><path id="ash-drake-pb" d="M322 283C334 291 372 303 390 304C408 305 425 287 439 288C452 288 472 304 478 307C485 309 480 305 480 304C480 303 487 306 482 301C476 297 454 276 441 272C428 268 409 280 394 276C379 272 351 248 338 245C326 242 313 250 311 256C308 262 310 276 322 283Z"/><clipPath id="ash-drake-cc"><use href="#ash-drake-pb"/></clipPath><clipPath id="ash-drake-cd"><use href="#ash-drake-pb" x="-6" y="-6"/></clipPath><path id="ash-drake-pe" d="M470 296L500 290L490 316Z"/><clipPath id="ash-drake-cf"><use href="#ash-drake-pe"/></clipPath><clipPath id="ash-drake-cg"><use href="#ash-drake-pe" x="-2" y="-2"/></clipPath><path id="ash-drake-ph" d="M301 281C303 289 321 305 322 312C323 319 311 324 309 328C307 333 308 339 310 341C312 343 318 344 323 340C328 335 345 323 346 312C347 301 337 275 331 267C326 259 313 256 309 259C304 261 299 273 301 281Z"/><clipPath id="ash-drake-ci"><use href="#ash-drake-ph"/></clipPath><clipPath id="ash-drake-cj"><use href="#ash-drake-ph" x="-5" y="-5"/></clipPath><path id="ash-drake-pk" d="M309 333C307 335 302 343 301 345C300 347 302 346 302 346C302 346 301 348 303 347C305 346 313 341 315 339C317 337 316 334 315 333C314 332 311 331 309 333ZM316 337C316 340 317 350 317 352C317 354 318 352 318 352C318 352 318 354 319 352C320 350 324 341 324 339C324 336 322 334 321 334C319 334 317 335 316 337ZM324 338C325 340 332 347 333 348C335 350 334 348 334 348C334 348 335 350 335 348C335 345 333 336 332 334C330 332 327 332 326 332C325 333 323 335 324 338Z"/><clipPath id="ash-drake-cl"><use href="#ash-drake-pk"/></clipPath><clipPath id="ash-drake-cm"><use href="#ash-drake-pk" x="-1" y="-1"/></clipPath><path id="ash-drake-pn" d="M196 240C202 232 232 220 250 218C268 216 303 220 318 226C333 232 348 247 350 256C352 265 343 281 330 286C317 291 280 292 262 290C244 288 220 280 210 272C200 265 190 248 196 240Z"/><clipPath id="ash-drake-co"><use href="#ash-drake-pn"/></clipPath><clipPath id="ash-drake-cp"><use href="#ash-drake-pn" x="-12" y="-10"/></clipPath><path id="ash-drake-pq" d="M210 262C217 262 245 278 262 280C279 282 317 277 324 278C332 280 322 288 312 290C302 292 271 294 256 292C241 290 221 283 214 278C207 274 203 262 210 262Z"/><clipPath id="ash-drake-cr"><use href="#ash-drake-pq"/></clipPath><clipPath id="ash-drake-cs"><use href="#ash-drake-pq" x="-3" y="-3"/></clipPath><path id="ash-drake-pt" d="M244 234L296 124L230 42Q285 66 330 40Q346 81 404 84Q377 121 420 156Q369 167 380 214Q331 198 312 246Z"/><clipPath id="ash-drake-cu"><use href="#ash-drake-pt"/></clipPath><clipPath id="ash-drake-cv"><use href="#ash-drake-pt" x="-8" y="-8"/></clipPath><path id="ash-drake-pw" d="M251 237C260 220 295 145 302 127C309 109 300 119 299 118C297 117 300 104 290 121C281 138 244 213 237 231C229 249 238 240 241 241C243 242 242 255 251 237Z"/><clipPath id="ash-drake-cx"><use href="#ash-drake-pw"/></clipPath><clipPath id="ash-drake-cy"><use href="#ash-drake-pw" x="-3" y="-3"/></clipPath><path id="ash-drake-pz" d="M301 120C291 107 244 55 234 43C223 31 231 42 230 43C230 43 221 33 230 46C239 59 281 116 291 128C301 140 299 130 300 129C302 128 311 133 301 120Z"/><clipPath id="ash-drake-c10"><use href="#ash-drake-pz"/></clipPath><clipPath id="ash-drake-c11"><use href="#ash-drake-pz" x="-3" y="-3"/></clipPath><path id="ash-drake-p12" d="M231 224C223 217 202 213 191 208C180 204 165 194 157 193C149 191 139 195 137 199C135 203 137 213 143 219C148 225 163 233 173 240C183 247 199 262 209 264C219 267 237 261 240 255C244 249 238 231 231 224Z"/><clipPath id="ash-drake-c13"><use href="#ash-drake-p12"/></clipPath><clipPath id="ash-drake-c14"><use href="#ash-drake-p12" x="-6" y="-6"/></clipPath><path id="ash-drake-p15" d="M154 192C159 190 170 177 177 174C185 170 200 170 204 169C208 168 204 168 204 168C204 168 208 167 204 167C200 167 183 164 175 166C166 168 151 177 146 180C142 184 143 188 144 190C145 191 149 194 154 192ZM145 201C150 201 166 195 174 195C182 195 196 199 200 199C204 199 200 198 200 198C200 198 204 198 200 197C196 196 183 190 174 189C166 188 149 190 143 191C138 192 139 195 139 197C139 198 139 201 145 201Z"/><clipPath id="ash-drake-c16"><use href="#ash-drake-p15"/></clipPath><clipPath id="ash-drake-c17"><use href="#ash-drake-p15" x="-2" y="-2"/></clipPath><path id="ash-drake-p18" d="M162 190C150 180 126 180 108 188L74 204C68 210 72 218 80 218L118 220L158 222C168 214 170 200 162 190Z"/><clipPath id="ash-drake-c19"><use href="#ash-drake-p18"/></clipPath><clipPath id="ash-drake-c1a"><use href="#ash-drake-p18" x="-7" y="-6"/></clipPath><radialGradient id="ash-drake-r1b" gradientUnits="userSpaceOnUse" cx="136" cy="196" r="14"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.405"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#ash-drake-l0)"/>
+<circle cx="300" cy="300" r="260" fill="url(#ash-drake-r1)"/>
+<path d="M215 110C210 118 187 124 173 130C158 136 148 144 127 148C107 152 72 155 48 154C23 152 -9 144 -21 137C-32 130 -24 119 -22 110C-20 101 -22 92 -10 86C2 79 28 72 50 69C73 67 101 71 126 73C151 75 187 77 201 83C216 89 219 102 215 110Z" fill="#4a3a40" fill-opacity="0.55"/>
+<path d="M559 80C560 86 537 95 520 100C503 105 481 110 458 112C434 114 405 116 379 115C354 113 319 109 303 104C287 98 283 87 285 80C287 73 299 64 315 59C331 53 357 50 382 47C406 45 442 41 464 43C485 45 497 55 513 61C529 67 558 74 559 80Z" fill="#4a3a40" fill-opacity="0.55"/>
+<path d="M487 230C485 236 462 241 450 245C437 250 427 257 410 258C394 260 373 256 353 255C333 253 305 253 293 249C281 245 279 236 281 230C282 224 287 217 299 212C311 208 334 206 352 204C370 203 390 202 409 203C427 205 449 208 462 212C475 217 489 224 487 230Z" fill="#4a3a40" fill-opacity="0.55"/>
+<path d="M0 512V430L8 420L12 372L16 420L40 400L44 332L48 420L72 410L76 342L80 420L104 420L108 352L112 420L136 400L140 362L144 420L168 410L172 372L176 420L200 420L204 332L208 420L232 400L236 342L240 420L264 410L268 352L272 420L296 420L300 362L304 420L328 400L332 372L336 420L360 410L364 332L368 420L392 420L396 342L400 420L424 400L428 352L432 420L456 410L460 362L464 420L488 420L492 372L496 420L520 400L524 332L528 420L512 430V512Z" fill="#160c10"/>
+<path d="M538 440C528 444 477 447 438 451C400 454 359 460 307 461C255 461 181 458 129 456C76 453 7 451 -10 447C-27 443 2 438 27 434C51 430 89 428 137 425C184 423 250 418 311 418C371 418 463 422 501 425C539 429 549 436 538 440Z" fill="#ff7b00" fill-opacity="0.35"/>
+<g transform="translate(270 250) scale(0.86) translate(-270 -230)">
+<use href="#ash-drake-p2" fill="#2c2634" stroke-width="10"/>
+<g clip-path="url(#ash-drake-c3)">
+<use href="#ash-drake-p2" x="-8" y="-8" fill="#6e6676"/>
+<g clip-path="url(#ash-drake-c4)"><use href="#ash-drake-p2" x="5" y="5" fill="#4e4656"/></g>
+</g>
+<path d="M168 300L127 375" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M168 300L176 379" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M168 300L223 349" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#ash-drake-p5" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ash-drake-c6)">
+<use href="#ash-drake-p5" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ash-drake-c7)"><use href="#ash-drake-p5" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ash-drake-p8" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ash-drake-c9)">
+<use href="#ash-drake-p8" x="-3" y="-3" fill="#6a5050"/>
+<g clip-path="url(#ash-drake-ca)"><use href="#ash-drake-p8" x="2" y="2" fill="#3a2a2a"/></g>
+</g>
+<use href="#ash-drake-pb" fill="#ff7b00" stroke-width="12"/>
+<g clip-path="url(#ash-drake-cc)">
+<use href="#ash-drake-pb" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-pb" x="-6" y="-6" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-cd)"><use href="#ash-drake-pb" x="7" y="7" fill="#6e6874"/></g>
+</g>
+<use href="#ash-drake-pe" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ash-drake-cf)">
+<use href="#ash-drake-pe" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#ash-drake-cg)"><use href="#ash-drake-pe" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#ash-drake-ph" fill="#ff7b00" stroke-width="12"/>
+<g clip-path="url(#ash-drake-ci)">
+<use href="#ash-drake-ph" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-ph" x="-5" y="-5" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-cj)"><use href="#ash-drake-ph" x="7" y="7" fill="#6e6874"/></g>
+</g>
+<use href="#ash-drake-pk" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ash-drake-cl)">
+<use href="#ash-drake-pk" x="-1" y="-1" fill="#fffaf0"/>
+<g clip-path="url(#ash-drake-cm)"><use href="#ash-drake-pk" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ash-drake-pn" fill="#ff7b00" stroke-width="12"/>
+<g clip-path="url(#ash-drake-co)">
+<use href="#ash-drake-pn" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-pn" x="-12" y="-10" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-cp)"><use href="#ash-drake-pn" x="7" y="7" fill="#6e6874"/></g>
+</g>
+<use href="#ash-drake-pq" fill="#7a6e64"/>
+<g clip-path="url(#ash-drake-cr)">
+<use href="#ash-drake-pq" x="-3" y="-3" fill="#e0d6cc"/>
+<g clip-path="url(#ash-drake-cs)"><use href="#ash-drake-pq" x="2" y="2" fill="#b8aca0"/></g>
+</g>
+<path d="M240 236L252 254L246 270M286 230L298 248L292 262M322 240L314 258" fill="none" stroke="#ff7b00" stroke-width="3" stroke-opacity="0.85"/>
+<use href="#ash-drake-pt" fill="#2c2634" stroke-width="10"/>
+<g clip-path="url(#ash-drake-cu)">
+<use href="#ash-drake-pt" x="-8" y="-8" fill="#827a8a"/>
+<g clip-path="url(#ash-drake-cv)"><use href="#ash-drake-pt" x="5" y="5" fill="#5e5666"/></g>
+</g>
+<path d="M296 124L328 45" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M296 124L398 86" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M296 124L413 154" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<path d="M296 124L375 209" fill="none" stroke-width="3" stroke-opacity="0.55"/>
+<use href="#ash-drake-pw" fill="#ff7b00" stroke-width="8"/>
+<g clip-path="url(#ash-drake-cx)">
+<use href="#ash-drake-pw" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-pw" x="-3" y="-3" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-cy)"><use href="#ash-drake-pw" x="2" y="2" fill="#6e6874"/></g>
+</g>
+<use href="#ash-drake-pz" fill="#ff7b00" stroke-width="8"/>
+<g clip-path="url(#ash-drake-c10)">
+<use href="#ash-drake-pz" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-pz" x="-3" y="-3" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-c11)"><use href="#ash-drake-pz" x="2" y="2" fill="#6e6874"/></g>
+</g>
+<path d="M300 130L360 84M304 150L390 150" fill="none" stroke="#ff7b00" stroke-width="3" stroke-opacity="0.5"/>
+<use href="#ash-drake-p12" fill="#ff7b00" stroke-width="12"/>
+<g clip-path="url(#ash-drake-c13)">
+<use href="#ash-drake-p12" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-p12" x="-6" y="-6" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-c14)"><use href="#ash-drake-p12" x="7" y="7" fill="#6e6874"/></g>
+</g>
+<use href="#ash-drake-p15" fill="#1e1414" stroke-width="8"/>
+<g clip-path="url(#ash-drake-c16)">
+<use href="#ash-drake-p15" x="-2" y="-2" fill="#6a5050"/>
+<g clip-path="url(#ash-drake-c17)"><use href="#ash-drake-p15" x="1" y="1" fill="#3a2a2a"/></g>
+</g>
+<use href="#ash-drake-p18" fill="#ff7b00" stroke-width="12"/>
+<g clip-path="url(#ash-drake-c19)">
+<use href="#ash-drake-p18" x="-4" fill="#3c3644"/>
+<use href="#ash-drake-p18" x="-7" y="-6" fill="#a29ca8"/>
+<g clip-path="url(#ash-drake-c1a)"><use href="#ash-drake-p18" x="7" y="7" fill="#6e6874"/></g>
+</g>
+<circle cx="136" cy="196" r="14" fill="url(#ash-drake-r1b)"/>
+<path d="M126 194L146 192L142 200L128 200Z" fill="#ffbe0b"/>
+<path d="M84 212L120 214" fill="none" stroke-width="3"/>
+<path d="M79 204A3 2 0 1 0 85 204A3 2 0 1 0 79 204Z" fill="#1d0842"/>
+<path d="M52 196A10 10 0 1 0 72 196A10 10 0 1 0 52 196Z" fill="#9a8a90" fill-opacity="0.6"/>
+<path d="M30 184A14 14 0 1 0 58 184A14 14 0 1 0 30 184Z" fill="#9a8a90" fill-opacity="0.45"/>
+<path d="M14 164A18 18 0 1 0 50 164A18 18 0 1 0 14 164Z" fill="#9a8a90" fill-opacity="0.3"/>
+</g>
+<path d="M218 289L220 293L218 297L216 293Z" fill="#ff7b00" fill-opacity="0.58"/>
+<path d="M101 298L103 302L101 306L99 302Z" fill="#ffbe0b" fill-opacity="0.66"/>
+<path d="M475 66L477 70L475 73L473 70Z" fill="#8a7a80" fill-opacity="0.86"/>
+<path d="M178 277L181 282L178 287L175 282Z" fill="#ff7b00" fill-opacity="0.59"/>
+<path d="M263 271L267 277L263 282L260 277Z" fill="#ffbe0b" fill-opacity="0.72"/>
+<path d="M282 181L284 184L282 187L281 184Z" fill="#8a7a80" fill-opacity="0.65"/>
+<path d="M233 321L236 325L233 330L230 325Z" fill="#ff7b00" fill-opacity="0.75"/>
+<path d="M459 258L463 264L459 270L456 264Z" fill="#ffbe0b" fill-opacity="0.83"/>
+<path d="M381 242L383 246L381 249L379 246Z" fill="#8a7a80" fill-opacity="0.54"/>
+<path d="M188 102L192 109L188 116L184 109Z" fill="#ff7b00" fill-opacity="0.84"/>
+<path d="M280 152L282 156L280 160L277 156Z" fill="#ffbe0b" fill-opacity="0.94"/>
+<path d="M383 368L384 371L383 374L381 371Z" fill="#8a7a80" fill-opacity="0.79"/>
+<path d="M145 331L147 335L145 339L143 335Z" fill="#ff7b00" fill-opacity="0.73"/>
+<path d="M292 341L296 348L292 354L289 348Z" fill="#ffbe0b" fill-opacity="0.55"/>
+<path d="M94 287L96 291L94 295L92 291Z" fill="#8a7a80" fill-opacity="0.86"/>
+<path d="M400 185L403 192L400 198L396 192Z" fill="#ff7b00" fill-opacity="0.8"/>
+<path d="M115 176L116 179L115 182L113 179Z" fill="#ffbe0b" fill-opacity="0.69"/>
+<path d="M131 176L134 182L131 187L128 182Z" fill="#8a7a80" fill-opacity="0.81"/>
+</svg>

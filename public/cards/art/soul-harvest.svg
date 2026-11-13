@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="soul-harvest-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#081820"/><stop offset="0.55" stop-color="#17404c"/><stop offset="1" stop-color="#0a1a20"/></linearGradient><radialGradient id="soul-harvest-r1" gradientUnits="userSpaceOnUse" cx="360" cy="150" r="260"><stop offset="0" stop-color="#9fe8e0" stop-opacity="0.32"/><stop offset="0.45" stop-color="#9fe8e0" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#9fe8e0" stop-opacity="0"/></radialGradient><radialGradient id="soul-harvest-r2" gradientUnits="userSpaceOnUse" cx="380" cy="132" r="120"><stop offset="0" stop-color="#e6fff8" stop-opacity="0.5"/><stop offset="0.45" stop-color="#e6fff8" stop-opacity="0.225"/><stop offset="1" stop-color="#e6fff8" stop-opacity="0"/></radialGradient><linearGradient id="soul-harvest-l3" gradientUnits="userSpaceOnUse" x1="0" y1="354" x2="0" y2="512"><stop offset="0" stop-color="#14343c"/><stop offset="1" stop-color="#081418"/></linearGradient><radialGradient id="soul-harvest-r4" gradientUnits="userSpaceOnUse" cx="190" cy="412" r="180"><stop offset="0" stop-color="#7ff5e0" stop-opacity="0.55"/><stop offset="1" stop-color="#7ff5e0" stop-opacity="0"/></radialGradient><path id="soul-harvest-p5" d="M262 404L306 380L312 386L270 410Z"/><clipPath id="soul-harvest-c6"><use href="#soul-harvest-p5"/></clipPath><clipPath id="soul-harvest-c7"><use href="#soul-harvest-p5" x="-3" y="-3"/></clipPath><path id="soul-harvest-p8" d="M126 400C125 395 130 379 140 374C150 369 176 364 190 364C204 364 227 367 236 372C245 377 254 390 250 396C246 402 225 408 210 410C195 412 163 412 150 410C137 409 128 405 126 400Z"/><clipPath id="soul-harvest-c9"><use href="#soul-harvest-p8"/></clipPath><clipPath id="soul-harvest-ca"><use href="#soul-harvest-p8" x="-8" y="-8"/></clipPath><path id="soul-harvest-pb" d="M226 393C231 397 249 404 256 406C264 407 273 404 277 403C280 402 281 399 281 397C281 396 279 394 275 393C272 393 266 396 260 394C253 392 239 381 234 379C228 377 224 380 223 382C222 385 221 390 226 393Z"/><clipPath id="soul-harvest-cc"><use href="#soul-harvest-pb"/></clipPath><clipPath id="soul-harvest-cd"><use href="#soul-harvest-pb" x="-3" y="-3"/></clipPath><path id="soul-harvest-pe" d="M84 386A26 22 0 1 0 136 386A26 22 0 1 0 84 386Z"/><clipPath id="soul-harvest-cf"><use href="#soul-harvest-pe"/></clipPath><clipPath id="soul-harvest-cg"><use href="#soul-harvest-pe" x="-6" y="-6"/></clipPath><path id="soul-harvest-ph" d="M105 367C103 363 90 349 87 345C84 342 86 346 86 346C86 346 84 342 85 347C86 351 92 369 95 373C98 377 101 376 103 375C105 374 108 371 105 367Z"/><clipPath id="soul-harvest-ci"><use href="#soul-harvest-ph"/></clipPath><clipPath id="soul-harvest-cj"><use href="#soul-harvest-ph" x="-2" y="-2"/></clipPath><radialGradient id="soul-harvest-rk" gradientUnits="userSpaceOnUse" cx="214" cy="252" r="110"><stop offset="0" stop-color="#7ff5e0" stop-opacity="0.55"/><stop offset="0.45" stop-color="#7ff5e0" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#7ff5e0" stop-opacity="0"/></radialGradient><path id="soul-harvest-pl" d="M178 374C184 367 209 345 212 333C215 321 195 305 198 291C200 278 221 256 229 242C236 228 247 207 248 196C249 185 240 172 234 170C228 168 213 175 208 184C203 193 204 214 199 230C194 246 175 274 174 289C174 304 196 319 196 331C196 343 177 364 174 370C170 377 174 374 174 374C175 375 173 380 178 374Z"/><clipPath id="soul-harvest-cm"><use href="#soul-harvest-pl"/></clipPath><clipPath id="soul-harvest-cn"><use href="#soul-harvest-pl" x="-5" y="-5"/></clipPath><path id="soul-harvest-po" d="M450 467C443 440 415 350 399 297C383 244 353 142 344 114C334 85 336 108 334 108C331 109 321 89 328 118C335 147 366 249 381 303C397 356 421 446 430 473C440 499 440 480 443 480C446 479 456 494 450 467Z"/><clipPath id="soul-harvest-cp"><use href="#soul-harvest-po"/></clipPath><clipPath id="soul-harvest-cq"><use href="#soul-harvest-po" x="-5" y="-5"/></clipPath><path id="soul-harvest-pr" d="M379 319C379 325 382 338 385 343C389 348 397 354 401 353C405 352 410 343 411 337C411 331 408 318 405 313C401 308 393 302 389 303C385 304 380 313 379 319Z"/><clipPath id="soul-harvest-cs"><use href="#soul-harvest-pr"/></clipPath><clipPath id="soul-harvest-ct"><use href="#soul-harvest-pr" x="-3" y="-3"/></clipPath><path id="soul-harvest-pu" d="M346 100C268 46 156 74 112 196C172 134 254 120 334 148Z"/><clipPath id="soul-harvest-cv"><use href="#soul-harvest-pu"/></clipPath><clipPath id="soul-harvest-cw"><use href="#soul-harvest-pu" x="-8" y="-8"/></clipPath><path id="soul-harvest-px" d="M319 112C320 121 330 148 335 156C339 164 347 165 350 163C353 162 359 157 357 148C356 139 346 112 341 104C337 96 329 95 326 97C323 98 317 103 319 112Z"/><clipPath id="soul-harvest-cy"><use href="#soul-harvest-px"/></clipPath><clipPath id="soul-harvest-cz"><use href="#soul-harvest-px" x="-3" y="-3"/></clipPath><radialGradient id="soul-harvest-r10" gradientUnits="userSpaceOnUse" cx="150" cy="166" r="40"><stop offset="0" stop-color="#e6fff8" stop-opacity="0.8"/><stop offset="0.45" stop-color="#e6fff8" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#e6fff8" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#soul-harvest-l0)"/>
+<circle cx="360" cy="150" r="260" fill="url(#soul-harvest-r1)"/>
+<circle cx="380" cy="132" r="120" fill="url(#soul-harvest-r2)"/>
+<path d="M322 132A58 58 0 1 0 438 132A58 58 0 1 0 322 132Z" fill="#d8f4ee" fill-opacity="0.92"/>
+<path d="M349 118A11 11 0 1 0 371 118A11 11 0 1 0 349 118Z" fill="#b0d8d0" fill-opacity="0.8"/>
+<path d="M390 152A8 8 0 1 0 406 152A8 8 0 1 0 390 152Z" fill="#b0d8d0" fill-opacity="0.8"/>
+<path d="M399 112A5 5 0 1 0 409 112A5 5 0 1 0 399 112Z" fill="#b0d8d0" fill-opacity="0.8"/>
+<path d="M0 344Q120 300 240 338T512 318V512H0Z" fill="#0f2c32"/>
+<path d="M0 390Q256 354 512 390V512H0Z" fill="url(#soul-harvest-l3)"/>
+<ellipse cx="190" cy="412" rx="180" ry="50" fill="url(#soul-harvest-r4)"/>
+<path d="M44 470L50 400" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M46 392A6 14 0 1 0 58 392A6 14 0 1 0 46 392Z" fill="#3a7a76"/>
+<path d="M70 470L76 416" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M72 408A6 14 0 1 0 84 408A6 14 0 1 0 72 408Z" fill="#3a7a76"/>
+<path d="M96 470L102 394" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M98 386A6 14 0 1 0 110 386A6 14 0 1 0 98 386Z" fill="#3a7a76"/>
+<path d="M410 470L416 406" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M412 398A6 14 0 1 0 424 398A6 14 0 1 0 412 398Z" fill="#3a7a76"/>
+<path d="M440 470L446 390" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M442 382A6 14 0 1 0 454 382A6 14 0 1 0 442 382Z" fill="#3a7a76"/>
+<path d="M470 470L476 412" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M472 404A6 14 0 1 0 484 404A6 14 0 1 0 472 404Z" fill="#3a7a76"/>
+<path d="M320 470L326 420" fill="none" stroke="#2a5a5e" stroke-width="4"/>
+<path d="M322 412A6 14 0 1 0 334 412A6 14 0 1 0 322 412Z" fill="#3a7a76"/>
+<ellipse cx="184" cy="404" rx="96" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#soul-harvest-p5" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#soul-harvest-c6)">
+<use href="#soul-harvest-p5" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#soul-harvest-c7)"><use href="#soul-harvest-p5" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<use href="#soul-harvest-p8" fill="#2c3c46" stroke-width="12"/>
+<g clip-path="url(#soul-harvest-c9)">
+<use href="#soul-harvest-p8" x="-8" y="-8" fill="#728a96"/>
+<g clip-path="url(#soul-harvest-ca)"><use href="#soul-harvest-p8" x="7" y="7" fill="#4f6470"/></g>
+</g>
+<use href="#soul-harvest-pb" fill="#2c3c46" stroke-width="12"/>
+<g clip-path="url(#soul-harvest-cc)">
+<use href="#soul-harvest-pb" x="-3" y="-3" fill="#728a96"/>
+<g clip-path="url(#soul-harvest-cd)"><use href="#soul-harvest-pb" x="2" y="2" fill="#4f6470"/></g>
+</g>
+<use href="#soul-harvest-pe" fill="#2c3c46" stroke-width="12"/>
+<g clip-path="url(#soul-harvest-cf)">
+<use href="#soul-harvest-pe" x="-6" y="-6" fill="#728a96"/>
+<g clip-path="url(#soul-harvest-cg)"><use href="#soul-harvest-pe" x="7" y="7" fill="#4f6470"/></g>
+</g>
+<use href="#soul-harvest-ph" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#soul-harvest-ci)">
+<use href="#soul-harvest-ph" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#soul-harvest-cj)"><use href="#soul-harvest-ph" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<path d="M98 386L108 382M114 390L122 384" fill="none" stroke-width="3" stroke-opacity="0.8"/>
+<circle cx="214" cy="252" r="110" fill="url(#soul-harvest-rk)"/>
+<use href="#soul-harvest-pl" fill="#2fb8a8" stroke-width="8"/>
+<g clip-path="url(#soul-harvest-cm)">
+<use href="#soul-harvest-pl" x="-5" y="-5" fill="#e6fffa"/>
+<g clip-path="url(#soul-harvest-cn)"><use href="#soul-harvest-pl" x="3" y="3" fill="#7ff5e0"/></g>
+</g>
+<path d="M213 186A5 7 0 1 0 223 186A5 7 0 1 0 213 186Z" fill="#0a3a3a"/>
+<path d="M233 184A5 7 0 1 0 243 184A5 7 0 1 0 233 184Z" fill="#0a3a3a"/>
+<path d="M225 204A5 7 0 1 0 235 204A5 7 0 1 0 225 204Z" fill="#0a3a3a"/>
+<path d="M110 312C150 168 290 92 438 118C318 116 200 176 140 320Z" fill="#e6fff8" fill-opacity="0.16"/>
+<use href="#soul-harvest-po" fill="#33221a" stroke-width="12"/>
+<g clip-path="url(#soul-harvest-cp)">
+<use href="#soul-harvest-po" x="-5" y="-5" fill="#8a6040"/>
+<g clip-path="url(#soul-harvest-cq)"><use href="#soul-harvest-po" x="3" y="3" fill="#5a3e2a"/></g>
+</g>
+<use href="#soul-harvest-pr" fill="#16222a" stroke-width="8"/>
+<g clip-path="url(#soul-harvest-cs)">
+<use href="#soul-harvest-pr" x="-3" y="-3" fill="#4f6470"/>
+<g clip-path="url(#soul-harvest-ct)"><use href="#soul-harvest-pr" x="2" y="2" fill="#2c3c46"/></g>
+</g>
+<use href="#soul-harvest-pu" fill="#7ff5e0" stroke-width="12"/>
+<g clip-path="url(#soul-harvest-cv)">
+<use href="#soul-harvest-pu" x="-5" fill="#6a7c96"/>
+<use href="#soul-harvest-pu" x="-8" y="-8" fill="#f4fbff"/>
+<g clip-path="url(#soul-harvest-cw)"><use href="#soul-harvest-pu" x="5" y="5" fill="#c2d2e2"/></g>
+</g>
+<path d="M124 180C176 132 252 122 326 144" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.9"/>
+<use href="#soul-harvest-px" fill="#5e6f8a" stroke-width="8"/>
+<g clip-path="url(#soul-harvest-cy)">
+<use href="#soul-harvest-px" x="-3" y="-3" fill="#e2ecf5"/>
+<g clip-path="url(#soul-harvest-cz)"><use href="#soul-harvest-px" x="2" y="2" fill="#9fb3c8"/></g>
+</g>
+<circle cx="150" cy="166" r="40" fill="url(#soul-harvest-r10)"/>
+<circle cx="274" cy="167" r="2" fill="#7ff5e0" fill-opacity="0.63"/>
+<circle cx="120" cy="187" r="3" fill="#e6fffa" fill-opacity="0.94"/>
+<circle cx="292" cy="195" r="3" fill="#7ff5e0" fill-opacity="0.6"/>
+<circle cx="171" cy="163" r="2" fill="#e6fffa" fill-opacity="0.7"/>
+<circle cx="245" cy="319" r="2" fill="#7ff5e0" fill-opacity="0.51"/>
+<circle cx="157" cy="348" r="3" fill="#e6fffa" fill-opacity="0.49"/>
+<circle cx="275" cy="145" r="3" fill="#7ff5e0" fill-opacity="0.44"/>
+<circle cx="326" cy="264" r="2" fill="#e6fffa" fill-opacity="0.62"/>
+<circle cx="291" cy="169" r="2" fill="#7ff5e0" fill-opacity="0.48"/>
+<circle cx="250" cy="157" r="3" fill="#e6fffa" fill-opacity="0.42"/>
+<circle cx="131" cy="133" r="3" fill="#7ff5e0" fill-opacity="0.74"/>
+<circle cx="302" cy="179" r="3" fill="#e6fffa" fill-opacity="0.64"/>
+<circle cx="326" cy="177" r="2" fill="#7ff5e0" fill-opacity="0.56"/>
+<circle cx="200" cy="270" r="3" fill="#e6fffa" fill-opacity="0.49"/>
+</svg>

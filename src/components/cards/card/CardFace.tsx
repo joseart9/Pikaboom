@@ -19,13 +19,21 @@ export interface CardFaceProps {
   state?: CardFrameState;
   /** Collection "No descubierta" look (Phase 14): "?" art, no rules text or stats, desaturated. */
   locked?: boolean;
+  /** Load the illustration lazily (long scrolling grids — UI-07). */
+  lazyArt?: boolean;
+}
+
+/** UI-10: rules text over ~56 / ~75 visible characters steps the font down so it fits the text box at every size. */
+export function cardTextClass(text: string): string {
+  const n = text.replace(/\*\*/g, "").length;
+  return n > 75 ? "cg-card-text cg-card-text--xlong" : n > 56 ? "cg-card-text cg-card-text--long" : "cg-card-text";
 }
 
 function sign(a: number, b: number): -1 | 0 | 1 {
   return a < b ? -1 : a > b ? 1 : 0;
 }
 
-export const CardFace = memo(function CardFace({ def, overrides = {}, state = "normal", locked = false }: CardFaceProps) {
+export const CardFace = memo(function CardFace({ def, overrides = {}, state = "normal", locked = false, lazyArt = false }: CardFaceProps) {
   const cost = overrides.cost ?? def.cost;
   const isMob = def.type === "mob";
   const attack = isMob ? (overrides.attack ?? def.attack) : 0;
@@ -41,14 +49,14 @@ export const CardFace = memo(function CardFace({ def, overrides = {}, state = "n
           </div>
         ) : (
           <div className="cg-card-art">
-            <CardArt art={def.art} tribe={tribe} spell={!isMob} />
+            <CardArt art={def.art} tribe={tribe} spell={!isMob} lazy={lazyArt} />
           </div>
         )}
         <div className="cg-card-gem">
           <RarityGem rarity={def.rarity} size="7cqh" title={t(`rarity.${def.rarity}`)} />
         </div>
         <div className="cg-card-name">{cardName(def.id)}</div>
-        <div className="cg-card-text">
+        <div className={locked ? "cg-card-text" : cardTextClass(cardText(def.id))}>
           {locked ? <span className="cg-card-locked">{t("collection.locked")}</span> : <CardText text={cardText(def.id)} />}
         </div>
         {isMob && !locked && def.tribes.length > 0 && (

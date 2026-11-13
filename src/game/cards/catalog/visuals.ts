@@ -6,18 +6,23 @@ import type { CardDef, CardId, Tribe } from "./types";
 
 export type FxElement = "fire" | "ice" | "arcane" | "lightning" | "shadow" | "nature" | "holy";
 export type Entrance = "normal" | "heavy" | "cinematic";
+/** UI-09: the six premium cards' individual reveal (FX variant ids; the specs live in `client/animation/signatures`). */
+export type SignatureId = "morvath" | "skeleton-king" | "ursaria" | "vaelra" | "ignis" | "nyxara";
+export const SIGNATURE_IDS: readonly SignatureId[] = ["morvath", "skeleton-king", "ursaria", "vaelra", "ignis", "nyxara"];
 
 export const FX_ELEMENTS: readonly FxElement[] = ["fire", "ice", "arcane", "lightning", "shadow", "nature", "holy"];
 
 export interface CardVisual {
   element?: FxElement;
   entrance?: Entrance;
+  /** A bespoke cinematic variant (only meaningful with a cinematic entrance). */
+  signature?: SignatureId;
 }
 
 /** Explicit per-card visuals. Keys must be catalog ids (`visuals.test.ts`). */
 export const CARD_VISUALS: Partial<Record<CardId, CardVisual>> = {
   // fire
-  ignis: { element: "fire" },
+  ignis: { element: "fire", signature: "ignis" },
   "flame-lance": { element: "fire" },
   "flame-wyrm": { element: "fire" },
   "ember-imp": { element: "fire" },
@@ -27,7 +32,7 @@ export const CARD_VISUALS: Partial<Record<CardId, CardVisual>> = {
   // ice
   "ice-shard": { element: "ice" },
   "frozen-gale": { element: "ice" },
-  vaelra: { element: "ice" },
+  vaelra: { element: "ice", signature: "vaelra" },
   // lightning
   "chain-lightning": { element: "lightning" },
   "storm-weaver": { element: "lightning" },
@@ -47,6 +52,7 @@ export const CARD_VISUALS: Partial<Record<CardId, CardVisual>> = {
   scholar: { element: "arcane" },
   "golem-forge": { element: "arcane" },
   // shadow
+  "skeleton-king": { element: "shadow", signature: "skeleton-king" },
   "bone-storm": { element: "shadow" },
   "soul-harvest": { element: "shadow" },
   "drain-life": { element: "shadow" },
@@ -57,8 +63,8 @@ export const CARD_VISUALS: Partial<Record<CardId, CardVisual>> = {
   "shatter-armor": { element: "shadow" },
   banish: { element: "shadow" },
   necromancer: { element: "shadow" },
-  morvath: { element: "shadow" },
-  nyxara: { element: "shadow" },
+  morvath: { element: "shadow", signature: "morvath" },
+  nyxara: { element: "shadow", signature: "nyxara" },
   // nature
   "savage-strike": { element: "nature" },
   "wild-roar": { element: "nature" },
@@ -66,7 +72,7 @@ export const CARD_VISUALS: Partial<Record<CardId, CardVisual>> = {
   "swamp-ent": { element: "nature" },
   "venom-spider": { element: "nature" },
   "blood-hound": { element: "nature" },
-  ursaria: { element: "nature" },
+  ursaria: { element: "nature", signature: "ursaria" },
   // holy
   "healing-touch": { element: "holy" },
   "blessing-of-light": { element: "holy" },
@@ -107,4 +113,9 @@ export function cardEntrance(def: CardDef | undefined): Entrance {
   if (def.rarity === "legendary" || def.rarity === "unique") return "cinematic";
   if (def.cost >= HEAVY_COST) return "heavy";
   return "normal";
+}
+
+/** The card's signature reveal, or null (generic rarity cinematic). */
+export function cardSignature(def: CardDef | undefined): SignatureId | null {
+  return (def && CARD_VISUALS[def.id]?.signature) ?? null;
 }

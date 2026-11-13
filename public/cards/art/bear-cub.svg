@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="bear-cub-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1c3020"/><stop offset="0.55" stop-color="#2f5a34"/><stop offset="1" stop-color="#1a2c1c"/></linearGradient><radialGradient id="bear-cub-r1" gradientUnits="userSpaceOnUse" cx="250" cy="230" r="240"><stop offset="0" stop-color="#f2e2a8" stop-opacity="0.32"/><stop offset="0.45" stop-color="#f2e2a8" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#f2e2a8" stop-opacity="0"/></radialGradient><linearGradient id="bear-cub-l2" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#3e7238"/><stop offset="1" stop-color="#203e22"/></linearGradient><radialGradient id="bear-cub-r3" gradientUnits="userSpaceOnUse" cx="256" cy="396" r="170"><stop offset="0" stop-color="#f2e2a8" stop-opacity="0.55"/><stop offset="1" stop-color="#f2e2a8" stop-opacity="0"/></radialGradient><path id="bear-cub-p4" d="M172 320A84 76 0 1 0 340 320A84 76 0 1 0 172 320Z"/><clipPath id="bear-cub-c5"><use href="#bear-cub-p4"/></clipPath><clipPath id="bear-cub-c6"><use href="#bear-cub-p4" x="-14" y="-14"/></clipPath><path id="bear-cub-p7" d="M204 334A46 44 0 1 0 296 334A46 44 0 1 0 204 334Z"/><clipPath id="bear-cub-c8"><use href="#bear-cub-p7"/></clipPath><clipPath id="bear-cub-c9"><use href="#bear-cub-p7" x="-5" y="-5"/></clipPath><path id="bear-cub-pa" d="M166 382A34 22 0 1 0 234 382A34 22 0 1 0 166 382Z"/><clipPath id="bear-cub-cb"><use href="#bear-cub-pa"/></clipPath><clipPath id="bear-cub-cc"><use href="#bear-cub-pa" x="-6" y="-6"/></clipPath><path id="bear-cub-pd" d="M278 382A34 22 0 1 0 346 382A34 22 0 1 0 278 382Z"/><clipPath id="bear-cub-ce"><use href="#bear-cub-pd"/></clipPath><clipPath id="bear-cub-cf"><use href="#bear-cub-pd" x="-6" y="-6"/></clipPath><path id="bear-cub-pg" d="M176 384A14 12 0 1 0 204 384A14 12 0 1 0 176 384Z"/><clipPath id="bear-cub-ch"><use href="#bear-cub-pg"/></clipPath><clipPath id="bear-cub-ci"><use href="#bear-cub-pg" x="-3" y="-3"/></clipPath><path id="bear-cub-pj" d="M308 384A14 12 0 1 0 336 384A14 12 0 1 0 308 384Z"/><clipPath id="bear-cub-ck"><use href="#bear-cub-pj"/></clipPath><clipPath id="bear-cub-cl"><use href="#bear-cub-pj" x="-3" y="-3"/></clipPath><path id="bear-cub-pm" d="M184 286C179 294 174 320 175 331C176 342 187 355 192 360C198 364 208 366 212 364C215 362 217 350 216 344C215 339 205 337 205 329C205 321 217 302 216 294C216 286 209 275 204 274C199 272 188 277 184 286Z"/><clipPath id="bear-cub-cn"><use href="#bear-cub-pm"/></clipPath><clipPath id="bear-cub-co"><use href="#bear-cub-pm" x="-6" y="-6"/></clipPath><path id="bear-cub-pp" d="M296 295C296 303 309 322 309 330C309 337 299 339 298 344C297 350 299 362 302 364C306 366 316 365 322 360C327 355 338 342 339 330C340 319 333 294 328 285C324 277 312 272 307 274C302 275 295 287 296 295Z"/><clipPath id="bear-cub-cq"><use href="#bear-cub-pp"/></clipPath><clipPath id="bear-cub-cr"><use href="#bear-cub-pp" x="-6" y="-6"/></clipPath><path id="bear-cub-ps" d="M174 170A22 22 0 1 0 218 170A22 22 0 1 0 174 170Z"/><clipPath id="bear-cub-ct"><use href="#bear-cub-ps"/></clipPath><clipPath id="bear-cub-cu"><use href="#bear-cub-ps" x="-5" y="-5"/></clipPath><path id="bear-cub-pv" d="M278 170A22 22 0 1 0 322 170A22 22 0 1 0 278 170Z"/><clipPath id="bear-cub-cw"><use href="#bear-cub-pv"/></clipPath><clipPath id="bear-cub-cx"><use href="#bear-cub-pv" x="-5" y="-5"/></clipPath><path id="bear-cub-py" d="M184 214C183 202 186 185 196 176C206 167 232 160 248 160C264 160 290 167 300 176C310 185 313 204 312 216C311 228 306 246 296 254C286 262 263 268 248 268C233 268 210 263 200 254C190 245 185 226 184 214Z"/><clipPath id="bear-cub-cz"><use href="#bear-cub-py"/></clipPath><clipPath id="bear-cub-c10"><use href="#bear-cub-py" x="-12" y="-10"/></clipPath><path id="bear-cub-p11" d="M206 236A34 24 0 1 0 274 236A34 24 0 1 0 206 236Z"/><clipPath id="bear-cub-c12"><use href="#bear-cub-p11"/></clipPath><clipPath id="bear-cub-c13"><use href="#bear-cub-p11" x="-5" y="-5"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#bear-cub-l0)"/>
+<circle cx="250" cy="230" r="240" fill="url(#bear-cub-r1)"/>
+<path d="M177 260C176 277 149 295 133 310C116 324 99 344 79 347C59 350 34 337 12 328C-10 319 -42 310 -52 293C-61 277 -52 248 -43 229C-33 211 -15 191 5 182C25 174 55 176 77 180C99 184 122 193 138 206C155 220 178 243 177 260Z" fill="#1e3e26"/>
+<path d="M584 250C583 271 558 296 540 311C522 326 499 338 478 340C456 343 431 336 412 326C393 316 374 300 365 281C356 263 349 234 356 216C364 198 391 187 412 174C433 161 459 136 482 138C504 139 530 165 547 183C564 202 585 229 584 250Z" fill="#1e3e26"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#bear-cub-l2)"/>
+<ellipse cx="256" cy="396" rx="170" ry="48" fill="url(#bear-cub-r3)"/>
+<path d="M66 400L72 378L78 396L84 372L88 398L96 382L96 400Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M426 392L432 370L438 388L444 364L448 390L456 374L456 392Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M127 460L133 440L138 456L144 435L147 458L154 444L154 460Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M110 372L112 377L118 378L114 381L115 386L110 384L105 386L106 381L102 378L108 377Z" fill="#fff1c1" fill-opacity="0.9"/>
+<path d="M107 380A3 3 0 1 0 113 380A3 3 0 1 0 107 380Z" fill="#ffbe0b"/>
+<path d="M410 422L412 427L418 428L414 431L415 436L410 434L405 436L406 431L402 428L408 427Z" fill="#fff1c1" fill-opacity="0.9"/>
+<path d="M407 430A3 3 0 1 0 413 430A3 3 0 1 0 407 430Z" fill="#ffbe0b"/>
+<path d="M380 364L382 369L388 370L384 373L385 378L380 376L375 378L376 373L372 370L378 369Z" fill="#fff1c1" fill-opacity="0.9"/>
+<path d="M377 372A3 3 0 1 0 383 372A3 3 0 1 0 377 372Z" fill="#ffbe0b"/>
+<ellipse cx="256" cy="396" rx="110" ry="14" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#bear-cub-p4" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-c5)">
+<use href="#bear-cub-p4" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-p4" x="-14" y="-14" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-c6)"><use href="#bear-cub-p4" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-p7" fill="#a8804e"/>
+<g clip-path="url(#bear-cub-c8)">
+<use href="#bear-cub-p7" x="-5" y="-5" fill="#f2d4a8"/>
+<g clip-path="url(#bear-cub-c9)"><use href="#bear-cub-p7" x="4" y="4" fill="#d8b080"/></g>
+</g>
+<use href="#bear-cub-pa" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-cb)">
+<use href="#bear-cub-pa" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-pa" x="-6" y="-6" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-cc)"><use href="#bear-cub-pa" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-pd" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-ce)">
+<use href="#bear-cub-pd" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-pd" x="-6" y="-6" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-cf)"><use href="#bear-cub-pd" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-pg" fill="#a8804e" stroke-width="8"/>
+<g clip-path="url(#bear-cub-ch)">
+<use href="#bear-cub-pg" x="-3" y="-3" fill="#f2d4a8"/>
+<g clip-path="url(#bear-cub-ci)"><use href="#bear-cub-pg" x="2" y="2" fill="#d8b080"/></g>
+</g>
+<use href="#bear-cub-pj" fill="#a8804e" stroke-width="8"/>
+<g clip-path="url(#bear-cub-ck)">
+<use href="#bear-cub-pj" x="-3" y="-3" fill="#f2d4a8"/>
+<g clip-path="url(#bear-cub-cl)"><use href="#bear-cub-pj" x="2" y="2" fill="#d8b080"/></g>
+</g>
+<use href="#bear-cub-pm" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-cn)">
+<use href="#bear-cub-pm" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-pm" x="-6" y="-6" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-co)"><use href="#bear-cub-pm" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-pp" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-cq)">
+<use href="#bear-cub-pp" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-pp" x="-6" y="-6" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-cr)"><use href="#bear-cub-pp" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-ps" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-ct)">
+<use href="#bear-cub-ps" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-ps" x="-5" y="-5" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-cu)"><use href="#bear-cub-ps" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-pv" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-cw)">
+<use href="#bear-cub-pv" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-pv" x="-5" y="-5" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-cx)"><use href="#bear-cub-pv" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<path d="M185 172A11 11 0 1 0 207 172A11 11 0 1 0 185 172Z" fill="#c99070"/>
+<path d="M289 172A11 11 0 1 0 311 172A11 11 0 1 0 289 172Z" fill="#c99070"/>
+<use href="#bear-cub-py" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#bear-cub-cz)">
+<use href="#bear-cub-py" x="-4" fill="#5c3a1f"/>
+<use href="#bear-cub-py" x="-12" y="-10" fill="#b8804e"/>
+<g clip-path="url(#bear-cub-c10)"><use href="#bear-cub-py" x="7" y="7" fill="#8a5a34"/></g>
+</g>
+<use href="#bear-cub-p11" fill="#a8804e" stroke-width="8"/>
+<g clip-path="url(#bear-cub-c12)">
+<use href="#bear-cub-p11" x="-5" y="-5" fill="#f2d4a8"/>
+<g clip-path="url(#bear-cub-c13)"><use href="#bear-cub-p11" x="4" y="4" fill="#d8b080"/></g>
+</g>
+<path d="M228 222A12 8 0 1 0 252 222A12 8 0 1 0 228 222Z" fill="#1d0842"/>
+<path d="M232 219A4 3 0 1 0 240 219A4 3 0 1 0 232 219Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M240 230V240M226 244C234 250 246 250 254 244" fill="none" stroke-width="3.5"/>
+<path d="M207 208A7 8 0 1 0 221 208A7 8 0 1 0 207 208Z" fill="#1d0842"/>
+<path d="M261 208A7 8 0 1 0 275 208A7 8 0 1 0 261 208Z" fill="#1d0842"/>
+<path d="M209 205A3 3 0 1 0 214 205A3 3 0 1 0 209 205Z" fill="#ffffff"/>
+<path d="M263 205A3 3 0 1 0 268 205A3 3 0 1 0 263 205Z" fill="#ffffff"/>
+<path d="M198 234A8 4 0 1 0 214 234A8 4 0 1 0 198 234Z" fill="#ff4d6d" fill-opacity="0.25"/>
+<path d="M270 234A8 4 0 1 0 286 234A8 4 0 1 0 270 234Z" fill="#ff4d6d" fill-opacity="0.25"/>
+</svg>
