@@ -16,6 +16,7 @@ import {
   loadRow as row,
   req,
   startMatch,
+  starterChoice,
   STRANGER,
   userOf,
   type MakeServiceOptions,
@@ -47,14 +48,21 @@ export function defineSharedServiceTests(label: string, make: (opts?: Omit<MakeS
         409,
         "deck_unavailable",
       );
-      const sel = await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-undead" } }));
-      expect(sel.lobby!.myDeck).toEqual({ kind: "starter", id: "starter-undead" });
+      // Phase 15: code-defined starter decks are no longer selectable; the granted saved copies are.
+      await expectError(
+        t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-undead" } })),
+        409,
+        "deck_unavailable",
+      );
+      const undead = await starterChoice(t, HOST, "undead");
+      const sel = await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: undead }));
+      expect(sel.lobby!.myDeck).toEqual(undead);
       await t.service.submitCommand(id, HOST, req({ t: "lobby.ready", ready: true }));
       // Changing deck clears ready.
-      const changed = await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-beast" } }));
+      const changed = await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: await starterChoice(t, HOST, "beast") }));
       expect(changed.lobby!.host.ready).toBe(false);
       await t.service.submitCommand(id, HOST, req({ t: "lobby.ready", ready: true }));
-      await t.service.submitCommand(id, GUEST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-undead" } }));
+      await t.service.submitCommand(id, GUEST, req({ t: "lobby.selectDeck", deck: await starterChoice(t, GUEST, "undead") }));
       const guestView = await t.service.submitCommand(id, GUEST, req({ t: "lobby.ready", ready: true }));
 
       expect(guestView.status).toBe("active");
@@ -80,8 +88,8 @@ export function defineSharedServiceTests(label: string, make: (opts?: Omit<MakeS
       const t = await make();
       const { matchId: id, lobby } = await t.service.createLobby(HOST, "Ana");
       await t.service.joinByCode(GUEST, "Beto", lobby!.code);
-      await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-undead" } }));
-      await t.service.submitCommand(id, GUEST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-beast" } }));
+      await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: await starterChoice(t, HOST, "undead") }));
+      await t.service.submitCommand(id, GUEST, req({ t: "lobby.selectDeck", deck: await starterChoice(t, GUEST, "beast") }));
       const [a, b] = await Promise.all([
         t.service.submitCommand(id, HOST, req({ t: "lobby.ready", ready: true })),
         t.service.submitCommand(id, GUEST, req({ t: "lobby.ready", ready: true })),

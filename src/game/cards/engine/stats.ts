@@ -1,10 +1,17 @@
-// Derived unit stats: base stats + modifiers + Furia. Statuses (Debilidad, Bendición — Phase 18) extend these.
+// Derived unit stats: base stats + modifiers + Furia + statuses (Debilidad −N attack, Bendición +N/+N; §7.2).
+import type { StatusId } from "../catalog/types";
 import { hasKeyword, keywordValue } from "./keywords";
 import type { MatchState, Unit } from "./types";
+
+/** Magnitude of a status on the unit (0 when absent). Kept here (not statuses.ts) to avoid an import cycle. */
+function magnitude(u: Unit, id: StatusId): number {
+  return u.statuses.find((st) => st.id === id)?.magnitude ?? 0;
+}
 
 export function getAttack(u: Unit): number {
   let attack = u.baseAttack;
   for (const m of u.modifiers) attack += m.attack;
+  attack += magnitude(u, "blessing") - magnitude(u, "weakness");
   // Furia: +attack while alive and at or below `percent` of max health. Recomputed on every read,
   // so healing above the threshold removes the bonus immediately.
   const berserk = keywordValue(u, "berserk");
@@ -19,7 +26,7 @@ export function getAttack(u: Unit): number {
 export function getMaxHealth(u: Unit): number {
   let health = u.baseHealth;
   for (const m of u.modifiers) health += m.health;
-  return health;
+  return health + magnitude(u, "blessing");
 }
 
 export function getHealth(u: Unit): number {
@@ -28,7 +35,7 @@ export function getHealth(u: Unit): number {
 
 /** Entered the battlefield this turn (summoning sick unless Carga/Embestida). */
 export function summonedThisTurn(s: MatchState, u: Unit): boolean {
-  // V1: units that changed control this turn also count (Phase 19 sets summonedTurn on control change).
+  // Units that changed control this turn also count (changeControl sets summonedTurn).
   return u.summonedTurn >= s.turn.number;
 }
 

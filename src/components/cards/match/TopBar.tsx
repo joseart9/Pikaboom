@@ -13,15 +13,16 @@ export interface TopBarProps {
   foe: SideView;
   foeActive: boolean;
   targets: readonly EntityId[];
+  hoverTarget?: EntityId | null;
   menuOpen: boolean;
   onTapEntity: (id: EntityId) => void;
   onToggleMenu: () => void;
 }
 
-export function TopBar({ client, foe, foeActive, targets, menuOpen, onTapEntity, onToggleMenu }: TopBarProps) {
+export function TopBar({ client, foe, foeActive, targets, hoverTarget = null, menuOpen, onTapEntity, onToggleMenu }: TopBarProps) {
   return (
     <div className="cg-topbar">
-      <FoeArea foe={foe} active={foeActive} targets={targets} onTapEntity={onTapEntity} />
+      <FoeArea foe={foe} active={foeActive} targets={targets} hoverTarget={hoverTarget} onTapEntity={onTapEntity} />
       <span className="cg-topbar-spacer" />
       <ConnectionBadge client={client} />
       <TurnTimer client={client} />

@@ -6,7 +6,8 @@ import type { GameEvent } from "../engine/events";
 import { seedToRng } from "../engine/rng";
 import type { EntityId, MatchState, Seat } from "../engine/types";
 import { randomCommand, seedHex } from "../testing/driver";
-import { newMatch } from "../testing/matches";
+import type { CardId } from "../catalog/types";
+import { newMatch, randomCatalogDeck } from "../testing/matches";
 import { rowFor } from "../testing/server";
 import { projectGame, redactEvent, viewFor, type ViewEvent } from "./view";
 
@@ -38,8 +39,12 @@ function checkLeaks(s: MatchState, viewer: Seat, known: ReadonlySet<EntityId>, w
   const json = JSON.stringify(view);
   const present = iidsIn(json);
 
-  // Hidden iids: the foe's hand and deck (nothing in MVP ever reveals them), and own deck cards never seen.
-  for (const c of s.players[foe].hand) if (present.has(c.iid)) expect.fail(`${where}: foe hand iid ${c.iid} leaked`);
+  // Hidden iids: the foe's hand and deck, and own deck cards never seen. The only foe hand iids that may show are
+  // cards the foe stole from the viewer (CARD_STOLEN is public, Phase 19).
+  const stolenByFoe = new Set(s.log.flatMap((e) => (e.type === "CARD_STOLEN" && e.to === foe && e.iid ? [e.iid] : [])));
+  for (const c of s.players[foe].hand) {
+    if (present.has(c.iid) && !stolenByFoe.has(c.iid)) expect.fail(`${where}: foe hand iid ${c.iid} leaked`);
+  }
   for (const c of s.players[foe].deck) if (present.has(c.iid)) expect.fail(`${where}: foe deck iid ${c.iid} leaked`);
   for (const c of s.players[viewer].deck) {
     if (present.has(c.iid) && !known.has(c.iid)) expect.fail(`${where}: own deck iid ${c.iid} leaked`);
@@ -50,6 +55,8 @@ function checkLeaks(s: MatchState, viewer: Seat, known: ReadonlySet<EntityId>, w
 
   // The foe's private events appear only in their redacted form.
   for (const e of view.game!.events) {
+    if (e.type === "MOB_RETURNED_TO_HAND" && e.seat === foe && e.newIid !== null) expect(e.newIid, where).toBeUndefined();
+    if (e.type === "CARD_STOLEN" && e.to === viewer) expect(e.fromIid, where).toBeUndefined();
     if ((e.type === "CARD_DRAWN" || e.type === "CARD_ADDED_TO_HAND") && e.seat === foe) {
       expect(Object.keys(e).sort(), where).toEqual(["hidden", "seat", "seq", "step", "type"]);
     }
@@ -69,6 +76,38 @@ function checkLeaks(s: MatchState, viewer: Seat, known: ReadonlySet<EntityId>, w
     if (n > (pub.get(defId) ?? 0)) expect.fail(`${where}: defId ${defId} shown ${n}× but public ${pub.get(defId) ?? 0}×`);
   }
 }
+
+/** Plays `games` random games and runs the leak checks for both viewers after every command. Returns event types seen. */
+function leakRun(games: number, seedBase: number, decksFor: (g: number) => [CardId[], CardId[]] | undefined) {
+  let steps = 0;
+  const seen = new Set<string>();
+  for (let g = 1; g <= games; g++) {
+    let s = newMatch(seedHex(seedBase + g), decksFor(g));
+    const driver = { rng: seedToRng(seedHex(900_000 + seedBase + g)) };
+    const known: [Set<EntityId>, Set<EntityId>] = [new Set(), new Set()];
+    for (let n = 0; ; n++) {
+      for (const seat of [0, 1] as const) {
+        for (const c of s.players[seat].hand) known[seat].add(c.iid);
+        checkLeaks(s, seat, known[seat], `game ${g} step ${n} viewer ${seat}`);
+      }
+      steps++;
+      if (s.phase === "finished" || n >= MAX_COMMANDS) break;
+      const [seat, cmd] = randomCommand(s, driver);
+      const r = applyCommand(s, seat, cmd);
+      for (const e of r.events) seen.add(e.type);
+      s = r.state;
+    }
+  }
+  return { steps, seen };
+}
+
+describe("viewFor — hidden information with every card (Phase 19 I)", () => {
+  it(`never leaks over ${LEAK_GAMES} random all-cards games, incl. CARD_STOLEN and MOB_RETURNED_TO_HAND`, () => {
+    const { steps, seen } = leakRun(LEAK_GAMES, 40_000, (g) => [randomCatalogDeck(1000 + 2 * g), randomCatalogDeck(1001 + 2 * g)]);
+    expect(steps).toBeGreaterThan(LEAK_GAMES * 20);
+    for (const t of ["CARD_STOLEN", "MOB_RETURNED_TO_HAND"]) expect(seen.has(t), t).toBe(true);
+  }, 90_000);
+});
 
 describe("viewFor — hidden information (Phase 8 row 1)", () => {
   it(`never leaks hidden cards over ${LEAK_GAMES} random games (both viewers, every step)`, () => {
@@ -132,6 +171,15 @@ describe("redaction (Phase 8 row 2)", () => {
     expect(redactEvent(returned, 1)).toEqual({ type: "MOB_RETURNED_TO_HAND", seq: 6, step: 2, iid: "c3", seat: 0 });
     const burned: GameEvent = { type: "CARD_BURNED", seq: 7, step: 0, seat: 1, defId: "squire" };
     expect(redactEvent(burned, 0)).toBe(burned);
+    // A returned card that burned hides nothing (a public CARD_BURNED follows).
+    const returnedBurned: GameEvent = { ...returned, newIid: null };
+    expect(redactEvent(returnedBurned, 1)).toBe(returnedBurned);
+  });
+
+  it("CARD_STOLEN is public, but the iid the card had in the victim's hand is shown to the victim only (Phase 19)", () => {
+    const stolen: GameEvent = { type: "CARD_STOLEN", seq: 8, step: 1, from: 1, to: 0, iid: "c50", fromIid: "c12", defId: "ignis" };
+    expect(redactEvent(stolen, 1)).toBe(stolen);
+    expect(redactEvent(stolen, 0)).toEqual({ type: "CARD_STOLEN", seq: 8, step: 1, from: 1, to: 0, iid: "c50", defId: "ignis" });
   });
 });
 

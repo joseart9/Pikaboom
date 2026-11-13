@@ -8,6 +8,7 @@ import { emit } from "./ctx";
 import { matchesFilter } from "./effects/selectors";
 import type { GameEvent } from "./events";
 import { getMaxHealth, isAlive } from "./stats";
+import { isStunned } from "./statuses";
 import type { Ctx, MatchState, PendingTrigger, Seat, Unit } from "./types";
 
 /** Units that may react to events, in board order (ADR-20). */
@@ -126,8 +127,8 @@ export function matchTriggers(ctx: Ctx, event: GameEvent): void {
   if (s.phase !== "playing") return; // no reactions during mulligan or after the game ended
   if (event.type === "CHAIN_LIMIT_REACHED") return;
   for (const unit of listenersInBoardOrder(s)) {
-    // V1 hook: Aturdido units' triggers do not fire (Phase 18).
-    if (unit.silenced || !isAlive(unit)) continue;
+    // Silenced and Aturdido units' triggers do not fire (Último Aliento is queued by death processing instead).
+    if (unit.silenced || isStunned(unit) || !isAlive(unit)) continue;
     const def = s.defs[unit.defId];
     for (const ability of def.abilities) {
       if (!triggerMatches(s, unit, ability, event, ctx.departed)) continue;

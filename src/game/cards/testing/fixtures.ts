@@ -7,7 +7,7 @@ import { createUnit } from "../engine/board";
 import type { EngineCommand } from "../engine/commands";
 import type { GameEvent, GameEventType } from "../engine/events";
 import { seedToRng } from "../engine/rng";
-import type { ApplyResult, MatchState, Modifier, PlayerState, Seat, Unit } from "../engine/types";
+import type { ApplyResult, MatchState, Modifier, PlayerState, Seat, StatusInstance, Unit } from "../engine/types";
 import { TEST_DEFS } from "./testCards";
 
 export const TEST_SEED = "0123456789abcdef0123456789abcdef";
@@ -22,6 +22,7 @@ export interface UnitSpec {
   keywords?: Keywords;
   shieldCharges?: number;
   modifiers?: Modifier[];
+  statuses?: StatusInstance[];
 }
 
 export interface SideSpec {
@@ -93,6 +94,7 @@ export function makeState(
       if (u.keywords) unit.keywords = structuredClone(u.keywords);
       unit.shieldCharges = u.shieldCharges ?? unit.keywords.shield ?? 0;
       unit.modifiers = structuredClone(u.modifiers ?? []);
+      unit.statuses = structuredClone(u.statuses ?? []);
       p.board.push(unit);
     }
     p.hand = (sp.hand ?? []).map((defId) => ({ iid: iid(), defId, costMod: 0 }));

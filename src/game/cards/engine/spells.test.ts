@@ -329,8 +329,9 @@ describe("every catalog play ability resolves", () => {
   it.each(withPlay.map((d) => [d.id, d] as const))("%s", (_id, def) => {
     const s = makeState({
       p0: { hand: [def.id], board: [mob(2, 5, { damage: 2 }), mob(3, 3)], deck: ["squire", "squire", "squire"], health: 20 },
-      p1: { board: [mob(2, 3), mob(4, 6), mob(1, 1)], deck: ["squire"] },
+      p1: { board: [mob(2, 3), mob(4, 6), mob(1, 1)], hand: ["squire"], deck: ["squire"] },
     });
+    s.players[0].graveyard.push({ iid: "c900", defId: "skeleton", diedTurn: 0 }); // something to resurrect
     const card = s.players[0].hand[0].iid;
     const entry = getLegalActions(s, 0).play[card];
     expect(entry, "listed as playable").toBeDefined();
@@ -344,7 +345,7 @@ describe("every catalog play ability resolves", () => {
     const types = eventTypes(r.events);
     const manaEvents = types.filter((t) => t === "MANA_CHANGED").length;
     const effectEvents = types.filter((t) => !["CARD_PLAYED", "MANA_CHANGED", "SPELL_CAST", "TRIGGER_ACTIVATED", "MOB_SUMMONED"].includes(t));
-    const summonedByEffect = eventsOf(r.events, "MOB_SUMMONED").filter((e) => e.cause === "effect").length;
+    const summonedByEffect = eventsOf(r.events, "MOB_SUMMONED").filter((e) => e.cause === "effect" || e.cause === "resurrect").length;
     expect(effectEvents.length + summonedByEffect + Math.max(0, manaEvents - (def.cost > 0 ? 1 : 0))).toBeGreaterThan(0);
   });
 });

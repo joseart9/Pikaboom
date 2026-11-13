@@ -6,7 +6,7 @@ import { BASIC_CARDS, CATALOG, COLLECTIBLE_CARDS, RARITIES, cardsByRarity, getDe
 import { KEYWORDS } from "./keywords";
 import { STARTER_DECKS, STARTER_DECK_IDS } from "./starterDecks";
 import { STATUS_DEFS } from "./statuses";
-import { MVP_EFFECT_TYPES, type CardDef, type EffectDef, type MobCardDef } from "./types";
+import { ADVANCED_EFFECT_TYPES, MVP_EFFECT_TYPES, STATUS_EFFECT_TYPES, type CardDef, type EffectDef, type MobCardDef } from "./types";
 import { validateCatalog } from "./validate";
 
 // §20.2, transcribed: [id, type, cost, attack, health, rarity, tribe, collectible]. Spells use "-" for stats/tribe.
@@ -56,7 +56,50 @@ const TABLE: [string, "mob" | "spell", number, number | "-", number | "-", strin
   ["wolf", "mob", 2, 2, 2, "basic", "beast", false],
   ["bear-cub", "mob", 2, 2, 2, "basic", "beast", false],
   ["mana-spark", "spell", 0, "-", "-", "basic", "-", false],
+  // Phase 18 F: the first status cards.
+  ["ember-imp", "mob", 1, 1, 2, "common", "demon", true],
+  ["ice-shard", "spell", 1, "-", "-", "common", "-", true],
+  ["frozen-gale", "spell", 5, "-", "-", "magic", "-", true],
+  ["flame-wyrm", "mob", 4, 3, 4, "rare", "dragon", true],
+  ["blood-hound", "mob", 3, 3, 3, "rare", "beast", true],
+  ["curse-weaver", "mob", 4, 3, 4, "magic", "demon", true],
+  ["blessing-of-light", "spell", 2, "-", "-", "common", "-", true],
+  ["purify", "spell", 1, "-", "-", "common", "-", true],
+  ["silence-monk", "mob", 3, 3, 2, "rare", "human", true],
+  ["shatter-armor", "spell", 2, "-", "-", "common", "-", true],
+  ["disarming-strike", "spell", 2, "-", "-", "common", "-", true],
+  ["stone-sleep", "spell", 3, "-", "-", "rare", "-", true],
+  ["aegis-ward", "spell", 2, "-", "-", "rare", "-", true],
+  // Phase 19 F: advanced keywords & effects.
+  ["venom-spider", "mob", 2, 1, 2, "rare", "beast", true],
+  ["shadow-stalker", "mob", 3, 3, 2, "common", "demon", true],
+  ["sun-cleric", "mob", 2, 2, 2, "common", "human", true],
+  ["ash-drake", "mob", 5, 4, 5, "common", "dragon", true],
+  ["storm-drake", "mob", 6, 5, 5, "rare", "dragon", true],
+  ["vaelra", "mob", 8, 6, 7, "legendary", "dragon", true],
+  ["larval-drake", "mob", 2, 1, 3, "magic", "dragon", true],
+  ["clockwork-sentinel", "mob", 2, 2, 2, "common", "construct", true],
+  ["iron-colossus", "mob", 7, 7, 7, "magic", "construct", true],
+  ["golem-forge", "spell", 4, "-", "-", "rare", "-", true],
+  ["toad-hex", "spell", 4, "-", "-", "rare", "-", true],
+  ["raise-dead", "spell", 4, "-", "-", "rare", "-", true],
+  ["banish", "spell", 2, "-", "-", "common", "-", true],
+  ["mind-thrall", "spell", 9, "-", "-", "magic", "-", true],
+  ["mana-leech", "mob", 3, 2, 3, "magic", "demon", true],
+  ["arcane-echo", "spell", 2, "-", "-", "rare", "-", true],
+  ["soul-thief", "mob", 3, 2, 3, "magic", "human", true],
+  ["phoenix-chick", "mob", 3, 2, 1, "rare", "elemental", true],
+  ["dark-pact", "spell", 1, "-", "-", "common", "-", true],
+  ["nyxara", "mob", 9, 6, 6, "unique", "demon", true],
+  ["toad", "mob", 1, 1, 1, "basic", "beast", false],
+  ["scrap-golem", "mob", 2, 2, 3, "basic", "construct", false],
 ];
+
+const rowsBetween = (first: string, last?: string) =>
+  TABLE.slice(TABLE.findIndex((r) => r[0] === first), last ? TABLE.findIndex((r) => r[0] === last) + 1 : undefined);
+/** The Phase 18 status cards and the collectible Phase 19 cards (its two tokens are not included). */
+const PHASE18_IDS = rowsBetween("ember-imp", "aegis-ward").map((r) => r[0]);
+const PHASE19_IDS = rowsBetween("venom-spider").filter((r) => r[7]).map((r) => r[0]);
 
 // §20.2 keywords per mob (everything not listed has none).
 const KEYWORD_TABLE: Record<string, MobCardDef["keywords"]> = {
@@ -77,6 +120,18 @@ const KEYWORD_TABLE: Record<string, MobCardDef["keywords"]> = {
   ursaria: { taunt: true },
   ignis: { reborn: true },
   "bear-cub": { rush: true },
+  // Phase 19
+  "venom-spider": { poison: true },
+  "shadow-stalker": { stealth: true },
+  "sun-cleric": { divineShield: true },
+  "ash-drake": { flying: true },
+  "storm-drake": { flying: true },
+  vaelra: { flying: true },
+  "clockwork-sentinel": { taunt: true, shield: 1 },
+  "iron-colossus": { taunt: true, shield: 3 },
+  "phoenix-chick": { reborn: true },
+  nyxara: { stealth: true, lifesteal: 6 },
+  "scrap-golem": { taunt: true },
 };
 
 function allEffects(def: CardDef): EffectDef[] {
@@ -96,12 +151,15 @@ describe("catalog", () => {
     expect(validateCatalog(CATALOG, es.cards)).toEqual([]);
   });
 
-  it("has 41 collectible cards and 4 tokens, split 8/13/12/4/3/1 by rarity", () => {
+  it("has 74 collectible cards (41 MVP + 13 Phase 18 + 20 Phase 19) and 6 tokens, split 8/25/24/11/4/2 by rarity", () => {
     const all = Object.values(CATALOG);
-    expect(all.filter((d) => d.collectible)).toHaveLength(41);
-    expect(all.filter((d) => !d.collectible).map((d) => d.id).sort()).toEqual(["bear-cub", "mana-spark", "skeleton", "wolf"]);
-    expect(RARITIES.map((r) => cardsByRarity(r).length)).toEqual([8, 13, 12, 4, 3, 1]);
-    expect(COLLECTIBLE_CARDS).toHaveLength(41);
+    expect(all.filter((d) => d.collectible)).toHaveLength(74);
+    expect(all.filter((d) => !d.collectible).map((d) => d.id).sort()).toEqual(
+      ["bear-cub", "mana-spark", "scrap-golem", "skeleton", "toad", "wolf"],
+    );
+    expect(RARITIES.map((r) => cardsByRarity(r).length)).toEqual([8, 25, 24, 11, 4, 2]);
+    expect(COLLECTIBLE_CARDS).toHaveLength(74);
+    expect(PHASE19_IDS).toHaveLength(20);
     expect(BASIC_CARDS).toHaveLength(8);
   });
 
@@ -149,13 +207,92 @@ describe("catalog", () => {
     expect(getDef("necromancer").abilities.map((a) => a.trigger.on)).toEqual(["play", "death"]);
   });
 
-  it("uses no V1-only keyword or effect", () => {
+  it("keeps V1 keywords and effects on the cards of their phase (earlier cards unchanged)", () => {
     for (const def of Object.values(CATALOG)) {
-      if (isMob(def)) {
+      const phase19 = PHASE19_IDS.includes(def.id) || def.id === "toad" || def.id === "scrap-golem";
+      if (isMob(def) && !phase19) {
         for (const k of Object.keys(def.keywords)) expect(KEYWORDS[k as keyof typeof KEYWORDS].available, `${def.id}.${k}`).toBe("mvp");
       }
-      for (const e of allEffects(def)) expect(MVP_EFFECT_TYPES, `${def.id}: ${e.type}`).toContain(e.type);
+      const allowed = phase19
+        ? [...MVP_EFFECT_TYPES, ...STATUS_EFFECT_TYPES, ...ADVANCED_EFFECT_TYPES]
+        : PHASE18_IDS.includes(def.id) ? [...MVP_EFFECT_TYPES, ...STATUS_EFFECT_TYPES] : MVP_EFFECT_TYPES;
+      for (const e of allEffects(def)) expect(allowed, `${def.id}: ${e.type}`).toContain(e.type);
     }
+    // Every V1 keyword and every Phase 19 effect is used by at least one card.
+    const used = new Set(
+      Object.values(CATALOG).flatMap((d) => [...(isMob(d) ? Object.keys(d.keywords) : []), ...allEffects(d).map((e) => e.type)]),
+    );
+    for (const k of ["poison", "stealth", "divineShield", "flying", ...ADVANCED_EFFECT_TYPES]) expect(used.has(k), k).toBe(true);
+  });
+
+  it("maps the Phase 19 cards as specified (F table)", () => {
+    const effects = (id: string) => getDef(id).abilities.flatMap((a) => a.effects);
+    const ability = (id: string) => getDef(id).abilities[0];
+    expect(ability("storm-drake")).toEqual({
+      id: "battlecry", trigger: { on: "play" },
+      effects: [{ type: "applyStatus", to: { kind: "random", group: "enemyMobs", count: 1 }, status: "stun", duration: 1 }],
+    });
+    expect(effects("vaelra")).toEqual([
+      { type: "applyStatus", to: { kind: "all", group: "enemyMobs" }, status: "freeze", duration: 1 },
+      { type: "damage", amount: 2, to: { kind: "hero", side: "enemy" } },
+    ]);
+    expect(ability("larval-drake")).toEqual({
+      id: "evolve", trigger: { on: "turnStart", whose: "own" },
+      effects: [{ type: "transform", to: { kind: "self" }, card: "ash-drake" }],
+    });
+    expect(effects("golem-forge")).toEqual([{ type: "summon", card: "scrap-golem", count: 2 }]);
+    expect(ability("toad-hex")).toMatchObject({ target: { group: "allMobs" }, effects: [{ type: "transform", to: { kind: "chosen" }, card: "toad" }] });
+    expect(effects("raise-dead")).toEqual([{ type: "resurrect", side: "friendly", count: 2, filter: { tribe: "undead" } }]);
+    expect(ability("banish")).toMatchObject({ target: { group: "allMobs" }, effects: [{ type: "returnToHand", to: { kind: "chosen" } }] });
+    expect(ability("mind-thrall")).toMatchObject({ target: { group: "enemyMobs" }, effects: [{ type: "changeControl", to: { kind: "chosen" } }] });
+    expect(effects("mana-leech")).toEqual([{ type: "modifyMana", side: "enemy", max: -1 }]);
+    expect(ability("arcane-echo")).toMatchObject({ target: { group: "allMobs" }, effects: [{ type: "copyToHand", to: { kind: "chosen" } }] });
+    expect(effects("soul-thief")).toEqual([{ type: "stealFromHand", count: 1 }]);
+    expect(ability("phoenix-chick")).toEqual({
+      id: "ignite", trigger: { on: "summoned" },
+      effects: [{ type: "damage", amount: 1, to: { kind: "random", group: "enemyCharacters", count: 1 } }],
+    });
+    expect(ability("dark-pact")).toEqual({
+      id: "cast", trigger: { on: "play" }, target: { group: "friendlyMobs" },
+      effects: [{ type: "destroy", to: { kind: "chosen" } }, { type: "draw", count: 2 }],
+    });
+    expect(effects("nyxara")).toEqual([{ type: "silence", to: { kind: "all", group: "enemyMobs" } }]);
+    for (const id of ["venom-spider", "shadow-stalker", "sun-cleric", "ash-drake", "clockwork-sentinel", "iron-colossus", "toad", "scrap-golem"]) {
+      expect(getDef(id).abilities, id).toEqual([]);
+    }
+  });
+
+  it("maps the Phase 18 status cards as specified (F table)", () => {
+    const effects = (id: string) => getDef(id).abilities.flatMap((a) => a.effects);
+    expect(getDef("ember-imp").abilities[0]).toEqual({
+      id: "battlecry", trigger: { on: "play" }, target: { group: "enemyMobs" },
+      effects: [{ type: "applyStatus", to: { kind: "chosen" }, status: "burn", magnitude: 1, duration: 2 }],
+    });
+    expect(effects("flame-wyrm")).toEqual([
+      { type: "applyStatus", to: { kind: "random", group: "enemyMobs", count: 1 }, status: "burn", magnitude: 2, duration: 2 },
+    ]);
+    expect(getDef("blood-hound").abilities[0]).toMatchObject({
+      trigger: { on: "damageDealt", combatOnly: true },
+      conditions: [{ kind: "isEnemy", subject: "eventTarget" }],
+      effects: [{ type: "applyStatus", to: { kind: "eventTarget" }, status: "bleed", magnitude: 1, duration: 2 }],
+    });
+    expect(effects("curse-weaver").map((e) => e.type === "applyStatus" && e.status)).toEqual(["curse", "weakness"]);
+    expect(effects("purify")).toEqual([
+      { type: "removeStatus", to: { kind: "chosen" }, status: "allNegative" },
+      { type: "heal", amount: 2, to: { kind: "chosen" } },
+    ]);
+    expect(getDef("silence-monk").abilities[0]).toMatchObject({ target: { group: "allMobs" }, effects: [{ type: "silence", to: { kind: "chosen" } }] });
+    expect(effects("frozen-gale")).toEqual([
+      { type: "damage", amount: 1, to: { kind: "all", group: "enemyMobs" } },
+      { type: "applyStatus", to: { kind: "all", group: "enemyMobs" }, status: "freeze", duration: 1 },
+    ]);
+    const statusOf = (id: string) => effects(id).flatMap((e) => (e.type === "applyStatus" ? [[e.status, e.magnitude ?? null, e.duration]] : []));
+    expect(statusOf("ice-shard")).toEqual([["freeze", null, 1]]);
+    expect(statusOf("blessing-of-light")).toEqual([["blessing", 2, 2]]);
+    expect(statusOf("shatter-armor")).toEqual([["vulnerability", 2, 2]]);
+    expect(statusOf("disarming-strike")).toEqual([["disarm", null, 1]]);
+    expect(statusOf("stone-sleep")).toEqual([["stun", null, 1]]);
+    expect(statusOf("aegis-ward")).toEqual([["immune", null, 1]]);
   });
 
   it("has a Spanish name for every card and a text (possibly empty) for every card", () => {
@@ -224,7 +361,7 @@ describe("starter decks", () => {
     const packOnly = COLLECTIBLE_CARDS.filter((d) => !inDecks.has(d.id)).map((d) => d.id).sort();
     expect(packOnly).toEqual(
       ["arcane-insight", "chain-lightning", "crypt-banshee", "dawn-paladin", "growing-crystal", "ignis",
-        "last-stand-knight", "scholar", "skeleton-king", "storm-weaver"].sort(),
+        "last-stand-knight", "scholar", "skeleton-king", "storm-weaver", ...PHASE18_IDS, ...PHASE19_IDS].sort(),
     );
   });
 });

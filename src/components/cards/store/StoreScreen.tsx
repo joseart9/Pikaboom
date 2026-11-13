@@ -1,0 +1,261 @@
+"use client";
+
+// Store (/cards/store, §16, Phase 17): the packs on sale with price, contents and odds, "Comprar" (disabled when the
+// balance is short), the last 10 openings, and the pack-opening overlay. Data: GET /api/cards/store (offers, balance,
+// history) and GET /api/cards/collection (owned quantities, to badge "¡Nueva!" cards) — both also perform the
+// one-time starter grant.
+// Purchases: the idempotency key is generated when "Comprar" is tapped and kept until the outcome is final (success
+// or a 4xx); after a network failure the next tap retries with the SAME key, so it can never buy twice (§16.4).
+import Link from "next/link";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { CATALOG, hasDef } from "@/game/cards/catalog";
+import type { CardId } from "@/game/cards/catalog/types";
+import { getCollection, getStore, newCommandId, purchasePack, type ApiResult } from "@/game/cards/client/api";
+import { playCardSound } from "@/game/cards/client/sounds";
+import type { Inventory } from "@/game/cards/collection/inventory";
+import {
+  addCards,
+  isPackType,
+  markNewCards,
+  OFFER_RARITIES,
+  type PackOffer,
+  type PackOpeningSummary,
+  RECENT_OPENINGS_LIMIT,
+  type PurchaseResponse,
+  type StoreResponse,
+} from "@/game/cards/collection/shop";
+import type { PackType } from "@/game/cards/config/economy";
+import { cardName, t } from "@/game/cards/i18n";
+import { CurrencyBadge } from "../skin";
+import { PackOpening } from "./PackOpening";
+
+const DATE = new Intl.DateTimeFormat("es", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+type Ready = { balance: number; packs: PackOffer[]; openings: PackOpeningSummary[]; inventory: Inventory };
+type Load = { status: "loading" } | { status: "error"; message: string } | { status: "ready"; data: Ready };
+
+interface Opening {
+  id: string;
+  packType: PackType;
+  cards: CardId[];
+  isNew: boolean[];
+  replayed: boolean;
+}
+
+export interface StoreScreenProps {
+  /** Data sources (tests / previews can inject them). */
+  loadStore?: () => Promise<ApiResult<StoreResponse>>;
+  loadCollection?: typeof getCollection;
+  buy?: (packType: string, idempotencyKey: string) => Promise<ApiResult<PurchaseResponse>>;
+}
+
+const packName = (type: string) => (isPackType(type) ? t(`store.packs.${type}`) : type);
+
+export function StoreScreen({ loadStore = getStore, loadCollection = getCollection, buy = purchasePack }: StoreScreenProps) {
+  const [state, setState] = useState<Load>({ status: "loading" });
+  const [attempt, setAttempt] = useState(0);
+  const [buying, setBuying] = useState<PackType | null>(null);
+  const [purchaseError, setPurchaseError] = useState<string | null>(null);
+  const [opening, setOpening] = useState<Opening | null>(null);
+  /** The key of the purchase whose outcome is not final yet (reused by the next tap). */
+  const pending = useRef<{ packType: PackType; key: string } | null>(null);
+  const busy = useRef(false);
+
+  useEffect(() => {
+    let alive = true;
+    void Promise.all([loadStore(), loadCollection()]).then(([s, c]) => {
+      if (!alive) return;
+      if (s.ok && c.ok) setState({ status: "ready", data: { balance: s.balance, packs: s.packs, openings: s.openings, inventory: c.inventory } });
+      else setState({ status: "error", message: (!s.ok ? s.error : !c.ok ? c.error : "") || t("store.loadFailed") });
+    });
+    return () => {
+      alive = false;
+    };
+  }, [loadStore, loadCollection, attempt]);
+
+  const data = state.status === "ready" ? state.data : null;
+
+  const purchase = useCallback(
+    async (packType: PackType) => {
+      if (busy.current || !data) return; // double tap: one request (and the key would be the same anyway)
+      busy.current = true;
+      const before = data.inventory; // owned before buying: decides the "¡Nueva!" badges
+      if (pending.current?.packType !== packType) pending.current = { packType, key: newCommandId() };
+      const { key } = pending.current;
+      setBuying(packType);
+      setPurchaseError(null);
+      const r = await buy(packType, key);
+      busy.current = false;
+      setBuying(null);
+      if (r.ok) {
+        pending.current = null;
+        playCardSound("coin");
+        setOpening({ id: r.openingId, packType, cards: r.cards, isNew: markNewCards(r.cards, before), replayed: r.replayed });
+        const summary: PackOpeningSummary = { id: r.openingId, packType, cards: r.cards, createdAt: new Date().toISOString() };
+        setState((prev) =>
+          prev.status !== "ready"
+            ? prev
+            : {
+                status: "ready",
+                data: {
+                  ...prev.data,
+                  balance: r.balance,
+                  inventory: addCards(prev.data.inventory, r.cards),
+                  openings: [summary, ...prev.data.openings.filter((o) => o.id !== r.openingId)].slice(0, RECENT_OPENINGS_LIMIT),
+                },
+              },
+        );
+        return;
+      }
+      playCardSound("error");
+      if (r.status >= 400 && r.status < 500) {
+        pending.current = null; // final answer: the next tap is a new purchase
+        setPurchaseError(r.error || t("store.purchaseFailed"));
+        if (r.code === "insufficient_funds") setAttempt((n) => n + 1); // refresh the balance shown
+      } else setPurchaseError(t("store.purchaseFailed")); // network / 5xx: keep the key for the retry
+    },
+    [buy, data],
+  );
+
+  const closeOpening = useCallback(() => setOpening(null), []);
+
+  const openingOffer = opening && data ? data.packs.find((p) => p.type === opening.packType) : undefined;
+
+  return (
+    <main className="cg-collection cg-store">
+      <header className="cg-collection-header">
+        <Link href="/cards" className="cg-button">
+          {t("match.backToMenu")}
+        </Link>
+        <h1 className="cg-collection-title">{t("store.title")}</h1>
+        {data && (
+          <div className="cg-collection-stats">
+            <CurrencyBadge amount={data.balance} unit={t("economy.gold")} label={t("economy.balance", { amount: data.balance })} />
+          </div>
+        )}
+      </header>
+
+      {state.status === "loading" && <div className="cg-center-message">{t("store.loading")}</div>}
+      {state.status === "error" && (
+        <div className="cg-center-message">
+          <p>{state.message}</p>
+          <button
+            type="button"
+            className="cg-button cg-button--primary"
+            onClick={() => {
+              setState({ status: "loading" });
+              setAttempt((n) => n + 1);
+            }}
+          >
+            {t("store.retry")}
+          </button>
+        </div>
+      )}
+
+      {data && (
+        <div className="cg-store-body">
+          <section className="cg-store-offers" aria-label={t("store.title")}>
+            {data.packs.map((offer) => {
+              const short = Math.max(0, offer.price - data.balance);
+              const name = packName(offer.type);
+              return (
+                <article key={offer.type} className="cg-store-offer">
+                  <div className="cg-store-pack" aria-hidden>
+                    <span className="cg-store-pack-glyph">✦</span>
+                    <span className="cg-store-pack-name">{name}</span>
+                  </div>
+                  <div className="cg-store-offer-info">
+                    <h2 className="cg-store-offer-title">{name}</h2>
+                    <p className="cg-store-offer-text">{t("store.packContents", { size: offer.size })}</p>
+                    <button
+                      type="button"
+                      className="cg-button cg-button--primary cg-store-buy"
+                      disabled={short > 0 || buying !== null}
+                      onClick={() => void purchase(offer.type)}
+                      aria-label={t("store.buyLabel", { name, price: offer.price })}
+                      data-haptic="medium"
+                    >
+                      {buying === offer.type ? t("store.buying") : t("store.buy")}
+                      <CurrencyBadge amount={offer.price} />
+                    </button>
+                    {short > 0 && <p className="cg-store-offer-hint">{t("store.missing", { n: short })}</p>}
+                    {purchaseError && (
+                      <p className="cg-store-offer-error" role="alert">
+                        {purchaseError}
+                      </p>
+                    )}
+                    <details className="cg-store-odds">
+                      <summary>{t("store.odds")}</summary>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th />
+                            <th>{t("store.oddsSlot", { n: offer.size - 1 })}</th>
+                            <th>{t("store.oddsLast", { n: offer.size })}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {OFFER_RARITIES.map((r) => (
+                            <tr key={r} data-rarity={r}>
+                              <th>{t(`rarity.${r}`)}</th>
+                              <td>{t("store.oddsValue", { pct: (offer.odds.slot[r] ?? 0).toLocaleString("es") })}</td>
+                              <td>{t("store.oddsValue", { pct: (offer.odds.guaranteed[r] ?? 0).toLocaleString("es") })}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </details>
+                  </div>
+                </article>
+              );
+            })}
+          </section>
+
+          <section className="cg-store-history" aria-labelledby="cg-store-history-title">
+            <h2 id="cg-store-history-title" className="cg-store-history-title">
+              {t("store.history")}
+            </h2>
+            {data.openings.length === 0 ? (
+              <p className="cg-collection-empty">{t("store.historyEmpty")}</p>
+            ) : (
+              <ul className="cg-store-history-list">
+                {data.openings.map((o) => (
+                  <li key={o.id} className="cg-store-history-row">
+                    <span className="cg-store-history-head">
+                      {packName(o.packType)}
+                      <small>{DATE.format(new Date(o.createdAt))}</small>
+                    </span>
+                    <span className="cg-store-history-cards">
+                      {o.cards.map((id, i) => (
+                        <span key={i} className="cg-store-card" data-rarity={hasDef(id) ? CATALOG[id].rarity : undefined}>
+                          {cardName(id)}
+                        </span>
+                      ))}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        </div>
+      )}
+
+      {opening && data && (
+        <PackOpening
+          key={opening.id}
+          packName={packName(opening.packType)}
+          cards={opening.cards}
+          isNew={opening.isNew}
+          replayed={opening.replayed}
+          anotherPrice={openingOffer && data.balance >= openingOffer.price ? openingOffer.price : null}
+          onOpenAnother={() => {
+            const type = opening.packType;
+            setOpening(null);
+            void purchase(type);
+          }}
+          onClose={closeOpening}
+        />
+      )}
+    </main>
+  );
+}

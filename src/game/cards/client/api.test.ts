@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { commandRequest, newCommandId, pollMatch } from "./api";
+import { commandRequest, newCommandId, pollMatch, purchasePack } from "./api";
 
 const MATCH = "00000000-0000-4000-8000-000000000001";
 
@@ -51,6 +51,37 @@ describe("client api", () => {
     const r = await commandRequest(MATCH, { t: "endTurn" });
     expect(r).toMatchObject({ ok: false, status: 409, code: "not_your_turn", error: "No es tu turno." });
     expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
+  it("purchasePack (Phase 17) retries a lost answer with the SAME idempotency key; 409 insufficient_funds is final", async () => {
+    vi.useFakeTimers();
+    try {
+      const bodies: string[] = [];
+      const fetchMock = vi
+        .fn()
+        .mockImplementationOnce(async (_u: string, init: RequestInit) => {
+          bodies.push(String(init.body));
+          throw new TypeError("network down");
+        })
+        .mockImplementationOnce(async (_u: string, init: RequestInit) => {
+          bodies.push(String(init.body));
+          return respond(200, { openingId: "o1", cards: ["ignis"], balance: 200, replayed: true });
+        })
+        .mockResolvedValueOnce(respond(409, { error: "No tienes suficiente Oro.", code: "insufficient_funds" }));
+      vi.stubGlobal("fetch", fetchMock);
+      const key = newCommandId();
+      const pending = purchasePack("arcane", key);
+      await vi.runAllTimersAsync();
+      expect(await pending).toEqual({ ok: true, openingId: "o1", cards: ["ignis"], balance: 200, replayed: true });
+      expect(fetchMock.mock.calls[0][0]).toBe("/api/cards/store/purchase");
+      expect(new Set(bodies).size).toBe(1);
+      expect(JSON.parse(bodies[0])).toEqual({ packType: "arcane", idempotencyKey: key });
+      const broke = await purchasePack("arcane", newCommandId());
+      expect(broke).toMatchObject({ ok: false, status: 409, code: "insufficient_funds" });
+      expect(fetchMock).toHaveBeenCalledTimes(3);
+    } finally {
+      vi.useRealTimers();
+    }
   });
 
   it("pollMatch passes v and since and does not retry", async () => {

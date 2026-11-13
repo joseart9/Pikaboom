@@ -1,6 +1,6 @@
 // Catalog validator (§9.6). Returns human-readable English errors; an empty array means the catalog is valid.
 // Rule 10: effect types must have an engine handler (`IMPLEMENTED_EFFECT_TYPES` from engine/effects/execute, which
-// grows phase by phase: `if` from Phase 7, V1 effects from Phases 18-19). Rule 11 (no tokens in starter decks) is
+// grew phase by phase: `if` from Phase 7, V1 effects from Phases 18-19 — all of them since Phase 19). Rule 11 (no tokens in starter decks) is
 // checked by the starter-deck test. Everything else here is structural: no engine execution.
 import { IMPLEMENTED_CONDITION_KINDS } from "../engine/effects/conditions";
 import { IMPLEMENTED_EFFECT_TYPES } from "../engine/effects/execute";
@@ -322,6 +322,11 @@ export function validateCatalog(defs: Readonly<Record<CardId, CardDef>>, dict: C
     if (side !== undefined && !PLAYER_SIDES.includes(side as string)) err(`side must be friendly|enemy`);
   }
 
+  /** Statuses, Silencio and the unit-moving effects only affect mobs in V1: a hero-only selector is a data error. */
+  function checkNotHeroOnly(sel: Selector, err: (msg: string) => void, what = "receive statuses or Silencio") {
+    if (sel?.kind === "hero") err(`heroes cannot ${what} (selector only targets a hero)`);
+  }
+
   function checkEffect(e: EffectDef, scope: AbilityScope, depth: number, err: (msg: string) => void) {
     if (!e || typeof e !== "object") return err(`effect must be an object`);
     if (typeof e.type === "string" && !implemented.includes(e.type)) err(`effect type "${e.type}" is not implemented by the engine yet`); // rule 10
@@ -338,11 +343,15 @@ export function validateCatalog(defs: Readonly<Record<CardId, CardDef>>, dict: C
         if (e.position !== undefined && e.position !== "auto" && e.position !== "end") err(`position must be auto|end`);
         if (e.overflow !== undefined && typeof e.overflow !== "boolean") err(`overflow must be a boolean`);
         return;
-      case "destroy":
       case "silence":
+        checkSelector(e.to, scope, err);
+        return checkNotHeroOnly(e.to, err);
+      case "destroy":
+        return checkSelector(e.to, scope, err);
       case "returnToHand":
       case "changeControl":
-        return checkSelector(e.to, scope, err);
+        checkSelector(e.to, scope, err);
+        return checkNotHeroOnly(e.to, err, `be the subject of ${e.type}`);
       case "draw":
         checkAmount(e.count, scope, err, 1, MAX_COUNT);
         return checkSide(e.side, err);
@@ -385,16 +394,22 @@ export function validateCatalog(defs: Readonly<Record<CardId, CardDef>>, dict: C
         return;
       case "applyStatus":
         checkSelector(e.to, scope, err);
-        if (!has(STATUS_DEFS, e.status)) err(`unknown status "${e.status}"`);
+        checkNotHeroOnly(e.to, err);
+        if (!has(STATUS_DEFS, e.status)) return err(`unknown status "${e.status}"`);
         if (e.duration !== undefined && !isInt(e.duration, 1, 10)) err(`duration must be 1..10`);
-        if (e.magnitude !== undefined && !isInt(e.magnitude, 1, MAX_AMOUNT)) err(`magnitude must be 1..${MAX_AMOUNT}`);
+        if (e.magnitude !== undefined) {
+          if (!STATUS_DEFS[e.status].hasMagnitude) err(`status ${e.status} takes no magnitude`);
+          else if (!isInt(e.magnitude, 1, MAX_AMOUNT)) err(`magnitude must be 1..${MAX_AMOUNT}`);
+        }
         return;
       case "removeStatus":
         checkSelector(e.to, scope, err);
+        checkNotHeroOnly(e.to, err);
         if (e.status !== "all" && e.status !== "allNegative" && !has(STATUS_DEFS, e.status)) err(`unknown status "${e.status}"`);
         return;
       case "transform":
         checkSelector(e.to, scope, err);
+        checkNotHeroOnly(e.to, err, "be transformed");
         if (!cardExists(e.card)) err(`unknown card "${e.card}"`); // rule 8
         else if (defs[e.card].type !== "mob") err(`transform card "${e.card}" is not a mob`);
         return;
@@ -405,6 +420,7 @@ export function validateCatalog(defs: Readonly<Record<CardId, CardDef>>, dict: C
         return;
       case "copyToHand":
         checkSelector(e.to, scope, err);
+        checkNotHeroOnly(e.to, err, "be copied");
         return checkSide(e.side, err);
       case "stealFromHand":
         if (!isInt(e.count, 1, MAX_COUNT)) err(`count must be 1..${MAX_COUNT}`);

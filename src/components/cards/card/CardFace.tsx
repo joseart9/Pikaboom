@@ -17,13 +17,15 @@ export interface CardFaceProps {
   def: CardDef;
   overrides?: CardOverrides;
   state?: CardFrameState;
+  /** Collection "No descubierta" look (Phase 14): "?" art, no rules text or stats, desaturated. */
+  locked?: boolean;
 }
 
 function sign(a: number, b: number): -1 | 0 | 1 {
   return a < b ? -1 : a > b ? 1 : 0;
 }
 
-export const CardFace = memo(function CardFace({ def, overrides = {}, state = "normal" }: CardFaceProps) {
+export const CardFace = memo(function CardFace({ def, overrides = {}, state = "normal", locked = false }: CardFaceProps) {
   const cost = overrides.cost ?? def.cost;
   const isMob = def.type === "mob";
   const attack = isMob ? (overrides.attack ?? def.attack) : 0;
@@ -31,19 +33,25 @@ export const CardFace = memo(function CardFace({ def, overrides = {}, state = "n
   const maxHealth = isMob ? (overrides.maxHealth ?? def.health) : 0;
   const tribe = isMob ? def.tribes[0] : undefined;
   return (
-    <div className="cg-card">
+    <div className={locked ? "cg-card cg-card--locked" : "cg-card"}>
       <CardFrame type={def.type} rarity={def.rarity} state={state}>
-        <div className="cg-card-art">
-          <CardArt art={def.art} tribe={tribe} spell={!isMob} />
-        </div>
+        {locked ? (
+          <div className="cg-card-art cg-card-art--locked" aria-hidden>
+            ?
+          </div>
+        ) : (
+          <div className="cg-card-art">
+            <CardArt art={def.art} tribe={tribe} spell={!isMob} />
+          </div>
+        )}
         <div className="cg-card-gem">
           <RarityGem rarity={def.rarity} size="7cqh" title={t(`rarity.${def.rarity}`)} />
         </div>
         <div className="cg-card-name">{cardName(def.id)}</div>
         <div className="cg-card-text">
-          <CardText text={cardText(def.id)} />
+          {locked ? <span className="cg-card-locked">{t("collection.locked")}</span> : <CardText text={cardText(def.id)} />}
         </div>
-        {isMob && def.tribes.length > 0 && (
+        {isMob && !locked && def.tribes.length > 0 && (
           <div className="cg-card-tribe">
             <TribeLabel label={def.tribes.map((tr) => t(`tribe.${tr}`)).join(" · ")} />
           </div>
@@ -52,7 +60,7 @@ export const CardFace = memo(function CardFace({ def, overrides = {}, state = "n
       <div className="cg-card-cost">
         <CostBadge value={cost} modified={sign(cost, def.cost)} size="17cqh" />
       </div>
-      {isMob && (
+      {isMob && !locked && (
         <>
           <div className="cg-card-attack">
             <AttackBadge value={attack} buffed={attack > def.attack} debuffed={attack < def.attack} size="17cqh" />

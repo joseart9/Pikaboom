@@ -13,6 +13,10 @@ export interface PlayerAreaProps {
   targets: readonly EntityId[];
   selectedCard: EntityId | null;
   pendingCard: EntityId | null;
+  /** The hand card currently out of the hand (dragged / parked / ghost). */
+  awayCard: EntityId | null;
+  previewEnabled: boolean;
+  hoverTarget: EntityId | null;
   endTurnState: EndTurnState;
   onTapEntity: (id: EntityId) => void;
   onTapHandCard: (card: HandCardView) => void;
@@ -29,7 +33,7 @@ const END_TURN_LABEL: Record<EndTurnState, () => string> = {
 export function PlayerArea(p: PlayerAreaProps) {
   const { me } = p;
   return (
-    <div className="cg-bottom">
+    <div className="cg-bottom" data-cg-zone="hand">
       <div className="cg-bottom-left">
         <HeroButton
           hero={me.hero}
@@ -37,6 +41,7 @@ export function PlayerArea(p: PlayerAreaProps) {
           seat={me.seat}
           mine
           targetable={p.targets.includes(me.hero.id)}
+          hovered={p.hoverTarget === me.hero.id}
           highlighted={p.active}
           size="var(--cg-portrait)"
           onTap={p.onTapEntity}
@@ -50,9 +55,17 @@ export function PlayerArea(p: PlayerAreaProps) {
           label={t("match.mana", { current: me.mana.current, max: me.mana.max })}
         />
       </div>
-      <Hand cards={me.hand} legal={p.legal} selected={p.selectedCard} pending={p.pendingCard} onTap={p.onTapHandCard} />
+      <Hand
+        cards={me.hand}
+        legal={p.legal}
+        selected={p.selectedCard}
+        pending={p.pendingCard}
+        away={p.awayCard}
+        previewEnabled={p.previewEnabled}
+        onTap={p.onTapHandCard}
+      />
       <div className="cg-bottom-right">
-        <span className="cg-counter" title={t("match.deckCount", { n: me.deckCount })} aria-label={t("match.deckCount", { n: me.deckCount })}>
+        <span className="cg-counter" data-cg-anchor="my-deck" title={t("match.deckCount", { n: me.deckCount })} aria-label={t("match.deckCount", { n: me.deckCount })}>
           <CardBack height="clamp(16px, 5dvh, 28px)" />
           {me.deckCount}
         </span>

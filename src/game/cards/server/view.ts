@@ -4,6 +4,7 @@
 // Never included: `rng`, `defs`, `rules`, user ids, any deck contents/order/iids (own deck too), the opponent's
 // hand contents/iids, and private events of the opponent beyond their redacted form.
 import type { CardId } from "../catalog/types";
+import type { MatchReward } from "../collection/wallet";
 import { snapshotUnit } from "../engine/board";
 import type { GameEvent, UnitSnapshot } from "../engine/events";
 import { heroId } from "../engine/ids";
@@ -20,7 +21,8 @@ export const ONLINE_MS = 9000;
 
 export type HiddenEvent =
   | { type: "CARD_DRAWN" | "CARD_ADDED_TO_HAND"; seq: number; step: number; seat: Seat; hidden: true }
-  | (Omit<Extract<GameEvent, { type: "MOB_RETURNED_TO_HAND" }>, "newIid"> & { newIid?: undefined });
+  | (Omit<Extract<GameEvent, { type: "MOB_RETURNED_TO_HAND" }>, "newIid"> & { newIid?: undefined })
+  | (Omit<Extract<GameEvent, { type: "CARD_STOLEN" }>, "fromIid"> & { fromIid?: undefined });
 export type ViewEvent = GameEvent | HiddenEvent;
 
 export interface HandCardView {
@@ -75,6 +77,8 @@ export interface LobbyView {
   host: LobbySeatView;
   guest: LobbySeatView | null;
   myDeck: DeckChoice | null;
+  /** Phase 15 H: the match could not start because this seat's deck is no longer available. */
+  lastError?: { seat: Seat; code: string };
 }
 
 export interface MatchView {
@@ -87,7 +91,8 @@ export interface MatchView {
   foeOnline: boolean;
   lobby: LobbyView | null;
   game: GameView | null;
-  rewards: { amount: number; reason: string } | null; // V1 (Phase 16)
+  /** Your reward once a finished match has been granted (Phase 16); null before that and for every other status. */
+  rewards: MatchReward | null;
 }
 
 /** Public description of a unit (same shape as in events). */
@@ -106,8 +111,14 @@ export function redactEvent(e: GameEvent, viewer: Seat): ViewEvent {
       if (e.seat === viewer) return e;
       return { type: e.type, seq: e.seq, step: e.step, seat: e.seat, replaced: [], drawn: [] };
     case "MOB_RETURNED_TO_HAND": {
-      if (e.seat === viewer) return e;
+      // `newIid: null` (burned, a public CARD_BURNED follows) hides nothing.
+      if (e.seat === viewer || e.newIid === null) return e;
       return { type: e.type, seq: e.seq, step: e.step, iid: e.iid, seat: e.seat };
+    }
+    case "CARD_STOLEN": {
+      // The card and its new iid are public; the iid it had in the victim's hand is the victim's business only.
+      if (e.from === viewer) return e;
+      return { type: e.type, seq: e.seq, step: e.step, from: e.from, to: e.to, iid: e.iid, defId: e.defId };
     }
     default:
       return e;
@@ -187,6 +198,7 @@ export function viewFor(row: MatchRow, seat: Seat, opts: ViewOptions = {}): Matc
       host: seatView(0),
       guest: row.guestId !== null ? seatView(1) : null,
       myDeck: structuredClone((seat === 0 ? row.lobby.host : row.lobby.guest).deck),
+      ...(row.lobby.lastError ? { lastError: { seat: row.lobby.lastError.seat, code: row.lobby.lastError.code } } : {}),
     };
   }
   let game: GameView | null = null;

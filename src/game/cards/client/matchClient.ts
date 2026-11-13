@@ -3,11 +3,21 @@
 // The match client store (§17.6): a tiny external store consumed with `useSyncExternalStore` + selectors, so a
 // change in one field (timer offset, connection) re-renders only the components that read it. Polls answered with
 // `{ same: true }` change nothing here, so they cause no re-render at all.
+//
+// Event playback (§18.2, Phase 13): `board` is a PRESENTATION model. While new events animate it starts from the
+// previous settled board and is patched group by group (`presentationReducer`); when the queue drains or is
+// skipped it is reconciled to `toBoardModel(latest view)`. Without an FX layer (tests, lobby) views apply at once.
 import { useSyncExternalStore } from "react";
 import type { ClientCommand } from "../server/commands";
 import { t } from "../i18n";
-import type { MatchView } from "../server/view";
+import type { MatchView, ViewEvent } from "../server/view";
 import { toBoardModel, type BoardModel } from "./boardModel";
+import type { FxApi } from "./animation/fx";
+import { ANIMATIONS, ENTER_ANIMATIONS, hasHandlers, runHandlers, type AnimationEnv } from "./animation/handlers";
+import { isReducedMotion } from "./animation/motion";
+import { AnimationQueue, OWN_SPEED, type GroupControl, type QueueOptions } from "./animation/queue";
+import { boardMismatches, reduceEvents } from "./animation/reduce";
+import { playCardSound, type CardSound } from "./sounds";
 import type { ConnStatus, MatchTransport, TransportUpdate } from "./transport";
 
 export interface PendingCommand {
@@ -33,6 +43,29 @@ export interface MatchClientState {
   fatal: string | null; // 403/404 → leave match
   clockOffsetMs: number; // serverNow − Date.now()
   foeOnline: boolean;
+  /** Events are animating: `board` lags behind `view` and game input is locked (except skip and inspect). */
+  animating: boolean;
+  /** My last command, kept while its own result animates (the hand card stays "out of the hand" meanwhile). */
+  settling: ClientCommand | null;
+}
+
+/** Waits for the next frame so React has committed the last apply (enter animations need the new elements). */
+function nextFrame(): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof requestAnimationFrame === "function") requestAnimationFrame(() => resolve());
+    else setTimeout(resolve, 16);
+  });
+}
+
+function pageHidden(): boolean {
+  return typeof document !== "undefined" && document.visibilityState === "hidden";
+}
+
+/** Dev-only reconcile check counters (Phase 13 K: zero mismatches over a full match). */
+export interface ReconcileStats {
+  reconciles: number;
+  checked: number;
+  mismatches: number;
 }
 
 /** Offsets that differ by less than this are not worth a re-render. */
@@ -54,23 +87,64 @@ export class MatchClient {
     fatal: null,
     clockOffsetMs: 0,
     foeOnline: false,
+    animating: false,
+    settling: null,
   };
   private readonly listeners = new Set<() => void>();
   private errorSeq = 0;
   private started = false;
+  private fx: FxApi | null = null;
+  /** Highest event seq already queued or applied. */
+  private queuedSeq = 0;
+  private readonly queue: AnimationQueue;
+  readonly reconcileStats: ReconcileStats = { reconciles: 0, checked: 0, mismatches: 0 };
+  private readonly onVisibility = () => {
+    if (pageHidden()) this.queue.skipAll(); // tab hidden → finish instantly (Phase 13 H)
+  };
 
-  constructor(private readonly transport: MatchTransport) {}
+  constructor(
+    private readonly transport: MatchTransport,
+    queueOptions: Partial<QueueOptions> = {},
+  ) {
+    this.queue = new AnimationQueue(
+      {
+        play: (group, ctl) => this.runGroup(ANIMATIONS, group, ctl, false),
+        apply: (group) => this.applyGroup(group),
+        enter: (group, ctl) => this.runGroup(ENTER_ANIMATIONS, group, ctl, true),
+        reconcile: (complete) => this.reconcile(complete),
+        finishFx: () => this.fx?.finishAll(),
+        onPlayingChange: (playing) => this.onPlayingChange(playing),
+        hidden: pageHidden,
+      },
+      queueOptions,
+    );
+  }
 
   start(): void {
     if (this.started) return;
     this.started = true;
+    if (typeof document !== "undefined") document.addEventListener("visibilitychange", this.onVisibility);
     this.transport.start((u) => this.onUpdate(u));
   }
 
   stop(): void {
     if (!this.started) return;
     this.started = false;
+    if (typeof document !== "undefined") document.removeEventListener("visibilitychange", this.onVisibility);
     this.transport.stop();
+    if (this.queue.playing) this.queue.skipAll();
+  }
+
+  /** The FX layer registers itself while mounted; without it, views apply at once (no playback). */
+  setFx(fx: FxApi | null): void {
+    if (this.fx === fx) return;
+    if (!fx && this.queue.playing) this.queue.skipAll();
+    this.fx = fx;
+  }
+
+  /** Tap to skip (§18.3): the current group ends now and the rest plays twice as fast. */
+  skipAnimations(): void {
+    this.queue.skipCurrent();
   }
 
   subscribe = (listener: () => void): (() => void) => {
@@ -105,11 +179,94 @@ export class MatchClient {
   private acceptView(view: MatchView, patch: Partial<MatchClientState>): void {
     const cur = this.state.view;
     // Version monotonicity (§13.5); a different seat/match (sandbox viewer switch) always replaces the view.
-    const newer = !cur || cur.matchId !== view.matchId || cur.seat !== view.seat || view.version > cur.version;
-    if (!newer) return;
+    const sameStream = !!cur && cur.matchId === view.matchId && cur.seat === view.seat;
+    if (sameStream && view.version <= cur.version) return;
     patch.view = view;
-    patch.board = toBoardModel(view);
     if (view.foeOnline !== this.state.foeOnline) patch.foeOnline = view.foeOnline;
+
+    const g = view.game;
+    if (!sameStream || !g || !cur.game || this.state.board === null || this.fx === null) {
+      // First view, another seat/match, no game yet, or no FX layer: show it as is (nothing to replay).
+      if (this.queue.playing) this.queue.cancel();
+      this.queuedSeq = g?.lastSeq ?? 0;
+      patch.board = toBoardModel(view);
+      if (this.state.animating) patch.animating = false;
+      if (this.state.settling) patch.settling = null;
+      return;
+    }
+    const fresh: ViewEvent[] = g.events.filter((e) => e.seq > this.queuedSeq);
+    this.queuedSeq = Math.max(this.queuedSeq, g.lastSeq);
+    if (g.eventsTruncated) {
+      // Reconnect after a long gap: the events are incomplete, so nothing is replayed.
+      if (this.queue.playing) this.queue.cancel();
+      patch.board = toBoardModel(view);
+      if (this.state.animating) patch.animating = false;
+      if (this.state.settling) patch.settling = null;
+      return;
+    }
+    if (fresh.length === 0) {
+      // Legal actions, timers, presence… changed without new events: show at once, or at the next reconcile.
+      if (!this.queue.playing) patch.board = toBoardModel(view);
+      return;
+    }
+    // A view that answers my own command (it may come through the transport before `send` resolves).
+    const own = this.state.pending !== null;
+    if (own) patch.settling = this.state.pending!.command;
+    // The queue applies groups through `set`, so the caller's patch must land first.
+    queueMicrotask(() => this.queue.push(fresh, own ? OWN_SPEED : 1));
+  }
+
+  private onPlayingChange(playing: boolean): void {
+    const board = this.state.board;
+    // Input lock: no legal actions while the board shows the past.
+    if (playing) this.set({ animating: true, board: board && board.legal ? { ...board, legal: null } : board });
+    else if (this.state.animating) this.set({ animating: false });
+  }
+
+  private applyGroup(group: readonly ViewEvent[]): void {
+    const board = this.state.board;
+    if (board) this.set({ board: reduceEvents(board, group) });
+  }
+
+  private reconcile(complete: boolean): void {
+    const truth = toBoardModel(this.state.view);
+    const reduced = this.state.board;
+    this.reconcileStats.reconciles += 1;
+    if (complete && reduced && truth && process.env.NODE_ENV !== "production") {
+      this.reconcileStats.checked += 1;
+      const diff = boardMismatches(reduced, truth);
+      if (diff.length > 0) {
+        this.reconcileStats.mismatches += 1;
+        console.warn("[cards] presentation/view mismatch at reconcile", diff);
+      }
+    }
+    this.set({ board: truth, settling: null });
+    this.fx?.settle();
+  }
+
+  private async runGroup(map: typeof ANIMATIONS, group: readonly ViewEvent[], ctl: GroupControl, enter: boolean): Promise<void> {
+    const fx = this.fx;
+    const view = this.state.view;
+    if (!fx || !view || !hasHandlers(map, group)) return;
+    if (enter) await nextFrame();
+    if (ctl.signal.aborted) return;
+    const reduced = isReducedMotion();
+    const played = new Set<CardSound>();
+    const env: AnimationEnv = {
+      fx,
+      reducedMotion: reduced,
+      speed: ctl.speed,
+      perspective: view.seat,
+      signal: ctl.signal,
+      ms: (base) => (base / ctl.speed) * (reduced ? 0.3 : 1),
+      hold: (base) => base / ctl.speed,
+      sound: (kind) => {
+        if (played.has(kind)) return;
+        played.add(kind);
+        playCardSound(kind);
+      },
+    };
+    await runHandlers(map, group, env);
   }
 
   private onUpdate(u: TransportUpdate): void {

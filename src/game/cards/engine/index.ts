@@ -1,7 +1,7 @@
 // Public engine API. Pure TypeScript: no React, Next, DB, clock or ambient randomness (ADR-04).
 
 /** Bump when rule code changes behavior; replays of older versions are refused (§11). */
-export const ENGINE_VERSION = 1;
+export const ENGINE_VERSION = 3; // 2: statuses & Silencio (Phase 18) · 3: advanced keywords & effects (Phase 19)
 
 export { applyCommand } from "./apply";
 export { createMatch } from "./setup";

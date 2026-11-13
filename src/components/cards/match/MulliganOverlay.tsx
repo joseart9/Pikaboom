@@ -44,6 +44,7 @@ export function MulliganOverlay({ client, me, iGoFirst, canMulligan, pending }: 
               key={card.iid}
               type="button"
               data-iid={card.iid}
+              data-cg-inspect="hand"
               className={`cg-mulligan-card${isMarked ? " cg-mulligan-card--marked" : ""}`}
               disabled={locked}
               aria-pressed={isMarked}

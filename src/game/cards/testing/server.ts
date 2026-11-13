@@ -1,10 +1,14 @@
 // Helpers for the server-layer tests (Phase 8/9): fake clock, service over any store, started matches, synthetic rows.
 import { expect } from "vitest";
 import type { MatchState, Seat } from "../engine/types";
-import type { ClientCommand, CommandRequest } from "../server/commands";
+import { t as tr } from "../i18n";
+import { MemoryCollectionStore } from "../server/collection";
+import type { ClientCommand, CommandRequest, DeckChoice } from "../server/commands";
+import { DeckService, MemoryDeckStore } from "../server/decks";
 import { isServiceError, type ServiceError } from "../server/errors";
 import { CODE_ALPHABET, CODE_LENGTH, MatchService } from "../server/matchService";
 import { MemoryMatchStore } from "../server/memoryStore";
+import type { RewardsPort } from "../server/rewards";
 import type { MatchRow, MatchStore } from "../server/store";
 import type { MatchView } from "../server/view";
 
@@ -38,6 +42,10 @@ export interface TestService {
   service: MatchService;
   store: MatchStore;
   clock: FakeClock;
+  /** Saved decks (Phase 15): memory stores; the match service loads lobby decks through `decks.choiceDeps()`. */
+  decks: DeckService;
+  deckStore: MemoryDeckStore;
+  collection: MemoryCollectionStore;
 }
 
 export interface MakeServiceOptions {
@@ -45,6 +53,8 @@ export interface MakeServiceOptions {
   codes?: string[];
   /** Store factory (default: a `MemoryMatchStore` on the fake clock). DB tests pass a `PgMatchStore` on PGlite. */
   store?: (clock: FakeClock) => MatchStore;
+  /** Rewards port (Phase 16; default: none, like the dev memory store). Gets the store the service uses. */
+  rewards?: (store: MatchStore) => RewardsPort;
 }
 
 export function makeService(opts: MakeServiceOptions = {}): TestService {
@@ -58,13 +68,30 @@ export function makeService(opts: MakeServiceOptions = {}): TestService {
     for (let i = 0; i < CODE_LENGTH; i++, k = Math.floor(k / CODE_ALPHABET.length)) code = CODE_ALPHABET[k % CODE_ALPHABET.length] + code;
     return code;
   };
+  const deckStore = new MemoryDeckStore();
+  const collection = new MemoryCollectionStore(undefined, deckStore);
+  const decks = new DeckService({ decks: deckStore, collection });
   const service = new MatchService({
     store,
     now: clock.now,
     randomSeed: () => seeds.shift() ?? (++n).toString(16).padStart(32, "0"),
     randomCode: () => codes.shift() ?? codeFor(++n),
+    decks: decks.choiceDeps(),
+    rewards: opts.rewards?.(store),
   });
-  return { service, store, clock };
+  return { service, store, clock, decks, deckStore, collection };
+}
+
+/**
+ * The user's granted starter deck as a lobby choice (Phase 15: the code-defined starter decks are saved decks now).
+ * Performs the starter grant first (idempotent).
+ */
+export async function starterChoice(t: TestService, userId: string, which: "undead" | "beast"): Promise<DeckChoice> {
+  await t.collection.ensureStarterGrant(userId);
+  const name = tr(`starterDecks.${which}`);
+  const deck = (await t.decks.listDecks(userId)).find((d) => d.name === name);
+  if (!deck) throw new Error(`no starter deck ${name} for ${userId}`);
+  return { kind: "saved", id: deck.id };
 }
 
 /** create → join → selectDeck ×2 → ready ×2 (host undead, guest beast). Returns the active match's id and views. */
@@ -73,8 +100,8 @@ export async function startMatch(t: TestService): Promise<{ matchId: string; hos
   const lobby = await t.store.load(created.matchId);
   await t.service.joinByCode(GUEST, "Beto", lobby!.code);
   const id = created.matchId;
-  await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-undead" } }));
-  await t.service.submitCommand(id, GUEST, req({ t: "lobby.selectDeck", deck: { kind: "starter", id: "starter-beast" } }));
+  await t.service.submitCommand(id, HOST, req({ t: "lobby.selectDeck", deck: await starterChoice(t, HOST, "undead") }));
+  await t.service.submitCommand(id, GUEST, req({ t: "lobby.selectDeck", deck: await starterChoice(t, GUEST, "beast") }));
   const host = await t.service.submitCommand(id, HOST, req({ t: "lobby.ready", ready: true }));
   const guest = await t.service.submitCommand(id, GUEST, req({ t: "lobby.ready", ready: true }));
   return { matchId: id, host, guest };

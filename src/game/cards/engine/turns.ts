@@ -1,6 +1,6 @@
 // Turn structure (§6.3).
 import { snapshotUnit } from "./board";
-import { heal } from "./damage";
+import { applyDamageInstances, heal } from "./damage";
 import { emit } from "./ctx";
 import { drawCards } from "./draw";
 import { endGame, isGameOver } from "./gameOver";
@@ -9,6 +9,7 @@ import { keywordValue } from "./keywords";
 import { clearTemporaryMana, refreshManaForTurn } from "./mana";
 import { resolveAll } from "./resolve";
 import { getHealth, getMaxHealth } from "./stats";
+import { burnInstances, expireStatuses } from "./statuses";
 import type { Ctx, Unit } from "./types";
 
 /** Start of turn, steps 1–5 of §6.3. */
@@ -25,8 +26,10 @@ export function startTurn(ctx: Ctx): void {
   for (const u of p.board) u.attacksThisTurn = 0;
   p.turnCounters = { cardsPlayed: 0, spellsCast: 0, mobsPlayed: 0 };
   p.actedThisTurn = false;
-  // 4. `turnStart` triggers are queued by TURN_STARTED (status ticks: Phase 18), then resolve.
+  // 4. `turnStart` triggers are queued by TURN_STARTED; then Quemadura ticks for the active seat's units (one
+  //    simultaneous batch, board order); then everything resolves (a burn death resolves before the draw).
   emit(ctx, { type: "TURN_STARTED", seat, turn: s.turn.number });
+  applyDamageInstances(ctx, burnInstances(s, seat));
   resolveAll(ctx);
   if (isGameOver(s)) return;
   // 5. Draw.
@@ -61,7 +64,8 @@ export function endTurnAndStartNext(ctx: Ctx, timeout: boolean): void {
   // 2. Expire end-of-turn modifiers on both sides; discard temporary mana.
   for (const p of s.players) for (const u of p.board) expireEndOfTurnModifiers(ctx, u);
   clearTemporaryMana(ctx, seat);
-  // 3. Status expiry for the active seat's units (Phase 18).
+  // 3. Status expiry for the active seat's units (§7.3).
+  expireStatuses(ctx, seat);
   resolveAll(ctx);
   if (isGameOver(s)) return;
   // 4. Turn limit → draw.

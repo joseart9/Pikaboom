@@ -47,10 +47,14 @@ export type GameEvent =
   | E<"STATUS_REMOVED", { iid: EntityId; status: StatusId }>
   | E<"MOB_SILENCED", { iid: EntityId }>
   | E<"MOB_TRANSFORMED", { iid: EntityId; unit: UnitSnapshot }>
-  | E<"MOB_RETURNED_TO_HAND", { iid: EntityId; seat: Seat; newIid: EntityId }>
+  // newIid: the card's iid in its owner's hand (private to that seat); null = the hand was full and the card burned
+  // (a CARD_BURNED follows).
+  | E<"MOB_RETURNED_TO_HAND", { iid: EntityId; seat: Seat; newIid: EntityId | null }>
   | E<"CONTROL_CHANGED", { iid: EntityId; from: Seat; to: Seat; index: number }>
   | E<"CARD_ADDED_TO_HAND", { seat: Seat; iid: EntityId; defId: CardId }> // private to seat
-  | E<"CARD_STOLEN", { from: Seat; to: Seat; iid: EntityId; defId: CardId }> // public (both players learn it)
+  // Public (both players learn the card). iid: its new iid in the thief's hand, null = burned (a CARD_BURNED follows).
+  // fromIid: its iid in the victim's hand; removed from the thief's view (only the victim needs it, DEC-025).
+  | E<"CARD_STOLEN", { from: Seat; to: Seat; iid: EntityId | null; fromIid: EntityId; defId: CardId }>
   | E<"TRIGGER_ACTIVATED", { sourceId: EntityId; abilityId: string; defId: CardId }>
   | E<"CHAIN_LIMIT_REACHED", Record<never, never>>
   | E<"GAME_OVER", { winner: Seat | "draw"; reason: EndReason }>;

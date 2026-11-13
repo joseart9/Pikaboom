@@ -1,8 +1,10 @@
 // The card catalog (ADR-10): every card definition in the game, keyed by id.
 import { cardName } from "../i18n";
+import { ADVANCED_CARD_DEFS } from "./cards/advanced";
 import { BASIC_DEFS } from "./cards/basic";
 import { BEAST_DEFS } from "./cards/beast";
 import { NEUTRAL_DEFS } from "./cards/neutral";
+import { STATUS_CARD_DEFS } from "./cards/status";
 import { TOKEN_DEFS } from "./cards/tokens";
 import { UNDEAD_DEFS } from "./cards/undead";
 import type { CardDef, CardId, MobCardDef, Rarity, SpellCardDef } from "./types";
@@ -23,6 +25,8 @@ export const CATALOG: Readonly<Record<CardId, CardDef>> = buildCatalog(
   UNDEAD_DEFS,
   BEAST_DEFS,
   NEUTRAL_DEFS,
+  STATUS_CARD_DEFS,
+  ADVANCED_CARD_DEFS,
   TOKEN_DEFS,
 );
 

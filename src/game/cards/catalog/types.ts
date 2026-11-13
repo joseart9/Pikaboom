@@ -180,3 +180,11 @@ export type EffectType = EffectDef["type"];
 export const MVP_EFFECT_TYPES: readonly EffectType[] = [
   "damage", "heal", "summon", "destroy", "draw", "addToHand", "buff", "grantKeyword", "gainMana", "if",
 ];
+
+/** The status family (Phase 18). */
+export const STATUS_EFFECT_TYPES: readonly EffectType[] = ["silence", "applyStatus", "removeStatus"];
+
+/** The advanced effects (Phase 19). With the two lists above: every effect type. */
+export const ADVANCED_EFFECT_TYPES: readonly EffectType[] = [
+  "transform", "resurrect", "returnToHand", "changeControl", "copyToHand", "stealFromHand", "modifyMana",
+];

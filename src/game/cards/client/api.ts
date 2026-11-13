@@ -6,6 +6,11 @@
 // Commands carry a `commandId` generated ONCE per command and reused by every retry, so a retry after a lost
 // response can never apply the command twice (ADR-03).
 
+import type { CollectionResponse } from "../collection/inventory";
+import type { PurchaseResponse, StoreResponse } from "../collection/shop";
+import type { WalletResponse } from "../collection/wallet";
+import type { DeckInput, DeckListResponse, SavedDeck } from "../decks/saved";
+import type { DeckProblem } from "../decks/validate";
 import type { ReadResult } from "../server/matchService";
 import type { ClientCommand } from "../server/commands";
 import type { MatchView } from "../server/view";
@@ -17,7 +22,7 @@ const RETRY_MAX_MS = 4000;
 const COMMAND_ATTEMPTS = 10;
 const DEFAULT_ATTEMPTS = 4;
 
-export type ApiError = { ok: false; status: number; error: string; code: string; matchId?: string };
+export type ApiError = { ok: false; status: number; error: string; code: string; matchId?: string; problems?: DeckProblem[] };
 export type ApiResult<T> = ({ ok: true } & T) | ApiError;
 
 const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
@@ -50,7 +55,14 @@ async function withRetry<T>(path: string, init: RequestInit | undefined, attempt
       const { status, body } = await once(path, init);
       if (status < 500) {
         if (status >= 200 && status < 300) return { ok: true, ...(body as T) };
-        return { ok: false, status, error: String(body.error ?? ""), code: String(body.code ?? "error"), ...(typeof body.matchId === "string" ? { matchId: body.matchId } : {}) };
+        return {
+          ok: false,
+          status,
+          error: String(body.error ?? ""),
+          code: String(body.code ?? "error"),
+          ...(typeof body.matchId === "string" ? { matchId: body.matchId } : {}),
+          ...(Array.isArray(body.problems) ? { problems: body.problems as DeckProblem[] } : {}),
+        };
       }
       last = { ok: false, status, error: String(body.error ?? ""), code: String(body.code ?? "unavailable") };
     } catch {
@@ -79,6 +91,53 @@ export function joinMatch(code: string): Promise<ApiResult<{ view: MatchView }>>
 /** Your lobby/active match id, or null. */
 export function currentMatch(): Promise<ApiResult<{ matchId: string | null }>> {
   return withRetry("/matches/current", undefined, DEFAULT_ATTEMPTS);
+}
+
+/** Your collection + Oro balance (Phase 14). The first call ever also grants the starter cards. */
+export function getCollection(): Promise<ApiResult<CollectionResponse>> {
+  return withRetry<CollectionResponse>("/collection", undefined, DEFAULT_ATTEMPTS);
+}
+
+/** Your Oro balance + the latest ledger rows (Phase 16). The first call ever also grants the starter cards. */
+export function getWallet(): Promise<ApiResult<WalletResponse>> {
+  return withRetry<WalletResponse>("/wallet", undefined, DEFAULT_ATTEMPTS);
+}
+
+/** Packs on sale, your Oro balance and your last pack openings (Phase 17). */
+export function getStore(): Promise<ApiResult<StoreResponse>> {
+  return withRetry<StoreResponse>("/store", undefined, DEFAULT_ATTEMPTS);
+}
+
+/**
+ * Buys one pack (Phase 17). `idempotencyKey` (32 hex, e.g. `newCommandId()`) is generated once per tap on "Comprar"
+ * and reused by every retry — here and by the caller after a network failure — so a lost response can never buy
+ * twice: the server answers the same key with the same cards (`replayed: true`).
+ */
+export function purchasePack(packType: string, idempotencyKey: string): Promise<ApiResult<PurchaseResponse>> {
+  return withRetry<PurchaseResponse>("/store/purchase", post({ packType, idempotencyKey }), DEFAULT_ATTEMPTS);
+}
+
+/** Your saved decks (Phase 15). The first call ever also grants the starter cards and decks. */
+export function listDecks(): Promise<ApiResult<DeckListResponse>> {
+  return withRetry<DeckListResponse>("/decks", undefined, DEFAULT_ATTEMPTS);
+}
+
+export function getDeck(id: string): Promise<ApiResult<{ deck: SavedDeck }>> {
+  return withRetry(`/decks/${encodeURIComponent(id)}`, undefined, DEFAULT_ATTEMPTS);
+}
+
+/** Not retried: a retry after a lost response could create the deck twice. */
+export function createDeck(input: DeckInput): Promise<ApiResult<{ deck: SavedDeck }>> {
+  return withRetry("/decks", post(input), 1);
+}
+
+/** Idempotent (full replace), so it is retried like reads. */
+export function updateDeck(id: string, input: DeckInput): Promise<ApiResult<{ deck: SavedDeck }>> {
+  return withRetry(`/decks/${encodeURIComponent(id)}`, { method: "PUT", body: JSON.stringify(input) }, DEFAULT_ATTEMPTS);
+}
+
+export function deleteDeck(id: string): Promise<ApiResult<{ deleted: true }>> {
+  return withRetry(`/decks/${encodeURIComponent(id)}`, { method: "DELETE" }, DEFAULT_ATTEMPTS);
 }
 
 /** One poll (no retry: the poll loop itself is the retry). `version`/`since` make unchanged answers tiny. */

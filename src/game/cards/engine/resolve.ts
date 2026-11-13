@@ -7,6 +7,7 @@ import { runEffects } from "./effects/execute";
 import { checkGameOver, isGameOver } from "./gameOver";
 import { nextIid } from "./ids";
 import { isAlive } from "./stats";
+import { isStunned } from "./statuses";
 import { emitChainLimit, queueTrigger, recordUse, withinLimit } from "./triggers";
 import type { GameEvent } from "./events";
 import type { Ctx, PendingTrigger, Unit } from "./types";
@@ -57,7 +58,7 @@ export function processDeaths(ctx: Ctx): void {
       }
       // The killer reacts only if it is still on the board (a killer that died in the same step is gone).
       const killer = u.lastDamagedBy ? findUnit(s, u.lastDamagedBy) : null;
-      if (killer && isAlive(killer) && !killer.silenced) {
+      if (killer && isAlive(killer) && !killer.silenced && !isStunned(killer)) {
         for (const ability of s.defs[killer.defId].abilities) {
           if (ability.trigger.on !== "kill" || !withinLimit(s, killer, ability)) continue;
           queueTrigger(ctx, { kind: "ability", sourceId: killer.iid, controller: killer.controller, defId: killer.defId, abilityId: ability.id, event: deathEvent });
@@ -89,8 +90,9 @@ function resolveReborn(ctx: Ctx, t: PendingTrigger): void {
 function triggerSource(ctx: Ctx, t: PendingTrigger): Unit | null {
   const onBoard = findUnit(ctx.s, t.sourceId);
   if (t.snapshot) return ctx.departed[t.sourceId] ?? null; // Último Aliento: resolves from its snapshot
-  // Everything else (incl. kill and healthThreshold) needs its source alive, on the board and not silenced.
-  return onBoard && isAlive(onBoard) && !onBoard.silenced ? onBoard : null;
+  // Everything else (incl. kill and healthThreshold) needs its source alive, on the board, not silenced and
+  // not Aturdido (a trigger queued before its source was stunned fizzles).
+  return onBoard && isAlive(onBoard) && !onBoard.silenced && !isStunned(onBoard) ? onBoard : null;
 }
 
 function resolveTrigger(ctx: Ctx, t: PendingTrigger): boolean {

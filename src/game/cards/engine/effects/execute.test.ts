@@ -3,13 +3,13 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { CATALOG } from "../../catalog";
-import { MVP_EFFECT_TYPES, type EffectDef } from "../../catalog/types";
+import { ADVANCED_EFFECT_TYPES, MVP_EFFECT_TYPES, STATUS_EFFECT_TYPES, type EffectDef } from "../../catalog/types";
 import { eventsOf, eventTypes, makeState, unitAt } from "../../testing/fixtures";
 import { newCtx } from "../ctx";
 import { getHealth } from "../stats";
 import type { MatchState } from "../types";
 import type { AbilityContext } from "./context";
-import { EFFECT_HANDLERS, IMPLEMENTED_EFFECT_TYPES, runEffects } from "./execute";
+import { IMPLEMENTED_EFFECT_TYPES, runEffects } from "./execute";
 
 function run(s: MatchState, effects: EffectDef[], extra: Partial<AbilityContext> = {}) {
   const ctx = newCtx(s);
@@ -18,14 +18,13 @@ function run(s: MatchState, effects: EffectDef[], extra: Partial<AbilityContext>
 }
 
 describe("EFFECT_HANDLERS", () => {
-  it("implements every MVP effect (incl. `if` since Phase 7) and nothing else", () => {
-    expect([...IMPLEMENTED_EFFECT_TYPES].sort()).toEqual([...MVP_EFFECT_TYPES].sort());
-    expect(EFFECT_HANDLERS.silence).toBeUndefined();
+  it("implements every effect: MVP (incl. `if` since Phase 7), the status family (Phase 18) and the advanced ones (Phase 19)", () => {
+    expect([...IMPLEMENTED_EFFECT_TYPES].sort()).toEqual([...MVP_EFFECT_TYPES, ...STATUS_EFFECT_TYPES, ...ADVANCED_EFFECT_TYPES].sort());
   });
 
   it("runEffects throws for an effect without a handler", () => {
     const s = makeState();
-    expect(() => run(s, [{ type: "silence", to: { kind: "self" } }])).toThrow("Effect not implemented: silence");
+    expect(() => run(s, [{ type: "nope", to: { kind: "self" } } as unknown as EffectDef])).toThrow("Effect not implemented: nope");
   });
 
   it("runEffects stops once the game is over", () => {

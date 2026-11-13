@@ -11,8 +11,8 @@ export class ServiceError extends Error {
     public readonly status: number,
     public readonly code: string,
     message: string = errorText(code),
-    /** Extra JSON fields for the response body (e.g. `{ matchId }` for `already_in_match`). */
-    public readonly details: Record<string, string> = {},
+    /** Extra JSON fields for the response body (e.g. `{ matchId }` for `already_in_match`, `{ problems }` for decks). */
+    public readonly details: Record<string, unknown> = {},
   ) {
     super(message);
     this.name = "ServiceError";

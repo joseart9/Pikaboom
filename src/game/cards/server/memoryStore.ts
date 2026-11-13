@@ -151,6 +151,19 @@ export class MemoryMatchStore implements MatchStore {
     return [...(this.commands.get(id)?.values() ?? [])].map((c) => structuredClone(c)).sort((a, b) => a.seq - b.seq);
   }
 
+  /**
+   * Not part of `MatchStore`: mirrors the last statement of `cards_grant_match_rewards` (Phase 16) — stamps
+   * `rewardsGrantedAt` and bumps the version — for the test fake of the rewards port. False if already stamped.
+   */
+  async markRewardsGranted(id: string): Promise<boolean> {
+    await this.tick();
+    const row = this.rows.get(id);
+    if (!row || row.rewardsGrantedAt) return false;
+    const now = this.now();
+    this.rows.set(id, { ...row, rewardsGrantedAt: now, version: row.version + 1, updatedAt: now });
+    return true;
+  }
+
   async markStale(now: Date): Promise<void> {
     await this.tick();
     const t = now.getTime();

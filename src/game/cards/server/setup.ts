@@ -1,10 +1,10 @@
 // Turning two deck choices into a MatchSetup (§13.7 step 5, §11). Pure: the seed is passed in.
 import { CATALOG } from "../catalog";
-import { STARTER_DECKS } from "../catalog/starterDecks";
 import type { CardDef, CardId } from "../catalog/types";
 import { DECK_FORMATS, type DeckFormat } from "../config/deckRules";
 import { STANDARD_RULES, type RulesConfig } from "../config/rules";
-import { expandDeck, validateDeck } from "../decks/validate";
+import { deckProblemText } from "../decks/saved";
+import { expandDeck, validateDeck, type DeckEntry } from "../decks/validate";
 import { defsClosure } from "../engine/defs";
 import { ENGINE_VERSION } from "../engine/index";
 import type { MatchSetup } from "../engine/types";
@@ -40,21 +40,23 @@ export function buildSetup(
 export interface DeckChoiceDeps {
   /** Deck format to validate against (default: standard). */
   format?: DeckFormat;
-  // Phase 15 adds saved-deck loading and the owner's inventory here.
+  /** The user's saved deck entries, or null when the user has no deck with that id (Phase 15). */
+  loadDeck?: (userId: string, deckId: string) => Promise<readonly DeckEntry[] | null>;
+  /** The user's owned quantities (Phase 14 inventory). */
+  inventory?: (userId: string) => Promise<Readonly<Record<CardId, number>>>;
 }
 
 /**
- * The 30 card ids for a deck choice, validated against the current catalog (§11 "Server validation").
- * Starter decks need no ownership (MVP). Saved decks are `deck_unavailable` until Phase 15.
+ * The 30 card ids for a deck choice (§15.5): the saved deck is reloaded with the owner's inventory and validated in
+ * `play` mode against the current catalog (§11 "Server validation"). Code-defined starter decks are no longer
+ * playable from the lobby (Phase 15: they are granted as saved decks) → `deck_unavailable`, like a missing deck.
+ * An invalid deck is `deck_invalid` with the first problem as the message and every problem in `details.problems`.
  */
 export async function resolveDeckChoice(choice: DeckChoice, userId: string, deps: DeckChoiceDeps = {}): Promise<CardId[]> {
-  void userId; // used by saved decks (Phase 15)
-  if (choice.kind !== "starter" || !Object.prototype.hasOwnProperty.call(STARTER_DECKS, choice.id)) {
-    throw new ServiceError(409, "deck_unavailable");
-  }
-  const entries = STARTER_DECKS[choice.id].entries;
-  if (validateDeck(entries, deps.format ?? DECK_FORMATS.standard, null, "play").length > 0) {
-    throw new ServiceError(409, "deck_unavailable");
-  }
+  if (choice.kind !== "saved" || !deps.loadDeck || !deps.inventory) throw new ServiceError(409, "deck_unavailable");
+  const entries = await deps.loadDeck(userId, choice.id);
+  if (!entries) throw new ServiceError(409, "deck_unavailable");
+  const problems = validateDeck(entries, deps.format ?? DECK_FORMATS.standard, await deps.inventory(userId), "play");
+  if (problems.length > 0) throw new ServiceError(409, "deck_invalid", deckProblemText(problems[0]), { problems });
   return expandDeck(entries);
 }

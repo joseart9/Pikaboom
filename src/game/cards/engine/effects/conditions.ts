@@ -3,14 +3,15 @@ import type { ConditionDef, Side, Subject } from "../../catalog/types";
 import { findUnit } from "../board";
 import { otherSeat, seatOfHero } from "../ids";
 import { getHealth, getMaxHealth } from "../stats";
+import { hasStatus } from "../statuses";
 import type { Ctx, EntityId, MatchState, Seat, Unit } from "../types";
 import type { AbilityContext } from "./context";
 import { eventSubjects, matchesFilter, resolveSelector } from "./selectors";
 
-/** Condition kinds the engine evaluates (validator gate, like rule 10). `hasStatus` arrives with statuses (Phase 18). */
+/** Condition kinds the engine evaluates (validator gate, like rule 10). */
 export const IMPLEMENTED_CONDITION_KINDS: readonly ConditionDef["kind"][] = [
   "unitMatches", "isFriendly", "isEnemy", "countAtLeast", "healthPercent", "diedThisGame", "playedThisTurn",
-  "heroHealth", "not", "anyOf",
+  "heroHealth", "hasStatus", "not", "anyOf",
 ];
 
 type SubjectRef = { id: EntityId; unit: Unit | null; heroSeat: Seat | null };
@@ -94,8 +95,11 @@ export function checkCondition(ctx: Ctx, c: ConditionDef, a: AbilityContext): bo
       return !checkCondition(ctx, c.condition, a);
     case "anyOf":
       return c.conditions.some((sub) => checkCondition(ctx, sub, a));
-    case "hasStatus":
-      throw new Error("Condition not implemented: hasStatus"); // Phase 18; the validator rejects it until then
+    case "hasStatus": {
+      // Heroes never have statuses (V1).
+      const ref = subject(ctx, c.subject, a);
+      return !!ref?.unit && hasStatus(ref.unit, c.status);
+    }
   }
 }
 

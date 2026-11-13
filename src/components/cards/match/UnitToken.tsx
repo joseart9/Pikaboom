@@ -1,17 +1,23 @@
-// A unit on the board (§17.4): art, attack bottom-left, health bottom-right, keyword icons, Escudo charges,
-// "zZz" while sleeping, green ring when it can attack (from `legal.attacks`), red glow when targetable.
+// A unit on the board (§17.4): art, attack bottom-left, health bottom-right, keyword icons, Escudo charges, status
+// icons with magnitudes (+ the Silencio marker), "zZz" while sleeping, green ring when it can attack (from
+// `legal.attacks`), red glow when targetable, an icy rim while Congelado.
 import { memo, type MouseEvent } from "react";
 import { CATALOG } from "@/game/cards/catalog";
 import { KEYWORDS } from "@/game/cards/catalog/keywords";
-import type { KeywordId } from "@/game/cards/catalog/types";
+import { STATUS_DEFS } from "@/game/cards/catalog/statuses";
+import type { KeywordId, StatusId } from "@/game/cards/catalog/types";
 import type { UnitSnapshot } from "@/game/cards/engine/events";
 import { cardName, t } from "@/game/cards/i18n";
 import { AttackBadge, CardArt, HealthBadge, KeywordIcon, StatusIcon } from "../skin";
 
 export interface UnitTokenProps {
   unit: UnitSnapshot;
+  /** My unit: a drag source (attack arrow). */
+  mine: boolean;
   canAttack: boolean;
   targetable: boolean;
+  /** Under the targeting arrow right now. */
+  hovered: boolean;
   selected: boolean;
   pending: boolean;
   /** Clickable at all (an action or a placement uses it). */
@@ -36,25 +42,40 @@ function keywordIcons(unit: UnitSnapshot): { id: KeywordId; value?: number }[] {
   return out.slice(0, MAX_ICONS);
 }
 
-export const UnitToken = memo(function UnitToken({ unit, canAttack, targetable, selected, pending, actionable, onTap }: UnitTokenProps) {
+const MAX_STATUS_ICONS = 4;
+
+function statusIcons(unit: UnitSnapshot): { id: StatusId | "silenced"; magnitude?: number }[] {
+  const out: { id: StatusId | "silenced"; magnitude?: number }[] = [];
+  if (unit.silenced) out.push({ id: "silenced" });
+  for (const st of unit.statuses) out.push({ id: st.id, magnitude: STATUS_DEFS[st.id].hasMagnitude ? st.magnitude : undefined });
+  return out.slice(0, MAX_STATUS_ICONS);
+}
+
+export const UnitToken = memo(function UnitToken({ unit, mine, canAttack, targetable, hovered, selected, pending, actionable, onTap }: UnitTokenProps) {
   const def = CATALOG[unit.defId];
   const baseAttack = def?.type === "mob" ? def.attack : unit.attack;
   const taunt = !unit.silenced && unit.keywords.taunt === true;
   const classes = ["cg-unit"];
   if (taunt) classes.push("cg-unit--taunt");
   if (unit.silenced) classes.push("cg-unit-silenced");
+  if (unit.statuses.some((st) => st.id === "freeze")) classes.push("cg-unit--frozen");
   if (actionable || targetable) classes.push("cg-unit--actionable");
   if (selected) classes.push("cg-unit--selected");
   else if (targetable) classes.push("cg-unit--targetable");
   else if (canAttack) classes.push("cg-unit--can-attack");
   if (pending) classes.push("cg-unit--pending");
+  if (hovered) classes.push(targetable ? "cg-unit--hover-valid" : "cg-unit--hover");
   const name = cardName(unit.defId);
   const label = t("match.unitLabel", { name, attack: unit.attack, health: unit.health });
   return (
     <button
       type="button"
       data-cg-tap
+      data-cg-drag={mine ? "unit" : undefined}
+      data-cg-inspect="unit"
+      data-cg-target
       data-iid={unit.iid}
+      data-entity-id={unit.iid}
       className={classes.join(" ")}
       aria-label={label}
       aria-pressed={selected}
@@ -68,8 +89,16 @@ export const UnitToken = memo(function UnitToken({ unit, canAttack, targetable, 
         {keywordIcons(unit).map((k) => (
           <KeywordIcon key={k.id} keyword={k.id} value={k.value} size="17cqh" title={t(`keyword.${k.id}.name`)} />
         ))}
-        {unit.statuses.map((s) => (
-          <StatusIcon key={s.id} status={s.id} magnitude={s.magnitude} size="17cqh" />
+      </span>
+      <span className="cg-unit-statuses">
+        {statusIcons(unit).map((st) => (
+          <StatusIcon
+            key={st.id}
+            status={st.id}
+            magnitude={st.magnitude}
+            size="17cqh"
+            title={st.id === "silenced" ? t("abilityWords.silence.name") : t(`status.${st.id}.name`)}
+          />
         ))}
       </span>
       {unit.sleeping && (

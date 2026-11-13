@@ -7,6 +7,7 @@ import { heroId, otherSeat, seatOfHero } from "../ids";
 import { hasKeyword } from "../keywords";
 import { rngPick } from "../rng";
 import { getAttack, getHealth, getMaxHealth, isAlive } from "../stats";
+import { hasStatus } from "../statuses";
 import type { Ctx, EntityId, MatchState, Seat, Unit } from "../types";
 import type { AbilityContext } from "./context";
 
@@ -65,17 +66,25 @@ export function unitMatchesFilter(s: MatchState, u: Unit, f: UnitFilter): boolea
   if (f.maxCost !== undefined && def.cost > f.maxCost) return false;
   if (f.damaged !== undefined && (getHealth(u) < getMaxHealth(u)) !== f.damaged) return false;
   if (f.hasKeyword !== undefined && !hasKeyword(u, f.hasKeyword)) return false;
-  if (f.hasStatus !== undefined && !u.statuses.some((st) => st.id === f.hasStatus)) return false;
+  if (f.hasStatus !== undefined && !hasStatus(u, f.hasStatus)) return false;
   if (f.defId !== undefined && u.defId !== f.defId) return false;
   return true;
 }
 
+/** An enemy unit (relative to `seat`) with Sigilo: never a legal `chosen` target or attack target for `seat`. */
+function hiddenBySigilo(s: MatchState, seat: Seat, id: EntityId): boolean {
+  const u = findUnit(s, id);
+  return !!u && u.controller !== seat && hasKeyword(u, "stealth");
+}
+
 /**
  * Legal player-chosen targets for a `play` ability (§6.5 rule 5), in group order. `sourceId` (the card being
- * played) is never its own target. V1 hook: enemy units with Sigilo are not targetable (Phase 19).
+ * played) is never its own target. Enemy units with Sigilo are not targetable (§7.1); friendly ones are.
  */
 export function validTargets(s: MatchState, seat: Seat, spec: TargetSpec, sourceId: EntityId): EntityId[] {
-  return groupMembers(s, spec.group, seat).filter((id) => id !== sourceId && matchesFilter(s, id, spec.filter));
+  return groupMembers(s, spec.group, seat).filter(
+    (id) => id !== sourceId && !hiddenBySigilo(s, seat, id) && matchesFilter(s, id, spec.filter),
+  );
 }
 
 /** A hero, or a unit on the board that is still alive (selectors never return dead/dying units, §8.7). */

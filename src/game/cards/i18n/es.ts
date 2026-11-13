@@ -68,11 +68,75 @@ const cards: Record<CardId, CardText> = {
   "skeleton-king": { name: "Rey de los Huesos", text: "**Grito de Guerra:** Invoca cuatro Esqueletos. **Desborde.**" },
   // Única
   ignis: { name: "Ignis, el Dragón Eterno", text: "**Renacer. Grito de Guerra:** Inflige 3 de daño a todos los enemigos." },
+  // Status cards (Phase 18)
+  "ember-imp": {
+    name: "Diablillo de Brasas",
+    text: "**Grito de Guerra:** Aplica **Quemadura (1)** a una criatura enemiga durante 2 turnos.",
+  },
+  "ice-shard": { name: "Fragmento de Hielo", text: "Inflige 1 de daño a una criatura enemiga y la **Congela**." },
+  "frozen-gale": { name: "Vendaval Helado", text: "Inflige 1 de daño a todas las criaturas enemigas y las **Congela**." },
+  "flame-wyrm": {
+    name: "Sierpe Flamígera",
+    text: "**Grito de Guerra:** Aplica **Quemadura (2)** a una criatura enemiga al azar.",
+  },
+  "blood-hound": {
+    name: "Sabueso Sangriento",
+    text: "Tras dañar en combate a una criatura enemiga, le aplica **Sangrado (1)**.",
+  },
+  "curse-weaver": {
+    name: "Tejedora de Maldiciones",
+    text: "**Grito de Guerra:** **Maldice** a una criatura enemiga y le aplica **Debilidad (2)**.",
+  },
+  "blessing-of-light": {
+    name: "Bendición de la Luz",
+    text: "Otorga **Bendición (2)** a una criatura aliada durante 2 turnos.",
+  },
+  purify: {
+    name: "Purificar",
+    text: "Elimina los efectos negativos de una criatura aliada y le restaura 2 de salud.",
+  },
+  "silence-monk": { name: "Monje del Silencio", text: "**Grito de Guerra:** **Silencia** a una criatura." },
+  "shatter-armor": { name: "Quebrar Armadura", text: "Aplica **Vulnerabilidad (2)** a una criatura enemiga." },
+  "disarming-strike": { name: "Golpe Desarmante", text: "Inflige 1 de daño a una criatura enemiga y la **Desarma**." },
+  "stone-sleep": { name: "Sueño de Piedra", text: "**Aturde** a una criatura enemiga." },
+  "aegis-ward": { name: "Égida", text: "Una criatura aliada es **Inmune** hasta el final de tu próximo turno." },
+  // Advanced keywords & effects (Phase 19)
+  "venom-spider": { name: "Araña Venenosa", text: "**Veneno**" },
+  "shadow-stalker": { name: "Acechador Sombrío", text: "**Sigilo**" },
+  "sun-cleric": { name: "Clériga Solar", text: "**Escudo Divino**" },
+  "ash-drake": { name: "Draco de Ceniza", text: "**Vuelo**" },
+  "storm-drake": {
+    name: "Draco de Tormenta",
+    text: "**Vuelo. Grito de Guerra:** **Aturde** a una criatura enemiga al azar.",
+  },
+  vaelra: {
+    name: "Vaelra, Reina de la Escarcha",
+    text: "**Vuelo. Grito de Guerra:** **Congela** a todas las criaturas enemigas e inflige 2 de daño al héroe enemigo.",
+  },
+  "larval-drake": { name: "Larva de Dragón", text: "Al inicio de tu turno, evoluciona en un Draco de Ceniza." },
+  "clockwork-sentinel": { name: "Centinela de Engranajes", text: "**Provocar. Escudo (1)**" },
+  "iron-colossus": { name: "Coloso de Hierro", text: "**Provocar. Escudo (3)**" },
+  "golem-forge": { name: "Forja de Gólems", text: "Invoca dos Gólems de Chatarra de 2/3 con **Provocar**." },
+  "toad-hex": { name: "Maleficio Batracio", text: "Transforma una criatura en un Sapo de 1/1." },
+  "raise-dead": { name: "Alzar a los Muertos", text: "Revive a los dos últimos No-muertos aliados que murieron." },
+  banish: { name: "Destierro", text: "Devuelve una criatura a la mano de su dueño." },
+  "mind-thrall": { name: "Dominación Mental", text: "Toma el control de una criatura enemiga." },
+  "mana-leech": { name: "Sanguijuela de Maná", text: "**Grito de Guerra:** Tu rival pierde un cristal de maná." },
+  "arcane-echo": { name: "Eco Arcano", text: "Añade a tu mano una copia de una criatura." },
+  "soul-thief": { name: "Ladrona de Almas", text: "**Grito de Guerra:** Roba una carta al azar de la mano de tu rival." },
+  "phoenix-chick": { name: "Cría de Fénix", text: "**Renacer.** Al ser invocada, inflige 1 de daño a un enemigo al azar." },
+  "dark-pact": { name: "Pacto Oscuro", text: "Destruye una criatura aliada. Roba dos cartas." },
+  nyxara: {
+    name: "Nyxara, Señora del Vacío",
+    text: "**Sigilo. Robo de Vida (6). Grito de Guerra:** **Silencia** a todas las criaturas enemigas.",
+  },
   // Tokens
   skeleton: { name: "Esqueleto", text: "" },
   wolf: { name: "Lobo", text: "" },
   "bear-cub": { name: "Osezno", text: "**Embestida**" },
   "mana-spark": { name: "Chispa de Maná", text: "Gana 1 de maná solo este turno." },
+  toad: { name: "Sapo", text: "" },
+  "scrap-golem": { name: "Gólem de Chatarra", text: "**Provocar**" },
 };
 
 export const es = {
@@ -85,12 +149,141 @@ export const es = {
     decks: "Mazos",
     store: "Tienda",
     resume: "Volver a la partida",
-    comingSoon: "Próximamente",
     account: "Mi cuenta",
     // Menu screen (Phase 11)
     subtitle: "Cartas 1 vs 1 con tus amigos",
     home: "Volver al inicio",
     matchInProgress: "Tienes una partida en curso.",
+  },
+  // Currency (§16, shown from Phase 14).
+  economy: {
+    gold: "Oro",
+    balance: "Tienes {amount} de Oro",
+    // Wallet movements (menu, Phase 16)
+    history: "Movimientos de Oro",
+    historyOpen: "Tienes {amount} de Oro. Ver movimientos",
+    historyEmpty: "Aún no hay movimientos.",
+    historyError: "No se pudieron cargar los movimientos.",
+    historyLoading: "Cargando…",
+    historyClose: "Cerrar",
+    balanceAfter: "Saldo {amount}",
+    kind: {
+      starter_grant: "Regalo de bienvenida",
+      match_reward: "Recompensa de partida",
+      pack_purchase: "Compra de sobre",
+      admin_adjustment: "Ajuste",
+    },
+  },
+  // Match rewards on the game-over screen (§6.12, Phase 16).
+  rewards: {
+    amount: "+{amount} Oro",
+    firstWinBonus: "Primera victoria del día +{amount}",
+    capped: "Recompensa reducida por el límite diario.",
+    too_short: "Partida demasiado corta: sin recompensa.",
+    opponent_limit: "Ya ganaste suficientes recompensas contra este rival hoy.",
+    daily_cap: "Alcanzaste el límite diario de recompensas.",
+    abandon: "Sin recompensa por abandono.",
+    none: "Sin recompensa.",
+  },
+  // Collection screen (§15.1, Phase 14).
+  collection: {
+    title: "Colección",
+    discovered: "Descubiertas: {n}/{total}",
+    quantity: "×{n}",
+    locked: "No descubierta",
+    search: "Buscar carta…",
+    searchLabel: "Buscar por nombre o texto",
+    filters: "Filtros",
+    rarity: "Rareza",
+    tribe: "Tipo",
+    noTribe: "Sin tipo",
+    cost: "Coste",
+    costPlus: "{n}+",
+    owned: "Solo mías",
+    missing: "Solo faltantes",
+    clear: "Limpiar filtros",
+    showing: "{n} de {total}",
+    empty: "Ninguna carta coincide con los filtros.",
+    loading: "Cargando tu colección…",
+    loadFailed: "No se pudo cargar tu colección.",
+    retry: "Reintentar",
+    lockedHint: "Aún no tienes esta carta. Consíguela en sobres.",
+  },
+  // Store & pack opening (§16, Phase 17).
+  store: {
+    title: "Tienda",
+    loading: "Cargando la tienda…",
+    loadFailed: "No se pudo cargar la tienda.",
+    retry: "Reintentar",
+    packs: {
+      arcane: "Sobre Arcano",
+    },
+    packContents: "{size} cartas · la última es Rara o mejor",
+    buy: "Comprar",
+    buyLabel: "Comprar {name} por {price} de Oro",
+    buying: "Abriendo…",
+    missing: "Te faltan {n} de Oro.",
+    purchaseFailed: "No se pudo completar la compra. Reintenta: no se cobrará dos veces.",
+    odds: "Probabilidades",
+    oddsSlot: "Cartas 1–{n}",
+    oddsLast: "Carta {n}",
+    oddsValue: "{pct} %",
+    history: "Últimos sobres",
+    historyEmpty: "Aún no has abierto sobres.",
+    // Pack opening
+    tapToReveal: "Toca las cartas para revelarlas.",
+    reveal: "Revelar carta {n}",
+    revealAll: "Revelar todas",
+    newCard: "¡Nueva!",
+    summaryNew: "Nuevas: {n}",
+    replayed: "Esta compra ya se había hecho: estas son sus cartas.",
+    viewCollection: "Ver colección",
+    openAnother: "Abrir otro",
+    close: "Cerrar",
+  },
+  // Deck list & editor (§15.4, Phase 15).
+  decks: {
+    title: "Mazos",
+    newDeck: "Nuevo mazo",
+    limit: "Máximo {max} mazos.",
+    countOf: "{n} de {max} mazos",
+    cards: "{n}/{total}",
+    incomplete: "Incompleto",
+    playable: "Listo para jugar",
+    delete: "Eliminar",
+    confirmDelete: "¿Eliminar «{name}»?",
+    confirmDeleteHelp: "Esto no se puede deshacer.",
+    cancel: "Cancelar",
+    deleted: "Mazo eliminado.",
+    empty: "Aún no tienes mazos.",
+    loading: "Cargando tus mazos…",
+    loadFailed: "No se pudieron cargar tus mazos.",
+    retry: "Reintentar",
+    newTitle: "Nuevo mazo",
+    editTitle: "Editar mazo",
+    name: "Nombre del mazo",
+    defaultName: "Mi mazo",
+    save: "Guardar",
+    saving: "Guardando…",
+    saved: "Mazo guardado.",
+    back: "Volver",
+    unsavedTitle: "Tienes cambios sin guardar.",
+    unsavedHelp: "Si sales ahora, se perderán.",
+    discard: "Salir sin guardar",
+    keepEditing: "Seguir editando",
+    showMissing: "Mostrar faltantes",
+    moreFilters: "Más filtros",
+    closeFilters: "Listo",
+    addCard: "Añadir {name}",
+    removeCard: "Quitar una copia de {name}",
+    inDeck: "×{n}",
+    emptyDeck: "Toca una carta de tu colección para añadirla.",
+    curve: "Curva de maná",
+    curveBar: "Coste {cost}: {n} cartas",
+    problems: "Problemas",
+    inspect: "Ver carta",
+    notOwnedHint: "No tienes esta carta: no puedes añadirla.",
+    row: "{cost} · {name}",
   },
   // Lobby screen (§13.7, Phase 11)
   lobby: {
@@ -133,6 +326,14 @@ export const es = {
     goToOther: "Volver a mi partida",
     leaveOtherAndJoin: "Salir de esa sala y unirme",
     highlights: "Destacadas: {cards}",
+    // Saved-deck picker (Phase 15)
+    deckCards: "{n} cartas",
+    decksLoading: "Cargando tus mazos…",
+    decksFailed: "No se pudieron cargar tus mazos.",
+    noDecks: "Aún no tienes mazos.",
+    editDecks: "Editar mazos",
+    deckGone: "Tu mazo ya no está disponible. Elige otro.",
+    foeDeckGone: "El mazo de tu rival ya no está disponible.",
   },
   rarity: {
     basic: "Básica",
@@ -200,6 +401,14 @@ export const es = {
     foeGoesFirst: "Empieza tu rival. Recibirás una Chispa de Maná.",
     abandonedTitle: "Partida cancelada",
     leaveMatch: "Salir al menú",
+    // Event playback (Phase 13)
+    reducedMotionOn: "Animaciones reducidas: sí",
+    reducedMotionOff: "Animaciones reducidas: no",
+    reducedMotionSystem: "Animaciones reducidas (sistema)",
+  },
+  // Floating texts of the animation layer (Phase 13).
+  fx: {
+    blocked: "¡Bloqueado!",
   },
   // Why the game ended (GameOverOverlay, Phase 11). Keyed by EndReason; `stale` = abandoned without a winner (§6.11).
   endReason: {
@@ -209,6 +418,18 @@ export const es = {
     abandon: "Abandono por inactividad",
     turn_limit: "Límite de turnos",
     stale: "Nadie jugó durante 30 minutos.",
+  },
+  // Card inspect modal (long-press / right-click / "i", Phase 12).
+  inspect: {
+    title: "Detalle de la carta",
+    close: "Cerrar",
+    mob: "Criatura",
+    spell: "Hechizo",
+    token: "Ficha",
+    glossary: "Glosario",
+    empty: "Sin habilidades especiales.",
+    onBoard: "En el campo: {attack} de ataque · {health}/{max} de salud",
+    silenced: "Silenciada: perdió sus habilidades.",
   },
   rotate: {
     title: "Gira tu dispositivo",
@@ -221,6 +442,9 @@ export const es = {
     player2: "Jugador 2",
     follow: "Seguir turno",
     newMatch: "Nueva partida",
+    bot: "Rival automático",
+    statusDeck: "Mazo de estados",
+    advancedDeck: "Mazo avanzado",
   },
   // One entry per EngineError code (§10.2).
   errors: {
@@ -258,7 +482,16 @@ export const es = {
     time_up: "Se acabó tu tiempo.",
     no_deck: "Elige un mazo primero.",
     deck_unavailable: "Ese mazo no está disponible.",
+    // Saved decks (Phase 15)
+    deck_invalid: "Ese mazo no se puede usar para jugar.",
+    deck_limit: "Máximo 10 mazos.",
+    deck_not_found: "Ese mazo no existe.",
+    invalid_name: "El nombre del mazo debe tener entre 1 y 30 caracteres.",
+    invalid_deck: "El mazo no es válido.",
     replay_unavailable: "Repetición no disponible para esta versión.",
+    // Store (Phase 17)
+    insufficient_funds: "No tienes suficiente Oro.",
+    invalid_pack: "Ese sobre no existe.",
     // HTTP layer (Phase 9)
     unsupported_media_type: "La solicitud debe ser JSON.",
     payload_too_large: "La solicitud es demasiado grande.",
@@ -330,18 +563,26 @@ export const es = {
     divineShield: { name: "Escudo Divino", text: "Anula el siguiente daño que reciba, de cualquier fuente." },
     flying: { name: "Vuelo", text: "Ignora a las criaturas con Provocar que no vuelan." },
   },
-  // Status names and texts (§7.2; used from Phase 18). `{n}` = magnitude.
+  // Status names and texts (§7.2, Phase 18). `{n}` = magnitude. `verb` = the bold verb card texts use for it
+  // ("la **Congela**"), so the inspect glossary can explain it.
   status: {
     burn: { name: "Quemadura", text: "Recibe {n} de daño al inicio de su turno." },
-    freeze: { name: "Congelado", text: "No puede atacar." },
-    stun: { name: "Aturdido", text: "No puede atacar, no devuelve daño y sus habilidades no se activan." },
+    freeze: { name: "Congelado", verb: "Congela", text: "No puede atacar." },
+    stun: { name: "Aturdido", verb: "Aturde", text: "No puede atacar, no devuelve daño y sus habilidades no se activan." },
     weakness: { name: "Debilidad", text: "-{n} de ataque." },
     vulnerability: { name: "Vulnerabilidad", text: "Recibe {n} de daño extra de cada golpe." },
-    curse: { name: "Maldición", text: "No puede recuperar salud." },
+    curse: { name: "Maldición", verb: "Maldice", text: "No puede recuperar salud." },
     blessing: { name: "Bendición", text: "+{n} de ataque y +{n} de salud máxima." },
-    disarm: { name: "Desarmado", text: "No inflige daño de combate." },
+    disarm: { name: "Desarmado", verb: "Desarma", text: "No inflige daño de combate." },
     bleed: { name: "Sangrado", text: "Recibe {n} de daño después de atacar." },
     immune: { name: "Inmune", text: "No recibe daño." },
+  },
+  // How long a status on a board unit lasts (inspect glossary). {turns} = its owner's turns after the current one.
+  statusTiming: {
+    permanent: "Permanente.",
+    thisTurn: "Hasta el final de este turno.",
+    next: "Hasta el final de su próximo turno.",
+    many: "Durante sus próximos {turns} turnos.",
   },
   // Ability-word glossary (Phase 3 F).
   abilityWords: {
@@ -352,6 +593,11 @@ export const es = {
       text: "Se activa una vez cuando la criatura queda con la mitad de salud o menos y sobrevive.",
     },
     overflow: { name: "Desborde", text: "Sus invocaciones caben aunque tu campo esté lleno (hasta 10 criaturas)." },
+    silence: {
+      name: "Silencio",
+      verb: "Silencia",
+      text: "Pierde sus palabras clave, mejoras, efectos de estado y habilidades. El daño recibido se mantiene.",
+    },
   },
   starterDecks: {
     undead: "Legión de Huesos",

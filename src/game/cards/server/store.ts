@@ -17,7 +17,8 @@ export interface LobbySeat {
 export interface LobbyState {
   host: LobbySeat;
   guest: LobbySeat;
-  lastError?: { seat: Seat; code: string }; // used from Phase 15
+  /** Set when a match could not start because `seat`'s deck became unavailable (Phase 15 H); cleared when that seat picks a deck. */
+  lastError?: { seat: Seat; code: string };
 }
 
 export interface MatchRow {

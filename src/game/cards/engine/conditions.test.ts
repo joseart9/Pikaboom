@@ -85,7 +85,13 @@ describe("conditions", () => {
     expect(r.events.some((e) => e.type === "TRIGGER_ACTIVATED")).toBe(false);
   });
 
-  it("hasStatus is not implemented yet (Phase 18)", () => {
-    expect(() => check(makeState({ p0: { board: ["test-1-1"] } }), { kind: "hasStatus", subject: "self", status: "burn" })).toThrow(/not implemented/);
+  it("hasStatus (Phase 18): true only for a unit with that status; heroes never have statuses", () => {
+    const s = makeState({ p0: { board: ["test-1-1", "test-1-1"] } });
+    s.players[0].board[0].statuses.push({ id: "burn", magnitude: 1, expiresAfterTurn: 3, sourceId: "c9", appliedTurn: 1 });
+    const c: ConditionDef = { kind: "hasStatus", subject: "self", status: "burn" };
+    expect(check(s, c, { sourceId: unitAt(s, 0, 0).iid })).toBe(true);
+    expect(check(s, c, { sourceId: unitAt(s, 0, 1).iid })).toBe(false);
+    expect(check(s, { ...c, status: "freeze" }, { sourceId: unitAt(s, 0, 0).iid })).toBe(false);
+    expect(check(s, c, { sourceId: "h0" })).toBe(false);
   });
 });

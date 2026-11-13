@@ -304,6 +304,7 @@ function LobbyRoom({ client, onClosed }: { client: MatchClient; onClosed: (messa
   }
 
   const me = view.seat === 0 ? lobby.host : lobby.guest;
+  const lastError = lobby.lastError ?? null;
   const ready = !!me?.ready;
 
   const leave = async () => {
@@ -333,10 +334,16 @@ function LobbyRoom({ client, onClosed }: { client: MatchClient; onClosed: (messa
             <SeatRow seat={1} view={lobby.guest} mine={view.seat === 1} />
           </ul>
           <h2 className="cg-panel-title">{t("lobby.chooseDeck")}</h2>
+          {lastError && (
+            <p className="cg-lobby-error" role="alert">
+              {lastError.seat === view.seat ? t("lobby.deckGone") : t("lobby.foeDeckGone")}
+            </p>
+          )}
           <DeckPicker
+            key={lastError ? `gone-${lastError.seat}` : "decks"}
             selected={lobby.myDeck}
             disabled={pending}
-            onSelect={(id) => void client.send({ t: "lobby.selectDeck", deck: { kind: "starter", id } })}
+            onSelect={(id) => void client.send({ t: "lobby.selectDeck", deck: { kind: "saved", id } })}
           />
           <div className="cg-lobby-ready">
             <button

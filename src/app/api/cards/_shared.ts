@@ -63,6 +63,13 @@ export function matchIdFrom(id: string): string {
   return lower;
 }
 
+/** Validates a deck `[id]` path segment (Phase 15): a UUID, otherwise 404 `deck_not_found`. */
+export function deckIdFrom(id: string): string {
+  const lower = id.toLowerCase();
+  if (!UUID_PATH_RE.test(lower)) throw new HttpError(404, "deck_not_found");
+  return lower;
+}
+
 /** Optional non-negative integer query param (`?v=`, `?since=`); anything else counts as absent. */
 export function intParam(url: URL, name: string): number | undefined {
   const raw = url.searchParams.get(name);

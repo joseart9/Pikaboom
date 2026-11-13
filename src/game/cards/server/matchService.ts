@@ -6,10 +6,12 @@ import { applyCommand } from "../engine/apply";
 import type { GameCommand, SystemCommand } from "../engine/commands";
 import { createMatch } from "../engine/setup";
 import type { MatchState, Seat } from "../engine/types";
-import { isLobbyCommand, type CommandRequest, type LobbyCommand } from "./commands";
-import { fromEngineError, ServiceError } from "./errors";
+import type { CardId } from "../catalog/types";
+import { isLobbyCommand, type CommandRequest, type DeckChoice, type LobbyCommand } from "./commands";
+import { fromEngineError, isServiceError, ServiceError } from "./errors";
 import { applyLobbyCommand, newLobby } from "./lobby";
 import { CODE_ALPHABET, CODE_LENGTH, normalizeCode } from "./lobbyCode";
+import { NO_REWARDS, type RewardsPort } from "./rewards";
 import { buildSetup, resolveDeckChoice, type DeckChoiceDeps } from "./setup";
 import { DuplicateCommand, seatOfUser, StoreConflict, type CommandLogEntry, type MatchPatch, type MatchRow, type MatchStore } from "./store";
 import { viewFor, type MatchView } from "./view";
@@ -41,6 +43,8 @@ export interface MatchServiceDeps {
   randomSeed: () => string;
   randomCode: () => string;
   decks?: DeckChoiceDeps;
+  /** Match rewards (Phase 16). Default: none (the dev memory store). */
+  rewards?: RewardsPort;
 }
 
 export type ReadResult =
@@ -57,6 +61,7 @@ export class MatchService {
   private readonly randomSeed: () => string;
   private readonly randomCode: () => string;
   private readonly decks: DeckChoiceDeps;
+  private readonly rewards: RewardsPort;
 
   constructor(deps: MatchServiceDeps) {
     this.store = deps.store;
@@ -64,6 +69,7 @@ export class MatchService {
     this.randomSeed = deps.randomSeed;
     this.randomCode = deps.randomCode;
     this.decks = deps.decks ?? {};
+    this.rewards = deps.rewards ?? NO_REWARDS;
   }
 
   // ---------------------------------------------------------------- lobby lifecycle
@@ -132,9 +138,17 @@ export class MatchService {
   }
 
   async readMatch(matchId: string, userId: string, opts: { knownVersion?: number; since?: number } = {}): Promise<ReadResult> {
+    let grantTried = false;
     for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
       const { row, seat } = await this.loadForUser(matchId, userId);
       if (await this.applyDueTimeouts(row, this.now())) continue; // reload after a write
+      if (row.status === "finished" && row.rewardsGrantedAt === null && !grantTried) {
+        // The grant after the finishing write failed or never ran (Phase 16 H): retry once per read, then reload
+        // (a successful grant bumps the version, so this read already answers with the rewards).
+        grantTried = true;
+        await this.grantRewards(row.id);
+        continue;
+      }
       const seen = seat === 0 ? row.seenHost : row.seenGuest;
       if (!seen || row.now.getTime() - seen.getTime() >= TOUCH_INTERVAL_MS) {
         await this.store.touch(row.id, seat);
@@ -145,9 +159,32 @@ export class MatchService {
       if (opts.knownVersion === row.version) {
         return { same: true, version: row.version, foeOnline: view.foeOnline, serverNow: view.serverNow };
       }
-      return { view };
+      return { view: await this.withRewards(view, row, seat) };
     }
     throw new ServiceError(503, "busy");
+  }
+
+  // ---------------------------------------------------------------- rewards (Phase 16)
+
+  /** Grants a finished match's rewards. Failures are logged, never fatal: the next read of the match retries. */
+  private async grantRewards(matchId: string): Promise<void> {
+    try {
+      await this.rewards.grantMatchRewards(matchId);
+    } catch (e) {
+      console.error(`[cards] reward grant failed for match ${matchId}:`, e);
+    }
+  }
+
+  /** Adds the viewer's reward to the view of a finished match whose rewards were granted. */
+  private async withRewards(view: MatchView, row: MatchRow, seat: Seat): Promise<MatchView> {
+    if (row.status !== "finished" || row.rewardsGrantedAt === null) return view;
+    const rewards = await this.rewards.getMatchReward(row.id, userIdOf(row, seat));
+    return rewards ? { ...view, rewards } : view;
+  }
+
+  /** `viewFor` + rewards (for paths that may return a finished match). */
+  private async viewOf(row: MatchRow, seat: Seat, opts: { since?: number }): Promise<MatchView> {
+    return this.withRewards(viewFor(row, seat, opts), row, seat);
   }
 
   // ---------------------------------------------------------------- timeouts (§13.6)
@@ -178,7 +215,8 @@ export class MatchService {
 
     const next = applyCommand(s, seat, cmd).state;
     try {
-      await this.store.update(row.id, row.version, this.gamePatch(row, next, now), { commandId, userId: null, seat, command: cmd }, null);
+      const written = await this.store.update(row.id, row.version, this.gamePatch(row, next, now), { commandId, userId: null, seat, command: cmd }, null);
+      if (written.status === "finished") await this.grantRewards(written.id); // forfeit after 3 timeouts
     } catch (e) {
       if (!(e instanceof StoreConflict || e instanceof DuplicateCommand)) throw e;
     }
@@ -210,7 +248,7 @@ export class MatchService {
     let timedOut = false;
     for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
       const { row, seat } = await this.loadForUser(matchId, userId);
-      if (await this.store.hasCommand(row.id, req.commandId)) return viewFor(row, seat, opts);
+      if (await this.store.hasCommand(row.id, req.commandId)) return this.viewOf(row, seat, opts);
       const now = this.now();
       if (await this.applyDueTimeouts(row, now)) {
         timedOut = true;
@@ -234,12 +272,15 @@ export class MatchService {
       }
       try {
         const next = await this.store.update(row.id, row.version, patch, { commandId: req.commandId, userId, seat, command: cmd }, seat);
-        return viewFor(next, seat, opts);
+        if (next.status !== "finished") return viewFor(next, seat, opts);
+        // This command finished the match: grant the rewards now and answer with the view that contains them.
+        await this.grantRewards(next.id);
+        return this.viewOf((await this.store.load(next.id)) ?? next, seat, opts);
       } catch (e) {
         if (e instanceof StoreConflict) continue;
         if (e instanceof DuplicateCommand) {
           const fresh = await this.loadForUser(matchId, userId);
-          return viewFor(fresh.row, fresh.seat, opts);
+          return this.viewOf(fresh.row, fresh.seat, opts);
         }
         throw e;
       }
@@ -254,12 +295,21 @@ export class MatchService {
     if (out.leave === "guestLeft") return { guestId: null, guestName: null, lobby: out.lobby };
     if (!out.bothReady || row.guestId === null) return { lobby: out.lobby };
 
-    // Both ready: snapshot decks (validated now), build the setup, start the match (§13.7 step 5).
-    const decks = [
-      await resolveDeckChoice(out.lobby.host.deck!, row.hostId, this.decks),
-      await resolveDeckChoice(out.lobby.guest.deck!, row.guestId, this.decks),
-    ] as [string[], string[]];
-    const setup = buildSetup(decks, [row.hostName, row.guestName ?? ""], [row.hostId, row.guestId], this.randomSeed());
+    // Both ready: snapshot decks (reloaded and validated now, §15.5), build the setup, start the match (§13.7 step 5).
+    const host = await this.snapshotDeck(out.lobby.host.deck!, row.hostId);
+    const guest = await this.snapshotDeck(out.lobby.guest.deck!, row.guestId);
+    if (!host || !guest) {
+      // A deck was deleted/edited/lost ownership after it was selected (Phase 15 H): back to deck selection instead of
+      // failing the ready command. The other player's choice is kept; both must confirm "Listo" again.
+      const lobby = structuredClone(out.lobby);
+      if (!host) lobby.host.deck = null;
+      if (!guest) lobby.guest.deck = null;
+      lobby.host.ready = false;
+      lobby.guest.ready = false;
+      lobby.lastError = { seat: host ? 1 : 0, code: "deck_unavailable" };
+      return { lobby };
+    }
+    const setup = buildSetup([host, guest], [row.hostName, row.guestName ?? ""], [row.hostId, row.guestId], this.randomSeed());
     const state = createMatch(setup);
     return {
       status: "active",
@@ -269,6 +319,16 @@ export class MatchService {
       startedAt: now,
       turnDeadline: new Date(now.getTime() + state.rules.turn.mulliganSeconds * 1000),
     };
+  }
+
+  /** The deck's card ids, or null when it is no longer available/valid (other errors propagate). */
+  private async snapshotDeck(choice: DeckChoice, userId: string): Promise<CardId[] | null> {
+    try {
+      return await resolveDeckChoice(choice, userId, this.decks);
+    } catch (e) {
+      if (isServiceError(e) && (e.code === "deck_unavailable" || e.code === "deck_invalid")) return null;
+      throw e;
+    }
   }
 }
 

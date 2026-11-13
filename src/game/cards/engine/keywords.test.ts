@@ -177,6 +177,19 @@ describe("Furia (berserk)", () => {
     expect(getAttack(unitAt(r.state, 1, 0))).toBe(6);
   });
 
+  it("Phase 13: crossing the Furia threshold emits STATS_CHANGED with the new attack (damage on, heal off)", () => {
+    const s = makeState({ p0: { board: [mob(3, 3)] }, p1: { board: [mob(3, 6, { keywords: { berserk: { percent: 50, attack: 3 } } })] } });
+    const r = atk(s, [0, 0], [1, 0]);
+    const bear = unitAt(r.state, 1, 0);
+    expect(eventsOf(r.events, "STATS_CHANGED").map((e) => [e.iid, e.attack, e.health, e.maxHealth])).toEqual([[bear.iid, 6, 3, 6]]);
+    const ctx = newCtx(r.state);
+    heal(ctx, "h1", bear.iid, 1);
+    expect(eventsOf(ctx.events, "STATS_CHANGED").map((e) => [e.attack, e.health])).toEqual([[3, 4]]);
+    // No change in attack → no STATS_CHANGED (above the threshold, and for units that die).
+    const s2 = makeState({ p0: { board: [mob(1, 3)] }, p1: { board: [mob(3, 6, { keywords: { berserk: { percent: 50, attack: 3 } } })] } });
+    expect(eventsOf(atk(s2, [0, 0], [1, 0]).events, "STATS_CHANGED")).toEqual([]);
+  });
+
   it("a silenced Furia unit gets no bonus", () => {
     const s = makeState({ p0: { board: [mob(3, 6, { damage: 4, keywords: { berserk: { percent: 50, attack: 3 } } })] } });
     expect(getAttack(unitAt(s, 0, 0))).toBe(6);

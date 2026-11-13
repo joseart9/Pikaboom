@@ -39,6 +39,7 @@ export function applyLobbyCommand(prev: LobbyState, seat: Seat, cmd: LobbyComman
     case "lobby.selectDeck":
       mine.deck = structuredClone(cmd.deck);
       mine.ready = false;
+      if (lobby.lastError?.seat === seat) delete lobby.lastError; // the "deck no longer available" notice is answered
       break;
     case "lobby.ready":
       if (cmd.ready && !mine.deck) throw new ServiceError(409, "no_deck");

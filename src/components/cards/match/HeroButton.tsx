@@ -8,19 +8,23 @@ export interface HeroButtonProps {
   seat: 0 | 1;
   mine: boolean;
   targetable: boolean;
+  /** Under the targeting arrow right now. */
+  hovered?: boolean;
   highlighted: boolean;
   size: string;
   onTap: (id: string) => void;
 }
 
 /** A hero portrait with its health, tappable as a target. */
-export function HeroButton({ hero, name, seat, mine, targetable, highlighted, size, onTap }: HeroButtonProps) {
+export function HeroButton({ hero, name, seat, mine, targetable, hovered = false, highlighted, size, onTap }: HeroButtonProps) {
   return (
     <button
       type="button"
       data-cg-tap
+      data-cg-target
       data-iid={hero.id}
-      className={`cg-hero-button${targetable ? " cg-hero-button--targetable" : ""}`}
+      data-entity-id={hero.id}
+      className={`cg-hero-button${targetable ? " cg-hero-button--targetable" : ""}${hovered ? (targetable ? " cg-hero-button--hover-valid" : " cg-hero-button--hover") : ""}`}
       aria-label={t("match.heroHealth", { name, n: hero.health })}
       onClick={() => onTap(hero.id)}
     >

@@ -1,6 +1,7 @@
 // `grantKeyword`: boolean keywords become `true`; Escudo ADDS charges (the keyword then mirrors the live charge
 // count, DEC-012); numeric keywords keep the larger value. Heroes are ignored. Emits KEYWORDS_CHANGED.
-// (`berserk` needs two values and cannot be granted — the validator rejects it.)
+// (`berserk` needs two values and cannot be granted — the validator rejects it.) Silenced units stay keyword-less
+// (`hasKeyword` ignores their keywords, DEC-024), so they are skipped.
 import type { KeywordId, Keywords } from "../../../catalog/types";
 import { findUnit } from "../../board";
 import { emit } from "../../ctx";
@@ -12,7 +13,7 @@ const NUMERIC: ReadonlySet<KeywordId> = new Set<KeywordId>(["lifesteal", "thorns
 export const grantKeyword: EffectHandler<"grantKeyword"> = (ctx, e, a) => {
   for (const id of resolveSelector(ctx, e.to, a)) {
     const u = findUnit(ctx.s, id);
-    if (!u) continue;
+    if (!u || u.silenced) continue;
     const kw = u.keywords as Record<string, unknown>;
     if (e.keyword === "shield") {
       u.shieldCharges += e.value ?? 1;
