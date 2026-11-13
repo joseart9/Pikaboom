@@ -19,7 +19,7 @@ export function HeroPortrait({ name, seat, mine, highlighted, targetable, size, 
     ? "0 0 0 3px var(--cg-invalid), 0 0 16px 4px var(--cg-invalid)"
     : highlighted
       ? "0 0 0 3px var(--cg-selected), 0 0 14px 2px var(--cg-selected)"
-      : "0 0 0 3px #ffffff33";
+      : "0 0 0 3px #1d0842, 0 3px 8px var(--cg-shadow)";
   return (
     <span
       data-seat={seat}

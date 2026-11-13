@@ -1,3 +1,5 @@
+import { GameIcon } from "./GameIcon";
+
 export type EndTurnState = "ready" | "readyIdle" | "foe" | "pending";
 
 export interface EndTurnButtonProps {
@@ -7,31 +9,22 @@ export interface EndTurnButtonProps {
   onPress: () => void;
 }
 
-/** Big bottom-right end-turn button (§17.3): green on your turn (pulsing when idle), grey on the foe's. */
+/**
+ * End-turn control (§17.3): a raised green gem-cut face with gold trim and an arrow on your turn (pulsing when idle),
+ * a sunken violet face with an hourglass on the foe's turn, a dashed pending look while the server confirms.
+ * Styles: `.cg-endturn*` in cards.css. UI-08 decides its final size/placement in the HUD.
+ */
 export function EndTurnButton({ state, label, onPress }: EndTurnButtonProps) {
   const enabled = state === "ready" || state === "readyIdle";
   return (
     <button
       type="button"
+      className={`cg-endturn cg-endturn--${state}`}
       onClick={enabled ? onPress : undefined}
       disabled={!enabled}
-      style={{
-        minHeight: "max(56px, 13dvh)",
-        minWidth: "max(96px, 15dvw)",
-        padding: "0 14px",
-        borderRadius: 16,
-        border: 0,
-        fontFamily: "var(--font-display)",
-        fontSize: "clamp(15px, 4dvh, 26px)",
-        lineHeight: 1,
-        color: enabled ? "var(--cg-button-ink)" : "var(--cg-text)",
-        background: enabled ? "var(--cg-button)" : "var(--cg-button-off)",
-        boxShadow: "0 4px 0 var(--cg-shadow)",
-        cursor: enabled ? "pointer" : "default",
-        animation: state === "readyIdle" ? "cg-pulse 1.4s ease-in-out infinite" : undefined,
-      }}
     >
-      {label}
+      <GameIcon name={enabled ? "endTurn" : "hourglass"} size="0.9em" outlined={enabled} />
+      <span>{label}</span>
     </button>
   );
 }

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<radialGradient id="board-backdrop-bg" cx="0.5" cy="0.5" r="0.62" gradientTransform="translate(0.5 0.5) scale(1 1.78) translate(-0.5 -0.5)"><stop offset="0" stop-color="#2e1c5a"/><stop offset="0.5" stop-color="#24164c"/><stop offset="0.85" stop-color="#1a1038"/><stop offset="1" stop-color="#100822"/></radialGradient>
+<radialGradient id="board-backdrop-vig" cx="0.5" cy="0.5" r="0.75" gradientTransform="translate(0.5 0.5) scale(1 1.78) translate(-0.5 -0.5)"><stop offset="0.55" stop-color="#0a0518" stop-opacity="0"/><stop offset="1" stop-color="#0a0518" stop-opacity="0.85"/></radialGradient>
+<linearGradient id="board-backdrop-slab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.035"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.12"/></linearGradient>
+<pattern id="board-backdrop-grain" width="48" height="48" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="1.5" fill="#ffffff" fill-opacity="0.025"/><circle cx="32" cy="30" r="1.2" fill="#ffffff" fill-opacity="0.02"/><circle cx="40" cy="6" r="1" fill="#000000" fill-opacity="0.12"/><circle cx="18" cy="40" r="1.4" fill="#000000" fill-opacity="0.1"/></pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#board-backdrop-bg)"/>
+<rect width="1600" height="900" fill="url(#board-backdrop-grain)"/>
+<rect x="110" y="70" width="1380" height="760" rx="48" fill="url(#board-backdrop-slab)"/>
+<rect x="110" y="70" width="1380" height="760" rx="48" fill="none" stroke="#000000" stroke-opacity="0.35" stroke-width="10"/>
+<rect x="116" y="76" width="1368" height="748" rx="44" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="3"/>
+<path d="M170 450H520M1080 450H1430" stroke="#ffffff" stroke-opacity="0.05" stroke-width="3"/>
+<path d="M520 450 540 440 560 450 540 460ZM1080 450 1060 440 1040 450 1060 460Z" fill="#ffffff" fill-opacity="0.06"/>
+<circle cx="800" cy="450" r="250" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="4"/>
+<circle cx="800" cy="450" r="236" fill="none" stroke="#000000" stroke-opacity="0.18" stroke-width="3"/>
+<path d="M1062 450L1086 450M1058 495.5L1067.9 497.2M1046.2 539.6L1055.6 543M1026.9 581L1047.7 593M1000.7 618.4L1008.4 624.8M968.4 650.7L974.8 658.4M931 676.9L943 697.7M889.6 696.2L893 705.6M845.5 708L847.2 717.9M800 712L800 736M754.5 708L752.8 717.9M710.4 696.2L707 705.6M669 676.9L657 697.7M631.6 650.7L625.2 658.4M599.3 618.4L591.6 624.8M573.1 581L552.3 593M553.8 539.6L544.4 543M542 495.5L532.1 497.2M538 450L514 450M542 404.5L532.1 402.8M553.8 360.4L544.4 357M573.1 319L552.3 307M599.3 281.6L591.6 275.2M631.6 249.3L625.2 241.6M669 223.1L657 202.3M710.4 203.8L707 194.4M754.5 192L752.8 182.1M800 188L800 164M845.5 192L847.2 182.1M889.6 203.8L893 194.4M931 223.1L943 202.3M968.4 249.3L974.8 241.6M1000.7 281.6L1008.4 275.2M1026.9 319L1047.7 307M1046.2 360.4L1055.6 357M1058 404.5L1067.9 402.8" stroke="#ffffff" stroke-opacity="0.05" stroke-width="4"/>
+<path d="M800 214L868 332.2L1004.4 332L936 450L1004.4 568L868 567.8L800 686L732 567.8L595.6 568L664 450L595.6 332L732 332.2Z" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="800" cy="450" r="120" fill="none" stroke="#c77dff" stroke-opacity="0.05" stroke-width="3" stroke-dasharray="10 14"/>
+<circle cx="150" cy="110" r="14" fill="#140b2c" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/><path d="M150 84L157 110L150 136L143 110Z" fill="#ffffff" fill-opacity="0.05"/><path d="M124 110L150 103L176 110L150 117Z" fill="#ffffff" fill-opacity="0.05"/><circle cx="1450" cy="110" r="14" fill="#140b2c" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/><path d="M1450 84L1457 110L1450 136L1443 110Z" fill="#ffffff" fill-opacity="0.05"/><path d="M1424 110L1450 103L1476 110L1450 117Z" fill="#ffffff" fill-opacity="0.05"/><circle cx="150" cy="790" r="14" fill="#140b2c" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/><path d="M150 764L157 790L150 816L143 790Z" fill="#ffffff" fill-opacity="0.05"/><path d="M124 790L150 783L176 790L150 797Z" fill="#ffffff" fill-opacity="0.05"/><circle cx="1450" cy="790" r="14" fill="#140b2c" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3"/><path d="M1450 764L1457 790L1450 816L1443 790Z" fill="#ffffff" fill-opacity="0.05"/><path d="M1424 790L1450 783L1476 790L1450 797Z" fill="#ffffff" fill-opacity="0.05"/>
+<rect width="1600" height="900" fill="url(#board-backdrop-vig)"/>
+</svg>

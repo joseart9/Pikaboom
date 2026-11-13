@@ -24,6 +24,7 @@ import { Filters } from "../collection/Filters";
 import { ToastView } from "../match/Toasts";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { ManaCurve } from "./ManaCurve";
+import { GameIcon } from "../skin";
 
 const FORMAT = DECK_FORMATS.standard;
 const SIZE = FORMAT.exactSize ?? FORMAT.maxSize;
@@ -299,7 +300,9 @@ export function DeckEditor({ deckId, loadCollection = getCollection, loadDeck = 
                 ))}
               </ul>
             ) : (
-              <p className="cg-editor-ok">✓ {t("decks.playable")}</p>
+              <p className="cg-editor-ok">
+                <GameIcon name="check" className="cg-mark cg-mark--ok" /> {t("decks.playable")}
+              </p>
             )}
             <div className="cg-editor-actions">
               {id && (

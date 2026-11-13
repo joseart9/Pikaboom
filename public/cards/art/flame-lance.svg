@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="flame-lance-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#2a0820"/><stop offset="0.55" stop-color="#6a1424"/><stop offset="1" stop-color="#200818"/></linearGradient><radialGradient id="flame-lance-r1" gradientUnits="userSpaceOnUse" cx="340" cy="340" r="260"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.5"/><stop offset="0.45" stop-color="#ff7b00" stop-opacity="0.225"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><linearGradient id="flame-lance-l2" gradientUnits="userSpaceOnUse" x1="0" y1="312" x2="0" y2="512"><stop offset="0" stop-color="#4a1424"/><stop offset="1" stop-color="#1a0612"/></linearGradient><radialGradient id="flame-lance-r3" gradientUnits="userSpaceOnUse" cx="356" cy="372" r="200"><stop offset="0" stop-color="#ff7b00" stop-opacity="0.55"/><stop offset="1" stop-color="#ff7b00" stop-opacity="0"/></radialGradient><radialGradient id="flame-lance-r4" gradientUnits="userSpaceOnUse" cx="356" cy="360" r="150"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.65"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.29250000000000004"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="flame-lance-p5" d="M373 261L375 318L421 285L392 334L449 332L398 357L447 386L391 380L417 431L372 395L367 451L349 397L313 442L328 387L274 405L315 367L260 353L316 343L277 302L330 323L319 267L351 314Z"/><clipPath id="flame-lance-c6"><use href="#flame-lance-p5"/></clipPath><clipPath id="flame-lance-c7"><use href="#flame-lance-p5" x="-8" y="-8"/></clipPath><path id="flame-lance-p8" d="M384 308L376 339L409 337L382 356L409 375L376 373L384 404L361 382L346 411L343 379L313 392L332 365L300 356L332 347L313 320L343 333L346 301L361 330Z"/><clipPath id="flame-lance-c9"><use href="#flame-lance-p8"/></clipPath><clipPath id="flame-lance-ca"><use href="#flame-lance-p8" x="-5" y="-5"/></clipPath><path id="flame-lance-pb" d="M283 330L271 339L257 337L254 322L273 317Z"/><clipPath id="flame-lance-cc"><use href="#flame-lance-pb"/></clipPath><clipPath id="flame-lance-cd"><use href="#flame-lance-pb" x="-3" y="-3"/></clipPath><path id="flame-lance-pe" d="M459 320L447 331L430 327L429 312L448 306Z"/><clipPath id="flame-lance-cf"><use href="#flame-lance-pe"/></clipPath><clipPath id="flame-lance-cg"><use href="#flame-lance-pe" x="-3" y="-3"/></clipPath><path id="flame-lance-ph" d="M310 270L302 276L293 274L294 266L303 262Z"/><clipPath id="flame-lance-ci"><use href="#flame-lance-ph"/></clipPath><clipPath id="flame-lance-cj"><use href="#flame-lance-ph" x="-3" y="-3"/></clipPath><path id="flame-lance-pk" d="M433 268L423 276L412 273L413 264L423 261Z"/><clipPath id="flame-lance-cl"><use href="#flame-lance-pk"/></clipPath><clipPath id="flame-lance-cm"><use href="#flame-lance-pk" x="-3" y="-3"/></clipPath><path id="flame-lance-pn" d="M481 380L473 388L463 384L462 375L473 374Z"/><clipPath id="flame-lance-co"><use href="#flame-lance-pn"/></clipPath><clipPath id="flame-lance-cp"><use href="#flame-lance-pn" x="-3" y="-3"/></clipPath><path id="flame-lance-pq" d="M248 392L239 399L226 398L227 387L240 383Z"/><clipPath id="flame-lance-cr"><use href="#flame-lance-pq"/></clipPath><clipPath id="flame-lance-cs"><use href="#flame-lance-pq" x="-3" y="-3"/></clipPath><path id="flame-lance-pt" d="M213 192C208 182 185 159 178 147C172 135 171 117 169 112C167 107 168 112 168 112C168 112 168 106 167 112C166 118 159 139 162 153C165 167 180 199 187 208C194 217 204 215 208 213C212 211 217 202 213 192Z"/><clipPath id="flame-lance-cu"><use href="#flame-lance-pt"/></clipPath><clipPath id="flame-lance-cv"><use href="#flame-lance-pt" x="-6" y="-6"/></clipPath><path id="flame-lance-pw" d="M263 246C262 237 246 211 244 200C242 189 250 175 251 170C252 166 250 170 250 170C250 170 252 165 249 170C246 174 230 187 228 200C226 213 233 244 237 254C240 263 250 265 254 263C258 262 265 256 263 246Z"/><clipPath id="flame-lance-cx"><use href="#flame-lance-pw"/></clipPath><clipPath id="flame-lance-cy"><use href="#flame-lance-pw" x="-6" y="-6"/></clipPath><path id="flame-lance-pz" d="M165 159C158 154 132 143 121 143C111 143 99 155 96 157C92 159 96 158 96 158C96 158 93 159 96 159C100 159 110 154 119 157C127 160 147 178 155 181C162 184 169 179 171 175C172 172 173 164 165 159Z"/><clipPath id="flame-lance-c10"><use href="#flame-lance-pz"/></clipPath><clipPath id="flame-lance-c11"><use href="#flame-lance-pz" x="-6" y="-6"/></clipPath><path id="flame-lance-p12" d="M225 236C218 236 201 245 191 245C182 245 165 236 160 235C156 234 160 236 160 236C160 236 155 233 160 237C164 240 179 255 189 259C199 262 220 262 227 260C235 258 238 250 238 247C238 243 232 236 225 236Z"/><clipPath id="flame-lance-c13"><use href="#flame-lance-p12"/></clipPath><clipPath id="flame-lance-c14"><use href="#flame-lance-p12" x="-6" y="-6"/></clipPath><path id="flame-lance-p15" d="M290 286C288 278 272 259 270 250C268 241 276 230 277 226C278 223 276 226 276 226C276 226 278 222 275 226C272 229 259 240 258 250C257 261 266 287 270 294C274 302 281 301 284 300C287 299 292 294 290 286Z"/><clipPath id="flame-lance-c16"><use href="#flame-lance-p15"/></clipPath><clipPath id="flame-lance-c17"><use href="#flame-lance-p15" x="-6" y="-6"/></clipPath><path id="flame-lance-p18" d="M91 110C100 123 133 164 153 187C174 209 207 238 230 260C253 282 294 323 307 332C321 340 318 322 322 318C326 314 345 319 337 304C329 290 292 243 270 220C247 197 212 168 187 149C161 131 116 106 101 98C87 90 92 97 90 99C88 101 81 97 91 110Z"/><clipPath id="flame-lance-c19"><use href="#flame-lance-p18"/></clipPath><clipPath id="flame-lance-c1a"><use href="#flame-lance-p18" x="-10" y="-10"/></clipPath><path id="flame-lance-p1b" d="M108 118C118 129 152 165 173 186C193 207 225 237 248 259C270 280 309 318 320 328C332 337 324 324 326 322C328 320 341 329 332 316C322 304 286 263 264 241C243 219 210 189 187 170C165 151 124 122 112 114C100 105 108 113 108 114C107 115 98 107 108 118Z"/><clipPath id="flame-lance-c1c"><use href="#flame-lance-p1b"/></clipPath><clipPath id="flame-lance-c1d"><use href="#flame-lance-p1b" x="-4" y="-4"/></clipPath><path id="flame-lance-p1e" d="M300 300L330 304L362 352L314 330Z"/><clipPath id="flame-lance-c1f"><use href="#flame-lance-p1e"/></clipPath><clipPath id="flame-lance-c1g"><use href="#flame-lance-p1e" x="-5" y="-5"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#flame-lance-l0)"/>
+<circle cx="340" cy="340" r="260" fill="url(#flame-lance-r1)"/>
+<path d="M0 330L60 250L100 290L150 220L200 300L230 280L262 330Z" fill="#3a0c22"/>
+<path d="M300 330L360 240L400 280L440 210L512 300L512 330Z" fill="#3a0c22"/>
+<path d="M0 348Q256 312 512 348V512H0Z" fill="url(#flame-lance-l2)"/>
+<ellipse cx="356" cy="372" rx="200" ry="56" fill="url(#flame-lance-r3)"/>
+<path d="M246 374A110 26 0 1 0 466 374A110 26 0 1 0 246 374Z" fill="#1d0842" fill-opacity="0.55"/>
+<circle cx="356" cy="360" r="150" fill="url(#flame-lance-r4)"/>
+<use href="#flame-lance-p5" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-lance-c6)">
+<use href="#flame-lance-p5" x="-8" y="-8" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c7)"><use href="#flame-lance-p5" x="6" y="6" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-p8" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c9)">
+<use href="#flame-lance-p8" x="-5" y="-5" fill="#fff8d6"/>
+<g clip-path="url(#flame-lance-ca)"><use href="#flame-lance-p8" x="4" y="4" fill="#ffe066"/></g>
+</g>
+<use href="#flame-lance-pb" fill="#2e0c18" stroke-width="8"/>
+<g clip-path="url(#flame-lance-cc)">
+<use href="#flame-lance-pb" x="-3" y="-3" fill="#8a3a40"/>
+<g clip-path="url(#flame-lance-cd)"><use href="#flame-lance-pb" x="2" y="2" fill="#5a2030"/></g>
+</g>
+<use href="#flame-lance-pe" fill="#2e0c18" stroke-width="8"/>
+<g clip-path="url(#flame-lance-cf)">
+<use href="#flame-lance-pe" x="-3" y="-3" fill="#8a3a40"/>
+<g clip-path="url(#flame-lance-cg)"><use href="#flame-lance-pe" x="2" y="2" fill="#5a2030"/></g>
+</g>
+<use href="#flame-lance-ph" fill="#2e0c18" stroke-width="8"/>
+<g clip-path="url(#flame-lance-ci)">
+<use href="#flame-lance-ph" x="-3" y="-3" fill="#8a3a40"/>
+<g clip-path="url(#flame-lance-cj)"><use href="#flame-lance-ph" x="2" y="2" fill="#5a2030"/></g>
+</g>
+<use href="#flame-lance-pk" fill="#2e0c18" stroke-width="8"/>
+<g clip-path="url(#flame-lance-cl)">
+<use href="#flame-lance-pk" x="-3" y="-3" fill="#8a3a40"/>
+<g clip-path="url(#flame-lance-cm)"><use href="#flame-lance-pk" x="2" y="2" fill="#5a2030"/></g>
+</g>
+<use href="#flame-lance-pn" fill="#2e0c18" stroke-width="8"/>
+<g clip-path="url(#flame-lance-co)">
+<use href="#flame-lance-pn" x="-3" y="-3" fill="#8a3a40"/>
+<g clip-path="url(#flame-lance-cp)"><use href="#flame-lance-pn" x="2" y="2" fill="#5a2030"/></g>
+</g>
+<use href="#flame-lance-pq" fill="#2e0c18" stroke-width="8"/>
+<g clip-path="url(#flame-lance-cr)">
+<use href="#flame-lance-pq" x="-3" y="-3" fill="#8a3a40"/>
+<g clip-path="url(#flame-lance-cs)"><use href="#flame-lance-pq" x="2" y="2" fill="#5a2030"/></g>
+</g>
+<use href="#flame-lance-pt" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-lance-cu)">
+<use href="#flame-lance-pt" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-cv)"><use href="#flame-lance-pt" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-pw" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-lance-cx)">
+<use href="#flame-lance-pw" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-cy)"><use href="#flame-lance-pw" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-pz" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-lance-c10)">
+<use href="#flame-lance-pz" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c11)"><use href="#flame-lance-pz" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-p12" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-lance-c13)">
+<use href="#flame-lance-p12" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c14)"><use href="#flame-lance-p12" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-p15" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#flame-lance-c16)">
+<use href="#flame-lance-p15" x="-6" y="-6" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c17)"><use href="#flame-lance-p15" x="4" y="4" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-p18" fill="#c2410c" stroke-width="12"/>
+<g clip-path="url(#flame-lance-c19)">
+<use href="#flame-lance-p18" x="-10" y="-10" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c1a)"><use href="#flame-lance-p18" x="7" y="7" fill="#ff7b00"/></g>
+</g>
+<use href="#flame-lance-p1b" fill="#ffbe0b"/>
+<g clip-path="url(#flame-lance-c1c)">
+<use href="#flame-lance-p1b" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#flame-lance-c1d)"><use href="#flame-lance-p1b" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<use href="#flame-lance-p1e" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#flame-lance-c1f)">
+<use href="#flame-lance-p1e" x="-5" y="-5" fill="#fff1c1"/>
+<g clip-path="url(#flame-lance-c1g)"><use href="#flame-lance-p1e" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<path d="M342 357L346 364L342 371L339 364Z" fill="#ffbe0b" fill-opacity="0.52"/>
+<path d="M235 194L237 198L235 201L233 198Z" fill="#ff7b00" fill-opacity="0.97"/>
+<path d="M401 301L404 306L401 310L399 306Z" fill="#ffe066" fill-opacity="0.87"/>
+<path d="M301 217L304 223L301 230L297 223Z" fill="#ffbe0b" fill-opacity="0.52"/>
+<path d="M360 331L364 339L360 346L356 339Z" fill="#ff7b00" fill-opacity="0.64"/>
+<path d="M429 356L433 363L429 370L426 363Z" fill="#ffe066" fill-opacity="0.9"/>
+<path d="M462 297L465 303L462 309L459 303Z" fill="#ffbe0b" fill-opacity="0.52"/>
+<path d="M133 135L136 141L133 148L129 141Z" fill="#ff7b00" fill-opacity="0.64"/>
+<path d="M177 303L180 309L177 315L173 309Z" fill="#ffe066" fill-opacity="0.99"/>
+<path d="M404 356L408 364L404 371L400 364Z" fill="#ffbe0b" fill-opacity="0.67"/>
+<path d="M221 204L223 207L221 210L219 207Z" fill="#ff7b00" fill-opacity="0.92"/>
+<path d="M63 215L65 218L63 221L62 218Z" fill="#ffe066" fill-opacity="0.72"/>
+<path d="M433 405L436 411L433 417L429 411Z" fill="#ffbe0b" fill-opacity="0.91"/>
+<path d="M286 207L288 211L286 215L284 211Z" fill="#ff7b00" fill-opacity="0.98"/>
+<path d="M364 400L368 407L364 414L361 407Z" fill="#ffe066" fill-opacity="0.63"/>
+<path d="M396 211L400 219L396 226L392 219Z" fill="#ffbe0b" fill-opacity="0.9"/>
+<path d="M447 236L450 241L447 245L444 241Z" fill="#ff7b00" fill-opacity="0.93"/>
+<path d="M154 339L157 344L154 349L151 344Z" fill="#ffe066" fill-opacity="0.9"/>
+<path d="M106 391L108 395L106 399L104 395Z" fill="#ffbe0b" fill-opacity="0.92"/>
+<path d="M284 392L287 398L284 403L281 398Z" fill="#ff7b00" fill-opacity="0.73"/>
+<path d="M262 189L264 193L262 196L260 193Z" fill="#ffe066" fill-opacity="0.8"/>
+<path d="M255 250L258 255L255 261L252 255Z" fill="#ffbe0b" fill-opacity="0.78"/>
+</svg>

@@ -11,7 +11,8 @@ The game never shows a broken image: a primitive uses a file **only** when its k
 
 ## 1. How to add art (the pipeline)
 
-1. Produce the SVG following §2 (global rules) and the spec of its slot (§3–§5).
+1. Produce the SVG following §2 (global rules) and the spec of its slot (§3–§5). In-repo art is compiled by
+   `scripts/cards-art/art.mjs` (cards) and `skin.mjs` (skin) — workflow and templates in `UI_VISUAL_SYSTEM.md` §6.
 2. Save it at the exact path:
    - card illustration → `public/cards/art/<art key>.svg` (keys in §5; today the art key equals the card id)
    - skin image → `public/cards/skin/<name>.svg` (names in §3)

@@ -21,6 +21,7 @@ import { ConnectionBadge } from "../match/ConnectionBadge";
 import { Toasts, ToastView } from "../match/Toasts";
 import { DeckPicker } from "./DeckPicker";
 import { InviteShare } from "./InviteShare";
+import { GameIcon } from "../skin";
 
 type Stage =
   | { k: "loading"; text: string }
@@ -243,8 +244,20 @@ function SeatRow({ seat, view, mine }: { seat: Seat; view: LobbySeatView | null;
       </span>
       {view && (
         <span className="cg-seat-chips">
-          <span className={`cg-chip${view.deckChosen ? " cg-chip--ok" : ""}`}>{view.deckChosen ? `✓ ${t("lobby.deckChosen")}` : t("lobby.noDeck")}</span>
-          <span className={`cg-chip${view.ready ? " cg-chip--ok" : ""}`}>{view.ready ? `✓ ${t("lobby.isReady")}` : t("lobby.notReadyYet")}</span>
+          <span className={`cg-chip${view.deckChosen ? " cg-chip--ok" : ""}`}>{view.deckChosen ? (
+            <>
+              <GameIcon name="check" /> {t("lobby.deckChosen")}
+            </>
+          ) : (
+            t("lobby.noDeck")
+          )}</span>
+          <span className={`cg-chip${view.ready ? " cg-chip--ok" : ""}`}>{view.ready ? (
+            <>
+              <GameIcon name="check" /> {t("lobby.isReady")}
+            </>
+          ) : (
+            t("lobby.notReadyYet")
+          )}</span>
         </span>
       )}
     </li>

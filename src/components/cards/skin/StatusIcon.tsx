@@ -29,7 +29,7 @@ export function StatusIcon({ status, magnitude, size, title }: StatusIconProps) 
       }}
     >
       <svg viewBox="0 0 24 24" aria-hidden style={{ width: "70%", height: "70%" }}>
-        <path d={g.d} fill={g.fill} fillRule="evenodd" stroke="#1d0842" strokeWidth={1} />
+        <path d={g.d} fill={g.fill} fillRule={g.rule ?? "evenodd"} stroke="#1d0842" strokeWidth={1} />
       </svg>
       {magnitude !== undefined && (
         <span

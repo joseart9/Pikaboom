@@ -7,6 +7,8 @@ export { CardBack, type CardBackProps } from "./CardBack";
 export { CardFrame, type CardFrameProps, type CardFrameState } from "./CardFrame";
 export { CostBadge, type CostBadgeProps } from "./CostBadge";
 export { CurrencyBadge, type CurrencyBadgeProps } from "./CurrencyBadge";
+export { GameIcon, type GameIconProps } from "./GameIcon";
+export { type GameIconName } from "./icons/gameIcons";
 export { EndTurnButton, type EndTurnButtonProps, type EndTurnState } from "./EndTurnButton";
 export { HealthBadge, type HealthBadgeProps } from "./HealthBadge";
 export { HeroPortrait, type HeroPortraitProps } from "./HeroPortrait";

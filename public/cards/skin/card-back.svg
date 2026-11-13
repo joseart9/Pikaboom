@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 500">
+<defs>
+<linearGradient id="card-back-bg" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#5d22ad"/><stop offset="0.5" stop-color="#4a1791"/><stop offset="1" stop-color="#2a0d5c"/></linearGradient>
+<radialGradient id="card-back-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff4fa3" stop-opacity="0.55"/><stop offset="0.5" stop-color="#b5179e" stop-opacity="0.25"/><stop offset="1" stop-color="#4a1791" stop-opacity="0"/></radialGradient>
+<linearGradient id="card-back-star" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#ffd6f0"/><stop offset="0.45" stop-color="#ff7ab8"/><stop offset="1" stop-color="#b5179e"/></linearGradient>
+<linearGradient id="card-back-gem" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#e6f6ff"/><stop offset="0.5" stop-color="#c77dff"/><stop offset="1" stop-color="#5a189a"/></linearGradient>
+<pattern id="card-back-lattice" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M18 0 36 18 18 36 0 18Z" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/></pattern>
+</defs>
+<rect width="360" height="500" fill="url(#card-back-bg)"/>
+<rect width="360" height="500" fill="url(#card-back-lattice)"/>
+<rect x="30" y="30" width="300" height="440" rx="22" fill="none" stroke="#1d0842" stroke-width="8"/>
+<rect x="30" y="30" width="300" height="440" rx="22" fill="none" stroke="#ff006e" stroke-opacity="0.7" stroke-width="3"/>
+<path d="M40 86V40H86" fill="none" stroke="#c77dff" stroke-opacity="0.55" stroke-width="4"/><path d="M50 46L60 50L50 54L40 50Z" fill="#c77dff" fill-opacity="0.6"/><path d="M320 86V40H274" fill="none" stroke="#c77dff" stroke-opacity="0.55" stroke-width="4"/><path d="M310 46L300 50L310 54L320 50Z" fill="#c77dff" fill-opacity="0.6"/><path d="M40 414V460H86" fill="none" stroke="#c77dff" stroke-opacity="0.55" stroke-width="4"/><path d="M50 454L60 450L50 446L40 450Z" fill="#c77dff" fill-opacity="0.6"/><path d="M320 414V460H274" fill="none" stroke="#c77dff" stroke-opacity="0.55" stroke-width="4"/><path d="M310 454L300 450L310 446L320 450Z" fill="#c77dff" fill-opacity="0.6"/>
+<path d="M180 64V126M180 374V436M58 250H56M304 250H302" stroke="#ff7ab8" stroke-opacity="0.7" stroke-width="4"/>
+<path d="M180 40L189 52L180 64L171 52Z" fill="#ff7ab8" stroke="#1d0842" stroke-width="3"/><path d="M180 436L189 448L180 460L171 448Z" fill="#ff7ab8" stroke="#1d0842" stroke-width="3"/><path d="M44 238L53 250L44 262L35 250Z" fill="#ff7ab8" stroke="#1d0842" stroke-width="3"/><path d="M316 238L325 250L316 262L307 250Z" fill="#ff7ab8" stroke="#1d0842" stroke-width="3"/>
+<circle cx="180" cy="250" r="150" fill="url(#card-back-glow)"/>
+<path d="M180 130L195.6 234.4L300 250L195.6 265.6L180 370L164.4 265.6L60 250L164.4 234.4Z" fill="#2a0d5c" stroke="#1d0842" stroke-width="6" stroke-linejoin="round"/>
+<path d="M180 130L195.6 234.4L300 250L195.6 265.6L180 370L164.4 265.6L60 250L164.4 234.4Z" fill="none" stroke="#c77dff" stroke-opacity="0.8" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="180" cy="250" r="100" fill="none" stroke="#1d0842" stroke-width="12"/>
+<circle cx="180" cy="250" r="100" fill="none" stroke="#ff006e" stroke-width="4"/>
+<circle cx="180" cy="250" r="86" fill="none" stroke="#ffd6f0" stroke-width="2" stroke-opacity="0.5" stroke-dasharray="4 8"/>
+<path d="M180 158L194.5 214.9L245.1 184.9L215.1 235.5L272 250L215.1 264.5L245.1 315.1L194.5 285.1L180 342L165.5 285.1L114.9 315.1L144.9 264.5L88 250L144.9 235.5L114.9 184.9L165.5 214.9Z" fill="url(#card-back-star)" stroke="#1d0842" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="180" cy="250" r="34" fill="#1d0842"/>
+<path d="M180 222L204.2 236L204.2 264L180 278L155.8 264L155.8 236Z" fill="url(#card-back-gem)"/>
+<path d="M180 222L204.2 236L180 250L155.8 236Z" fill="#ffffff" fill-opacity="0.35"/>
+<path d="M166 232L178 225L181 228L169 235Z" fill="#ffffff" fill-opacity="0.8"/>
+</svg>

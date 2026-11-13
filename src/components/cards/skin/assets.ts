@@ -4,7 +4,17 @@
 // Until then every primitive draws its generated placeholder.
 
 /** Card illustrations: `public/cards/art/<art key>.svg` (the art key is `CardDef.art`, today equal to the card id). */
-export const CARD_ART_FILES: ReadonlySet<string> = new Set<string>([]);
+// UI-03 pilots (scripts/cards-art/art.mjs); UI-04…06 add the rest (docs/cards/UI_ASSET_STATUS.md).
+export const CARD_ART_FILES: ReadonlySet<string> = new Set<string>([
+  "squire",
+  "wolf-pup",
+  "stone-golem",
+  "restless-skeleton",
+  "arcane-spark",
+  "flame-lance",
+  "morvath",
+  "ignis",
+]);
 
 /** Skin images: `public/cards/skin/<name>.svg`. */
 export type SkinAsset =
@@ -32,7 +42,7 @@ export const SKIN_ASSETS: readonly SkinAsset[] = [
   "badge-circle",
 ];
 
-export const SKIN_FILES: ReadonlySet<SkinAsset> = new Set<SkinAsset>([]);
+export const SKIN_FILES: ReadonlySet<SkinAsset> = new Set<SkinAsset>(SKIN_ASSETS); // all 10 drawn in UI-02
 
 /** Max size of one SVG (ART_GUIDE.md). */
 export const MAX_SVG_BYTES = 30 * 1024;

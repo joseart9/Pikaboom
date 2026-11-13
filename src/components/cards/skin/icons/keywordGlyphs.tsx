@@ -1,26 +1,30 @@
-// Simple 24×24 glyphs per keyword (placeholder art; a future skin pass replaces this file with real icons).
+// Keyword glyphs (UI-02, ART_GUIDE.md §4, UI_VISUAL_SYSTEM.md §5): one path per keyword in a 24×24 box, content in
+// x/y 2–22, strokes-as-shapes ≥ 2 units, holes ≥ 1.5 units — each a distinct silhouette at 12 px (heater shield vs
+// buckler vs halo, heart vs skull drop, hood, wing…). Drawn on a dark disc by `KeywordIcon`.
 import type { KeywordId } from "@/game/cards/catalog/types";
 
 export interface Glyph {
   /** Path data in a 24×24 box. */
   d: string;
   fill: string;
+  /** Fill rule; `evenodd` (default) cuts holes, `nonzero` keeps overlapping shapes solid (crossed swords, snowflake). */
+  rule?: "evenodd" | "nonzero";
 }
 
 export const KEYWORD_GLYPHS: Record<KeywordId, Glyph> = {
-  taunt: { d: "M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z", fill: "#c9ced6" },
-  shield: { d: "M12 3 A9 9 0 1 1 11.9 3 Z M12 7 A5 5 0 1 0 12.1 7 Z", fill: "#7fd3ff" },
-  lifesteal: { d: "M12 2 C15 7 19 10 19 15 A7 7 0 0 1 5 15 C5 10 9 7 12 2 Z", fill: "#ff4d6d" },
-  rush: { d: "M3 5 L11 12 L3 19 V15 L7 12 L3 9 Z M12 5 L20 12 L12 19 V15 L16 12 L12 9 Z", fill: "#ffbe0b" },
-  charge: { d: "M13 2 L4 14 H11 L9 22 L20 9 H13 Z", fill: "#ffe066" },
-  doubleStrike: { d: "M4 3 L13 12 L11 14 L2 5 Z M20 3 L22 5 L13 14 L11 12 Z M5 15 L9 19 L6 22 L2 18 Z M19 15 L22 18 L18 22 L15 19 Z", fill: "#e9ecef" },
-  berserk: { d: "M12 2 C14 6 18 8 18 13 A6 6 0 0 1 6 13 C6 10 8 9 9 6 C10 9 11 9 12 2 Z", fill: "#ff6b35" },
-  thorns: { d: "M12 2 L14 9 L21 7 L16 12 L21 17 L14 15 L12 22 L10 15 L3 17 L8 12 L3 7 L10 9 Z", fill: "#7bc950" },
-  cleave: { d: "M3 14 C6 6 18 6 21 14 L18 15 C16 10 8 10 6 15 Z M11 15 H13 V22 H11 Z", fill: "#e9ecef" },
-  regeneration: { d: "M9 3 H15 V9 H21 V15 H15 V21 H9 V15 H3 V9 H9 Z", fill: "#06d6a0" },
-  reborn: { d: "M12 4 A8 8 0 1 1 4 12 H7 A5 5 0 1 0 12 7 V10 L7 5.5 L12 1 Z", fill: "#ff9f1c" },
-  poison: { d: "M12 2 C15 7 19 10 19 15 A7 7 0 0 1 5 15 C5 10 9 7 12 2 Z", fill: "#7bc950" },
-  stealth: { d: "M2 12 C6 5 18 5 22 12 C18 19 6 19 2 12 Z M12 9 A3 3 0 1 0 12.1 9 Z", fill: "#9aa0a6" },
-  divineShield: { d: "M12 3 A9 9 0 1 1 11.9 3 Z M12 6 A6 6 0 1 0 12.1 6 Z", fill: "#ffe066" },
-  flying: { d: "M2 14 C6 6 14 4 22 6 C16 8 14 10 13 14 C10 12 6 12 2 14 Z", fill: "#bde0fe" },
+  taunt: { d: "M12 2L20.5 4.8V11C20.5 16.2 16.8 20.2 12 22C7.2 20.2 3.5 16.2 3.5 11V4.8ZM11 6.2H13V18.8L12 19.5L11 18.8Z", fill: "#c9ced6" },
+  shield: { d: "M2 12A10 10 0 1 0 22 12A10 10 0 1 0 2 12ZM5.2 12A6.8 6.8 0 1 0 18.8 12A6.8 6.8 0 1 0 5.2 12ZM7.8 12A4.2 4.2 0 1 0 16.2 12A4.2 4.2 0 1 0 7.8 12Z", fill: "#7fd3ff" },
+  lifesteal: { d: "M12 21C6.5 16.6 3 13.6 3 9.3C3 6.4 5.2 4.2 7.8 4.2C9.7 4.2 11.1 5.3 12 6.8C12.9 5.3 14.3 4.2 16.2 4.2C18.8 4.2 21 6.4 21 9.3C21 13.6 17.5 16.6 12 21ZM12 7.6C13.38 10.16 14.5 11.93 14.5 13.3A2.5 2.5 0 0 1 9.5 13.3C9.5 11.93 10.63 10.16 12 7.6Z", fill: "#ff4d6d" },
+  rush: { d: "M2.5 5H7.5L14 12L7.5 19H2.5L9 12Z M10.5 5H15.5L22 12L15.5 19H10.5L17 12Z", fill: "#ffbe0b" },
+  charge: { d: "M14 1.8L4.5 13.6H10.8L9 22.2L19.5 9.6H13.2Z", fill: "#ffe066" },
+  doubleStrike: { d: "M5.04 4.27L8.76 4.96L14.78 11.65L11.36 14.73L5.34 8.04ZM9.21 16.67L16.93 9.71L18.81 11.79L11.08 18.75ZM13.9 16.21L15.98 14.33L18.39 17.01L16.31 18.88ZM15.44 19.4L19 16.19L20.74 18.12L17.18 21.33ZM18.96 4.27L18.66 8.04L12.64 14.73L9.22 11.65L15.24 4.96ZM7.07 9.71L14.79 16.67L12.92 18.75L5.19 11.79ZM8.02 14.33L10.1 16.21L7.69 18.88L5.61 17.01ZM5 16.19L8.56 19.4L6.82 21.33L3.26 18.12Z", fill: "#e9ecef", rule: "nonzero" },
+  berserk: { d: "M2.6 12.6A9.4 9.4 0 1 0 21.4 12.6A9.4 9.4 0 1 0 2.6 12.6ZM6.2 8.4L10.6 10.2L10.2 12.4L6.6 11.2ZM17.8 8.4L13.4 10.2L13.8 12.4L17.4 11.2ZM7.6 18.4L9.4 15.6L11 17.2L12 15.4L13 17.2L14.6 15.6L16.4 18.4Z", fill: "#ff6b35" },
+  thorns: { d: "M12 1.6L14.14 6.83L19.35 4.65L17.17 9.86L22.4 12L17.17 14.14L19.35 19.35L14.14 17.17L12 22.4L9.86 17.17L4.65 19.35L6.83 14.14L1.6 12L6.83 9.86L4.65 4.65L9.86 6.83ZM9.4 12A2.6 2.6 0 1 0 14.6 12A2.6 2.6 0 1 0 9.4 12Z", fill: "#7bc950" },
+  cleave: { d: "M2.6 13.4C3.8 6.2 9.2 2.6 15.6 3.4C11.4 5 9 8.2 8.8 12.6L13 13.6L12.4 15.6L8.2 14.6C7.2 16.4 5.2 16.6 2.6 13.4Z M12.6 11.6L15.4 11.6L21.4 20.6L18.6 22.4Z", fill: "#e9ecef" },
+  regeneration: { d: "M9.2 2.5H14.8V9.2H21.5V14.8H14.8V21.5H9.2V14.8H2.5V9.2H9.2Z", fill: "#06d6a0" },
+  reborn: { d: "M12 3.2A8.8 8.8 0 1 1 3.4 13.6L6.4 13C7 15.8 9.3 17.8 12 17.8A5.8 5.8 0 1 0 12 6.2V9.4L6.6 4.7L12 0.8ZM12 9.2C13.8 10.6 14.2 12.6 12 15.2C9.8 12.6 10.2 10.6 12 9.2Z", fill: "#ff9f1c" },
+  poison: { d: "M12 1.8C16.23 7.6 19.7 10.46 19.7 14.7A7.7 7.7 0 0 1 4.3 14.7C4.3 10.46 7.76 7.6 12 1.8ZM7.4 15.2A1.9 1.9 0 1 0 11.2 15.2A1.9 1.9 0 1 0 7.4 15.2ZM12.8 15.2A1.9 1.9 0 1 0 16.6 15.2A1.9 1.9 0 1 0 12.8 15.2ZM10.6 18.4H13.4L12 20.4Z", fill: "#7bc950" },
+  stealth: { d: "M12 2C7.2 2 4.4 6.6 4.4 11.6L3 22H21L19.6 11.6C19.6 6.6 16.8 2 12 2ZM12 7.6C9.2 7.6 7.8 10.4 7.8 13.4C7.8 15.8 9.6 17.4 12 17.4C14.4 17.4 16.2 15.8 16.2 13.4C16.2 10.4 14.8 7.6 12 7.6ZM9.2 12.2L11.2 12.9L10.8 14.2L9.2 13.6Z M14.8 12.2L12.8 12.9L13.2 14.2L14.8 13.6Z", fill: "#9aa0a6" },
+  divineShield: { d: "M1.8 12A10.2 10.2 0 1 0 22.2 12A10.2 10.2 0 1 0 1.8 12ZM4.6 12A7.4 7.4 0 1 0 19.4 12A7.4 7.4 0 1 0 4.6 12ZM12 5.8L13.56 10.44L18.2 12L13.56 13.56L12 18.2L10.44 13.56L5.8 12L10.44 10.44Z", fill: "#ffe066" },
+  flying: { d: "M2.2 7.4C7.4 4.2 15.6 3.2 21.8 5.2C20.4 6.8 18.6 7.6 16.6 8C18 8.6 18.8 9.6 19 10.6C17.2 11.6 15.2 11.8 13.6 11.6C14.6 12.6 14.8 13.8 14.6 14.8C12.8 15.6 10.6 15.4 9.2 14.6C9.4 16.6 8.6 18.4 7.2 19.8C5.4 16 3.6 11.8 2.2 7.4Z", fill: "#bde0fe" },
 };

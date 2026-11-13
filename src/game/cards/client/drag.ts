@@ -332,6 +332,7 @@ export class DragController {
     root.addEventListener("contextmenu", this.onContextMenu);
     root.addEventListener("click", this.onClickCapture, true);
     root.addEventListener("dragstart", this.onNativeDragStart);
+    root.addEventListener("touchmove", this.onTouchMove, { passive: false });
     window.addEventListener("pointerdown", this.onAnyDown, true);
     window.addEventListener("pointermove", this.onMove);
     window.addEventListener("pointerup", this.onUp);
@@ -345,6 +346,7 @@ export class DragController {
       root.removeEventListener("contextmenu", this.onContextMenu);
       root.removeEventListener("click", this.onClickCapture, true);
       root.removeEventListener("dragstart", this.onNativeDragStart);
+      root.removeEventListener("touchmove", this.onTouchMove);
       window.removeEventListener("pointerdown", this.onAnyDown, true);
       window.removeEventListener("pointermove", this.onMove);
       window.removeEventListener("pointerup", this.onUp);
@@ -672,6 +674,9 @@ export class DragController {
   };
 
   private onLostCapture = (e: PointerEvent): void => {
+    // Only the root's own capture counts. On touch the pressed card/unit holds an implicit capture; moving it to the
+    // root fires `lostpointercapture` on that element, which bubbles here and must not cancel the drag we just began.
+    if (e.target !== this.root) return;
     if (this.captured && e.pointerId === this.pointerId) {
       this.captured = false;
       this.cancel();
@@ -709,6 +714,14 @@ export class DragController {
     this.suppressClick = false;
     e.stopPropagation();
     e.preventDefault();
+  };
+
+  /**
+   * iOS Safari: once a press/drag/arrow gesture owns the finger, cancel the native touchmove so WebKit never starts a
+   * pan/scroll (which would fire `pointercancel` and abort the drag). Must be a non-passive listener.
+   */
+  private onTouchMove = (e: TouchEvent): void => {
+    if (this.gesture !== "none" && e.cancelable) e.preventDefault();
   };
 
   private onNativeDragStart = (e: DragEvent): void => {

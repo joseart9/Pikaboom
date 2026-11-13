@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs><linearGradient id="badge-gem-t" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#5cbcff"/><stop offset="1" stop-color="#2a80e0"/></linearGradient></defs>
+<path d="M50 3L90.7 26.5L90.7 73.5L50 97L9.3 73.5L9.3 26.5Z" fill="#1d0842" stroke="#1d0842" stroke-width="3" stroke-linejoin="round"/>
+<path d="M50 9L85.5 29.5L73.4 36.5L50 23Z" fill="#7cc8ff"/>
+<path d="M85.5 29.5L85.5 70.5L73.4 63.5L73.4 36.5Z" fill="#2f8ef0"/>
+<path d="M85.5 70.5L50 91L50 77L73.4 63.5Z" fill="#15509e"/>
+<path d="M50 91L14.5 70.5L26.6 63.5L50 77Z" fill="#1f6fd1"/>
+<path d="M14.5 70.5L14.5 29.5L26.6 36.5L26.6 63.5Z" fill="#5cb8ff"/>
+<path d="M14.5 29.5L50 9L50 23L26.6 36.5Z" fill="#b5e1ff"/>
+<path d="M50 23L73.4 36.5L73.4 63.5L50 77L26.6 63.5L26.6 36.5Z" fill="url(#badge-gem-t)" stroke="#1d0842" stroke-opacity="0.35" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M28.5 37.6 48.6 26 50 28.4 30.6 39.6Z" fill="#e6f6ff" fill-opacity="0.85"/>
+<path d="M50 9 54 16.6 50 15.2 46 16.6Z" fill="#e6f6ff"/>
+</svg>

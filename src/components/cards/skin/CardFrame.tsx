@@ -18,7 +18,15 @@ const GLOW: Record<CardFrameState, string> = {
   selected: "0 0 0 3px var(--cg-selected), 0 0 22px 6px var(--cg-selected)",
 };
 
-/** Card body: rounded rectangle tinted by type, rarity-colored rim, state glow. */
+// Inner trim per rarity (UI_VISUAL_SYSTEM.md §3, never colour alone): an ink line for most, a gold trim for
+// Legendaria, a vivid double rim for Única — on top of the rarity-coloured border.
+const TRIM: Partial<Record<Rarity, string>> = {
+  legendary: "inset 0 0 0 0.5cqh #1d0842, inset 0 0 0 1.3cqh #f2c14e, inset 0 0 0 1.8cqh #1d0842",
+  unique: "inset 0 0 0 0.5cqh #1d0842, inset 0 0 0 1.1cqh #ff006e, inset 0 0 0 1.6cqh #1d0842, inset 0 0 0 2.2cqh #ff7ab8",
+};
+const TRIM_DEFAULT = "inset 0 0 0 0.5cqh #1d0842";
+
+/** Card body: the frame-mob / frame-spell skin, rarity-coloured rim plus rarity trim, state glow. */
 export function CardFrame({ type, rarity, state, children }: CardFrameProps) {
   return (
     <div
@@ -30,7 +38,7 @@ export function CardFrame({ type, rarity, state, children }: CardFrameProps) {
           skinLayer(type === "spell" ? "frame-spell" : "frame-mob") ??
           `linear-gradient(170deg, ${type === "spell" ? "var(--cg-card-spell)" : "var(--cg-card)"} 0%, #160c30 100%)`,
         border: `max(2px, 1.8cqh) solid var(--cg-rarity-${rarity})`,
-        boxShadow: GLOW[state],
+        boxShadow: `${TRIM[rarity] ?? TRIM_DEFAULT}, ${GLOW[state]}`,
         filter: state === "locked" ? "saturate(0.55) brightness(0.8)" : undefined,
         transition: "box-shadow var(--cg-dur-fast), filter var(--cg-dur-fast)",
       }}

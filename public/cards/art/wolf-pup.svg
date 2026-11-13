@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="wolf-pup-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#142a20"/><stop offset="0.55" stop-color="#24503a"/><stop offset="1" stop-color="#16281e"/></linearGradient><radialGradient id="wolf-pup-r1" gradientUnits="userSpaceOnUse" cx="210" cy="190" r="250"><stop offset="0" stop-color="#d8f5a2" stop-opacity="0.3"/><stop offset="0.45" stop-color="#d8f5a2" stop-opacity="0.135"/><stop offset="1" stop-color="#d8f5a2" stop-opacity="0"/></radialGradient><linearGradient id="wolf-pup-l2" gradientUnits="userSpaceOnUse" x1="0" y1="320" x2="0" y2="512"><stop offset="0" stop-color="#3a6a32"/><stop offset="1" stop-color="#203e22"/></linearGradient><radialGradient id="wolf-pup-r3" gradientUnits="userSpaceOnUse" cx="250" cy="398" r="190"><stop offset="0" stop-color="#d8f5a2" stop-opacity="0.55"/><stop offset="1" stop-color="#d8f5a2" stop-opacity="0"/></radialGradient><path id="wolf-pup-p4" d="M355 295C363 289 382 269 390 257C398 244 406 222 406 211C406 199 391 187 388 182C384 178 383 180 382 180C381 181 380 181 380 186C381 190 388 201 386 209C384 218 377 233 370 243C363 254 341 269 337 277C332 285 334 293 337 295C340 298 348 301 355 295Z"/><clipPath id="wolf-pup-c5"><use href="#wolf-pup-p4"/></clipPath><clipPath id="wolf-pup-c6"><use href="#wolf-pup-p4" x="-7" y="-7"/></clipPath><path id="wolf-pup-p7" d="M303 315C303 323 313 342 314 352C315 362 308 377 308 384C309 390 313 395 316 396C319 396 324 395 328 388C331 382 337 364 338 352C339 340 336 317 333 309C329 301 319 296 315 297C311 298 303 307 303 315Z"/><clipPath id="wolf-pup-c8"><use href="#wolf-pup-p7"/></clipPath><clipPath id="wolf-pup-c9"><use href="#wolf-pup-p7" x="-6" y="-6"/></clipPath><path id="wolf-pup-pa" d="M206 296C211 287 230 278 244 272C258 266 286 259 302 258C318 257 340 258 350 264C361 270 371 286 372 296C373 307 364 327 356 334C348 342 332 345 316 346C300 347 268 342 252 340C236 338 219 337 212 330C205 323 201 305 206 296Z"/><clipPath id="wolf-pup-cb"><use href="#wolf-pup-pa"/></clipPath><clipPath id="wolf-pup-cc"><use href="#wolf-pup-pa" x="-12" y="-12"/></clipPath><path id="wolf-pup-pd" d="M214 318C218 316 237 320 250 322C263 324 298 331 300 334C302 337 274 344 262 344C250 344 229 340 222 336C215 332 210 320 214 318Z"/><clipPath id="wolf-pup-ce"><use href="#wolf-pup-pd"/></clipPath><clipPath id="wolf-pup-cf"><use href="#wolf-pup-pd" x="-4" y="-4"/></clipPath><path id="wolf-pup-pg" d="M324 318C324 327 339 343 341 353C343 363 336 377 336 383C337 390 342 397 345 398C349 399 356 396 360 389C364 382 370 364 371 351C372 339 369 315 364 306C359 297 344 290 338 292C332 294 323 309 324 318Z"/><clipPath id="wolf-pup-ch"><use href="#wolf-pup-pg"/></clipPath><clipPath id="wolf-pup-ci"><use href="#wolf-pup-pg" x="-8" y="-6"/></clipPath><path id="wolf-pup-pj" d="M322 390A22 12 0 1 0 366 390A22 12 0 1 0 322 390Z"/><clipPath id="wolf-pup-ck"><use href="#wolf-pup-pj"/></clipPath><clipPath id="wolf-pup-cl"><use href="#wolf-pup-pj" x="-5" y="-5"/></clipPath><path id="wolf-pup-pm" d="M209 312C202 318 191 342 183 351C175 359 159 364 154 370C149 375 148 383 150 386C152 389 159 393 166 390C174 388 191 378 201 369C211 361 230 341 235 332C239 323 236 312 232 309C228 306 217 306 209 312Z"/><clipPath id="wolf-pup-cn"><use href="#wolf-pup-pm"/></clipPath><clipPath id="wolf-pup-co"><use href="#wolf-pup-pm" x="-6" y="-6"/></clipPath><path id="wolf-pup-pp" d="M128 384A22 12 0 1 0 172 384A22 12 0 1 0 128 384Z"/><clipPath id="wolf-pup-cq"><use href="#wolf-pup-pp"/></clipPath><clipPath id="wolf-pup-cr"><use href="#wolf-pup-pp" x="-5" y="-5"/></clipPath><path id="wolf-pup-ps" d="M223 317C217 324 210 348 203 357C197 366 183 372 180 378C176 384 176 393 178 396C181 399 189 401 196 398C203 395 216 384 225 375C233 365 249 344 253 335C256 325 251 314 247 311C242 309 230 310 223 317Z"/><clipPath id="wolf-pup-ct"><use href="#wolf-pup-ps"/></clipPath><clipPath id="wolf-pup-cu"><use href="#wolf-pup-ps" x="-7" y="-7"/></clipPath><path id="wolf-pup-pv" d="M152 392A24 13 0 1 0 200 392A24 13 0 1 0 152 392Z"/><clipPath id="wolf-pup-cw"><use href="#wolf-pup-pv"/></clipPath><clipPath id="wolf-pup-cx"><use href="#wolf-pup-pv" x="-5" y="-5"/></clipPath><path id="wolf-pup-py" d="M166 212L144 132L206 196Z"/><clipPath id="wolf-pup-cz"><use href="#wolf-pup-py"/></clipPath><clipPath id="wolf-pup-c10"><use href="#wolf-pup-py" x="-8" y="-6"/></clipPath><path id="wolf-pup-p11" d="M214 200L254 136L250 218Z"/><clipPath id="wolf-pup-c12"><use href="#wolf-pup-p11"/></clipPath><clipPath id="wolf-pup-c13"><use href="#wolf-pup-p11" x="-8" y="-6"/></clipPath><path id="wolf-pup-p14" d="M146 238C152 231 156 213 166 206C176 199 197 193 210 194C223 195 238 203 246 212C254 221 258 238 258 250C258 262 254 281 246 290C238 299 222 305 210 308C198 311 180 308 168 306C156 304 140 299 132 294C124 289 119 281 118 274C117 267 124 258 128 252C132 246 140 245 146 238Z"/><clipPath id="wolf-pup-c15"><use href="#wolf-pup-p14"/></clipPath><clipPath id="wolf-pup-c16"><use href="#wolf-pup-p14" x="-14" y="-12"/></clipPath><path id="wolf-pup-p17" d="M122 272C126 254 150 250 172 258C186 268 186 296 172 306C150 314 124 302 122 290Z"/><clipPath id="wolf-pup-c18"><use href="#wolf-pup-p17"/></clipPath><clipPath id="wolf-pup-c19"><use href="#wolf-pup-p17" x="-6" y="-6"/></clipPath><path id="wolf-pup-p1a" d="M150 300C150 316 158 326 166 326C174 326 176 314 172 302Z"/><clipPath id="wolf-pup-c1b"><use href="#wolf-pup-p1a"/></clipPath><clipPath id="wolf-pup-c1c"><use href="#wolf-pup-p1a" x="-3" y="-3"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#wolf-pup-l0)"/>
+<circle cx="210" cy="190" r="250" fill="url(#wolf-pup-r1)"/>
+<path d="M71 521C77 483 76 369 74 300C72 230 59 107 58 60C57 12 70 0 68 -17C66 -33 52 -47 43 -48C35 -49 18 -40 12 -23C6 -7 2 12 2 60C2 109 14 232 14 300C14 369 -2 481 1 519C4 557 24 555 35 555C45 555 65 560 71 521Z" fill="#10201a"/>
+<path d="M516 519C519 474 501 341 500 260C499 180 514 28 512 -19C509 -65 492 -50 483 -50C475 -50 459 -68 452 -21C445 25 438 178 436 260C434 341 430 476 436 521C442 566 465 560 477 560C489 560 513 564 516 519Z" fill="#10201a"/>
+<path d="M437 520C438 484 429 357 429 300C429 243 438 167 437 141C436 115 429 127 425 127C421 127 415 113 411 139C407 165 400 243 399 300C398 357 400 485 403 520C406 556 415 537 420 537C426 537 436 555 437 520Z" fill="#163024" fill-opacity="0.9"/>
+<path d="M326 30C322 46 273 62 246 73C219 84 193 93 165 95C137 98 106 94 78 90C51 86 22 81 1 71C-21 61 -53 43 -51 30C-49 17 -6 9 12 -7C29 -23 28 -57 55 -64C82 -71 140 -58 176 -51C212 -44 246 -35 271 -22C296 -8 330 14 326 30Z" fill="#1c4430"/>
+<path d="M592 20C590 33 543 42 523 55C504 69 501 97 477 102C452 107 408 90 375 85C342 79 294 79 280 68C265 57 280 34 286 20C293 6 305 0 317 -15C328 -31 328 -62 356 -72C384 -82 455 -83 485 -74C515 -65 520 -36 538 -20C555 -5 595 7 592 20Z" fill="#1c4430"/>
+<path d="M120 0L200 0L330 400L240 400Z" fill="#fff3b0" fill-opacity="0.07"/>
+<path d="M230 0L270 0L380 360L330 360Z" fill="#fff3b0" fill-opacity="0.05"/>
+<path d="M0 356Q256 320 512 356V512H0Z" fill="url(#wolf-pup-l2)"/>
+<ellipse cx="250" cy="398" rx="190" ry="53" fill="url(#wolf-pup-r3)"/>
+<path d="M46 380L52 356L58 376L64 350L68 378L76 360L76 380Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M93.2 440L100.4 411.2L107.6 435.2L114.8 404L119.6 437.6L129.2 416L129.2 440Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M384.6 420L391.2 393.6L397.8 415.6L404.4 387L408.8 417.8L417.6 398L417.6 420Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M449.4 372L454.8 350.4L460.2 368.4L465.6 345L469.2 370.2L476.4 354L476.4 372Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M286 470L292 446L298 466L304 440L308 468L316 450L316 470Z" fill="#4f8a3c" fill-opacity="0.8"/>
+<path d="M285 116L288 121L285 127L282 121Z" fill="#7bd389" fill-opacity="0.52"/>
+<path d="M84 56L87 61L84 67L81 61Z" fill="#a8742a" fill-opacity="0.64"/>
+<path d="M282 200L286 208L282 216L278 208Z" fill="#5f9a4a" fill-opacity="0.8"/>
+<path d="M181 81L185 88L181 96L177 88Z" fill="#7bd389" fill-opacity="0.65"/>
+<path d="M289 159L292 165L289 170L286 165Z" fill="#a8742a" fill-opacity="0.76"/>
+<path d="M235 165L239 171L235 178L232 171Z" fill="#5f9a4a" fill-opacity="0.54"/>
+<path d="M353 123L356 129L353 134L350 129Z" fill="#7bd389" fill-opacity="0.63"/>
+<path d="M85 64L89 70L85 77L82 70Z" fill="#a8742a" fill-opacity="0.87"/>
+<path d="M209 177L212 183L209 189L206 183Z" fill="#5f9a4a" fill-opacity="0.65"/>
+<ellipse cx="250" cy="396" rx="140" ry="16" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#wolf-pup-p4" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-c5)">
+<use href="#wolf-pup-p4" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-p4" x="-7" y="-7" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-c6)"><use href="#wolf-pup-p4" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<path d="M378 196L392 214" fill="none" stroke-width="4" stroke-opacity="0.4"/>
+<use href="#wolf-pup-p7" fill="#5a6788" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-c8)">
+<use href="#wolf-pup-p7" x="-6" y="-6" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-c9)"><use href="#wolf-pup-p7" x="7" y="7" fill="#74829f"/></g>
+</g>
+<use href="#wolf-pup-pa" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-cb)">
+<use href="#wolf-pup-pa" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-pa" x="-12" y="-12" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-cc)"><use href="#wolf-pup-pa" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<use href="#wolf-pup-pd" fill="#b9a98a"/>
+<g clip-path="url(#wolf-pup-ce)">
+<use href="#wolf-pup-pd" x="-4" y="-4" fill="#fff8ea"/>
+<g clip-path="url(#wolf-pup-cf)"><use href="#wolf-pup-pd" x="3" y="3" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pup-pg" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-ch)">
+<use href="#wolf-pup-pg" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-pg" x="-8" y="-6" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-ci)"><use href="#wolf-pup-pg" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<use href="#wolf-pup-pj" fill="#b9a98a" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-ck)">
+<use href="#wolf-pup-pj" x="-5" y="-5" fill="#fff8ea"/>
+<g clip-path="url(#wolf-pup-cl)"><use href="#wolf-pup-pj" x="3" y="3" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pup-pm" fill="#5a6788" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-cn)">
+<use href="#wolf-pup-pm" x="-6" y="-6" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-co)"><use href="#wolf-pup-pm" x="7" y="7" fill="#74829f"/></g>
+</g>
+<use href="#wolf-pup-pp" fill="#b9a98a" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-cq)">
+<use href="#wolf-pup-pp" x="-5" y="-5" fill="#fff8ea"/>
+<g clip-path="url(#wolf-pup-cr)"><use href="#wolf-pup-pp" x="3" y="3" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pup-ps" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-ct)">
+<use href="#wolf-pup-ps" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-ps" x="-7" y="-7" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-cu)"><use href="#wolf-pup-ps" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<use href="#wolf-pup-pv" fill="#b9a98a" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-cw)">
+<use href="#wolf-pup-pv" x="-5" y="-5" fill="#fff8ea"/>
+<g clip-path="url(#wolf-pup-cx)"><use href="#wolf-pup-pv" x="3" y="3" fill="#eadfc8"/></g>
+</g>
+<path d="M168 388V398M178 389V400" fill="none" stroke-width="3" stroke-opacity="0.6"/>
+<use href="#wolf-pup-py" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-cz)">
+<use href="#wolf-pup-py" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-py" x="-8" y="-6" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-c10)"><use href="#wolf-pup-py" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<path d="M166 200L154 152L192 194Z" fill="#ff9aad" fill-opacity="0.85"/>
+<use href="#wolf-pup-p11" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-c12)">
+<use href="#wolf-pup-p11" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-p11" x="-8" y="-6" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-c13)"><use href="#wolf-pup-p11" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<path d="M222 200L248 158L246 210Z" fill="#ff9aad" fill-opacity="0.85"/>
+<use href="#wolf-pup-p14" fill="#7bd389" stroke-width="12"/>
+<g clip-path="url(#wolf-pup-c15)">
+<use href="#wolf-pup-p14" x="-4" fill="#5a6788"/>
+<use href="#wolf-pup-p14" x="-14" y="-12" fill="#c3cee2"/>
+<g clip-path="url(#wolf-pup-c16)"><use href="#wolf-pup-p14" x="7" y="7" fill="#8d9cb8"/></g>
+</g>
+<use href="#wolf-pup-p17" fill="#b9a98a" stroke-width="8"/>
+<g clip-path="url(#wolf-pup-c18)">
+<use href="#wolf-pup-p17" x="-6" y="-6" fill="#fff8ea"/>
+<g clip-path="url(#wolf-pup-c19)"><use href="#wolf-pup-p17" x="4" y="4" fill="#eadfc8"/></g>
+</g>
+<use href="#wolf-pup-p1a" fill="#c94d68" stroke-width="8"/>
+<g clip-path="url(#wolf-pup-c1b)">
+<use href="#wolf-pup-p1a" x="-3" y="-3" fill="#ffb3c1"/>
+<g clip-path="url(#wolf-pup-c1c)"><use href="#wolf-pup-p1a" x="2" y="2" fill="#ff7a93"/></g>
+</g>
+<path d="M112 268A12 9 0 1 0 136 268A12 9 0 1 0 112 268Z" fill="#1d0842"/>
+<path d="M116 264A4 3 0 1 0 124 264A4 3 0 1 0 116 264Z" fill="#ffffff" fill-opacity="0.8"/>
+<path d="M126 278C132 292 146 296 158 290" fill="none" stroke-width="3.5"/>
+<path d="M157 244A13 15 0 1 0 183 244A13 15 0 1 0 157 244Z" fill="#1d0842"/>
+<path d="M202 240A12 14 0 1 0 226 240A12 14 0 1 0 202 240Z" fill="#1d0842"/>
+<path d="M161 238A5 5 0 1 0 171 238A5 5 0 1 0 161 238Z" fill="#ffffff"/>
+<path d="M206 234A5 5 0 1 0 215 234A5 5 0 1 0 206 234Z" fill="#ffffff"/>
+<path d="M172 250A2 2 0 1 0 176 250A2 2 0 1 0 172 250Z" fill="#ffffff"/>
+<path d="M216 246A2 2 0 1 0 220 246A2 2 0 1 0 216 246Z" fill="#ffffff"/>
+<path d="M184 210C190 222 196 222 200 210" fill="none" stroke-width="4" stroke-opacity="0.45"/>
+</svg>

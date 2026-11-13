@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="ignis-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1b0a2e"/><stop offset="0.55" stop-color="#7a1a2a"/><stop offset="1" stop-color="#e0541a"/></linearGradient><radialGradient id="ignis-r1" gradientUnits="userSpaceOnUse" cx="250" cy="250" r="300"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.42"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.189"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><linearGradient id="ignis-l2" gradientUnits="userSpaceOnUse" x1="0" y1="366" x2="0" y2="512"><stop offset="0" stop-color="#2a0a1e"/><stop offset="1" stop-color="#3a0c18"/></linearGradient><radialGradient id="ignis-r3" gradientUnits="userSpaceOnUse" cx="262" cy="432" r="220"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.55"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><radialGradient id="ignis-r4" gradientUnits="userSpaceOnUse" cx="256" cy="210" r="230"><stop offset="0" stop-color="#ffe066" stop-opacity="0.3"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.135"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><path id="ignis-p5" d="M238 236C222 172 200 112 176 64L66 84Q104 118 40 168Q100 186 88 236Q160 232 214 300Z"/><clipPath id="ignis-c6"><use href="#ignis-p5"/></clipPath><clipPath id="ignis-c7"><use href="#ignis-p5" x="-12" y="-12"/></clipPath><path id="ignis-p8" d="M296 228C318 166 344 104 372 52L470 74Q420 112 488 160Q420 184 440 236Q360 236 318 298Z"/><clipPath id="ignis-c9"><use href="#ignis-p8"/></clipPath><clipPath id="ignis-ca"><use href="#ignis-p8" x="-12" y="-12"/></clipPath><path id="ignis-pb" d="M242 229C238 215 220 173 211 148C201 123 186 76 181 62C175 49 176 59 174 59C173 60 168 52 171 66C175 80 189 127 197 152C206 178 220 222 226 235C232 248 235 241 237 240C240 240 246 243 242 229Z"/><clipPath id="ignis-cc"><use href="#ignis-pb"/></clipPath><clipPath id="ignis-cd"><use href="#ignis-pb" x="-3" y="-3"/></clipPath><path id="ignis-pe" d="M175 61C158 64 82 79 66 83C49 86 66 84 66 84C66 84 50 87 66 85C83 84 160 74 177 71C194 68 181 67 181 65C181 64 192 58 175 61Z"/><clipPath id="ignis-cf"><use href="#ignis-pe"/></clipPath><clipPath id="ignis-cg"><use href="#ignis-pe" x="-3" y="-3"/></clipPath><path id="ignis-ph" d="M173 62C152 78 59 151 39 167C19 183 40 168 40 168C40 168 20 184 41 169C62 155 158 86 179 70C200 54 181 64 180 63C179 62 194 46 173 62Z"/><clipPath id="ignis-ci"><use href="#ignis-ph"/></clipPath><clipPath id="ignis-cj"><use href="#ignis-ph" x="-3" y="-3"/></clipPath><path id="ignis-pk" d="M172 64C158 90 99 209 87 235C74 261 88 236 88 236C88 236 75 262 89 237C103 212 167 95 180 68C194 42 180 62 178 62C177 61 185 38 172 64Z"/><clipPath id="ignis-cl"><use href="#ignis-pk"/></clipPath><clipPath id="ignis-cm"><use href="#ignis-pk" x="-3" y="-3"/></clipPath><path id="ignis-pn" d="M308 227C315 214 330 169 340 143C351 117 372 68 377 54C382 40 375 48 374 47C373 47 374 37 367 50C360 64 339 112 328 137C316 163 296 206 292 221C287 235 294 231 297 232C299 233 302 241 308 227Z"/><clipPath id="ignis-co"><use href="#ignis-pn"/></clipPath><clipPath id="ignis-cp"><use href="#ignis-pn" x="-3" y="-3"/></clipPath><path id="ignis-pq" d="M371 59C386 62 455 73 470 75C485 78 470 74 470 74C470 74 485 76 470 73C456 69 388 52 373 49C358 46 367 52 367 53C367 54 356 56 371 59Z"/><clipPath id="ignis-cr"><use href="#ignis-pq"/></clipPath><clipPath id="ignis-cs"><use href="#ignis-pq" x="-3" y="-3"/></clipPath><path id="ignis-pt" d="M369 58C386 74 469 146 487 161C505 176 488 160 488 160C488 160 506 175 489 159C472 142 393 67 375 50C357 34 369 50 368 51C367 52 351 41 369 58Z"/><clipPath id="ignis-cu"><use href="#ignis-pt"/></clipPath><clipPath id="ignis-cv"><use href="#ignis-pt" x="-3" y="-3"/></clipPath><path id="ignis-pw" d="M367 56C378 84 428 209 439 237C449 264 440 236 440 236C440 236 451 263 441 235C432 208 387 80 377 52C366 24 372 49 370 49C369 50 357 28 367 56Z"/><clipPath id="ignis-cx"><use href="#ignis-pw"/></clipPath><clipPath id="ignis-cy"><use href="#ignis-pw" x="-3" y="-3"/></clipPath><path id="ignis-pz" d="M182 62C180 58 171 46 169 44C167 41 168 44 168 44C168 44 167 41 167 44C167 48 169 62 170 66C172 70 177 70 178 70C180 69 183 66 182 62Z"/><clipPath id="ignis-c10"><use href="#ignis-pz"/></clipPath><clipPath id="ignis-c11"><use href="#ignis-pz" x="-2" y="-2"/></clipPath><path id="ignis-p12" d="M378 54C379 49 379 34 379 30C379 27 378 30 378 30C378 30 379 27 377 30C375 33 367 46 366 50C365 55 369 57 370 58C372 58 377 58 378 54Z"/><clipPath id="ignis-c13"><use href="#ignis-p12"/></clipPath><clipPath id="ignis-c14"><use href="#ignis-p12" x="-2" y="-2"/></clipPath><path id="ignis-p15" d="M303 407C317 414 359 427 380 425C401 423 431 405 442 392C453 380 456 353 455 342C454 330 438 319 434 315C430 311 428 313 427 314C426 315 424 317 426 321C427 325 438 335 437 342C436 350 431 365 422 372C414 379 395 389 380 387C364 385 331 363 317 361C303 360 289 370 287 377C285 384 289 400 303 407Z"/><clipPath id="ignis-c16"><use href="#ignis-p15"/></clipPath><clipPath id="ignis-c17"><use href="#ignis-p15" x="-8" y="-8"/></clipPath><path id="ignis-p18" d="M430 326L452 290L446 320L472 314Z"/><clipPath id="ignis-c19"><use href="#ignis-p18"/></clipPath><clipPath id="ignis-c1a"><use href="#ignis-p18" x="-10" y="-10"/></clipPath><path id="ignis-p1b" d="M276 364C276 373 267 385 258 391C249 398 234 402 222 403C210 403 194 399 185 392C176 386 167 374 167 364C167 354 175 342 184 335C194 328 210 324 222 324C234 324 249 330 258 336C267 343 276 355 276 364Z"/><clipPath id="ignis-c1c"><use href="#ignis-p1b"/></clipPath><clipPath id="ignis-c1d"><use href="#ignis-p1b" x="-10" y="-10"/></clipPath><path id="ignis-p1e" d="M372 364C372 373 361 384 352 390C343 397 329 404 318 404C307 404 293 397 284 390C275 384 264 373 264 364C263 355 272 342 281 336C290 329 306 324 318 324C330 324 344 331 353 337C362 344 372 355 372 364Z"/><clipPath id="ignis-c1f"><use href="#ignis-p1e"/></clipPath><clipPath id="ignis-c1g"><use href="#ignis-p1e" x="-10" y="-10"/></clipPath><path id="ignis-p1h" d="M179 392C178 395 177 405 177 408C177 410 178 408 178 408C178 408 177 410 179 408C181 407 188 399 189 396C190 393 187 390 186 389C185 389 181 389 179 392Z"/><clipPath id="ignis-c1i"><use href="#ignis-p1h"/></clipPath><clipPath id="ignis-c1j"><use href="#ignis-p1h" x="-2" y="-2"/></clipPath><path id="ignis-p1k" d="M193 392C192 395 191 405 191 408C191 410 192 408 192 408C192 408 191 410 193 408C195 407 202 399 203 396C204 393 201 390 200 389C199 389 195 389 193 392Z"/><clipPath id="ignis-c1l"><use href="#ignis-p1k"/></clipPath><clipPath id="ignis-c1m"><use href="#ignis-p1k" x="-2" y="-2"/></clipPath><path id="ignis-p1n" d="M207 392C206 395 205 405 205 408C205 410 206 408 206 408C206 408 205 410 207 408C209 407 216 399 217 396C218 393 215 390 214 389C213 389 209 389 207 392Z"/><clipPath id="ignis-c1o"><use href="#ignis-p1n"/></clipPath><clipPath id="ignis-c1p"><use href="#ignis-p1n" x="-2" y="-2"/></clipPath><path id="ignis-p1q" d="M323 396C324 399 331 407 333 408C335 410 334 408 334 408C334 408 335 410 335 408C335 405 334 395 333 392C331 389 327 389 326 389C325 390 322 393 323 396Z"/><clipPath id="ignis-c1r"><use href="#ignis-p1q"/></clipPath><clipPath id="ignis-c1s"><use href="#ignis-p1q" x="-2" y="-2"/></clipPath><path id="ignis-p1t" d="M337 396C338 399 345 407 347 408C349 410 348 408 348 408C348 408 349 410 349 408C349 405 348 395 347 392C345 389 341 389 340 389C339 390 336 393 337 396Z"/><clipPath id="ignis-c1u"><use href="#ignis-p1t"/></clipPath><clipPath id="ignis-c1v"><use href="#ignis-p1t" x="-2" y="-2"/></clipPath><path id="ignis-p1w" d="M351 396C352 399 359 407 361 408C363 410 362 408 362 408C362 408 363 410 363 408C363 405 362 395 361 392C359 389 355 389 354 389C353 390 350 393 351 396Z"/><clipPath id="ignis-c1x"><use href="#ignis-p1w"/></clipPath><clipPath id="ignis-c1y"><use href="#ignis-p1w" x="-2" y="-2"/></clipPath><path id="ignis-p1z" d="M218 260C227 247 248 229 262 226C276 223 301 229 312 240C323 251 333 281 334 300C335 319 328 354 318 368C308 382 282 392 266 392C250 392 223 382 214 370C205 358 203 327 204 310C205 294 209 273 218 260Z"/><clipPath id="ignis-c20"><use href="#ignis-p1z"/></clipPath><clipPath id="ignis-c21"><use href="#ignis-p1z" x="-16" y="-14"/></clipPath><radialGradient id="ignis-r22" gradientUnits="userSpaceOnUse" cx="266" cy="320" r="90"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.5"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.225"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="ignis-p23" d="M244 250C251 242 274 241 282 248C290 256 295 283 296 300C297 317 295 348 290 360C286 372 274 380 266 380C259 380 245 372 240 360C235 348 233 317 234 300C235 284 237 258 244 250Z"/><clipPath id="ignis-c24"><use href="#ignis-p23"/></clipPath><clipPath id="ignis-c25"><use href="#ignis-p23" x="-6" y="-6"/></clipPath><path id="ignis-p26" d="M217 263C210 266 197 286 192 286C188 286 190 269 187 265C184 261 174 258 171 259C168 261 163 267 165 275C168 283 177 311 188 314C198 316 227 299 235 293C243 286 243 273 241 269C238 265 224 261 217 263Z"/><clipPath id="ignis-c27"><use href="#ignis-p26"/></clipPath><clipPath id="ignis-c28"><use href="#ignis-p26" x="-7" y="-7"/></clipPath><path id="ignis-p29" d="M179 263C177 260 164 250 161 247C158 245 160 248 160 248C160 248 157 246 159 249C161 252 170 266 173 269C176 272 178 270 179 269C180 268 182 266 179 263Z"/><clipPath id="ignis-c2a"><use href="#ignis-p29"/></clipPath><clipPath id="ignis-c2b"><use href="#ignis-p29" x="-2" y="-2"/></clipPath><path id="ignis-p2c" d="M180 265C180 261 174 245 173 242C172 238 172 242 172 242C172 242 171 238 171 242C171 246 171 262 172 267C172 271 175 271 177 270C178 270 181 270 180 265Z"/><clipPath id="ignis-c2d"><use href="#ignis-p2c"/></clipPath><clipPath id="ignis-c2e"><use href="#ignis-p2c" x="-2" y="-2"/></clipPath><path id="ignis-p2f" d="M180 268C182 264 184 250 185 246C186 243 184 246 184 246C184 246 185 243 183 246C181 248 173 261 172 264C171 268 173 270 174 270C176 271 179 271 180 268Z"/><clipPath id="ignis-c2g"><use href="#ignis-p2f"/></clipPath><clipPath id="ignis-c2h"><use href="#ignis-p2f" x="-2" y="-2"/></clipPath><path id="ignis-p2i" d="M290 233C295 233 306 226 311 224C316 222 321 218 322 217C324 216 322 216 322 216C322 216 324 216 322 215C320 214 314 213 309 212C304 212 291 209 286 211C281 213 277 221 277 224C278 227 285 233 290 233Z"/><clipPath id="ignis-c2j"><use href="#ignis-p2i"/></clipPath><clipPath id="ignis-c2k"><use href="#ignis-p2i" x="-4" y="-4"/></clipPath><path id="ignis-p2l" d="M285 202C290 200 301 191 305 186C309 182 313 175 315 173C316 171 314 172 314 172C314 172 316 171 313 171C311 172 305 174 299 176C293 177 279 179 275 182C271 185 269 194 270 197C272 200 280 203 285 202Z"/><clipPath id="ignis-c2m"><use href="#ignis-p2l"/></clipPath><clipPath id="ignis-c2n"><use href="#ignis-p2l" x="-4" y="-4"/></clipPath><path id="ignis-p2o" d="M269 174C274 171 281 160 284 154C287 148 288 139 289 137C289 134 288 136 288 136C288 136 289 134 287 135C285 137 280 143 275 146C270 149 258 154 255 158C251 162 252 171 254 173C256 176 265 177 269 174Z"/><clipPath id="ignis-c2p"><use href="#ignis-p2o"/></clipPath><clipPath id="ignis-c2q"><use href="#ignis-p2o" x="-4" y="-4"/></clipPath><path id="ignis-p2r" d="M250 153C253 150 255 138 256 132C256 126 255 117 255 114C255 111 254 114 254 114C254 114 254 112 253 114C252 116 248 123 244 128C241 132 232 138 230 143C229 147 232 156 235 158C238 159 246 157 250 153Z"/><clipPath id="ignis-c2s"><use href="#ignis-p2r"/></clipPath><clipPath id="ignis-c2t"><use href="#ignis-p2r" x="-4" y="-4"/></clipPath><path id="ignis-p2u" d="M312 257C314 241 303 212 295 195C287 179 269 159 258 149C246 139 228 131 217 130C206 128 189 133 186 139C182 145 190 163 195 170C201 177 216 180 222 187C229 194 235 204 237 217C239 229 230 255 236 267C243 280 268 301 279 300C291 298 309 272 312 257Z"/><clipPath id="ignis-c2v"><use href="#ignis-p2u"/></clipPath><clipPath id="ignis-c2w"><use href="#ignis-p2u" x="-12" y="-10"/></clipPath><path id="ignis-p2x" d="M225 144C233 138 244 113 255 103C266 94 290 83 296 79C303 75 296 78 296 78C296 78 303 75 296 77C288 79 259 82 245 89C231 96 209 115 203 124C197 132 200 142 204 145C207 148 217 151 225 144Z"/><clipPath id="ignis-c2y"><use href="#ignis-p2x"/></clipPath><clipPath id="ignis-c2z"><use href="#ignis-p2x" x="-10" y="-10"/></clipPath><path id="ignis-p30" d="M213 128C215 119 211 94 213 81C216 68 230 47 233 41C236 34 232 40 232 40C232 40 236 34 231 39C226 45 205 62 199 75C192 88 187 115 187 124C187 134 195 138 198 139C202 139 211 136 213 128Z"/><clipPath id="ignis-c31"><use href="#ignis-p30"/></clipPath><clipPath id="ignis-c32"><use href="#ignis-p30" x="-10" y="-10"/></clipPath><path id="ignis-p33" d="M227 161C235 159 256 150 268 144C280 137 301 121 306 117C312 113 306 116 306 116C306 116 312 113 306 115C299 118 276 129 264 132C251 136 229 136 221 139C213 143 213 150 213 153C214 156 219 162 227 161Z"/><clipPath id="ignis-c34"><use href="#ignis-p33"/></clipPath><clipPath id="ignis-c35"><use href="#ignis-p33" x="-10" y="-10"/></clipPath><path id="ignis-p36" d="M195 121C193 115 182 101 181 92C180 83 185 67 185 62C185 58 184 62 184 62C184 62 185 57 183 62C181 66 172 82 171 92C170 102 175 121 177 127C180 133 186 133 189 133C191 132 196 127 195 121Z"/><clipPath id="ignis-c37"><use href="#ignis-p36"/></clipPath><clipPath id="ignis-c38"><use href="#ignis-p36" x="-10" y="-10"/></clipPath><path id="ignis-p39" d="M228 130C214 112 186 112 166 122L118 136C110 142 112 152 122 154L170 156L226 170C236 158 236 142 228 130Z"/><clipPath id="ignis-c3a"><use href="#ignis-p39"/></clipPath><clipPath id="ignis-c3b"><use href="#ignis-p39" x="-10" y="-8"/></clipPath><path id="ignis-p3c" d="M216 166L176 168L128 184C122 190 126 198 134 198L180 196L222 184Z"/><clipPath id="ignis-c3d"><use href="#ignis-p3c"/></clipPath><clipPath id="ignis-c3e"><use href="#ignis-p3c" x="-6" y="-6"/></clipPath><radialGradient id="ignis-r3f" gradientUnits="userSpaceOnUse" cx="168" cy="176" r="70"><stop offset="0" stop-color="#ffbe0b" stop-opacity="0.95"/><stop offset="0.45" stop-color="#ffbe0b" stop-opacity="0.4275"/><stop offset="1" stop-color="#ffbe0b" stop-opacity="0"/></radialGradient><path id="ignis-p3g" d="M132 166C128 160 112 148 104 142C96 136 80 123 74 124C68 125 63 142 58 146C53 150 37 148 36 152C35 156 51 168 50 174C49 180 28 194 30 198C32 202 56 200 62 204C68 208 69 226 74 226C79 226 92 209 100 204C108 199 128 193 132 188C136 183 136 172 132 166Z"/><clipPath id="ignis-c3h"><use href="#ignis-p3g"/></clipPath><clipPath id="ignis-c3i"><use href="#ignis-p3g" x="-8" y="-8"/></clipPath><path id="ignis-p3j" d="M132 172C128 168 112 160 104 158C96 156 84 153 78 156C72 159 65 170 66 176C67 182 78 192 84 194C90 196 101 194 108 192C115 191 128 187 132 184C136 181 136 176 132 172Z"/><clipPath id="ignis-c3k"><use href="#ignis-p3j"/></clipPath><clipPath id="ignis-c3l"><use href="#ignis-p3j" x="-4" y="-4"/></clipPath><radialGradient id="ignis-r3m" gradientUnits="userSpaceOnUse" cx="194" cy="133" r="22"><stop offset="0" stop-color="#ffe066" stop-opacity="0.9"/><stop offset="0.45" stop-color="#ffe066" stop-opacity="0.405"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#ignis-l0)"/>
+<circle cx="250" cy="250" r="300" fill="url(#ignis-r1)"/>
+<path d="M0 384L50 300L90 340L140 270L180 330L210 310L250 384Z" fill="#2a0a1e"/>
+<path d="M262 384L320 300L350 330L410 250L450 300L512 270V384Z" fill="#2a0a1e"/>
+<path d="M140 272L150 300L140 330M410 252L404 286L416 320" fill="none" stroke="#ff7b00" stroke-width="4" stroke-opacity="0.7"/>
+<path d="M0 402Q256 366 512 402V512H0Z" fill="url(#ignis-l2)"/>
+<ellipse cx="262" cy="432" rx="220" ry="62" fill="url(#ignis-r3)"/>
+<path d="M30 452C90 432 120 472 180 446M330 472C380 442 420 478 490 452" fill="none" stroke="#ff7b00" stroke-width="5" stroke-opacity="0.7"/>
+<circle cx="256" cy="210" r="230" fill="url(#ignis-r4)"/>
+<g transform="translate(256 410) scale(0.9) translate(-256 -410)">
+<use href="#ignis-p5" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#ignis-c6)">
+<use href="#ignis-p5" x="-4" fill="#6a1028"/>
+<use href="#ignis-p5" x="-12" y="-12" fill="#e05a3a"/>
+<g clip-path="url(#ignis-c7)"><use href="#ignis-p5" x="7" y="7" fill="#b02a3a"/></g>
+</g>
+<use href="#ignis-p8" fill="#ff006e" stroke-width="12"/>
+<g clip-path="url(#ignis-c9)">
+<use href="#ignis-p8" x="-4" fill="#6a1028"/>
+<use href="#ignis-p8" x="-12" y="-12" fill="#e05a3a"/>
+<g clip-path="url(#ignis-ca)"><use href="#ignis-p8" x="7" y="7" fill="#b02a3a"/></g>
+</g>
+<path d="M170 90L110 120M164 120L104 196M180 150L140 236" fill="none" stroke="#ff7b00" stroke-width="9" stroke-opacity="0.35"/>
+<path d="M170 90L110 120M164 120L104 196M180 150L140 236" fill="none" stroke="#ffbe0b" stroke-width="3"/>
+<path d="M378 80L440 104M386 112L446 176M372 150L412 230" fill="none" stroke="#ff7b00" stroke-width="9" stroke-opacity="0.35"/>
+<path d="M378 80L440 104M386 112L446 176M372 150L412 230" fill="none" stroke="#ffbe0b" stroke-width="3"/>
+<use href="#ignis-pb" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-cc)">
+<use href="#ignis-pb" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cd)"><use href="#ignis-pb" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pe" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-cf)">
+<use href="#ignis-pe" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cg)"><use href="#ignis-pe" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-ph" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-ci)">
+<use href="#ignis-ph" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cj)"><use href="#ignis-ph" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pk" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-cl)">
+<use href="#ignis-pk" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cm)"><use href="#ignis-pk" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pn" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-co)">
+<use href="#ignis-pn" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cp)"><use href="#ignis-pn" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pq" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-cr)">
+<use href="#ignis-pq" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cs)"><use href="#ignis-pq" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pt" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-cu)">
+<use href="#ignis-pt" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cv)"><use href="#ignis-pt" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pw" fill="#240a1e" stroke-width="8"/>
+<g clip-path="url(#ignis-cx)">
+<use href="#ignis-pw" x="-3" y="-3" fill="#7a3456"/>
+<g clip-path="url(#ignis-cy)"><use href="#ignis-pw" x="2" y="2" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-pz" fill="#ff006e" stroke-width="8"/>
+<g clip-path="url(#ignis-c10)">
+<use href="#ignis-pz" x="-3" fill="#c2410c"/>
+<use href="#ignis-pz" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c11)"><use href="#ignis-pz" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p12" fill="#ff006e" stroke-width="8"/>
+<g clip-path="url(#ignis-c13)">
+<use href="#ignis-p12" x="-3" fill="#c2410c"/>
+<use href="#ignis-p12" x="-2" y="-2" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c14)"><use href="#ignis-p12" x="1" y="1" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p15" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c16)">
+<use href="#ignis-p15" x="-6" fill="#240a1e"/>
+<use href="#ignis-p15" x="-8" y="-8" fill="#7a3456"/>
+<g clip-path="url(#ignis-c17)"><use href="#ignis-p15" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<path d="M340 396L372 404L400 396" fill="none" stroke="#ff7b00" stroke-width="9" stroke-opacity="0.35"/>
+<path d="M340 396L372 404L400 396" fill="none" stroke="#ffbe0b" stroke-width="3"/>
+<use href="#ignis-p18" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#ignis-c19)">
+<use href="#ignis-p18" x="-3" fill="#c2410c"/>
+<use href="#ignis-p18" x="-10" y="-10" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c1a)"><use href="#ignis-p18" x="7" y="7" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p1b" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c1c)">
+<use href="#ignis-p1b" x="-6" fill="#240a1e"/>
+<use href="#ignis-p1b" x="-10" y="-10" fill="#7a3456"/>
+<g clip-path="url(#ignis-c1d)"><use href="#ignis-p1b" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-p1e" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c1f)">
+<use href="#ignis-p1e" x="-6" fill="#240a1e"/>
+<use href="#ignis-p1e" x="-10" y="-10" fill="#7a3456"/>
+<g clip-path="url(#ignis-c1g)"><use href="#ignis-p1e" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<path d="M196 346L214 362L206 384M344 346L326 362L334 384" fill="none" stroke="#ff7b00" stroke-width="9" stroke-opacity="0.35"/>
+<path d="M196 346L214 362L206 384M344 346L326 362L334 384" fill="none" stroke="#ffbe0b" stroke-width="3"/>
+<use href="#ignis-p1h" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c1i)">
+<use href="#ignis-p1h" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c1j)"><use href="#ignis-p1h" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p1k" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c1l)">
+<use href="#ignis-p1k" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c1m)"><use href="#ignis-p1k" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p1n" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c1o)">
+<use href="#ignis-p1n" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c1p)"><use href="#ignis-p1n" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p1q" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c1r)">
+<use href="#ignis-p1q" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c1s)"><use href="#ignis-p1q" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p1t" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c1u)">
+<use href="#ignis-p1t" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c1v)"><use href="#ignis-p1t" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p1w" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c1x)">
+<use href="#ignis-p1w" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c1y)"><use href="#ignis-p1w" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p1z" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c20)">
+<use href="#ignis-p1z" x="-6" fill="#240a1e"/>
+<use href="#ignis-p1z" x="-16" y="-14" fill="#7a3456"/>
+<g clip-path="url(#ignis-c21)"><use href="#ignis-p1z" x="10" y="10" fill="#4a1a3a"/></g>
+</g>
+<circle cx="266" cy="320" r="90" fill="url(#ignis-r22)"/>
+<use href="#ignis-p23" fill="#ff7b00" stroke-width="8"/>
+<g clip-path="url(#ignis-c24)">
+<use href="#ignis-p23" x="-6" y="-6" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c25)"><use href="#ignis-p23" x="4" y="4" fill="#ffbe0b"/></g>
+</g>
+<path d="M238 280C256 286 276 286 294 280M236 306C256 312 278 312 296 306M238 332C256 338 276 338 294 332M244 356C256 362 274 362 288 356" fill="none" stroke="#c2410c" stroke-width="4"/>
+<path d="M222 272L214 300L226 322M314 262L322 292L310 316" fill="none" stroke="#ff7b00" stroke-width="9" stroke-opacity="0.35"/>
+<path d="M222 272L214 300L226 322M314 262L322 292L310 316" fill="none" stroke="#ffbe0b" stroke-width="3"/>
+<use href="#ignis-p26" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c27)">
+<use href="#ignis-p26" x="-6" fill="#240a1e"/>
+<use href="#ignis-p26" x="-7" y="-7" fill="#7a3456"/>
+<g clip-path="url(#ignis-c28)"><use href="#ignis-p26" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-p29" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c2a)">
+<use href="#ignis-p29" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c2b)"><use href="#ignis-p29" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p2c" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c2d)">
+<use href="#ignis-p2c" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c2e)"><use href="#ignis-p2c" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p2f" fill="#a89f8a" stroke-width="6"/>
+<g clip-path="url(#ignis-c2g)">
+<use href="#ignis-p2f" x="-2" y="-2" fill="#fffaf0"/>
+<g clip-path="url(#ignis-c2h)"><use href="#ignis-p2f" x="1" y="1" fill="#e9e2cf"/></g>
+</g>
+<use href="#ignis-p2i" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#ignis-c2j)">
+<use href="#ignis-p2i" x="-4" y="-4" fill="#ffe066"/>
+<g clip-path="url(#ignis-c2k)"><use href="#ignis-p2i" x="3" y="3" fill="#ff7b00"/></g>
+</g>
+<use href="#ignis-p2l" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#ignis-c2m)">
+<use href="#ignis-p2l" x="-4" y="-4" fill="#ffe066"/>
+<g clip-path="url(#ignis-c2n)"><use href="#ignis-p2l" x="3" y="3" fill="#ff7b00"/></g>
+</g>
+<use href="#ignis-p2o" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#ignis-c2p)">
+<use href="#ignis-p2o" x="-4" y="-4" fill="#ffe066"/>
+<g clip-path="url(#ignis-c2q)"><use href="#ignis-p2o" x="3" y="3" fill="#ff7b00"/></g>
+</g>
+<use href="#ignis-p2r" fill="#c2410c" stroke-width="8"/>
+<g clip-path="url(#ignis-c2s)">
+<use href="#ignis-p2r" x="-4" y="-4" fill="#ffe066"/>
+<g clip-path="url(#ignis-c2t)"><use href="#ignis-p2r" x="3" y="3" fill="#ff7b00"/></g>
+</g>
+<use href="#ignis-p2u" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c2v)">
+<use href="#ignis-p2u" x="-6" fill="#240a1e"/>
+<use href="#ignis-p2u" x="-12" y="-10" fill="#7a3456"/>
+<g clip-path="url(#ignis-c2w)"><use href="#ignis-p2u" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<path d="M262 248L254 214L234 186" fill="none" stroke="#ff7b00" stroke-width="9" stroke-opacity="0.35"/>
+<path d="M262 248L254 214L234 186" fill="none" stroke="#ffbe0b" stroke-width="3"/>
+<use href="#ignis-p2x" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#ignis-c2y)">
+<use href="#ignis-p2x" x="-3" fill="#c2410c"/>
+<use href="#ignis-p2x" x="-10" y="-10" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c2z)"><use href="#ignis-p2x" x="7" y="7" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p30" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#ignis-c31)">
+<use href="#ignis-p30" x="-3" fill="#c2410c"/>
+<use href="#ignis-p30" x="-10" y="-10" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c32)"><use href="#ignis-p30" x="7" y="7" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p33" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#ignis-c34)">
+<use href="#ignis-p33" x="-3" fill="#c2410c"/>
+<use href="#ignis-p33" x="-10" y="-10" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c35)"><use href="#ignis-p33" x="7" y="7" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p36" fill="#ff006e" stroke-width="10"/>
+<g clip-path="url(#ignis-c37)">
+<use href="#ignis-p36" x="-3" fill="#c2410c"/>
+<use href="#ignis-p36" x="-10" y="-10" fill="#fff1c1"/>
+<g clip-path="url(#ignis-c38)"><use href="#ignis-p36" x="7" y="7" fill="#f2c14e"/></g>
+</g>
+<use href="#ignis-p39" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c3a)">
+<use href="#ignis-p39" x="-6" fill="#240a1e"/>
+<use href="#ignis-p39" x="-10" y="-8" fill="#7a3456"/>
+<g clip-path="url(#ignis-c3b)"><use href="#ignis-p39" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<use href="#ignis-p3c" fill="#ff006e" stroke-width="14"/>
+<g clip-path="url(#ignis-c3d)">
+<use href="#ignis-p3c" x="-6" fill="#240a1e"/>
+<use href="#ignis-p3c" x="-6" y="-6" fill="#7a3456"/>
+<g clip-path="url(#ignis-c3e)"><use href="#ignis-p3c" x="7" y="7" fill="#4a1a3a"/></g>
+</g>
+<path d="M174 156L216 166L222 182L178 194L132 196L170 168Z" fill="#3a0612"/>
+<circle cx="168" cy="176" r="70" fill="url(#ignis-r3f)"/>
+<path d="M128 154L136 154L132 163Z" fill="#fff1c1"/>
+<path d="M142 155L150 155L146 164Z" fill="#fff1c1"/>
+<path d="M156 156L164 156L160 165Z" fill="#fff1c1"/>
+<path d="M136 186L144 186L140 177Z" fill="#fff1c1"/>
+<path d="M150 184L158 184L154 175Z" fill="#fff1c1"/>
+<use href="#ignis-p3g" fill="#c2410c" stroke-width="10"/>
+<g clip-path="url(#ignis-c3h)">
+<use href="#ignis-p3g" x="-8" y="-8" fill="#ffe066"/>
+<g clip-path="url(#ignis-c3i)"><use href="#ignis-p3g" x="5" y="5" fill="#ff7b00"/></g>
+</g>
+<use href="#ignis-p3j" fill="#ffbe0b"/>
+<g clip-path="url(#ignis-c3k)">
+<use href="#ignis-p3j" x="-4" y="-4" fill="#fff8d6"/>
+<g clip-path="url(#ignis-c3l)"><use href="#ignis-p3j" x="3" y="3" fill="#ffe066"/></g>
+</g>
+<circle cx="194" cy="133" r="22" fill="url(#ignis-r3m)"/>
+<path d="M180 127L208 129L201 140L179 138Z" fill="#ffe066"/>
+<path d="M191 128L195 128L194 139L190 139Z" fill="#1d0842"/>
+<path d="M178 123L208 120" fill="none" stroke-width="4"/>
+<path d="M214 128L196 144" fill="none" stroke="#ff7b00" stroke-width="8" stroke-opacity="0.35"/>
+<path d="M214 128L196 144" fill="none" stroke="#ffbe0b" stroke-width="2"/>
+<path d="M121 140A3 2 0 1 0 127 140A3 2 0 1 0 121 140Z" fill="#1d0842"/>
+</g>
+<path d="M98 66L101 71L98 77L95 71Z" fill="#ffbe0b" fill-opacity="0.54"/>
+<path d="M152 154L155 160L152 166L149 160Z" fill="#ff7b00" fill-opacity="0.66"/>
+<path d="M453 449L456 454L453 459L450 454Z" fill="#ffe066" fill-opacity="0.99"/>
+<path d="M332 73L334 77L332 80L331 77Z" fill="#ffbe0b" fill-opacity="0.6"/>
+<path d="M423 236L425 239L423 243L421 239Z" fill="#ff7b00" fill-opacity="0.93"/>
+<path d="M320 429L323 434L320 439L317 434Z" fill="#ffe066" fill-opacity="0.58"/>
+<path d="M312 270L315 276L312 282L309 276Z" fill="#ffbe0b" fill-opacity="0.91"/>
+<path d="M108 158L113 166L108 175L104 166Z" fill="#ff7b00" fill-opacity="0.89"/>
+<path d="M74 339L77 346L74 352L70 346Z" fill="#ffe066" fill-opacity="0.73"/>
+<path d="M407 87L410 94L407 100L403 94Z" fill="#ffbe0b" fill-opacity="0.84"/>
+<path d="M175 127L178 132L175 137L172 132Z" fill="#ff7b00" fill-opacity="0.71"/>
+<path d="M438 269L441 275L438 281L435 275Z" fill="#ffe066" fill-opacity="0.96"/>
+<path d="M97 370L100 376L97 382L94 376Z" fill="#ffbe0b" fill-opacity="0.99"/>
+<path d="M89 342L91 346L89 349L87 346Z" fill="#ff7b00" fill-opacity="0.97"/>
+</svg>

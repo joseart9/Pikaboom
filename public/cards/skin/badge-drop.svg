@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs><linearGradient id="badge-drop-b" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#ff7a93"/><stop offset="0.55" stop-color="#ff4d6d"/><stop offset="1" stop-color="#b81d42"/></linearGradient><radialGradient id="badge-drop-g" cx="0.38" cy="0.55" r="0.55"><stop offset="0" stop-color="#ff9aad" stop-opacity="0.9"/><stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/></radialGradient></defs>
+<path d="M50 3C70 29 95 45 95 65A45 45 0 0 1 5 65C5 45 30 29 50 3Z" fill="#1d0842" stroke="#1d0842" stroke-width="3" stroke-linejoin="round"/>
+<path d="M50 11.3C67.2 33.6 88.7 47.4 88.7 64.6A38.7 38.7 0 0 1 11.3 64.6C11.3 47.4 32.8 33.6 50 11.3Z" fill="url(#badge-drop-b)"/>
+<path d="M50 11.3C67.2 33.6 88.7 47.4 88.7 64.6A38.7 38.7 0 0 1 11.3 64.6C11.3 47.4 32.8 33.6 50 11.3Z" fill="url(#badge-drop-g)"/>
+<path d="M24.6 62C24.6 50.4 33.4 39.6 42.4 28.6L45 30.6C37 41 30.2 51 30.2 62Z" fill="#ffe0e6" fill-opacity="0.8"/>
+<path d="M20.8 74.6C27 86.4 44.6 91.2 60 86.8 47 88.6 32.4 84.6 26 74Z" fill="#7d0f2c" fill-opacity="0.55"/>
+</svg>

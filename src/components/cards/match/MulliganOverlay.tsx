@@ -11,6 +11,7 @@ import { cardName, t } from "@/game/cards/i18n";
 import type { MeView } from "@/game/cards/server/view";
 import { CardFace } from "../card/CardFace";
 import { TurnTimer } from "./TurnTimer";
+import { GameIcon } from "../skin";
 
 export interface MulliganOverlayProps {
   client: MatchClient;
@@ -54,7 +55,7 @@ export function MulliganOverlay({ client, me, iGoFirst, canMulligan, pending }: 
               <CardFace def={def} overrides={{ cost: card.cost }} state={isMarked ? "locked" : "normal"} />
               {isMarked && (
                 <span className="cg-mulligan-x" aria-hidden>
-                  ✕
+                  <GameIcon name="close" size="60%" outlined />
                 </span>
               )}
             </button>

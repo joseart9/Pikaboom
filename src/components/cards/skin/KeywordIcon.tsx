@@ -27,7 +27,7 @@ export function KeywordIcon({ keyword, value, size, title }: KeywordIconProps) {
       }}
     >
       <svg viewBox="0 0 24 24" aria-hidden style={{ width: "72%", height: "72%" }}>
-        <path d={g.d} fill={g.fill} fillRule="evenodd" stroke="#1d0842" strokeWidth={1} />
+        <path d={g.d} fill={g.fill} fillRule={g.rule ?? "evenodd"} stroke="#1d0842" strokeWidth={1} />
       </svg>
       {value !== undefined && (
         <span

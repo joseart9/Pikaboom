@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="morvath-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#0b0418"/><stop offset="0.55" stop-color="#2a1458"/><stop offset="1" stop-color="#140a2c"/></linearGradient><radialGradient id="morvath-r1" gradientUnits="userSpaceOnUse" cx="256" cy="180" r="280"><stop offset="0" stop-color="#b388ff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#b388ff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#b388ff" stop-opacity="0"/></radialGradient><linearGradient id="morvath-l2" gradientUnits="userSpaceOnUse" x1="0" y1="354" x2="0" y2="512"><stop offset="0" stop-color="#2a1458"/><stop offset="1" stop-color="#120624"/></linearGradient><radialGradient id="morvath-r3" gradientUnits="userSpaceOnUse" cx="256" cy="420" r="210"><stop offset="0" stop-color="#c77dff" stop-opacity="0.55"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><radialGradient id="morvath-r4" gradientUnits="userSpaceOnUse" cx="256" cy="150" r="170"><stop offset="0" stop-color="#c77dff" stop-opacity="0.45"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.2025"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="morvath-p5" d="M154 440C155 415 155 327 155 280C155 234 157 153 156 130C155 107 152 124 150 124C148 124 145 107 144 130C143 153 142 233 141 280C140 326 137 415 138 440C139 465 144 448 146 448C148 448 153 465 154 440Z"/><clipPath id="morvath-c6"><use href="#morvath-p5"/></clipPath><clipPath id="morvath-c7"><use href="#morvath-p5" x="-4" y="-4"/></clipPath><radialGradient id="morvath-r8" gradientUnits="userSpaceOnUse" cx="150" cy="98" r="90"><stop offset="0" stop-color="#c77dff" stop-opacity="0.85"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.3825"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="morvath-p9" d="M120 120C112 90 126 60 150 50C140 70 140 90 150 104C160 90 160 70 150 50C174 60 188 90 180 120C170 108 160 104 150 104C140 104 130 108 120 120Z"/><clipPath id="morvath-ca"><use href="#morvath-p9"/></clipPath><clipPath id="morvath-cb"><use href="#morvath-p9" x="-5" y="-5"/></clipPath><path id="morvath-pc" d="M133 92A17 17 0 1 0 167 92A17 17 0 1 0 133 92Z"/><clipPath id="morvath-cd"><use href="#morvath-pc"/></clipPath><clipPath id="morvath-ce"><use href="#morvath-pc" x="-5" y="-5"/></clipPath><path id="morvath-pf" d="M206 160C170 200 128 300 92 430L96 438L123 404L150 430L177 404L204 438L231 404L258 430L285 404L312 438L339 404L366 430L393 404L420 438L420 430C386 300 342 200 306 160Z"/><clipPath id="morvath-cg"><use href="#morvath-pf"/></clipPath><clipPath id="morvath-ch"><use href="#morvath-pf" x="-18" y="-14"/></clipPath><path id="morvath-pi" d="M228 188L284 188L294 320L256 352L218 320Z"/><clipPath id="morvath-cj"><use href="#morvath-pi"/></clipPath><radialGradient id="morvath-rl" gradientUnits="userSpaceOnUse" cx="256" cy="300" r="40"><stop offset="0" stop-color="#c77dff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.27"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="morvath-pm" d="M178 178C188 150 222 146 236 166L222 196C206 188 190 190 178 178Z"/><clipPath id="morvath-cn"><use href="#morvath-pm"/></clipPath><clipPath id="morvath-co"><use href="#morvath-pm" x="-6" y="-6"/></clipPath><path id="morvath-pp" d="M334 178C324 150 290 146 276 166L290 196C306 188 322 190 334 178Z"/><clipPath id="morvath-cq"><use href="#morvath-pp"/></clipPath><clipPath id="morvath-cr"><use href="#morvath-pp" x="-6" y="-6"/></clipPath><path id="morvath-ps" d="M189 162C185 157 167 143 163 139C159 136 162 140 162 140C162 140 159 136 161 141C164 145 175 165 179 170C183 174 187 172 188 171C189 169 192 167 189 162Z"/><clipPath id="morvath-ct"><use href="#morvath-ps"/></clipPath><clipPath id="morvath-cu"><use href="#morvath-ps" x="-3" y="-3"/></clipPath><path id="morvath-pv" d="M203 153C201 148 188 133 185 130C182 126 184 130 184 130C184 130 182 126 183 130C184 135 190 154 193 159C195 163 199 162 201 161C202 160 206 158 203 153Z"/><clipPath id="morvath-cw"><use href="#morvath-pv"/></clipPath><clipPath id="morvath-cx"><use href="#morvath-pv" x="-3" y="-3"/></clipPath><path id="morvath-py" d="M333 170C337 165 348 145 351 141C353 136 350 140 350 140C350 140 353 136 349 139C345 143 327 157 323 162C320 167 323 169 324 171C325 172 329 174 333 170Z"/><clipPath id="morvath-cz"><use href="#morvath-py"/></clipPath><clipPath id="morvath-c10"><use href="#morvath-py" x="-3" y="-3"/></clipPath><path id="morvath-p11" d="M319 159C322 154 328 135 329 130C330 126 328 130 328 130C328 130 330 126 327 130C324 133 311 148 309 153C306 158 310 160 311 161C313 162 317 163 319 159Z"/><clipPath id="morvath-c12"><use href="#morvath-p11"/></clipPath><clipPath id="morvath-c13"><use href="#morvath-p11" x="-3" y="-3"/></clipPath><path id="morvath-p14" d="M187 189C179 196 165 221 159 228C154 234 151 230 149 234C147 238 142 249 144 253C146 257 157 259 163 258C168 257 173 256 181 248C188 241 209 220 213 211C218 201 215 190 211 187C207 183 194 183 187 189Z"/><clipPath id="morvath-c15"><use href="#morvath-p14"/></clipPath><clipPath id="morvath-c16"><use href="#morvath-p14" x="-8" y="-8"/></clipPath><path id="morvath-p17" d="M138 252A14 16 0 1 0 166 252A14 16 0 1 0 138 252Z"/><clipPath id="morvath-c18"><use href="#morvath-p17"/></clipPath><clipPath id="morvath-c19"><use href="#morvath-p17" x="-4" y="-4"/></clipPath><path id="morvath-p1a" d="M300 208C306 217 328 235 337 241C346 247 355 249 362 248C369 246 381 237 382 232C382 227 370 215 366 212C362 210 361 219 355 215C348 210 332 188 324 184C315 179 303 181 300 184C296 188 295 200 300 208Z"/><clipPath id="morvath-c1b"><use href="#morvath-p1a"/></clipPath><clipPath id="morvath-c1c"><use href="#morvath-p1a" x="-8" y="-8"/></clipPath><path id="morvath-p1d" d="M372 228C374 225 376 217 378 212C380 208 383 199 384 197C384 194 383 196 382 196C381 196 382 193 380 195C379 197 374 205 372 210C369 214 365 221 364 224C363 227 365 230 366 230C367 231 370 231 372 228Z"/><clipPath id="morvath-c1e"><use href="#morvath-p1d"/></clipPath><clipPath id="morvath-c1f"><use href="#morvath-p1d" x="-3" y="-3"/></clipPath><path id="morvath-p1g" d="M371 230C373 228 379 223 383 220C387 217 393 211 395 210C397 208 394 208 394 208C394 208 395 205 393 206C391 207 383 212 379 214C375 217 368 220 365 222C363 224 364 227 364 229C365 230 368 231 371 230Z"/><clipPath id="morvath-c1h"><use href="#morvath-p1g"/></clipPath><clipPath id="morvath-c1i"><use href="#morvath-p1g" x="-3" y="-3"/></clipPath><path id="morvath-p1j" d="M368 230C371 231 379 229 383 228C388 228 396 227 398 226C400 225 398 225 398 224C398 223 400 222 398 222C396 222 387 222 383 222C378 221 371 221 368 222C365 222 363 225 364 226C364 228 365 230 368 230Z"/><clipPath id="morvath-c1k"><use href="#morvath-p1j"/></clipPath><clipPath id="morvath-c1l"><use href="#morvath-p1j" x="-3" y="-3"/></clipPath><path id="morvath-p1m" d="M366 230C368 232 374 233 378 234C381 235 387 238 389 238C391 238 390 237 390 236C390 235 392 235 391 234C389 233 384 230 380 228C377 226 372 222 370 222C367 221 364 223 364 224C363 225 364 229 366 230Z"/><clipPath id="morvath-c1n"><use href="#morvath-p1m"/></clipPath><clipPath id="morvath-c1o"><use href="#morvath-p1m" x="-3" y="-3"/></clipPath><radialGradient id="morvath-r1p" gradientUnits="userSpaceOnUse" cx="392" cy="192" r="60"><stop offset="0" stop-color="#c77dff" stop-opacity="0.8"/><stop offset="0.45" stop-color="#c77dff" stop-opacity="0.36000000000000004"/><stop offset="1" stop-color="#c77dff" stop-opacity="0"/></radialGradient><path id="morvath-p1q" d="M384 210C380 208 373 194 374 186C375 179 385 162 388 160C391 159 393 175 396 176C399 177 407 165 408 168C409 171 408 192 404 198C400 204 389 212 384 210Z"/><clipPath id="morvath-c1r"><use href="#morvath-p1q"/></clipPath><clipPath id="morvath-c1s"><use href="#morvath-p1q" x="-4" y="-4"/></clipPath><path id="morvath-p1t" d="M196 178C190 130 214 82 256 62C298 82 322 130 316 178C300 196 282 202 256 202C230 202 212 196 196 178Z"/><clipPath id="morvath-c1u"><use href="#morvath-p1t"/></clipPath><clipPath id="morvath-c1v"><use href="#morvath-p1t" x="-12" y="-10"/></clipPath><path id="morvath-p1w" d="M226 140C230 130 247 114 256 114C265 114 282 130 286 140C290 150 289 174 284 182C280 190 264 196 256 196C248 196 233 190 228 182C224 174 222 150 226 140Z"/><clipPath id="morvath-c1x"><use href="#morvath-p1w"/></clipPath><path id="morvath-p1z" d="M232 140C235 132 248 122 256 122C264 122 277 132 280 140C283 148 280 162 278 170C276 178 271 185 266 188C261 191 251 191 246 188C241 185 236 178 234 170C232 162 229 148 232 140Z"/><clipPath id="morvath-c20"><use href="#morvath-p1z"/></clipPath><clipPath id="morvath-c21"><use href="#morvath-p1z" x="-8" y="-6"/></clipPath><radialGradient id="morvath-r22" gradientUnits="userSpaceOnUse" cx="244" cy="154" r="14"><stop offset="0" stop-color="#e0b8ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#e0b8ff" stop-opacity="0.405"/><stop offset="1" stop-color="#e0b8ff" stop-opacity="0"/></radialGradient><radialGradient id="morvath-r23" gradientUnits="userSpaceOnUse" cx="268" cy="154" r="14"><stop offset="0" stop-color="#e0b8ff" stop-opacity="0.9"/><stop offset="0.45" stop-color="#e0b8ff" stop-opacity="0.405"/><stop offset="1" stop-color="#e0b8ff" stop-opacity="0"/></radialGradient><path id="morvath-p24" d="M210 112L222 76L234 104L246 64L256 98L266 64L278 104L290 76L302 112C278 104 234 104 210 112Z"/><clipPath id="morvath-c25"><use href="#morvath-p24"/></clipPath><clipPath id="morvath-c26"><use href="#morvath-p24" x="-5" y="-5"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#morvath-l0)"/>
+<circle cx="256" cy="180" r="280" fill="url(#morvath-r1)"/>
+<path d="M60 512V200C60 90 160 30 256 18C352 30 452 90 452 200V512H408V206C408 118 330 70 256 62C182 70 104 118 104 206V512Z" fill="#1b0d38"/>
+<path d="M104 206C104 118 182 70 256 62C330 70 408 118 408 206" fill="none" stroke="#4b2f8f" stroke-width="5" stroke-opacity="0.6"/>
+<path d="M34 512L34 230L86 230L86 512Z" fill="#140a2c"/>
+<path d="M426 512L426 230L478 230L478 512Z" fill="#140a2c"/>
+<path d="M256 120L54 512L98 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M256 120L114 512L158 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M256 120L174 512L218 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M256 120L234 512L278 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M256 120L294 512L338 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M256 120L354 512L398 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M256 120L414 512L458 512Z" fill="#c77dff" fill-opacity="0.05"/>
+<path d="M0 390Q256 354 512 390V512H0Z" fill="url(#morvath-l2)"/>
+<ellipse cx="256" cy="420" rx="210" ry="59" fill="url(#morvath-r3)"/>
+<path d="M66 420A190 42 0 1 0 446 420A190 42 0 1 0 66 420ZM96 420A160 33 0 1 0 416 420A160 33 0 1 0 96 420Z" fill="none" stroke="#c77dff" stroke-width="4" stroke-opacity="0.5"/>
+<path d="M431 414L435 420L431 426L427 420Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M418 481L422 487L418 493L414 487Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M380 538L384 544L380 550L376 544Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M323 576L327 582L323 588L319 582Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M256 589L260 595L256 601L252 595Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M189 576L193 582L189 588L185 582Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M132 538L136 544L132 550L128 544Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M94 481L98 487L94 493L90 487Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M81 414L85 420L81 426L77 420Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M94 347L98 353L94 359L90 353Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M132 290L136 296L132 302L128 296Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M189 252L193 258L189 264L185 258Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M256 239L260 245L256 251L252 245Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M323 252L327 258L323 264L319 258Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M380 290L384 296L380 302L376 296Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<path d="M418 347L422 353L418 359L414 353Z" fill="#e0b8ff" fill-opacity="0.7"/>
+<g transform="translate(256 420) scale(0.86) translate(-256 -420)">
+<circle cx="256" cy="150" r="170" fill="url(#morvath-r4)"/>
+<use href="#morvath-p5" fill="#2a1f3a" stroke-width="12"/>
+<g clip-path="url(#morvath-c6)">
+<use href="#morvath-p5" x="-4" y="-4" fill="#7a6a94"/>
+<g clip-path="url(#morvath-c7)"><use href="#morvath-p5" x="3" y="3" fill="#4a3a5a"/></g>
+</g>
+<circle cx="150" cy="98" r="90" fill="url(#morvath-r8)"/>
+<use href="#morvath-p9" fill="#ff9f1c" stroke-width="12"/>
+<g clip-path="url(#morvath-ca)">
+<use href="#morvath-p9" x="-5" fill="#a8742a"/>
+<use href="#morvath-p9" x="-5" y="-5" fill="#fff1c1"/>
+<g clip-path="url(#morvath-cb)"><use href="#morvath-p9" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#morvath-pc" fill="#c77dff" stroke-width="8"/>
+<g clip-path="url(#morvath-cd)">
+<use href="#morvath-pc" x="-5" y="-5" fill="#ffffff"/>
+<g clip-path="url(#morvath-ce)"><use href="#morvath-pc" x="3" y="3" fill="#e9c8ff"/></g>
+</g>
+<use href="#morvath-pf" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#morvath-cg)">
+<use href="#morvath-pf" x="-5" fill="#22104a"/>
+<use href="#morvath-pf" x="-18" y="-14" fill="#5a36a0"/>
+<g clip-path="url(#morvath-ch)"><use href="#morvath-pf" x="10" y="8" fill="#3a1f6e"/></g>
+</g>
+<path d="M204 232L168 404M232 330L214 420M282 330L300 420M310 232L346 404" fill="none" stroke="#22104a" stroke-width="5" stroke-opacity="0.9"/>
+<use href="#morvath-pi" fill="#0b0418" stroke-width="8"/>
+<g clip-path="url(#morvath-cj)">
+<use href="#morvath-pi" x="-4" y="-4" fill="#160b2e"/>
+</g>
+<path d="M232 224C246 216 266 216 280 224M230 246C246 238 266 238 282 246M232 268C246 260 266 260 280 268M236 290C248 284 264 284 276 290" fill="none" stroke="#e9e2cf" stroke-width="7" stroke-linecap="round"/>
+<path d="M256 200V330" fill="none" stroke="#a89f8a" stroke-width="7"/>
+<circle cx="256" cy="300" r="40" fill="url(#morvath-rl)"/>
+<use href="#morvath-pm" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#morvath-cn)">
+<use href="#morvath-pm" x="-5" fill="#2a1f3a"/>
+<use href="#morvath-pm" x="-6" y="-6" fill="#8a7aa8"/>
+<g clip-path="url(#morvath-co)"><use href="#morvath-pm" x="4" y="4" fill="#4a3a5a"/></g>
+</g>
+<use href="#morvath-pp" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#morvath-cq)">
+<use href="#morvath-pp" x="-5" fill="#2a1f3a"/>
+<use href="#morvath-pp" x="-6" y="-6" fill="#8a7aa8"/>
+<g clip-path="url(#morvath-cr)"><use href="#morvath-pp" x="4" y="4" fill="#4a3a5a"/></g>
+</g>
+<use href="#morvath-ps" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#morvath-ct)">
+<use href="#morvath-ps" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-cu)"><use href="#morvath-ps" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-pv" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#morvath-cw)">
+<use href="#morvath-pv" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-cx)"><use href="#morvath-pv" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-py" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#morvath-cz)">
+<use href="#morvath-py" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c10)"><use href="#morvath-py" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-p11" fill="#a89f8a" stroke-width="8"/>
+<g clip-path="url(#morvath-c12)">
+<use href="#morvath-p11" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c13)"><use href="#morvath-p11" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-p14" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#morvath-c15)">
+<use href="#morvath-p14" x="-5" fill="#22104a"/>
+<use href="#morvath-p14" x="-8" y="-8" fill="#5a36a0"/>
+<g clip-path="url(#morvath-c16)"><use href="#morvath-p14" x="7" y="7" fill="#3a1f6e"/></g>
+</g>
+<use href="#morvath-p17" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#morvath-c18)">
+<use href="#morvath-p17" x="-4" fill="#a89f8a"/>
+<use href="#morvath-p17" x="-4" y="-4" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c19)"><use href="#morvath-p17" x="3" y="3" fill="#e9e2cf"/></g>
+</g>
+<path d="M140 246H164M140 256H164" fill="none" stroke-width="3.5"/>
+<use href="#morvath-p1a" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#morvath-c1b)">
+<use href="#morvath-p1a" x="-5" fill="#22104a"/>
+<use href="#morvath-p1a" x="-8" y="-8" fill="#5a36a0"/>
+<g clip-path="url(#morvath-c1c)"><use href="#morvath-p1a" x="7" y="7" fill="#3a1f6e"/></g>
+</g>
+<use href="#morvath-p1d" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#morvath-c1e)">
+<use href="#morvath-p1d" x="-4" fill="#a89f8a"/>
+<use href="#morvath-p1d" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c1f)"><use href="#morvath-p1d" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-p1g" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#morvath-c1h)">
+<use href="#morvath-p1g" x="-4" fill="#a89f8a"/>
+<use href="#morvath-p1g" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c1i)"><use href="#morvath-p1g" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-p1j" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#morvath-c1k)">
+<use href="#morvath-p1j" x="-4" fill="#a89f8a"/>
+<use href="#morvath-p1j" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c1l)"><use href="#morvath-p1j" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<use href="#morvath-p1m" fill="#ff9f1c" stroke-width="8"/>
+<g clip-path="url(#morvath-c1n)">
+<use href="#morvath-p1m" x="-4" fill="#a89f8a"/>
+<use href="#morvath-p1m" x="-3" y="-3" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c1o)"><use href="#morvath-p1m" x="2" y="2" fill="#e9e2cf"/></g>
+</g>
+<circle cx="392" cy="192" r="60" fill="url(#morvath-r1p)"/>
+<use href="#morvath-p1q" fill="#b5179e" stroke-width="8"/>
+<g clip-path="url(#morvath-c1r)">
+<use href="#morvath-p1q" x="-4" y="-4" fill="#ffffff"/>
+<g clip-path="url(#morvath-c1s)"><use href="#morvath-p1q" x="3" y="3" fill="#e9c8ff"/></g>
+</g>
+<use href="#morvath-p1t" fill="#ff9f1c" stroke-width="14"/>
+<g clip-path="url(#morvath-c1u)">
+<use href="#morvath-p1t" x="-5" fill="#22104a"/>
+<use href="#morvath-p1t" x="-12" y="-10" fill="#5a36a0"/>
+<g clip-path="url(#morvath-c1v)"><use href="#morvath-p1t" x="7" y="7" fill="#3a1f6e"/></g>
+</g>
+<use href="#morvath-p1w" fill="#0b0418"/>
+<g clip-path="url(#morvath-c1x)">
+<use href="#morvath-p1w" x="0" y="0" fill="#0b0418"/>
+</g>
+<use href="#morvath-p1z" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#morvath-c20)">
+<use href="#morvath-p1z" x="-4" fill="#a89f8a"/>
+<use href="#morvath-p1z" x="-8" y="-6" fill="#fffaf0"/>
+<g clip-path="url(#morvath-c21)"><use href="#morvath-p1z" x="5" y="5" fill="#e9e2cf"/></g>
+</g>
+<path d="M232 140L254 150L250 162L236 160Z" fill="#1d0842"/>
+<path d="M280 140L258 150L262 162L276 160Z" fill="#1d0842"/>
+<path d="M230 138L254 148M282 138L258 148" fill="none" stroke-width="5"/>
+<circle cx="244" cy="154" r="14" fill="url(#morvath-r22)"/>
+<circle cx="268" cy="154" r="14" fill="url(#morvath-r23)"/>
+<path d="M241 155A4 4 0 1 0 248 155A4 4 0 1 0 241 155Z" fill="#ffffff"/>
+<path d="M265 155A4 4 0 1 0 272 155A4 4 0 1 0 265 155Z" fill="#ffffff"/>
+<path d="M256 160L261 170H251Z" fill="#1d0842"/>
+<path d="M244 178H268M249 174V184M256 174V185M263 174V184" fill="none" stroke-width="3"/>
+<use href="#morvath-p24" fill="#ff9f1c" stroke-width="10"/>
+<g clip-path="url(#morvath-c25)">
+<use href="#morvath-p24" x="-4" fill="#a8742a"/>
+<use href="#morvath-p24" x="-5" y="-5" fill="#fff1c1"/>
+<g clip-path="url(#morvath-c26)"><use href="#morvath-p24" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<path d="M250 104A6 6 0 1 0 262 104A6 6 0 1 0 250 104Z" fill="#ff006e"/>
+</g>
+<path d="M379 232L382 238L379 243L376 238Z" fill="#e9e2cf" fill-opacity="0.62"/>
+<path d="M380 226L383 232L380 239L376 232Z" fill="#c77dff" fill-opacity="0.57"/>
+<path d="M110 298L113 304L110 310L106 304Z" fill="#e9e2cf" fill-opacity="0.52"/>
+<path d="M206 381L209 386L206 390L204 386Z" fill="#c77dff" fill-opacity="0.46"/>
+<path d="M179 299L183 305L179 312L176 305Z" fill="#e9e2cf" fill-opacity="0.5"/>
+<path d="M180 245L183 248L180 252L178 248Z" fill="#c77dff" fill-opacity="0.54"/>
+<path d="M141 224L144 228L141 232L139 228Z" fill="#e9e2cf" fill-opacity="0.37"/>
+<path d="M379 126L381 129L379 132L378 129Z" fill="#c77dff" fill-opacity="0.68"/>
+<path d="M253 228L256 234L253 240L250 234Z" fill="#e9e2cf" fill-opacity="0.46"/>
+<path d="M334 216L337 221L334 226L331 221Z" fill="#c77dff" fill-opacity="0.44"/>
+<path d="M155 301L158 307L155 312L152 307Z" fill="#e9e2cf" fill-opacity="0.48"/>
+<path d="M388 301L390 305L388 309L386 305Z" fill="#c77dff" fill-opacity="0.37"/>
+<path d="M170 65L172 70L170 75L167 70Z" fill="#e9e2cf" fill-opacity="0.44"/>
+<path d="M281 107L284 112L281 116L279 112Z" fill="#c77dff" fill-opacity="0.79"/>
+</svg>

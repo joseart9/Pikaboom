@@ -10,6 +10,7 @@ import { deckProblemText, type DeckListResponse, type SavedDeck } from "@/game/c
 import { t } from "@/game/cards/i18n";
 import type { DeckChoice } from "@/game/cards/server/commands";
 import { DeckCover } from "../decks/DeckCover";
+import { GameIcon } from "../skin";
 
 export interface DeckPickerProps {
   selected: DeckChoice | null;
@@ -83,7 +84,7 @@ export function DeckPicker({ selected, disabled, onSelect, load = listDecks }: D
                 </span>
                 {isSelected && (
                   <span className="cg-deck-check" aria-hidden>
-                    ✓
+                    <GameIcon name="check" size="16px" />
                   </span>
                 )}
               </button>

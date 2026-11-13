@@ -1,5 +1,5 @@
-// Simple 24×24 glyphs per status, plus Silencio (placeholder art; a future skin pass replaces this file).
-// `ring` marks polarity at a glance: red-ish for harmful statuses, gold for helpful ones.
+// Status glyphs plus the Silencio marker (UI-02, ART_GUIDE.md §4): same grammar as the keyword glyphs. `ring` marks
+// polarity at a glance (red-ish harmful, gold helpful) — the glyph shape, not the ring colour, carries the meaning.
 import type { StatusId } from "@/game/cards/catalog/types";
 import type { Glyph } from "./keywordGlyphs";
 
@@ -9,35 +9,15 @@ const HARMFUL = "#ff4d6d";
 const HELPFUL = "#ffd166";
 
 export const STATUS_GLYPHS: Record<StatusGlyphId, Glyph & { ring: string }> = {
-  burn: { d: "M12 2 C14 6 18 8 18 14 A6 6 0 0 1 6 14 C6 10 8 9 9 6 C10 9 11 9 12 2 Z", fill: "#ff7b00", ring: HARMFUL },
-  freeze: { d: "M12 2 L14.2 9.8 L22 12 L14.2 14.2 L12 22 L9.8 14.2 L2 12 L9.8 9.8 Z", fill: "#9bf6ff", ring: HARMFUL },
-  stun: {
-    d: "M12 2 L14.5 8.5 L21 9 L16 13.5 L17.5 20 L12 16.5 L6.5 20 L8 13.5 L3 9 L9.5 8.5 Z",
-    fill: "#ffe066",
-    ring: HARMFUL,
-  },
-  weakness: { d: "M9 3 H15 V12 H20 L12 21 L4 12 H9 Z", fill: "#cdb4db", ring: HARMFUL },
-  vulnerability: {
-    d: "M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z M13 5 L10 11 L13 13 L11 19 L15.5 12 L12.5 10 L15 5 Z",
-    fill: "#ff8fa3",
-    ring: HARMFUL,
-  },
-  curse: {
-    d: "M12 2 A8 8 0 0 1 20 10 C20 14 17 15 17 18 H7 C7 15 4 14 4 10 A8 8 0 0 1 12 2 Z M8 8 A2 2 0 1 0 8.1 8 Z M16 8 A2 2 0 1 0 16.1 8 Z M9 19 H15 V22 H9 Z",
-    fill: "#c77dff",
-    ring: HARMFUL,
-  },
-  blessing: { d: "M12 3 L20 12 H15 V21 H9 V12 H4 Z", fill: "#ffd60a", ring: HELPFUL },
-  disarm: { d: "M19 2 L22 5 L13 14 L10 11 Z M8 13 L11 16 L9 18 L11 20 L9 22 L2 15 L4 13 L6 15 Z", fill: "#adb5bd", ring: HARMFUL },
-  bleed: { d: "M12 2 C15 7 19 10 19 15 A7 7 0 0 1 5 15 C5 10 9 7 12 2 Z", fill: "#d00000", ring: HARMFUL },
-  immune: {
-    d: "M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z M12 6 L13.5 10 H17.5 L14.5 12.5 L15.5 16.5 L12 14 L8.5 16.5 L9.5 12.5 L6.5 10 H10.5 Z",
-    fill: "#ffe066",
-    ring: HELPFUL,
-  },
-  silenced: {
-    d: "M12 2 A10 10 0 1 1 11.9 2 Z M12 5 A7 7 0 0 0 6.3 16.1 L16.1 6.3 A7 7 0 0 0 12 5 Z M17.7 7.9 L7.9 17.7 A7 7 0 0 0 17.7 7.9 Z",
-    fill: "#e9ecef",
-    ring: "#9aa0a6",
-  },
+  burn: { d: "M12 2C13.2 5.6 18.5 8 18.5 14.2A6.5 6.5 0 0 1 5.5 14.2C5.5 10.6 7.6 8.8 8.6 6.4C9.6 8.6 10.4 9.4 11 9.6C11.6 7 11.4 4.6 12 2ZM12 12.5C13.6 14 14.8 15 14.8 16.8A2.8 2.8 0 0 1 9.2 16.8C9.2 15.2 10.6 14.2 12 12.5Z", fill: "#ff7b00", ring: HARMFUL },
+  freeze: { d: "M10.5 1.6L13.5 1.6L13.5 22.4L10.5 22.4ZM20.26 5.5L21.76 8.1L3.74 18.5L2.24 15.9ZM21.76 15.9L20.26 18.5L2.24 8.1L3.74 5.5ZM12 6.2L14.2 4L15.6 5.4L12 9L8.4 5.4L9.8 4ZM17.02 9.1L20.03 9.91L19.52 11.82L14.6 10.5L15.92 5.58L17.83 6.09ZM17.02 14.9L17.83 17.91L15.92 18.42L14.6 13.5L19.52 12.18L20.03 14.09ZM12 17.8L9.8 20L8.4 18.6L12 15L15.6 18.6L14.2 20ZM6.98 14.9L3.97 14.09L4.48 12.18L9.4 13.5L8.08 18.42L6.17 17.91ZM6.98 9.1L6.17 6.09L8.08 5.58L9.4 10.5L4.48 11.82L3.97 9.91Z", fill: "#9bf6ff", ring: HARMFUL, rule: "nonzero" },
+  stun: { d: "M12 1L13.59 6.01L18.6 7.6L13.59 9.19L12 14.2L10.41 9.19L5.4 7.6L10.41 6.01ZM5.6 11.8L6.71 15.29L10.2 16.4L6.71 17.51L5.6 21L4.49 17.51L1 16.4L4.49 15.29ZM18.4 11.8L19.51 15.29L23 16.4L19.51 17.51L18.4 21L17.29 17.51L13.8 16.4L17.29 15.29Z", fill: "#ffe066", ring: HARMFUL },
+  weakness: { d: "M12 1.6L14.6 4.6V8.8L12.8 10.2L9.4 9V4.6ZM9.4 11.4L13.2 10.6L14.6 12V14H9.4ZM6.4 14L17.6 14L17.6 16.8L6.4 16.8ZM10.6 16.8L13.4 16.8L13.4 20L10.6 20ZM9.6 20L14.4 20L14.4 22.4L9.6 22.4Z", fill: "#cdb4db", ring: HARMFUL },
+  vulnerability: { d: "M12 2L20.5 4.8V11C20.5 16.2 16.8 20.2 12 22C7.2 20.2 3.5 16.2 3.5 11V4.8ZM13.4 4.8L10.2 10.6L13.2 12.6L10.6 19L16 11.6L12.8 9.8L15.6 4.8Z", fill: "#ff8fa3", ring: HARMFUL },
+  curse: { d: "M1.8 11C5.6 4.8 18.4 4.8 22.2 11C18.4 17.2 5.6 17.2 1.8 11ZM12 6.6C13.8 8.6 13.8 13.4 12 15.4C10.2 13.4 10.2 8.6 12 6.6ZM12 16.6C12.94 18.36 13.7 19.57 13.7 20.5A1.7 1.7 0 0 1 10.3 20.5C10.3 19.57 11.06 18.36 12 16.6Z", fill: "#c77dff", ring: HARMFUL },
+  blessing: { d: "M7.2 12A4.8 4.8 0 1 0 16.8 12A4.8 4.8 0 1 0 7.2 12ZM12 1.6L13.7 5.8L10.3 5.8ZM19.35 4.65L17.59 8.82L15.18 6.41ZM22.4 12L18.2 13.7L18.2 10.3ZM19.35 19.35L15.18 17.59L17.59 15.18ZM12 22.4L10.3 18.2L13.7 18.2ZM4.65 19.35L6.41 15.18L8.82 17.59ZM1.6 12L5.8 10.3L5.8 13.7ZM4.65 4.65L8.82 6.41L6.41 8.82Z", fill: "#ffd60a", ring: HELPFUL },
+  disarm: { d: "M17.2 21.01L13.71 19.56L9.21 11.76L13.19 9.46L17.69 17.26ZM15.7 8.01L6.7 13.21L5.3 10.79L14.3 5.59ZM11.01 7.49L8.59 8.89L6.79 5.77L9.21 4.37ZM10.18 4.05L6.02 6.45L4.72 4.19L8.88 1.79ZM15.8 2.4L21.4 2.4L21.4 4.8L15.8 4.8ZM17.4 6.4L21.6 6.4L21.6 8.8L17.4 8.8Z", fill: "#adb5bd", ring: HARMFUL, rule: "nonzero" },
+  bleed: { d: "M9.6 2C12.24 6.77 14.4 9.96 14.4 12.6A4.8 4.8 0 0 1 4.8 12.6C4.8 9.96 6.96 6.77 9.6 2ZM17.6 9.2C19.14 12.17 20.4 14.26 20.4 15.8A2.8 2.8 0 0 1 14.8 15.8C14.8 14.26 16.06 12.17 17.6 9.2ZM15 17.2C15.99 18.73 16.8 19.61 16.8 20.6A1.8 1.8 0 0 1 13.2 20.6C13.2 19.61 14.01 18.73 15 17.2Z", fill: "#d00000", ring: HARMFUL },
+  immune: { d: "M2.8 17.4A9.2 9.2 0 0 1 21.2 17.4ZM6 13.6C6.4 10.6 8.4 8.4 11 7.8L11.4 9.6C9.6 10 8.2 11.6 7.9 13.8ZM1.8 18.6H22.2V21.4H1.8Z", fill: "#ffe066", ring: HELPFUL },
+  silenced: { d: "M5 3H19A3 3 0 0 1 22 6V14A3 3 0 0 1 19 17H11L5.6 21.4V17H5A3 3 0 0 1 2 14V6A3 3 0 0 1 5 3ZM5.4 15.4L17.4 4.4L19 6L7 17Z", fill: "#e9ecef", ring: "#9aa0a6" },
 };

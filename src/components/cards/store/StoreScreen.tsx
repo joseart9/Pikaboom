@@ -26,7 +26,7 @@ import {
 } from "@/game/cards/collection/shop";
 import type { PackType } from "@/game/cards/config/economy";
 import { cardName, t } from "@/game/cards/i18n";
-import { CurrencyBadge } from "../skin";
+import { CurrencyBadge, GameIcon } from "../skin";
 import { PackOpening } from "./PackOpening";
 
 const DATE = new Intl.DateTimeFormat("es", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
@@ -161,7 +161,7 @@ export function StoreScreen({ loadStore = getStore, loadCollection = getCollecti
               return (
                 <article key={offer.type} className="cg-store-offer">
                   <div className="cg-store-pack" aria-hidden>
-                    <span className="cg-store-pack-glyph">✦</span>
+                    <GameIcon name="sparkle" className="cg-store-pack-glyph" outlined />
                     <span className="cg-store-pack-name">{name}</span>
                   </div>
                   <div className="cg-store-offer-info">

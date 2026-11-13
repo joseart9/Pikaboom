@@ -13,6 +13,7 @@ import { t } from "@/game/cards/i18n";
 import { ToastView } from "../match/Toasts";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { DeckCover } from "./DeckCover";
+import { GameIcon } from "../skin";
 
 type Load = { status: "loading" } | { status: "error"; message: string } | { status: "ready"; data: DeckListResponse };
 
@@ -120,9 +121,7 @@ export function DeckList({ load = listDecks, remove = deleteDeck }: DeckListProp
                         <span className="cg-deck-name">{deck.name}</span>
                         <span className="cg-deck-count">
                           {!ok && (
-                            <span className="cg-deck-warn" aria-hidden>
-                              ⚠
-                            </span>
+                            <GameIcon name="warning" className="cg-deck-warn" />
                           )}
                           {t("decks.cards", { n: deck.cardCount, total: size })}
                           {ok ? ` · ${t("decks.playable")}` : deck.cardCount < size ? ` · ${t("decks.incomplete")}` : ""}
@@ -131,7 +130,7 @@ export function DeckList({ load = listDecks, remove = deleteDeck }: DeckListProp
                       </span>
                     </Link>
                     <button type="button" className="cg-button cg-deck-delete" aria-label={`${t("decks.delete")} · ${deck.name}`} onClick={() => setConfirm(deck)}>
-                      ✕
+                      <GameIcon name="close" />
                     </button>
                   </li>
                 );

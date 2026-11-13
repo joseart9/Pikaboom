@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs><linearGradient id="badge-diamond-t" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#ffd54a"/><stop offset="1" stop-color="#f0a400"/></linearGradient></defs>
+<path d="M50 2.5L97.5 50L50 97.5L2.5 50Z" fill="#1d0842" stroke="#1d0842" stroke-width="3" stroke-linejoin="round"/>
+<path d="M50 10L90 50L73 50L50 27Z" fill="#ffd23f"/>
+<path d="M90 50L50 90L50 73L73 50Z" fill="#c98a00"/>
+<path d="M50 90L10 50L27 50L50 73Z" fill="#e09a00"/>
+<path d="M10 50L50 10L50 27L27 50Z" fill="#ffe39a"/>
+<path d="M50 27L73 50L50 73L27 50Z" fill="url(#badge-diamond-t)" stroke="#1d0842" stroke-opacity="0.35" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M31 50 50 31 52 33.4 33.4 52Z" fill="#fff7d6" fill-opacity="0.8"/>
+<path d="M50 10 53.6 17.4 50 16.2 46.4 17.4Z" fill="#fff7d6"/>
+</svg>

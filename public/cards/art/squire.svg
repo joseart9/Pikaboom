@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="squire-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#22144a"/><stop offset="0.55" stop-color="#3b2a6b"/><stop offset="1" stop-color="#2a1a52"/></linearGradient><radialGradient id="squire-r1" gradientUnits="userSpaceOnUse" cx="236" cy="210" r="250"><stop offset="0" stop-color="#c9b2ff" stop-opacity="0.32"/><stop offset="0.45" stop-color="#c9b2ff" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#c9b2ff" stop-opacity="0"/></radialGradient><linearGradient id="squire-l2" gradientUnits="userSpaceOnUse" x1="0" y1="322" x2="0" y2="512"><stop offset="0" stop-color="#3d2a7c"/><stop offset="1" stop-color="#22144a"/></linearGradient><radialGradient id="squire-r3" gradientUnits="userSpaceOnUse" cx="256" cy="404" r="170"><stop offset="0" stop-color="#c9b2ff" stop-opacity="0.55"/><stop offset="1" stop-color="#c9b2ff" stop-opacity="0"/></radialGradient><path id="squire-p4" d="M227 313C224 322 225 343 224 354C223 365 220 379 221 386C222 393 229 400 232 401C236 401 244 396 247 390C250 383 250 369 252 358C254 347 262 327 261 319C260 310 252 300 247 299C241 298 231 305 227 313Z"/><clipPath id="squire-c5"><use href="#squire-p4"/></clipPath><clipPath id="squire-c6"><use href="#squire-p4" x="-8" y="-6"/></clipPath><path id="squire-p7" d="M267 319C267 328 276 348 278 359C281 369 282 384 285 390C289 397 297 401 300 401C304 400 310 393 311 386C312 378 307 364 306 353C304 342 304 321 301 313C297 305 286 298 281 299C276 300 268 310 267 319Z"/><clipPath id="squire-c8"><use href="#squire-p7"/></clipPath><clipPath id="squire-c9"><use href="#squire-p7" x="-8" y="-6"/></clipPath><path id="squire-pa" d="M206 408C204 392 214 382 228 380L250 378L252 408Z"/><clipPath id="squire-cb"><use href="#squire-pa"/></clipPath><clipPath id="squire-cc"><use href="#squire-pa" x="-6" y="-6"/></clipPath><path id="squire-pd" d="M276 408L278 380L300 381C314 384 322 396 320 408Z"/><clipPath id="squire-ce"><use href="#squire-pd"/></clipPath><clipPath id="squire-cf"><use href="#squire-pd" x="-6" y="-6"/></clipPath><path id="squire-pg" d="M289 251C296 259 325 285 336 283C347 281 358 247 361 237C364 227 357 220 353 219C349 217 338 222 335 227C332 232 336 253 332 253C329 253 318 229 311 225C305 221 291 223 287 227C284 231 281 242 289 251Z"/><clipPath id="squire-ch"><use href="#squire-pg"/></clipPath><clipPath id="squire-ci"><use href="#squire-pg" x="-8" y="-8"/></clipPath><path id="squire-pj" d="M360 203C364 197 371 176 375 163C379 150 386 124 388 117C390 110 387 116 386 116C385 116 388 109 384 115C380 121 367 145 361 157C355 169 346 189 344 197C342 204 346 207 349 208C351 209 356 210 360 203Z"/><clipPath id="squire-ck"><use href="#squire-pj"/></clipPath><clipPath id="squire-cl"><use href="#squire-pj" x="-5" y="-4"/></clipPath><path id="squire-pm" d="M328 219C336 217 368 205 376 201C384 197 380 196 379 194C379 193 380 189 372 191C364 193 332 205 324 209C316 213 320 214 321 216C321 217 320 221 328 219Z"/><clipPath id="squire-cn"><use href="#squire-pm"/></clipPath><clipPath id="squire-co"><use href="#squire-pm" x="-4" y="-4"/></clipPath><path id="squire-pp" d="M336 244A8 8 0 1 0 352 244A8 8 0 1 0 336 244Z"/><clipPath id="squire-cq"><use href="#squire-pp"/></clipPath><clipPath id="squire-cr"><use href="#squire-pp" x="-3" y="-3"/></clipPath><path id="squire-ps" d="M333 222A15 14 0 1 0 363 222A15 14 0 1 0 333 222Z"/><clipPath id="squire-ct"><use href="#squire-ps"/></clipPath><clipPath id="squire-cu"><use href="#squire-ps" x="-6" y="-6"/></clipPath><path id="squire-pv" d="M214 232C219 224 249 216 258 216C267 216 298 224 304 232C310 240 323 292 318 300C313 308 269 310 258 310C247 310 210 308 206 300C202 292 209 240 214 232Z"/><clipPath id="squire-cw"><use href="#squire-pv"/></clipPath><clipPath id="squire-cx"><use href="#squire-pv" x="-10" y="-10"/></clipPath><path id="squire-py" d="M228 228L292 228L304 336L272 346L262 334L252 346L220 336Z"/><clipPath id="squire-cz"><use href="#squire-py"/></clipPath><clipPath id="squire-c10"><use href="#squire-py" x="-12" y="-8"/></clipPath><path id="squire-p11" d="M214 296L312 296L313 312L213 312Z"/><clipPath id="squire-c12"><use href="#squire-p11"/></clipPath><clipPath id="squire-c13"><use href="#squire-p11" x="-4" y="-4"/></clipPath><path id="squire-p14" d="M252 294L270 294L270 314L252 314Z"/><clipPath id="squire-c15"><use href="#squire-p14"/></clipPath><clipPath id="squire-c16"><use href="#squire-p14" x="-3" y="-3"/></clipPath><path id="squire-p17" d="M248 204L274 204L276 226L246 226Z"/><clipPath id="squire-c18"><use href="#squire-p17"/></clipPath><clipPath id="squire-c19"><use href="#squire-p17" x="-6" y="0"/></clipPath><path id="squire-p1a" d="M222 176C223 166 225 147 232 140C239 133 256 130 266 132C276 134 293 143 298 152C303 161 302 180 300 190C298 200 291 211 284 216C277 221 262 224 254 222C246 221 233 213 228 206C223 199 221 186 222 176Z"/><clipPath id="squire-c1b"><use href="#squire-p1a"/></clipPath><clipPath id="squire-c1c"><use href="#squire-p1a" x="-12" y="-8"/></clipPath><path id="squire-p1d" d="M289 184A9 12 0 1 0 307 184A9 12 0 1 0 289 184Z"/><clipPath id="squire-c1e"><use href="#squire-p1d"/></clipPath><clipPath id="squire-c1f"><use href="#squire-p1d" x="-4" y="-4"/></clipPath><path id="squire-p1g" d="M216 178C210 138 238 120 266 120C296 120 312 142 306 178C300 164 290 156 280 156C270 168 248 172 228 166C224 170 220 174 216 178Z"/><clipPath id="squire-c1h"><use href="#squire-p1g"/></clipPath><clipPath id="squire-c1i"><use href="#squire-p1g" x="-8" y="-8"/></clipPath><path id="squire-p1j" d="M108 282A78 78 0 1 0 264 282A78 78 0 1 0 108 282Z"/><clipPath id="squire-c1k"><use href="#squire-p1j"/></clipPath><clipPath id="squire-c1l"><use href="#squire-p1j" x="-10" y="-10"/></clipPath><path id="squire-p1m" d="M122 282A64 64 0 1 0 250 282A64 64 0 1 0 122 282Z"/><clipPath id="squire-c1n"><use href="#squire-p1m"/></clipPath><clipPath id="squire-c1o"><use href="#squire-p1m" x="-12" y="-12"/></clipPath><path id="squire-p1p" d="M169 282A17 17 0 1 0 203 282A17 17 0 1 0 169 282Z"/><clipPath id="squire-c1q"><use href="#squire-p1p"/></clipPath><clipPath id="squire-c1r"><use href="#squire-p1p" x="-5" y="-5"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#squire-l0)"/>
+<circle cx="236" cy="210" r="250" fill="url(#squire-r1)"/>
+<path d="M0 340L0 262L0 262L0 236L34 236L34 262L64 262L64 236L98 236L98 262L128 262L128 236L162 236L162 262L192 262L192 236L226 236L226 262L256 262L256 236L290 236L290 262L320 262L320 236L354 236L354 262L384 262L384 236L418 236L418 262L448 262L448 236L482 236L482 262L512 262L512 236L546 236L546 262L512 262L512 340Z" fill="#2f1f62"/>
+<path d="M0 296H512M40 262V296M120 296V340M200 262V296M330 262V296M420 296V340M480 262V296" fill="none" stroke="#22144a" stroke-width="3" stroke-opacity="0.8"/>
+<path d="M52 96L112 96L112 250L82 230L52 250Z" fill="#4b2f8f"/>
+<path d="M66 120L98 120L82 160Z" fill="#a8742a" fill-opacity="0.7"/>
+<path d="M0 358Q256 322 512 358V512H0Z" fill="url(#squire-l2)"/>
+<ellipse cx="256" cy="404" rx="170" ry="48" fill="url(#squire-r3)"/>
+<path d="M40 380L120 368M150 420L230 404M330 412L420 396M380 470L470 452" fill="none" stroke="#22144a" stroke-width="3" stroke-opacity="0.6"/>
+<ellipse cx="262" cy="404" rx="118" ry="18" fill="#1d0842" fill-opacity="0.5"/>
+<use href="#squire-p4" fill="#46301e" stroke-width="12"/>
+<g clip-path="url(#squire-c5)">
+<use href="#squire-p4" x="-8" y="-6" fill="#8e6a45"/>
+<g clip-path="url(#squire-c6)"><use href="#squire-p4" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#squire-p7" fill="#46301e" stroke-width="12"/>
+<g clip-path="url(#squire-c8)">
+<use href="#squire-p7" x="-8" y="-6" fill="#8e6a45"/>
+<g clip-path="url(#squire-c9)"><use href="#squire-p7" x="7" y="7" fill="#6b4a2f"/></g>
+</g>
+<use href="#squire-pa" fill="#5c3a1c" stroke-width="12"/>
+<g clip-path="url(#squire-cb)">
+<use href="#squire-pa" x="-6" y="-6" fill="#b07a40"/>
+<g clip-path="url(#squire-cc)"><use href="#squire-pa" x="4" y="4" fill="#8a5a2b"/></g>
+</g>
+<use href="#squire-pd" fill="#5c3a1c" stroke-width="12"/>
+<g clip-path="url(#squire-ce)">
+<use href="#squire-pd" x="-6" y="-6" fill="#b07a40"/>
+<g clip-path="url(#squire-cf)"><use href="#squire-pd" x="4" y="4" fill="#8a5a2b"/></g>
+</g>
+<use href="#squire-pg" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#squire-ch)">
+<use href="#squire-pg" x="-8" y="-8" fill="#e2ecf5"/>
+<g clip-path="url(#squire-ci)"><use href="#squire-pg" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#squire-pj" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#squire-ck)">
+<use href="#squire-pj" x="-5" y="-4" fill="#e2ecf5"/>
+<g clip-path="url(#squire-cl)"><use href="#squire-pj" x="3" y="3" fill="#9fb3c8"/></g>
+</g>
+<path d="M354 196L380 128" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.7"/>
+<use href="#squire-pm" fill="#a8742a" stroke-width="12"/>
+<g clip-path="url(#squire-cn)">
+<use href="#squire-pm" x="-4" y="-4" fill="#fff1c1"/>
+<g clip-path="url(#squire-co)"><use href="#squire-pm" x="3" y="3" fill="#f2c14e"/></g>
+</g>
+<use href="#squire-pp" fill="#a8742a" stroke-width="10"/>
+<g clip-path="url(#squire-cq)">
+<use href="#squire-pp" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#squire-cr)"><use href="#squire-pp" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#squire-ps" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#squire-ct)">
+<use href="#squire-ps" x="-6" y="-6" fill="#ffe0c4"/>
+<g clip-path="url(#squire-cu)"><use href="#squire-ps" x="4" y="4" fill="#f2c29b"/></g>
+</g>
+<use href="#squire-pv" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#squire-cw)">
+<use href="#squire-pv" x="-10" y="-10" fill="#e2ecf5"/>
+<g clip-path="url(#squire-cx)"><use href="#squire-pv" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#squire-py" fill="#24418a" stroke-width="12"/>
+<g clip-path="url(#squire-cz)">
+<use href="#squire-py" x="-12" y="-8" fill="#6a95e0"/>
+<g clip-path="url(#squire-c10)"><use href="#squire-py" x="7" y="7" fill="#3d6fc4"/></g>
+</g>
+<path d="M244 252L262 276L280 252L280 266L262 290L244 266Z" fill="#f2c14e" fill-opacity="0.9"/>
+<use href="#squire-p11" fill="#5c3a1c" stroke-width="10"/>
+<g clip-path="url(#squire-c12)">
+<use href="#squire-p11" x="-4" y="-4" fill="#b07a40"/>
+<g clip-path="url(#squire-c13)"><use href="#squire-p11" x="3" y="3" fill="#8a5a2b"/></g>
+</g>
+<use href="#squire-p14" fill="#a8742a" stroke-width="8"/>
+<g clip-path="url(#squire-c15)">
+<use href="#squire-p14" x="-3" y="-3" fill="#fff1c1"/>
+<g clip-path="url(#squire-c16)"><use href="#squire-p14" x="2" y="2" fill="#f2c14e"/></g>
+</g>
+<use href="#squire-p17" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#squire-c18)">
+<use href="#squire-p17" x="-6" y="0" fill="#ffe0c4"/>
+<g clip-path="url(#squire-c19)"><use href="#squire-p17" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#squire-p1a" fill="#c98f6a" stroke-width="12"/>
+<g clip-path="url(#squire-c1b)">
+<use href="#squire-p1a" x="-12" y="-8" fill="#ffe0c4"/>
+<g clip-path="url(#squire-c1c)"><use href="#squire-p1a" x="7" y="7" fill="#f2c29b"/></g>
+</g>
+<use href="#squire-p1d" fill="#c98f6a" stroke-width="10"/>
+<g clip-path="url(#squire-c1e)">
+<use href="#squire-p1d" x="-4" y="-4" fill="#ffe0c4"/>
+<g clip-path="url(#squire-c1f)"><use href="#squire-p1d" x="3" y="3" fill="#f2c29b"/></g>
+</g>
+<use href="#squire-p1g" fill="#3f2412" stroke-width="12"/>
+<g clip-path="url(#squire-c1h)">
+<use href="#squire-p1g" x="-8" y="-8" fill="#9a6235"/>
+<g clip-path="url(#squire-c1i)"><use href="#squire-p1g" x="7" y="7" fill="#6b3f1f"/></g>
+</g>
+<path d="M233 184A5 7 0 1 0 243 184A5 7 0 1 0 233 184Z" fill="#1d0842"/>
+<path d="M261 184A5 7 0 1 0 271 184A5 7 0 1 0 261 184Z" fill="#1d0842"/>
+<path d="M235 182A2 2 0 1 0 238 182A2 2 0 1 0 235 182Z" fill="#ffffff"/>
+<path d="M263 182A2 2 0 1 0 266 182A2 2 0 1 0 263 182Z" fill="#ffffff"/>
+<path d="M228 170L246 174M258 174L276 170" fill="none" stroke-width="4"/>
+<path d="M240 204C248 208 256 208 262 204" fill="none" stroke-width="3.5"/>
+<path d="M225 198A7 4 0 1 0 239 198A7 4 0 1 0 225 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+<path d="M271 198A7 4 0 1 0 285 198A7 4 0 1 0 271 198Z" fill="#ff4d6d" fill-opacity="0.25"/>
+<use href="#squire-p1j" fill="#5e6f8a" stroke-width="12"/>
+<g clip-path="url(#squire-c1k)">
+<use href="#squire-p1j" x="-10" y="-10" fill="#e2ecf5"/>
+<g clip-path="url(#squire-c1l)"><use href="#squire-p1j" x="7" y="7" fill="#9fb3c8"/></g>
+</g>
+<use href="#squire-p1m" fill="#5c3a1c" stroke-width="8"/>
+<g clip-path="url(#squire-c1n)">
+<use href="#squire-p1m" x="-12" y="-12" fill="#b07a40"/>
+<g clip-path="url(#squire-c1o)"><use href="#squire-p1m" x="8" y="8" fill="#8a5a2b"/></g>
+</g>
+<path d="M150 224V340M186 218V346M222 224V340" fill="none" stroke-width="3" stroke-opacity="0.45"/>
+<path d="M130 292L186 252L242 292L242 316L186 276L130 316Z" fill="#3d6fc4" fill-opacity="0.95"/>
+<use href="#squire-p1p" fill="#5e6f8a" stroke-width="10"/>
+<g clip-path="url(#squire-c1q)">
+<use href="#squire-p1p" x="-5" y="-5" fill="#e2ecf5"/>
+<g clip-path="url(#squire-c1r)"><use href="#squire-p1p" x="4" y="4" fill="#9fb3c8"/></g>
+</g>
+<path d="M248 309A4 4 0 1 0 255 309A4 4 0 1 0 248 309Z" fill="#e2ecf5"/>
+<path d="M210 348A4 4 0 1 0 217 348A4 4 0 1 0 210 348Z" fill="#e2ecf5"/>
+<path d="M155 348A4 4 0 1 0 162 348A4 4 0 1 0 155 348Z" fill="#e2ecf5"/>
+<path d="M117 309A4 4 0 1 0 124 309A4 4 0 1 0 117 309Z" fill="#e2ecf5"/>
+<path d="M117 255A4 4 0 1 0 124 255A4 4 0 1 0 117 255Z" fill="#e2ecf5"/>
+<path d="M155 216A4 4 0 1 0 162 216A4 4 0 1 0 155 216Z" fill="#e2ecf5"/>
+<path d="M210 216A4 4 0 1 0 217 216A4 4 0 1 0 210 216Z" fill="#e2ecf5"/>
+<path d="M248 255A4 4 0 1 0 255 255A4 4 0 1 0 248 255Z" fill="#e2ecf5"/>
+<path d="M126 248A72 72 0 0 1 176 206" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/>
+</svg>

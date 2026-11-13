@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#1d0842" stroke-width="0" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">
+<defs><linearGradient id="stone-golem-l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="512"><stop offset="0" stop-color="#1b1036"/><stop offset="0.55" stop-color="#2f1f62"/><stop offset="1" stop-color="#22144a"/></linearGradient><radialGradient id="stone-golem-r1" gradientUnits="userSpaceOnUse" cx="256" cy="230" r="260"><stop offset="0" stop-color="#9aa6d8" stop-opacity="0.32"/><stop offset="0.45" stop-color="#9aa6d8" stop-opacity="0.14400000000000002"/><stop offset="1" stop-color="#9aa6d8" stop-opacity="0"/></radialGradient><linearGradient id="stone-golem-l2" gradientUnits="userSpaceOnUse" x1="0" y1="334" x2="0" y2="512"><stop offset="0" stop-color="#3d2a7c"/><stop offset="1" stop-color="#1b1036"/></linearGradient><radialGradient id="stone-golem-r3" gradientUnits="userSpaceOnUse" cx="256" cy="404" r="190"><stop offset="0" stop-color="#9aa6d8" stop-opacity="0.55"/><stop offset="1" stop-color="#9aa6d8" stop-opacity="0"/></radialGradient><path id="stone-golem-p4" d="M248 372L228 403L187 404L167 372L186 338L228 341Z"/><clipPath id="stone-golem-c5"><use href="#stone-golem-p4"/></clipPath><clipPath id="stone-golem-c6"><use href="#stone-golem-p4" x="-10" y="-10"/></clipPath><path id="stone-golem-p7" d="M342 372L322 400L284 404L260 372L286 343L322 344Z"/><clipPath id="stone-golem-c8"><use href="#stone-golem-p7"/></clipPath><clipPath id="stone-golem-c9"><use href="#stone-golem-p7" x="-10" y="-10"/></clipPath><path id="stone-golem-pa" d="M132 214C121 227 110 264 107 284C104 303 108 330 113 342C118 355 134 368 142 367C150 366 163 348 167 338C170 327 161 311 165 296C170 282 194 257 196 242C198 227 188 200 178 196C169 192 143 200 132 214Z"/><clipPath id="stone-golem-cb"><use href="#stone-golem-pa"/></clipPath><clipPath id="stone-golem-cc"><use href="#stone-golem-pa" x="-12" y="-10"/></clipPath><path id="stone-golem-pd" d="M316 242C318 257 342 282 347 296C351 311 342 327 345 338C349 348 362 366 370 367C378 368 394 355 399 342C404 330 408 303 405 284C402 264 391 227 380 214C369 200 343 192 334 196C324 200 314 227 316 242Z"/><clipPath id="stone-golem-ce"><use href="#stone-golem-pd"/></clipPath><clipPath id="stone-golem-cf"><use href="#stone-golem-pd" x="-12" y="-10"/></clipPath><path id="stone-golem-pg" d="M156 246C157 228 165 203 176 192C187 181 216 173 232 170C248 167 276 169 292 172C308 175 334 183 344 194C354 205 362 230 362 248C362 266 354 304 344 318C334 332 309 342 292 346C275 350 239 350 222 346C205 342 179 332 170 318C161 304 155 264 156 246Z"/><clipPath id="stone-golem-ch"><use href="#stone-golem-pg"/></clipPath><clipPath id="stone-golem-ci"><use href="#stone-golem-pg" x="-18" y="-16"/></clipPath><radialGradient id="stone-golem-rj" gradientUnits="userSpaceOnUse" cx="256" cy="258" r="70"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.55"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.24750000000000003"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="stone-golem-pk" d="M222 160L246 136L284 138L298 164L290 194L228 196Z"/><clipPath id="stone-golem-cl"><use href="#stone-golem-pk"/></clipPath><clipPath id="stone-golem-cm"><use href="#stone-golem-pk" x="-10" y="-8"/></clipPath><radialGradient id="stone-golem-rn" gradientUnits="userSpaceOnUse" cx="258" cy="168" r="46"><stop offset="0" stop-color="#3fa9ff" stop-opacity="0.6"/><stop offset="0.45" stop-color="#3fa9ff" stop-opacity="0.27"/><stop offset="1" stop-color="#3fa9ff" stop-opacity="0"/></radialGradient><path id="stone-golem-po" d="M211 214C211 224 205 237 197 243C189 250 173 253 162 253C151 253 136 249 128 243C120 236 113 224 112 214C111 204 114 189 122 181C131 173 150 167 162 167C174 168 188 178 196 186C204 193 211 204 211 214Z"/><clipPath id="stone-golem-cp"><use href="#stone-golem-po"/></clipPath><clipPath id="stone-golem-cq"><use href="#stone-golem-po" x="-12" y="-12"/></clipPath><path id="stone-golem-pr" d="M402 214C401 224 391 235 383 241C374 248 361 253 350 253C339 252 326 247 318 241C310 235 303 224 302 214C301 204 302 188 310 181C318 174 337 172 350 173C363 173 379 176 387 183C396 190 403 204 402 214Z"/><clipPath id="stone-golem-cs"><use href="#stone-golem-pr"/></clipPath><clipPath id="stone-golem-ct"><use href="#stone-golem-pr" x="-12" y="-12"/></clipPath><path id="stone-golem-pu" d="M174 186C173 189 170 191 165 193C159 195 149 199 143 198C136 198 129 194 126 191C123 188 122 184 125 181C128 179 137 177 144 176C152 175 164 175 169 177C174 178 175 183 174 186Z"/><clipPath id="stone-golem-cv"><use href="#stone-golem-pu"/></clipPath><clipPath id="stone-golem-cw"><use href="#stone-golem-pu" x="-4" y="-5"/></clipPath><path id="stone-golem-px" d="M386 188C387 191 387 197 382 199C377 200 363 199 357 198C350 196 346 194 343 192C340 189 336 185 338 183C341 181 351 180 357 179C364 179 372 179 376 180C381 182 385 185 386 188Z"/><clipPath id="stone-golem-cy"><use href="#stone-golem-px"/></clipPath><clipPath id="stone-golem-cz"><use href="#stone-golem-px" x="-4" y="-5"/></clipPath><path id="stone-golem-p10" d="M192 366L174 400L128 407L100 381L96 349L129 328L168 338Z"/><clipPath id="stone-golem-c11"><use href="#stone-golem-p10"/></clipPath><clipPath id="stone-golem-c12"><use href="#stone-golem-p10" x="-12" y="-12"/></clipPath><path id="stone-golem-p13" d="M418 379L389 407L346 398L318 370L337 337L378 327L410 348Z"/><clipPath id="stone-golem-c14"><use href="#stone-golem-p13"/></clipPath><clipPath id="stone-golem-c15"><use href="#stone-golem-p13" x="-12" y="-12"/></clipPath></defs>
+<rect width="512" height="512" fill="url(#stone-golem-l0)"/>
+<circle cx="256" cy="230" r="260" fill="url(#stone-golem-r1)"/>
+<path d="M138 300L77 406L-4 428L-35 300L-10 156L85 171Z" fill="#22154a"/>
+<path d="M548 290L517 445L429 425L373 290L423 138L514 146Z" fill="#22154a"/>
+<path d="M175 330L143 397L83 384L47 330L85 279L141 267Z" fill="#2f1f62"/>
+<path d="M473 340L454 399L394 385L352 340L387 283L452 284Z" fill="#2f1f62"/>
+<path d="M0 370Q256 334 512 370V512H0Z" fill="url(#stone-golem-l2)"/>
+<ellipse cx="256" cy="404" rx="190" ry="53" fill="url(#stone-golem-r3)"/>
+<path d="M108 430L95 440L75 442L56 436L53 423L74 416L96 419Z" fill="#3d2a7c"/>
+<path d="M475 446L457 456L434 458L417 451L416 441L433 432L456 437Z" fill="#3d2a7c"/>
+<ellipse cx="256" cy="404" rx="170" ry="22" fill="#1d0842" fill-opacity="0.55"/>
+<use href="#stone-golem-p4" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-c5)">
+<use href="#stone-golem-p4" x="-10" y="-10" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-c6)"><use href="#stone-golem-p4" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-p7" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-c8)">
+<use href="#stone-golem-p7" x="-10" y="-10" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-c9)"><use href="#stone-golem-p7" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-pa" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-cb)">
+<use href="#stone-golem-pa" x="-12" y="-10" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-cc)"><use href="#stone-golem-pa" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-pd" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-ce)">
+<use href="#stone-golem-pd" x="-12" y="-10" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-cf)"><use href="#stone-golem-pd" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-pg" fill="#575275" stroke-width="14"/>
+<g clip-path="url(#stone-golem-ch)">
+<use href="#stone-golem-pg" x="-18" y="-16" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-ci)"><use href="#stone-golem-pg" x="10" y="10" fill="#8a86a8"/></g>
+</g>
+<path d="M196 220L214 248L204 280M318 214L304 238L322 262M226 318L250 300L280 322" fill="none" stroke-width="4" stroke-opacity="0.75"/>
+<circle cx="256" cy="258" r="70" fill="url(#stone-golem-rj)"/>
+<path d="M226 258A30 30 0 1 0 286 258A30 30 0 1 0 226 258ZM256 216V300M232 240L256 258L280 240" fill="none" stroke-width="7"/>
+<path d="M226 258A30 30 0 1 0 286 258A30 30 0 1 0 226 258ZM256 216V300M232 240L256 258L280 240" fill="none" stroke="#9be7ff" stroke-width="4"/>
+<use href="#stone-golem-pk" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-cl)">
+<use href="#stone-golem-pk" x="-10" y="-8" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-cm)"><use href="#stone-golem-pk" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<circle cx="258" cy="168" r="46" fill="url(#stone-golem-rn)"/>
+<path d="M234 164L282 160L280 172L236 175Z" fill="#1d0842"/>
+<path d="M238 166L278 163L277 169L240 172Z" fill="#e6f6ff"/>
+<use href="#stone-golem-po" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-cp)">
+<use href="#stone-golem-po" x="-12" y="-12" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-cq)"><use href="#stone-golem-po" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-pr" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-cs)">
+<use href="#stone-golem-pr" x="-12" y="-12" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-ct)"><use href="#stone-golem-pr" x="7" y="7" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-pu" fill="#3d6b30" stroke-width="8"/>
+<g clip-path="url(#stone-golem-cv)">
+<use href="#stone-golem-pu" x="-4" y="-5" fill="#7bd389"/>
+<g clip-path="url(#stone-golem-cw)"><use href="#stone-golem-pu" x="3" y="3" fill="#5f9a4a"/></g>
+</g>
+<use href="#stone-golem-px" fill="#3d6b30" stroke-width="8"/>
+<g clip-path="url(#stone-golem-cy)">
+<use href="#stone-golem-px" x="-4" y="-5" fill="#7bd389"/>
+<g clip-path="url(#stone-golem-cz)"><use href="#stone-golem-px" x="3" y="3" fill="#5f9a4a"/></g>
+</g>
+<use href="#stone-golem-p10" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-c11)">
+<use href="#stone-golem-p10" x="-12" y="-12" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-c12)"><use href="#stone-golem-p10" x="8" y="8" fill="#8a86a8"/></g>
+</g>
+<use href="#stone-golem-p13" fill="#575275" stroke-width="12"/>
+<g clip-path="url(#stone-golem-c14)">
+<use href="#stone-golem-p13" x="-12" y="-12" fill="#bdb9d6"/>
+<g clip-path="url(#stone-golem-c15)"><use href="#stone-golem-p13" x="8" y="8" fill="#8a86a8"/></g>
+</g>
+<path d="M114 360L140 352L166 360M346 360L372 352L398 360" fill="none" stroke-width="4" stroke-opacity="0.7"/>
+<path d="M94 376L98 382L94 389L90 382Z" fill="#bdb9d6" fill-opacity="0.58"/>
+<path d="M262 391L265 396L262 401L259 396Z" fill="#bdb9d6" fill-opacity="0.4"/>
+<path d="M273 405L275 409L273 413L270 409Z" fill="#bdb9d6" fill-opacity="0.36"/>
+<path d="M342 397L344 401L342 405L340 401Z" fill="#bdb9d6" fill-opacity="0.45"/>
+<path d="M187 397L189 401L187 406L184 401Z" fill="#bdb9d6" fill-opacity="0.69"/>
+<path d="M172 411L174 415L172 419L170 415Z" fill="#bdb9d6" fill-opacity="0.36"/>
+<path d="M141 386L144 392L141 397L138 392Z" fill="#bdb9d6" fill-opacity="0.6"/>
+<path d="M115 411L117 417L115 422L112 417Z" fill="#bdb9d6" fill-opacity="0.55"/>
+<path d="M314 413L317 419L314 424L311 419Z" fill="#bdb9d6" fill-opacity="0.67"/>
+<path d="M363 378L365 382L363 385L361 382Z" fill="#bdb9d6" fill-opacity="0.44"/>
+</svg>

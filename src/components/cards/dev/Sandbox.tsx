@@ -10,6 +10,9 @@ import { MatchClient, useMatchSelector } from "@/game/cards/client/matchClient";
 import type { Seat } from "@/game/cards/engine/types";
 import { t } from "@/game/cards/i18n";
 import { Battlefield } from "../match/MatchScreen";
+import { ArtGallery } from "./ArtGallery";
+import { StyleProof } from "./StyleProof";
+import { UiKit } from "./UiKit";
 
 interface SandboxSession {
   id: number;
@@ -92,34 +95,51 @@ function SandboxBar({
   onNewMatch: () => void;
 }) {
   const seat = useMatchSelector(session.client, (s) => s.view?.seat ?? 0);
+  const [proof, setProof] = useState(false);
+  const [kit, setKit] = useState(false);
+  const [gallery, setGallery] = useState(false);
   const viewAs = (s: Seat) => {
     onFollow(false);
     session.transport.setViewer(s);
     if (bot) session.transport.setBot(s === 0 ? 1 : 0);
   };
   return (
-    <div className="cg-sandbox-bar" data-cg-tap>
-      <span>{t("sandbox.viewAs")}</span>
-      <button type="button" className={`cg-button${seat === 0 ? " cg-button--active" : ""}`} onClick={() => viewAs(0)}>
-        {t("sandbox.player1")}
-      </button>
-      <button type="button" className={`cg-button${seat === 1 ? " cg-button--active" : ""}`} onClick={() => viewAs(1)}>
-        {t("sandbox.player2")}
-      </button>
-      <button type="button" className={`cg-button${follow ? " cg-button--active" : ""}`} aria-pressed={follow} onClick={() => onFollow(!follow)}>
-        {t("sandbox.follow")}
-      </button>
-      <button type="button" className={`cg-button${bot ? " cg-button--active" : ""}`} aria-pressed={bot} onClick={() => onBot(!bot)}>
-        {t("sandbox.bot")}
-      </button>
-      {(["status", "advanced"] as const).map((d) => (
-        <button key={d} type="button" className={`cg-button${deck === d ? " cg-button--active" : ""}`} aria-pressed={deck === d} onClick={() => onDeck(deck === d ? null : d)}>
-          {t(d === "status" ? "sandbox.statusDeck" : "sandbox.advancedDeck")}
+    <>
+      <div className="cg-sandbox-bar" data-cg-tap>
+        <span>{t("sandbox.viewAs")}</span>
+        <button type="button" className={`cg-button${seat === 0 ? " cg-button--active" : ""}`} onClick={() => viewAs(0)}>
+          {t("sandbox.player1")}
         </button>
-      ))}
-      <button type="button" className="cg-button" onClick={onNewMatch}>
-        {t("sandbox.newMatch")}
-      </button>
-    </div>
+        <button type="button" className={`cg-button${seat === 1 ? " cg-button--active" : ""}`} onClick={() => viewAs(1)}>
+          {t("sandbox.player2")}
+        </button>
+        <button type="button" className={`cg-button${follow ? " cg-button--active" : ""}`} aria-pressed={follow} onClick={() => onFollow(!follow)}>
+          {t("sandbox.follow")}
+        </button>
+        <button type="button" className={`cg-button${bot ? " cg-button--active" : ""}`} aria-pressed={bot} onClick={() => onBot(!bot)}>
+          {t("sandbox.bot")}
+        </button>
+        {(["status", "advanced"] as const).map((d) => (
+          <button key={d} type="button" className={`cg-button${deck === d ? " cg-button--active" : ""}`} aria-pressed={deck === d} onClick={() => onDeck(deck === d ? null : d)}>
+            {t(d === "status" ? "sandbox.statusDeck" : "sandbox.advancedDeck")}
+          </button>
+        ))}
+        <button type="button" className="cg-button" onClick={onNewMatch}>
+          {t("sandbox.newMatch")}
+        </button>
+        <button type="button" className={`cg-button${proof ? " cg-button--active" : ""}`} aria-pressed={proof} onClick={() => setProof(!proof)}>
+          {t("sandbox.styleProof")}
+        </button>
+        <button type="button" className={`cg-button${kit ? " cg-button--active" : ""}`} aria-pressed={kit} onClick={() => setKit(!kit)}>
+          {t("sandbox.uiKit")}
+        </button>
+        <button type="button" className={`cg-button${gallery ? " cg-button--active" : ""}`} aria-pressed={gallery} onClick={() => setGallery(!gallery)}>
+          {t("sandbox.artGallery")}
+        </button>
+      </div>
+      {proof && <StyleProof onClose={() => setProof(false)} />}
+      {kit && <UiKit onClose={() => setKit(false)} />}
+      {gallery && <ArtGallery onClose={() => setGallery(false)} />}
+    </>
   );
 }
