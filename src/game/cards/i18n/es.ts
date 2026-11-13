@@ -401,14 +401,22 @@ export const es = {
     foeGoesFirst: "Empieza tu rival. Recibirás una Chispa de Maná.",
     abandonedTitle: "Partida cancelada",
     leaveMatch: "Salir al menú",
-    // Event playback (Phase 13)
-    reducedMotionOn: "Animaciones reducidas: sí",
-    reducedMotionOff: "Animaciones reducidas: no",
-    reducedMotionSystem: "Animaciones reducidas (sistema)",
   },
   // Floating texts of the animation layer (Phase 13).
   fx: {
     blocked: "¡Bloqueado!",
+  },
+  // In-match settings sheet (Phase 20).
+  settings: {
+    title: "Ajustes",
+    sound: "Sonido",
+    reducedMotion: "Animaciones reducidas",
+    reducedMotionSystem: "Activadas por el sistema",
+    system: "Sistema",
+    speed: "Velocidad",
+    speedValue: "{n}×",
+    on: "Sí",
+    off: "No",
   },
   // Why the game ended (GameOverOverlay, Phase 11). Keyed by EndReason; `stale` = abandoned without a winner (§6.11).
   endReason: {

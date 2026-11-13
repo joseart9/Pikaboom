@@ -1,5 +1,6 @@
 // Shared number badge used by the stat primitives. Skin-internal: shapes are simple SVGs, sizes are CSS lengths.
 import type { CSSProperties, ReactNode } from "react";
+import { SKIN_FILES, skinUrl, type SkinAsset } from "./assets";
 
 export type BadgeShape = "circle" | "diamond" | "drop" | "gem";
 
@@ -33,8 +34,14 @@ export function Badge({ shape, fill, value, size, valueColor = "var(--cg-text)",
   return (
     <span style={style} title={title}>
       <svg viewBox="0 0 100 100" aria-hidden style={{ position: "absolute", inset: 0, width: "100%", height: "100%", overflow: "visible" }}>
-        <path d={PATHS[shape]} fill={fill} stroke="#1d0842" strokeWidth={7} strokeLinejoin="round" />
-        <path d={PATHS[shape]} fill="none" stroke="#ffffff55" strokeWidth={3} transform="translate(50 50) scale(0.82) translate(-50 -50)" />
+        {SKIN_FILES.has(`badge-${shape}` as SkinAsset) ? (
+          <image href={skinUrl(`badge-${shape}` as SkinAsset)} width={100} height={100} />
+        ) : (
+          <>
+            <path d={PATHS[shape]} fill={fill} stroke="#1d0842" strokeWidth={7} strokeLinejoin="round" />
+            <path d={PATHS[shape]} fill="none" stroke="#ffffff55" strokeWidth={3} transform="translate(50 50) scale(0.82) translate(-50 -50)" />
+          </>
+        )}
       </svg>
       <span
         style={{

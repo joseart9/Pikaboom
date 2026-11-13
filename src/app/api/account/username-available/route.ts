@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import { isUsernameAvailable } from "@/lib/auth";
+import { logServerError } from "@/lib/logError";
 
 export const dynamic = "force-dynamic";
 
@@ -14,7 +15,7 @@ export async function GET(request: NextRequest) {
   try {
     return Response.json({ available: await isUsernameAvailable(u) }, { headers: NO_STORE });
   } catch (e) {
-    console.error("api/account/username-available:", e);
+    logServerError("api/account/username-available", e);
     return Response.json({ error: "unavailable" }, { status: 503, headers: NO_STORE });
   }
 }

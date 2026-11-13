@@ -8,7 +8,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore, type MouseEvent, type ReactNode } from "react";
-import { isReducedMotion, osReducedMotion, reducedMotionToggle, setReducedMotionToggle, subscribeReducedMotion } from "@/game/cards/client/animation/motion";
+import { isReducedMotion, subscribeReducedMotion } from "@/game/cards/client/animation/motion";
 import { gameOutcome, onlyEndTurnLeft } from "@/game/cards/client/boardModel";
 import { decideAimRelease, decideAttackDrop, decideCardDrop, type DragHost, type DragState, type InspectTarget } from "@/game/cards/client/drag";
 import { HttpTransport } from "@/game/cards/client/httpTransport";
@@ -33,6 +33,7 @@ import { GameOverOverlay } from "./GameOverOverlay";
 import { MatchSounds } from "./MatchSounds";
 import { MulliganOverlay } from "./MulliganOverlay";
 import { PlayerArea } from "./PlayerArea";
+import { SettingsSheet } from "./SettingsSheet";
 import { TargetArrow } from "./TargetArrow";
 import { Toasts } from "./Toasts";
 import { TopBar } from "./TopBar";
@@ -97,11 +98,10 @@ function outOfHand(
   return { ghost, parked: shownParked, away: dragIid ?? ghostIid ?? shownParked?.iid ?? null };
 }
 
-/** Reduced-motion state for the menu toggle: [effective, forced by the OS]. */
-function useReducedMotion(): { reduced: boolean; forcedByOs: boolean } {
+/** Effective reduced motion (OS or the in-game setting): adds `cg-battlefield--reduced`. */
+function useReducedMotion(): { reduced: boolean } {
   const reduced = useSyncExternalStore(subscribeReducedMotion, isReducedMotion, () => false);
-  const forcedByOs = useSyncExternalStore(subscribeReducedMotion, osReducedMotion, () => false);
-  return { reduced, forcedByOs };
+  return { reduced };
 }
 
 export function Battlefield({ client, children }: { client: MatchClient; children?: ReactNode }) {
@@ -125,7 +125,6 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
     setIx({ state: interaction, legal });
   }
   const [menuOpen, setMenuOpen] = useState(false);
-  const [confirmConcede, setConfirmConcede] = useState(false);
   const [parked, setParked] = useState<Parked | null>(null);
   const [inspect, setInspect] = useState<InspectTarget | null>(null);
   const [kbGap, setKbGap] = useState<{ card: EntityId; index: number } | null>(null);
@@ -437,10 +436,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
         hoverTarget={hoverTarget}
         menuOpen={menuOpen}
         onTapEntity={onTapEntity}
-        onToggleMenu={() => {
-          setMenuOpen((o) => !o);
-          setConfirmConcede(false);
-        }}
+        onToggleMenu={() => setMenuOpen((o) => !o)}
       />
       <Board
         units={board.foe.board}
@@ -499,45 +495,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
 
       <FxLayer client={client} />
 
-      {menuOpen && (
-        <div className="cg-menu" data-cg-tap>
-          {!confirmConcede ? (
-            <button type="button" className="cg-button cg-button--danger" disabled={finished} onClick={() => setConfirmConcede(true)}>
-              {t("match.concede")}
-            </button>
-          ) : (
-            <>
-              <span className="cg-menu-title">{t("match.confirmConcede")}</span>
-              <button
-                type="button"
-                className="cg-button cg-button--danger"
-                onClick={() => {
-                  setMenuOpen(false);
-                  setConfirmConcede(false);
-                  void client.send({ t: "concede" });
-                }}
-              >
-                {t("match.confirmYes")}
-              </button>
-              <button type="button" className="cg-button" onClick={() => setConfirmConcede(false)}>
-                {t("match.confirmNo")}
-              </button>
-            </>
-          )}
-          <button
-            type="button"
-            className={`cg-button${motion.reduced ? " cg-button--active" : ""}`}
-            aria-pressed={motion.reduced}
-            disabled={motion.forcedByOs}
-            onClick={() => setReducedMotionToggle(!reducedMotionToggle())}
-          >
-            {motion.forcedByOs ? t("match.reducedMotionSystem") : motion.reduced ? t("match.reducedMotionOn") : t("match.reducedMotionOff")}
-          </button>
-          <Link href="/cards" className="cg-button">
-            {t("match.backToMenu")}
-          </Link>
-        </div>
-      )}
+      {menuOpen && <SettingsSheet finished={finished} onClose={() => setMenuOpen(false)} onConcede={() => void client.send({ t: "concede" })} />}
 
       {board.phase === "mulligan" && !over && (
         <MulliganOverlay

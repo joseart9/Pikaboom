@@ -6,6 +6,7 @@ import { LandscapeShell } from "@/components/cards/LandscapeShell";
 import { t } from "@/game/cards/i18n";
 import { ensureProfile, getUser } from "@/lib/auth";
 import { REQUEST_PATH_HEADER, safeNext } from "@/lib/safeNext";
+import { logServerError } from "@/lib/logError";
 
 export const metadata: Metadata = { title: `${t("game.title")} · Pikaboom`, robots: { index: false } };
 
@@ -26,7 +27,7 @@ export default async function CardsLayout({ children }: LayoutProps<"/cards">) {
   try {
     await ensureProfile(user);
   } catch (e) {
-    console.error("cards: ensureProfile failed", e);
+    logServerError("cards layout: ensureProfile failed", e);
   }
   return <LandscapeShell>{children}</LandscapeShell>;
 }

@@ -1,17 +1,26 @@
 "use client";
 
-// Effects toolkit (§18.4, Phase 13): WAAPI animations on transform-family properties (`transform`, `translate`,
-// `scale`) and `opacity` only, DOM floaters (numbers, flying cards, banner) inside the FX layer, and one pooled
-// <canvas> for particles. Every effect is tracked so a skip can finish all of them at once (`finishAll`).
-// Durations are passed in already scaled for speed / reduced motion (handlers use `env.ms`).
-import type { CardId } from "../../catalog/types";
+// Effects toolkit (§18.4, Phase 13; extended in Phase 20): WAAPI animations on transform-family properties
+// (`transform`, `translate`, `scale`, `rotate`) and `opacity` only, DOM floaters (numbers, flying cards, banners,
+// rings, glyphs, the cinematic dim/rays) inside the FX layer, and one pooled <canvas> for particles. Every effect is
+// tracked so a skip can finish all of them at once (`finishAll`). Durations are passed in already scaled for speed /
+// reduced motion (handlers use `env.ms`).
+import type { CardId, Rarity } from "../../catalog/types";
+import type { FxElement } from "../../catalog/visuals";
 import type { EntityId } from "../../engine/types";
 
+export type { FxElement };
 export type FloatKind = "damage" | "heal" | "buff" | "info";
-export type FlashKind = "damage" | "heal" | "glow" | "buff";
-export type ParticleKind = "fire" | "ice" | "arcane" | "lightning" | "heal" | "dust";
+export type FlashKind = "damage" | "heal" | "glow" | "buff" | "impact";
+/** Every element, the heal sparkle, and the neutral kinds (dust, debris, confetti). */
+export type ParticleKind = FxElement | "heal" | "dust" | "debris" | "confetti";
+/** `fx.projectile` kinds (§18.4, extended in Phase 20 to every `FxElement`). */
+export type ProjectileKind = FxElement | "heal";
 export type FxAnchor = "foe-hand" | "foe-deck" | "my-hand" | "my-deck" | "center";
-export type RevealMode = "played" | "burned";
+/** played: the opponent's card; burned: hand full; heavy/cinematic: the Phase 20 entrances (CSS slam-in). */
+export type RevealMode = "played" | "burned" | "heavy" | "cinematic";
+
+export const PROJECTILE_KINDS: readonly ProjectileKind[] = ["fire", "ice", "arcane", "lightning", "shadow", "nature", "holy", "heal"];
 
 export interface AnimateOptions {
   easing?: string;
@@ -19,6 +28,12 @@ export interface AnimateOptions {
   persist?: boolean;
   /** Lift the element above its neighbours while it moves (inline z-index, not animated). */
   raise?: boolean;
+}
+
+export interface RevealOptions {
+  /** Length of the CSS slam-in for `heavy` / `cinematic` (ms). */
+  inMs?: number;
+  rarity?: Rarity;
 }
 
 export interface FxApi {
@@ -33,16 +48,36 @@ export interface FxApi {
   wait(ms: number): Promise<void>;
   /** A card (back, or a clone of `source`) moving from one box to another. */
   flyCard(from: DOMRect, to: DOMRect, ms: number, opts?: { source?: HTMLElement; fadeOut?: boolean }): Promise<void>;
-  projectile(from: Element, to: Element, kind: ParticleKind, ms: number): Promise<void>;
+  /** An elemental orb from an element (or a box, e.g. the centre for a spell) to a target; bursts on arrival. */
+  projectile(from: Element | DOMRect, to: Element, kind: ProjectileKind, ms: number): Promise<void>;
   floatNumber(el: Element, text: string, kind: FloatKind, ms: number): Promise<void>;
   shake(intensity: number, ms: number): Promise<void>;
   flash(el: Element, kind: FlashKind, ms: number): Promise<void>;
-  burst(el: Element, kind: ParticleKind, count?: number): void;
+  burst(el: Element | DOMRect, kind: ParticleKind, count?: number): void;
+  /** Particles left along a line (attack trail). */
+  streak(from: Element, to: Element, kind: ParticleKind, count?: number): void;
   slam(el: Element, ms: number): Promise<void>;
   chain(els: Element[], kind: FlashKind, ms: number): Promise<void>;
   banner(text: string, tone: "mine" | "foe", ms: number): Promise<void>;
   /** Shows a card face in the centre (rendered by the FX layer). */
-  reveal(defId: CardId, mode: RevealMode, ms: number): Promise<void>;
+  reveal(defId: CardId, mode: RevealMode, ms: number, opts?: RevealOptions): Promise<void>;
+  // ── Phase 20 ──
+  /** An expanding shockwave ring on an element. */
+  ring(el: Element, kind: ParticleKind | "damage", ms: number): Promise<void>;
+  /** A symbol rising from an element (ability glyph, status glyph). */
+  glyph(el: Element, text: string, kind: ParticleKind, ms: number): Promise<void>;
+  /** Darkens the whole board (fades in and out within `ms`). */
+  dim(ms: number): Promise<void>;
+  /** Rotating light rays behind the centre, in a rarity color. */
+  rays(rarity: Rarity, ms: number): Promise<void>;
+  /** The card's name on a rarity-colored ribbon under the centre. */
+  nameBanner(text: string, rarity: Rarity, ms: number): Promise<void>;
+  /** Red edges: my hero was hit. */
+  vignette(ms: number): Promise<void>;
+  /** A band of light crossing the board (turn start). */
+  sweep(tone: "mine" | "foe", ms: number): Promise<void>;
+  /** Cracks over an element (a defeated hero's portrait). */
+  crack(el: Element, ms: number): Promise<void>;
   /** Skip: every running effect jumps to its end, floaters and particles disappear. */
   finishAll(): void;
   /** After a reconcile: drops `persist` end states (their elements are normally gone by then). */
@@ -51,7 +86,56 @@ export interface FxApi {
 
 // ── Particles ───────────────────────────────────────────────────────────────────────────────────────────────
 export const MAX_PARTICLES = 300;
+/** Low-end devices get half the budget and half of every burst (Phase 20 H). */
+export const LOW_END_PARTICLE_FACTOR = 0.5;
+/** A frame-time average above this over `FRAME_SAMPLE` frames marks the device low-end. */
+export const LOW_END_FRAME_MS = 24;
+export const FRAME_SAMPLE = 30;
 const MAX_DPR = 2;
+
+/** `navigator.hardwareConcurrency <= 4` → low-end from the start (unknown counts as capable). */
+export function lowEndByCores(nav: { hardwareConcurrency?: number } | undefined): boolean {
+  const n = nav?.hardwareConcurrency;
+  return typeof n === "number" && n > 0 && n <= 4;
+}
+
+/** Average frame time over consecutive windows of `FRAME_SAMPLE` frames; latches once a window is too slow. */
+export class FrameMonitor {
+  private sum = 0;
+  private n = 0;
+  private slow = false;
+
+  get lowEnd(): boolean {
+    return this.slow;
+  }
+
+  /** Feeds one frame time; returns true once the device is considered low-end. */
+  push(frameMs: number): boolean {
+    if (this.slow) return true;
+    this.sum += frameMs;
+    this.n += 1;
+    if (this.n >= FRAME_SAMPLE) {
+      if (this.sum / this.n > LOW_END_FRAME_MS) this.slow = true;
+      this.sum = 0;
+      this.n = 0;
+    }
+    return this.slow;
+  }
+
+  /** A pause (idle canvas, hidden page) must not count as a slow frame. */
+  restart(): void {
+    this.sum = 0;
+    this.n = 0;
+  }
+}
+
+/** Particle budget and burst size for the current device class. */
+export function particleBudget(lowEnd: boolean): number {
+  return lowEnd ? Math.floor(MAX_PARTICLES * LOW_END_PARTICLE_FACTOR) : MAX_PARTICLES;
+}
+export function scaledCount(count: number, lowEnd: boolean): number {
+  return lowEnd ? Math.max(1, Math.round(count * LOW_END_PARTICLE_FACTOR)) : count;
+}
 
 interface Particle {
   x: number;
@@ -63,25 +147,57 @@ interface Particle {
   size: number;
   color: string;
   gravity: number;
+  rect: boolean;
+  spin: number;
 }
 
+/** Motion per particle kind: speed (px/ms), life (ms), gravity (px/ms²), upward bias, size and shape. */
+interface KindStyle {
+  speed: [number, number];
+  life: [number, number];
+  gravity: number;
+  lift: number;
+  size: [number, number];
+  rect?: boolean;
+}
+
+const STYLE: Record<ParticleKind, KindStyle> = {
+  fire: { speed: [0.05, 0.18], life: [380, 760], gravity: -0.00018, lift: 0.05, size: [2, 5] },
+  ice: { speed: [0.06, 0.2], life: [420, 820], gravity: 0.00025, lift: 0, size: [1.5, 4], rect: true },
+  arcane: { speed: [0.04, 0.16], life: [400, 800], gravity: 0, lift: 0.02, size: [1.5, 4] },
+  lightning: { speed: [0.12, 0.3], life: [200, 420], gravity: 0, lift: 0, size: [1.5, 3], rect: true },
+  shadow: { speed: [0.03, 0.12], life: [500, 900], gravity: -0.00008, lift: 0.03, size: [3, 6] },
+  nature: { speed: [0.04, 0.15], life: [500, 900], gravity: 0.00012, lift: 0.04, size: [2, 4.5], rect: true },
+  holy: { speed: [0.03, 0.12], life: [500, 950], gravity: -0.00012, lift: 0.06, size: [1.5, 3.5] },
+  heal: { speed: [0.03, 0.12], life: [450, 850], gravity: -0.0001, lift: 0.08, size: [2, 4.5] },
+  dust: { speed: [0.04, 0.16], life: [380, 800], gravity: 0.00035, lift: 0, size: [2, 5.5] },
+  debris: { speed: [0.1, 0.28], life: [420, 820], gravity: 0.0006, lift: 0.12, size: [2.5, 6], rect: true },
+  confetti: { speed: [0.12, 0.3], life: [900, 1500], gravity: 0.00035, lift: 0.2, size: [3, 6], rect: true },
+};
+
+const CONFETTI_TOKENS = ["fire", "ice", "arcane", "lightning", "heal", "holy"] as const;
+const between = (r: [number, number]) => r[0] + Math.random() * (r[1] - r[0]);
+
 /**
- * Pooled particles on one canvas (§18.6): at most 300 alive, DPR capped at 2, the rAF loop runs only while
- * particles are alive and stops when the page is hidden. Colors come from `--cg-fx-<kind>` tokens.
+ * Pooled particles on one canvas (§18.6): at most 300 alive (150 on low-end devices), DPR capped at 2, the rAF loop
+ * runs only while particles are alive and stops when the page is hidden. Colors come from `--cg-fx-<kind>` tokens.
  */
 export class ParticleSystem {
   private readonly pool: Particle[] = [];
   private alive = 0;
   private raf = 0;
   private last = 0;
-  private readonly colors = new Map<ParticleKind, string>();
+  private readonly colors = new Map<string, string>();
   private readonly ctx: CanvasRenderingContext2D | null;
+  private readonly monitor = new FrameMonitor();
+  private lowEndCores: boolean;
   private readonly onVisibility = () => {
     if (document.visibilityState === "hidden") this.clear();
   };
 
   constructor(private readonly canvas: HTMLCanvasElement) {
     this.ctx = canvas.getContext("2d");
+    this.lowEndCores = lowEndByCores(typeof navigator === "undefined" ? undefined : navigator);
     document.addEventListener("visibilitychange", this.onVisibility);
   }
 
@@ -94,11 +210,20 @@ export class ParticleSystem {
     return this.alive;
   }
 
-  private color(kind: ParticleKind): string {
-    let c = this.colors.get(kind);
+  /** Halved budget: few cores, or slow frames measured while particles were flying. */
+  get lowEnd(): boolean {
+    return this.lowEndCores || this.monitor.lowEnd;
+  }
+
+  get budget(): number {
+    return particleBudget(this.lowEnd);
+  }
+
+  private color(token: string): string {
+    let c = this.colors.get(token);
     if (!c) {
-      c = getComputedStyle(this.canvas).getPropertyValue(`--cg-fx-${kind}`).trim() || "currentColor";
-      this.colors.set(kind, c);
+      c = getComputedStyle(this.canvas).getPropertyValue(`--cg-fx-${token}`).trim() || "currentColor";
+      this.colors.set(token, c);
     }
     return c;
   }
@@ -114,28 +239,35 @@ export class ParticleSystem {
     this.ctx?.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  /** `x`/`y` in canvas CSS pixels. */
-  burst(x: number, y: number, kind: ParticleKind, count: number): void {
+  /** `x`/`y` in canvas CSS pixels; `spread` scatters the origins (a line of particles). */
+  burst(x: number, y: number, kind: ParticleKind, count: number, spread?: { dx: number; dy: number }): void {
     if (!this.ctx || document.visibilityState === "hidden") return;
     if (this.alive === 0) this.fit();
-    const color = this.color(kind);
-    const n = Math.min(count, MAX_PARTICLES - this.alive);
+    const style = STYLE[kind];
+    const n = Math.min(scaledCount(count, this.lowEnd), this.budget - this.alive);
+    const fixed = kind === "confetti" ? null : this.color(kind);
     for (let i = 0; i < n; i++) {
-      const p = this.pool[this.alive] ?? (this.pool[this.alive] = { x: 0, y: 0, vx: 0, vy: 0, life: 0, total: 0, size: 0, color, gravity: 0 });
+      const p =
+        this.pool[this.alive] ??
+        (this.pool[this.alive] = { x: 0, y: 0, vx: 0, vy: 0, life: 0, total: 0, size: 0, color: "", gravity: 0, rect: false, spin: 0 });
       const angle = Math.random() * Math.PI * 2;
-      const speed = 0.04 + Math.random() * 0.16; // px per ms
-      p.x = x;
-      p.y = y;
+      const speed = between(style.speed) * (spread ? 0.25 : 1);
+      const along = spread ? Math.random() : 0;
+      p.x = x + (spread ? spread.dx * along : 0);
+      p.y = y + (spread ? spread.dy * along : 0);
       p.vx = Math.cos(angle) * speed;
-      p.vy = Math.sin(angle) * speed - (kind === "heal" ? 0.08 : 0);
-      p.total = p.life = 380 + Math.random() * 420;
-      p.size = 2 + Math.random() * 3.5;
-      p.color = color;
-      p.gravity = kind === "dust" ? 0.00035 : kind === "heal" ? -0.0001 : 0.0002;
+      p.vy = Math.sin(angle) * speed - style.lift;
+      p.total = p.life = between(style.life);
+      p.size = between(style.size);
+      p.color = fixed ?? this.color(CONFETTI_TOKENS[i % CONFETTI_TOKENS.length]);
+      p.gravity = style.gravity;
+      p.rect = style.rect === true;
+      p.spin = Math.random() * Math.PI;
       this.alive += 1;
     }
-    if (!this.raf) {
+    if (!this.raf && this.alive > 0) {
       this.last = performance.now();
+      this.monitor.restart();
       this.raf = requestAnimationFrame(this.tick);
     }
   }
@@ -150,7 +282,9 @@ export class ParticleSystem {
   private readonly tick = (now: number) => {
     const ctx = this.ctx;
     if (!ctx) return;
-    const dt = Math.min(48, now - this.last);
+    const frame = now - this.last;
+    this.monitor.push(frame);
+    const dt = Math.min(48, frame);
     this.last = now;
     ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     let i = 0;
@@ -169,9 +303,15 @@ export class ParticleSystem {
       p.y += p.vy * dt;
       ctx.globalAlpha = p.life / p.total;
       ctx.fillStyle = p.color;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fill();
+      if (p.rect) {
+        // A flat flake that "tumbles": its height oscillates with its life (no rotation transform per particle).
+        const h = p.size * (0.35 + 0.65 * Math.abs(Math.cos(p.spin + p.life / 90)));
+        ctx.fillRect(p.x - p.size / 2, p.y - h / 2, p.size, h);
+      } else {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
       i += 1;
     }
     ctx.globalAlpha = 1;
@@ -185,6 +325,7 @@ interface Waiter {
   resolve: () => void;
 }
 
+const rectOf = (x: Element | DOMRect): DOMRect => (x instanceof Element ? x.getBoundingClientRect() : x);
 const centerOf = (r: DOMRect) => ({ x: r.left + r.width / 2, y: r.top + r.height / 2 });
 
 /** Removes ids and data-* attributes from a clone so hit-testing and the element registry never find it. */
@@ -203,7 +344,7 @@ export interface DomFxOptions {
   layer: HTMLElement;
   particles: ParticleSystem | null;
   /** Renders a card face in the centre (FX layer React state); null hides it. */
-  showReveal: (reveal: { defId: CardId; mode: RevealMode; ms: number; key: number } | null) => void;
+  showReveal: (reveal: { defId: CardId; mode: RevealMode; ms: number; key: number; inMs?: number; rarity?: Rarity } | null) => void;
 }
 
 export class DomFx implements FxApi {
@@ -282,6 +423,12 @@ export class DomFx implements FxApi {
     return node;
   }
 
+  /** A floater covering the whole layer. */
+  private cover(className: string): HTMLElement {
+    const r = this.o.layer.getBoundingClientRect();
+    return this.floater(className, { x: r.left, y: r.top, w: r.width, h: r.height });
+  }
+
   private drop(node: HTMLElement): void {
     this.floaters.delete(node);
     node.remove();
@@ -313,13 +460,23 @@ export class DomFx implements FxApi {
     this.drop(node);
   }
 
-  async projectile(from: Element, to: Element, kind: ParticleKind, ms: number): Promise<void> {
-    const a = centerOf(from.getBoundingClientRect());
+  async projectile(from: Element | DOMRect, to: Element, kind: ProjectileKind, ms: number): Promise<void> {
+    const a = centerOf(rectOf(from));
     const b = centerOf(to.getBoundingClientRect());
     const node = this.floater(`cg-fx-projectile cg-fx-projectile--${kind}`, { x: a.x, y: a.y });
-    await this.animate(node, [{ transform: "translate(-50%, -50%)" }, { transform: `translate(calc(${b.x - a.x}px - 50%), calc(${b.y - a.y}px - 50%))` }], ms, { easing: "ease-in" });
+    this.burst(rectOf(from), kind, 6);
+    const angle = (Math.atan2(b.y - a.y, b.x - a.x) * 180) / Math.PI;
+    await this.animate(
+      node,
+      [
+        { transform: `translate(-50%, -50%) rotate(${angle}deg) scale(0.6)` },
+        { transform: `translate(calc(${b.x - a.x}px - 50%), calc(${b.y - a.y}px - 50%)) rotate(${angle}deg) scale(1)` },
+      ],
+      ms,
+      { easing: "ease-in" },
+    );
     this.drop(node);
-    this.burst(to, kind, 14);
+    this.burst(to, kind, 16);
   }
 
   async floatNumber(el: Element, text: string, kind: FloatKind, ms: number): Promise<void> {
@@ -357,12 +514,22 @@ export class DomFx implements FxApi {
     this.drop(node);
   }
 
-  burst(el: Element, kind: ParticleKind, count = 16): void {
+  burst(el: Element | DOMRect, kind: ParticleKind, count = 16): void {
     const p = this.o.particles;
     if (!p) return;
-    const c = centerOf(el.getBoundingClientRect());
+    const c = centerOf(rectOf(el));
     const layer = this.o.layer.getBoundingClientRect();
     p.burst(c.x - layer.left, c.y - layer.top, kind, count);
+  }
+
+  streak(from: Element, to: Element, kind: ParticleKind, count = 14): void {
+    const p = this.o.particles;
+    if (!p) return;
+    const a = centerOf(from.getBoundingClientRect());
+    const b = centerOf(to.getBoundingClientRect());
+    const layer = this.o.layer.getBoundingClientRect();
+    // From the attacker to 80% of the way (the lunge stops short of the target).
+    p.burst(a.x - layer.left, a.y - layer.top, kind, count, { dx: (b.x - a.x) * 0.8, dy: (b.y - a.y) * 0.8 });
   }
 
   slam(el: Element, ms: number): Promise<void> {
@@ -397,11 +564,108 @@ export class DomFx implements FxApi {
     await this.wait(ms);
   }
 
-  async reveal(defId: CardId, mode: RevealMode, ms: number): Promise<void> {
+  async reveal(defId: CardId, mode: RevealMode, ms: number, opts: RevealOptions = {}): Promise<void> {
     const key = ++this.revealKey;
-    this.o.showReveal({ defId, mode, ms, key });
+    this.o.showReveal({ defId, mode, ms, key, inMs: opts.inMs, rarity: opts.rarity });
     await this.wait(ms);
     if (this.revealKey === key) this.o.showReveal(null);
+  }
+
+  async ring(el: Element, kind: ParticleKind | "damage", ms: number): Promise<void> {
+    const r = el.getBoundingClientRect();
+    if (r.width === 0) return;
+    const size = Math.max(r.width, r.height);
+    const c = centerOf(r);
+    const node = this.floater(`cg-fx-ring cg-fx-ring--${kind}`, { x: c.x - size / 2, y: c.y - size / 2, w: size, h: size });
+    await this.animate(node, [{ transform: "scale(0.3)", opacity: 0.95 }, { transform: "scale(1.5)", opacity: 0 }], ms, { easing: "ease-out" });
+    this.drop(node);
+  }
+
+  async glyph(el: Element, text: string, kind: ParticleKind, ms: number): Promise<void> {
+    const r = el.getBoundingClientRect();
+    if (r.width === 0) return;
+    const node = this.floater(`cg-fx-glyph cg-fx-glyph--${kind}`, { x: r.left + r.width / 2, y: r.top + r.height * 0.3 });
+    node.textContent = text;
+    await this.animate(
+      node,
+      [
+        { transform: "translate(-50%, -50%) scale(0.3)", opacity: 0 },
+        { transform: "translate(-50%, -60%) scale(1.15)", opacity: 1, offset: 0.25 },
+        { transform: "translate(-50%, -80%) scale(1)", opacity: 1, offset: 0.7 },
+        { transform: "translate(-50%, -100%) scale(0.9)", opacity: 0 },
+      ],
+      ms,
+    );
+    this.drop(node);
+  }
+
+  async dim(ms: number): Promise<void> {
+    const node = this.cover("cg-fx-dim");
+    await this.animate(node, [{ opacity: 0 }, { opacity: 1, offset: 0.12 }, { opacity: 1, offset: 0.82 }, { opacity: 0 }], ms, { easing: "linear" });
+    this.drop(node);
+  }
+
+  async rays(rarity: Rarity, ms: number): Promise<void> {
+    const layer = this.o.layer.getBoundingClientRect();
+    const size = Math.hypot(layer.width, layer.height);
+    const c = centerOf(layer);
+    const node = this.floater(`cg-fx-rays cg-fx-rays--${rarity}`, { x: c.x - size / 2, y: c.y - size / 2, w: size, h: size });
+    await this.animate(
+      node,
+      [
+        { transform: "rotate(0deg) scale(0.4)", opacity: 0 },
+        { transform: "rotate(25deg) scale(1)", opacity: 1, offset: 0.25 },
+        { transform: "rotate(70deg) scale(1.05)", opacity: 0.85, offset: 0.8 },
+        { transform: "rotate(90deg) scale(1.1)", opacity: 0 },
+      ],
+      ms,
+      { easing: "linear" },
+    );
+    this.drop(node);
+  }
+
+  async nameBanner(text: string, rarity: Rarity, ms: number): Promise<void> {
+    const layer = this.o.layer.getBoundingClientRect();
+    const wrap = this.floater("cg-fx-name-wrap", { x: layer.left, y: layer.top + layer.height * 0.8 });
+    wrap.style.left = "0";
+    wrap.style.right = "0";
+    const inner = document.createElement("div");
+    inner.className = `cg-fx-name cg-fx-name--${rarity}`;
+    inner.textContent = text;
+    wrap.appendChild(inner);
+    await this.animate(
+      inner,
+      [
+        { transform: "translateY(-50%) scaleX(0.2)", opacity: 0 },
+        { transform: "translateY(-50%) scaleX(1.05)", opacity: 1, offset: 0.2 },
+        { transform: "translateY(-50%) scaleX(1)", opacity: 1, offset: 0.8 },
+        { transform: "translateY(-50%) scaleX(1)", opacity: 0 },
+      ],
+      ms,
+    );
+    this.drop(wrap);
+  }
+
+  async vignette(ms: number): Promise<void> {
+    const node = this.cover("cg-fx-vignette");
+    await this.animate(node, [{ opacity: 0 }, { opacity: 1, offset: 0.2 }, { opacity: 0 }], ms, { easing: "ease-out" });
+    this.drop(node);
+  }
+
+  async sweep(tone: "mine" | "foe", ms: number): Promise<void> {
+    const layer = this.o.layer.getBoundingClientRect();
+    const w = layer.width * 0.35;
+    const node = this.floater(`cg-fx-sweep cg-fx-sweep--${tone}`, { x: layer.left - w, y: layer.top, w, h: layer.height });
+    await this.animate(node, [{ transform: "translateX(0) skewX(-18deg)", opacity: 0 }, { transform: `translateX(${(layer.width + w) / 2}px) skewX(-18deg)`, opacity: 1, offset: 0.5 }, { transform: `translateX(${layer.width + w * 2}px) skewX(-18deg)`, opacity: 0 }], ms, { easing: "ease-in-out" });
+    this.drop(node);
+  }
+
+  async crack(el: Element, ms: number): Promise<void> {
+    const r = el.getBoundingClientRect();
+    if (r.width === 0) return;
+    const node = this.floater("cg-fx-crack", { x: r.left, y: r.top, w: r.width, h: r.height });
+    await this.animate(node, [{ opacity: 0, transform: "scale(1.15)" }, { opacity: 1, transform: "scale(1)", offset: 0.15 }, { opacity: 1, transform: "scale(1)" }], ms, { easing: "ease-out" });
+    this.drop(node);
   }
 
   finishAll(): void {

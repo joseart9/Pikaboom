@@ -1,4 +1,6 @@
-/** The table surface behind both boards (decorative). */
+import { skinLayer } from "./assets";
+
+/** The table surface behind both boards (decorative); `public/cards/skin/board-backdrop.svg` when registered. */
 export function BoardBackdrop() {
   return (
     <div
@@ -9,6 +11,7 @@ export function BoardBackdrop() {
         zIndex: 0,
         pointerEvents: "none",
         background:
+          skinLayer("board-backdrop") ??
           "radial-gradient(ellipse 70% 55% at 50% 50%, var(--cg-board) 0%, var(--cg-board-2) 60%, transparent 100%)," +
           "repeating-linear-gradient(90deg, transparent 0 79px, #ffffff08 79px 80px)",
       }}

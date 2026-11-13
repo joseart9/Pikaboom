@@ -1,12 +1,13 @@
 "use client";
 
 // The FX layer (§18.4, Phase 13): an overlay over the battlefield that holds the DOM floaters (numbers, flashes,
-// flying cards, the turn banner), ONE particle canvas, and the centre card reveal (the only React-rendered effect).
+// flying cards, the turn banner, Phase 20's dim/rays/name ribbon), ONE particle canvas, and the centre card reveal
+// (the only React-rendered effect; Phase 20 adds the heavy/cinematic slam-in with the card's rarity glow).
 // It builds the `FxApi` and registers it with the match client while mounted; it must be a direct child of the
 // battlefield root (the element registry and anchors are looked up there).
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { CATALOG } from "@/game/cards/catalog";
-import type { CardId } from "@/game/cards/catalog/types";
+import type { CardId, Rarity } from "@/game/cards/catalog/types";
 import { DomFx, ParticleSystem, type RevealMode } from "@/game/cards/client/animation/fx";
 import type { MatchClient } from "@/game/cards/client/matchClient";
 import { CardFace } from "../card/CardFace";
@@ -16,6 +17,8 @@ interface RevealState {
   mode: RevealMode;
   ms: number;
   key: number;
+  inMs?: number;
+  rarity?: Rarity;
 }
 
 export function FxLayer({ client }: { client: MatchClient }) {
@@ -42,7 +45,11 @@ export function FxLayer({ client }: { client: MatchClient }) {
     <div ref={layerRef} className="cg-fx-layer" aria-hidden>
       <canvas ref={canvasRef} className="cg-fx-canvas" />
       {reveal && def && (
-        <div key={reveal.key} className={`cg-fx-reveal cg-fx-reveal--${reveal.mode}`} style={{ "--cg-fx-ms": `${reveal.ms}ms` } as CSSProperties}>
+        <div
+          key={reveal.key}
+          className={`cg-fx-reveal cg-fx-reveal--${reveal.mode}${reveal.rarity ? ` cg-fx-reveal--${reveal.rarity}` : ""}`}
+          style={{ "--cg-fx-ms": `${reveal.ms}ms`, "--cg-fx-in-ms": `${reveal.inMs ?? 0}ms` } as CSSProperties}
+        >
           <div className="cg-fx-reveal-card">
             <CardFace def={def} />
           </div>

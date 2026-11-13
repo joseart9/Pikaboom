@@ -6,6 +6,7 @@
 import { useEffect, useRef } from "react";
 import { gameOutcome } from "@/game/cards/client/boardModel";
 import { useMatchSelector, type MatchClient } from "@/game/cards/client/matchClient";
+import { restoreSoundSetting } from "@/game/cards/client/settings";
 import { armAudioUnlock, playCardSound } from "@/game/cards/client/sounds";
 
 export function MatchSounds({ client }: { client: MatchClient }) {
@@ -19,7 +20,10 @@ export function MatchSounds({ client }: { client: MatchClient }) {
   const prev = useRef<{ turn: number | null; errorId: number | null; outcome: string | null } | null>(null);
   const prevPaid = useRef<boolean | null>(null);
 
-  useEffect(() => armAudioUnlock(), []);
+  useEffect(() => {
+    restoreSoundSetting(); // the "Sonido: no" choice survives a reload (Phase 20)
+    armAudioUnlock();
+  }, []);
 
   useEffect(() => {
     const p = prev.current;

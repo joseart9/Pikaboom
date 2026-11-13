@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { CardType, Rarity } from "@/game/cards/catalog/types";
+import { skinLayer } from "./assets";
 
 export type CardFrameState = "normal" | "playable" | "locked" | "selected";
 
@@ -25,7 +26,9 @@ export function CardFrame({ type, rarity, state, children }: CardFrameProps) {
         position: "absolute",
         inset: 0,
         borderRadius: "7cqh",
-        background: `linear-gradient(170deg, ${type === "spell" ? "var(--cg-card-spell)" : "var(--cg-card)"} 0%, #160c30 100%)`,
+        background:
+          skinLayer(type === "spell" ? "frame-spell" : "frame-mob") ??
+          `linear-gradient(170deg, ${type === "spell" ? "var(--cg-card-spell)" : "var(--cg-card)"} 0%, #160c30 100%)`,
         border: `max(2px, 1.8cqh) solid var(--cg-rarity-${rarity})`,
         boxShadow: GLOW[state],
         filter: state === "locked" ? "saturate(0.55) brightness(0.8)" : undefined,

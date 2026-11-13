@@ -8,6 +8,10 @@
 // previous settled board and is patched group by group (`presentationReducer`); when the queue drains or is
 // skipped it is reconciled to `toBoardModel(latest view)`. Without an FX layer (tests, lobby) views apply at once.
 import { useSyncExternalStore } from "react";
+import { CATALOG } from "../catalog";
+import type { CardId } from "../catalog/types";
+import { cardEntrance } from "../catalog/visuals";
+import type { EntityId } from "../engine/types";
 import type { ClientCommand } from "../server/commands";
 import { t } from "../i18n";
 import type { MatchView, ViewEvent } from "../server/view";
@@ -15,8 +19,10 @@ import { toBoardModel, type BoardModel } from "./boardModel";
 import type { FxApi } from "./animation/fx";
 import { ANIMATIONS, ENTER_ANIMATIONS, hasHandlers, runHandlers, type AnimationEnv } from "./animation/handlers";
 import { isReducedMotion } from "./animation/motion";
+import { CinematicPacer } from "./animation/cinematics";
 import { AnimationQueue, OWN_SPEED, type GroupControl, type QueueOptions } from "./animation/queue";
 import { boardMismatches, reduceEvents } from "./animation/reduce";
+import { animationSpeed } from "./settings";
 import { playCardSound, type CardSound } from "./sounds";
 import type { ConnStatus, MatchTransport, TransportUpdate } from "./transport";
 
@@ -68,6 +74,14 @@ export interface ReconcileStats {
   mismatches: number;
 }
 
+/** A group that plays a Legendaria/Única entrance (Phase 20): the queue gives it a longer cap and skips fully on tap. */
+export function isCinematicGroup(group: readonly ViewEvent[]): boolean {
+  return group.some((e) => e.type === "CARD_PLAYED" && cardEntrance(CATALOG[e.defId]) === "cinematic");
+}
+
+/** Remembers which card an entity id is (spell instances, dead units) so effects can look like their source. */
+const MAX_ENTITY_DEFS = 400;
+
 /** Offsets that differ by less than this are not worth a re-render. */
 const OFFSET_EPSILON_MS = 500;
 
@@ -97,6 +111,8 @@ export class MatchClient {
   /** Highest event seq already queued or applied. */
   private queuedSeq = 0;
   private readonly queue: AnimationQueue;
+  private readonly entityDefs = new Map<EntityId, CardId>();
+  private readonly pacer = new CinematicPacer();
   readonly reconcileStats: ReconcileStats = { reconciles: 0, checked: 0, mismatches: 0 };
   private readonly onVisibility = () => {
     if (pageHidden()) this.queue.skipAll(); // tab hidden → finish instantly (Phase 13 H)
@@ -115,6 +131,8 @@ export class MatchClient {
         finishFx: () => this.fx?.finishAll(),
         onPlayingChange: (playing) => this.onPlayingChange(playing),
         hidden: pageHidden,
+        cinematic: isCinematicGroup,
+        userSpeed: animationSpeed,
       },
       queueOptions,
     );
@@ -188,6 +206,10 @@ export class MatchClient {
     if (!sameStream || !g || !cur.game || this.state.board === null || this.fx === null) {
       // First view, another seat/match, no game yet, or no FX layer: show it as is (nothing to replay).
       if (this.queue.playing) this.queue.cancel();
+      if (!sameStream) {
+        this.entityDefs.clear();
+        this.pacer.reset();
+      }
       this.queuedSeq = g?.lastSeq ?? 0;
       patch.board = toBoardModel(view);
       if (this.state.animating) patch.animating = false;
@@ -209,11 +231,29 @@ export class MatchClient {
       if (!this.queue.playing) patch.board = toBoardModel(view);
       return;
     }
+    this.rememberEntities(fresh);
     // A view that answers my own command (it may come through the transport before `send` resolves).
     const own = this.state.pending !== null;
     if (own) patch.settling = this.state.pending!.command;
     // The queue applies groups through `set`, so the caller's patch must land first.
     queueMicrotask(() => this.queue.push(fresh, own ? OWN_SPEED : 1));
+  }
+
+  private rememberEntities(events: readonly ViewEvent[]): void {
+    if (this.entityDefs.size > MAX_ENTITY_DEFS) this.entityDefs.clear(); // bounded: a long match never grows it
+    for (const e of events) {
+      if (e.type === "CARD_PLAYED" || e.type === "SPELL_CAST") this.entityDefs.set(e.iid, e.defId);
+      else if (e.type === "MOB_SUMMONED" || e.type === "MOB_TRANSFORMED") this.entityDefs.set(e.unit.iid, e.unit.defId);
+      else if (e.type === "TRIGGER_ACTIVATED") this.entityDefs.set(e.sourceId, e.defId);
+      else if (e.type === "MOB_DESTROYED") this.entityDefs.set(e.iid, e.defId);
+    }
+  }
+
+  /** The card an entity is (a unit on the presentation board, or one seen in recent events); null for heroes. */
+  private defOf(id: EntityId): CardId | null {
+    const b = this.state.board;
+    const u = b?.me.board.find((x) => x.iid === id) ?? b?.foe.board.find((x) => x.iid === id);
+    return u?.defId ?? this.entityDefs.get(id) ?? null;
   }
 
   private onPlayingChange(playing: boolean): void {
@@ -252,12 +292,15 @@ export class MatchClient {
     if (ctl.signal.aborted) return;
     const reduced = isReducedMotion();
     const played = new Set<CardSound>();
+    const turn = this.state.board?.turn ?? 0;
     const env: AnimationEnv = {
       fx,
       reducedMotion: reduced,
       speed: ctl.speed,
       perspective: view.seat,
       signal: ctl.signal,
+      defOf: (id) => this.defOf(id),
+      paceCinematic: () => this.pacer.next(turn),
       ms: (base) => (base / ctl.speed) * (reduced ? 0.3 : 1),
       hold: (base) => base / ctl.speed,
       sound: (kind) => {

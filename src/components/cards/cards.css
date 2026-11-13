@@ -45,6 +45,11 @@
   --cg-fx-lightning: #ffe066;
   --cg-fx-heal: #06d6a0;
   --cg-fx-dust: #d9c8a9;
+  --cg-fx-shadow: #8e5bd8;
+  --cg-fx-nature: #7bd389;
+  --cg-fx-holy: #fff3b0;
+  --cg-fx-debris: #8d7b68;
+  --cg-fx-dim: #07031acc;
   --cg-fx-damage: #ff4d6d;
   --cg-fx-glow: #ffe066;
   --cg-radius: 12px;
@@ -2685,5 +2690,399 @@ button.cg-home-wallet:focus-visible {
   }
   .cg-pack-flip {
     transition: none;
+  }
+}
+
+/* ── Phase 20: cinematic animations & visual polish (§18.4–§18.6) ───────────────────────────────────── */
+/* Only transform/opacity animate; gradients and shadows are static. Reduced motion (OS or in-game toggle) keeps
+   fades only: no rays, slams, shakes, sweeps, particles (gated in JS), confetti or flashes. */
+
+/* Elemental projectiles: a comet pointing along its path (the keyframes rotate it), one color per element. */
+.cg-fx-projectile {
+  --k: var(--cg-fx-arcane);
+  width: 30px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 72% 50%, var(--cg-text) 0 16%, var(--k) 42%, transparent 74%);
+  box-shadow: 0 0 14px 4px color-mix(in srgb, var(--k) 70%, transparent);
+  will-change: transform;
+}
+.cg-fx-projectile--fire { --k: var(--cg-fx-fire); }
+.cg-fx-projectile--ice { --k: var(--cg-fx-ice); border-radius: 30%; }
+.cg-fx-projectile--arcane { --k: var(--cg-fx-arcane); }
+.cg-fx-projectile--lightning { --k: var(--cg-fx-lightning); width: 40px; height: 8px; border-radius: 2px; }
+.cg-fx-projectile--shadow { --k: var(--cg-fx-shadow); }
+.cg-fx-projectile--nature { --k: var(--cg-fx-nature); border-radius: 50% 10%; }
+.cg-fx-projectile--holy { --k: var(--cg-fx-holy); }
+.cg-fx-projectile--heal { --k: var(--cg-fx-heal); }
+
+.cg-fx-flash--impact {
+  background: radial-gradient(circle, color-mix(in srgb, var(--cg-text) 85%, transparent) 0%, color-mix(in srgb, var(--cg-fx-glow) 50%, transparent) 30%, transparent 65%);
+}
+
+/* Shockwave ring (impacts, deaths, statuses). */
+.cg-fx-ring {
+  --k: var(--cg-fx-dust);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px var(--k), 0 0 12px 2px color-mix(in srgb, var(--k) 60%, transparent);
+  will-change: transform, opacity;
+}
+.cg-fx-ring--damage { --k: var(--cg-fx-damage); }
+.cg-fx-ring--fire { --k: var(--cg-fx-fire); }
+.cg-fx-ring--ice { --k: var(--cg-fx-ice); }
+.cg-fx-ring--arcane { --k: var(--cg-fx-arcane); }
+.cg-fx-ring--lightning { --k: var(--cg-fx-lightning); }
+.cg-fx-ring--shadow { --k: var(--cg-fx-shadow); }
+.cg-fx-ring--nature { --k: var(--cg-fx-nature); }
+.cg-fx-ring--holy { --k: var(--cg-fx-holy); }
+.cg-fx-ring--heal { --k: var(--cg-fx-heal); }
+.cg-fx-ring--debris { --k: var(--cg-fx-debris); }
+
+/* Ability glyph rising from a unit. */
+.cg-fx-glyph {
+  --k: var(--cg-fx-arcane);
+  font-family: var(--font-display);
+  font-size: clamp(20px, 7dvh, 40px);
+  line-height: 1;
+  color: var(--k);
+  -webkit-text-stroke: 2px var(--cg-text-ink);
+  paint-order: stroke fill;
+  text-shadow: 0 0 10px var(--k);
+  white-space: nowrap;
+  will-change: transform, opacity;
+}
+.cg-fx-glyph--fire { --k: var(--cg-fx-fire); }
+.cg-fx-glyph--ice { --k: var(--cg-fx-ice); }
+.cg-fx-glyph--lightning { --k: var(--cg-fx-lightning); }
+.cg-fx-glyph--shadow { --k: var(--cg-fx-shadow); }
+.cg-fx-glyph--nature { --k: var(--cg-fx-nature); }
+.cg-fx-glyph--holy { --k: var(--cg-fx-holy); }
+
+/* Cinematic: dimmed board, light rays, name ribbon. */
+.cg-fx-layer > .cg-fx-dim {
+  background: var(--cg-fx-dim);
+  opacity: 0;
+  will-change: opacity;
+}
+.cg-fx-rays {
+  --k: var(--cg-rarity-legendary);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, color-mix(in srgb, var(--k) 55%, transparent) 0 8%, transparent 42%),
+    repeating-conic-gradient(from 0deg, color-mix(in srgb, var(--k) 42%, transparent) 0deg 7deg, transparent 7deg 22deg);
+  -webkit-mask-image: radial-gradient(circle, var(--cg-text) 0 30%, transparent 62%);
+  mask-image: radial-gradient(circle, var(--cg-text) 0 30%, transparent 62%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.cg-fx-rays--unique { --k: var(--cg-rarity-unique); }
+.cg-fx-rays--magic { --k: var(--cg-rarity-magic); }
+.cg-fx-rays--rare { --k: var(--cg-rarity-rare); }
+.cg-fx-layer > .cg-fx-name-wrap {
+  display: flex;
+  justify-content: center;
+}
+.cg-fx-name {
+  --k: var(--cg-rarity-legendary);
+  padding: 4px 30px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--k) 88%, var(--cg-bg-2)) 14%, color-mix(in srgb, var(--k) 88%, var(--cg-bg-2)) 86%, transparent);
+  color: var(--cg-text);
+  font-family: var(--font-display);
+  font-size: clamp(18px, 6.5dvh, 40px);
+  line-height: 1.15;
+  white-space: nowrap;
+  -webkit-text-stroke: 2px var(--cg-text-ink);
+  paint-order: stroke fill;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.cg-fx-name--unique { --k: var(--cg-rarity-unique); }
+
+/* Heavy / cinematic reveal: the card slams in (CSS, --cg-fx-in-ms) with its rarity glow, then fades at the end. */
+.cg-fx-reveal--heavy .cg-fx-reveal-card,
+.cg-fx-reveal--cinematic .cg-fx-reveal-card {
+  animation:
+    cg-fx-slam-in var(--cg-fx-in-ms, 300ms) ease-in both,
+    cg-fx-reveal-out 180ms ease-in calc(var(--cg-fx-ms, 900ms) - 180ms) forwards;
+}
+.cg-fx-reveal--cinematic .cg-fx-reveal-card {
+  width: min(40dvh, 21dvw);
+  height: min(56dvh, 29dvw);
+  filter: drop-shadow(0 0 22px var(--cg-rarity-legendary)) drop-shadow(0 10px 18px var(--cg-shadow));
+}
+.cg-fx-reveal--cinematic.cg-fx-reveal--unique .cg-fx-reveal-card {
+  filter: drop-shadow(0 0 22px var(--cg-rarity-unique)) drop-shadow(0 10px 18px var(--cg-shadow));
+}
+@keyframes cg-fx-slam-in {
+  0% { opacity: 0; transform: scale(1.8); }
+  60% { opacity: 1; transform: scale(0.92); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes cg-fx-reveal-out {
+  to { opacity: 0; transform: scale(0.94); }
+}
+
+/* My hero was hit: red edges. */
+.cg-fx-layer > .cg-fx-vignette {
+  background: radial-gradient(ellipse at 50% 50%, transparent 52%, color-mix(in srgb, var(--cg-fx-damage) 55%, transparent) 100%);
+  opacity: 0;
+  will-change: opacity;
+}
+
+/* Turn start: a band of light across the board. */
+.cg-fx-sweep {
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--cg-selected) 22%, transparent) 50%, transparent);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.cg-fx-sweep--foe {
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--cg-text) 12%, transparent) 50%, transparent);
+}
+
+/* A defeated hero's portrait cracks. */
+.cg-fx-crack {
+  border-radius: 50%;
+  background:
+    linear-gradient(62deg, transparent 47%, var(--cg-text-ink) 48% 50%, transparent 51%),
+    linear-gradient(-48deg, transparent 46%, var(--cg-text-ink) 47% 49%, transparent 50%),
+    linear-gradient(8deg, transparent 49%, var(--cg-text-ink) 49.5% 51%, transparent 52%),
+    radial-gradient(circle, color-mix(in srgb, var(--cg-health) 30%, transparent), transparent 70%);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cg-fx-reveal--heavy .cg-fx-reveal-card,
+  .cg-fx-reveal--cinematic .cg-fx-reveal-card {
+    animation: cg-fx-fade var(--cg-fx-ms, 900ms) linear both;
+  }
+}
+.cg-battlefield--reduced .cg-fx-reveal--heavy .cg-fx-reveal-card,
+.cg-battlefield--reduced .cg-fx-reveal--cinematic .cg-fx-reveal-card {
+  animation: cg-fx-fade var(--cg-fx-ms, 900ms) linear both;
+}
+
+/* Units: Escudo Divino bubble, Sigilo shimmer (persistent, CSS only). */
+.cg-unit--divine::after {
+  content: "";
+  position: absolute;
+  inset: -4%;
+  border-radius: 50% / 46%;
+  box-shadow: inset 0 0 0 max(2px, 3cqh) color-mix(in srgb, var(--cg-fx-holy) 75%, transparent), 0 0 12px 2px color-mix(in srgb, var(--cg-fx-holy) 55%, transparent);
+  background: radial-gradient(ellipse at 35% 25%, color-mix(in srgb, var(--cg-fx-holy) 35%, transparent), transparent 55%);
+  pointer-events: none;
+}
+.cg-unit--stealth .cg-unit-body {
+  animation: cg-stealth 2.4s ease-in-out infinite;
+}
+@keyframes cg-stealth {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.85; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cg-unit--stealth .cg-unit-body {
+    animation: none;
+    opacity: 0.65;
+  }
+}
+.cg-battlefield--reduced .cg-unit--stealth .cg-unit-body {
+  animation: none;
+  opacity: 0.65;
+}
+
+/* Settings sheet (replaces the Phase 11/13 menu). */
+.cg-settings {
+  gap: 6px;
+  min-width: min(300px, 70dvw);
+  max-height: calc(100dvh - max(12dvh, 48px) - 16px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.cg-settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cg-settings-label {
+  font-weight: 800;
+  font-size: clamp(13px, 3.4dvh, 16px);
+}
+.cg-settings-toggle {
+  min-width: 72px;
+}
+.cg-settings-segmented {
+  display: flex;
+  gap: 4px;
+}
+.cg-settings-segment {
+  min-width: 48px;
+  padding: 0 8px;
+}
+.cg-settings-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cg-settings-actions {
+  display: flex;
+  gap: 8px;
+}
+.cg-settings-actions > * {
+  flex: 1 1 0;
+  white-space: nowrap;
+}
+
+/* Game over: the title slams in; victory confetti; defeat cracks. */
+.cg-gameover-title-wrap {
+  position: relative;
+}
+.cg-gameover-title {
+  animation: cg-gameover-title 520ms var(--cg-ease-pop) both;
+}
+.cg-gameover--defeat .cg-gameover-title {
+  animation: cg-gameover-fall 620ms cubic-bezier(0.5, 0, 0.6, 1.6) both;
+}
+.cg-gameover-reason {
+  animation: cg-reward-in var(--cg-dur-slow) var(--cg-ease-out) 220ms both;
+}
+@keyframes cg-gameover-title {
+  0% { opacity: 0; transform: scale(2.2); }
+  60% { opacity: 1; transform: scale(0.94); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes cg-gameover-fall {
+  0% { opacity: 0; transform: translateY(-40%) rotate(-4deg); }
+  70% { opacity: 1; transform: translateY(4%) rotate(1deg); }
+  100% { opacity: 1; transform: none; }
+}
+.cg-gameover-crack {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--cg-text-ink);
+  stroke-width: 2.5;
+  stroke-linejoin: bevel;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+  animation: cg-fx-fade-in 200ms ease-out 560ms both;
+}
+@keyframes cg-fx-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.cg-gameover-confetti {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.cg-gameover-confetti span {
+  position: absolute;
+  top: -4%;
+  left: var(--x);
+  width: 8px;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--cg-fx-lightning);
+  opacity: 0;
+  animation: cg-confetti var(--dur) linear var(--delay) 2 both;
+  will-change: transform, opacity;
+}
+.cg-gameover-confetti span:nth-child(6n + 1) { background: var(--cg-fx-fire); }
+.cg-gameover-confetti span:nth-child(6n + 2) { background: var(--cg-fx-ice); }
+.cg-gameover-confetti span:nth-child(6n + 3) { background: var(--cg-fx-arcane); }
+.cg-gameover-confetti span:nth-child(6n + 4) { background: var(--cg-fx-heal); }
+.cg-gameover-confetti span:nth-child(6n + 5) { background: var(--cg-rarity-unique); }
+@keyframes cg-confetti {
+  0% { opacity: 1; transform: translate(0, 0) rotate(0turn); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--drift), 108dvh) rotate(var(--spin)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cg-gameover-title,
+  .cg-gameover--defeat .cg-gameover-title,
+  .cg-gameover-reason,
+  .cg-gameover-crack {
+    animation: none;
+  }
+  .cg-gameover-confetti {
+    display: none;
+  }
+}
+.cg-battlefield--reduced .cg-gameover-title,
+.cg-battlefield--reduced .cg-gameover-reason,
+.cg-battlefield--reduced .cg-gameover-crack {
+  animation: none;
+}
+.cg-battlefield--reduced .cg-gameover-confetti {
+  display: none;
+}
+
+/* Pack opening polish: anticipation glow, Legendaria flash, rays behind the card. */
+.cg-pack-overlay {
+  overflow: hidden; /* the rays reach past the card: never let them scroll the page */
+}
+/* An edge glow in the rarity color around the face-down card (static shadow; only its opacity animates). */
+.cg-pack-slot--hint::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--cg-pack-h) * 0.08);
+  box-shadow: 0 0 calc(var(--cg-pack-h) * 0.1) calc(var(--cg-pack-h) * 0.025) var(--cg-rarity);
+  opacity: 0.35;
+  animation: cg-pack-hint 1.6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.cg-pack-slot--hint.cg-pack-slot--legendary::before,
+.cg-pack-slot--hint.cg-pack-slot--unique::before {
+  box-shadow: 0 0 calc(var(--cg-pack-h) * 0.18) calc(var(--cg-pack-h) * 0.05) var(--cg-rarity);
+  animation-duration: 0.9s;
+}
+@keyframes cg-pack-hint {
+  from { opacity: 0.25; transform: scale(0.96); }
+  to { opacity: 0.8; transform: scale(1.03); }
+}
+.cg-pack-flash {
+  --k: var(--cg-rarity-legendary);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(circle, var(--cg-text) 0%, color-mix(in srgb, var(--k) 70%, transparent) 35%, transparent 80%);
+  pointer-events: none;
+  animation: cg-pack-flash 700ms ease-out both;
+}
+.cg-pack-flash--unique { --k: var(--cg-rarity-unique); }
+@keyframes cg-pack-flash {
+  0% { opacity: 0; }
+  12% { opacity: 0.95; }
+  100% { opacity: 0; }
+}
+.cg-pack-rays {
+  position: absolute;
+  inset: -45%;
+  z-index: -1;
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, color-mix(in srgb, var(--cg-rarity) 40%, transparent) 0deg 8deg, transparent 8deg 24deg);
+  -webkit-mask-image: radial-gradient(circle, var(--cg-text) 0 25%, transparent 66%);
+  mask-image: radial-gradient(circle, var(--cg-text) 0 25%, transparent 66%);
+  pointer-events: none;
+  animation: cg-pack-rays 6s linear 3 both;
+}
+@keyframes cg-pack-rays {
+  from { opacity: 0.9; transform: rotate(0deg); }
+  to { opacity: 0.9; transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cg-pack-slot--hint::before {
+    animation: none;
+    opacity: 0.5;
+  }
+  .cg-pack-flash,
+  .cg-pack-rays {
+    display: none;
   }
 }

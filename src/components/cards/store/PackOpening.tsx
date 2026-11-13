@@ -4,10 +4,13 @@
 // cards glow in their rarity color, the first copy of a card you did not own shows "¡Nueva!", and tapping a revealed
 // card opens CardInspect. When everything is revealed: a one-line summary, "Ver colección", "Abrir otro" (only when
 // affordable) and "Cerrar". Purely presentational: the cards were rolled and paid for before this mounts.
+// Phase 20 polish: face-down cards of Rara or better glow faintly in their rarity color (anticipation); revealing a
+// Legendaria/Única flashes the screen and spins light rays behind the card; rarity-specific synthesized sounds.
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CATALOG, hasDef } from "@/game/cards/catalog";
 import type { CardDef, CardId, Rarity } from "@/game/cards/catalog/types";
+import { restoreSoundSetting } from "@/game/cards/client/settings";
 import { playCardSound } from "@/game/cards/client/sounds";
 import { cardName, t } from "@/game/cards/i18n";
 import { CardFace } from "../card/CardFace";
@@ -29,30 +32,46 @@ export interface PackOpeningProps {
   onClose: () => void;
 }
 
+const isTop = (def: CardDef | null) => !!def && RARITY_RANK[def.rarity] >= RARITY_RANK.legendary;
+
 function revealSound(def: CardDef | null): void {
   const rank = def ? RARITY_RANK[def.rarity] : 0;
-  playCardSound(rank >= RARITY_RANK.legendary ? "victory" : rank >= RARITY_RANK.magic ? "heal" : "draw");
+  playCardSound(rank >= RARITY_RANK.legendary ? "packLegendary" : rank >= RARITY_RANK.rare ? "packRare" : "draw");
+}
+
+/** Anticipation glow on a face-down card: Rara or better (the deal already knows the rarity). */
+function hintClass(def: CardDef | null): string {
+  return def && RARITY_RANK[def.rarity] >= RARITY_RANK.rare ? ` cg-pack-slot--hint cg-pack-slot--${def.rarity}` : "";
 }
 
 export function PackOpening({ packName, cards, isNew, replayed = false, anotherPrice, onOpenAnother, onClose }: PackOpeningProps) {
   const defs = useMemo(() => cards.map((id) => (hasDef(id) ? CATALOG[id] : null)), [cards]);
   const [revealed, setRevealed] = useState<boolean[]>(() => cards.map(() => false));
   const [inspect, setInspect] = useState<CardDef | null>(null);
+  const [flash, setFlash] = useState<{ key: number; rarity: Rarity } | null>(null);
+  const flashKey = useRef(0);
   const allRevealed = revealed.every(Boolean);
+
+  useEffect(() => restoreSoundSetting(), []);
+
+  const celebrate = useCallback((def: CardDef | null) => {
+    revealSound(def);
+    if (def && isTop(def)) setFlash({ key: ++flashKey.current, rarity: def.rarity });
+  }, []);
 
   const reveal = useCallback(
     (i: number) => {
       setRevealed((prev) => (prev[i] ? prev : prev.map((r, j) => r || j === i)));
-      revealSound(defs[i]);
+      celebrate(defs[i]);
     },
-    [defs],
+    [celebrate, defs],
   );
 
   const revealAll = useCallback(() => {
     const best = defs.reduce<CardDef | null>((b, d, i) => (!revealed[i] && d && (!b || RARITY_RANK[d.rarity] > RARITY_RANK[b.rarity]) ? d : b), null);
     setRevealed((prev) => prev.map(() => true));
-    revealSound(best);
-  }, [defs, revealed]);
+    celebrate(best);
+  }, [celebrate, defs, revealed]);
 
   useEffect(() => {
     if (!inspect) return;
@@ -78,12 +97,14 @@ export function PackOpening({ packName, cards, isNew, replayed = false, anotherP
         {packName}
       </p>
       {replayed && <p className="cg-pack-note">{t("store.replayed")}</p>}
+      {flash && <div key={flash.key} className={`cg-pack-flash cg-pack-flash--${flash.rarity}`} aria-hidden onAnimationEnd={() => setFlash(null)} />}
       <ol className="cg-pack-cards">
         {cards.map((id, i) => {
           const def = defs[i];
           const open = revealed[i];
           return (
-            <li key={i} className={`cg-pack-slot${open ? ` cg-pack-slot--open cg-pack-slot--${def?.rarity ?? "common"}` : ""}`}>
+            <li key={i} className={`cg-pack-slot${open ? ` cg-pack-slot--open cg-pack-slot--${def?.rarity ?? "common"}` : hintClass(def)}`}>
+              {open && isTop(def) && <span className="cg-pack-rays" aria-hidden />}
               <button
                 type="button"
                 className="cg-pack-card"

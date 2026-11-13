@@ -1,11 +1,15 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { ViewEvent } from "../../server/view";
-import { AnimationQueue, groupEvents, OWN_SPEED, type QueueHooks } from "./queue";
+import { CINEMATIC_CAP_MS, entranceTimeline } from "./cinematics";
+import { AnimationQueue, DEFAULT_QUEUE_OPTIONS, groupEvents, OWN_SPEED, type QueueHooks } from "./queue";
 
 const ev = (seq: number, step: number, type: ViewEvent["type"] = "MANA_CHANGED"): ViewEvent =>
   ({ type, seq, step, seat: 0, current: 1, max: 1, temporary: 0 }) as ViewEvent;
 
-function harness(handler: (group: readonly ViewEvent[], speed: number, signal: AbortSignal) => Promise<void> = () => new Promise((r) => setTimeout(r, 100))) {
+function harness(
+  handler: (group: readonly ViewEvent[], speed: number, signal: AbortSignal) => Promise<void> = () => new Promise((r) => setTimeout(r, 100)),
+  extra: Partial<QueueHooks> = {},
+) {
   const log: string[] = [];
   const speeds: number[] = [];
   const reconciledAt: number[] = [];
@@ -26,7 +30,7 @@ function harness(handler: (group: readonly ViewEvent[], speed: number, signal: A
     onPlayingChange: (p) => log.push(`playing ${p}`),
     hidden: () => hidden,
   };
-  const queue = new AnimationQueue(hooks);
+  const queue = new AnimationQueue({ ...hooks, ...extra });
   return { queue, log, speeds, reconciledAt, setHidden: (h: boolean) => (hidden = h) };
 }
 
@@ -161,5 +165,82 @@ describe("AnimationQueue (Phase 13 I)", () => {
     const h = harness();
     h.queue.push([]);
     expect(h.log).toEqual(["reconcile true"]);
+  });
+});
+
+describe("AnimationQueue — Phase 20 cinematics & settings (Phase 20 I)", () => {
+  /** Groups whose first event is a CARD_PLAYED count as cinematic in these tests. */
+  const cinematic = (g: readonly ViewEvent[]) => g[0].type === "CARD_PLAYED";
+
+  it("the cinematic cap is the plan's 1.6 s and fits a 1× cinematic", () => {
+    expect(DEFAULT_QUEUE_OPTIONS.cinematicGroupMs).toBe(CINEMATIC_CAP_MS);
+    expect(CINEMATIC_CAP_MS).toBeLessThanOrEqual(1600);
+    expect(entranceTimeline("cinematic", { speed: 1, reducedMotion: false }).total).toBeLessThan(DEFAULT_QUEUE_OPTIONS.cinematicGroupMs);
+    // A plain group cap would cut it short at 1×: the longer cap is needed.
+    expect(entranceTimeline("cinematic", { speed: 1, reducedMotion: false }).total).toBeGreaterThanOrEqual(DEFAULT_QUEUE_OPTIONS.maxGroupMs);
+  });
+
+  it("a cinematic group gets 1.6 s (not 1.2 s); a never-resolving one is cut at 1.6 s", async () => {
+    const h = harness(() => new Promise(() => {}), { cinematic });
+    h.queue.push([ev(1, 0, "CARD_PLAYED"), ev(2, 1)]);
+    await vi.advanceTimersByTimeAsync(1300);
+    expect(h.log).not.toContain("apply 1");
+    await vi.advanceTimersByTimeAsync(301);
+    expect(h.log).toContain("apply 1");
+    // The next (plain) group is capped at 1.2 s again.
+    await vi.advanceTimersByTimeAsync(1150);
+    expect(h.log).not.toContain("apply 2");
+    await vi.advanceTimersByTimeAsync(60);
+    expect(h.log).toContain("apply 2");
+  });
+
+  it("a 1.2 s cinematic plays to its end", async () => {
+    const h = harness((g) => new Promise((r) => setTimeout(r, g[0].type === "CARD_PLAYED" ? 1250 : 10)), { cinematic });
+    const t0 = Date.now();
+    h.queue.push([ev(1, 0, "CARD_PLAYED")]);
+    await vi.runAllTimersAsync();
+    expect(h.reconciledAt[0] - t0).toBeGreaterThanOrEqual(1250);
+    expect(h.log.slice(-2)).toEqual(["reconcile true", "playing false"]);
+  });
+
+  it("tapping during a cinematic skips straight to reconcile (Phase 20 H)", async () => {
+    const h = harness(() => new Promise((r) => setTimeout(r, 1000)), { cinematic });
+    h.queue.push([ev(1, 0, "CARD_PLAYED"), ev(2, 1), ev(3, 2)]);
+    await vi.advanceTimersByTimeAsync(100);
+    h.queue.skipCurrent();
+    await vi.runAllTimersAsync();
+    expect(h.log.filter((l) => l.startsWith("apply"))).toEqual([]);
+    expect(h.log.slice(-2)).toEqual(["reconcile false", "playing false"]);
+  });
+
+  it("tapping outside a cinematic keeps the Phase 13 behaviour", async () => {
+    const h = harness(() => new Promise((r) => setTimeout(r, 1000)), { cinematic });
+    h.queue.push([ev(1, 0), ev(2, 1, "CARD_PLAYED")]);
+    await vi.advanceTimersByTimeAsync(10);
+    h.queue.skipCurrent();
+    await vi.runAllTimersAsync();
+    expect(h.log).toContain("apply 1");
+    expect(h.log).toContain("apply 2");
+    expect(h.speeds).toEqual([1, 2]);
+  });
+
+  it("the total input-block cap still holds with cinematics in the queue", async () => {
+    const h = harness(() => new Promise((r) => setTimeout(r, 1500)), { cinematic: () => true });
+    const t0 = Date.now();
+    h.queue.push(Array.from({ length: 6 }, (_, i) => ev(i + 1, 0, "CARD_PLAYED")));
+    await vi.runAllTimersAsync();
+    expect(h.reconciledAt[0] - t0).toBeLessThanOrEqual(DEFAULT_QUEUE_OPTIONS.maxBlockMs);
+    expect(h.log.slice(-2)).toEqual(["reconcile false", "playing false"]);
+  });
+
+  it("the animation-speed setting multiplies every group's speed", async () => {
+    const h = harness(undefined, { userSpeed: () => 2 });
+    h.queue.push([ev(1, 0), ev(2, 1)]);
+    await vi.runAllTimersAsync();
+    expect(h.speeds).toEqual([2, 2]);
+    const own = harness(undefined, { userSpeed: () => 1.5 });
+    own.queue.push([ev(1, 0)], OWN_SPEED);
+    await vi.runAllTimersAsync();
+    expect(own.speeds).toEqual([2.25]);
   });
 });

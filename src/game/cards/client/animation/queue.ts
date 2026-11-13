@@ -16,9 +16,11 @@ export interface QueueOptions {
   skipGapAt: number;
   /** One continuous playback never locks input longer than this (Phase 13 K: < 4 s, minus timer/frame slack). */
   maxBlockMs: number;
+  /** Cap for a group that holds a Legendaria/Única cinematic (Phase 20: ≤ 1.6 s at 1×), divided by the speed. */
+  cinematicGroupMs: number;
 }
 
-export const DEFAULT_QUEUE_OPTIONS: QueueOptions = { maxGroupMs: 1200, speedUpAt: 12, skipAt: 30, skipGapAt: 40, maxBlockMs: 3800 };
+export const DEFAULT_QUEUE_OPTIONS: QueueOptions = { maxGroupMs: 1200, speedUpAt: 12, skipAt: 30, skipGapAt: 40, maxBlockMs: 3800, cinematicGroupMs: 1600 };
 
 /** The player's own command results play at this speed (§18.3). */
 export const OWN_SPEED = 1.5;
@@ -43,6 +45,10 @@ export interface QueueHooks {
   onPlayingChange(playing: boolean): void;
   /** True while the page is hidden: playback skips straight to reconcile. */
   hidden?(): boolean;
+  /** The group plays a cinematic entrance (Phase 20): longer cap, and a tap skips straight to reconcile. */
+  cinematic?(group: readonly ViewEvent[]): boolean;
+  /** The player's animation-speed setting (1, 1.5 or 2; Phase 20), multiplied into every group's speed. */
+  userSpeed?(): number;
   now?(): number;
 }
 
@@ -81,6 +87,7 @@ export class AnimationQueue {
   private startedAt = 0;
   private skipGroup: (() => void) | null = null;
   private groupAbort: AbortController | null = null;
+  private inCinematic = false;
 
   constructor(
     private readonly hooks: QueueHooks,
@@ -115,9 +122,16 @@ export class AnimationQueue {
     if (!this.isPlaying) void this.loop();
   }
 
-  /** Tap to skip (§18.3): the current group finishes instantly and the rest plays twice as fast. */
+  /**
+   * Tap to skip (§18.3): the current group finishes instantly and the rest plays twice as fast. During a cinematic
+   * the whole playback is skipped and the board reconciles (Phase 20 H).
+   */
   skipCurrent(): void {
     if (!this.isPlaying) return;
+    if (this.inCinematic) {
+      this.skipAll();
+      return;
+    }
     this.tapSpeed *= 2;
     this.endGroup();
   }
@@ -143,6 +157,7 @@ export class AnimationQueue {
   }
 
   private endGroup(): void {
+    this.inCinematic = false;
     this.groupAbort?.abort();
     this.hooks.finishFx();
     this.skipGroup?.();
@@ -161,7 +176,7 @@ export class AnimationQueue {
   }
 
   /** Runs one phase of a group: resolves when the handlers finish, the timeout hits, or the group is skipped. */
-  private async phase(fn: QueueHooks["play"], group: readonly ViewEvent[], speed: number): Promise<void> {
+  private async phase(fn: QueueHooks["play"], group: readonly ViewEvent[], speed: number, cinematic = false): Promise<void> {
     const abort = new AbortController();
     this.groupAbort = abort;
     let timer: ReturnType<typeof setTimeout> | undefined;
@@ -169,7 +184,8 @@ export class AnimationQueue {
       this.skipGroup = resolve;
       // Capped per group, and by what is left of the input-block budget (so the 4 s limit holds mid-group too).
       const left = this.opts.maxBlockMs - (this.now() - this.startedAt);
-      timer = setTimeout(resolve, Math.max(0, Math.min(this.opts.maxGroupMs / speed, left)));
+      const cap = (cinematic ? Math.max(this.opts.maxGroupMs, this.opts.cinematicGroupMs) : this.opts.maxGroupMs) / speed;
+      timer = setTimeout(resolve, Math.max(0, Math.min(cap, left)));
     });
     let work: Promise<void>;
     try {
@@ -197,8 +213,12 @@ export class AnimationQueue {
         return;
       }
       const group = this.groups.shift()!;
-      const speed = Math.max(group.speed, waiting > this.opts.speedUpAt ? 2 : 1) * this.tapSpeed;
-      await this.phase(this.hooks.play, group.events, speed);
+      const user = Math.max(1, this.hooks.userSpeed?.() ?? 1);
+      const speed = Math.max(group.speed, waiting > this.opts.speedUpAt ? 2 : 1) * this.tapSpeed * user;
+      const cinematic = this.hooks.cinematic?.(group.events) ?? false;
+      this.inCinematic = cinematic;
+      await this.phase(this.hooks.play, group.events, speed, cinematic);
+      this.inCinematic = false;
       if (run !== this.run) return;
       this.hooks.apply(group.events);
       await this.phase(this.hooks.enter, group.events, speed);

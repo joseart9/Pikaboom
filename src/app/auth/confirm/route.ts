@@ -3,6 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { ensureProfile } from "@/lib/auth";
 import { safeNext } from "@/lib/safeNext";
 import { createClient } from "@/lib/server";
+import { logServerError } from "@/lib/logError";
 
 export const dynamic = "force-dynamic";
 
@@ -42,7 +43,7 @@ export async function GET(request: NextRequest) {
       username: typeof username === "string" ? username : undefined,
     });
   } catch (e) {
-    console.error("auth/confirm: ensureProfile failed", e);
+    logServerError("auth/confirm: ensureProfile failed", e);
   }
 
   return NextResponse.redirect(new URL(next, request.url), 303);

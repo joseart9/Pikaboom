@@ -60,7 +60,7 @@ export interface GameView {
   foe: SideView;
   events: ViewEvent[]; // redacted, seq > `since`
   lastSeq: number;
-  eventsTruncated: boolean; // true when `since` is older than the ring buffer
+  eventsTruncated: boolean; // true when `since` is older than the ring buffer, or when more than `maxEvents` were due (then `events` is empty)
   legal: LegalActions | null; // null when you cannot act
   winner: Seat | "draw" | null;
   endReason: EndReason | null;
@@ -147,12 +147,24 @@ function canAct(s: MatchState, seat: Seat): boolean {
   return s.phase === "playing" && s.turn.activeSeat === seat;
 }
 
-/** The game part of a view: both sides, redacted events with `seq > since`, and legal actions. */
-export function projectGame(s: MatchState, seat: Seat, since: number): GameView {
+/**
+ * Most events a view sent by the match service carries (Phase 21, §19.1 "Full view ≤ 30 KB"). The client never
+ * replays more than this in one push (`DEFAULT_QUEUE_OPTIONS.skipGapAt`, §13.5) nor the events of its first view, so a
+ * larger backlog (page load, long reconnect) is sent as `events: []` + `eventsTruncated: true`: same result on screen,
+ * a fraction of the bytes (a full 300-event log is ~37 KB).
+ */
+export const MAX_VIEW_EVENTS = 40;
+
+/**
+ * The game part of a view: both sides, redacted events with `seq > since`, and legal actions. With `maxEvents`, a
+ * backlog longer than that is dropped and flagged `eventsTruncated` (default: no cap — tests read the whole log).
+ */
+export function projectGame(s: MatchState, seat: Seat, since: number, maxEvents = Infinity): GameView {
   const p = s.players[seat];
   const foeSeat: Seat = seat === 0 ? 1 : 0;
   const after = Number.isFinite(since) && since > 0 ? Math.floor(since) : 0;
   const oldest = s.log[0]?.seq ?? 0;
+  const backlog = s.log.filter((e) => e.seq > after);
   return {
     phase: s.phase,
     turn: s.turn.number,
@@ -160,9 +172,9 @@ export function projectGame(s: MatchState, seat: Seat, since: number): GameView 
     firstSeat: s.firstSeat,
     me: { ...sideView(s, seat), hand: p.hand.map((c) => ({ iid: c.iid, defId: c.defId, cost: effectiveCost(s, c) })) },
     foe: sideView(s, foeSeat),
-    events: s.log.filter((e) => e.seq > after).map((e) => redactEvent(e, seat)),
+    events: backlog.length > maxEvents ? [] : backlog.map((e) => redactEvent(e, seat)),
     lastSeq: s.seq,
-    eventsTruncated: after < oldest - 1,
+    eventsTruncated: after < oldest - 1 || backlog.length > maxEvents,
     legal: canAct(s, seat) ? getLegalActions(s, seat) : null,
     winner: s.winner,
     endReason: s.endReason,
@@ -175,6 +187,8 @@ function isOnline(seen: Date | null, now: Date): boolean {
 
 export interface ViewOptions {
   since?: number;
+  /** Cap on the events sent (see `MAX_VIEW_EVENTS`); the match service always passes it. */
+  maxEvents?: number;
   rewards?: MatchView["rewards"];
 }
 
@@ -203,7 +217,7 @@ export function viewFor(row: MatchRow, seat: Seat, opts: ViewOptions = {}): Matc
   }
   let game: GameView | null = null;
   if (row.state) {
-    game = projectGame(row.state, seat, opts.since ?? 0);
+    game = projectGame(row.state, seat, opts.since ?? 0, opts.maxEvents);
     if (row.status !== "active") game.legal = null; // abandoned/finished: nobody acts
   }
   return {

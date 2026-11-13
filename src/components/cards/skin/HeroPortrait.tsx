@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { skinLayer } from "./assets";
 
 export interface HeroPortraitProps {
   name: string;
@@ -29,7 +30,9 @@ export function HeroPortrait({ name, seat, mine, highlighted, targetable, size, 
         width: size,
         height: size,
         borderRadius: "50%",
-        background: `radial-gradient(circle at 35% 30%, #ffffff40, transparent 55%), ${mine ? "var(--cg-hero)" : "var(--cg-foe-hero)"}`,
+        background:
+          skinLayer(mine ? "hero-mine" : "hero-foe") ??
+          `radial-gradient(circle at 35% 30%, #ffffff40, transparent 55%), ${mine ? "var(--cg-hero)" : "var(--cg-foe-hero)"}`,
         boxShadow: ring,
         flex: "0 0 auto",
         transition: "box-shadow var(--cg-dur-fast)",

@@ -1,11 +1,11 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { seedToRng } from "../engine/rng";
-import type { MatchView } from "../server/view";
+import type { MatchView, ViewEvent } from "../server/view";
 import { randomCommand, seedHex } from "../testing/driver";
 import type { FxApi } from "./animation/fx";
 import { toBoardModel } from "./boardModel";
 import { BOT_DELAY_MS, LocalTransport } from "./localTransport";
-import { MatchClient } from "./matchClient";
+import { isCinematicGroup, MatchClient } from "./matchClient";
 import type { MatchTransport, SendResult, TransportUpdate } from "./transport";
 
 function fakeTransport() {
@@ -108,6 +108,18 @@ describe("MatchClient event playback (Phase 13)", () => {
         calls.push(`reveal ${mode} ${defId}`);
         return wait(ms);
       },
+      streak: () => {},
+      ring: () => Promise.resolve(),
+      glyph: () => Promise.resolve(),
+      dim: (ms) => wait(ms),
+      rays: (_rarity, ms) => wait(ms),
+      nameBanner: (text, _rarity, ms) => {
+        calls.push(`name ${text}`);
+        return wait(ms);
+      },
+      vignette: () => Promise.resolve(),
+      sweep: () => Promise.resolve(),
+      crack: () => Promise.resolve(),
       finishAll: () => calls.push("finishAll"),
       settle: () => {},
     };
@@ -204,3 +216,13 @@ describe("MatchClient event playback (Phase 13)", () => {
   });
 });
 
+describe("isCinematicGroup (Phase 20)", () => {
+  const played = (defId: string) => ({ type: "CARD_PLAYED", seq: 1, step: 0, seat: 0, iid: "x", defId, target: null, position: 0 }) as ViewEvent;
+  it("only a group that plays a Legendaria/Única card is cinematic", () => {
+    expect(isCinematicGroup([played("ignis")])).toBe(true);
+    expect(isCinematicGroup([played("morvath")])).toBe(true);
+    expect(isCinematicGroup([played("iron-colossus")])).toBe(false); // heavy, not cinematic
+    expect(isCinematicGroup([played("squire")])).toBe(false);
+    expect(isCinematicGroup([{ type: "TURN_STARTED", seq: 1, step: 0, seat: 0, turn: 1 } as ViewEvent])).toBe(false);
+  });
+});

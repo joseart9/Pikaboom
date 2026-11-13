@@ -6,6 +6,7 @@ import { errorText, isServiceError } from "@/game/cards/server/errors";
 import { hasMatchDb } from "@/game/cards/server/instance";
 import { t } from "@/game/cards/i18n";
 import { AuthError, ensureProfile, requireUser } from "@/lib/auth";
+import { logServerError } from "@/lib/logError";
 import { fallbackUsername, isValidUsername } from "@/lib/username";
 
 const NO_STORE = { "Cache-Control": "no-store" };
@@ -28,13 +29,16 @@ export function json(data: unknown, status = 200): Response {
   return Response.json(data, { status, headers: NO_STORE });
 }
 
-/** Maps every error a card route can hit to `{ error, code, ...details }` with the right status. */
-export function errorResponse(e: unknown, where: string): Response {
+/**
+ * Maps every error a card route can hit to `{ error, code, ...details }` with the right status. Unexpected errors are
+ * logged (Phase 21) with the route and, when known, the match id — no request body, user id or name.
+ */
+export function errorResponse(e: unknown, where: string, matchId?: string): Response {
   if (e instanceof AuthError) return json({ error: t("auth.loginToPlay"), code: "unauthenticated" }, 401);
   if (isServiceError(e)) return json({ error: e.message, code: e.code, ...e.details }, e.status);
   if (isRequestError(e)) return json({ error: errorText("bad_request"), code: "bad_request" }, 400);
   if (e instanceof HttpError) return json({ error: errorText(e.code), code: e.code }, e.status);
-  console.error(`api/cards ${where}:`, e);
+  logServerError(`api/cards ${where}`, e, { matchId });
   return json({ error: errorText("unavailable"), code: "unavailable" }, 503);
 }
 

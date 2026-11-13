@@ -1,6 +1,6 @@
 // A unit on the board (§17.4): art, attack bottom-left, health bottom-right, keyword icons, Escudo charges, status
 // icons with magnitudes (+ the Silencio marker), "zZz" while sleeping, green ring when it can attack (from
-// `legal.attacks`), red glow when targetable, an icy rim while Congelado.
+// `legal.attacks`), red glow when targetable, an icy rim while Congelado; Phase 20: Escudo Divino bubble, Sigilo shimmer.
 import { memo, type MouseEvent } from "react";
 import { CATALOG } from "@/game/cards/catalog";
 import { KEYWORDS } from "@/game/cards/catalog/keywords";
@@ -59,6 +59,9 @@ export const UnitToken = memo(function UnitToken({ unit, mine, canAttack, target
   if (taunt) classes.push("cg-unit--taunt");
   if (unit.silenced) classes.push("cg-unit-silenced");
   if (unit.statuses.some((st) => st.id === "freeze")) classes.push("cg-unit--frozen");
+  // Phase 20: a holy bubble while Escudo Divino holds, a shimmer while hidden by Sigilo.
+  if (!unit.silenced && unit.keywords.divineShield) classes.push("cg-unit--divine");
+  if (!unit.silenced && unit.keywords.stealth) classes.push("cg-unit--stealth");
   if (actionable || targetable) classes.push("cg-unit--actionable");
   if (selected) classes.push("cg-unit--selected");
   else if (targetable) classes.push("cg-unit--targetable");

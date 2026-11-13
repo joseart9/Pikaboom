@@ -5,6 +5,7 @@ import { AuthCard, FormMessage } from "@/components/auth/AuthCard";
 import { t } from "@/game/cards/i18n";
 import { ensureProfile, getUser, type Profile } from "@/lib/auth";
 import { AccountForm } from "./AccountForm";
+import { logServerError } from "@/lib/logError";
 
 export const metadata: Metadata = { title: `${t("account.title")} · Pikaboom`, robots: { index: false } };
 
@@ -16,7 +17,7 @@ export default async function AccountPage() {
   try {
     profile = await ensureProfile(user);
   } catch (e) {
-    console.error("account: ensureProfile failed", e);
+    logServerError("account: ensureProfile failed", e);
   }
 
   return (

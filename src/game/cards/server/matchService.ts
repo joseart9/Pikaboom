@@ -1,6 +1,7 @@
 // The match service (§13): everything between HTTP and the engine. Depends only on the MatchStore contract —
 // no SQL, no auth calls (route handlers pass the authenticated user id), no ambient clock or randomness.
 import "server-only";
+import { logServerError } from "@/lib/logError";
 import { randomBytes, randomInt } from "node:crypto";
 import { applyCommand } from "../engine/apply";
 import type { GameCommand, SystemCommand } from "../engine/commands";
@@ -14,7 +15,12 @@ import { CODE_ALPHABET, CODE_LENGTH, normalizeCode } from "./lobbyCode";
 import { NO_REWARDS, type RewardsPort } from "./rewards";
 import { buildSetup, resolveDeckChoice, type DeckChoiceDeps } from "./setup";
 import { DuplicateCommand, seatOfUser, StoreConflict, type CommandLogEntry, type MatchPatch, type MatchRow, type MatchStore } from "./store";
-import { viewFor, type MatchView } from "./view";
+import { MAX_VIEW_EVENTS, viewFor as projectView, type MatchView, type ViewOptions } from "./view";
+
+/** Every view the service returns caps its event backlog (Phase 21, §19.1 payload budget). */
+function viewFor(row: MatchRow, seat: Seat, opts: ViewOptions = {}): MatchView {
+  return projectView(row, seat, { ...opts, maxEvents: MAX_VIEW_EVENTS });
+}
 
 export { CODE_ALPHABET, CODE_LENGTH, normalizeCode } from "./lobbyCode";
 
@@ -171,7 +177,7 @@ export class MatchService {
     try {
       await this.rewards.grantMatchRewards(matchId);
     } catch (e) {
-      console.error(`[cards] reward grant failed for match ${matchId}:`, e);
+      logServerError("cards reward grant failed", e, { matchId });
     }
   }
 

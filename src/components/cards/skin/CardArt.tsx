@@ -1,4 +1,5 @@
 import type { Tribe } from "@/game/cards/catalog/types";
+import { CARD_ART_FILES, cardArtUrl } from "./assets";
 
 export interface CardArtProps {
   art: string;
@@ -26,10 +27,17 @@ const SPELL_GLYPH = "M12 2 L14.5 9.5 L22 12 L14.5 14.5 L12 22 L9.5 14.5 L2 12 L9
 const DEFAULT_GLYPH = "M12 4 A8 8 0 1 1 11.9 4 Z";
 
 /**
- * Card illustration. No art files exist yet, so this always renders a generated placeholder: a gradient whose hue
- * comes from the art key, with a tribe (or spell) glyph. A skin pass can return `<img src="/cards/art/<art>.svg">`.
+ * Card illustration: `public/cards/art/<art>.svg` when the key is registered in `CARD_ART_FILES` (ART_GUIDE.md),
+ * else a generated placeholder — a gradient whose hue comes from the art key, with a tribe (or spell) glyph.
  */
 export function CardArt({ art, tribe, spell = false }: CardArtProps) {
+  if (CARD_ART_FILES.has(art)) {
+    return (
+      <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden style={{ width: "100%", height: "100%", display: "block" }}>
+        <image href={cardArtUrl(art)} width={100} height={100} preserveAspectRatio="xMidYMid slice" />
+      </svg>
+    );
+  }
   const h = hash(art);
   const hue = h % 360;
   const hue2 = (hue + 40 + ((h >> 9) % 80)) % 360;
