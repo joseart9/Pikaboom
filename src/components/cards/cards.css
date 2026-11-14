@@ -143,8 +143,11 @@
   --cg-portrait: max(44px, min(17dvh, 9dvw));
   /* UI-08 HUD */
   --cg-chip-card: clamp(14px, 4.4dvh, 24px);
-  /* My mana bar on the right edge (skin/ManaCrystals ManaBar). */
-  --cg-manabar-crystal: clamp(13px, 4.3dvh, 30px);
+  /* My mana bar on the right edge (skin/ManaCrystals ManaBar). The bar and the card log both run the full height
+     below the top bar (--cg-edge-top) down to the bottom edge (--cg-edge-bottom). */
+  --cg-edge-top: calc(max(12dvh, 48px) + 6px);
+  --cg-edge-bottom: clamp(4px, 1dvh, 10px);
+  --cg-manabar-crystal: clamp(14px, 5dvh, 34px);
   --cg-manabar-w: calc(var(--cg-manabar-crystal) * 1.25 + 12px);
   /* The card log on the left edge (match/CardLog). Board rows keep the wider of the two clear on both sides. */
   --cg-cardlog-w: calc(var(--cg-manabar-crystal) * 1.9 + 12px);
@@ -432,7 +435,9 @@
   grid-template-rows: minmax(0, 1fr);
   align-items: end;
   gap: clamp(4px, 1dvw, 14px);
-  padding: 0 calc(clamp(6px, 1.2dvw, 16px) + var(--cg-manabar-w) + 6px) clamp(4px, 1dvh, 10px) clamp(6px, 1.2dvw, 16px);
+  /* Both edge bars run down to the bottom: room for the mana bar on the right and the card log on the left. */
+  padding: 0 calc(clamp(6px, 1.2dvw, 16px) + var(--cg-manabar-w) + 6px) clamp(4px, 1dvh, 10px)
+    calc(clamp(6px, 1.2dvw, 16px) + var(--cg-cardlog-w) + 6px);
   min-height: 0;
 }
 .cg-bottom-left,
@@ -514,36 +519,55 @@
   color: var(--cg-ink);
   -webkit-text-stroke: 0;
 }
-/* My mana: a vertical crystal bar on the right edge, rising from the bottom strip over my board row. */
+/* My mana: a full-height column of cost gems on the right edge, from under the top bar to the bottom. */
 .cg-manabar {
   position: absolute;
   right: clamp(6px, 1.2dvw, 16px);
-  bottom: clamp(4px, 1dvh, 10px);
+  top: var(--cg-edge-top);
+  bottom: var(--cg-edge-bottom);
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
   width: var(--cg-manabar-w);
-  padding: 6px 0 5px;
+  padding: 8px 0 6px;
   border-radius: var(--cg-radius-pill);
   background: linear-gradient(180deg, var(--cg-surface-2) 0%, var(--cg-surface-1) 100%);
   box-shadow: 0 0 0 var(--cg-border-w, 2px) var(--cg-ink), inset 0 0 0 1px var(--cg-border-strong), 0 4px 12px var(--cg-shadow);
 }
+/* The gems spread over the whole height (bottom-up) and shrink only when the bar is too short for them. */
 .cg-manabar-crystals {
+  flex: 1 1 auto;
+  min-height: 0;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: calc(var(--cg-manabar-crystal) * 0.08);
+  justify-content: space-evenly;
+  gap: 2px;
 }
 .cg-manabar-slot {
   display: grid;
   place-items: center;
-  width: calc(var(--cg-manabar-crystal) * 0.8);
+  flex: 0 1 auto;
+  min-height: 0;
+  width: var(--cg-manabar-crystal);
   height: var(--cg-manabar-crystal);
 }
-.cg-manabar-slot--full {
+.cg-manabar-gem {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.cg-manabar-gem--full {
   filter: drop-shadow(0 0 calc(var(--cg-manabar-crystal) * 0.22) #3fa9ffb3);
+}
+.cg-manabar-gem--empty {
+  filter: grayscale(1) brightness(0.45);
+  opacity: 0.55;
+}
+.cg-manabar-gem--temp {
+  filter: brightness(1.35) saturate(0.55) drop-shadow(0 0 calc(var(--cg-manabar-crystal) * 0.22) #9be7ffb3);
 }
 .cg-manabar-slot--locked::before {
   content: "";
@@ -575,12 +599,13 @@
   font-size: 0.62em;
   color: var(--cg-mana-hi);
 }
-/* Card log (match/CardLog): a scrollable column on the left edge spanning both board rows, newest at the bottom. */
+/* Card log (match/CardLog): a scrollable full-height column on the left edge (same span as the mana bar, under the
+   top bar so it never covers the foe's info), newest at the bottom. */
 .cg-cardlog {
   position: absolute;
   left: clamp(6px, 1.2dvw, 16px);
-  top: calc(max(12dvh, 48px) + 6px);
-  bottom: calc(34dvh + 6px);
+  top: var(--cg-edge-top);
+  bottom: var(--cg-edge-bottom);
   z-index: 2;
   display: flex;
   flex-direction: column;

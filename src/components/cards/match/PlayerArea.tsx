@@ -1,9 +1,9 @@
-// The bottom strip (§17.3): my portrait (left), my hand (centre), deck count + end-turn button, then my mana as a
-// vertical crystal bar on the right edge (filling bottom-up).
+// The bottom strip (§17.3): my portrait (left), my hand (centre), deck count + end-turn button. My mana bar
+// (`ManaBar`, full height on the right edge) is rendered by the battlefield next to the card log.
 import type { EntityId, LegalActions } from "@/game/cards/engine/types";
 import { t } from "@/game/cards/i18n";
 import type { HandCardView, MeView, SideView } from "@/game/cards/server/view";
-import { CardBack, EndTurnButton, ManaBar, type EndTurnState } from "../skin";
+import { CardBack, EndTurnButton, type EndTurnState } from "../skin";
 import { Hand } from "./Hand";
 import { HeroButton } from "./HeroButton";
 
@@ -70,7 +70,6 @@ export function PlayerArea(p: PlayerAreaProps) {
         </span>
         <EndTurnButton state={p.endTurnState} label={END_TURN_LABEL[p.endTurnState]()} onPress={p.onEndTurn} />
       </div>
-      <ManaBar current={me.mana.current} max={me.mana.max} temporary={me.mana.temporary} label={manaLabel(me.mana)} />
     </div>
   );
 }

@@ -25,7 +25,7 @@ import type { HandCardView } from "@/game/cards/server/view";
 import { keepAwake } from "@/game/wakeLock";
 import { haptic } from "@/lib/haptic";
 import { CardInspect } from "../card/CardInspect";
-import { BoardBackdrop, GameIcon, type EndTurnState } from "../skin";
+import { BoardBackdrop, GameIcon, ManaBar, type EndTurnState } from "../skin";
 import { Board, type BoardGhost } from "./Board";
 import { CardLog } from "./CardLog";
 import { animateBackToHand, DragLayer } from "./DragLayer";
@@ -33,7 +33,7 @@ import { FxLayer } from "./FxLayer";
 import { GameOverOverlay } from "./GameOverOverlay";
 import { MatchSounds } from "./MatchSounds";
 import { MulliganOverlay } from "./MulliganOverlay";
-import { PlayerArea } from "./PlayerArea";
+import { manaLabel, PlayerArea } from "./PlayerArea";
 import { SettingsSheet } from "./SettingsSheet";
 import { TargetArrow } from "./TargetArrow";
 import { Toasts } from "./Toasts";
@@ -524,6 +524,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
       />
 
       <CardLog client={client} mySeat={board.mySeat} onInspect={setLogInspect} />
+      <ManaBar current={board.me.mana.current} max={board.me.mana.max} temporary={board.me.mana.temporary} label={manaLabel(board.me.mana)} />
 
       <FxLayer client={client} />
 

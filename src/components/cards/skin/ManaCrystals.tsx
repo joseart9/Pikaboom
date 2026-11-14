@@ -1,3 +1,5 @@
+import { SKIN_FILES, skinUrl } from "./assets";
+
 export interface ManaCrystalsProps {
   current: number;
   max: number;
@@ -70,6 +72,28 @@ export function ManaCrystals({ current, max, temporary, size, label, compact = f
   );
 }
 
+const GEM_PATH = "M50 3 L93 27 L93 73 L50 97 L7 73 L7 27 Z";
+
+/**
+ * The mana bar's crystal: the same blue gem as a card's cost badge (`badge-gem` skin, vector fallback). Spent = a dim,
+ * desaturated gem; temporary = a paler gem with a white spark (shape cue, not colour only). Look: `.cg-manabar-gem--*`.
+ */
+function ManaGem({ kind }: { kind: Kind }) {
+  return (
+    <svg viewBox="0 0 100 100" aria-hidden className={`cg-manabar-gem cg-manabar-gem--${kind}`}>
+      {SKIN_FILES.has("badge-gem") ? (
+        <image href={skinUrl("badge-gem")} width={100} height={100} />
+      ) : (
+        <>
+          <path d={GEM_PATH} fill="var(--cg-mana)" stroke="#1d0842" strokeWidth={7} strokeLinejoin="round" />
+          <path d={GEM_PATH} fill="none" stroke="#ffffff55" strokeWidth={3} transform="translate(50 50) scale(0.82) translate(-50 -50)" />
+        </>
+      )}
+      {kind === "temp" && <path d="M50 26 58 50 50 74 42 50Z M26 50 50 43 74 50 50 57Z" fill="#ffffff" stroke="#1d0842" strokeWidth={3} strokeLinejoin="round" />}
+    </svg>
+  );
+}
+
 /** Crystal slots the bar always shows (the max mana a player can reach). */
 export const MANA_BAR_SLOTS = 10;
 
@@ -81,7 +105,7 @@ export interface ManaBarProps {
 }
 
 /**
- * My mana as a vertical bar of crystals on the right edge, filling bottom-up: filled = available, hollow = spent,
+ * My mana as a full-height vertical bar of cost gems on the right edge, filling bottom-up: filled = available, hollow = spent,
  * pale with a spark = temporary, faint socket = not unlocked yet. "current/max" sits at the foot. Styles: `.cg-manabar*`.
  */
 export function ManaBar({ current, max, temporary, label }: ManaBarProps) {
@@ -101,7 +125,7 @@ export function ManaBar({ current, max, temporary, label }: ManaBarProps) {
             <span key={i} className="cg-manabar-slot cg-manabar-slot--locked" />
           ) : (
             <span key={i} className={`cg-manabar-slot cg-manabar-slot--${kind}`}>
-              <Crystal kind={kind} size="var(--cg-manabar-crystal)" />
+              <ManaGem kind={kind} />
             </span>
           ),
         )}
