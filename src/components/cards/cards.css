@@ -146,6 +146,9 @@
   /* My mana bar on the right edge (skin/ManaCrystals ManaBar). */
   --cg-manabar-crystal: clamp(13px, 4.3dvh, 30px);
   --cg-manabar-w: calc(var(--cg-manabar-crystal) * 1.25 + 12px);
+  /* The card log on the left edge (match/CardLog). Board rows keep the wider of the two clear on both sides. */
+  --cg-cardlog-w: calc(var(--cg-manabar-crystal) * 1.9 + 12px);
+  --cg-edge-w: max(var(--cg-manabar-w), var(--cg-cardlog-w));
 
   color: var(--cg-text);
   background: radial-gradient(ellipse at 50% 40%, var(--cg-bg) 0%, var(--cg-bg-2) 100%);
@@ -169,6 +172,17 @@
   overflow: hidden;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   overscroll-behavior: none;
+}
+/* In a match the board runs to the bottom edge: the home indicator sits over the hand (like other card games) instead
+   of leaving an empty strip. The HUD corners stay clear of it. Other /cards pages keep the bottom safe area. */
+.cg-shell:has(.cg-battlefield) {
+  padding-bottom: 0;
+}
+/* Installed on iOS, 100dvh comes up short (see globals.css): use the full screen. */
+@media (display-mode: standalone) {
+  .cg-shell {
+    height: 100lvh;
+  }
 }
 .cg-shell-content {
   position: relative;
@@ -301,13 +315,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 clamp(6px, 2dvw, 32px);
+  /* Room for the mana bar (right edge) and the card log (left edge) on BOTH sides and on both rows, so my units stay
+     centred on the same axis as the foe's. */
+  padding: 0 calc(clamp(6px, 2dvw, 32px) + var(--cg-edge-w));
   min-height: 0;
 }
 .cg-board-row--mine {
   cursor: default;
-  /* Room for the mana bar, which rises from the bottom strip along the right edge. */
-  padding-right: calc(clamp(6px, 2dvw, 32px) + var(--cg-manabar-w));
 }
 /* UI-08: the two zones read apart — a faint crimson wash on the foe side, violet-blue on mine; foe units get a
    crimson ink rim. */
@@ -560,6 +574,152 @@
 .cg-manabar-max {
   font-size: 0.62em;
   color: var(--cg-mana-hi);
+}
+/* Card log (match/CardLog): a scrollable column on the left edge spanning both board rows, newest at the bottom. */
+.cg-cardlog {
+  position: absolute;
+  left: clamp(6px, 1.2dvw, 16px);
+  top: calc(max(12dvh, 48px) + 6px);
+  bottom: calc(34dvh + 6px);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: var(--cg-cardlog-w);
+  padding: 6px 0;
+  border-radius: var(--cg-radius-md);
+  background: linear-gradient(180deg, var(--cg-surface-2) 0%, var(--cg-surface-1) 100%);
+  box-shadow: 0 0 0 var(--cg-border-w, 2px) var(--cg-ink), inset 0 0 0 1px var(--cg-border-strong), 0 4px 12px var(--cg-shadow);
+  touch-action: pan-y;
+}
+.cg-cardlog-head {
+  flex: 0 0 auto;
+  font-size: calc(var(--cg-manabar-crystal) * 0.85);
+  line-height: 1;
+  color: var(--cg-gold);
+}
+.cg-cardlog-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2px 0 4px;
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  touch-action: pan-y;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-top: 1px solid var(--cg-border-subtle);
+}
+.cg-cardlog-list::-webkit-scrollbar {
+  display: none;
+}
+.cg-cardlog-list * {
+  touch-action: pan-y;
+}
+.cg-cardlog-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+}
+.cg-cardlog-turn {
+  align-self: stretch;
+  margin: 2px 4px 0;
+  padding-top: 2px;
+  border-top: 1px dashed var(--cg-border-strong);
+  text-align: center;
+  font-family: var(--cg-font-display);
+  font-size: var(--cg-text-xs);
+  line-height: 1;
+  color: var(--cg-text-faint);
+}
+.cg-cardlog-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: calc(var(--cg-cardlog-w) - 14px);
+  aspect-ratio: 0.82;
+  padding: 0;
+  border: 0;
+  border-radius: var(--cg-radius-sm);
+  background: var(--cg-card, var(--cg-surface-1));
+  cursor: pointer;
+  animation: cg-cardlog-in 260ms var(--cg-ease-pop, ease-out) both;
+}
+.cg-cardlog-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.cg-cardlog-art > svg,
+.cg-cardlog-art > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Whose card: violet-blue rim for mine, crimson for the foe (plus the label/tooltip, not colour only). */
+.cg-cardlog-item--mine {
+  box-shadow: 0 0 0 2px var(--cg-ink), 0 0 0 4px #3fa9ff;
+}
+.cg-cardlog-item--foe {
+  box-shadow: 0 0 0 2px var(--cg-ink), 0 0 0 4px #e0405f;
+}
+.cg-cardlog-item--slain .cg-cardlog-art {
+  filter: grayscale(0.85) brightness(0.6);
+}
+.cg-cardlog-badge {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  display: grid;
+  place-items: center;
+  width: 46%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-size: calc(var(--cg-cardlog-w) * 0.24);
+  color: var(--cg-text);
+  background: var(--cg-violet);
+  box-shadow: 0 0 0 2px var(--cg-ink);
+}
+.cg-cardlog-item--slain .cg-cardlog-badge {
+  background: var(--cg-foe-hero);
+}
+.cg-cardlog-item:hover,
+.cg-cardlog-item:focus-visible {
+  outline: none;
+  filter: brightness(1.15);
+  transform: scale(1.06);
+}
+.cg-cardlog-item:focus-visible {
+  box-shadow: 0 0 0 2px var(--cg-ink), 0 0 0 4px var(--cg-selected);
+}
+.cg-cardlog-empty {
+  width: calc(var(--cg-cardlog-w) - 14px);
+  aspect-ratio: 0.82;
+  border-radius: var(--cg-radius-sm);
+  border: 2px dashed var(--cg-border-strong);
+  opacity: 0.5;
+}
+@keyframes cg-cardlog-in {
+  from { opacity: 0; transform: translateX(-30%); }
+  to { opacity: 1; transform: none; }
+}
+.cg-battlefield--reduced .cg-cardlog-item {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cg-cardlog-item {
+    animation: none;
+  }
 }
 .cg-mana-gauge-pips {
   display: grid;
@@ -2040,6 +2200,35 @@
 }
 .cg-fx-reveal--played .cg-fx-reveal-card {
   animation: cg-fx-reveal-in 160ms var(--cg-ease-pop) both;
+}
+/* The opponent's card: larger than the other reveals, over a soft scrim, with a "Tu rival jugó" caption, and it
+   fades out at the end of its (longer) reading time instead of vanishing. */
+.cg-fx-layer > .cg-fx-reveal--captioned {
+  flex-direction: column;
+  gap: clamp(6px, 1.6dvh, 14px);
+  background: radial-gradient(ellipse 40% 60% at 50% 50%, var(--cg-surface-scrim), transparent 75%);
+  animation: cg-fx-reveal-hold var(--cg-fx-ms, 2000ms) linear both;
+}
+.cg-fx-reveal--captioned .cg-fx-reveal-card {
+  width: min(44dvh, 22dvw);
+  height: min(61dvh, 30.5dvw);
+  min-width: 132px;
+  min-height: 184px;
+}
+.cg-fx-reveal-caption {
+  padding: 4px 14px;
+  border-radius: var(--cg-radius-pill);
+  font-family: var(--cg-font-display);
+  font-size: var(--cg-text-md);
+  color: var(--cg-text);
+  background: var(--cg-foe-hero);
+  box-shadow: 0 0 0 2px var(--cg-ink);
+  -webkit-text-stroke: 0;
+  animation: cg-fx-reveal-in 160ms var(--cg-ease-pop) both;
+}
+@keyframes cg-fx-reveal-hold {
+  0%, 88% { opacity: 1; }
+  100% { opacity: 0; }
 }
 .cg-fx-reveal--burned .cg-fx-reveal-card {
   animation: cg-fx-burn var(--cg-fx-ms, 900ms) ease-in both;

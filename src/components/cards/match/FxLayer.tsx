@@ -19,6 +19,7 @@ interface RevealState {
   key: number;
   inMs?: number;
   rarity?: Rarity;
+  caption?: string;
 }
 
 export function FxLayer({ client }: { client: MatchClient }) {
@@ -47,9 +48,10 @@ export function FxLayer({ client }: { client: MatchClient }) {
       {reveal && def && (
         <div
           key={reveal.key}
-          className={`cg-fx-reveal cg-fx-reveal--${reveal.mode}${reveal.rarity ? ` cg-fx-reveal--${reveal.rarity}` : ""}`}
+          className={`cg-fx-reveal cg-fx-reveal--${reveal.mode}${reveal.rarity ? ` cg-fx-reveal--${reveal.rarity}` : ""}${reveal.caption ? " cg-fx-reveal--captioned" : ""}`}
           style={{ "--cg-fx-ms": `${reveal.ms}ms`, "--cg-fx-in-ms": `${reveal.inMs ?? 0}ms` } as CSSProperties}
         >
+          {reveal.caption && <div className="cg-fx-reveal-caption">{reveal.caption}</div>}
           <div className="cg-fx-reveal-card">
             <CardFace def={def} />
           </div>

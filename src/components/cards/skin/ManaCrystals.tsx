@@ -38,7 +38,8 @@ function Crystal({ kind, size }: { kind: Kind; size: string }) {
 
 /** "4/5" plus a row of faceted crystals: filled = available, hollow socket = spent, pale with a spark = temporary mana. */
 export function ManaCrystals({ current, max, temporary, size, label, compact = false }: ManaCrystalsProps) {
-  const base = Math.max(0, current - temporary);
+  // `current` and `temporary` are separate pools (engine §6.4): what can be spent is their sum.
+  const base = Math.max(0, current);
   const crystals: Kind[] = Array.from({ length: Math.max(max, base) }, (_, i) => (i < base ? "full" : "empty"));
   for (let i = 0; i < temporary; i++) crystals.push("temp");
   return (
@@ -55,7 +56,7 @@ export function ManaCrystals({ current, max, temporary, size, label, compact = f
           lineHeight: 1,
         }}
       >
-        {current}
+        {current + temporary}
         <span style={{ fontSize: "0.72em", color: "var(--cg-mana-hi)" }}>/{max}</span>
       </span>
       {!compact && (
@@ -84,14 +85,16 @@ export interface ManaBarProps {
  * pale with a spark = temporary, faint socket = not unlocked yet. "current/max" sits at the foot. Styles: `.cg-manabar*`.
  */
 export function ManaBar({ current, max, temporary, label }: ManaBarProps) {
-  const base = Math.max(0, current - temporary);
+  // `current` and `temporary` are separate pools (engine §6.4): temporary crystals sit on top of the unlocked ones.
+  const base = Math.max(0, current);
+  const available = base + temporary;
   const unlocked = Math.max(max, base);
   const slots = Math.max(MANA_BAR_SLOTS, unlocked + temporary);
   const kinds: (Kind | "locked")[] = Array.from({ length: slots }, (_, i) =>
     i < base ? "full" : i < unlocked ? "empty" : i < unlocked + temporary ? "temp" : "locked",
   );
   return (
-    <span className={`cg-manabar${current === 0 ? " cg-manabar--spent" : ""}`} role="img" aria-label={label} title={label} data-cg-anchor="my-mana">
+    <span className={`cg-manabar${available === 0 ? " cg-manabar--spent" : ""}`} role="img" aria-label={label} title={label} data-cg-anchor="my-mana">
       <span className="cg-manabar-crystals" aria-hidden>
         {kinds.map((kind, i) =>
           kind === "locked" ? (
@@ -105,8 +108,8 @@ export function ManaBar({ current, max, temporary, label }: ManaBarProps) {
       </span>
       <span className="cg-manabar-num" aria-hidden>
         {/* Re-keyed on every change so the one-shot "tick" replays. */}
-        <span key={current} className="cg-mana-gauge-num--tick">
-          {current}
+        <span key={available} className="cg-mana-gauge-num--tick">
+          {available}
         </span>
         <span className="cg-manabar-max">/{max}</span>
       </span>
@@ -135,21 +138,22 @@ const GEM_SHINE = "M5 9.4 9.6 6.6 9.6 8.4 5 11.2Z";
  * and temporary mana as a separate pale "+N" spark chip (shape + label, not colour only). Styles: `.cg-mana-gauge*`.
  */
 export function ManaGauge({ current, max, temporary, label, pips = true }: ManaGaugeProps) {
-  const base = Math.max(0, current - temporary);
+  const base = Math.max(0, current);
+  const available = base + temporary;
   const kinds: Kind[] = Array.from({ length: Math.max(max, base) }, (_, i) => (i < base ? "full" : "empty"));
   return (
-    <span className={`cg-mana-gauge${current === 0 ? " cg-mana-gauge--spent" : ""}`} role="img" aria-label={label} title={label}>
+    <span className={`cg-mana-gauge${available === 0 ? " cg-mana-gauge--spent" : ""}`} role="img" aria-label={label} title={label}>
       <span className="cg-mana-gauge-gem">
         <svg viewBox="0 0 24 28" aria-hidden>
           <path d={GEM_OUTLINE} fill="#1d0842" />
-          <path d={GEM_BODY} fill={current === 0 ? "#2a2550" : "#1f6fd1"} />
-          <path d={GEM_LIT} fill={current === 0 ? "#3a3566" : "var(--cg-mana)"} />
-          <path d={GEM_TABLE} fill={current === 0 ? "#ffffff10" : "#7cc8ff"} opacity={0.55} />
-          <path d={GEM_SHINE} fill="#e6f6ff" opacity={current === 0 ? 0.3 : 0.95} />
+          <path d={GEM_BODY} fill={available === 0 ? "#2a2550" : "#1f6fd1"} />
+          <path d={GEM_LIT} fill={available === 0 ? "#3a3566" : "var(--cg-mana)"} />
+          <path d={GEM_TABLE} fill={available === 0 ? "#ffffff10" : "#7cc8ff"} opacity={0.55} />
+          <path d={GEM_SHINE} fill="#e6f6ff" opacity={available === 0 ? 0.3 : 0.95} />
         </svg>
         {/* Re-keyed on every change so the one-shot "tick" (UI-09 gem spend/gain feedback, CSS only) replays. */}
-        <span key={current} className="cg-mana-gauge-num cg-mana-gauge-num--tick">
-          {current}
+        <span key={available} className="cg-mana-gauge-num cg-mana-gauge-num--tick">
+          {available}
         </span>
       </span>
       <span className="cg-mana-gauge-side">

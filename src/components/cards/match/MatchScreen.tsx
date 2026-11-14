@@ -15,7 +15,7 @@ import { HttpTransport } from "@/game/cards/client/httpTransport";
 import { canCast, currentTargets, IDLE, interactionReducer, selectedCard, type Interaction, type InteractionInput } from "@/game/cards/client/interaction";
 import { MatchClient, useMatchSelector } from "@/game/cards/client/matchClient";
 import { CATALOG } from "@/game/cards/catalog";
-import type { CardDef } from "@/game/cards/catalog/types";
+import type { CardDef, CardId } from "@/game/cards/catalog/types";
 import type { GameCommand } from "@/game/cards/engine/commands";
 import type { UnitSnapshot } from "@/game/cards/engine/events";
 import type { EntityId, LegalActions } from "@/game/cards/engine/types";
@@ -27,6 +27,7 @@ import { haptic } from "@/lib/haptic";
 import { CardInspect } from "../card/CardInspect";
 import { BoardBackdrop, GameIcon, type EndTurnState } from "../skin";
 import { Board, type BoardGhost } from "./Board";
+import { CardLog } from "./CardLog";
 import { animateBackToHand, DragLayer } from "./DragLayer";
 import { FxLayer } from "./FxLayer";
 import { GameOverOverlay } from "./GameOverOverlay";
@@ -128,6 +129,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
   const [menuOpen, setMenuOpen] = useState(false);
   const [parked, setParked] = useState<Parked | null>(null);
   const [inspect, setInspect] = useState<InspectTarget | null>(null);
+  const [logInspect, setLogInspect] = useState<CardId | null>(null);
   const [kbGap, setKbGap] = useState<{ card: EntityId; index: number } | null>(null);
   const dropPoints = useRef(new Map<EntityId, Point>());
   const rootEl = useRef<HTMLDivElement | null>(null);
@@ -263,7 +265,10 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
 
   // Inspect (long-press / right-click / "i"), resolved against the current board: it closes itself if the card left.
   let inspected: { def: CardDef; cost?: number; unit?: UnitSnapshot } | null = null;
-  if (inspect && board) {
+  if (logInspect) {
+    const def = CATALOG[logInspect];
+    if (def) inspected = { def };
+  } else if (inspect && board) {
     if (inspect.kind === "hand") {
       const c = board.me.hand.find((h) => h.iid === inspect.iid);
       const def = c ? CATALOG[c.defId] : undefined;
@@ -294,6 +299,7 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
         if (e.key === "Escape") {
           e.preventDefault();
           setInspect(null);
+          setLogInspect(null);
         }
         return;
       }
@@ -517,6 +523,8 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
         onEndTurn={endTurn}
       />
 
+      <CardLog client={client} mySeat={board.mySeat} onInspect={setLogInspect} />
+
       <FxLayer client={client} />
 
       {menuOpen && <SettingsSheet finished={finished} onClose={() => setMenuOpen(false)} onConcede={() => void client.send({ t: "concede" })} />}
@@ -547,7 +555,10 @@ export function Battlefield({ client, children }: { client: MatchClient; childre
           unit={inspected.unit ?? null}
           mine={inspected.unit ? inspected.unit.controller === board.mySeat : undefined}
           turn={{ number: board.turn, activeSeat: board.activeSeat }}
-          onClose={() => setInspect(null)}
+          onClose={() => {
+            setInspect(null);
+            setLogInspect(null);
+          }}
         />
       )}
 

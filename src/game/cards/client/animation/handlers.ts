@@ -110,6 +110,11 @@ function glow(id: string, kind: "glow" | "buff", base: number): AnimationHandler
   };
 }
 
+/** Reading time (ms at 1×) for the card the opponent just played, shown large in the centre with a caption. */
+export const FOE_REVEAL_MS = 2000;
+/** After a heavy/cinematic entrance of the opponent's card, it stays readable this much longer. */
+export const FOE_REVEAL_AFTER_ENTRANCE_MS = 1200;
+
 /** Hides my played hand card (or fades the parked spell) without flying it — the entrance shows it in the centre. */
 async function clearMyPlayedCard(iid: EntityId, env: AnimationEnv): Promise<void> {
   const { fx } = env;
@@ -144,6 +149,7 @@ export const ANIMATIONS: HandlerMap = {
       const signature = entrance === "cinematic" ? cardSignature(def) : null;
       const timeline = entranceTimeline(entrance, { speed: env.speed * pace, reducedMotion: env.reducedMotion, signature });
       await playEntrance(def, cardName(def.id), timeline, env);
+      if (!mine && !env.signal.aborted) await fx.reveal(e.defId, "played", env.hold(FOE_REVEAL_AFTER_ENTRANCE_MS), { caption: t("match.foePlayed") });
       return;
     }
 
@@ -165,7 +171,7 @@ export const ANIMATIONS: HandlerMap = {
     const from = fx.anchor("foe-hand");
     if (to && from && !env.reducedMotion) await fx.flyCard(from, to, env.ms(260));
     if (env.signal.aborted) return;
-    await fx.reveal(e.defId, "played", env.hold(500));
+    await fx.reveal(e.defId, "played", env.hold(FOE_REVEAL_MS), { caption: t("match.foePlayed") });
   },
 
   ATTACK_DECLARED: async (e, env) => {

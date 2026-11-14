@@ -84,7 +84,7 @@ export function UiKit({ onClose }: { onClose: () => void }) {
         </Section>
         <Section title={t("sandbox.kitResources")}>
           <ManaCrystals current={7} max={10} temporary={0} size="clamp(14px, 5dvh, 24px)" label={t("sandbox.styleMana")} />
-          <ManaCrystals current={5} max={4} temporary={2} size="clamp(14px, 5dvh, 24px)" />
+          <ManaCrystals current={3} max={4} temporary={2} size="clamp(14px, 5dvh, 24px)" />
           <ManaCrystals current={3} max={6} temporary={0} size="clamp(14px, 5dvh, 24px)" compact />
           <CostBadge value={4} modified={0} size="40px" />
           <CostBadge value={2} modified={-1} size="40px" />

@@ -16,6 +16,7 @@ import type { ClientCommand } from "../server/commands";
 import { t } from "../i18n";
 import type { MatchView, ViewEvent } from "../server/view";
 import { toBoardModel, type BoardModel } from "./boardModel";
+import { appendCardLog, cardLogEntries, type CardLogEntry } from "./cardLog";
 import type { FxApi } from "./animation/fx";
 import { ANIMATIONS, ENTER_ANIMATIONS, hasHandlers, runHandlers, type AnimationEnv } from "./animation/handlers";
 import { isReducedMotion } from "./animation/motion";
@@ -53,6 +54,8 @@ export interface MatchClientState {
   animating: boolean;
   /** My last command, kept while its own result animates (the hand card stays "out of the hand" meanwhile). */
   settling: ClientCommand | null;
+  /** Cards played and units slain so far (oldest first), in step with the animations. */
+  cardLog: readonly CardLogEntry[];
 }
 
 /** Waits for the next frame so React has committed the last apply (enter animations need the new elements). */
@@ -103,6 +106,7 @@ export class MatchClient {
     foeOnline: false,
     animating: false,
     settling: null,
+    cardLog: [],
   };
   private readonly listeners = new Set<() => void>();
   private errorSeq = 0;
@@ -113,6 +117,8 @@ export class MatchClient {
   private readonly queue: AnimationQueue;
   private readonly entityDefs = new Map<EntityId, CardId>();
   private readonly pacer = new CinematicPacer();
+  /** Log entries whose events are queued but not applied yet. */
+  private pendingLog: CardLogEntry[] = [];
   readonly reconcileStats: ReconcileStats = { reconciles: 0, checked: 0, mismatches: 0 };
   private readonly onVisibility = () => {
     if (pageHidden()) this.queue.skipAll(); // tab hidden → finish instantly (Phase 13 H)
@@ -132,6 +138,10 @@ export class MatchClient {
         onPlayingChange: (playing) => this.onPlayingChange(playing),
         hidden: pageHidden,
         cinematic: isCinematicGroup,
+        reveal: (group) => {
+          const seat = this.state.view?.seat;
+          return seat !== undefined && group.some((e) => e.type === "CARD_PLAYED" && e.seat !== seat);
+        },
         userSpeed: animationSpeed,
       },
       queueOptions,
@@ -210,6 +220,10 @@ export class MatchClient {
         this.entityDefs.clear();
         this.pacer.reset();
       }
+      const shown = sameStream ? appendCardLog(this.state.cardLog, this.pendingLog) : [];
+      const events = g ? (sameStream ? g.events.filter((e) => e.seq > this.queuedSeq) : g.events) : [];
+      this.pendingLog = [];
+      patch.cardLog = appendCardLog(shown, cardLogEntries(events, sameStream ? (this.state.board?.turn ?? 0) : 0));
       this.queuedSeq = g?.lastSeq ?? 0;
       patch.board = toBoardModel(view);
       if (this.state.animating) patch.animating = false;
@@ -219,6 +233,9 @@ export class MatchClient {
     const fresh: ViewEvent[] = g.events.filter((e) => e.seq > this.queuedSeq);
     this.queuedSeq = Math.max(this.queuedSeq, g.lastSeq);
     if (g.eventsTruncated) {
+      // Whatever arrived is still logged (the gap itself is lost).
+      patch.cardLog = appendCardLog(appendCardLog(this.state.cardLog, this.pendingLog), cardLogEntries(fresh, g.turn));
+      this.pendingLog = [];
       // Reconnect after a long gap: the events are incomplete, so nothing is replayed.
       if (this.queue.playing) this.queue.cancel();
       patch.board = toBoardModel(view);
@@ -232,6 +249,8 @@ export class MatchClient {
       return;
     }
     this.rememberEntities(fresh);
+    const lastQueued = this.pendingLog.length > 0 ? this.pendingLog[this.pendingLog.length - 1].seq : -1;
+    this.pendingLog.push(...cardLogEntries(fresh, this.state.board.turn).filter((e) => e.seq > lastQueued));
     // A view that answers my own command (it may come through the transport before `send` resolves).
     const own = this.state.pending !== null;
     if (own) patch.settling = this.state.pending!.command;
@@ -265,7 +284,15 @@ export class MatchClient {
 
   private applyGroup(group: readonly ViewEvent[]): void {
     const board = this.state.board;
-    if (board) this.set({ board: reduceEvents(board, group) });
+    const patch: Partial<MatchClientState> = {};
+    if (board) patch.board = reduceEvents(board, group);
+    const upTo = group.reduce((m, e) => Math.max(m, e.seq), -1);
+    const ready = this.pendingLog.filter((e) => e.seq <= upTo);
+    if (ready.length > 0) {
+      this.pendingLog = this.pendingLog.filter((e) => e.seq > upTo);
+      patch.cardLog = appendCardLog(this.state.cardLog, ready);
+    }
+    if (Object.keys(patch).length > 0) this.set(patch);
   }
 
   private reconcile(complete: boolean): void {
@@ -280,7 +307,9 @@ export class MatchClient {
         console.warn("[cards] presentation/view mismatch at reconcile", diff);
       }
     }
-    this.set({ board: truth, settling: null });
+    const cardLog = appendCardLog(this.state.cardLog, this.pendingLog);
+    this.pendingLog = [];
+    this.set({ board: truth, settling: null, cardLog });
     this.fx?.settle();
   }
 

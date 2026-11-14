@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { ViewEvent } from "../../server/view";
 import type { FxApi } from "./fx";
-import { ANIMATIONS, ENTER_ANIMATIONS, runHandlers, type AnimationEnv } from "./handlers";
+import { ANIMATIONS, ENTER_ANIMATIONS, FOE_REVEAL_AFTER_ENTRANCE_MS, runHandlers, type AnimationEnv } from "./handlers";
 import { REPEAT_CINEMATIC_SPEED } from "./cinematics";
 
 /** Records every FxApi call as "name arg…" (elements by their id). No DOM. */
@@ -178,7 +178,8 @@ describe("Phase 20 handlers", () => {
     await play([SAMPLE[0]], e);
     const second = Date.now() - t1;
     expect(second).toBeLessThan(first);
-    expect(first).toBeLessThanOrEqual(1600);
+    // The entrance itself stays ≤ 1.6 s; the foe's card then stays up (captioned) so it can be read.
+    expect(first).toBeLessThanOrEqual(1600 + FOE_REVEAL_AFTER_ENTRANCE_MS);
   });
 
   it("the rest of a cinematic's group (its Grito) starts only after the entrance", async () => {

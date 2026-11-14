@@ -35,6 +35,8 @@ export interface RevealOptions {
   /** Length of the CSS slam-in for `heavy` / `cinematic` (ms). */
   inMs?: number;
   rarity?: Rarity;
+  /** A line shown above the card (the opponent's plays: "Tu rival jugó"). */
+  caption?: string;
 }
 
 export interface FxApi {
@@ -356,7 +358,7 @@ export interface DomFxOptions {
   layer: HTMLElement;
   particles: ParticleSystem | null;
   /** Renders a card face in the centre (FX layer React state); null hides it. */
-  showReveal: (reveal: { defId: CardId; mode: RevealMode; ms: number; key: number; inMs?: number; rarity?: Rarity } | null) => void;
+  showReveal: (reveal: { defId: CardId; mode: RevealMode; ms: number; key: number; inMs?: number; rarity?: Rarity; caption?: string } | null) => void;
 }
 
 export class DomFx implements FxApi {
@@ -578,7 +580,7 @@ export class DomFx implements FxApi {
 
   async reveal(defId: CardId, mode: RevealMode, ms: number, opts: RevealOptions = {}): Promise<void> {
     const key = ++this.revealKey;
-    this.o.showReveal({ defId, mode, ms, key, inMs: opts.inMs, rarity: opts.rarity });
+    this.o.showReveal({ defId, mode, ms, key, inMs: opts.inMs, rarity: opts.rarity, caption: opts.caption });
     await this.wait(ms);
     if (this.revealKey === key) this.o.showReveal(null);
   }

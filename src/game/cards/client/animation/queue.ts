@@ -18,9 +18,12 @@ export interface QueueOptions {
   maxBlockMs: number;
   /** Cap for a group that holds a Legendaria/Única cinematic (Phase 20: ≤ 1.6 s at 1×), divided by the speed. */
   cinematicGroupMs: number;
+  /** Cap for a group that reveals the opponent's played card (reading time), divided by the speed. Such a group also
+   *  starts a fresh input-block budget: it plays on the opponent's turn, when there is nothing for me to do. */
+  revealGroupMs: number;
 }
 
-export const DEFAULT_QUEUE_OPTIONS: QueueOptions = { maxGroupMs: 1200, speedUpAt: 12, skipAt: 30, skipGapAt: 40, maxBlockMs: 3800, cinematicGroupMs: 1600 };
+export const DEFAULT_QUEUE_OPTIONS: QueueOptions = { maxGroupMs: 1200, speedUpAt: 12, skipAt: 30, skipGapAt: 40, maxBlockMs: 3800, cinematicGroupMs: 1600, revealGroupMs: 3200 };
 
 /** The player's own command results play at this speed (§18.3). */
 export const OWN_SPEED = 1.5;
@@ -47,6 +50,8 @@ export interface QueueHooks {
   hidden?(): boolean;
   /** The group plays a cinematic entrance (Phase 20): longer cap, and a tap skips straight to reconcile. */
   cinematic?(group: readonly ViewEvent[]): boolean;
+  /** The group reveals the opponent's played card: longer cap (`revealGroupMs`) and a fresh block budget. */
+  reveal?(group: readonly ViewEvent[]): boolean;
   /** The player's animation-speed setting (1, 1.5 or 2; Phase 20), multiplied into every group's speed. */
   userSpeed?(): number;
   now?(): number;
@@ -176,7 +181,7 @@ export class AnimationQueue {
   }
 
   /** Runs one phase of a group: resolves when the handlers finish, the timeout hits, or the group is skipped. */
-  private async phase(fn: QueueHooks["play"], group: readonly ViewEvent[], speed: number, cinematic = false): Promise<void> {
+  private async phase(fn: QueueHooks["play"], group: readonly ViewEvent[], speed: number, cinematic = false, reveal = false): Promise<void> {
     const abort = new AbortController();
     this.groupAbort = abort;
     let timer: ReturnType<typeof setTimeout> | undefined;
@@ -184,7 +189,9 @@ export class AnimationQueue {
       this.skipGroup = resolve;
       // Capped per group, and by what is left of the input-block budget (so the 4 s limit holds mid-group too).
       const left = this.opts.maxBlockMs - (this.now() - this.startedAt);
-      const cap = (cinematic ? Math.max(this.opts.maxGroupMs, this.opts.cinematicGroupMs) : this.opts.maxGroupMs) / speed;
+      let capMs = cinematic ? Math.max(this.opts.maxGroupMs, this.opts.cinematicGroupMs) : this.opts.maxGroupMs;
+      if (reveal) capMs = Math.max(capMs, this.opts.revealGroupMs);
+      const cap = capMs / speed;
       timer = setTimeout(resolve, Math.max(0, Math.min(cap, left)));
     });
     let work: Promise<void>;
@@ -207,6 +214,8 @@ export class AnimationQueue {
     this.startedAt = this.now();
     this.setPlaying(true);
     while (this.groups.length > 0) {
+      const reveal = this.hooks.reveal?.(this.groups[0].events) ?? false;
+      if (reveal) this.startedAt = this.now();
       const waiting = this.pendingEvents;
       if (waiting > this.opts.skipAt || this.now() - this.startedAt >= this.opts.maxBlockMs || this.hooks.hidden?.()) {
         this.skipAll();
@@ -217,7 +226,7 @@ export class AnimationQueue {
       const speed = Math.max(group.speed, waiting > this.opts.speedUpAt ? 2 : 1) * this.tapSpeed * user;
       const cinematic = this.hooks.cinematic?.(group.events) ?? false;
       this.inCinematic = cinematic;
-      await this.phase(this.hooks.play, group.events, speed, cinematic);
+      await this.phase(this.hooks.play, group.events, speed, cinematic, reveal);
       this.inCinematic = false;
       if (run !== this.run) return;
       this.hooks.apply(group.events);
